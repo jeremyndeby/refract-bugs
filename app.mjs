@@ -1,4 +1,4 @@
-import { bugThreadUrl, datasetCounters, relativeAge, selectBugs } from './bugs-logic.mjs';
+import { bugThreadUrl, datasetCounters, nextSortState, relativeAge, selectBugs } from './bugs-logic.mjs';
 import { validateBugDataset } from './bugs-validator.mjs';
 
 const DISCORD_GUILD_ID = '1490347491151970366';
@@ -53,8 +53,8 @@ const state = {
   view: location.hash === '#fixed' ? 'fixed' : 'open',
   expanded: new Set(initialParams.get('expand') ? [initialParams.get('expand')] : []),
   controls: {
-    open: { query: initialParams.get('q') ?? '', sort: 'popularity', activity: '', tag: '' },
-    fixed: { query: '', sort: 'date', activity: '', tag: '' },
+    open: { query: initialParams.get('q') ?? '', sort: 'popularity', direction: 'desc', activity: '', tag: '' },
+    fixed: { query: '', sort: 'date', direction: 'desc', activity: '', tag: '' },
   },
 };
 
@@ -140,17 +140,26 @@ function renderSorts() {
   elements.sorts.replaceChildren();
   const control = state.controls[state.view];
   const options = [
-    ['popularity', 'Popularity ↓'],
-    ['trending', '🔥 Trending ↓'],
-    ['date', 'Date ↓'],
+    ['popularity', 'Popularity'],
+    ['trending', '🔥 Trending'],
+    ['date', 'Date'],
   ];
-  for (const [value, label] of options) {
-    const button = el('button', 'sort', label);
+  for (const [value, name] of options) {
+    const active = control.sort === value;
+    const direction = active ? control.direction : null;
+    const arrow = direction === 'asc' ? '↑' : direction === 'desc' ? '↓' : '↕';
+    const button = el('button', 'sort', `${name} ${arrow}`);
     button.type = 'button';
     button.dataset.sort = value;
-    setButtonState(button, control.sort === value);
+    button.dataset.direction = direction ?? 'both';
+    button.setAttribute('aria-label', active
+      ? `${name.replace('🔥 ', '')}, ${direction === 'asc' ? 'ascending' : 'descending'}. Activate to reverse.`
+      : `Sort by ${name.replace('🔥 ', '')}, descending.`);
+    setButtonState(button, active);
     button.addEventListener('click', () => {
-      control.sort = value;
+      const next = nextSortState(control.sort, control.direction, value);
+      control.sort = next.sort;
+      control.direction = next.direction;
       renderControls();
       renderList();
     });
@@ -360,7 +369,7 @@ function selectedBugs() {
     status: state.view,
     query: control.query,
     sort: control.sort,
-    direction: 'desc',
+    direction: control.direction,
     activity: control.activity,
     tag: control.tag,
     generatedAt: state.data.generated_at,

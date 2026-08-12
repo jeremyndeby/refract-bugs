@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { bugThreadUrl, datasetCounters, selectBugs } from './bugs-logic.mjs';
+import { bugThreadUrl, datasetCounters, nextSortState, selectBugs } from './bugs-logic.mjs';
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
@@ -10,6 +10,19 @@ test('Popularity, Trending and Date sorts use the public contract fields', () =>
   assert.equal(selectBugs(fixture.bugs, { ...common, sort: 'popularity' })[0].reactors_unique, 54);
   assert.equal(selectBugs(fixture.bugs, { ...common, sort: 'trending' })[0].activity_7d, 31);
   assert.equal(selectBugs(fixture.bugs, { ...common, sort: 'date' })[0].id, '1600000000000000001');
+});
+
+test('Popularity, Trending and Date sorts reverse in ascending mode', () => {
+  const common = { status: 'open', direction: 'asc', generatedAt: fixture.generated_at };
+  assert.equal(selectBugs(fixture.bugs, { ...common, sort: 'popularity' })[0].reactors_unique, 15);
+  assert.equal(selectBugs(fixture.bugs, { ...common, sort: 'trending' })[0].activity_7d, 0);
+  assert.equal(selectBugs(fixture.bugs, { ...common, sort: 'date' })[0].id, '1600000000000000012');
+});
+
+test('clicking the active sort reverses it while a new sort starts descending', () => {
+  assert.deepEqual(nextSortState('popularity', 'desc', 'popularity'), { sort: 'popularity', direction: 'asc' });
+  assert.deepEqual(nextSortState('popularity', 'asc', 'popularity'), { sort: 'popularity', direction: 'desc' });
+  assert.deepEqual(nextSortState('popularity', 'asc', 'date'), { sort: 'date', direction: 'desc' });
 });
 
 test('search covers bodies, tags and anonymized comment text', () => {

@@ -1,5 +1,13 @@
 const DAY_MS = 86_400_000;
 
+export function nextSortState(currentSort, currentDirection, requestedSort) {
+  if (currentSort !== requestedSort) return { sort: requestedSort, direction: 'desc' };
+  return {
+    sort: currentSort,
+    direction: currentDirection === 'desc' ? 'asc' : 'desc',
+  };
+}
+
 export function bugThreadUrl(bug, guildId) {
   return bug?.status === 'open' && bug?.id
     ? `https://discord.com/channels/${guildId}/${bug.id}`
