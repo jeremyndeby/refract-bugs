@@ -13,11 +13,38 @@ const ACTIVITY_OPTIONS = {
   ],
   fixed: [
     ['active-7d', 'Active · 7 days'],
-    ['fixed-30d', 'Fixed · 30 days'],
+    ['fixed-7d', 'Fixed · 7 days'],
     ['discussed', 'Discussed'],
     ['with-images', 'With images'],
   ],
 };
+
+const TAG_COLORS = Object.freeze({
+  Accessibility: '#D6A2E8',
+  Android: '#7BED9F',
+  Calendar: '#FFEAA7',
+  Collections: '#FAB1A0',
+  Discovery: '#FFEAA7',
+  Filters: '#81ECEC',
+  Import: '#81ECEC',
+  iOS: { accent: '#0984E3', text: '#A8D8FF' },
+  Layout: '#00CEC9',
+  Metadata: { accent: '#FD79A8', text: '#FFBBD9' },
+  Navigation: '#A29BFE',
+  Notifications: '#FDCB6E',
+  Performance: '#55EFC4',
+  Playback: { accent: '#E17055', text: '#FFC2AE' },
+  Profiles: '#55EFC4',
+  Reviews: '#FAB1A0',
+  Search: { accent: '#3498DB', text: '#A9DCFF' },
+  Settings: '#D6A2E8',
+  Sync: '#81ECEC',
+  Timezone: '#B2BEC3',
+  Tracking: '#55EFC4',
+  Watchlist: '#00CEC9',
+  Web: { accent: '#6C5CE7', text: '#C8C4FF' },
+  Widgets: '#FDCB6E',
+});
 
 const state = {
   data: null,
@@ -34,10 +61,12 @@ const state = {
 const elements = {
   freshness: document.querySelector('#freshness'),
   openTotal: document.querySelector('#pulse-open-total'),
-  fixedTotal: document.querySelector('#pulse-fixed-total'),
-  new7d: document.querySelector('#new-last-7-days'),
-  active7d: document.querySelector('#active-last-7-days'),
-  fixed30d: document.querySelector('#fixed-last-30-days'),
+  openChange24h: document.querySelector('#open-change-24h'),
+  openChange7d: document.querySelector('#open-change-7d'),
+  opened24h: document.querySelector('#opened-last-24-hours'),
+  opened7d: document.querySelector('#opened-last-7-days'),
+  fixed24h: document.querySelector('#fixed-last-24-hours'),
+  fixed7d: document.querySelector('#fixed-last-7-days'),
   openCount: document.querySelector('#open-count'),
   fixedCount: document.querySelector('#fixed-count'),
   content: document.querySelector('#bug-content'),
@@ -75,6 +104,14 @@ function formatDate(value) {
 
 function setButtonState(button, active) {
   button.setAttribute('aria-pressed', String(active));
+}
+
+function setChipColor(node, color) {
+  const accent = typeof color === 'string' ? color : color.accent;
+  const text = typeof color === 'string' ? color : color.text;
+  node.style.setProperty('--chip-color', accent);
+  node.style.setProperty('--chip-text', text);
+  node.style.setProperty('--chip-selected', text);
 }
 
 function updateHash(view) {
@@ -125,8 +162,9 @@ function renderActivityFilters() {
   elements.activityFilters.replaceChildren();
   const control = state.controls[state.view];
   for (const [value, label] of ACTIVITY_OPTIONS[state.view]) {
-    const button = el('button', 'filter-chip', label);
+    const button = el('button', 'chip filter-chip', label);
     button.type = 'button';
+    setChipColor(button, { accent: '#B2BEC3', text: '#DFE6E9' });
     setButtonState(button, control.activity === value);
     button.addEventListener('click', () => {
       control.activity = control.activity === value ? '' : value;
@@ -149,8 +187,9 @@ function renderTagFilters() {
   elements.tagFilters.replaceChildren();
   const control = state.controls[state.view];
   for (const [tag, count] of tagCounts()) {
-    const button = el('button', 'filter-chip', `${tag} · ${count}`);
+    const button = el('button', 'chip filter-chip', `${tag} · ${count}`);
     button.type = 'button';
+    setChipColor(button, TAG_COLORS[tag] ?? '#B2BEC3');
     setButtonState(button, control.tag === tag);
     button.addEventListener('click', () => {
       control.tag = control.tag === tag ? '' : tag;
@@ -180,7 +219,12 @@ function loadCardImages(card) {
 
 function toggleCard(card, button, details, bugId) {
   const expanded = button.getAttribute('aria-expanded') !== 'true';
-  button.setAttribute('aria-expanded', String(expanded));
+  card.querySelectorAll(`[aria-controls="${details.id}"]`).forEach((control) => {
+    control.setAttribute('aria-expanded', String(expanded));
+    if (control.classList.contains('comment-toggle')) {
+      control.setAttribute('aria-label', expanded ? control.dataset.closeLabel : control.dataset.openLabel);
+    }
+  });
   details.hidden = !expanded;
   card.classList.toggle('is-expanded', expanded);
   if (expanded) {
@@ -249,7 +293,7 @@ function createCard(bug, rank) {
 
   const body = el('div', 'body');
   const titleLine = el('div', 'bug-title-line');
-  titleLine.append(el('h2', '', bug.title), el('span', 'expand-chevron', '⌄'));
+  titleLine.append(el('h2', '', bug.title));
   const description = el('p', 'description', bug.body);
   const meta = el('div', 'meta');
   const primaryDate = bug.status === 'fixed' ? bug.fixed_at : bug.posted_at;
@@ -261,7 +305,11 @@ function createCard(bug, rank) {
     el('span', '', `${bug.activity_7d} activity · 7 days`),
   );
   const chips = el('div', 'chips');
-  bug.tags.forEach((tag) => chips.append(el('span', 'chip', tag)));
+  bug.tags.forEach((tag) => {
+    const chip = el('span', 'chip', tag);
+    setChipColor(chip, TAG_COLORS[tag] ?? '#B2BEC3');
+    chips.append(chip);
+  });
   body.append(titleLine, description, meta, chips);
   summary.append(votes, body);
 
@@ -285,9 +333,21 @@ function createCard(bug, rank) {
   } else {
     actions.append(el('span', 'fixed-label', `Resolved ${formatDate(bug.fixed_at)}`));
   }
-  const expandHint = el('span', 'expand-hint', 'Click the card to view the discussion');
-  actions.append(expandHint);
+  const commentToggle = el('button', 'comment-toggle');
+  commentToggle.type = 'button';
+  commentToggle.setAttribute('aria-controls', detailsId);
+  commentToggle.setAttribute('aria-expanded', 'false');
+  commentToggle.setAttribute('aria-label', `${plural(bug.comments_count, 'comment')}. Open discussion for ${bug.title}`);
+  commentToggle.dataset.openLabel = `${plural(bug.comments_count, 'comment')}. Open discussion for ${bug.title}`;
+  commentToggle.dataset.closeLabel = `Close discussion for ${bug.title}`;
+  commentToggle.append(
+    el('span', 'comment-bubble', '💬'),
+    el('span', 'comment-count', String(bug.comments_count)),
+    el('span', 'comment-arrow', '⌄'),
+  );
+  actions.append(commentToggle);
   summary.addEventListener('click', () => toggleCard(card, summary, details, bug.id));
+  commentToggle.addEventListener('click', () => toggleCard(card, commentToggle, details, bug.id));
   card.append(summary, details, actions);
 
   if (state.expanded.has(bug.id)) toggleCard(card, summary, details, bug.id);
@@ -328,13 +388,21 @@ function renderList() {
 
 function renderCounters() {
   const counters = datasetCounters(state.bugs, state.data.generated_at);
-  elements.openTotal.textContent = plural(counters.open, 'open bug');
-  elements.fixedTotal.textContent = plural(counters.fixed, 'fixed bug');
+  const formatChange = (delta, period) => {
+    const previous = counters.open - delta;
+    const percentage = previous > 0 ? Math.round((delta / previous) * 100) : 0;
+    const signed = (value) => value > 0 ? `+${value}` : String(value);
+    return `${signed(delta)} · ${signed(percentage)}% last ${period}`;
+  };
+  elements.openTotal.textContent = `${counters.open.toLocaleString('en')} open`;
+  elements.openChange24h.textContent = formatChange(counters.openDelta24h, '24h');
+  elements.openChange7d.textContent = formatChange(counters.openDelta7d, '7d');
   elements.openCount.textContent = counters.open.toLocaleString('en');
   elements.fixedCount.textContent = counters.fixed.toLocaleString('en');
-  elements.new7d.textContent = counters.new7d.toLocaleString('en');
-  elements.active7d.textContent = counters.active7d.toLocaleString('en');
-  elements.fixed30d.textContent = counters.fixed30d.toLocaleString('en');
+  elements.opened24h.textContent = counters.opened24h.toLocaleString('en');
+  elements.opened7d.textContent = counters.opened7d.toLocaleString('en');
+  elements.fixed24h.textContent = counters.fixed24h.toLocaleString('en');
+  elements.fixed7d.textContent = counters.fixed7d.toLocaleString('en');
   elements.freshness.textContent = `updated ${relativeAge(state.data.generated_at, new Date().toISOString())}`;
   elements.freshness.dateTime = state.data.generated_at;
 }

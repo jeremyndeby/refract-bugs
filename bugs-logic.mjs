@@ -21,6 +21,12 @@ export function isWithinDays(date, reference, days) {
   return delta >= 0 && delta <= days * DAY_MS;
 }
 
+export function isWithinHours(date, reference, hours) {
+  if (!date || !reference) return false;
+  const delta = Date.parse(reference) - Date.parse(date);
+  return delta >= 0 && delta <= hours * 3_600_000;
+}
+
 function includesQuery(bug, query) {
   const needle = query.trim().toLocaleLowerCase('en');
   if (!needle) return true;
@@ -34,7 +40,7 @@ function matchesActivity(bug, activity, generatedAt) {
   if (activity === 'discussed') return bug.comments_count > 0;
   if (activity === 'with-images') return bug.images.length > 0;
   if (activity === 'new-7d') return isWithinDays(bug.posted_at, generatedAt, 7);
-  if (activity === 'fixed-30d') return bug.status === 'fixed' && isWithinDays(bug.fixed_at, generatedAt, 30);
+  if (activity === 'fixed-7d') return bug.status === 'fixed' && isWithinDays(bug.fixed_at, generatedAt, 7);
   return true;
 }
 
@@ -70,11 +76,20 @@ export function selectBugs(items, {
 }
 
 export function datasetCounters(bugs, generatedAt) {
+  const open = bugs.filter((bug) => bug.status === 'open').length;
+  const fixed = bugs.filter((bug) => bug.status === 'fixed').length;
+  const opened24h = bugs.filter((bug) => bug.status === 'open' && isWithinHours(bug.posted_at, generatedAt, 24)).length;
+  const opened7d = bugs.filter((bug) => bug.status === 'open' && isWithinDays(bug.posted_at, generatedAt, 7)).length;
+  const fixed24h = bugs.filter((bug) => bug.status === 'fixed' && isWithinHours(bug.fixed_at, generatedAt, 24)).length;
+  const fixed7d = bugs.filter((bug) => bug.status === 'fixed' && isWithinDays(bug.fixed_at, generatedAt, 7)).length;
   return {
-    open: bugs.filter((bug) => bug.status === 'open').length,
-    fixed: bugs.filter((bug) => bug.status === 'fixed').length,
-    new7d: bugs.filter((bug) => bug.status === 'open' && isWithinDays(bug.posted_at, generatedAt, 7)).length,
-    active7d: bugs.filter((bug) => bug.activity_7d > 0).length,
-    fixed30d: bugs.filter((bug) => bug.status === 'fixed' && isWithinDays(bug.fixed_at, generatedAt, 30)).length,
+    open,
+    fixed,
+    opened24h,
+    opened7d,
+    fixed24h,
+    fixed7d,
+    openDelta24h: opened24h - fixed24h,
+    openDelta7d: opened7d - fixed7d,
   };
 }

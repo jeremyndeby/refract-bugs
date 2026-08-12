@@ -37,23 +37,20 @@
       </p>
 
       <section class="pulse" aria-label="Bug activity">
-        <div class="pulse-totals" aria-label="Bug totals">
-          <strong id="pulse-open-total">— open bugs</strong>
-          <span aria-hidden="true">·</span>
-          <strong id="pulse-fixed-total">— fixed bugs</strong>
+        <div class="pulse-stock" aria-label="Open bug total and change">
+          <strong id="pulse-open-total">— open</strong>
+          <span class="stock-change" id="open-change-24h">— last 24h</span>
+          <span class="stock-separator" aria-hidden="true">·</span>
+          <span class="stock-change" id="open-change-7d">— last 7d</span>
         </div>
-        <dl class="pulse-stats" aria-live="polite">
+        <dl class="pulse-flows" aria-live="polite">
           <div class="pulse-stat">
-            <dt>new · last 7 days</dt>
-            <dd id="new-last-7-days">—</dd>
+            <dt>🆕 Opened</dt>
+            <dd><strong id="opened-last-24-hours">—</strong> last 24h <span aria-hidden="true">·</span> <strong id="opened-last-7-days">—</strong> last 7d</dd>
           </div>
           <div class="pulse-stat">
-            <dt>active · last 7 days</dt>
-            <dd id="active-last-7-days">—</dd>
-          </div>
-          <div class="pulse-stat">
-            <dt>fixed · last 30 days</dt>
-            <dd id="fixed-last-30-days">—</dd>
+            <dt>✅ Fixed</dt>
+            <dd><strong id="fixed-last-24-hours">—</strong> last 24h <span aria-hidden="true">·</span> <strong id="fixed-last-7-days">—</strong> last 7d</dd>
           </div>
         </dl>
       </section>

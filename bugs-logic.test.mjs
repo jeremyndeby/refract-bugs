@@ -36,8 +36,11 @@ test('header counters are derived from accepted entries', () => {
   assert.deepEqual(datasetCounters(fixture.bugs, fixture.generated_at), {
     open: 12,
     fixed: 8,
-    new7d: 5,
-    active7d: 17,
-    fixed30d: 8,
+    opened24h: 1,
+    opened7d: 5,
+    fixed24h: 1,
+    fixed7d: 4,
+    openDelta24h: 0,
+    openDelta7d: 1,
   });
 });
