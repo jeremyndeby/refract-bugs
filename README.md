@@ -19,7 +19,9 @@ only `is_team: true` and render a generic `TEAM` badge.
 The shared validator rejects individual entries containing email or token
 patterns, unknown fields, inconsistent status dates, or non-local image URLs.
 Valid entries continue publishing unless more than 5% or more than 20 entries
-are rejected; either threshold blocks the publication.
+are rejected; either threshold blocks the publication. Producers must serialize
+the value returned by `sanitizeBugDataset()`, never the unfiltered input, so a
+rejected line cannot remain accessible in the served JSON.
 
 ## Local verification
 

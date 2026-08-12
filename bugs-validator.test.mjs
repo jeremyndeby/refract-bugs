@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { validateBugDataset, validateBugEntry } from './bugs-validator.mjs';
+import { sanitizeBugDataset, validateBugDataset, validateBugEntry } from './bugs-validator.mjs';
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
@@ -20,6 +20,20 @@ test('an email rejects only its entry below the publication threshold', () => {
   assert.equal(result.accepted.length, 20);
   assert.equal(result.blocked, false);
   assert.match(result.rejected[0].errors.join(' '), /forbidden email/u);
+});
+
+test('the producer-facing sanitizer removes rejected entries from serialized data', () => {
+  const bugs = structuredClone(fixture.bugs);
+  bugs.push({
+    ...structuredClone(bugs[0]),
+    id: '1600000000000000098',
+    body: `Reply to person${'@'}example.test`,
+  });
+  const sanitized = sanitizeBugDataset({ ...fixture, bugs });
+  assert.equal(sanitized.report.blocked, false);
+  assert.equal(sanitized.report.rejected.length, 1);
+  assert.equal(sanitized.data.bugs.length, 20);
+  assert.equal(JSON.stringify(sanitized.data).includes('example.test'), false);
 });
 
 test('a token-like value is rejected', () => {

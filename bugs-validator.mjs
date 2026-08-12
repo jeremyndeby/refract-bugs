@@ -128,3 +128,16 @@ export function validateBugDataset(data) {
   const blocked = rejected.length > MAX_REJECTED_ENTRIES || rejectedRatio > MAX_REJECTED_RATIO;
   return { accepted, rejected, blocked, rootErrors, total, rejectedRatio };
 }
+
+export function sanitizeBugDataset(data) {
+  const report = validateBugDataset(data);
+  if (report.rootErrors.length || report.blocked) return { data: null, report };
+  return {
+    data: {
+      schema_version: data.schema_version,
+      generated_at: data.generated_at,
+      bugs: report.accepted,
+    },
+    report,
+  };
+}
