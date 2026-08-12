@@ -1,0 +1,10 @@
+{
+  "name": "refract-bugs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test bugs-logic.test.mjs bugs-validator.test.mjs",
+    "validate": "node validate-public-data.mjs bugs.json"
+  }
+}

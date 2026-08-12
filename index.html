@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#243038">
+  <meta name="description" content="Browse public Refract bug reports, follow fixes, and join open discussions on Discord.">
+  <title>Refract — Bugs</title>
+  <link rel="icon" type="image/png" href="./refract-logo.png">
+  <link rel="apple-touch-icon" href="./refract-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="spectrum" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header class="masthead">
+      <div class="brand">
+        <img class="brand-logo" src="./refract-logo.png" alt="" width="76" height="76">
+        <div class="brand-copy">
+          <div class="brand-line">
+            <h1>Refract <span>Bugs</span></h1>
+            <time class="freshness" id="freshness">loading…</time>
+          </div>
+          <span class="brand-kicker">Reported by the community</span>
+        </div>
+      </div>
+      <p class="lede">
+        Known issues, public progress, and fixes. Open a card to read the anonymized discussion.
+      </p>
+      <p class="priority-note">
+        Comments never show authors. Team replies are identified only with a <strong>TEAM</strong> badge,
+        and attachments are served from this site rather than Discord.
+      </p>
+
+      <section class="pulse" aria-label="Bug activity">
+        <div class="pulse-totals" aria-label="Bug totals">
+          <strong id="pulse-open-total">— open bugs</strong>
+          <span aria-hidden="true">·</span>
+          <strong id="pulse-fixed-total">— fixed bugs</strong>
+        </div>
+        <dl class="pulse-stats" aria-live="polite">
+          <div class="pulse-stat">
+            <dt>new · last 7 days</dt>
+            <dd id="new-last-7-days">—</dd>
+          </div>
+          <div class="pulse-stat">
+            <dt>active · last 7 days</dt>
+            <dd id="active-last-7-days">—</dd>
+          </div>
+          <div class="pulse-stat">
+            <dt>fixed · last 30 days</dt>
+            <dd id="fixed-last-30-days">—</dd>
+          </div>
+        </dl>
+      </section>
+      <a class="idea-link" href="https://discord.gg/zkdc9yw93x" target="_blank" rel="noreferrer">
+        Found a bug? Report it on Discord <span aria-hidden="true">→</span>
+      </a>
+
+      <nav class="tabs" id="bug-tabs" role="tablist" aria-label="Bug views">
+        <button class="tab" id="tab-open" role="tab" aria-selected="true" aria-controls="view-open" data-view="open">
+          🐛 Open <span class="count" id="open-count">—</span>
+        </button>
+        <button class="tab" id="tab-fixed" role="tab" aria-selected="false" aria-controls="view-fixed" data-view="fixed" tabindex="-1">
+          ✅ Fixed <span class="count" id="fixed-count">—</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="bug-main">
+      <section id="view-open" role="tabpanel" aria-labelledby="tab-open">
+      <div id="bug-content">
+      <div class="toolbar bug-toolbar" aria-label="Bug controls">
+        <div class="toolbar-main">
+          <div class="sort-line">
+            <span class="toolbar-label">Sort</span>
+            <div class="sorts" id="bug-sorts" role="group" aria-label="Sort bugs"></div>
+          </div>
+          <div class="search-line">
+            <label class="sr-only" id="bug-search-label" for="bug-search">Search open bugs</label>
+            <input class="search" id="bug-search" type="search" autocomplete="off" placeholder="Search open bugs…">
+          </div>
+        </div>
+        <div class="filter-groups">
+          <div class="filter-group">
+            <span class="toolbar-label">Activity</span>
+            <div class="filters" id="activity-filters" role="group" aria-label="Filter bugs by activity"></div>
+          </div>
+          <div class="filter-group">
+            <span class="toolbar-label">Tags</span>
+            <div class="filters tag-filter-list" id="tag-filters" role="group" aria-label="Filter bugs by tag"></div>
+          </div>
+        </div>
+        <button class="clear-filters" id="clear-filters" type="button" hidden>Clear filters</button>
+      </div>
+
+      <p class="rejected-notice" id="rejected-notice" hidden></p>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <div class="list" id="bug-list" aria-live="polite">
+        <p class="loading">Loading the public bug tracker…</p>
+      </div>
+      </div>
+      </section>
+      <section id="view-fixed" role="tabpanel" aria-labelledby="tab-fixed" hidden></section>
+    </main>
+
+    <aside class="discord-cta" aria-labelledby="discord-cta-title">
+      <div>
+        <h2 id="discord-cta-title">💜 Found something broken?</h2>
+        <p>
+          Report it on Discord, add your reaction to an open thread, and help us understand how often it happens.
+        </p>
+      </div>
+      <a class="discord-cta-button" href="https://discord.gg/zkdc9yw93x" target="_blank" rel="noreferrer">
+        Join the Refract Discord <span aria-hidden="true">↗</span>
+      </a>
+    </aside>
+
+    <footer class="foot">
+      <div>Counts come from unique Discord reactors. Updated every 6 hours.</div>
+      <div class="stamp"><a href="https://getrefract.app/">getrefract.app</a></div>
+    </footer>
+  </div>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">↑</button>
+  <noscript>This page needs JavaScript to load and sort the public bug tracker.</noscript>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

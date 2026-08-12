@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bugs.getrefract.app/bugs.schema.json",
+  "title": "Refract public bugs feed",
+  "description": "Stable public contract produced by the private bug exporter and consumed by bugs.getrefract.app.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "bugs"],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "bugs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/bug"
+      }
+    }
+  },
+  "$defs": {
+    "publicText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000,
+      "pattern": "^(?!.*(?:[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}|(?:token|secret|password|authorization)[=:][^\\s]+)).*$"
+    },
+    "comment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "date", "is_team"],
+      "properties": {
+        "text": {
+          "$ref": "#/$defs/publicText"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "is_team": {
+          "type": "boolean"
+        }
+      }
+    },
+    "bug": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "body",
+        "posted_at",
+        "status",
+        "fixed_at",
+        "tags",
+        "reactors_unique",
+        "comments_count",
+        "activity_7d",
+        "comments",
+        "images"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9]{17,20}$"
+        },
+        "title": {
+          "$ref": "#/$defs/publicText"
+        },
+        "body": {
+          "$ref": "#/$defs/publicText"
+        },
+        "posted_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "enum": ["open", "fixed"]
+        },
+        "fixed_at": {
+          "oneOf": [
+            { "type": "string", "format": "date-time" },
+            { "type": "null" }
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40,
+            "pattern": "^[^@\\r\\n]+$"
+          }
+        },
+        "reactors_unique": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "comments_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "activity_7d": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "comments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/comment"
+          }
+        },
+        "images": {
+          "type": "array",
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^\\./assets/bugs/[A-Za-z0-9][A-Za-z0-9._/-]*\\.(?:avif|gif|jpe?g|png|webp)$"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "status": { "const": "open" } },
+            "required": ["status"]
+          },
+          "then": {
+            "properties": { "fixed_at": { "type": "null" } }
+          },
+          "else": {
+            "properties": { "fixed_at": { "type": "string", "format": "date-time" } }
+          }
+        }
+      ]
+    }
+  }
+}

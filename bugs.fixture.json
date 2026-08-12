@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-12T08:00:00.000Z",
+  "bugs": [
+    {
+      "id": "1600000000000000001",
+      "title": "Episode progress jumps back after reconnecting",
+      "body": "After the app regains a connection, the current episode can briefly return to the previous progress value. The correction appears after a second refresh.",
+      "posted_at": "2026-08-11T18:24:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Android", "Tracking", "Sync"],
+      "reactors_unique": 48,
+      "comments_count": 3,
+      "activity_7d": 31,
+      "comments": [
+        { "text": "This also happens when switching from mobile data to Wi-Fi.", "date": "2026-08-11T19:02:00.000Z", "is_team": false },
+        { "text": "We reproduced the stale progress response and are tracing the reconnect path.", "date": "2026-08-11T22:10:00.000Z", "is_team": true },
+        { "text": "A manual refresh restores the correct value every time.", "date": "2026-08-12T06:18:00.000Z", "is_team": false }
+      ],
+      "images": ["./assets/bugs/progress-reconnect.png"]
+    },
+    {
+      "id": "1600000000000000002",
+      "title": "Landscape player controls overlap the subtitle menu",
+      "body": "On compact screens, opening subtitle settings in landscape places the bottom controls above the last language choices.",
+      "posted_at": "2026-08-10T13:40:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["iOS", "Playback", "Accessibility"],
+      "reactors_unique": 36,
+      "comments_count": 2,
+      "activity_7d": 24,
+      "comments": [
+        { "text": "The overlap is strongest with larger system text enabled.", "date": "2026-08-10T15:06:00.000Z", "is_team": false },
+        { "text": "The safe-area calculation is confirmed and a layout fix is in review.", "date": "2026-08-11T08:45:00.000Z", "is_team": true }
+      ],
+      "images": ["./assets/bugs/subtitle-overlap.png", "./assets/bugs/subtitle-overlap-large-text.png"]
+    },
+    {
+      "id": "1600000000000000003",
+      "title": "Search keeps the previous query after clearing filters",
+      "body": "Using Clear all resets the visible chips but leaves the last query active, so the result count remains unexpectedly low.",
+      "posted_at": "2026-08-09T09:15:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Web", "Search"],
+      "reactors_unique": 29,
+      "comments_count": 2,
+      "activity_7d": 19,
+      "comments": [
+        { "text": "The search field looks empty even though results are still filtered.", "date": "2026-08-09T10:41:00.000Z", "is_team": false },
+        { "text": "We found a state reset missing from the desktop filter action.", "date": "2026-08-10T07:30:00.000Z", "is_team": true }
+      ],
+      "images": ["./assets/bugs/search-clear.png"]
+    },
+    {
+      "id": "1600000000000000004",
+      "title": "Release reminder can arrive twice",
+      "body": "A title followed on two devices can create a duplicate release reminder when both devices refresh near the release time.",
+      "posted_at": "2026-08-07T16:05:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Notifications", "Sync"],
+      "reactors_unique": 54,
+      "comments_count": 3,
+      "activity_7d": 17,
+      "comments": [
+        { "text": "Both alerts have the same title and timestamp.", "date": "2026-08-07T16:22:00.000Z", "is_team": false },
+        { "text": "We are adding an idempotency key shared across registered devices.", "date": "2026-08-08T11:10:00.000Z", "is_team": true },
+        { "text": "It has not repeated since disabling reminders on the second device.", "date": "2026-08-10T20:14:00.000Z", "is_team": false }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000005",
+      "title": "Poster grid flashes at the wrong size while scrolling",
+      "body": "Fast scrolling through a large collection briefly shows oversized poster placeholders before the correct image dimensions load.",
+      "posted_at": "2026-08-05T12:36:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Android", "Collections", "Performance"],
+      "reactors_unique": 41,
+      "comments_count": 2,
+      "activity_7d": 13,
+      "comments": [
+        { "text": "The flash is easier to see with a four-column grid.", "date": "2026-08-05T13:11:00.000Z", "is_team": false },
+        { "text": "The placeholder aspect ratio is not being retained during recycling.", "date": "2026-08-06T09:05:00.000Z", "is_team": true }
+      ],
+      "images": ["./assets/bugs/poster-grid.png"]
+    },
+    {
+      "id": "1600000000000000006",
+      "title": "Season total is stale after an episode is removed",
+      "body": "The season header can keep the old episode total until the app is restarted after an upstream episode removal.",
+      "posted_at": "2026-08-03T08:50:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Metadata", "Tracking"],
+      "reactors_unique": 33,
+      "comments_count": 2,
+      "activity_7d": 9,
+      "comments": [
+        { "text": "The episode list is correct; only the number in the header is stale.", "date": "2026-08-03T09:27:00.000Z", "is_team": false },
+        { "text": "We are invalidating the season summary when its episode set changes.", "date": "2026-08-04T14:18:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000007",
+      "title": "Back gesture closes the detail page and the filter sheet",
+      "body": "When a filter sheet is open over a detail page, one back gesture dismisses both layers instead of only the sheet.",
+      "posted_at": "2026-07-31T21:02:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Android", "Navigation"],
+      "reactors_unique": 25,
+      "comments_count": 1,
+      "activity_7d": 6,
+      "comments": [
+        { "text": "The navigation stack is consuming the same event twice; a fix is being tested.", "date": "2026-08-02T10:20:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000008",
+      "title": "Keyboard focus disappears after opening a review",
+      "body": "Opening and closing a review panel from the keyboard does not return focus to the original button.",
+      "posted_at": "2026-07-29T17:44:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Web", "Accessibility"],
+      "reactors_unique": 18,
+      "comments_count": 2,
+      "activity_7d": 4,
+      "comments": [
+        { "text": "Tab continues from the page header after the panel closes.", "date": "2026-07-29T18:01:00.000Z", "is_team": false },
+        { "text": "Focus restoration will be included with the panel semantics update.", "date": "2026-07-30T12:46:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000009",
+      "title": "Watchlist sort changes after background refresh",
+      "body": "A watchlist sorted by release date can return to recently added after the app refreshes in the background.",
+      "posted_at": "2026-07-27T14:12:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["iOS", "Watchlist", "Sync"],
+      "reactors_unique": 22,
+      "comments_count": 1,
+      "activity_7d": 3,
+      "comments": [
+        { "text": "The saved sort preference is correct but is applied after the first render.", "date": "2026-07-28T07:55:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000010",
+      "title": "Trailer audio continues after closing the modal",
+      "body": "Closing the trailer with the swipe gesture removes the video but audio can continue until another media item starts.",
+      "posted_at": "2026-07-25T20:28:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["iOS", "Playback"],
+      "reactors_unique": 47,
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        { "text": "Using the close button stops audio correctly.", "date": "2026-07-25T20:40:00.000Z", "is_team": false },
+        { "text": "The swipe dismissal path now shares the same player teardown in testing.", "date": "2026-07-26T09:33:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000011",
+      "title": "Calendar export omits late-night episodes",
+      "body": "Episodes released near midnight can be absent from the exported calendar when the device timezone differs from the release timezone.",
+      "posted_at": "2026-07-22T06:30:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Calendar", "Timezone"],
+      "reactors_unique": 31,
+      "comments_count": 2,
+      "activity_7d": 1,
+      "comments": [
+        { "text": "The missing item appears on the following day inside the app.", "date": "2026-07-22T08:19:00.000Z", "is_team": false },
+        { "text": "We are normalizing the calendar boundary before applying the display timezone.", "date": "2026-07-23T11:04:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000012",
+      "title": "Long collection names push the item count off screen",
+      "body": "A very long collection title can prevent the item count from remaining visible on narrow screens.",
+      "posted_at": "2026-07-18T11:17:00.000Z",
+      "status": "open",
+      "fixed_at": null,
+      "tags": ["Android", "Collections", "Layout"],
+      "reactors_unique": 15,
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        { "text": "The title needs a two-line limit while preserving the count column.", "date": "2026-07-19T07:18:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000013",
+      "title": "Watched toggle required two taps from search results",
+      "body": "The first tap selected the result card without changing watched state. The action now responds immediately.",
+      "posted_at": "2026-08-01T10:18:00.000Z",
+      "status": "fixed",
+      "fixed_at": "2026-08-10T15:42:00.000Z",
+      "tags": ["Android", "Search", "Tracking"],
+      "reactors_unique": 44,
+      "comments_count": 2,
+      "activity_7d": 16,
+      "comments": [
+        { "text": "The issue was limited to results rendered in the compact list.", "date": "2026-08-02T09:14:00.000Z", "is_team": true },
+        { "text": "The toggle works on the first tap after the update.", "date": "2026-08-11T07:26:00.000Z", "is_team": false }
+      ],
+      "images": ["./assets/bugs/watched-toggle.png"]
+    },
+    {
+      "id": "1600000000000000014",
+      "title": "Upcoming widget showed yesterday's date",
+      "body": "The home-screen widget did not advance its date after midnight unless the main app was opened.",
+      "posted_at": "2026-07-30T22:51:00.000Z",
+      "status": "fixed",
+      "fixed_at": "2026-08-09T08:20:00.000Z",
+      "tags": ["iOS", "Widgets", "Timezone"],
+      "reactors_unique": 39,
+      "comments_count": 2,
+      "activity_7d": 12,
+      "comments": [
+        { "text": "The widget refresh schedule now includes the next local midnight.", "date": "2026-08-08T13:06:00.000Z", "is_team": true },
+        { "text": "The date advanced without opening the app this morning.", "date": "2026-08-10T06:12:00.000Z", "is_team": false }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000015",
+      "title": "Profile statistics rounded percentages incorrectly",
+      "body": "Completion rates ending in half a percent could round down on the profile overview. The displayed value now uses consistent rounding.",
+      "posted_at": "2026-07-24T09:33:00.000Z",
+      "status": "fixed",
+      "fixed_at": "2026-08-07T17:05:00.000Z",
+      "tags": ["Web", "Profiles"],
+      "reactors_unique": 21,
+      "comments_count": 1,
+      "activity_7d": 7,
+      "comments": [
+        { "text": "The corrected formatting is now used across every profile metric.", "date": "2026-08-07T17:18:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000016",
+      "title": "Muted autoplay preference was ignored",
+      "body": "Previews could start with sound after reinstalling even when the restored preference was muted.",
+      "posted_at": "2026-07-21T15:09:00.000Z",
+      "status": "fixed",
+      "fixed_at": "2026-08-05T12:36:00.000Z",
+      "tags": ["Android", "Playback", "Settings"],
+      "reactors_unique": 52,
+      "comments_count": 2,
+      "activity_7d": 5,
+      "comments": [
+        { "text": "The restored preference is now applied before the preview player is created.", "date": "2026-08-04T10:08:00.000Z", "is_team": true },
+        { "text": "Previews stayed muted after a clean reinstall.", "date": "2026-08-06T07:42:00.000Z", "is_team": false }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000017",
+      "title": "Import progress stopped at ninety-nine percent",
+      "body": "Completed imports could leave the progress banner visible at ninety-nine percent until the page was reloaded.",
+      "posted_at": "2026-07-18T07:47:00.000Z",
+      "status": "fixed",
+      "fixed_at": "2026-08-03T09:28:00.000Z",
+      "tags": ["Import", "Sync", "Web"],
+      "reactors_unique": 63,
+      "comments_count": 3,
+      "activity_7d": 4,
+      "comments": [
+        { "text": "The imported items were already present even while the banner remained.", "date": "2026-07-18T08:11:00.000Z", "is_team": false },
+        { "text": "The final progress event was being discarded after the completion event.", "date": "2026-07-19T11:52:00.000Z", "is_team": true },
+        { "text": "The banner now closes when the import finishes.", "date": "2026-08-04T06:58:00.000Z", "is_team": false }
+      ],
+      "images": ["./assets/bugs/import-progress.png"]
+    },
+    {
+      "id": "1600000000000000018",
+      "title": "Genre filter excluded titles with multiple genres",
+      "body": "Selecting one genre could hide titles that matched it alongside other genres. Multi-genre matches are now included.",
+      "posted_at": "2026-07-12T18:00:00.000Z",
+      "status": "fixed",
+      "fixed_at": "2026-07-30T14:11:00.000Z",
+      "tags": ["Discovery", "Filters"],
+      "reactors_unique": 34,
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        { "text": "The filter now checks every genre attached to a title.", "date": "2026-07-30T14:20:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000019",
+      "title": "Notification badge remained after opening the inbox",
+      "body": "The unread badge did not clear when the inbox was opened from a push notification.",
+      "posted_at": "2026-07-09T12:25:00.000Z",
+      "status": "fixed",
+      "fixed_at": "2026-07-28T16:44:00.000Z",
+      "tags": ["Notifications", "Navigation"],
+      "reactors_unique": 28,
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        { "text": "Opening the inbox from inside the app already cleared the badge.", "date": "2026-07-09T12:50:00.000Z", "is_team": false },
+        { "text": "Both entry paths now acknowledge the same unread state.", "date": "2026-07-28T16:52:00.000Z", "is_team": true }
+      ],
+      "images": []
+    },
+    {
+      "id": "1600000000000000020",
+      "title": "Compact mode clipped the final line of reviews",
+      "body": "The last line of a review could be partially hidden when compact text spacing was enabled.",
+      "posted_at": "2026-07-04T08:14:00.000Z",
+      "status": "fixed",
+      "fixed_at": "2026-07-25T10:02:00.000Z",
+      "tags": ["Android", "Reviews", "Accessibility"],
+      "reactors_unique": 19,
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        { "text": "The review container now grows from measured text height in every spacing mode.", "date": "2026-07-25T10:12:00.000Z", "is_team": true }
+      ],
+      "images": []
+    }
+  ]
+}
