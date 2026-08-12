@@ -8,7 +8,7 @@
   "required": ["schema_version", "generated_at", "bugs"],
   "properties": {
     "schema_version": {
-      "const": 1
+      "const": 2
     },
     "generated_at": {
       "type": "string",
@@ -45,6 +45,43 @@
         }
       }
     },
+    "customEmoji": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "id"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[^@\\r\\n]+$"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9]{17,20}$"
+        }
+      }
+    },
+    "reaction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["emoji", "count"],
+      "properties": {
+        "emoji": {
+          "oneOf": [
+            { "type": "string", "minLength": 1, "maxLength": 32 },
+            { "$ref": "#/$defs/customEmoji" }
+          ]
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "negative": {
+          "type": "boolean"
+        }
+      }
+    },
     "bug": {
       "type": "object",
       "additionalProperties": false,
@@ -57,6 +94,8 @@
         "fixed_at",
         "tags",
         "reactors_unique",
+        "score",
+        "reactions",
         "comments_count",
         "activity_7d",
         "comments",
@@ -101,6 +140,19 @@
         "reactors_unique": {
           "type": "integer",
           "minimum": 0
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Popularity score emitted by the shared /topbugs scoring module using TOPBUGS_REACTION_WEIGHT, TOPBUGS_COMMENTER_WEIGHT and TOPBUGS_HALF_LIFE_DAYS."
+        },
+        "reactions": {
+          "type": "array",
+          "maxItems": 50,
+          "description": "Discord reaction aggregates in the same public shape as the Roadmap reaction feed.",
+          "items": {
+            "$ref": "#/$defs/reaction"
+          }
         },
         "comments_count": {
           "type": "integer",

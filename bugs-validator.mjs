@@ -31,7 +31,7 @@ export function validateBugEntry(entry) {
   const errors = [];
   const allowedKeys = new Set([
     'id', 'title', 'body', 'posted_at', 'status', 'fixed_at', 'tags',
-    'reactors_unique', 'comments_count', 'activity_7d', 'comments', 'images',
+    'reactors_unique', 'score', 'reactions', 'comments_count', 'activity_7d', 'comments', 'images',
   ]);
 
   if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
@@ -63,6 +63,44 @@ export function validateBugEntry(entry) {
 
   for (const field of ['reactors_unique', 'comments_count', 'activity_7d']) {
     if (!Number.isInteger(entry[field]) || entry[field] < 0) errors.push(`${field} must be a non-negative integer`);
+  }
+  if (typeof entry.score !== 'number' || !Number.isFinite(entry.score) || entry.score < 0) {
+    errors.push('score must be a non-negative finite number');
+  }
+
+  if (!Array.isArray(entry.reactions) || entry.reactions.length > 50) {
+    errors.push('reactions must be an array with at most 50 values');
+  } else {
+    const reactionKeys = new Set();
+    entry.reactions.forEach((reaction, index) => {
+      const prefix = `reactions[${index}]`;
+      if (!reaction || typeof reaction !== 'object' || Array.isArray(reaction)) {
+        errors.push(`${prefix} must be an object`);
+        return;
+      }
+      const keys = Object.keys(reaction);
+      if (keys.some((key) => !['emoji', 'count', 'negative'].includes(key)) || !keys.includes('emoji') || !keys.includes('count')) {
+        errors.push(`${prefix} has an invalid shape`);
+      }
+      const emoji = reaction.emoji;
+      let identity = null;
+      if (typeof emoji === 'string') {
+        if (!emoji || emoji.length > 32) errors.push(`${prefix}.emoji must contain 1 to 32 characters`);
+        identity = `unicode:${emoji}`;
+      } else if (emoji && typeof emoji === 'object' && !Array.isArray(emoji)) {
+        const emojiKeys = Object.keys(emoji);
+        if (emojiKeys.length !== 2 || !emojiKeys.includes('name') || !emojiKeys.includes('id')) errors.push(`${prefix}.emoji has an invalid custom emoji shape`);
+        if (typeof emoji.name !== 'string' || !emoji.name.trim() || emoji.name.length > 64 || /[@\r\n]/u.test(emoji.name)) errors.push(`${prefix}.emoji.name is invalid`);
+        if (typeof emoji.id !== 'string' || !ID_PATTERN.test(emoji.id)) errors.push(`${prefix}.emoji.id must contain 17 to 20 digits`);
+        identity = `custom:${emoji.id}`;
+      } else {
+        errors.push(`${prefix}.emoji must be Unicode text or a custom emoji object`);
+      }
+      if (!Number.isInteger(reaction.count) || reaction.count < 1) errors.push(`${prefix}.count must be a positive integer`);
+      if ('negative' in reaction && typeof reaction.negative !== 'boolean') errors.push(`${prefix}.negative must be boolean`);
+      if (identity && reactionKeys.has(identity)) errors.push('reactions must contain unique emoji');
+      if (identity) reactionKeys.add(identity);
+    });
   }
 
   if (!Array.isArray(entry.comments)) {
@@ -105,7 +143,7 @@ export function validateBugDataset(data) {
   }
   const rootKeys = Object.keys(data);
   if (rootKeys.some((key) => !['schema_version', 'generated_at', 'bugs'].includes(key))) rootErrors.push('dataset contains unexpected root fields');
-  if (data.schema_version !== 1) rootErrors.push('schema_version must equal 1');
+  if (data.schema_version !== 2) rootErrors.push('schema_version must equal 2');
   if (!isDate(data.generated_at)) rootErrors.push('generated_at must be an ISO date-time');
   if (!Array.isArray(data.bugs)) rootErrors.push('bugs must be an array');
   if (rootErrors.length) {

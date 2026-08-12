@@ -1,4 +1,4 @@
-import { bugThreadUrl, datasetCounters, nextSortState, relativeAge, selectBugs } from './bugs-logic.mjs';
+import { bugThreadUrl, datasetCounters, nextSortState, reactionPillDisplay, relativeAge, selectBugs } from './bugs-logic.mjs';
 import { validateBugDataset } from './bugs-validator.mjs';
 
 const DISCORD_GUILD_ID = '1490347491151970366';
@@ -285,6 +285,31 @@ function createImages(bug) {
   return section;
 }
 
+function reactionEmoji(emoji) {
+  if (typeof emoji === 'string') return el('span', 'reaction-emoji', emoji);
+  const fallback = el('span', 'reaction-fallback', `:${emoji.name}:`);
+  fallback.setAttribute('aria-label', `Custom emoji ${emoji.name}`);
+  return fallback;
+}
+
+function createReactionRow(bug) {
+  const display = reactionPillDisplay(bug);
+  if (display.visible.length === 0) return null;
+  const row = el('div', 'reaction-row');
+  row.setAttribute('aria-label', 'Reactions');
+  for (const reaction of display.visible) {
+    const pill = el('span', `reaction-pill reaction-${reaction.semantic}`);
+    pill.append(reactionEmoji(reaction.emoji), el('span', '', reaction.count.toLocaleString('en')));
+    row.append(pill);
+  }
+  if (display.hiddenCount > 0) {
+    const overflow = el('span', 'reaction-overflow', `+${display.hiddenCount.toLocaleString('en')}`);
+    overflow.setAttribute('aria-label', plural(display.hiddenCount, 'additional reaction'));
+    row.append(overflow);
+  }
+  return row;
+}
+
 function createCard(bug, rank) {
   const card = el('article', `row bug-card ${bug.status}-card${rank < 3 ? ` rank-${rank + 1}` : ''}`);
   card.dataset.bugId = bug.id;
@@ -319,7 +344,10 @@ function createCard(bug, rank) {
     setChipColor(chip, TAG_COLORS[tag] ?? '#B2BEC3');
     chips.append(chip);
   });
-  body.append(titleLine, description, meta, chips);
+  body.append(titleLine, description);
+  const reactions = createReactionRow(bug);
+  if (reactions) body.append(reactions);
+  body.append(meta, chips);
   summary.append(votes, body);
 
   const details = el('div', 'bug-details');

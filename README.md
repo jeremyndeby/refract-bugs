@@ -6,15 +6,31 @@ two views: Open and Fixed.
 
 ## Frozen data contract
 
-`bugs.schema.json` is the stable version-1 public contract. `bugs.fixture.json`
+`bugs.schema.json` is the stable version-2 public contract. `bugs.fixture.json`
 contains twenty realistic, author-free records. During Part 1, `bugs.json` is an
 exact copy of that fixture so GitHub Pages can exercise the complete UI before
 the private exporter exists.
 
 Each record contains only its public bug ID, title, body, dates, state, tags,
-unique reactor count, comment count, seven-day activity, author-free comments,
-and local image paths. There is no author or username field. Team comments use
+unique reactor count, the shared `/topbugs` score, reaction counts, comment
+count, seven-day activity, author-free comments, and local image paths. There
+is no author or username field. Team comments use
 only `is_team: true` and render a generic `TEAM` badge.
+
+`score` is producer-owned: the Part 2 exporter must import and call the same
+shared scoring module as `/topbugs`, never a copied or reimplemented formula,
+using `TOPBUGS_REACTION_WEIGHT`,
+`TOPBUGS_COMMENTER_WEIGHT`, and `TOPBUGS_HALF_LIFE_DAYS`. The public site does
+not recalculate it; its Popularity sort consumes the emitted value directly, so
+one configuration change affects `/topbugs` and this site together.
+The synthetic fixture scores are representative contract values, not live
+`/topbugs` output.
+
+`reactions` uses the Roadmap shape: `{ "emoji": "💜", "count": 12 }`, with
+optional `negative: true`; custom emoji may use `{ "name", "id" }` in place of
+the Unicode string. The site renders the same three-pill row and overflow count
+as Roadmap. It never hotlinks a custom emoji: without a local public asset, the
+safe `:name:` fallback is shown.
 
 The shared validator rejects individual entries containing email or token
 patterns, unknown fields, inconsistent status dates, or non-local image URLs.

@@ -8,6 +8,20 @@ export function nextSortState(currentSort, currentDirection, requestedSort) {
   };
 }
 
+export function reactionPillDisplay(item, { limit = 3 } = {}) {
+  const maxVisible = Math.max(0, Number.isInteger(limit) ? limit : 3);
+  const reactions = Array.isArray(item?.reactions) ? item.reactions : [];
+  return {
+    visible: reactions.slice(0, maxVisible).map((reaction) => ({
+      ...reaction,
+      semantic: reaction.emoji === '💜'
+        ? 'primary'
+        : reaction.negative === true ? 'negative' : 'positive',
+    })),
+    hiddenCount: Math.max(0, reactions.length - maxVisible),
+  };
+}
+
 export function bugThreadUrl(bug, guildId) {
   return bug?.status === 'open' && bug?.id
     ? `https://discord.com/channels/${guildId}/${bug.id}`
@@ -74,7 +88,7 @@ export function selectBugs(items, {
   const multiplier = direction === 'asc' ? 1 : -1;
   return selected.sort((a, b) => {
     let delta = 0;
-    if (sort === 'popularity') delta = a.reactors_unique - b.reactors_unique;
+    if (sort === 'popularity') delta = a.score - b.score;
     else if (sort === 'trending') delta = a.activity_7d - b.activity_7d;
     else delta = Date.parse(dateForSort(a, status)) - Date.parse(dateForSort(b, status));
     if (delta === 0) delta = Date.parse(a.posted_at) - Date.parse(b.posted_at);

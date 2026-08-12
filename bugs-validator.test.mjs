@@ -12,6 +12,23 @@ test('the public fixture satisfies the frozen contract', () => {
   assert.equal(result.accepted.length, 20);
 });
 
+test('score and Roadmap-shaped reactions are required contract fields', () => {
+  const missingScore = structuredClone(fixture.bugs[0]);
+  delete missingScore.score;
+  assert.match(validateBugEntry(missingScore).join(' '), /missing field: score/u);
+
+  const invalidReaction = structuredClone(fixture.bugs[0]);
+  invalidReaction.reactions = [{ emoji: '💜', count: 0 }];
+  assert.match(validateBugEntry(invalidReaction).join(' '), /positive integer/u);
+});
+
+test('custom Roadmap emoji shape is accepted without adding a remote URL', () => {
+  const entry = structuredClone(fixture.bugs[0]);
+  entry.reactions = [{ emoji: { name: 'octolove', id: '1528814869196050702' }, count: 1 }];
+  assert.deepEqual(validateBugEntry(entry), []);
+  assert.equal(JSON.stringify(entry).includes('http'), false);
+});
+
 test('an email rejects only its entry below the publication threshold', () => {
   const bugs = structuredClone(fixture.bugs);
   bugs.push({ ...structuredClone(bugs[0]), id: '1600000000000000099', body: 'Reply to person@example.test' });
