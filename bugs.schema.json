@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "generated_at", "bugs"],
   "properties": {
-    "schema_version": { "const": 4 },
+    "schema_version": { "const": 5 },
     "generated_at": { "type": "string", "format": "date-time" },
     "bugs": { "type": "array", "items": { "$ref": "#/$defs/bug" } }
   },
@@ -66,8 +66,8 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 80,
-          "pattern": "^[^@\\r\\n]+$",
-          "description": "Present only for a current member of the Discord Dev role."
+          "pattern": "^[^@|\\r\\n]+$",
+          "description": "Public display name for a current Discord Dev or Mod role member. Dev names are canonical by ID; Mod names are cleaned guild nicknames derived by ID."
         },
         "reactions": { "type": "array", "maxItems": 50, "items": { "$ref": "#/$defs/reaction" } }
       },
@@ -86,7 +86,7 @@
           "then": { "required": ["team_role"] }
         },
         {
-          "if": { "properties": { "team_role": { "const": "dev" } }, "required": ["team_role"] },
+          "if": { "properties": { "team_role": { "enum": ["dev", "mod"] } }, "required": ["team_role"] },
           "then": { "required": ["team_name"] },
           "else": { "not": { "required": ["team_name"] } }
         }

@@ -8,6 +8,7 @@ const LOCAL_IMAGE_PATTERN = /^\.\/assets\/bugs\/[A-Za-z0-9][A-Za-z0-9._/-]*\.(?:
 const AUTHOR_KEY_PATTERN = /^[A-Za-z][A-Za-z -]{2,47}$/u;
 const STATUSES = new Set(['open', 'fixed', 'duplicate', 'off_topic']);
 const STATUS_TAGS = new Set(['🔍 Investigating', '🛠 In Progress']);
+const RAW_CUSTOM_EMOJI_PATTERN = /<a?:[A-Za-z0-9_]{1,32}:\d{17,20}>/u;
 
 function isDate(value) {
   return typeof value === 'string' && Number.isFinite(Date.parse(value));
@@ -23,6 +24,7 @@ function collectStrings(value, path = '$', result = []) {
 export function sensitivePattern(value) {
   if (EMAIL_PATTERN.test(value)) return 'email';
   if (TOKEN_PATTERN.test(value)) return 'token';
+  if (RAW_CUSTOM_EMOJI_PATTERN.test(value)) return 'raw Discord custom emoji';
   return null;
 }
 
@@ -79,10 +81,10 @@ function validateComments(entry, errors) {
     const validTeamRole = ['dev', 'mod', 'team'].includes(comment.team_role);
     if (comment.is_team && !validTeamRole) errors.push(`${prefix}.team_role is required on TEAM comments`);
     if (!comment.is_team && 'team_role' in comment) errors.push(`${prefix}.team_role is allowed only on TEAM comments`);
-    if (comment.team_role === 'dev') {
-      if (typeof comment.team_name !== 'string' || !comment.team_name.trim() || comment.team_name.length > 80 || /[@\r\n]/u.test(comment.team_name)) errors.push(`${prefix}.team_name is required for Dev and must be safe canonical text`);
+    if (comment.team_role === 'dev' || comment.team_role === 'mod') {
+      if (typeof comment.team_name !== 'string' || !comment.team_name.trim() || comment.team_name.length > 80 || /[@|\r\n]|\p{Extended_Pictographic}/u.test(comment.team_name)) errors.push(`${prefix}.team_name is required for Dev and Mod and must be safe public text`);
     } else if ('team_name' in comment) {
-      errors.push(`${prefix}.team_name is allowed only for Dev comments`);
+      errors.push(`${prefix}.team_name is allowed only for Dev and Mod comments`);
     }
     validateReactionList(comment.reactions, `${prefix}.reactions`, errors);
   });
@@ -170,7 +172,7 @@ export function validateBugDataset(data) {
   if (!data || typeof data !== 'object' || Array.isArray(data)) return { accepted: [], rejected: [], blocked: true, rootErrors: ['dataset must be an object'], total: 0, rejectedRatio: 1 };
   const rootKeys = Object.keys(data);
   if (rootKeys.some((key) => !['schema_version', 'generated_at', 'bugs'].includes(key))) rootErrors.push('dataset contains unexpected root fields');
-  if (data.schema_version !== 4) rootErrors.push('schema_version must equal 4');
+  if (data.schema_version !== 5) rootErrors.push('schema_version must equal 5');
   if (!isDate(data.generated_at)) rootErrors.push('generated_at must be an ISO date-time');
   if (!Array.isArray(data.bugs)) rootErrors.push('bugs must be an array');
   if (rootErrors.length) return { accepted: [], rejected: [], blocked: true, rootErrors, total: 0, rejectedRatio: 1 };

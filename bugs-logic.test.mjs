@@ -39,18 +39,20 @@ test('reaction pills mirror Roadmap semantics and collapse after three values', 
   assert.equal(display.hiddenCount, 1);
 });
 
-test('TEAM participation groups Dev names and aggregates anonymous Mods', () => {
+test('TEAM participation groups Dev and Mod names independently', () => {
   assert.deepEqual(teamParticipation([
     { is_team: true, team_role: 'dev', team_name: 'Boulet' },
-    { is_team: true, team_role: 'mod' },
+    { is_team: true, team_role: 'mod', team_name: 'Eli' },
     { is_team: false },
     { is_team: true, team_role: 'dev', team_name: 'Boulet' },
     { is_team: true, team_role: 'dev', team_name: 'Exooo' },
-    { is_team: true, team_role: 'mod' },
+    { is_team: true, team_role: 'mod', team_name: 'Eli' },
+    { is_team: true, team_role: 'mod', team_name: 'Mara' },
   ]), [
     { kind: 'dev', name: 'Boulet', count: 2 },
     { kind: 'dev', name: 'Exooo', count: 1 },
-    { kind: 'mod', name: 'MOD', count: 2 },
+    { kind: 'mod', name: 'Eli', count: 2 },
+    { kind: 'mod', name: 'Mara', count: 1 },
   ]);
 });
 

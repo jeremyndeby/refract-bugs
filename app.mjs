@@ -276,6 +276,8 @@ function createComments(bug, collapse) {
   close.addEventListener('click', collapse);
   header.append(heading, close);
   section.append(header);
+  const participation = createTeamParticipationRow(bug);
+  if (participation) section.append(participation);
   if (bug.comments.length === 0) {
     section.append(el('p', 'thread-empty', 'No public comments yet.'));
     return section;
@@ -283,15 +285,20 @@ function createComments(bug, collapse) {
   const list = el('ol', 'comment-list');
   for (const comment of bug.comments) {
     const isOp = comment.author_key === bug.author_key;
-    const item = el('li', `comment${comment.is_team ? ' team-comment' : isOp ? ' op-comment' : ''}`);
+    const teamRole = comment.is_team ? comment.team_role ?? (comment.team_name ? 'dev' : 'team') : null;
+    const teamClass = teamRole === 'dev' ? ' team-comment dev-comment'
+      : teamRole === 'mod' ? ' team-comment mod-comment'
+        : comment.is_team ? ' team-comment' : '';
+    const item = el('li', `comment${teamClass || (isOp ? ' op-comment' : '')}`);
     const head = el('div', 'comment-head');
     if (comment.is_team) {
-      const teamRole = comment.team_role ?? (comment.team_name ? 'dev' : 'team');
-      head.append(el('span', `team-badge${teamRole === 'mod' ? ' team-mod-badge' : ''}`, teamRole === 'mod' ? 'TEAM MOD' : 'TEAM'));
-      if (teamRole === 'dev' && comment.team_name) {
-        const dev = el('span', 'dev-name', comment.team_name);
-        dev.style.setProperty('--author-color', stableColor(comment.team_name, { saturation: 70, lightness: 72 }));
-        head.append(dev);
+      head.append(el('span', `team-badge${teamRole === 'mod' ? ' mod-badge' : ''}`, teamRole === 'mod' ? 'MOD' : 'TEAM'));
+      if ((teamRole === 'dev' || teamRole === 'mod') && comment.team_name) {
+        const memberName = el('span', teamRole === 'mod' ? 'mod-name' : 'dev-name', comment.team_name);
+        if (teamRole === 'dev') {
+          memberName.style.setProperty('--author-color', stableColor(comment.team_name, { saturation: 70, lightness: 72 }));
+        }
+        head.append(memberName);
       }
     }
     if (!comment.is_team || isOp) {
@@ -471,8 +478,6 @@ function createCard(bug, rank) {
     chips.append(chip);
   });
   body.append(titleLine, description);
-  const teamParticipationRow = createTeamParticipationRow(bug);
-  if (teamParticipationRow) body.append(teamParticipationRow);
   const thumbnail = createThumbnail(bug);
   const reactions = createReactionRow(bug);
   if (reactions) body.append(reactions);
@@ -499,15 +504,21 @@ function createCard(bug, rank) {
   commentToggle.type = 'button';
   commentToggle.setAttribute('aria-controls', detailsId);
   commentToggle.setAttribute('aria-expanded', 'false');
-  commentToggle.setAttribute('aria-label', `${plural(bug.comments_count, 'comment')}. Open discussion for ${bug.title}`);
-  commentToggle.dataset.openLabel = `${plural(bug.comments_count, 'comment')}. Open discussion for ${bug.title}`;
+  commentToggle.setAttribute('aria-label', `Open discussion for ${bug.title}`);
+  commentToggle.dataset.openLabel = `Open discussion for ${bug.title}`;
   commentToggle.dataset.closeLabel = `Close discussion for ${bug.title}`;
-  commentToggle.append(
+  commentToggle.append(el('span', 'comment-arrow', '⌄'));
+  const commentTotal = el('span', 'comment-total-pill');
+  commentTotal.setAttribute('aria-label', plural(bug.comments_count, 'comment'));
+  commentTotal.append(
     el('span', 'comment-bubble', '💬'),
     el('span', 'comment-count', String(bug.comments_count)),
-    el('span', 'comment-arrow', '⌄'),
   );
-  actions.append(commentToggle);
+  const discussionActions = el('div', 'discussion-actions');
+  const teamParticipationRow = createTeamParticipationRow(bug);
+  if (teamParticipationRow) discussionActions.append(teamParticipationRow);
+  discussionActions.append(commentTotal, commentToggle);
+  actions.append(discussionActions);
   summary.addEventListener('click', () => toggleCard(card, summary, details, bug.id));
   commentToggle.addEventListener('click', () => toggleCard(card, commentToggle, details, bug.id));
   card.append(summary);
