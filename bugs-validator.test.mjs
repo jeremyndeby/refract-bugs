@@ -5,7 +5,7 @@ import { sanitizeBugDataset, validateBugDataset, validateBugEntry } from './bugs
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
-test('the public fixture satisfies the v4 Dev and Mod identity contract', () => {
+test('the public fixture satisfies the v5 Dev and Mod identity contract', () => {
   const result = validateBugDataset(fixture);
   assert.equal(result.blocked, false);
   assert.equal(result.rejected.length, 0);
@@ -22,7 +22,7 @@ test('score and Roadmap-shaped reactions are required contract fields', () => {
   assert.match(validateBugEntry(invalidReaction).join(' '), /positive integer/u);
 });
 
-test('v4 requires the OP author key, per-comment author keys, reactions and closed dates', () => {
+test('v5 requires the OP author key, per-comment author keys, reactions and closed dates', () => {
   const missingOp = structuredClone(fixture.bugs[0]);
   delete missingOp.author_key;
   assert.match(validateBugEntry(missingOp).join(' '), /missing field: author_key/u);
@@ -48,19 +48,22 @@ test('the fixture marks OP replies by reusing the card author_key', () => {
     !comment.is_team && comment.author_key === entry.author_key));
 });
 
-test('Dev names are canonical, Mods stay anonymous, and status attribution uses the closed tag vocabulary', () => {
+test('Dev and Mod names are public only on their respective TEAM roles', () => {
   const entry = structuredClone(fixture.bugs[0]);
   entry.comments[0].team_name = 'Community Person';
-  assert.match(validateBugEntry(entry).join(' '), /team_name is allowed only for Dev/u);
+  assert.match(validateBugEntry(entry).join(' '), /team_name is allowed only for Dev and Mod/u);
+  delete entry.comments[0].team_name;
 
   const team = entry.comments.find((comment) => comment.is_team);
   team.team_role = 'mod';
-  team.team_name = 'Visible Mod';
-  assert.match(validateBugEntry(entry).join(' '), /team_name is allowed only for Dev/u);
+  team.team_name = 'Eli';
+  assert.deepEqual(validateBugEntry(entry), []);
+
+  team.team_name = 'Eli | 💗';
+  assert.match(validateBugEntry(entry).join(' '), /safe public text/u);
 
   delete team.team_name;
-  delete team.team_role;
-  assert.match(validateBugEntry(entry).join(' '), /team_role is required/u);
+  assert.match(validateBugEntry(entry).join(' '), /team_name is required for Dev and Mod/u);
 
   const invalidStatus = structuredClone(fixture.bugs[0]);
   invalidStatus.status_tags = [{ tag: '⏳ Waiting' }];
@@ -102,6 +105,12 @@ test('a token-like value is rejected', () => {
   const entry = structuredClone(fixture.bugs[0]);
   entry.comments[0].text = 'authorization=abcdefghijklmnop';
   assert.match(validateBugEntry(entry).join(' '), /forbidden token/u);
+});
+
+test('raw Discord custom emoji markup is rejected from public text', () => {
+  const entry = structuredClone(fixture.bugs[0]);
+  entry.body = 'Thanks <:thank_you:1526362398884237332>';
+  assert.match(validateBugEntry(entry).join(' '), /raw Discord custom emoji/u);
 });
 
 test('hotlinked images are rejected', () => {

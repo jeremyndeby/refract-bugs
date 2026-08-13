@@ -29,7 +29,26 @@ test('mobile edge badges reserve room for the rank badge', () => {
 
 test('cards expose Dev and Mod participation before discussion expansion', () => {
   assert.match(app, /createTeamParticipationRow\(bug\)/u);
-  assert.match(app, /teamRole === 'mod' \? 'TEAM MOD' : 'TEAM'/u);
+  assert.match(app, /teamRole === 'mod' \? 'MOD' : 'TEAM'/u);
+  assert.match(app, /teamRole === 'mod' \? 'mod-name' : 'dev-name'/u);
   assert.match(app, /team-participation-pill/u);
   assert.match(styles, /\.team-participation-row \{[\s\S]*?flex-wrap: wrap;/u);
+  assert.match(styles, /\.mod-comment \{[\s\S]*?var\(--mod-pink\)/u);
+  assert.match(styles, /\.mod-name \{ color: var\(--mod-pink\); \}/u);
+  assert.match(styles, /\.mod-participation-pill \{[\s\S]*?--participant-color: var\(--mod-pink\);/u);
+});
+
+test('comment participation, total, and expansion controls share the card footer', () => {
+  const card = app.slice(app.indexOf('function createCard'), app.indexOf('function selectedBugs'));
+  assert.ok(card.indexOf("const teamParticipationRow = createTeamParticipationRow(bug)") > card.indexOf("const discussionActions"));
+  assert.ok(card.indexOf('discussionActions.append(teamParticipationRow)') < card.indexOf('discussionActions.append(commentTotal, commentToggle)'));
+  assert.match(card, /commentTotal\.append\([\s\S]*?'comment-bubble'[\s\S]*?'comment-count'/u);
+  assert.doesNotMatch(card, /commentTotal\.append\([\s\S]*?'comment-arrow'/u);
+  assert.match(card, /commentToggle\.append\(el\('span', 'comment-arrow', '⌄'\)\)/u);
+  assert.match(styles, /\.discussion-actions \{[\s\S]*?justify-content: flex-end;/u);
+});
+
+test('expanded discussions repeat team participation above comments', () => {
+  const comments = app.slice(app.indexOf('function createComments'), app.indexOf('function openLightbox'));
+  assert.ok(comments.indexOf('section.append(participation)') < comments.indexOf("const list = el('ol', 'comment-list')"));
 });

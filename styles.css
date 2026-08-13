@@ -21,6 +21,7 @@
   --silver: #B2BEC3;
   --bronze: #CD7F32;
   --planned: #3498DB;
+  --mod-pink: #FF7AC6;
   --primary-subtle: #6C5CE71A;
   --primary-border: #6C5CE740;
   --success-subtle: #00B8941A;
@@ -823,6 +824,9 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   gap: 4px;
   margin: 8px 0;
 }
+.discussion-actions .team-participation-row,
+.bug-thread > .team-participation-row { margin: 0; }
+.bug-thread > .team-participation-row { margin-bottom: 12px; }
 .team-participation-pill {
   display: inline-flex;
   min-height: 23px;
@@ -838,8 +842,7 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   white-space: nowrap;
 }
 .mod-participation-pill {
-  --participant-color: var(--primary-light);
-  letter-spacing: 0.04em;
+  --participant-color: var(--mod-pink);
 }
 .terminal-fixed { --age-color: #55EFC4; }
 .terminal-duplicate { --age-color: #A29BFE; }
@@ -908,13 +911,19 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   background: rgba(30, 34, 37, 0.55);
 }
 .team-comment { border-left: 3px solid var(--primary); background: var(--primary-subtle); }
+.mod-comment {
+  border-color: color-mix(in srgb, var(--mod-pink) 32%, var(--line));
+  border-left: 3px solid var(--mod-pink);
+  background: color-mix(in srgb, var(--mod-pink) 9%, rgba(30, 34, 37, 0.55));
+}
 .op-comment {
   border-left: 3px solid color-mix(in srgb, var(--primary) 58%, transparent);
   background: color-mix(in srgb, var(--primary) 7%, rgba(30, 34, 37, 0.55));
 }
 .comment-head { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
 .comment-head time { color: var(--text-muted); font-size: 10px; }
-.author-key, .dev-name { color: var(--author-color); font-size: 11px; font-weight: 700; }
+.author-key, .dev-name, .mod-name { color: var(--author-color); font-size: 11px; font-weight: 700; }
+.mod-name { color: var(--mod-pink); }
 .card-op-author { color: var(--author-color); font-weight: 750; }
 .discussion-heading { display: flex; align-items: center; justify-content: space-between; }
 .discussion-collapse {
@@ -937,9 +946,11 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   font-weight: 700;
   letter-spacing: 0.08em;
 }
-.team-mod-badge {
-  border-color: color-mix(in srgb, var(--primary-light) 72%, transparent);
-  letter-spacing: 0.06em;
+.mod-badge {
+  border-color: color-mix(in srgb, var(--mod-pink) 72%, transparent);
+  background: color-mix(in srgb, var(--mod-pink) 18%, transparent);
+  color: var(--mod-pink);
+  letter-spacing: 0.08em;
 }
 .op-badge {
   padding: 1px 5px;
@@ -995,28 +1006,46 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
 .lightbox-open { overflow: hidden; }
 .card-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
   justify-content: space-between;
   min-height: 42px;
   padding: 8px var(--card-pad) 12px;
 }
+.discussion-actions {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.comment-total-pill,
 .comment-toggle {
   display: inline-flex;
   min-height: 32px;
   gap: 6px;
   align-items: center;
-  margin-left: auto;
   padding: 5px 9px;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--tabbar);
   color: var(--text-secondary);
-  cursor: pointer;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
   transition: border-color 140ms ease, color 140ms ease, background 140ms ease;
+}
+.comment-total-pill { cursor: default; }
+.comment-toggle {
+  width: 32px;
+  flex: 0 0 32px;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
 }
 .comment-toggle:hover { border-color: var(--primary-border); color: var(--primary-light); }
 .comment-toggle:active { border-color: var(--primary); background: var(--primary-dark); color: var(--text-bright); }
@@ -1820,7 +1849,9 @@ noscript { display: block; padding: 20px; color: var(--text); text-align: center
   .bug-title-line h2 { min-width: 0; flex: 1 1 auto; }
   .bug-details { margin: 0 12px; padding: 14px 0; }
   .card-actions { align-items: center; flex-direction: row; gap: 6px; padding: 7px 12px 12px; }
-  .comment-toggle { min-height: 30px; padding: 4px 8px; }
+  .comment-total-pill, .comment-toggle { min-height: 30px; }
+  .comment-total-pill { padding: 4px 8px; }
+  .comment-toggle { width: 30px; flex-basis: 30px; padding: 4px; }
   .image-gallery { grid-template-columns: 1fr; }
   .bug-edge-badge { max-width: calc(100% - 70px); }
   .terminal-pill { max-width: 45%; min-height: 22px; padding: 3px 6px; font-size: 9px; }
