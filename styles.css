@@ -866,8 +866,10 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
 }
 .bug-full-copy { margin-bottom: 20px; }
 .bug-full-copy p, .comment p, .thread-empty { color: var(--text); font-size: 13px; line-height: 1.6; }
+.comment p { overflow-wrap: anywhere; }
 .comment-list { display: grid; gap: 9px; list-style: none; }
 .comment {
+  min-width: 0;
   padding: 11px 12px;
   border: 1px solid var(--line);
   border-radius: 9px;
