@@ -22,7 +22,11 @@ test('score and Roadmap-shaped reactions are required contract fields', () => {
   assert.match(validateBugEntry(invalidReaction).join(' '), /positive integer/u);
 });
 
-test('v3 requires per-post author keys, comment reactions and closed resolution dates', () => {
+test('v3 requires the OP author key, per-comment author keys, reactions and closed dates', () => {
+  const missingOp = structuredClone(fixture.bugs[0]);
+  delete missingOp.author_key;
+  assert.match(validateBugEntry(missingOp).join(' '), /missing field: author_key/u);
+
   const missingAuthor = structuredClone(fixture.bugs[0]);
   delete missingAuthor.comments[0].author_key;
   assert.match(validateBugEntry(missingAuthor).join(' '), /invalid shape/u);
@@ -36,6 +40,12 @@ test('v3 requires per-post author keys, comment reactions and closed resolution 
   assert.deepEqual(validateBugEntry(duplicate), []);
   duplicate.resolved_at = null;
   assert.match(validateBugEntry(duplicate).join(' '), /closed bugs must have/u);
+});
+
+test('the fixture marks OP replies by reusing the card author_key', () => {
+  const entry = fixture.bugs[0];
+  assert.ok(entry.comments.some((comment) =>
+    !comment.is_team && comment.author_key === entry.author_key));
 });
 
 test('team_name is optional only for TEAM comments and status attribution uses the closed tag vocabulary', () => {
