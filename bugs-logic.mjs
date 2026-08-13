@@ -114,6 +114,8 @@ function matchesActivity(bug, activity, generatedAt) {
   if (activity === 'with-images') return bug.images.length > 0;
   if (activity === 'new-7d') return isWithinDays(bug.posted_at, generatedAt, 7);
   if (activity === 'closed-7d') return bug.status !== 'open' && isWithinDays(bug.resolved_at, generatedAt, 7);
+  if (activity === 'investigating') return bug.status_tags.some(({ tag }) => tag.includes('Investigating'));
+  if (activity === 'in-progress') return bug.status_tags.some(({ tag }) => tag.includes('In Progress'));
   return true;
 }
 

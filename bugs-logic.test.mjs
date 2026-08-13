@@ -79,6 +79,18 @@ test('activity and tag filters compose', () => {
   assert.deepEqual(selected.map((bug) => bug.id), ['1600000000000000001', '1600000000000000005']);
 });
 
+test('Investigating and In Progress activity filters use current public status tags', () => {
+  const common = { status: 'open', generatedAt: fixture.generated_at };
+  assert.deepEqual(
+    selectBugs(fixture.bugs, { ...common, activity: 'investigating' }).map((bug) => bug.id),
+    ['1600000000000000001', '1600000000000000009'],
+  );
+  assert.deepEqual(
+    selectBugs(fixture.bugs, { ...common, activity: 'in-progress' }).map((bug) => bug.id),
+    ['1600000000000000005'],
+  );
+});
+
 test('fixed cards never receive a Discord thread link', () => {
   const open = fixture.bugs.find((bug) => bug.status === 'open');
   const fixed = fixture.bugs.find((bug) => bug.status === 'fixed');

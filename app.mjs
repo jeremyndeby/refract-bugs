@@ -8,6 +8,8 @@ const ACTIVITY_OPTIONS = {
   open: [
     ['active-7d', 'Active · 7 days'],
     ['new-7d', 'New · 7 days'],
+    ['investigating', '🔍 Investigating'],
+    ['in-progress', '🛠 In Progress'],
     ['discussed', 'Discussed'],
     ['with-images', 'With images'],
   ],
@@ -186,7 +188,12 @@ function renderActivityFilters() {
   elements.activityFilters.replaceChildren();
   const control = state.controls[state.view];
   for (const [value, label] of ACTIVITY_OPTIONS[state.view]) {
-    const button = el('button', 'chip filter-chip', label);
+    const count = selectBugs(state.bugs, {
+      status: state.view,
+      activity: value,
+      generatedAt: state.data.generated_at,
+    }).length;
+    const button = el('button', 'chip filter-chip', `${label} · ${count}`);
     button.type = 'button';
     setChipColor(button, { accent: '#B2BEC3', text: '#DFE6E9' });
     setButtonState(button, control.activity === value);
@@ -252,12 +259,32 @@ function toggleCard(card, button, details, bugId) {
   });
   details.hidden = !expanded;
   card.classList.toggle('is-expanded', expanded);
+  const description = card.querySelector('.description');
+  if (description) setDescriptionExpanded(description, expanded);
   if (expanded) {
     state.expanded.add(bugId);
     loadCardImages(card);
   } else {
     state.expanded.delete(bugId);
   }
+}
+
+function setDescriptionExpanded(description, expanded) {
+  const toggle = description.querySelector('.description-toggle');
+  description.classList.toggle('expanded', expanded);
+  if (toggle) {
+    toggle.textContent = expanded ? 'Show less' : 'Read more…';
+    toggle.setAttribute('aria-expanded', String(expanded));
+  }
+}
+
+function prepareDescription(description) {
+  const text = description.querySelector('.description-text');
+  const toggle = description.querySelector('.description-toggle');
+  if (!text || !toggle) return;
+  const overflow = text.scrollHeight > text.clientHeight + 1;
+  description.classList.toggle('has-overflow', overflow);
+  toggle.hidden = !overflow;
 }
 
 function stableColor(value, { saturation = 55, lightness = 78 } = {}) {
@@ -444,10 +471,7 @@ function createCard(bug, rank) {
   card.dataset.bugId = bug.id;
   if (bug.status === 'open') card.append(createRankBadge(rank), createOpenEdgeBadge(bug));
   const detailsId = `details-${bug.id}`;
-  const summary = el('button', 'bug-summary');
-  summary.type = 'button';
-  summary.setAttribute('aria-controls', detailsId);
-  summary.setAttribute('aria-expanded', 'false');
+  const summary = el('div', 'bug-summary');
 
   const votes = el('div', 'votes');
   const prism = el('span', 'prism', '◆');
@@ -457,7 +481,18 @@ function createCard(bug, rank) {
 
   const body = el('div', 'body');
   const titleLine = el('div', 'bug-title-line');
-  titleLine.append(el('h2', '', bug.title));
+  const title = el('h2');
+  if (bug.status === 'open') {
+    const titleLink = el('a', 'bug-title-link', bug.title);
+    titleLink.href = bugThreadUrl(bug, DISCORD_GUILD_ID);
+    titleLink.target = '_blank';
+    titleLink.rel = 'noreferrer';
+    titleLink.addEventListener('click', (event) => event.stopPropagation());
+    title.append(titleLink);
+  } else {
+    title.textContent = bug.title;
+  }
+  titleLine.append(title);
   if (bug.status !== 'open') {
     const days = daysBetween(bug.posted_at, bug.resolved_at) ?? 0;
     const labels = {
@@ -465,10 +500,25 @@ function createCard(bug, rank) {
     };
     titleLine.append(el('span', `terminal-pill terminal-${bug.status}`, `${labels[bug.status]} · ${days}d`));
   }
-  const description = el('p', 'description');
+  const description = el('div', 'description');
+  description.setAttribute('role', 'button');
+  description.tabIndex = 0;
+  description.setAttribute('aria-controls', detailsId);
+  description.setAttribute('aria-expanded', 'false');
+  description.setAttribute('aria-label', `Open discussion for ${bug.title}`);
+  const descriptionText = el('span', 'description-text');
   const opAuthor = el('span', 'card-op-author', bug.author_key);
   opAuthor.style.setProperty('--author-color', stableColor(`${bug.id}:${bug.author_key}`));
-  description.append(opAuthor, document.createTextNode(` — ${bug.body}`));
+  descriptionText.append(opAuthor, document.createTextNode(` — ${bug.body}`));
+  const descriptionToggle = el('button', 'description-toggle', 'Read more…');
+  descriptionToggle.type = 'button';
+  descriptionToggle.hidden = true;
+  descriptionToggle.setAttribute('aria-expanded', 'false');
+  descriptionToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    setDescriptionExpanded(description, !description.classList.contains('expanded'));
+  });
+  description.append(descriptionText, descriptionToggle);
   const meta = el('div', 'meta');
   meta.append(el('span', '', `Reported ${relativeAge(bug.posted_at, state.data.generated_at)}`));
   const chips = el('div', 'chips');
@@ -487,7 +537,7 @@ function createCard(bug, rank) {
   const details = el('div', 'bug-details');
   details.id = detailsId;
   details.hidden = true;
-  details.append(createComments(bug, () => toggleCard(card, summary, details, bug.id)));
+  details.append(createComments(bug, () => toggleCard(card, description, details, bug.id)));
 
   const actions = el('div', 'card-actions');
   if (bug.status === 'open') {
@@ -519,13 +569,19 @@ function createCard(bug, rank) {
   if (teamParticipationRow) discussionActions.append(teamParticipationRow);
   discussionActions.append(commentTotal, commentToggle);
   actions.append(discussionActions);
-  summary.addEventListener('click', () => toggleCard(card, summary, details, bug.id));
+  description.addEventListener('click', () => toggleCard(card, description, details, bug.id));
+  description.addEventListener('keydown', (event) => {
+    if (event.target !== description || !['Enter', ' '].includes(event.key)) return;
+    event.preventDefault();
+    toggleCard(card, description, details, bug.id);
+  });
   commentToggle.addEventListener('click', () => toggleCard(card, commentToggle, details, bug.id));
   card.append(summary);
   if (thumbnail) card.append(thumbnail);
   card.append(details, actions);
+  requestAnimationFrame(() => prepareDescription(description));
 
-  if (state.expanded.has(bug.id)) toggleCard(card, summary, details, bug.id);
+  if (state.expanded.has(bug.id)) toggleCard(card, description, details, bug.id);
   return card;
 }
 
