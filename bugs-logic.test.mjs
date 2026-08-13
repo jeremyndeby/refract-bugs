@@ -63,6 +63,8 @@ test('fixed cards never receive a Discord thread link', () => {
   const fixed = fixture.bugs.find((bug) => bug.status === 'fixed');
   assert.match(bugThreadUrl(open, '1490347491151970366'), /discord\.com/u);
   assert.equal(bugThreadUrl(fixed, '1490347491151970366'), null);
+  assert.equal(bugThreadUrl(fixture.bugs.find((bug) => bug.status === 'duplicate'), '1490347491151970366'), null);
+  assert.equal(bugThreadUrl(fixture.bugs.find((bug) => bug.status === 'off_topic'), '1490347491151970366'), null);
 });
 
 test('header counters are derived from accepted entries', () => {
