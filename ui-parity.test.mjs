@@ -26,3 +26,10 @@ test('mobile edge badges reserve room for the rank badge', () => {
   assert.match(styles, /\.bug-edge-badge \{ max-width: calc\(100% - 70px\); \}/u);
   assert.match(styles, /\.bug-status-badge-label \{[\s\S]*?overflow: hidden;[\s\S]*?text-overflow: ellipsis;/u);
 });
+
+test('cards expose Dev and Mod participation before discussion expansion', () => {
+  assert.match(app, /createTeamParticipationRow\(bug\)/u);
+  assert.match(app, /teamRole === 'mod' \? 'TEAM MOD' : 'TEAM'/u);
+  assert.match(app, /team-participation-pill/u);
+  assert.match(styles, /\.team-participation-row \{[\s\S]*?flex-wrap: wrap;/u);
+});

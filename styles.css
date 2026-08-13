@@ -817,6 +817,30 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   font-weight: 800;
   white-space: nowrap;
 }
+.team-participation-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 8px 0;
+}
+.team-participation-pill {
+  display: inline-flex;
+  min-height: 23px;
+  align-items: center;
+  padding: 3px 7px;
+  border: 1px solid color-mix(in srgb, var(--participant-color, var(--primary)) 58%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--participant-color, var(--primary)) 10%, transparent);
+  color: var(--participant-color, var(--primary-light));
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1;
+  white-space: nowrap;
+}
+.mod-participation-pill {
+  --participant-color: var(--primary-light);
+  letter-spacing: 0.04em;
+}
 .terminal-fixed { --age-color: #55EFC4; }
 .terminal-duplicate { --age-color: #A29BFE; }
 .terminal-off_topic { --age-color: #FDCB6E; }
@@ -912,6 +936,10 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.08em;
+}
+.team-mod-badge {
+  border-color: color-mix(in srgb, var(--primary-light) 72%, transparent);
+  letter-spacing: 0.06em;
 }
 .op-badge {
   padding: 1px 5px;

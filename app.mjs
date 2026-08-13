@@ -1,4 +1,4 @@
-import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, relativeAge, selectBugs, terminalTagLabel } from './bugs-logic.mjs';
+import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, relativeAge, selectBugs, teamParticipation, terminalTagLabel } from './bugs-logic.mjs';
 import { validateBugDataset } from './bugs-validator.mjs';
 
 const DISCORD_GUILD_ID = '1490347491151970366';
@@ -286,8 +286,9 @@ function createComments(bug, collapse) {
     const item = el('li', `comment${comment.is_team ? ' team-comment' : isOp ? ' op-comment' : ''}`);
     const head = el('div', 'comment-head');
     if (comment.is_team) {
-      head.append(el('span', 'team-badge', 'TEAM'));
-      if (comment.team_name) {
+      const teamRole = comment.team_role ?? (comment.team_name ? 'dev' : 'team');
+      head.append(el('span', `team-badge${teamRole === 'mod' ? ' team-mod-badge' : ''}`, teamRole === 'mod' ? 'TEAM MOD' : 'TEAM'));
+      if (teamRole === 'dev' && comment.team_name) {
         const dev = el('span', 'dev-name', comment.team_name);
         dev.style.setProperty('--author-color', stableColor(comment.team_name, { saturation: 70, lightness: 72 }));
         head.append(dev);
@@ -364,6 +365,25 @@ function createReactionRow(item, { compact = false, limit = 3 } = {}) {
     const overflow = el('span', 'reaction-overflow', `+${display.hiddenCount.toLocaleString('en')}`);
     overflow.setAttribute('aria-label', plural(display.hiddenCount, 'additional reaction'));
     row.append(overflow);
+  }
+  return row;
+}
+
+function createTeamParticipationRow(bug) {
+  const participation = teamParticipation(bug.comments);
+  if (participation.length === 0) return null;
+  const row = el('div', 'team-participation-row');
+  row.setAttribute('aria-label', 'Team participation');
+  for (const participant of participation) {
+    const pill = el(
+      'span',
+      `team-participation-pill ${participant.kind === 'mod' ? 'mod-participation-pill' : 'dev-participation-pill'}`,
+      `${participant.name} · ${participant.count}`,
+    );
+    if (participant.kind === 'dev') {
+      pill.style.setProperty('--participant-color', stableColor(participant.name, { saturation: 70, lightness: 72 }));
+    }
+    row.append(pill);
   }
   return row;
 }
@@ -451,6 +471,8 @@ function createCard(bug, rank) {
     chips.append(chip);
   });
   body.append(titleLine, description);
+  const teamParticipationRow = createTeamParticipationRow(bug);
+  if (teamParticipationRow) body.append(teamParticipationRow);
   const thumbnail = createThumbnail(bug);
   const reactions = createReactionRow(bug);
   if (reactions) body.append(reactions);

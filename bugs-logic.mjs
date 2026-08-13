@@ -184,3 +184,20 @@ export function datasetCounters(bugs, generatedAt) {
     medianFixDays,
   };
 }
+
+export function teamParticipation(comments = []) {
+  const devs = new Map();
+  let modCount = 0;
+  for (const comment of comments) {
+    const teamRole = comment.team_role ?? (comment.team_name ? 'dev' : 'team');
+    if (teamRole === 'dev' && comment.team_name) {
+      devs.set(comment.team_name, (devs.get(comment.team_name) ?? 0) + 1);
+    } else if (teamRole === 'mod') {
+      modCount += 1;
+    }
+  }
+  return [
+    ...[...devs].map(([name, count]) => ({ kind: 'dev', name, count })),
+    ...(modCount > 0 ? [{ kind: 'mod', name: 'MOD', count: modCount }] : []),
+  ];
+}
