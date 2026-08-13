@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, selectBugs, teamParticipation } from './bugs-logic.mjs';
+import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, lastCommentAt, nextSortState, reactionPillDisplay, selectBugs, teamParticipation } from './bugs-logic.mjs';
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
@@ -77,6 +77,16 @@ test('activity and tag filters compose', () => {
     status: 'open', activity: 'with-images', tag: 'Android', generatedAt: fixture.generated_at,
   });
   assert.deepEqual(selected.map((bug) => bug.id), ['1600000000000000001', '1600000000000000005']);
+});
+
+test('last comment date uses the latest reply and stays absent without comments', () => {
+  assert.equal(lastCommentAt([
+    { date: '2026-08-09T09:00:00.000Z' },
+    { date: '2026-08-12T13:00:00.000Z' },
+    { date: '2026-08-10T18:00:00.000Z' },
+  ]), '2026-08-12T13:00:00.000Z');
+  assert.equal(lastCommentAt([]), null);
+  assert.equal(lastCommentAt(null), null);
 });
 
 test('Investigating and In Progress activity filters use current public status tags', () => {

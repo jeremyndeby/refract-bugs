@@ -1,4 +1,4 @@
-import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, relativeAge, selectBugs, teamParticipation, terminalTagLabel } from './bugs-logic.mjs';
+import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, lastCommentAt, nextSortState, reactionPillDisplay, relativeAge, selectBugs, teamParticipation, terminalTagLabel } from './bugs-logic.mjs';
 import { validateBugDataset } from './bugs-validator.mjs';
 
 const DISCORD_GUILD_ID = '1490347491151970366';
@@ -520,7 +520,10 @@ function createCard(bug, rank) {
   });
   description.append(descriptionText, descriptionToggle);
   const meta = el('div', 'meta');
-  meta.append(el('span', '', `Reported ${relativeAge(bug.posted_at, state.data.generated_at)}`));
+  const metaParts = [`Reported ${relativeAge(bug.posted_at, state.data.generated_at)}`];
+  const lastCommentDate = lastCommentAt(bug.comments);
+  if (lastCommentDate) metaParts.push(`Last comment ${relativeAge(lastCommentDate, state.data.generated_at)}`);
+  meta.append(el('span', '', metaParts.join(' · ')));
   const chips = el('div', 'chips');
   bug.tags.forEach((tag) => {
     const chip = el('span', 'chip', tag);
