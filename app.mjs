@@ -368,9 +368,54 @@ function createReactionRow(item, { compact = false, limit = 3 } = {}) {
   return row;
 }
 
+function rankMark(rank) {
+  if (rank === 1) return '🥇 #1';
+  if (rank === 2) return '🥈 #2';
+  if (rank === 3) return '🥉 #3';
+  return `#${rank}`;
+}
+
+function createRankBadge(rank) {
+  const badge = el('span', `rank-badge rank-badge-${rank <= 3 ? rank : 'other'}`, rankMark(rank));
+  badge.setAttribute('aria-label', `Popularity rank ${rank}`);
+  return badge;
+}
+
+function createOpenEdgeBadge(bug) {
+  const ageDays = daysBetween(bug.posted_at, state.data.generated_at) ?? 0;
+  const ageColor = agePillColor(ageDays);
+  const statusTags = [...bug.status_tags].sort((left, right) => {
+    const order = (tag) => tag.includes('Investigating') ? 0 : tag.includes('In Progress') ? 1 : 2;
+    return order(left.tag) - order(right.tag);
+  });
+  const statusClass = statusTags.some(({ tag }) => tag.includes('In Progress'))
+    ? 'status-badge-progress'
+    : statusTags.length > 0 ? 'status-badge-investigating' : 'bug-age-only';
+  const badge = el(
+    'span',
+    `edge-badge status-badge status-badge-with-eta bug-edge-badge ${statusClass}`,
+  );
+
+  for (const statusTag of statusTags) {
+    const label = statusTag.applied_by ? `${statusTag.tag} · by ${statusTag.applied_by}` : statusTag.tag;
+    badge.append(el('span', 'status-badge-label bug-status-badge-label', label));
+  }
+
+  const age = el('span', 'eta-badge bug-age-badge', `${ageDays}d`);
+  badge.style.setProperty('--age-color', ageColor);
+  age.style.setProperty('--age-color', ageColor);
+  badge.append(age);
+  badge.setAttribute('aria-label', [
+    ...statusTags.map(({ tag, applied_by: appliedBy }) => appliedBy ? `${tag}, by ${appliedBy}` : tag),
+    `${ageDays} days old`,
+  ].join(', '));
+  return badge;
+}
+
 function createCard(bug, rank) {
   const card = el('article', `row bug-card ${bug.status}-card${rank <= 3 ? ` rank-${rank}` : ''}`);
   card.dataset.bugId = bug.id;
+  if (bug.status === 'open') card.append(createRankBadge(rank), createOpenEdgeBadge(bug));
   const detailsId = `details-${bug.id}`;
   const summary = el('button', 'bug-summary');
   summary.type = 'button';
@@ -385,14 +430,8 @@ function createCard(bug, rank) {
 
   const body = el('div', 'body');
   const titleLine = el('div', 'bug-title-line');
-  if (bug.status === 'open') titleLine.append(el('span', 'rank-pill', `#${rank}`));
   titleLine.append(el('h2', '', bug.title));
-  if (bug.status === 'open') {
-    const ageDays = daysBetween(bug.posted_at, state.data.generated_at) ?? 0;
-    const age = el('span', 'age-pill', `${ageDays}d`);
-    age.style.setProperty('--age-color', agePillColor(ageDays));
-    titleLine.append(age);
-  } else {
+  if (bug.status !== 'open') {
     const days = daysBetween(bug.posted_at, bug.resolved_at) ?? 0;
     const labels = {
       fixed: '✅ Fixed', duplicate: '🔁 Duplicate', off_topic: '🚫 Off-topic',
@@ -409,12 +448,6 @@ function createCard(bug, rank) {
   bug.tags.forEach((tag) => {
     const chip = el('span', 'chip', tag);
     setChipColor(chip, tagColor(tag));
-    chips.append(chip);
-  });
-  bug.status_tags.forEach((statusTag) => {
-    const label = statusTag.applied_by ? `${statusTag.tag} · by ${statusTag.applied_by}` : statusTag.tag;
-    const chip = el('span', 'chip status-chip', label);
-    setChipColor(chip, statusTag.tag.includes('Investigating') ? '#74B9FF' : '#FDCB6E');
     chips.append(chip);
   });
   body.append(titleLine, description);
