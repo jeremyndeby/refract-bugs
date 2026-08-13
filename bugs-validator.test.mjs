@@ -5,7 +5,7 @@ import { sanitizeBugDataset, validateBugDataset, validateBugEntry } from './bugs
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
-test('the public fixture satisfies the frozen contract', () => {
+test('the public fixture satisfies the frozen v3 contract', () => {
   const result = validateBugDataset(fixture);
   assert.equal(result.blocked, false);
   assert.equal(result.rejected.length, 0);
@@ -20,6 +20,32 @@ test('score and Roadmap-shaped reactions are required contract fields', () => {
   const invalidReaction = structuredClone(fixture.bugs[0]);
   invalidReaction.reactions = [{ emoji: '💜', count: 0 }];
   assert.match(validateBugEntry(invalidReaction).join(' '), /positive integer/u);
+});
+
+test('v3 requires per-post author keys, comment reactions and closed resolution dates', () => {
+  const missingAuthor = structuredClone(fixture.bugs[0]);
+  delete missingAuthor.comments[0].author_key;
+  assert.match(validateBugEntry(missingAuthor).join(' '), /invalid shape/u);
+
+  const missingCommentReactions = structuredClone(fixture.bugs[0]);
+  delete missingCommentReactions.comments[0].reactions;
+  assert.match(validateBugEntry(missingCommentReactions).join(' '), /invalid shape/u);
+
+  const duplicate = structuredClone(fixture.bugs.find((bug) => bug.status === 'duplicate'));
+  assert.ok(duplicate);
+  assert.deepEqual(validateBugEntry(duplicate), []);
+  duplicate.resolved_at = null;
+  assert.match(validateBugEntry(duplicate).join(' '), /closed bugs must have/u);
+});
+
+test('team_name is optional only for TEAM comments and status attribution uses the closed tag vocabulary', () => {
+  const entry = structuredClone(fixture.bugs[0]);
+  entry.comments[0].team_name = 'Community Person';
+  assert.match(validateBugEntry(entry).join(' '), /team_name is allowed only on TEAM/u);
+
+  const invalidStatus = structuredClone(fixture.bugs[0]);
+  invalidStatus.status_tags = [{ tag: '⏳ Waiting' }];
+  assert.match(validateBugEntry(invalidStatus).join(' '), /unsupported/u);
 });
 
 test('custom Roadmap emoji shape is accepted without adding a remote URL', () => {
@@ -61,8 +87,16 @@ test('a token-like value is rejected', () => {
 
 test('hotlinked images are rejected', () => {
   const entry = structuredClone(fixture.bugs[0]);
-  entry.images = ['https://cdn.example.test/attachment.png'];
-  assert.match(validateBugEntry(entry).join(' '), /local repository URLs/u);
+  entry.images = [{ url: 'https://cdn.example.test/attachment.png' }];
+  assert.match(validateBugEntry(entry).join(' '), /local repository URL/u);
+});
+
+test('one structured local image is allowed, with an optional local thumbnail', () => {
+  const entry = structuredClone(fixture.bugs[0]);
+  entry.images = [{ url: './assets/bugs/example.webp', thumb: './assets/bugs/example-thumb.webp' }];
+  assert.deepEqual(validateBugEntry(entry), []);
+  entry.images.push({ url: './assets/bugs/second.webp' });
+  assert.match(validateBugEntry(entry).join(' '), /at most one/u);
 });
 
 test('more than five percent rejected blocks publication', () => {

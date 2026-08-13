@@ -1,8 +1,8 @@
-import { bugThreadUrl, datasetCounters, nextSortState, reactionPillDisplay, relativeAge, selectBugs } from './bugs-logic.mjs';
+import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, relativeAge, selectBugs, terminalTagLabel } from './bugs-logic.mjs';
 import { validateBugDataset } from './bugs-validator.mjs';
 
 const DISCORD_GUILD_ID = '1490347491151970366';
-const VIEWS = ['open', 'fixed'];
+const VIEWS = ['open', 'closed'];
 const initialParams = new URLSearchParams(location.search);
 const ACTIVITY_OPTIONS = {
   open: [
@@ -11,9 +11,9 @@ const ACTIVITY_OPTIONS = {
     ['discussed', 'Discussed'],
     ['with-images', 'With images'],
   ],
-  fixed: [
+  closed: [
     ['active-7d', 'Active · 7 days'],
-    ['fixed-7d', 'Fixed · 7 days'],
+    ['closed-7d', 'Closed · 7 days'],
     ['discussed', 'Discussed'],
     ['with-images', 'With images'],
   ],
@@ -44,17 +44,20 @@ const TAG_COLORS = Object.freeze({
   Watchlist: '#00CEC9',
   Web: { accent: '#6C5CE7', text: '#C8C4FF' },
   Widgets: '#FDCB6E',
+  Fixed: '#55EFC4',
+  Duplicate: '#A29BFE',
+  'Off-topic': '#FDCB6E',
 });
 
 const state = {
   data: null,
   bugs: [],
   rejected: [],
-  view: location.hash === '#fixed' ? 'fixed' : 'open',
+  view: ['#fixed', '#closed'].includes(location.hash) ? 'closed' : 'open',
   expanded: new Set(initialParams.get('expand') ? [initialParams.get('expand')] : []),
   controls: {
     open: { query: initialParams.get('q') ?? '', sort: 'popularity', direction: 'desc', activity: '', tag: '' },
-    fixed: { query: '', sort: 'date', direction: 'desc', activity: '', tag: '' },
+    closed: { query: '', sort: 'date', direction: 'desc', activity: '', tag: '' },
   },
 };
 
@@ -67,13 +70,14 @@ const elements = {
   opened7d: document.querySelector('#opened-last-7-days'),
   fixed24h: document.querySelector('#fixed-last-24-hours'),
   fixed7d: document.querySelector('#fixed-last-7-days'),
+  avgFixTime: document.querySelector('#avg-fix-time'),
   openCount: document.querySelector('#open-count'),
-  fixedCount: document.querySelector('#fixed-count'),
+  closedCount: document.querySelector('#closed-count'),
   content: document.querySelector('#bug-content'),
   tabs: [...document.querySelectorAll('[role="tab"]')],
   panels: {
     open: document.querySelector('#view-open'),
-    fixed: document.querySelector('#view-fixed'),
+    closed: document.querySelector('#view-closed'),
   },
   sorts: document.querySelector('#bug-sorts'),
   activityFilters: document.querySelector('#activity-filters'),
@@ -85,6 +89,9 @@ const elements = {
   rejectedNotice: document.querySelector('#rejected-notice'),
   clear: document.querySelector('#clear-filters'),
   backToTop: document.querySelector('#back-to-top'),
+  lightbox: document.querySelector('#image-lightbox'),
+  lightboxImage: document.querySelector('#lightbox-image'),
+  lightboxClose: document.querySelector('#lightbox-close'),
 };
 
 function el(tag, className, text) {
@@ -114,8 +121,16 @@ function setChipColor(node, color) {
   node.style.setProperty('--chip-selected', text);
 }
 
+function tagColor(tag) {
+  if (TAG_COLORS[tag]) return TAG_COLORS[tag];
+  let hash = 0;
+  for (const character of tag) hash = ((hash * 31) + character.codePointAt(0)) >>> 0;
+  const hue = hash % 360;
+  return { accent: `hsl(${hue} 62% 55%)`, text: `hsl(${hue} 74% 82%)` };
+}
+
 function updateHash(view) {
-  const hash = view === 'fixed' ? '#fixed' : '#open';
+  const hash = view === 'closed' ? '#closed' : '#open';
   if (location.hash !== hash) history.replaceState(null, '', hash);
 }
 
@@ -186,8 +201,9 @@ function renderActivityFilters() {
 
 function tagCounts() {
   const counts = new Map();
-  state.bugs.filter((bug) => bug.status === state.view).forEach((bug) => {
-    bug.tags.forEach((tag) => counts.set(tag, (counts.get(tag) ?? 0) + 1));
+  state.bugs.filter((bug) => state.view === 'closed' ? bug.status !== 'open' : bug.status === 'open').forEach((bug) => {
+    const values = [...bug.tags, ...(terminalTagLabel(bug.status) ? [terminalTagLabel(bug.status)] : [])];
+    values.forEach((tag) => counts.set(tag, (counts.get(tag) ?? 0) + 1));
   });
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }
@@ -198,7 +214,7 @@ function renderTagFilters() {
   for (const [tag, count] of tagCounts()) {
     const button = el('button', 'chip filter-chip', `${tag} · ${count}`);
     button.type = 'button';
-    setChipColor(button, TAG_COLORS[tag] ?? '#B2BEC3');
+    setChipColor(button, tagColor(tag));
     setButtonState(button, control.tag === tag);
     button.addEventListener('click', () => {
       control.tag = control.tag === tag ? '' : tag;
@@ -212,8 +228,8 @@ function renderTagFilters() {
 function renderControls() {
   const control = state.controls[state.view];
   elements.search.value = control.query;
-  elements.search.placeholder = state.view === 'open' ? 'Search open bugs…' : 'Search fixed bugs…';
-  elements.searchLabel.textContent = state.view === 'open' ? 'Search open bugs' : 'Search fixed bugs';
+  elements.search.placeholder = state.view === 'open' ? 'Search open bugs…' : 'Search closed bugs…';
+  elements.searchLabel.textContent = state.view === 'open' ? 'Search open bugs' : 'Search closed bugs';
   renderSorts();
   renderActivityFilters();
   renderTagFilters();
@@ -244,10 +260,22 @@ function toggleCard(card, button, details, bugId) {
   }
 }
 
-function createComments(bug) {
+function stableColor(value, { saturation = 55, lightness = 78 } = {}) {
+  let hash = 0;
+  for (const character of String(value)) hash = ((hash * 33) + character.codePointAt(0)) >>> 0;
+  return `hsl(${hash % 360} ${saturation}% ${lightness}%)`;
+}
+
+function createComments(bug, collapse) {
   const section = el('section', 'bug-thread');
+  const header = el('div', 'discussion-heading');
   const heading = el('h3', '', `Discussion · ${bug.comments_count}`);
-  section.append(heading);
+  const close = el('button', 'discussion-collapse', '⌃');
+  close.type = 'button';
+  close.setAttribute('aria-label', `Close discussion for ${bug.title}`);
+  close.addEventListener('click', collapse);
+  header.append(heading, close);
+  section.append(header);
   if (bug.comments.length === 0) {
     section.append(el('p', 'thread-empty', 'No public comments yet.'));
     return section;
@@ -256,33 +284,60 @@ function createComments(bug) {
   for (const comment of bug.comments) {
     const item = el('li', `comment${comment.is_team ? ' team-comment' : ''}`);
     const head = el('div', 'comment-head');
-    if (comment.is_team) head.append(el('span', 'team-badge', 'TEAM'));
+    if (comment.is_team) {
+      head.append(el('span', 'team-badge', 'TEAM'));
+      if (comment.team_name) {
+        const dev = el('span', 'dev-name', comment.team_name);
+        dev.style.setProperty('--author-color', stableColor(comment.team_name, { saturation: 70, lightness: 72 }));
+        head.append(dev);
+      }
+    } else {
+      const author = el('span', 'author-key', comment.author_key);
+      author.style.setProperty('--author-color', stableColor(`${bug.id}:${comment.author_key}`));
+      head.append(author);
+    }
     head.append(el('time', '', formatDate(comment.date)));
     const copy = el('p', '', comment.text);
     item.append(head, copy);
+    const reactions = createReactionRow(comment, { compact: true, limit: 8 });
+    if (reactions) item.append(reactions);
     list.append(item);
   }
   section.append(list);
   return section;
 }
 
-function createImages(bug) {
-  if (bug.images.length === 0) return null;
-  const section = el('section', 'bug-images');
-  section.append(el('h3', '', `Attachments · ${bug.images.length}`));
-  const gallery = el('div', 'image-gallery');
-  bug.images.forEach((url, index) => {
-    const figure = el('figure', 'bug-image');
-    const image = el('img');
-    image.dataset.src = url;
-    image.loading = 'lazy';
-    image.decoding = 'async';
-    image.alt = `Bug attachment ${index + 1}`;
-    figure.append(image);
-    gallery.append(figure);
+function openLightbox(url) {
+  elements.lightboxImage.src = url;
+  elements.lightbox.hidden = false;
+  document.body.classList.add('lightbox-open');
+  elements.lightboxClose.focus();
+}
+
+function closeLightbox() {
+  elements.lightbox.hidden = true;
+  elements.lightboxImage.removeAttribute('src');
+  document.body.classList.remove('lightbox-open');
+}
+
+function createThumbnail(bug) {
+  const imageRecord = bug.images[0];
+  if (!imageRecord?.url) return null;
+  const button = el('button', 'bug-thumbnail');
+  button.type = 'button';
+  button.setAttribute('aria-label', `Open attachment for ${bug.title}`);
+  const image = el('img');
+  image.src = imageRecord.thumb ?? imageRecord.url;
+  image.loading = 'lazy';
+  image.decoding = 'async';
+  image.alt = 'Bug attachment';
+  image.addEventListener('error', () => button.remove(), { once: true });
+  button.addEventListener('click', (event) => {
+    event.stopPropagation();
+    openLightbox(imageRecord.url);
   });
-  section.append(gallery);
-  return section;
+  button.append(image);
+  return button;
 }
 
 function reactionEmoji(emoji) {
@@ -292,10 +347,10 @@ function reactionEmoji(emoji) {
   return fallback;
 }
 
-function createReactionRow(bug) {
-  const display = reactionPillDisplay(bug);
+function createReactionRow(item, { compact = false, limit = 3 } = {}) {
+  const display = reactionPillDisplay(item, { limit });
   if (display.visible.length === 0) return null;
-  const row = el('div', 'reaction-row');
+  const row = el('div', `reaction-row${compact ? ' compact' : ''}`);
   row.setAttribute('aria-label', 'Reactions');
   for (const reaction of display.visible) {
     const pill = el('span', `reaction-pill reaction-${reaction.semantic}`);
@@ -311,7 +366,7 @@ function createReactionRow(bug) {
 }
 
 function createCard(bug, rank) {
-  const card = el('article', `row bug-card ${bug.status}-card${rank < 3 ? ` rank-${rank + 1}` : ''}`);
+  const card = el('article', `row bug-card ${bug.status}-card${rank <= 3 ? ` rank-${rank}` : ''}`);
   card.dataset.bugId = bug.id;
   const detailsId = `details-${bug.id}`;
   const summary = el('button', 'bug-summary');
@@ -322,29 +377,42 @@ function createCard(bug, rank) {
   const votes = el('div', 'votes');
   const prism = el('span', 'prism', '◆');
   prism.setAttribute('aria-hidden', 'true');
-  votes.append(prism, el('strong', 'n', String(bug.reactors_unique)), el('span', 'vote-label', 'reactors'));
+  votes.append(prism, el('strong', 'n', String(Math.round(bug.score))), el('span', 'vote-label', 'score'));
   if (bug.activity_7d > 0) votes.append(el('span', 'trend', `+${bug.activity_7d} · 7d`));
 
   const body = el('div', 'body');
   const titleLine = el('div', 'bug-title-line');
+  if (bug.status === 'open') titleLine.append(el('span', 'rank-pill', `#${rank}`));
   titleLine.append(el('h2', '', bug.title));
+  if (bug.status === 'open') {
+    const ageDays = daysBetween(bug.posted_at, state.data.generated_at) ?? 0;
+    const age = el('span', 'age-pill', `${ageDays}d`);
+    age.style.setProperty('--age-color', agePillColor(ageDays));
+    titleLine.append(age);
+  } else {
+    const days = daysBetween(bug.posted_at, bug.resolved_at) ?? 0;
+    const labels = {
+      fixed: '✅ Fixed', duplicate: '🔁 Duplicate', off_topic: '🚫 Off-topic',
+    };
+    titleLine.append(el('span', `terminal-pill terminal-${bug.status}`, `${labels[bug.status]} · ${days}d`));
+  }
   const description = el('p', 'description', bug.body);
   const meta = el('div', 'meta');
-  const primaryDate = bug.status === 'fixed' ? bug.fixed_at : bug.posted_at;
-  meta.append(
-    el('span', '', bug.status === 'fixed' ? `Fixed ${relativeAge(primaryDate, state.data.generated_at)}` : `Reported ${relativeAge(primaryDate, state.data.generated_at)}`),
-    el('span', 'meta-separator', '·'),
-    el('span', '', plural(bug.comments_count, 'comment')),
-    el('span', 'meta-separator', '·'),
-    el('span', '', `${bug.activity_7d} activity · 7 days`),
-  );
+  meta.append(el('span', '', `Reported ${relativeAge(bug.posted_at, state.data.generated_at)}`));
   const chips = el('div', 'chips');
   bug.tags.forEach((tag) => {
     const chip = el('span', 'chip', tag);
-    setChipColor(chip, TAG_COLORS[tag] ?? '#B2BEC3');
+    setChipColor(chip, tagColor(tag));
+    chips.append(chip);
+  });
+  bug.status_tags.forEach((statusTag) => {
+    const label = statusTag.applied_by ? `${statusTag.tag} · by ${statusTag.applied_by}` : statusTag.tag;
+    const chip = el('span', 'chip status-chip', label);
+    setChipColor(chip, statusTag.tag.includes('Investigating') ? '#74B9FF' : '#FDCB6E');
     chips.append(chip);
   });
   body.append(titleLine, description);
+  const thumbnail = createThumbnail(bug);
   const reactions = createReactionRow(bug);
   if (reactions) body.append(reactions);
   body.append(meta, chips);
@@ -353,11 +421,7 @@ function createCard(bug, rank) {
   const details = el('div', 'bug-details');
   details.id = detailsId;
   details.hidden = true;
-  const full = el('section', 'bug-full-copy');
-  full.append(el('h3', '', 'Report'), el('p', '', bug.body));
-  details.append(full, createComments(bug));
-  const images = createImages(bug);
-  if (images) details.append(images);
+  details.append(createComments(bug, () => toggleCard(card, summary, details, bug.id)));
 
   const actions = el('div', 'card-actions');
   if (bug.status === 'open') {
@@ -368,7 +432,7 @@ function createCard(bug, rank) {
     link.rel = 'noreferrer';
     actions.append(link);
   } else {
-    actions.append(el('span', 'fixed-label', `Resolved ${formatDate(bug.fixed_at)}`));
+    actions.append(el('span', 'fixed-label', `Resolved ${formatDate(bug.resolved_at)}`));
   }
   const commentToggle = el('button', 'comment-toggle');
   commentToggle.type = 'button';
@@ -385,7 +449,9 @@ function createCard(bug, rank) {
   actions.append(commentToggle);
   summary.addEventListener('click', () => toggleCard(card, summary, details, bug.id));
   commentToggle.addEventListener('click', () => toggleCard(card, commentToggle, details, bug.id));
-  card.append(summary, details, actions);
+  card.append(summary);
+  if (thumbnail) card.append(thumbnail);
+  card.append(details, actions);
 
   if (state.expanded.has(bug.id)) toggleCard(card, summary, details, bug.id);
   return card;
@@ -407,7 +473,7 @@ function selectedBugs() {
 function renderList() {
   if (!state.data) return;
   const selected = selectedBugs();
-  const total = state.bugs.filter((bug) => bug.status === state.view).length;
+  const total = state.bugs.filter((bug) => state.view === 'closed' ? bug.status !== 'open' : bug.status === 'open').length;
   elements.resultCount.textContent = selected.length === total
     ? plural(total, 'bug')
     : `${plural(selected.length, 'bug')} of ${total}`;
@@ -419,7 +485,10 @@ function renderList() {
     return;
   }
   const fragment = document.createDocumentFragment();
-  selected.forEach((bug, index) => fragment.append(createCard(bug, index)));
+  const popularityRanks = new Map(selectBugs(state.bugs, {
+    status: 'open', sort: 'popularity', direction: 'desc', generatedAt: state.data.generated_at,
+  }).map((bug, index) => [bug.id, index + 1]));
+  selected.forEach((bug, index) => fragment.append(createCard(bug, popularityRanks.get(bug.id) ?? index + 1)));
   elements.list.append(fragment);
 }
 
@@ -435,11 +504,12 @@ function renderCounters() {
   elements.openChange24h.textContent = formatChange(counters.openDelta24h, '24h');
   elements.openChange7d.textContent = formatChange(counters.openDelta7d, '7d');
   elements.openCount.textContent = counters.open.toLocaleString('en');
-  elements.fixedCount.textContent = counters.fixed.toLocaleString('en');
+  elements.closedCount.textContent = counters.closed.toLocaleString('en');
   elements.opened24h.textContent = counters.opened24h.toLocaleString('en');
   elements.opened7d.textContent = counters.opened7d.toLocaleString('en');
   elements.fixed24h.textContent = counters.fixed24h.toLocaleString('en');
   elements.fixed7d.textContent = counters.fixed7d.toLocaleString('en');
+  elements.avgFixTime.textContent = counters.avgFixDays === null ? '—' : `${Math.round(counters.avgFixDays)}d`;
   elements.freshness.textContent = `updated ${relativeAge(state.data.generated_at, new Date().toISOString())}`;
   elements.freshness.dateTime = state.data.generated_at;
 }
@@ -483,7 +553,7 @@ elements.tabs.forEach((tab) => tab.addEventListener('click', () => setView(tab.d
 document.querySelector('#bug-tabs').addEventListener('keydown', (event) => {
   if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
   event.preventDefault();
-  const next = state.view === 'open' ? 'fixed' : 'open';
+  const next = state.view === 'open' ? 'closed' : 'open';
   setView(next);
   elements.tabs.find((tab) => tab.dataset.view === next)?.focus();
 });
@@ -500,7 +570,7 @@ elements.clear.addEventListener('click', () => {
   renderList();
   elements.search.focus();
 });
-window.addEventListener('hashchange', () => setView(location.hash === '#fixed' ? 'fixed' : 'open', { updateLocation: false }));
+window.addEventListener('hashchange', () => setView(['#fixed', '#closed'].includes(location.hash) ? 'closed' : 'open', { updateLocation: false }));
 window.addEventListener('scroll', () => {
   const visible = window.scrollY > 600;
   elements.backToTop.classList.toggle('is-visible', visible);
@@ -508,5 +578,12 @@ window.addEventListener('scroll', () => {
   elements.backToTop.tabIndex = visible ? 0 : -1;
 }, { passive: true });
 elements.backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+elements.lightboxClose.addEventListener('click', closeLightbox);
+elements.lightbox.addEventListener('click', (event) => {
+  if (event.target === elements.lightbox) closeLightbox();
+});
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !elements.lightbox.hidden) closeLightbox();
+});
 
 load();

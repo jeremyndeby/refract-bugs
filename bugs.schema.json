@@ -7,19 +7,9 @@
   "additionalProperties": false,
   "required": ["schema_version", "generated_at", "bugs"],
   "properties": {
-    "schema_version": {
-      "const": 2
-    },
-    "generated_at": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "bugs": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/bug"
-      }
-    }
+    "schema_version": { "const": 3 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "bugs": { "type": "array", "items": { "$ref": "#/$defs/bug" } }
   },
   "$defs": {
     "publicText": {
@@ -28,38 +18,13 @@
       "maxLength": 4000,
       "pattern": "^(?!.*(?:[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}|(?:token|secret|password|authorization)[=:][^\\s]+)).*$"
     },
-    "comment": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["text", "date", "is_team"],
-      "properties": {
-        "text": {
-          "$ref": "#/$defs/publicText"
-        },
-        "date": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "is_team": {
-          "type": "boolean"
-        }
-      }
-    },
     "customEmoji": {
       "type": "object",
       "additionalProperties": false,
       "required": ["name", "id"],
       "properties": {
-        "name": {
-          "type": "string",
-          "minLength": 1,
-          "maxLength": 64,
-          "pattern": "^[^@\\r\\n]+$"
-        },
-        "id": {
-          "type": "string",
-          "pattern": "^[0-9]{17,20}$"
-        }
+        "name": { "type": "string", "minLength": 1, "maxLength": 64, "pattern": "^[^@\\r\\n]+$" },
+        "id": { "type": "string", "pattern": "^[0-9]{17,20}$" }
       }
     },
     "reaction": {
@@ -73,123 +38,100 @@
             { "$ref": "#/$defs/customEmoji" }
           ]
         },
-        "count": {
-          "type": "integer",
-          "minimum": 1
+        "count": { "type": "integer", "minimum": 1 },
+        "negative": { "type": "boolean" }
+      }
+    },
+    "comment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "date", "is_team", "author_key", "reactions"],
+      "properties": {
+        "text": { "$ref": "#/$defs/publicText" },
+        "date": { "type": "string", "format": "date-time" },
+        "is_team": { "type": "boolean" },
+        "author_key": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 48,
+          "pattern": "^[A-Za-z][A-Za-z -]+$",
+          "description": "Random, persistent pseudonym scoped to this post only; never derived reversibly from Discord identity."
         },
-        "negative": {
-          "type": "boolean"
+        "team_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80,
+          "pattern": "^[^@\\r\\n]+$",
+          "description": "Present only for a current member of the Discord Dev role."
+        },
+        "reactions": { "type": "array", "maxItems": 50, "items": { "$ref": "#/$defs/reaction" } }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "is_team": { "const": false } }, "required": ["is_team"] },
+          "then": { "not": { "required": ["team_name"] } }
         }
+      ]
+    },
+    "statusTag": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tag"],
+      "properties": {
+        "tag": { "enum": ["🔍 Investigating", "🛠 In Progress"] },
+        "applied_by": { "type": "string", "minLength": 1, "maxLength": 80, "pattern": "^[^@\\r\\n]+$" },
+        "applied_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url"],
+      "properties": {
+        "url": { "type": "string", "pattern": "^\\./assets/bugs/[A-Za-z0-9][A-Za-z0-9._/-]*\\.(?:avif|gif|jpe?g|png|webp)$" },
+        "thumb": { "type": "string", "pattern": "^\\./assets/bugs/[A-Za-z0-9][A-Za-z0-9._/-]*\\.(?:avif|gif|jpe?g|png|webp)$" }
       }
     },
     "bug": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "id",
-        "title",
-        "body",
-        "posted_at",
-        "status",
-        "fixed_at",
-        "tags",
-        "reactors_unique",
-        "score",
-        "reactions",
-        "comments_count",
-        "activity_7d",
-        "comments",
-        "images"
+        "id", "title", "body", "posted_at", "status", "resolved_at", "tags", "status_tags",
+        "reactors_unique", "score", "reactions", "comments_count", "activity_7d", "comments", "images"
       ],
       "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "^[0-9]{17,20}$"
-        },
-        "title": {
-          "$ref": "#/$defs/publicText"
-        },
-        "body": {
-          "$ref": "#/$defs/publicText"
-        },
-        "posted_at": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "status": {
-          "enum": ["open", "fixed"]
-        },
-        "fixed_at": {
+        "id": { "type": "string", "pattern": "^[0-9]{17,20}$" },
+        "title": { "$ref": "#/$defs/publicText" },
+        "body": { "$ref": "#/$defs/publicText" },
+        "posted_at": { "type": "string", "format": "date-time" },
+        "status": { "enum": ["open", "fixed", "duplicate", "off_topic"] },
+        "resolved_at": {
           "oneOf": [
             { "type": "string", "format": "date-time" },
             { "type": "null" }
           ]
         },
         "tags": {
-          "type": "array",
-          "minItems": 1,
-          "maxItems": 12,
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "minLength": 1,
-            "maxLength": 40,
-            "pattern": "^[^@\\r\\n]+$"
-          }
+          "type": "array", "minItems": 1, "maxItems": 12, "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1, "maxLength": 40, "pattern": "^[^@\\r\\n]+$" }
         },
-        "reactors_unique": {
-          "type": "integer",
-          "minimum": 0
-        },
+        "status_tags": { "type": "array", "maxItems": 2, "uniqueItems": true, "items": { "$ref": "#/$defs/statusTag" } },
+        "reactors_unique": { "type": "integer", "minimum": 0 },
         "score": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Popularity score emitted by the shared /topbugs scoring module using TOPBUGS_REACTION_WEIGHT, TOPBUGS_COMMENTER_WEIGHT and TOPBUGS_HALF_LIFE_DAYS."
+          "type": "number", "minimum": 0,
+          "description": "Popularity score emitted by the shared /topbugs scoring module using the three TOPBUGS_* scoring parameters."
         },
-        "reactions": {
-          "type": "array",
-          "maxItems": 50,
-          "description": "Discord reaction aggregates in the same public shape as the Roadmap reaction feed.",
-          "items": {
-            "$ref": "#/$defs/reaction"
-          }
-        },
-        "comments_count": {
-          "type": "integer",
-          "minimum": 0
-        },
-        "activity_7d": {
-          "type": "integer",
-          "minimum": 0
-        },
-        "comments": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/comment"
-          }
-        },
-        "images": {
-          "type": "array",
-          "maxItems": 12,
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "pattern": "^\\./assets/bugs/[A-Za-z0-9][A-Za-z0-9._/-]*\\.(?:avif|gif|jpe?g|png|webp)$"
-          }
-        }
+        "reactions": { "type": "array", "maxItems": 50, "items": { "$ref": "#/$defs/reaction" } },
+        "comments_count": { "type": "integer", "minimum": 0 },
+        "activity_7d": { "type": "integer", "minimum": 0 },
+        "comments": { "type": "array", "items": { "$ref": "#/$defs/comment" } },
+        "images": { "type": "array", "maxItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/image" } }
       },
       "allOf": [
         {
-          "if": {
-            "properties": { "status": { "const": "open" } },
-            "required": ["status"]
-          },
-          "then": {
-            "properties": { "fixed_at": { "type": "null" } }
-          },
-          "else": {
-            "properties": { "fixed_at": { "type": "string", "format": "date-time" } }
-          }
+          "if": { "properties": { "status": { "const": "open" } }, "required": ["status"] },
+          "then": { "properties": { "resolved_at": { "type": "null" } } },
+          "else": { "properties": { "resolved_at": { "type": "string", "format": "date-time" } } }
         }
       ]
     }
