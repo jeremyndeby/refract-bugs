@@ -32,8 +32,8 @@
         Known issues, public progress, and fixes. Open a card to read the anonymized discussion.
       </p>
       <p class="priority-note">
-        Comments never show authors. Team replies are identified only with a <strong>TEAM</strong> badge,
-        and attachments are served from this site rather than Discord.
+        Community authors use per-post pseudonyms. Team replies carry a <strong>TEAM</strong> badge,
+        Dev replies may show the Dev name, and attachments are served from this site rather than Discord.
       </p>
 
       <section class="pulse" aria-label="Bug activity">
@@ -52,18 +52,19 @@
             <dt>✅ Fixed</dt>
             <dd><strong id="fixed-last-24-hours">—</strong> last 24h <span aria-hidden="true">·</span> <strong id="fixed-last-7-days">—</strong> last 7d</dd>
           </div>
+          <div class="pulse-stat">
+            <dt>⏱ Avg fix time</dt>
+            <dd><strong id="avg-fix-time">—</strong></dd>
+          </div>
         </dl>
       </section>
-      <a class="idea-link" href="https://discord.gg/zkdc9yw93x" target="_blank" rel="noreferrer">
-        Found a bug? Report it on Discord <span aria-hidden="true">→</span>
-      </a>
 
       <nav class="tabs" id="bug-tabs" role="tablist" aria-label="Bug views">
         <button class="tab" id="tab-open" role="tab" aria-selected="true" aria-controls="view-open" data-view="open">
           🐛 Open <span class="count" id="open-count">—</span>
         </button>
-        <button class="tab" id="tab-fixed" role="tab" aria-selected="false" aria-controls="view-fixed" data-view="fixed" tabindex="-1">
-          ✅ Fixed <span class="count" id="fixed-count">—</span>
+        <button class="tab" id="tab-closed" role="tab" aria-selected="false" aria-controls="view-closed" data-view="closed" tabindex="-1">
+          Closed <span class="count" id="closed-count">—</span>
         </button>
       </nav>
     </header>
@@ -102,28 +103,20 @@
       </div>
       </div>
       </section>
-      <section id="view-fixed" role="tabpanel" aria-labelledby="tab-fixed" hidden></section>
+      <section id="view-closed" role="tabpanel" aria-labelledby="tab-closed" hidden></section>
     </main>
 
-    <aside class="discord-cta" aria-labelledby="discord-cta-title">
-      <div>
-        <h2 id="discord-cta-title">💜 Found something broken?</h2>
-        <p>
-          Report it on Discord, add your reaction to an open thread, and help us understand how often it happens.
-        </p>
-      </div>
-      <a class="discord-cta-button" href="https://discord.gg/zkdc9yw93x" target="_blank" rel="noreferrer">
-        Join the Refract Discord <span aria-hidden="true">↗</span>
-      </a>
-    </aside>
-
     <footer class="foot">
-      <div>Counts come from unique Discord reactors. Updated every 6 hours.</div>
+      <div>Popularity uses the public score. Updated every 6 hours and after terminal tag changes.</div>
       <div class="stamp"><a href="https://getrefract.app/">getrefract.app</a></div>
     </footer>
   </div>
 
   <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1">↑</button>
+  <div class="lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Bug attachment" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image">×</button>
+    <img id="lightbox-image" alt="Expanded bug attachment">
+  </div>
   <noscript>This page needs JavaScript to load and sort the public bug tracker.</noscript>
   <script type="module" src="./app.mjs"></script>
 </body>

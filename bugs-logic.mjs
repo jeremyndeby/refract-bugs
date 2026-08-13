@@ -28,6 +28,22 @@ export function bugThreadUrl(bug, guildId) {
     : null;
 }
 
+export function daysBetween(start, end) {
+  if (!start || !end) return null;
+  const value = Math.max(0, Math.round((Date.parse(end) - Date.parse(start)) / DAY_MS));
+  return Number.isFinite(value) ? value : null;
+}
+
+export function agePillColor(days) {
+  const value = Math.max(0, Number(days) || 0);
+  if (value < 7) return 'hsl(220 9% 58%)';
+  const progress = Math.min(1, (value - 7) / 83);
+  const hue = 32 * (1 - progress);
+  const saturation = 72 + progress * 10;
+  const lightness = 53 + progress * 4;
+  return `hsl(${hue.toFixed(1)} ${saturation.toFixed(1)}% ${lightness.toFixed(1)}%)`;
+}
+
 export function relativeAge(date, reference) {
   const days = Math.max(0, Math.floor((Date.parse(reference) - Date.parse(date)) / DAY_MS));
   if (days === 0) return 'today';
@@ -49,11 +65,46 @@ export function isWithinHours(date, reference, hours) {
   return delta >= 0 && delta <= hours * 3_600_000;
 }
 
-function includesQuery(bug, query) {
-  const needle = query.trim().toLocaleLowerCase('en');
-  if (!needle) return true;
-  const comments = bug.comments.map((comment) => comment.text).join(' ');
-  return `${bug.title} ${bug.body} ${bug.tags.join(' ')} ${comments}`.toLocaleLowerCase('en').includes(needle);
+function tokens(value) {
+  return String(value ?? '')
+    .toLocaleLowerCase('en')
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .match(/[\p{L}\p{N}]+/gu) ?? [];
+}
+
+export function editDistance(left, right) {
+  const previous = Array.from({ length: right.length + 1 }, (_, index) => index);
+  for (let leftIndex = 1; leftIndex <= left.length; leftIndex += 1) {
+    let diagonal = previous[0];
+    previous[0] = leftIndex;
+    for (let rightIndex = 1; rightIndex <= right.length; rightIndex += 1) {
+      const above = previous[rightIndex];
+      previous[rightIndex] = Math.min(
+        previous[rightIndex] + 1,
+        previous[rightIndex - 1] + 1,
+        diagonal + (left[leftIndex - 1] === right[rightIndex - 1] ? 0 : 1),
+      );
+      diagonal = above;
+    }
+  }
+  return previous[right.length];
+}
+
+export function includesQuery(bug, query) {
+  const queryTokens = tokens(query);
+  if (queryTokens.length === 0) return true;
+  const documentTokens = tokens(`${bug.title} ${bug.body} ${bug.tags.join(' ')}`);
+  return queryTokens.every((queryToken) => documentTokens.some((documentToken) =>
+    documentToken.startsWith(queryToken) ||
+    (queryToken.length >= 5 && editDistance(queryToken, documentToken) <= 2)));
+}
+
+export function terminalTagLabel(status) {
+  if (status === 'fixed') return 'Fixed';
+  if (status === 'duplicate') return 'Duplicate';
+  if (status === 'off_topic') return 'Off-topic';
+  return null;
 }
 
 function matchesActivity(bug, activity, generatedAt) {
@@ -62,12 +113,12 @@ function matchesActivity(bug, activity, generatedAt) {
   if (activity === 'discussed') return bug.comments_count > 0;
   if (activity === 'with-images') return bug.images.length > 0;
   if (activity === 'new-7d') return isWithinDays(bug.posted_at, generatedAt, 7);
-  if (activity === 'fixed-7d') return bug.status === 'fixed' && isWithinDays(bug.fixed_at, generatedAt, 7);
+  if (activity === 'closed-7d') return bug.status !== 'open' && isWithinDays(bug.resolved_at, generatedAt, 7);
   return true;
 }
 
 function dateForSort(bug, status) {
-  return status === 'fixed' ? bug.fixed_at : bug.posted_at;
+  return status === 'closed' ? bug.resolved_at : bug.posted_at;
 }
 
 export function selectBugs(items, {
@@ -80,10 +131,10 @@ export function selectBugs(items, {
   generatedAt,
 } = {}) {
   const selected = items.filter((bug) => (
-    bug.status === status
+    (status === 'closed' ? bug.status !== 'open' : bug.status === 'open')
     && includesQuery(bug, query)
     && matchesActivity(bug, activity, generatedAt)
-    && (!tag || bug.tags.includes(tag))
+    && (!tag || bug.tags.includes(tag) || terminalTagLabel(bug.status) === tag)
   ));
   const multiplier = direction === 'asc' ? 1 : -1;
   return selected.sort((a, b) => {
@@ -100,18 +151,36 @@ export function selectBugs(items, {
 export function datasetCounters(bugs, generatedAt) {
   const open = bugs.filter((bug) => bug.status === 'open').length;
   const fixed = bugs.filter((bug) => bug.status === 'fixed').length;
+  const duplicate = bugs.filter((bug) => bug.status === 'duplicate').length;
+  const offTopic = bugs.filter((bug) => bug.status === 'off_topic').length;
+  const closed = fixed + duplicate + offTopic;
   const opened24h = bugs.filter((bug) => bug.status === 'open' && isWithinHours(bug.posted_at, generatedAt, 24)).length;
   const opened7d = bugs.filter((bug) => bug.status === 'open' && isWithinDays(bug.posted_at, generatedAt, 7)).length;
-  const fixed24h = bugs.filter((bug) => bug.status === 'fixed' && isWithinHours(bug.fixed_at, generatedAt, 24)).length;
-  const fixed7d = bugs.filter((bug) => bug.status === 'fixed' && isWithinDays(bug.fixed_at, generatedAt, 7)).length;
+  const fixed24h = bugs.filter((bug) => bug.status === 'fixed' && isWithinHours(bug.resolved_at, generatedAt, 24)).length;
+  const fixed7d = bugs.filter((bug) => bug.status === 'fixed' && isWithinDays(bug.resolved_at, generatedAt, 7)).length;
+  const fixTimes = bugs.filter((bug) => bug.status === 'fixed')
+    .map((bug) => daysBetween(bug.posted_at, bug.resolved_at))
+    .filter(Number.isFinite)
+    .sort((a, b) => a - b);
+  const avgFixDays = fixTimes.length
+    ? fixTimes.reduce((sum, value) => sum + value, 0) / fixTimes.length
+    : null;
+  const middle = Math.floor(fixTimes.length / 2);
+  const medianFixDays = fixTimes.length === 0 ? null
+    : fixTimes.length % 2 ? fixTimes[middle] : (fixTimes[middle - 1] + fixTimes[middle]) / 2;
   return {
     open,
     fixed,
+    duplicate,
+    offTopic,
+    closed,
     opened24h,
     opened7d,
     fixed24h,
     fixed7d,
     openDelta24h: opened24h - fixed24h,
     openDelta7d: opened7d - fixed7d,
+    avgFixDays,
+    medianFixDays,
   };
 }

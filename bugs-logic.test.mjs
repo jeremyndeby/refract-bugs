@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { bugThreadUrl, datasetCounters, nextSortState, reactionPillDisplay, selectBugs } from './bugs-logic.mjs';
+import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, selectBugs } from './bugs-logic.mjs';
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
@@ -45,10 +45,14 @@ test('clicking the active sort reverses it while a new sort starts descending', 
   assert.deepEqual(nextSortState('popularity', 'asc', 'date'), { sort: 'date', direction: 'desc' });
 });
 
-test('search covers bodies, tags and anonymized comment text', () => {
+test('search covers titles, descriptions and tags with token prefixes and typo distance', () => {
   const common = { status: 'open', generatedAt: fixture.generated_at };
-  assert.equal(selectBugs(fixture.bugs, { ...common, query: 'safe-area' }).length, 1);
-  assert.equal(selectBugs(fixture.bugs, { ...common, query: 'calendar' }).length, 1);
+  assert.equal(selectBugs(fixture.bugs, { ...common, query: 'previous progress' }).length, 1);
+  assert.equal(selectBugs(fixture.bugs, { ...common, query: 'track' }).length > 0, true);
+  const exactCase = [{
+    ...fixture.bugs[0], title: 'Bug in Importing ratings', body: 'Import fails.', tags: ['Import'],
+  }];
+  assert.equal(selectBugs(exactCase, { ...common, query: 'important rating' }).length, 1);
 });
 
 test('activity and tag filters compose', () => {
@@ -70,12 +74,28 @@ test('fixed cards never receive a Discord thread link', () => {
 test('header counters are derived from accepted entries', () => {
   assert.deepEqual(datasetCounters(fixture.bugs, fixture.generated_at), {
     open: 12,
-    fixed: 8,
+    fixed: 6,
+    duplicate: 1,
+    offTopic: 1,
+    closed: 8,
     opened24h: 1,
     opened7d: 5,
     fixed24h: 1,
     fixed7d: 4,
     openDelta24h: 0,
     openDelta7d: 1,
+    avgFixDays: 13.666666666666666,
+    medianFixDays: 14.5,
   });
+});
+
+test('age color is continuous and resolution days derive from public dates', () => {
+  assert.notEqual(agePillColor(30), agePillColor(31));
+  assert.match(agePillColor(100), /^hsl\(0/u);
+  assert.equal(daysBetween('2026-08-01T00:00:00.000Z', '2026-08-13T00:00:00.000Z'), 12);
+});
+
+test('Closed contains Fixed, Duplicate and Off-topic and can filter Fixed by terminal tag', () => {
+  assert.equal(selectBugs(fixture.bugs, { status: 'closed' }).length, 8);
+  assert.equal(selectBugs(fixture.bugs, { status: 'closed', tag: 'Fixed' }).length, 6);
 });
