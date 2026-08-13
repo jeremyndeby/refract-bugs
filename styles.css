@@ -414,7 +414,7 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--card);
-  overflow: hidden;
+  overflow: visible;
   transition: background 140ms ease, border-color 140ms ease;
 }
 .bug-card:hover, .bug-card.is-expanded { border-color: var(--primary-border); background: var(--card-light); }
@@ -464,6 +464,11 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   --status-color: var(--warm);
   border-color: var(--warm);
   color: var(--warm);
+}
+.status-badge-investigating {
+  --status-color: #74B9FF;
+  border-color: #74B9FF;
+  color: #74B9FF;
 }
 .status-badge-planned {
   --status-color: var(--planned);
@@ -779,23 +784,26 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
-.rank-pill {
-  position: absolute;
-  top: 8px;
-  left: 14px;
-  display: inline-flex;
-  min-height: 23px;
-  align-items: center;
-  padding: 3px 8px;
-  border: 1px solid var(--primary-border);
-  border-radius: 999px;
-  background: var(--primary-dark);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-  color: var(--text-bright);
-  font-size: 10px;
-  font-weight: 800;
+.bug-edge-badge {
+  max-width: calc(100% - 86px);
 }
-.age-pill, .terminal-pill {
+.bug-status-badge-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bug-status-badge-label + .bug-status-badge-label { border-left: 1px solid var(--status-color); }
+.bug-age-badge {
+  flex: 0 0 auto;
+  border-left-color: color-mix(in srgb, var(--age-color) 55%, transparent);
+  background: color-mix(in srgb, var(--age-color) 15%, transparent);
+  color: var(--age-color);
+}
+.bug-age-only {
+  border-color: color-mix(in srgb, var(--age-color, var(--border)) 55%, transparent);
+}
+.bug-age-only .bug-age-badge { border-left: 0; }
+.terminal-pill {
   display: inline-flex;
   flex: 0 0 auto;
   min-height: 25px;
@@ -808,6 +816,30 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   font-size: 10px;
   font-weight: 800;
   white-space: nowrap;
+}
+.team-participation-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 8px 0;
+}
+.team-participation-pill {
+  display: inline-flex;
+  min-height: 23px;
+  align-items: center;
+  padding: 3px 7px;
+  border: 1px solid color-mix(in srgb, var(--participant-color, var(--primary)) 58%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--participant-color, var(--primary)) 10%, transparent);
+  color: var(--participant-color, var(--primary-light));
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1;
+  white-space: nowrap;
+}
+.mod-participation-pill {
+  --participant-color: var(--primary-light);
+  letter-spacing: 0.04em;
 }
 .terminal-fixed { --age-color: #55EFC4; }
 .terminal-duplicate { --age-color: #A29BFE; }
@@ -904,6 +936,10 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.08em;
+}
+.team-mod-badge {
+  border-color: color-mix(in srgb, var(--primary-light) 72%, transparent);
+  letter-spacing: 0.06em;
 }
 .op-badge {
   padding: 1px 5px;
@@ -1786,7 +1822,8 @@ noscript { display: block; padding: 20px; color: var(--text); text-align: center
   .card-actions { align-items: center; flex-direction: row; gap: 6px; padding: 7px 12px 12px; }
   .comment-toggle { min-height: 30px; padding: 4px 8px; }
   .image-gallery { grid-template-columns: 1fr; }
-  .age-pill, .terminal-pill { max-width: 45%; min-height: 22px; padding: 3px 6px; font-size: 9px; }
+  .bug-edge-badge { max-width: calc(100% - 70px); }
+  .terminal-pill { max-width: 45%; min-height: 22px; padding: 3px 6px; font-size: 9px; }
   .bug-thumbnail { width: calc(100% - 70px); margin: -2px 12px 8px 58px; }
   .bug-thumbnail img { max-height: 150px; }
   .lightbox { padding: 14px; }

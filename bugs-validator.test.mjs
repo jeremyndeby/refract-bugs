@@ -5,7 +5,7 @@ import { sanitizeBugDataset, validateBugDataset, validateBugEntry } from './bugs
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
-test('the public fixture satisfies the frozen v3 contract', () => {
+test('the public fixture satisfies the v4 Dev and Mod identity contract', () => {
   const result = validateBugDataset(fixture);
   assert.equal(result.blocked, false);
   assert.equal(result.rejected.length, 0);
@@ -22,7 +22,7 @@ test('score and Roadmap-shaped reactions are required contract fields', () => {
   assert.match(validateBugEntry(invalidReaction).join(' '), /positive integer/u);
 });
 
-test('v3 requires the OP author key, per-comment author keys, reactions and closed dates', () => {
+test('v4 requires the OP author key, per-comment author keys, reactions and closed dates', () => {
   const missingOp = structuredClone(fixture.bugs[0]);
   delete missingOp.author_key;
   assert.match(validateBugEntry(missingOp).join(' '), /missing field: author_key/u);
@@ -48,10 +48,19 @@ test('the fixture marks OP replies by reusing the card author_key', () => {
     !comment.is_team && comment.author_key === entry.author_key));
 });
 
-test('team_name is optional only for TEAM comments and status attribution uses the closed tag vocabulary', () => {
+test('Dev names are canonical, Mods stay anonymous, and status attribution uses the closed tag vocabulary', () => {
   const entry = structuredClone(fixture.bugs[0]);
   entry.comments[0].team_name = 'Community Person';
-  assert.match(validateBugEntry(entry).join(' '), /team_name is allowed only on TEAM/u);
+  assert.match(validateBugEntry(entry).join(' '), /team_name is allowed only for Dev/u);
+
+  const team = entry.comments.find((comment) => comment.is_team);
+  team.team_role = 'mod';
+  team.team_name = 'Visible Mod';
+  assert.match(validateBugEntry(entry).join(' '), /team_name is allowed only for Dev/u);
+
+  delete team.team_name;
+  delete team.team_role;
+  assert.match(validateBugEntry(entry).join(' '), /team_role is required/u);
 
   const invalidStatus = structuredClone(fixture.bugs[0]);
   invalidStatus.status_tags = [{ tag: '⏳ Waiting' }];

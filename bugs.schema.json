@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "generated_at", "bugs"],
   "properties": {
-    "schema_version": { "const": 3 },
+    "schema_version": { "const": 4 },
     "generated_at": { "type": "string", "format": "date-time" },
     "bugs": { "type": "array", "items": { "$ref": "#/$defs/bug" } }
   },
@@ -57,6 +57,10 @@
         "text": { "$ref": "#/$defs/publicText" },
         "date": { "type": "string", "format": "date-time" },
         "is_team": { "type": "boolean" },
+        "team_role": {
+          "enum": ["dev", "mod", "team"],
+          "description": "Present only on TEAM comments. Dev has precedence over Mod."
+        },
         "author_key": { "$ref": "#/$defs/authorKey" },
         "team_name": {
           "type": "string",
@@ -70,7 +74,21 @@
       "allOf": [
         {
           "if": { "properties": { "is_team": { "const": false } }, "required": ["is_team"] },
-          "then": { "not": { "required": ["team_name"] } }
+          "then": {
+            "allOf": [
+              { "not": { "required": ["team_role"] } },
+              { "not": { "required": ["team_name"] } }
+            ]
+          }
+        },
+        {
+          "if": { "properties": { "is_team": { "const": true } }, "required": ["is_team"] },
+          "then": { "required": ["team_role"] }
+        },
+        {
+          "if": { "properties": { "team_role": { "const": "dev" } }, "required": ["team_role"] },
+          "then": { "required": ["team_name"] },
+          "else": { "not": { "required": ["team_name"] } }
         }
       ]
     },

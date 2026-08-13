@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, selectBugs } from './bugs-logic.mjs';
+import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, selectBugs, teamParticipation } from './bugs-logic.mjs';
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
@@ -37,6 +37,21 @@ test('reaction pills mirror Roadmap semantics and collapse after three values', 
   ] });
   assert.deepEqual(display.visible.map(({ semantic }) => semantic), ['primary', 'positive', 'negative']);
   assert.equal(display.hiddenCount, 1);
+});
+
+test('TEAM participation groups Dev names and aggregates anonymous Mods', () => {
+  assert.deepEqual(teamParticipation([
+    { is_team: true, team_role: 'dev', team_name: 'Boulet' },
+    { is_team: true, team_role: 'mod' },
+    { is_team: false },
+    { is_team: true, team_role: 'dev', team_name: 'Boulet' },
+    { is_team: true, team_role: 'dev', team_name: 'Exooo' },
+    { is_team: true, team_role: 'mod' },
+  ]), [
+    { kind: 'dev', name: 'Boulet', count: 2 },
+    { kind: 'dev', name: 'Exooo', count: 1 },
+    { kind: 'mod', name: 'MOD', count: 2 },
+  ]);
 });
 
 test('clicking the active sort reverses it while a new sort starts descending', () => {

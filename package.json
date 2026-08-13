@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test bugs-logic.test.mjs bugs-validator.test.mjs",
+    "test": "node --test bugs-logic.test.mjs bugs-validator.test.mjs ui-parity.test.mjs",
     "validate": "node validate-public-data.mjs bugs.json"
   }
 }
