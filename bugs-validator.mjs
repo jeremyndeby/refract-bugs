@@ -71,12 +71,19 @@ function validateComments(entry, errors) {
     }
     const required = ['text', 'date', 'is_team', 'author_key', 'reactions'];
     const keys = Object.keys(comment);
-    if (keys.some((key) => ![...required, 'team_name'].includes(key)) || required.some((key) => !keys.includes(key))) errors.push(`${prefix} has an invalid shape`);
+    if (keys.some((key) => ![...required, 'team_role', 'team_name'].includes(key)) || required.some((key) => !keys.includes(key))) errors.push(`${prefix} has an invalid shape`);
     if (typeof comment.text !== 'string' || !comment.text.trim() || comment.text.length > 4000) errors.push(`${prefix}.text must be non-empty public text`);
     if (!isDate(comment.date)) errors.push(`${prefix}.date must be an ISO date-time`);
     if (typeof comment.is_team !== 'boolean') errors.push(`${prefix}.is_team must be boolean`);
     if (typeof comment.author_key !== 'string' || !AUTHOR_KEY_PATTERN.test(comment.author_key)) errors.push(`${prefix}.author_key must be a neutral pseudonym`);
-    if ('team_name' in comment && (!comment.is_team || typeof comment.team_name !== 'string' || !comment.team_name.trim() || comment.team_name.length > 80 || /[@\r\n]/u.test(comment.team_name))) errors.push(`${prefix}.team_name is allowed only on TEAM comments and must be safe text`);
+    const validTeamRole = ['dev', 'mod', 'team'].includes(comment.team_role);
+    if (comment.is_team && !validTeamRole) errors.push(`${prefix}.team_role is required on TEAM comments`);
+    if (!comment.is_team && 'team_role' in comment) errors.push(`${prefix}.team_role is allowed only on TEAM comments`);
+    if (comment.team_role === 'dev') {
+      if (typeof comment.team_name !== 'string' || !comment.team_name.trim() || comment.team_name.length > 80 || /[@\r\n]/u.test(comment.team_name)) errors.push(`${prefix}.team_name is required for Dev and must be safe canonical text`);
+    } else if ('team_name' in comment) {
+      errors.push(`${prefix}.team_name is allowed only for Dev comments`);
+    }
     validateReactionList(comment.reactions, `${prefix}.reactions`, errors);
   });
   if (Number.isInteger(entry.comments_count) && entry.comments_count !== entry.comments.length) errors.push('comments_count must equal comments.length');
@@ -163,7 +170,7 @@ export function validateBugDataset(data) {
   if (!data || typeof data !== 'object' || Array.isArray(data)) return { accepted: [], rejected: [], blocked: true, rootErrors: ['dataset must be an object'], total: 0, rejectedRatio: 1 };
   const rootKeys = Object.keys(data);
   if (rootKeys.some((key) => !['schema_version', 'generated_at', 'bugs'].includes(key))) rootErrors.push('dataset contains unexpected root fields');
-  if (data.schema_version !== 3) rootErrors.push('schema_version must equal 3');
+  if (data.schema_version !== 4) rootErrors.push('schema_version must equal 4');
   if (!isDate(data.generated_at)) rootErrors.push('generated_at must be an ISO date-time');
   if (!Array.isArray(data.bugs)) rootErrors.push('bugs must be an array');
   if (rootErrors.length) return { accepted: [], rejected: [], blocked: true, rootErrors, total: 0, rejectedRatio: 1 };
