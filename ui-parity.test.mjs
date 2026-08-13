@@ -73,3 +73,10 @@ test('Activity row includes counted Investigating and In Progress filters', () =
   assert.match(app, /\['in-progress', '🛠 In Progress'\]/u);
   assert.match(app, /const button = el\('button', 'chip filter-chip', `\$\{label\} · \$\{count\}`\)/u);
 });
+
+test('card metadata adds the last comment age only when a comment exists', () => {
+  const card = app.slice(app.indexOf('function createCard'), app.indexOf('function selectedBugs'));
+  assert.match(card, /const lastCommentDate = lastCommentAt\(bug\.comments\);/u);
+  assert.match(card, /if \(lastCommentDate\) metaParts\.push\(`Last comment \$\{relativeAge\(lastCommentDate, state\.data\.generated_at\)\}`\);/u);
+  assert.match(card, /metaParts\.join\(' · '\)/u);
+});

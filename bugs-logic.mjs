@@ -53,6 +53,18 @@ export function relativeAge(date, reference) {
   return months === 1 ? '1 month ago' : `${months} months ago`;
 }
 
+export function lastCommentAt(comments) {
+  let latestDate = null;
+  let latestTimestamp = Number.NEGATIVE_INFINITY;
+  for (const comment of Array.isArray(comments) ? comments : []) {
+    const timestamp = Date.parse(comment?.date);
+    if (Number.isNaN(timestamp) || timestamp <= latestTimestamp) continue;
+    latestTimestamp = timestamp;
+    latestDate = comment.date;
+  }
+  return latestDate;
+}
+
 export function isWithinDays(date, reference, days) {
   if (!date || !reference) return false;
   const delta = Date.parse(reference) - Date.parse(date);
