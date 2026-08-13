@@ -874,9 +874,14 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   background: rgba(30, 34, 37, 0.55);
 }
 .team-comment { border-left: 3px solid var(--primary); background: var(--primary-subtle); }
+.op-comment {
+  border-left: 3px solid color-mix(in srgb, var(--primary) 58%, transparent);
+  background: color-mix(in srgb, var(--primary) 7%, rgba(30, 34, 37, 0.55));
+}
 .comment-head { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
 .comment-head time { color: var(--text-muted); font-size: 10px; }
 .author-key, .dev-name { color: var(--author-color); font-size: 11px; font-weight: 700; }
+.card-op-author { color: var(--author-color); font-weight: 750; }
 .discussion-heading { display: flex; align-items: center; justify-content: space-between; }
 .discussion-collapse {
   width: 30px;
@@ -896,6 +901,16 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   color: var(--text-bright);
   font-size: 9px;
   font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.op-badge {
+  padding: 1px 5px;
+  border: 1px solid color-mix(in srgb, var(--primary) 42%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 9%, transparent);
+  color: var(--primary-light);
+  font-size: 8px;
+  font-weight: 800;
   letter-spacing: 0.08em;
 }
 .bug-images { margin-top: 22px; }

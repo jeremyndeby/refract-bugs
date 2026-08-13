@@ -282,7 +282,8 @@ function createComments(bug, collapse) {
   }
   const list = el('ol', 'comment-list');
   for (const comment of bug.comments) {
-    const item = el('li', `comment${comment.is_team ? ' team-comment' : ''}`);
+    const isOp = comment.author_key === bug.author_key;
+    const item = el('li', `comment${comment.is_team ? ' team-comment' : isOp ? ' op-comment' : ''}`);
     const head = el('div', 'comment-head');
     if (comment.is_team) {
       head.append(el('span', 'team-badge', 'TEAM'));
@@ -291,11 +292,13 @@ function createComments(bug, collapse) {
         dev.style.setProperty('--author-color', stableColor(comment.team_name, { saturation: 70, lightness: 72 }));
         head.append(dev);
       }
-    } else {
+    }
+    if (!comment.is_team || isOp) {
       const author = el('span', 'author-key', comment.author_key);
       author.style.setProperty('--author-color', stableColor(`${bug.id}:${comment.author_key}`));
       head.append(author);
     }
+    if (isOp) head.append(el('span', 'op-badge', 'OP'));
     head.append(el('time', '', formatDate(comment.date)));
     const copy = el('p', '', comment.text);
     item.append(head, copy);
@@ -396,7 +399,10 @@ function createCard(bug, rank) {
     };
     titleLine.append(el('span', `terminal-pill terminal-${bug.status}`, `${labels[bug.status]} · ${days}d`));
   }
-  const description = el('p', 'description', bug.body);
+  const description = el('p', 'description');
+  const opAuthor = el('span', 'card-op-author', bug.author_key);
+  opAuthor.style.setProperty('--author-color', stableColor(`${bug.id}:${bug.author_key}`));
+  description.append(opAuthor, document.createTextNode(` — ${bug.body}`));
   const meta = el('div', 'meta');
   meta.append(el('span', '', `Reported ${relativeAge(bug.posted_at, state.data.generated_at)}`));
   const chips = el('div', 'chips');

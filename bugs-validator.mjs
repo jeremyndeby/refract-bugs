@@ -125,7 +125,7 @@ function validateImages(images, errors) {
 export function validateBugEntry(entry) {
   const errors = [];
   const allowedKeys = new Set([
-    'id', 'title', 'body', 'posted_at', 'status', 'resolved_at', 'tags', 'status_tags',
+    'id', 'title', 'body', 'author_key', 'posted_at', 'status', 'resolved_at', 'tags', 'status_tags',
     'reactors_unique', 'score', 'reactions', 'comments_count', 'activity_7d', 'comments', 'images',
   ]);
   if (!entry || typeof entry !== 'object' || Array.isArray(entry)) return ['entry must be an object'];
@@ -134,6 +134,7 @@ export function validateBugEntry(entry) {
   if (typeof entry.id !== 'string' || !ID_PATTERN.test(entry.id)) errors.push('id must contain 17 to 20 digits');
   if (typeof entry.title !== 'string' || !entry.title.trim() || entry.title.length > 4000) errors.push('title must be non-empty public text');
   if (typeof entry.body !== 'string' || !entry.body.trim() || entry.body.length > 4000) errors.push('body must be non-empty public text');
+  if (typeof entry.author_key !== 'string' || !AUTHOR_KEY_PATTERN.test(entry.author_key)) errors.push('author_key must be a neutral per-post pseudonym');
   if (!isDate(entry.posted_at)) errors.push('posted_at must be an ISO date-time');
   if (!STATUSES.has(entry.status)) errors.push('status must be open, fixed, duplicate or off_topic');
   if (entry.status === 'open' && entry.resolved_at !== null) errors.push('open bugs must have resolved_at set to null');

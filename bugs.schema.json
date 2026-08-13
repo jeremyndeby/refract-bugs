@@ -18,6 +18,13 @@
       "maxLength": 4000,
       "pattern": "^(?!.*(?:[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}|(?:token|secret|password|authorization)[=:][^\\s]+)).*$"
     },
+    "authorKey": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 48,
+      "pattern": "^[A-Za-z][A-Za-z -]+$",
+      "description": "Random, persistent pseudonym scoped to this post only; never derived reversibly from Discord identity."
+    },
     "customEmoji": {
       "type": "object",
       "additionalProperties": false,
@@ -50,13 +57,7 @@
         "text": { "$ref": "#/$defs/publicText" },
         "date": { "type": "string", "format": "date-time" },
         "is_team": { "type": "boolean" },
-        "author_key": {
-          "type": "string",
-          "minLength": 3,
-          "maxLength": 48,
-          "pattern": "^[A-Za-z][A-Za-z -]+$",
-          "description": "Random, persistent pseudonym scoped to this post only; never derived reversibly from Discord identity."
-        },
+        "author_key": { "$ref": "#/$defs/authorKey" },
         "team_name": {
           "type": "string",
           "minLength": 1,
@@ -96,13 +97,14 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "id", "title", "body", "posted_at", "status", "resolved_at", "tags", "status_tags",
+        "id", "title", "body", "author_key", "posted_at", "status", "resolved_at", "tags", "status_tags",
         "reactors_unique", "score", "reactions", "comments_count", "activity_7d", "comments", "images"
       ],
       "properties": {
         "id": { "type": "string", "pattern": "^[0-9]{17,20}$" },
         "title": { "$ref": "#/$defs/publicText" },
         "body": { "$ref": "#/$defs/publicText" },
+        "author_key": { "$ref": "#/$defs/authorKey" },
         "posted_at": { "type": "string", "format": "date-time" },
         "status": { "enum": ["open", "fixed", "duplicate", "off_topic"] },
         "resolved_at": {
