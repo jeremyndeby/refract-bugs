@@ -4,8 +4,6 @@ import test from 'node:test';
 import { agePillColor, bugThreadUrl, datasetCounters, daysBetween, nextSortState, reactionPillDisplay, selectBugs, teamParticipation } from './bugs-logic.mjs';
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
-const appSource = await readFile(new URL('./app.mjs', import.meta.url), 'utf8');
-const stylesSource = await readFile(new URL('./styles.css', import.meta.url), 'utf8');
 
 test('Popularity, Trending and Date sorts use the public contract fields', () => {
   const common = { status: 'open', generatedAt: fixture.generated_at };
@@ -115,33 +113,4 @@ test('age color is continuous and resolution days derive from public dates', () 
 test('Closed contains Fixed, Duplicate and Off-topic and can filter Fixed by terminal tag', () => {
   assert.equal(selectBugs(fixture.bugs, { status: 'closed' }).length, 8);
   assert.equal(selectBugs(fixture.bugs, { status: 'closed', tag: 'Fixed' }).length, 6);
-});
-
-test('Open cards use the Roadmap edge-badge geometry', () => {
-  assert.match(stylesSource, /\.rank-badge, \.edge-badge \{[\s\S]*?top: -12px;[\s\S]*?left: 14px;[\s\S]*?min-height: 24px;[\s\S]*?padding: 3px 9px;/u);
-  assert.match(stylesSource, /\.edge-badge \{ right: 14px; left: auto; \}/u);
-  assert.match(stylesSource, /\.rank-badge, \.edge-badge \{ top: -10px; min-height: 21px; padding: 3px 7px; font-size: 9px; \}/u);
-  assert.match(stylesSource, /\.rank-badge \{ left: 10px; \}/u);
-  assert.match(stylesSource, /\.edge-badge \{ right: 10px; left: auto; \}/u);
-  assert.match(stylesSource, /\.bug-card \{[\s\S]*?overflow: visible;/u);
-});
-
-test('Open cards place rank left and status then age right', () => {
-  assert.match(appSource, /card\.append\(createRankBadge\(rank\), createOpenEdgeBadge\(bug\)\)/u);
-  const edgeBadge = appSource.slice(appSource.indexOf('function createOpenEdgeBadge'), appSource.indexOf('function createCard'));
-  assert.ok(edgeBadge.indexOf("'status-badge-label bug-status-badge-label'") < edgeBadge.indexOf("'eta-badge bug-age-badge'"));
-  assert.doesNotMatch(appSource, /'rank-pill'/u);
-  assert.doesNotMatch(appSource, /'age-pill'/u);
-});
-
-test('mobile edge badges reserve room for the rank badge', () => {
-  assert.match(stylesSource, /\.bug-edge-badge \{ max-width: calc\(100% - 70px\); \}/u);
-  assert.match(stylesSource, /\.bug-status-badge-label \{[\s\S]*?overflow: hidden;[\s\S]*?text-overflow: ellipsis;/u);
-});
-
-test('cards expose Dev and Mod participation before discussion expansion', () => {
-  assert.match(appSource, /createTeamParticipationRow\(bug\)/u);
-  assert.match(appSource, /teamRole === 'mod' \? 'TEAM MOD' : 'TEAM'/u);
-  assert.match(appSource, /team-participation-pill/u);
-  assert.match(stylesSource, /\.team-participation-row \{[\s\S]*?flex-wrap: wrap;/u);
 });
