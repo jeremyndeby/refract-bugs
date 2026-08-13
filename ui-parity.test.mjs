@@ -52,3 +52,24 @@ test('expanded discussions repeat team participation above comments', () => {
   const comments = app.slice(app.indexOf('function createComments'), app.indexOf('function openLightbox'));
   assert.ok(comments.indexOf('section.append(participation)') < comments.indexOf("const list = el('ol', 'comment-list')"));
 });
+
+test('Open titles link to Discord while Closed titles stay plain text', () => {
+  const card = app.slice(app.indexOf('function createCard'), app.indexOf('function selectedBugs'));
+  assert.match(card, /if \(bug\.status === 'open'\) \{[\s\S]*?titleLink\.href = bugThreadUrl\(bug, DISCORD_GUILD_ID\);[\s\S]*?title\.append\(titleLink\);[\s\S]*?\} else \{[\s\S]*?title\.textContent = bug\.title;/u);
+  assert.match(card, /titleLink\.target = '_blank'/u);
+  assert.match(styles, /\.bug-summary \{[\s\S]*?cursor: default;/u);
+});
+
+test('Read more toggles only description text and stops discussion propagation', () => {
+  const card = app.slice(app.indexOf('function createCard'), app.indexOf('function selectedBugs'));
+  assert.match(card, /descriptionToggle\.addEventListener\('click', \(event\) => \{[\s\S]*?event\.stopPropagation\(\);[\s\S]*?setDescriptionExpanded/u);
+  assert.match(card, /description\.addEventListener\('click', \(\) => toggleCard/u);
+  assert.match(app, /toggle\.textContent = expanded \? 'Show less' : 'Read more…'/u);
+  assert.match(styles, /\.description-toggle \{[\s\S]*?min-height: 28px;/u);
+});
+
+test('Activity row includes counted Investigating and In Progress filters', () => {
+  assert.match(app, /\['investigating', '🔍 Investigating'\]/u);
+  assert.match(app, /\['in-progress', '🛠 In Progress'\]/u);
+  assert.match(app, /const button = el\('button', 'chip filter-chip', `\$\{label\} · \$\{count\}`\)/u);
+});

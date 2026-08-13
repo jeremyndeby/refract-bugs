@@ -598,6 +598,8 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   z-index: 1;
   right: 0;
   bottom: 0;
+  min-height: 28px;
+  padding: 4px 0 4px 8px;
   border: 0;
   background: transparent;
   color: var(--primary-light);
@@ -773,18 +775,13 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   border: 0;
   background: transparent;
   color: inherit;
-  cursor: pointer;
+  cursor: default;
   text-align: left;
 }
 .rank-1 .bug-summary { grid-template-columns: 96px minmax(0, 1fr); }
 .bug-title-line { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; }
-.bug-card .description { margin-bottom: 8px; }
-.bug-card:not(.is-expanded) .description {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
+.bug-card .description { margin-bottom: 8px; cursor: pointer; }
+.bug-title-link { display: inline-block; min-height: 24px; }
 .bug-edge-badge {
   max-width: calc(100% - 86px);
 }
