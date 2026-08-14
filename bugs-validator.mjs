@@ -6,7 +6,7 @@ const TOKEN_PATTERN = /(?:mfa\.[A-Z0-9_-]{20,}|(?:gh[oprsu]_|sk-|xox[baprs]-)[A-
 const ID_PATTERN = /^[0-9]{17,20}$/u;
 const LOCAL_IMAGE_PATTERN = /^\.\/assets\/bugs\/[A-Za-z0-9][A-Za-z0-9._/-]*\.(?:avif|gif|jpe?g|png|webp)$/u;
 const AUTHOR_KEY_PATTERN = /^[A-Za-z][A-Za-z -]{2,47}$/u;
-const STATUSES = new Set(['open', 'fixed', 'duplicate', 'off_topic']);
+const STATUSES = new Set(['open', 'fixed', 'duplicate', 'off_topic', 'inactive']);
 const STATUS_TAGS = new Set(['🔍 Investigating', '🛠 In Progress']);
 const RAW_CUSTOM_EMOJI_PATTERN = /<a?:[A-Za-z0-9_]{1,32}:\d{17,20}>/u;
 
@@ -149,18 +149,20 @@ function validateImages(images, errors) {
 export function validateBugEntry(entry) {
   const errors = [];
   const allowedKeys = new Set([
-    'id', 'title', 'body', 'author_key', 'posted_at', 'status', 'resolved_at', 'terminal_attribution', 'tags', 'status_tags',
+    'id', 'title', 'body', 'author_key', 'posted_at', 'status', 'resolved_at', 'terminal_attribution', 'tags', 'status_tags', 'bulk_closed',
     'reactors_unique', 'score', 'reactions', 'comments_count', 'activity_7d', 'comments', 'images',
   ]);
+  const optionalKeys = new Set(['bulk_closed']);
   if (!entry || typeof entry !== 'object' || Array.isArray(entry)) return ['entry must be an object'];
   for (const key of Object.keys(entry)) if (!allowedKeys.has(key)) errors.push(`unexpected field: ${key}`);
-  for (const key of allowedKeys) if (!(key in entry)) errors.push(`missing field: ${key}`);
+  for (const key of allowedKeys) if (!optionalKeys.has(key) && !(key in entry)) errors.push(`missing field: ${key}`);
   if (typeof entry.id !== 'string' || !ID_PATTERN.test(entry.id)) errors.push('id must contain 17 to 20 digits');
   if (typeof entry.title !== 'string' || !entry.title.trim() || entry.title.length > 4000) errors.push('title must be non-empty public text');
   if (typeof entry.body !== 'string' || !entry.body.trim() || entry.body.length > 4000) errors.push('body must be non-empty public text');
   if (typeof entry.author_key !== 'string' || !AUTHOR_KEY_PATTERN.test(entry.author_key)) errors.push('author_key must be a neutral per-post pseudonym');
   if (!isDate(entry.posted_at)) errors.push('posted_at must be an ISO date-time');
-  if (!STATUSES.has(entry.status)) errors.push('status must be open, fixed, duplicate or off_topic');
+  if (!STATUSES.has(entry.status)) errors.push('status must be open, fixed, duplicate, off_topic or inactive');
+  if ('bulk_closed' in entry && typeof entry.bulk_closed !== 'boolean') errors.push('bulk_closed must be a boolean');
   if (entry.status === 'open' && entry.resolved_at !== null) errors.push('open bugs must have resolved_at set to null');
   if (entry.status !== 'open' && !isDate(entry.resolved_at)) errors.push('closed bugs must have a resolved_at date-time');
   if (isDate(entry.posted_at) && isDate(entry.resolved_at) && Date.parse(entry.resolved_at) < Date.parse(entry.posted_at)) errors.push('resolved_at cannot precede posted_at');

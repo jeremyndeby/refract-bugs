@@ -116,6 +116,7 @@ test('header counters are derived from accepted entries', () => {
     fixed: 6,
     duplicate: 1,
     offTopic: 1,
+    inactive: 0,
     closed: 8,
     opened24h: 1,
     opened7d: 5,
@@ -137,4 +138,11 @@ test('age color is continuous and resolution days derive from public dates', () 
 test('Closed contains Fixed, Duplicate and Off-topic and can filter Fixed by terminal tag', () => {
   assert.equal(selectBugs(fixture.bugs, { status: 'closed' }).length, 8);
   assert.equal(selectBugs(fixture.bugs, { status: 'closed', tag: 'Fixed' }).length, 6);
+});
+
+test('Inactive is closed and bulk Fixed entries do not affect avg fix time', () => {
+  const inactive = { ...structuredClone(fixture.bugs[0]), status: 'inactive', resolved_at: fixture.generated_at };
+  const bulk = { ...structuredClone(fixture.bugs.find((bug) => bug.status === 'fixed')), bulk_closed: true };
+  assert.equal(selectBugs([...fixture.bugs, inactive], { status: 'closed', tag: 'Inactive' }).length, 1);
+  assert.equal(datasetCounters([...fixture.bugs, bulk], fixture.generated_at).avgFixDays, 13.666666666666666);
 });

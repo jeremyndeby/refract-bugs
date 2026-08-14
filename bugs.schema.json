@@ -135,13 +135,14 @@
         "body": { "$ref": "#/$defs/publicText" },
         "author_key": { "$ref": "#/$defs/authorKey" },
         "posted_at": { "type": "string", "format": "date-time" },
-        "status": { "enum": ["open", "fixed", "duplicate", "off_topic"] },
+        "status": { "enum": ["open", "fixed", "duplicate", "off_topic", "inactive"] },
         "resolved_at": {
           "oneOf": [
             { "type": "string", "format": "date-time" },
             { "type": "null" }
           ]
         },
+        "bulk_closed": { "type": "boolean" },
         "terminal_attribution": {
           "oneOf": [
             { "type": "null" },

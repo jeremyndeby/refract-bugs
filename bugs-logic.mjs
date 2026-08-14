@@ -116,6 +116,7 @@ export function terminalTagLabel(status) {
   if (status === 'fixed') return 'Fixed';
   if (status === 'duplicate') return 'Duplicate';
   if (status === 'off_topic') return 'Off-topic';
+  if (status === 'inactive') return 'Inactive';
   return null;
 }
 
@@ -167,12 +168,13 @@ export function datasetCounters(bugs, generatedAt) {
   const fixed = bugs.filter((bug) => bug.status === 'fixed').length;
   const duplicate = bugs.filter((bug) => bug.status === 'duplicate').length;
   const offTopic = bugs.filter((bug) => bug.status === 'off_topic').length;
-  const closed = fixed + duplicate + offTopic;
+  const inactive = bugs.filter((bug) => bug.status === 'inactive').length;
+  const closed = fixed + duplicate + offTopic + inactive;
   const opened24h = bugs.filter((bug) => bug.status === 'open' && isWithinHours(bug.posted_at, generatedAt, 24)).length;
   const opened7d = bugs.filter((bug) => bug.status === 'open' && isWithinDays(bug.posted_at, generatedAt, 7)).length;
   const fixed24h = bugs.filter((bug) => bug.status === 'fixed' && isWithinHours(bug.resolved_at, generatedAt, 24)).length;
   const fixed7d = bugs.filter((bug) => bug.status === 'fixed' && isWithinDays(bug.resolved_at, generatedAt, 7)).length;
-  const fixTimes = bugs.filter((bug) => bug.status === 'fixed')
+  const fixTimes = bugs.filter((bug) => bug.status === 'fixed' && bug.bulk_closed !== true)
     .map((bug) => daysBetween(bug.posted_at, bug.resolved_at))
     .filter(Number.isFinite)
     .sort((a, b) => a - b);
@@ -187,6 +189,7 @@ export function datasetCounters(bugs, generatedAt) {
     fixed,
     duplicate,
     offTopic,
+    inactive,
     closed,
     opened24h,
     opened7d,
