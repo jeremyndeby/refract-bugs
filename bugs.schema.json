@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "generated_at", "bugs"],
   "properties": {
-    "schema_version": { "const": 5 },
+    "schema_version": { "const": 6 },
     "generated_at": { "type": "string", "format": "date-time" },
     "bugs": { "type": "array", "items": { "$ref": "#/$defs/bug" } }
   },
@@ -102,6 +102,17 @@
         "applied_at": { "type": "string", "format": "date-time" }
       }
     },
+    "terminalAttribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "applied_by": {
+          "type": "string", "minLength": 1, "maxLength": 80, "pattern": "^[^@|\\r\\n]+$",
+          "description": "Public display name only when the terminal tag executor currently has a configured Dev or Mod role."
+        },
+        "applied_at": { "type": "string", "format": "date-time" }
+      }
+    },
     "image": {
       "type": "object",
       "additionalProperties": false,
@@ -115,7 +126,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "id", "title", "body", "author_key", "posted_at", "status", "resolved_at", "tags", "status_tags",
+        "id", "title", "body", "author_key", "posted_at", "status", "resolved_at", "terminal_attribution", "tags", "status_tags",
         "reactors_unique", "score", "reactions", "comments_count", "activity_7d", "comments", "images"
       ],
       "properties": {
@@ -130,6 +141,13 @@
             { "type": "string", "format": "date-time" },
             { "type": "null" }
           ]
+        },
+        "terminal_attribution": {
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/terminalAttribution" }
+          ],
+          "description": "Best-effort terminal-tag audit metadata. Null is normal outside Discord's 45-day audit window."
         },
         "tags": {
           "type": "array", "minItems": 1, "maxItems": 12, "uniqueItems": true,

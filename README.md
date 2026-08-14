@@ -6,12 +6,13 @@ two views: Open and Fixed.
 
 ## Frozen data contract
 
-`bugs.schema.json` is the stable version-2 public contract. `bugs.fixture.json`
+`bugs.schema.json` is the version-6 public contract. `bugs.fixture.json`
 contains twenty realistic, author-free records. During Part 1, `bugs.json` is an
 exact copy of that fixture so GitHub Pages can exercise the complete UI before
 the private exporter exists.
 
-Each record contains only its public bug ID, title, body, dates, state, tags,
+Each record contains only its public bug ID, title, body, dates, state, best-effort
+terminal-tag attribution, tags,
 unique reactor count, the shared `/topbugs` score, reaction counts, comment
 count, seven-day activity, author-free comments, and local image paths. There
 is no author or username field. Team comments use
