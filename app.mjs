@@ -502,7 +502,7 @@ function createCard(bug, rank) {
   if (bug.status !== 'open') {
     const days = daysBetween(bug.posted_at, bug.resolved_at) ?? 0;
     const labels = {
-      fixed: '✅ Fixed', duplicate: '🔁 Duplicate', off_topic: '🚫 Off-topic',
+      fixed: '✅ Fixed', duplicate: '🔁 Duplicate', off_topic: '🚫 Off-topic', inactive: '🧊 Inactive',
     };
     const appliedBy = bug.terminal_attribution?.applied_by;
     const terminalText = `${labels[bug.status]} · ${days}d${appliedBy ? ` · by ${appliedBy}` : ''}`;
@@ -561,7 +561,9 @@ function createCard(bug, rank) {
     link.rel = 'noreferrer';
     actions.append(link);
   } else {
-    actions.append(el('span', 'fixed-label', `Resolved ${formatDate(bug.resolved_at)}`));
+    if (bug.status !== 'inactive') {
+      actions.append(el('span', 'fixed-label', `Resolved ${formatDate(bug.resolved_at)}`));
+    }
   }
   const commentToggle = el('button', 'comment-toggle');
   commentToggle.type = 'button';

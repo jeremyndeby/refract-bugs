@@ -119,6 +119,15 @@ test('terminal attribution names only safe Dev or Mod display text and may be ab
   assert.match(validateBugEntry(fixed).join(' '), /safe Dev or Mod display name/u);
 });
 
+test('Inactive status and optional bulk_closed marker are accepted safely', () => {
+  const inactive = structuredClone(fixture.bugs.find((bug) => bug.status === 'fixed'));
+  inactive.status = 'inactive';
+  inactive.bulk_closed = false;
+  assert.deepEqual(validateBugEntry(inactive), []);
+  inactive.bulk_closed = 'yes';
+  assert.match(validateBugEntry(inactive).join(' '), /bulk_closed must be a boolean/u);
+});
+
 test('raw Discord custom emoji markup is rejected from public text', () => {
   const entry = structuredClone(fixture.bugs[0]);
   entry.body = 'Thanks <:thank_you:1526362398884237332>';
