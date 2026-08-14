@@ -80,3 +80,17 @@ test('card metadata adds the last comment age only when a comment exists', () =>
   assert.match(card, /if \(lastCommentDate\) metaParts\.push\(`Last comment \$\{relativeAge\(lastCommentDate, state\.data\.generated_at\)\}`\);/u);
   assert.match(card, /metaParts\.join\(' · '\)/u);
 });
+
+test('Closed terminal pills include a best-effort named attribution', () => {
+  const card = app.slice(app.indexOf('function createCard'), app.indexOf('function selectedBugs'));
+  assert.match(card, /bug\.terminal_attribution\?\.applied_by/u);
+  assert.match(card, /` · by \$\{appliedBy\}`/u);
+});
+
+test('rendering starts at 50 while filtering and sorting still use the complete dataset', () => {
+  assert.match(app, /const INITIAL_RENDER_COUNT = 50;/u);
+  assert.match(app, /selected\.slice\(0, state\.renderLimit\)/u);
+  assert.match(app, /new IntersectionObserver/u);
+  assert.match(app, /state\.renderLimit \+ RENDER_BATCH_COUNT/u);
+  assert.ok(app.indexOf('const selected = selectedBugs();') < app.indexOf('selected.slice(0, state.renderLimit)'));
+});

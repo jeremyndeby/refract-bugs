@@ -3,6 +3,8 @@ import { validateBugDataset } from './bugs-validator.mjs';
 
 const DISCORD_GUILD_ID = '1490347491151970366';
 const VIEWS = ['open', 'closed'];
+const INITIAL_RENDER_COUNT = 50;
+const RENDER_BATCH_COUNT = 50;
 const initialParams = new URLSearchParams(location.search);
 const ACTIVITY_OPTIONS = {
   open: [
@@ -61,7 +63,11 @@ const state = {
     open: { query: initialParams.get('q') ?? '', sort: 'popularity', direction: 'desc', activity: '', tag: '' },
     closed: { query: '', sort: 'date', direction: 'desc', activity: '', tag: '' },
   },
+  renderKey: '',
+  renderLimit: INITIAL_RENDER_COUNT,
 };
+
+let renderObserver = null;
 
 const elements = {
   freshness: document.querySelector('#freshness'),
@@ -498,7 +504,11 @@ function createCard(bug, rank) {
     const labels = {
       fixed: '✅ Fixed', duplicate: '🔁 Duplicate', off_topic: '🚫 Off-topic',
     };
-    titleLine.append(el('span', `terminal-pill terminal-${bug.status}`, `${labels[bug.status]} · ${days}d`));
+    const appliedBy = bug.terminal_attribution?.applied_by;
+    const terminalText = `${labels[bug.status]} · ${days}d${appliedBy ? ` · by ${appliedBy}` : ''}`;
+    const terminalPill = el('span', `terminal-pill terminal-${bug.status}`, terminalText);
+    terminalPill.setAttribute('aria-label', terminalText);
+    titleLine.append(terminalPill);
   }
   const description = el('div', 'description');
   description.setAttribute('role', 'button');
@@ -604,6 +614,13 @@ function selectedBugs() {
 function renderList() {
   if (!state.data) return;
   const selected = selectedBugs();
+  const control = state.controls[state.view];
+  const renderKey = JSON.stringify([state.view, control.query, control.sort, control.direction, control.activity, control.tag]);
+  if (renderKey !== state.renderKey) {
+    state.renderKey = renderKey;
+    state.renderLimit = INITIAL_RENDER_COUNT;
+  }
+  renderObserver?.disconnect();
   const total = state.bugs.filter((bug) => state.view === 'closed' ? bug.status !== 'open' : bug.status === 'open').length;
   elements.resultCount.textContent = selected.length === total
     ? plural(total, 'bug')
@@ -619,7 +636,19 @@ function renderList() {
   const popularityRanks = new Map(selectBugs(state.bugs, {
     status: 'open', sort: 'popularity', direction: 'desc', generatedAt: state.data.generated_at,
   }).map((bug, index) => [bug.id, index + 1]));
-  selected.forEach((bug, index) => fragment.append(createCard(bug, popularityRanks.get(bug.id) ?? index + 1)));
+  selected.slice(0, state.renderLimit).forEach((bug, index) =>
+    fragment.append(createCard(bug, popularityRanks.get(bug.id) ?? index + 1)));
+  if (state.renderLimit < selected.length) {
+    const sentinel = el('div', 'incremental-sentinel', 'Loading more bugs…');
+    sentinel.setAttribute('aria-hidden', 'true');
+    fragment.append(sentinel);
+    renderObserver = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      state.renderLimit = Math.min(selected.length, state.renderLimit + RENDER_BATCH_COUNT);
+      renderList();
+    }, { rootMargin: '800px 0px' });
+    requestAnimationFrame(() => renderObserver?.observe(sentinel));
+  }
   elements.list.append(fragment);
 }
 

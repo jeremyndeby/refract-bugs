@@ -844,6 +844,12 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
 .terminal-fixed { --age-color: #55EFC4; }
 .terminal-duplicate { --age-color: #A29BFE; }
 .terminal-off_topic { --age-color: #FDCB6E; }
+
+.incremental-sentinel {
+  height: 1px;
+  overflow: hidden;
+  color: transparent;
+}
 .reaction-row {
   display: flex;
   flex-wrap: nowrap;

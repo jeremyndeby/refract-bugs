@@ -113,6 +113,21 @@ function validateStatusTags(statusTags, errors) {
   });
 }
 
+function validateTerminalAttribution(attribution, errors) {
+  if (attribution === null) return;
+  if (!attribution || typeof attribution !== 'object' || Array.isArray(attribution)) {
+    errors.push('terminal_attribution must be an object or null');
+    return;
+  }
+  const keys = Object.keys(attribution);
+  if (keys.some((key) => !['applied_by', 'applied_at'].includes(key))) errors.push('terminal_attribution has an invalid shape');
+  if ('applied_by' in attribution && (
+    typeof attribution.applied_by !== 'string' || !attribution.applied_by.trim() ||
+    attribution.applied_by.length > 80 || /[@|\r\n]|\p{Extended_Pictographic}/u.test(attribution.applied_by)
+  )) errors.push('terminal_attribution.applied_by must be a safe Dev or Mod display name');
+  if ('applied_at' in attribution && !isDate(attribution.applied_at)) errors.push('terminal_attribution.applied_at must be an ISO date-time');
+}
+
 function validateImages(images, errors) {
   if (!Array.isArray(images) || images.length > 1) {
     errors.push('images must be an array with at most one value');
@@ -134,7 +149,7 @@ function validateImages(images, errors) {
 export function validateBugEntry(entry) {
   const errors = [];
   const allowedKeys = new Set([
-    'id', 'title', 'body', 'author_key', 'posted_at', 'status', 'resolved_at', 'tags', 'status_tags',
+    'id', 'title', 'body', 'author_key', 'posted_at', 'status', 'resolved_at', 'terminal_attribution', 'tags', 'status_tags',
     'reactors_unique', 'score', 'reactions', 'comments_count', 'activity_7d', 'comments', 'images',
   ]);
   if (!entry || typeof entry !== 'object' || Array.isArray(entry)) return ['entry must be an object'];
@@ -149,6 +164,7 @@ export function validateBugEntry(entry) {
   if (entry.status === 'open' && entry.resolved_at !== null) errors.push('open bugs must have resolved_at set to null');
   if (entry.status !== 'open' && !isDate(entry.resolved_at)) errors.push('closed bugs must have a resolved_at date-time');
   if (isDate(entry.posted_at) && isDate(entry.resolved_at) && Date.parse(entry.resolved_at) < Date.parse(entry.posted_at)) errors.push('resolved_at cannot precede posted_at');
+  validateTerminalAttribution(entry.terminal_attribution, errors);
   if (!Array.isArray(entry.tags) || entry.tags.length === 0 || entry.tags.length > 12) errors.push('tags must contain 1 to 12 values');
   else {
     if (entry.tags.some((tag) => typeof tag !== 'string' || !tag.trim() || tag.length > 40 || /[@\r\n]/u.test(tag))) errors.push('tags contain an invalid value');
@@ -172,7 +188,7 @@ export function validateBugDataset(data) {
   if (!data || typeof data !== 'object' || Array.isArray(data)) return { accepted: [], rejected: [], blocked: true, rootErrors: ['dataset must be an object'], total: 0, rejectedRatio: 1 };
   const rootKeys = Object.keys(data);
   if (rootKeys.some((key) => !['schema_version', 'generated_at', 'bugs'].includes(key))) rootErrors.push('dataset contains unexpected root fields');
-  if (data.schema_version !== 5) rootErrors.push('schema_version must equal 5');
+  if (data.schema_version !== 6) rootErrors.push('schema_version must equal 6');
   if (!isDate(data.generated_at)) rootErrors.push('generated_at must be an ISO date-time');
   if (!Array.isArray(data.bugs)) rootErrors.push('bugs must be an array');
   if (rootErrors.length) return { accepted: [], rejected: [], blocked: true, rootErrors, total: 0, rejectedRatio: 1 };

@@ -5,7 +5,7 @@ import { sanitizeBugDataset, validateBugDataset, validateBugEntry } from './bugs
 
 const fixture = JSON.parse(await readFile(new URL('./bugs.fixture.json', import.meta.url), 'utf8'));
 
-test('the public fixture satisfies the v5 Dev and Mod identity contract', () => {
+test('the public fixture satisfies the v6 terminal-attribution identity contract', () => {
   const result = validateBugDataset(fixture);
   assert.equal(result.blocked, false);
   assert.equal(result.rejected.length, 0);
@@ -22,7 +22,7 @@ test('score and Roadmap-shaped reactions are required contract fields', () => {
   assert.match(validateBugEntry(invalidReaction).join(' '), /positive integer/u);
 });
 
-test('v5 requires the OP author key, per-comment author keys, reactions and closed dates', () => {
+test('v6 requires the OP author key, per-comment author keys, reactions and closed dates', () => {
   const missingOp = structuredClone(fixture.bugs[0]);
   delete missingOp.author_key;
   assert.match(validateBugEntry(missingOp).join(' '), /missing field: author_key/u);
@@ -105,6 +105,18 @@ test('a token-like value is rejected', () => {
   const entry = structuredClone(fixture.bugs[0]);
   entry.comments[0].text = 'authorization=abcdefghijklmnop';
   assert.match(validateBugEntry(entry).join(' '), /forbidden token/u);
+});
+
+test('terminal attribution names only safe Dev or Mod display text and may be absent after 45 days', () => {
+  const fixed = structuredClone(fixture.bugs.find((bug) => bug.status === 'fixed'));
+  fixed.terminal_attribution = { applied_by: 'Eli', applied_at: fixed.resolved_at };
+  assert.deepEqual(validateBugEntry(fixed), []);
+
+  fixed.terminal_attribution = null;
+  assert.deepEqual(validateBugEntry(fixed), []);
+
+  fixed.terminal_attribution = { applied_by: 'Eli | @private' };
+  assert.match(validateBugEntry(fixed).join(' '), /safe Dev or Mod display name/u);
 });
 
 test('raw Discord custom emoji markup is rejected from public text', () => {
