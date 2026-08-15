@@ -65,6 +65,10 @@ test('Dev and Mod names are public only on their respective TEAM roles', () => {
   delete team.team_name;
   assert.match(validateBugEntry(entry).join(' '), /team_name is required for Dev and Mod/u);
 
+  const waitingStatus = structuredClone(fixture.bugs[0]);
+  waitingStatus.status_tags = [{ tag: '💬 Waiting on user' }];
+  assert.deepEqual(validateBugEntry(waitingStatus), []);
+
   const invalidStatus = structuredClone(fixture.bugs[0]);
   invalidStatus.status_tags = [{ tag: '⏳ Waiting' }];
   assert.match(validateBugEntry(invalidStatus).join(' '), /unsupported/u);

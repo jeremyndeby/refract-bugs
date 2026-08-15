@@ -471,6 +471,12 @@ button:focus-visible, input:focus-visible, a:focus-visible, [role='button']:focu
   border-color: #74B9FF;
   color: #74B9FF;
 }
+.status-badge-waiting-user {
+  --status-color: #E0A24A;
+  border-color: #E0A24A;
+  background: color-mix(in srgb, #E0A24A 10%, var(--card));
+  color: #FFD79A;
+}
 .status-badge-planned {
   --status-color: var(--planned);
   border-color: var(--planned);

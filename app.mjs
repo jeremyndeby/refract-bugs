@@ -12,6 +12,8 @@ const ACTIVITY_OPTIONS = {
     ['new-7d', 'New · 7 days'],
     ['investigating', '🔍 Investigating'],
     ['in-progress', '🛠 In Progress'],
+    ['waiting-on-user', '💬 Waiting on user'],
+    ['actionable', 'Actionable'],
     ['discussed', 'Discussed'],
     ['with-images', 'With images'],
   ],
@@ -201,7 +203,11 @@ function renderActivityFilters() {
     }).length;
     const button = el('button', 'chip filter-chip', `${label} · ${count}`);
     button.type = 'button';
-    setChipColor(button, { accent: '#B2BEC3', text: '#DFE6E9' });
+    const colors = {
+      'waiting-on-user': { accent: '#E0A24A', text: '#FFD79A' },
+      actionable: { accent: '#55EFC4', text: '#B9FFE9' },
+    };
+    setChipColor(button, colors[value] ?? { accent: '#B2BEC3', text: '#DFE6E9' });
     setButtonState(button, control.activity === value);
     button.addEventListener('click', () => {
       control.activity = control.activity === value ? '' : value;
@@ -445,10 +451,14 @@ function createOpenEdgeBadge(bug) {
   const ageDays = daysBetween(bug.posted_at, state.data.generated_at) ?? 0;
   const ageColor = agePillColor(ageDays);
   const statusTags = [...bug.status_tags].sort((left, right) => {
-    const order = (tag) => tag.includes('Investigating') ? 0 : tag.includes('In Progress') ? 1 : 2;
+    const order = (tag) => tag.includes('Waiting on user') ? 0
+      : tag.includes('Investigating') ? 1
+        : tag.includes('In Progress') ? 2 : 3;
     return order(left.tag) - order(right.tag);
   });
-  const statusClass = statusTags.some(({ tag }) => tag.includes('In Progress'))
+  const statusClass = statusTags.some(({ tag }) => tag.includes('Waiting on user'))
+    ? 'status-badge-waiting-user'
+    : statusTags.some(({ tag }) => tag.includes('In Progress'))
     ? 'status-badge-progress'
     : statusTags.length > 0 ? 'status-badge-investigating' : 'bug-age-only';
   const badge = el(

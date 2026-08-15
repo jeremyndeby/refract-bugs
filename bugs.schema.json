@@ -97,7 +97,7 @@
       "additionalProperties": false,
       "required": ["tag"],
       "properties": {
-        "tag": { "enum": ["🔍 Investigating", "🛠 In Progress"] },
+        "tag": { "enum": ["🔍 Investigating", "🛠 In Progress", "💬 Waiting on user"] },
         "applied_by": { "type": "string", "minLength": 1, "maxLength": 80, "pattern": "^[^@\\r\\n]+$" },
         "applied_at": { "type": "string", "format": "date-time" }
       }
@@ -154,7 +154,7 @@
           "type": "array", "minItems": 1, "maxItems": 12, "uniqueItems": true,
           "items": { "type": "string", "minLength": 1, "maxLength": 40, "pattern": "^[^@\\r\\n]+$" }
         },
-        "status_tags": { "type": "array", "maxItems": 2, "uniqueItems": true, "items": { "$ref": "#/$defs/statusTag" } },
+        "status_tags": { "type": "array", "maxItems": 3, "uniqueItems": true, "items": { "$ref": "#/$defs/statusTag" } },
         "reactors_unique": { "type": "integer", "minimum": 0 },
         "score": {
           "type": "number", "minimum": 0,

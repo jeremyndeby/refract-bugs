@@ -7,7 +7,7 @@ const ID_PATTERN = /^[0-9]{17,20}$/u;
 const LOCAL_IMAGE_PATTERN = /^\.\/assets\/bugs\/[A-Za-z0-9][A-Za-z0-9._/-]*\.(?:avif|gif|jpe?g|png|webp)$/u;
 const AUTHOR_KEY_PATTERN = /^[A-Za-z][A-Za-z -]{2,47}$/u;
 const STATUSES = new Set(['open', 'fixed', 'duplicate', 'off_topic', 'inactive']);
-const STATUS_TAGS = new Set(['🔍 Investigating', '🛠 In Progress']);
+const STATUS_TAGS = new Set(['🔍 Investigating', '🛠 In Progress', '💬 Waiting on user']);
 const RAW_CUSTOM_EMOJI_PATTERN = /<a?:[A-Za-z0-9_]{1,32}:\d{17,20}>/u;
 
 function isDate(value) {
@@ -92,8 +92,8 @@ function validateComments(entry, errors) {
 }
 
 function validateStatusTags(statusTags, errors) {
-  if (!Array.isArray(statusTags) || statusTags.length > 2) {
-    errors.push('status_tags must be an array with at most two values');
+  if (!Array.isArray(statusTags) || statusTags.length > 3) {
+    errors.push('status_tags must be an array with at most three values');
     return;
   }
   const seen = new Set();

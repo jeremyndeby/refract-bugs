@@ -68,10 +68,17 @@ test('Read more toggles only description text and stops discussion propagation',
   assert.match(styles, /\.description-toggle \{[\s\S]*?min-height: 28px;/u);
 });
 
-test('Activity row includes counted Investigating and In Progress filters', () => {
+test('Activity row includes counted status and actionable filters', () => {
   assert.match(app, /\['investigating', '🔍 Investigating'\]/u);
   assert.match(app, /\['in-progress', '🛠 In Progress'\]/u);
+  assert.match(app, /\['waiting-on-user', '💬 Waiting on user'\]/u);
+  assert.match(app, /\['actionable', 'Actionable'\]/u);
   assert.match(app, /const button = el\('button', 'chip filter-chip', `\$\{label\} · \$\{count\}`\)/u);
+});
+
+test('Waiting on user uses the amber status family on cards', () => {
+  assert.match(app, /status-badge-waiting-user/u);
+  assert.match(styles, /\.status-badge-waiting-user \{[\s\S]*?#E0A24A/u);
 });
 
 test('card metadata adds the last comment age only when a comment exists', () => {

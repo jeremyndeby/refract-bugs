@@ -129,6 +129,8 @@ function matchesActivity(bug, activity, generatedAt) {
   if (activity === 'closed-7d') return bug.status !== 'open' && isWithinDays(bug.resolved_at, generatedAt, 7);
   if (activity === 'investigating') return bug.status_tags.some(({ tag }) => tag.includes('Investigating'));
   if (activity === 'in-progress') return bug.status_tags.some(({ tag }) => tag.includes('In Progress'));
+  if (activity === 'waiting-on-user') return bug.status_tags.some(({ tag }) => tag === '💬 Waiting on user');
+  if (activity === 'actionable') return !bug.status_tags.some(({ tag }) => tag === '💬 Waiting on user');
   return true;
 }
 

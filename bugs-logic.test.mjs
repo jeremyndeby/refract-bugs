@@ -101,6 +101,22 @@ test('Investigating and In Progress activity filters use current public status t
   );
 });
 
+test('Waiting on user and Actionable split the Open queue exactly', () => {
+  const items = structuredClone(fixture.bugs.filter((bug) => bug.status === 'open').slice(0, 3));
+  items[0].status_tags = [{ tag: '💬 Waiting on user' }];
+  items[1].status_tags = [{ tag: '🔍 Investigating' }];
+  items[2].status_tags = [];
+  const common = { status: 'open', generatedAt: fixture.generated_at };
+  assert.deepEqual(
+    selectBugs(items, { ...common, activity: 'waiting-on-user' }).map((bug) => bug.id),
+    [items[0].id],
+  );
+  assert.deepEqual(
+    selectBugs(items, { ...common, activity: 'actionable' }).map((bug) => bug.id),
+    [items[1].id, items[2].id],
+  );
+});
+
 test('fixed cards never receive a Discord thread link', () => {
   const open = fixture.bugs.find((bug) => bug.status === 'open');
   const fixed = fixture.bugs.find((bug) => bug.status === 'fixed');
