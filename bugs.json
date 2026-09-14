@@ -1,7 +1,34 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-09-14T00:20:03.942Z",
+  "generated_at": "2026-09-14T05:00:05.810Z",
   "bugs": [
+    {
+      "id": "1548865454553038889",
+      "title": "Editing Unknown Watch Date on Episode Page Displays Wrong Time Zone",
+      "body": "I was editing some watch dates and noticed that when setting a custom date for a show that originally aired outside of my time zone, the displayed date is incorrect. However, once I hit save, the correct date is logged.\n\nFor this example, I selected December 25 and I presume the system is adjusting the displayed date from EST to JST when it should be displaying EST the whole time. Hopefully I explained that well...\n\nAndroid 16\nSamsung Galaxy S22+\nRefract v1.6.724-01a09bb9\n[name removed]",
+      "author_key": "Coral Otter",
+      "posted_at": "2026-09-14T01:18:20.894Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us",
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1548865454553038889/1548865454766817300.webp"
+        }
+      ]
+    },
     {
       "id": "1548812809377288222",
       "title": "rewatches behaves differently in shows and movies",
@@ -261,7 +288,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 2.6128852559882088,
+      "score": 2.5630522760545196,
       "reactions": [
         {
           "emoji": "💜",
@@ -506,7 +533,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.8145111402045836,
+      "score": 0.7989767736599532,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -703,7 +730,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.46747908710635,
+      "score": 1.439491307798674,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -733,7 +760,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7292097429346196,
+      "score": 0.7153022456942297,
       "reactions": [
         {
           "emoji": "💜",
@@ -763,7 +790,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7306751998439818,
+      "score": 0.7167397533912832,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -926,7 +953,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.5001133238872475,
+      "score": 3.43335911926415,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1060,15 +1087,15 @@
         "💥 Crash"
       ],
       "status_tags": [],
-      "reactors_unique": 4,
-      "score": 13.946603208456631,
+      "reactors_unique": 5,
+      "score": 14.65780009231243,
       "reactions": [
         {
           "emoji": {
             "name": "1_",
             "id": "1536294887224254464"
           },
-          "count": 4
+          "count": 5
         },
         {
           "emoji": "👍",
@@ -1076,7 +1103,7 @@
         }
       ],
       "comments_count": 7,
-      "activity_7d": 14,
+      "activity_7d": 15,
       "comments": [
         {
           "text": "[name removed]\nSamsung s24 ultra - android v16\nRefract v1.6.720-embedded",
@@ -1185,7 +1212,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.431813922216988,
+      "score": 1.4045063493753978,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -1252,7 +1279,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.9586434883533403,
+      "score": 3.883144190759757,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1324,7 +1351,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9376613532437374,
+      "score": 1.9007062519383184,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -1364,7 +1391,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 7.387772012330236,
+      "score": 7.246872333095802,
       "reactions": [
         {
           "emoji": "💜",
@@ -1829,7 +1856,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0886801567091726,
+      "score": 1.067916835289237,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -1989,7 +2016,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.50822276208696,
+      "score": 0.49852993127975925,
       "reactions": [
         {
           "emoji": "➕",
@@ -1997,7 +2024,7 @@
         }
       ],
       "comments_count": 1,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "Refract v1.6.719-01a05d05\niOS 26.6.1 (23G83)\niPhone 16 pro \n@[name removed]",
@@ -2029,7 +2056,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6869955482216297,
+      "score": 0.6738931606251585,
       "reactions": [
         {
           "emoji": "💜",
@@ -2140,7 +2167,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.9641532667934046,
+      "score": 0.9457649237588213,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2365,7 +2392,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7768467104078147,
+      "score": 0.762030680334323,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2597,7 +2624,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.34926916886670506,
+      "score": 0.34260790295627064,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2866,7 +2893,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 1.6570039138687442,
+      "score": 1.6254015147199017,
       "reactions": [
         {
           "emoji": "☝️",
@@ -2943,7 +2970,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.29619947027328913,
+      "score": 0.2905503503111055,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2970,7 +2997,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3028141254378211,
+      "score": 0.29703885069049074,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3018,7 +3045,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5517199120720199,
+      "score": 0.5411975030820763,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3096,7 +3123,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 4.495854948672273,
+      "score": 4.410109947460106,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3230,7 +3257,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2610044105421285,
+      "score": 0.2560265311946364,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3401,7 +3428,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.4797900999547199,
+      "score": 0.4706395372315268,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -3483,7 +3510,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.48040246858571933,
+      "score": 0.4712402267604185,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -3588,7 +3615,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2128369698931873,
+      "score": 0.20877774056976914,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3635,7 +3662,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.21191625553246282,
+      "score": 0.20787458608472514,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -3916,7 +3943,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.18295226915308893,
+      "score": 0.17946300121197506,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3987,7 +4014,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5779183322279886,
+      "score": 0.5668962666446546,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -4083,7 +4110,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.19810487479438665,
+      "score": 0.19432661617098565,
       "reactions": [
         {
           "emoji": "➕",
@@ -4353,7 +4380,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.3174162271118577,
+      "score": 0.3113624609007158,
       "reactions": [
         {
           "emoji": "💜",
@@ -4436,7 +4463,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.32308752855948236,
+      "score": 0.3169255992169554,
       "reactions": [
         {
           "emoji": "💜",
@@ -4685,7 +4712,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3592630073941383,
+      "score": 0.3524111388716464,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -4864,7 +4891,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.13449535523461262,
+      "score": 0.13193025815535112,
       "reactions": [
         {
           "emoji": "💜",
@@ -5032,7 +5059,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.0235888469687078,
+      "score": 1.9849949354397114,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5401,15 +5428,15 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.9439916990951875,
+      "score": 2.9770989876013383,
       "reactions": [
         {
           "emoji": "🛠️",
           "count": 1
         }
       ],
-      "comments_count": 5,
-      "activity_7d": 1,
+      "comments_count": 7,
+      "activity_7d": 3,
       "comments": [
         {
           "text": "[mention removed] Please make another recording and post it here so they can see it , and try to make it clear aka not just couple of seconds",
@@ -5457,6 +5484,20 @@
           "is_team": false,
           "author_key": "Azure Sparrow",
           "reactions": []
+        },
+        {
+          "text": "Nothing",
+          "date": "2026-09-14T03:04:47.803Z",
+          "is_team": false,
+          "author_key": "Velvet Fox",
+          "reactions": []
+        },
+        {
+          "text": "Holy fck do I just miss TVtime. Lol why can’t someone just make a direct cloned fork of it. It did what was needed and no more. The design was sleek, intuitive, uncluttered/clean, and simplified for its purpose. I want that, is that so much to ask?",
+          "date": "2026-09-14T03:08:39.559Z",
+          "is_team": false,
+          "author_key": "Velvet Fox",
+          "reactions": []
         }
       ],
       "images": []
@@ -5476,7 +5517,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2997812490971058,
+      "score": 0.29406381740487386,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5670,7 +5711,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09646957543891219,
+      "score": 0.09462970650244004,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5743,7 +5784,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.18325979708559265,
+      "score": 0.1797646639679448,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5771,7 +5812,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.24239829841120916,
+      "score": 0.2377752750645074,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -5820,7 +5861,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0864309763422261,
+      "score": 0.08478256369194218,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6105,7 +6146,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.15234554767331215,
+      "score": 0.14944001150298397,
       "reactions": [
         {
           "emoji": "💜",
@@ -6210,7 +6251,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.48477800355386613,
+      "score": 0.47553231147151065,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -6379,7 +6420,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5557596149663588,
+      "score": 0.5451601607128275,
       "reactions": [
         {
           "emoji": "💜",
@@ -6448,7 +6489,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.2555145172783895,
+      "score": 1.2315693288692926,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 1,
@@ -6608,7 +6649,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 4.815373586884398,
+      "score": 4.72353472225057,
       "reactions": [
         {
           "emoji": "💜",
@@ -6723,7 +6764,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.061727318251192605,
+      "score": 0.060550054073700545,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6769,7 +6810,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1795892047654986,
+      "score": 0.1761640772299989,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -6850,7 +6891,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.15237930083174275,
+      "score": 0.14947312092075932,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -6891,7 +6932,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0554693428647999,
+      "score": 0.05441143087131244,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6929,7 +6970,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.30395473628269326,
+      "score": 0.29815770779121575,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -6999,6 +7040,100 @@
       "images": []
     },
     {
+      "id": "1538010127070662727",
+      "title": "Episode not being marked as watched",
+      "body": "the episode is not being marked as watched on the main page of the show, but is shown as watched on the specific episode page. \nUnrelated to this but sometimes the app freezes for me whenever i mark two or more episodes or movies as watched in a row and rate it or change watch dates. \n\nDetails\nIphone 16 Pro Max\niOS 26.5.2\nRefract v1.6.713-01a001d3",
+      "author_key": "Lilac Panda",
+      "posted_at": "2026-08-15T02:23:09.140Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us",
+        "📱 iOS",
+        "💥 Crash",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "you can close it [name removed]",
+          "date": "2026-09-14T04:35:31.508Z",
+          "is_team": false,
+          "author_key": "Lilac Panda",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1537988785000808458",
+      "title": "Search \"Top Hit\" ignores what you filtered",
+      "body": "On the search you can filter for it to only shows movies, TV shows or anime. That will only return the type you specified, however if the top hit for that search is in one of the excluded options it still shows\n\nUsername [name removed] \nDevice Samsung A71 Android 13 \nApp Refract v1.6.713-01a001cf",
+      "author_key": "Ochre Robin",
+      "posted_at": "2026-08-15T00:58:20.794Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🔍 Search",
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-14T04:04:04.717Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1537988785000808458/1537988785248141382.webp"
+        }
+      ]
+    },
+    {
+      "id": "1537987531394514994",
+      "title": "Unmark a movie as watched shows wrong toast message",
+      "body": "If you unmark a movie as watched, the toast message that appears is \"All episodes unwatched\". It shouldn't reference TV shows since it's a movie \n\nUsername [name removed] \nDevice Samsung A71 Android 13 \nApp Refract v1.6.713-01a001cf",
+      "author_key": "Ochre Finch",
+      "posted_at": "2026-08-15T00:53:21.911Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-14T04:04:00.615Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1537987531394514994/1537987531789041805.webp"
+        }
+      ]
+    },
+    {
       "id": "1537960645574525101",
       "title": "Sorting by community rating is off",
       "body": "It seems the sort by community rating is not in the correct order.\n\nI put screenshots of the ordering (One piece is first for reference).\n\nAn example is rick and morty with 8.7 community rating. This shows before multiple shows with a 9+ community rating.\n\nNot sure if this is a bug, or if Im misunderstanding what community rating actually is, since Im assuming its the refract rating",
@@ -7013,7 +7148,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.39839945054837816,
+      "score": 0.3908011712977796,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -7047,6 +7182,414 @@
       ]
     },
     {
+      "id": "1537934850655518750",
+      "title": "Some posters from TMDB don't show up on Refract",
+      "body": "Even after refreshing the posters, some don't show up on Refract to be chosen.\n\nThese Mortal Kombat (2021) and Dune: Part Three posters are some examples",
+      "author_key": "Velvet Wren",
+      "posted_at": "2026-08-14T21:24:01.844Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "Apparently these posters were deleted from TMDB, but for some reason they were still showing up in Letterboxd, so I thought it was a Refract problem",
+          "date": "2026-09-14T04:32:29.264Z",
+          "is_team": false,
+          "author_key": "Velvet Wren",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1537934850655518750/1537934851544715354.webp"
+        }
+      ]
+    },
+    {
+      "id": "1537890120697643029",
+      "title": "Leaderboard title count mismatch",
+      "body": "The leaderboard title count is not the same as the total titles in library -> all.",
+      "author_key": "Golden Fox",
+      "posted_at": "2026-08-14T18:26:17.391Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "📊 Stats",
+        "🤖 Android",
+        "👤 Profile"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-08-15T10:25:35.811Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "A mod not following the rules :octosus: tell him Octo!",
+          "date": "2026-08-14T19:08:40.248Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Silver Fox",
+          "team_name": "J",
+          "reactions": [
+            {
+              "emoji": "😂",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1537873349953323138",
+      "title": "the app freezes after i change the watched day",
+      "body": "the app freezes after i change the watched day, and i can’t rate or go back. i have to close the app and reopen it to make it works.\n\n[identity removed]\ndevice: iphone 13 IOS 26.6 and Ipad air (4° generation) IpadOS 26.5 \napp version: refract v1.6.712-019ffbc5",
+      "author_key": "Silver Otter",
+      "posted_at": "2026-08-14T17:19:38.934Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⚠ Critical",
+        "📱 iOS"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-14T04:03:45.017Z"
+        }
+      ],
+      "reactors_unique": 1,
+      "score": 0.04885997148995087,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1537851640957108314",
+      "title": "Every episode of Naruto Shippuden is marked unwatched",
+      "body": "Like 5 min ago I was checking my episodes and I realized every single one was marked \"unwatched\" for Naruto Shippuden.\nThis morning the watched episodes were 395\n\nPlease tell me I didnt loose every date for those almost 400 episodes 😱😵😣",
+      "author_key": "Coral Fox",
+      "posted_at": "2026-08-14T15:53:23.106Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🤖 Android",
+        "⚠ Critical",
+        "💥 Crash",
+        "📊 Stats"
+      ],
+      "status_tags": [
+        {
+          "tag": "🔍 Investigating",
+          "applied_at": "2026-08-14T15:57:28.510Z",
+          "applied_by": "Exooo"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 18,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Thanks [mention removed]",
+          "date": "2026-08-14T15:55:38.366Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "I think this is related to a current bug we have when you mark episodes in previous seasons while having episodes AFTER",
+          "date": "2026-08-14T15:56:03.543Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "This is a bug I worked on today but didn't release the fix in time. Let me check if I can do anything",
+          "date": "2026-08-14T15:56:27.303Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": [
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "you need my username?",
+          "date": "2026-08-14T15:57:39.485Z",
+          "is_team": false,
+          "author_key": "Coral Fox",
+          "reactions": []
+        },
+        {
+          "text": "No don't worry I know it",
+          "date": "2026-08-14T15:58:46.381Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "It's indeed exactly what I said earlier, your lanes are lost in the database, let me check if I can find them in a previous snapshot",
+          "date": "2026-08-14T15:59:15.898Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "I suggest you don't play with old seasons before the fix today",
+          "date": "2026-08-14T15:59:31.866Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "Yes, sir. I promise",
+          "date": "2026-08-14T16:01:05.190Z",
+          "is_team": false,
+          "author_key": "Coral Fox",
+          "reactions": []
+        },
+        {
+          "text": "Let me know if you need my import file for example",
+          "date": "2026-08-14T16:01:43.262Z",
+          "is_team": false,
+          "author_key": "Coral Fox",
+          "reactions": []
+        },
+        {
+          "text": "they're not in your import document are they?",
+          "date": "2026-08-14T16:02:12.882Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "They should be, at least the big part of them",
+          "date": "2026-08-14T16:04:43.582Z",
+          "is_team": false,
+          "author_key": "Coral Fox",
+          "reactions": [
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "[mention removed] I can heal 294 of them through the import, I do it?",
+          "date": "2026-08-14T16:11:13.817Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "Sorry for this bug",
+          "date": "2026-08-14T16:11:17.003Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "Yes please, do what you can. It's better than nothing",
+          "date": "2026-08-14T16:14:06.164Z",
+          "is_team": false,
+          "author_key": "Coral Fox",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Alright, doing it",
+          "date": "2026-08-14T16:16:21.365Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "then when the next update lands, you'll be able to play with historical data",
+          "date": "2026-08-14T16:16:33.619Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Heron",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "Thank you!",
+          "date": "2026-08-14T16:19:11.121Z",
+          "is_team": false,
+          "author_key": "Coral Fox",
+          "reactions": []
+        },
+        {
+          "text": "Omg man...\nI opened the app and accidentally clixked on the last episode and it was marked as seen today...so I thing I messes up everything once again...😣",
+          "date": "2026-08-14T16:44:25.253Z",
+          "is_team": false,
+          "author_key": "Coral Fox",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1537851640957108314/1537851641389125784.webp"
+        }
+      ]
+    },
+    {
+      "id": "1537839852245090405",
+      "title": "Showing wrong Episode on Continue",
+      "body": "On Home Page it shows Manifest S04E20 for example, but I'm still on S04E04, when I open the show from Profile or Show Page its correct, even after I track E04, when it should show E05, goes back to E20",
+      "author_key": "Coral Finch",
+      "posted_at": "2026-08-14T15:06:32.458Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⚠ Critical"
+      ],
+      "status_tags": [
+        {
+          "tag": "🔍 Investigating",
+          "applied_at": "2026-08-14T15:57:23.283Z",
+          "applied_by": "Exooo"
+        },
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-08-15T10:25:36.195Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1537791810074845215",
+      "title": "Inconsistent visual appearance in user comments (greyed out)",
+      "body": "Hey team, noticed a visual bug when browsing my own comments.\n\n​Issue: While scrolling through my comments, some comments appear greyed out / dimmed as if they are disabled or failed, while others render completely normal.\n\nLocation: Comments section / User comments\n\n​Not sure if this is a styling/opacity glitch or an issue with comment status handling. \n:thank_you: \n\nNote: the attached photo has BNHA spoiler",
+      "author_key": "Teal Lynx",
+      "posted_at": "2026-08-14T11:55:38.312Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "👤 Profile",
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-14T04:03:27.451Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Refract v1.6.712-019ffbc1\nOne ui 8",
+          "date": "2026-08-14T12:01:20.099Z",
+          "is_team": false,
+          "author_key": "Teal Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1537791810074845215/1537791810506850365.webp"
+        }
+      ]
+    },
+    {
+      "id": "1537745616304603148",
+      "title": "iOS battery drain excessive compared to usage",
+      "body": "Refract is consuming more battery than Reddit despite significantly lower usage time. User reports the battery drain is disproportionate and requests optimization investigation.\n\n📱 via app · iPhone 17 · iOS 26.5.2 · v1.6.711-019ff4cf",
+      "author_key": "Velvet Panda",
+      "posted_at": "2026-08-14T08:52:04.859Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.04718404363846107,
+      "reactions": [
+        {
+          "emoji": "👍",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 1,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1537745616304603148/1537745616761786439.webp"
+        }
+      ]
+    },
+    {
       "id": "1537745597941940254",
       "title": "Show titles remain in English despite Italian language setting",
       "body": "Show titles remain in English even though Italian is set as the app language. In the ongoing series summary, episodes have English titles instead of Italian, but when clicking on a single episode, the correct translation appears.\n\n📱 via app · SM-G991B · samsung/o1sxeea/o1s:15/AP3A.240905.015.A2/G991BXXUEHYD5:user/release-keys 15 · v1.6.711-019ff4cb",
@@ -7060,7 +7603,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.15926188678678155,
+      "score": 0.15622444211129946,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -7122,6 +7665,97 @@
         }
       ],
       "images": []
+    },
+    {
+      "id": "1537568912814645270",
+      "title": "List Reorder",
+      "body": "The list reorder functionality is not working consistently, giving blank screen very often.",
+      "author_key": "Ochre Fox",
+      "posted_at": "2026-08-13T21:09:55.464Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-08-15T10:25:37.112Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1537568912814645270/1537568913083342939.webp"
+        }
+      ]
+    },
+    {
+      "id": "1537398477774921838",
+      "title": "Default poster showing different poster on some titles",
+      "body": "I've noticed that some titles show a different poster outside the poster select screen when the default is selected. It means if you actually like the default poster you can't display it 😢 Screenshots attached as example.\n\n[identity removed]\nDevice: OnePlus Nord, Android 12\nRefract version: v1.6.711-019ff4cb",
+      "author_key": "Teal Badger",
+      "posted_at": "2026-08-13T09:52:40.584Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "🔍 Investigating",
+          "applied_at": "2026-08-15T08:06:48.463Z",
+          "applied_by": "Exooo"
+        },
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-14T04:03:52.610Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0.09935411363172007,
+      "reactions": [],
+      "comments_count": 3,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "might just need a bit more time. i will check back with you later on\nhttps://discord.com/channels/1490347491151970366/1490374069940387872/1537041321435340800",
+          "date": "2026-08-13T10:16:38.351Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Velvet Robin",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "Ooh okay that's good to know! Thank you 😊",
+          "date": "2026-08-13T14:04:55.199Z",
+          "is_team": false,
+          "author_key": "Teal Badger",
+          "reactions": []
+        },
+        {
+          "text": "Same problem with MK Annihilation",
+          "date": "2026-08-14T21:20:49.790Z",
+          "is_team": false,
+          "author_key": "Misty Robin",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1537398477774921838/1537398478131568801.webp"
+        }
+      ]
     },
     {
       "id": "1537219217986949230",
@@ -7230,7 +7864,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.07688006422327609,
+      "score": 0.07541380668710648,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7556,7 +8190,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.03364387965381702,
+      "score": 0.0330022231647547,
       "reactions": [
         {
           "emoji": "🤔",
@@ -7593,6 +8227,61 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
+      "images": []
+    },
+    {
+      "id": "1536402684494483477",
+      "title": "Profile Page Over-Scrolling Issue",
+      "body": "Hey everyone,\n\nJust wanted to report a bug I came across in the Refract app.\n\nOn the Profile page, the view allows you to scroll down continuously into blank space beyond the bottom-most component. It seems like the scroll boundary/content size is not properly constrained to the last element.\n\nThanks.\n:thank_you:",
+      "author_key": "Ochre Otter",
+      "posted_at": "2026-08-10T15:55:44.965Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "👤 Profile",
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-14T04:03:31.834Z"
+        }
+      ],
+      "reactors_unique": 1,
+      "score": 0.047826887435263435,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 3,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "OS: ONE UI 8\nRefract v1.6.708-019feb02",
+          "date": "2026-08-10T15:59:26.890Z",
+          "is_team": false,
+          "author_key": "Ochre Otter",
+          "reactions": []
+        },
+        {
+          "text": "Update on the Profile Over-Scrolling Bug:\n\n​Found the exact trigger for this issue:\n\n●​If you open the Profile page directly, scrolling works fine and doesn't over-scroll.\n\n●​However, if you go to the Comments section to view your comments first and then navigate back to the Profile page, the over-scrolling bug gets triggered, allowing infinite scrolling into empty space.\n\n​Seems like navigating back from the comments view is messing up the scroll/container height on the profile screen.",
+          "date": "2026-08-14T12:07:15.951Z",
+          "is_team": false,
+          "author_key": "Ochre Otter",
+          "reactions": []
+        },
+        {
+          "text": "The same thing applies to other tabs: profile, comments, reviews and stat",
+          "date": "2026-08-14T12:08:52.274Z",
+          "is_team": false,
+          "author_key": "Ochre Otter",
+          "reactions": []
+        }
+      ],
       "images": []
     },
     {
@@ -8501,7 +9190,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.7223491408752354,
+      "score": 1.6895004767483521,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -8663,7 +9352,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.023122130643830032,
+      "score": 0.022681145082080852,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8803,7 +9492,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.04814138180629023,
+      "score": 0.04722322877678588,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9015,7 +9704,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.08724074295153356,
+      "score": 0.08557688642245694,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -9270,7 +9959,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0381292918456326,
+      "score": 1.018330077145884,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 1,
@@ -9697,7 +10386,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.01722784009433706,
+      "score": 0.016899270514882936,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9739,7 +10428,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1218446904526493,
+      "score": 1.100448854634785,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 1,
@@ -9873,7 +10562,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.36743039992921983,
+      "score": 0.3604227627952366,
       "reactions": [
         {
           "emoji": "👍",
@@ -9976,7 +10665,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.31425676119239276,
+      "score": 0.3082632523543616,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -10051,7 +10740,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.6139346990677952,
+      "score": 1.5831537165165688,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -10096,7 +10785,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.03073164519579302,
+      "score": 0.0301455308783497,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10203,7 +10892,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 3.1333396777361977,
+      "score": 3.0735805846309,
       "reactions": [
         {
           "emoji": "👍",
@@ -10902,7 +11591,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 31.246238279640718,
+      "score": 30.65030963653477,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12471,7 +13160,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.8480177266088119,
+      "score": 0.8318443220336743,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12784,7 +13473,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4563005272958156,
+      "score": 1.428525945619168,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -12880,7 +13569,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2691887938608556,
+      "score": 0.2640548218534364,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -12917,7 +13606,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6017789256727373,
+      "score": 0.5903017905559774,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -12999,34 +13688,6 @@
       ]
     },
     {
-      "id": "1537873349953323138",
-      "title": "the app freezes after i change the watched day",
-      "body": "the app freezes after i change the watched day, and i can’t rate or go back. i have to close the app and reopen it to make it works.\n\n[identity removed]\ndevice: iphone 13 IOS 26.6 and Ipad air (4° generation) IpadOS 26.5 \napp version: refract v1.6.712-019ffbc5",
-      "author_key": "Silver Otter",
-      "posted_at": "2026-08-14T17:19:38.934Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⚠ Critical",
-        "⏳ Waiting on us",
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.04980994742355431,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1539307022309261352",
       "title": "Infinite scrolling",
       "body": "You can’t really see from this ss but when scrolling down in all pages of the \"stats\" section, the scroll doesn’t stop and continues to infinity.\nThe same occurs to every page, see ss to undertand what I mean by \"pages\"",
@@ -13103,7 +13764,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2187794282872587,
+      "score": 0.21460686432381762,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13301,7 +13962,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.13956401196091156,
+      "score": 0.13690224539784723,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -13647,7 +14308,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06674916001923308,
+      "score": 0.06547611921340137,
       "reactions": [
         {
           "emoji": "👆",
@@ -13674,7 +14335,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1345018584883003,
+      "score": 0.131936637378904,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -13742,7 +14403,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.13002066536574422,
+      "score": 0.12754090962703094,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13905,7 +14566,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.12395549403615434,
+      "score": 0.12159141332008863,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -14007,7 +14668,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.11383743490716712,
+      "score": 0.11166632594000886,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -14057,7 +14718,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.12017481723903492,
+      "score": 0.11788284163762544,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -14148,7 +14809,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.059133884763766055,
+      "score": 0.05800608258183698,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14184,7 +14845,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.059470278980525634,
+      "score": 0.05833606108393202,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14225,7 +14886,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.05952957535389706,
+      "score": 0.05839422655613678,
       "reactions": [
         {
           "emoji": "👆",
@@ -14392,7 +15053,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.055673085187920746,
+      "score": 0.054611287418325646,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14430,7 +15091,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 6,
-      "score": 0.1425145812668336,
+      "score": 0.1397965414094568,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14500,30 +15161,6 @@
       "images": []
     },
     {
-      "id": "1538010127070662727",
-      "title": "Episode not being marked as watched",
-      "body": "the episode is not being marked as watched on the main page of the show, but is shown as watched on the specific episode page. \nUnrelated to this but sometimes the app freezes for me whenever i mark two or more episodes or movies as watched in a row and rate it or change watch dates. \n\nDetails\nIphone 16 Pro Max\niOS 26.5.2\nRefract v1.6.713-01a001d3",
-      "author_key": "Lilac Panda",
-      "posted_at": "2026-08-15T02:23:09.140Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "💥 Crash",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1536515969613045811",
       "title": "Error in \"Still to finish\"",
       "body": "In my Still to finish section i see 8 days but i have to Watch 10 episode, so its impossible, in the setting i have the non count of specials, so i dont understand the provenience of that number.",
@@ -14549,7 +15186,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.11043698413730296,
+      "score": 0.10833072860930432,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -14602,7 +15239,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.05561048899429209,
+      "score": 0.054549885060076436,
       "reactions": [
         {
           "emoji": "👆",
@@ -14808,7 +15445,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.09712004977603764,
+      "score": 0.095267774984959,
       "reactions": [
         {
           "emoji": "💜",
@@ -14983,7 +15620,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.10697999033702996,
+      "score": 0.10493966663756649,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -15238,7 +15875,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1067302476954859,
+      "score": 0.10469468709077218,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -15345,7 +15982,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.09067299365246587,
+      "score": 0.08894367719555098,
       "reactions": [
         {
           "emoji": "👆",
@@ -15414,146 +16051,6 @@
       ]
     },
     {
-      "id": "1537988785000808458",
-      "title": "Search \"Top Hit\" ignores what you filtered",
-      "body": "On the search you can filter for it to only shows movies, TV shows or anime. That will only return the type you specified, however if the top hit for that search is in one of the excluded options it still shows\n\nUsername [name removed] \nDevice Samsung A71 Android 13 \nApp Refract v1.6.713-01a001cf",
-      "author_key": "Ochre Robin",
-      "posted_at": "2026-08-15T00:58:20.794Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🔍 Search",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1537988785000808458/1537988785248141382.webp"
-        }
-      ]
-    },
-    {
-      "id": "1537987531394514994",
-      "title": "Unmark a movie as watched shows wrong toast message",
-      "body": "If you unmark a movie as watched, the toast message that appears is \"All episodes unwatched\". It shouldn't reference TV shows since it's a movie \n\nUsername [name removed] \nDevice Samsung A71 Android 13 \nApp Refract v1.6.713-01a001cf",
-      "author_key": "Ochre Finch",
-      "posted_at": "2026-08-15T00:53:21.911Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1537987531394514994/1537987531789041805.webp"
-        }
-      ]
-    },
-    {
-      "id": "1537934850655518750",
-      "title": "Some posters from TMDB don't show up on Refract",
-      "body": "Even after refreshing the posters, some don't show up on Refract to be chosen.\n\nThese Mortal Kombat (2021) and Dune: Part Three posters are some examples",
-      "author_key": "Velvet Wren",
-      "posted_at": "2026-08-14T21:24:01.844Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-08-15T10:25:35.445Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1537934850655518750/1537934851544715354.webp"
-        }
-      ]
-    },
-    {
-      "id": "1537398477774921838",
-      "title": "Default poster showing different poster on some titles",
-      "body": "I've noticed that some titles show a different poster outside the poster select screen when the default is selected. It means if you actually like the default poster you can't display it 😢 Screenshots attached as example.\n\n[identity removed]\nDevice: OnePlus Nord, Android 12\nRefract version: v1.6.711-019ff4cb",
-      "author_key": "Teal Badger",
-      "posted_at": "2026-08-13T09:52:40.584Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [
-        {
-          "tag": "🔍 Investigating",
-          "applied_at": "2026-08-15T08:06:48.463Z",
-          "applied_by": "Exooo"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0.1012858383948843,
-      "reactions": [],
-      "comments_count": 3,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "might just need a bit more time. i will check back with you later on\nhttps://discord.com/channels/1490347491151970366/1490374069940387872/1537041321435340800",
-          "date": "2026-08-13T10:16:38.351Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Velvet Robin",
-          "team_name": "Eli",
-          "reactions": []
-        },
-        {
-          "text": "Ooh okay that's good to know! Thank you 😊",
-          "date": "2026-08-13T14:04:55.199Z",
-          "is_team": false,
-          "author_key": "Teal Badger",
-          "reactions": []
-        },
-        {
-          "text": "Same problem with MK Annihilation",
-          "date": "2026-08-14T21:20:49.790Z",
-          "is_team": false,
-          "author_key": "Misty Robin",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1537398477774921838/1537398478131568801.webp"
-        }
-      ]
-    },
-    {
       "id": "1537917901338841202",
       "title": "Character reordering button not working",
       "body": "The button to reorder characters is not working. When clicked, everything disappears.\n\n📱 via app · CPH2205 · Android 11 · v1.6.712-019ffbc1",
@@ -15573,309 +16070,6 @@
       "activity_7d": 0,
       "comments": [],
       "images": []
-    },
-    {
-      "id": "1537890120697643029",
-      "title": "Leaderboard title count mismatch",
-      "body": "The leaderboard title count is not the same as the total titles in library -> all.",
-      "author_key": "Golden Fox",
-      "posted_at": "2026-08-14T18:26:17.391Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "📊 Stats",
-        "🤖 Android",
-        "👤 Profile"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-08-15T10:25:35.811Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "A mod not following the rules :octosus: tell him Octo!",
-          "date": "2026-08-14T19:08:40.248Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Silver Fox",
-          "team_name": "J",
-          "reactions": [
-            {
-              "emoji": "😂",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1537851640957108314",
-      "title": "Every episode of Naruto Shippuden is marked unwatched",
-      "body": "Like 5 min ago I was checking my episodes and I realized every single one was marked \"unwatched\" for Naruto Shippuden.\nThis morning the watched episodes were 395\n\nPlease tell me I didnt loose every date for those almost 400 episodes 😱😵😣",
-      "author_key": "Coral Fox",
-      "posted_at": "2026-08-14T15:53:23.106Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🤖 Android",
-        "⚠ Critical",
-        "💥 Crash",
-        "📊 Stats"
-      ],
-      "status_tags": [
-        {
-          "tag": "🔍 Investigating",
-          "applied_at": "2026-08-14T15:57:28.510Z",
-          "applied_by": "Exooo"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 18,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Thanks [mention removed]",
-          "date": "2026-08-14T15:55:38.366Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "I think this is related to a current bug we have when you mark episodes in previous seasons while having episodes AFTER",
-          "date": "2026-08-14T15:56:03.543Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "This is a bug I worked on today but didn't release the fix in time. Let me check if I can do anything",
-          "date": "2026-08-14T15:56:27.303Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": [
-            {
-              "emoji": "👍",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "you need my username?",
-          "date": "2026-08-14T15:57:39.485Z",
-          "is_team": false,
-          "author_key": "Coral Fox",
-          "reactions": []
-        },
-        {
-          "text": "No don't worry I know it",
-          "date": "2026-08-14T15:58:46.381Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "It's indeed exactly what I said earlier, your lanes are lost in the database, let me check if I can find them in a previous snapshot",
-          "date": "2026-08-14T15:59:15.898Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "I suggest you don't play with old seasons before the fix today",
-          "date": "2026-08-14T15:59:31.866Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "Yes, sir. I promise",
-          "date": "2026-08-14T16:01:05.190Z",
-          "is_team": false,
-          "author_key": "Coral Fox",
-          "reactions": []
-        },
-        {
-          "text": "Let me know if you need my import file for example",
-          "date": "2026-08-14T16:01:43.262Z",
-          "is_team": false,
-          "author_key": "Coral Fox",
-          "reactions": []
-        },
-        {
-          "text": "they're not in your import document are they?",
-          "date": "2026-08-14T16:02:12.882Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "They should be, at least the big part of them",
-          "date": "2026-08-14T16:04:43.582Z",
-          "is_team": false,
-          "author_key": "Coral Fox",
-          "reactions": [
-            {
-              "emoji": "👍",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "[mention removed] I can heal 294 of them through the import, I do it?",
-          "date": "2026-08-14T16:11:13.817Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "Sorry for this bug",
-          "date": "2026-08-14T16:11:17.003Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "Yes please, do what you can. It's better than nothing",
-          "date": "2026-08-14T16:14:06.164Z",
-          "is_team": false,
-          "author_key": "Coral Fox",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "Alright, doing it",
-          "date": "2026-08-14T16:16:21.365Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "then when the next update lands, you'll be able to play with historical data",
-          "date": "2026-08-14T16:16:33.619Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ivory Heron",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "Thank you!",
-          "date": "2026-08-14T16:19:11.121Z",
-          "is_team": false,
-          "author_key": "Coral Fox",
-          "reactions": []
-        },
-        {
-          "text": "Omg man...\nI opened the app and accidentally clixked on the last episode and it was marked as seen today...so I thing I messes up everything once again...😣",
-          "date": "2026-08-14T16:44:25.253Z",
-          "is_team": false,
-          "author_key": "Coral Fox",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1537851640957108314/1537851641389125784.webp"
-        }
-      ]
-    },
-    {
-      "id": "1537839852245090405",
-      "title": "Showing wrong Episode on Continue",
-      "body": "On Home Page it shows Manifest S04E20 for example, but I'm still on S04E04, when I open the show from Profile or Show Page its correct, even after I track E04, when it should show E05, goes back to E20",
-      "author_key": "Coral Finch",
-      "posted_at": "2026-08-14T15:06:32.458Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⚠ Critical"
-      ],
-      "status_tags": [
-        {
-          "tag": "🔍 Investigating",
-          "applied_at": "2026-08-14T15:57:23.283Z",
-          "applied_by": "Exooo"
-        },
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-08-15T10:25:36.195Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1537568912814645270",
-      "title": "List Reorder",
-      "body": "The list reorder functionality is not working consistently, giving blank screen very often.",
-      "author_key": "Ochre Fox",
-      "posted_at": "2026-08-13T21:09:55.464Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "📊 Stats",
-        "🤖 Android"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-08-15T10:25:37.112Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1537568912814645270/1537568913083342939.webp"
-        }
-      ]
     },
     {
       "id": "1537808620601745601",
@@ -16175,93 +16369,6 @@
       ]
     },
     {
-      "id": "1537791810074845215",
-      "title": "Inconsistent visual appearance in user comments (greyed out)",
-      "body": "Hey team, noticed a visual bug when browsing my own comments.\n\n​Issue: While scrolling through my comments, some comments appear greyed out / dimmed as if they are disabled or failed, while others render completely normal.\n\nLocation: Comments section / User comments\n\n​Not sure if this is a styling/opacity glitch or an issue with comment status handling. \n:thank_you: \n\nNote: the attached photo has BNHA spoiler",
-      "author_key": "Teal Lynx",
-      "posted_at": "2026-08-14T11:55:38.312Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "👤 Profile",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Refract v1.6.712-019ffbc1\nOne ui 8",
-          "date": "2026-08-14T12:01:20.099Z",
-          "is_team": false,
-          "author_key": "Teal Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1537791810074845215/1537791810506850365.webp"
-        }
-      ]
-    },
-    {
-      "id": "1536402684494483477",
-      "title": "Profile Page Over-Scrolling Issue",
-      "body": "Hey everyone,\n\nJust wanted to report a bug I came across in the Refract app.\n\nOn the Profile page, the view allows you to scroll down continuously into blank space beyond the bottom-most component. It seems like the scroll boundary/content size is not properly constrained to the last element.\n\nThanks.\n:thank_you:",
-      "author_key": "Ochre Otter",
-      "posted_at": "2026-08-10T15:55:44.965Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "👤 Profile",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.048756777295146096,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 3,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "OS: ONE UI 8\nRefract v1.6.708-019feb02",
-          "date": "2026-08-10T15:59:26.890Z",
-          "is_team": false,
-          "author_key": "Ochre Otter",
-          "reactions": []
-        },
-        {
-          "text": "Update on the Profile Over-Scrolling Bug:\n\n​Found the exact trigger for this issue:\n\n●​If you open the Profile page directly, scrolling works fine and doesn't over-scroll.\n\n●​However, if you go to the Comments section to view your comments first and then navigate back to the Profile page, the over-scrolling bug gets triggered, allowing infinite scrolling into empty space.\n\n​Seems like navigating back from the comments view is messing up the scroll/container height on the profile screen.",
-          "date": "2026-08-14T12:07:15.951Z",
-          "is_team": false,
-          "author_key": "Ochre Otter",
-          "reactions": []
-        },
-        {
-          "text": "The same thing applies to other tabs: profile, comments, reviews and stat",
-          "date": "2026-08-14T12:08:52.274Z",
-          "is_team": false,
-          "author_key": "Ochre Otter",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1537745699666534441",
       "title": "Misaligned text in 'Continue' and 'Coming Soon' Spanish sections",
       "body": "The sections displaying 'Continue' and 'Coming Soon' in Spanish are not properly aligned. User requests a fix.\n\n📱 via app · TECNO LH8n · TECNO/LH8n-GL/TECNO-LH8n:14/UP1A.231005.007/250416V824:user/release-keys 14 · v1.6.712-019ffbc1",
@@ -16348,31 +16455,6 @@
       "activity_7d": 0,
       "comments": [],
       "images": []
-    },
-    {
-      "id": "1537745616304603148",
-      "title": "iOS battery drain excessive compared to usage",
-      "body": "Refract is consuming more battery than Reddit despite significantly lower usage time. User reports the battery drain is disproportionate and requests optimization investigation.\n\n📱 via app · iPhone 17 · iOS 26.5.2 · v1.6.711-019ff4cf",
-      "author_key": "Velvet Panda",
-      "posted_at": "2026-08-14T08:52:04.859Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1537745616304603148/1537745616761786439.webp"
-        }
-      ]
     },
     {
       "id": "1539188656030613605",
@@ -16793,7 +16875,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8314119810095604,
+      "score": 1.7964832690461068,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 5,
@@ -16868,7 +16950,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6685006568281535,
+      "score": 0.6557510040291921,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17247,7 +17329,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.692868349954371,
+      "score": 3.6224379190889975,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17472,7 +17554,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.4360910926001722,
+      "score": 1.4087019455121084,
       "reactions": [
         {
           "emoji": "❤️",
@@ -17626,7 +17708,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.5377536776506637,
+      "score": 1.5084256204825583,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -17725,7 +17807,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1743450870047818,
+      "score": 1.1519479629742424,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 3,
@@ -17824,7 +17906,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 2.8001907436810565,
+      "score": 2.7467854711683977,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -18297,7 +18379,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 1.5639074244659699,
+      "score": 1.53408056271498,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -18383,7 +18465,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6410663355185963,
+      "score": 0.6288399104351189,
       "reactions": [
         {
           "emoji": "👍",
@@ -18563,7 +18645,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.023838390262714455,
+      "score": 0.023383744188650996,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -18604,7 +18686,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.032658686424359235,
+      "score": 0.032035819552759776,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -18655,7 +18737,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.11795853142386947,
+      "score": 0.1157088248529508,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -18732,7 +18814,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.004816082259121194,
+      "score": 0.0047242298786816985,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -18852,7 +18934,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3537810939127255,
+      "score": 0.34703377651198347,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -18943,7 +19025,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.8100487395539111,
+      "score": 0.7945994799697073,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -19084,7 +19166,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.27466492066178966,
+      "score": 0.26942650789626216,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -19183,7 +19265,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.04814506021289755,
+      "score": 0.04722683702877681,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -19315,7 +19397,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 6,
-      "score": 0.794326191526123,
+      "score": 0.7791767925724538,
       "reactions": [
         {
           "emoji": "⬆️",
@@ -19434,7 +19516,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.3740168970011608,
+      "score": 0.3668836421135214,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -19596,7 +19678,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.0593986517119191,
+      "score": 0.05826579989147869,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -19721,7 +19803,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7312976692414251,
+      "score": 0.7173503510446768,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -21884,7 +21966,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 2.0719791690908638,
+      "score": 2.032462356739578,
       "reactions": [
         {
           "emoji": "💜",
@@ -22118,7 +22200,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1428567603726421,
+      "score": 0.1401321944711252,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -22151,7 +22233,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.14272138010691748,
+      "score": 0.13999939617950366,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -22211,7 +22293,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.5422444875600864,
+      "score": 0.5319027939836819,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -22288,7 +22370,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.9257902305559713,
+      "score": 0.9081335478232072,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -22412,7 +22494,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08358371972390327,
+      "score": 0.08198960998707558,
       "reactions": [
         {
           "emoji": "👍",
@@ -22456,7 +22538,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.6298046532424406,
+      "score": 0.6177930111026849,
       "reactions": [
         {
           "emoji": "💜",
@@ -22653,7 +22735,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.2972513647723566,
+      "score": 0.29158218306527084,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -22711,7 +22793,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.05970238042073719,
+      "score": 0.058563735882603905,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -22812,7 +22894,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.24033738175970276,
+      "score": 0.23575366424088007,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -22861,7 +22943,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07472970572745817,
+      "score": 0.07330445985512903,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -22909,7 +22991,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.01852386578712947,
+      "score": 0.018170578389625575,
       "reactions": [
         {
           "emoji": "👆",
@@ -23077,7 +23159,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.047294096504049546,
+      "score": 0.04639210291031369,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -23116,7 +23198,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.03268863652957401,
+      "score": 0.032065198449197294,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -23148,7 +23230,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.11079747288335592,
+      "score": 0.10868434210953185,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -23311,7 +23393,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 5,
-      "score": 0.33265927283898317,
+      "score": 0.32631479107111794,
       "reactions": [
         {
           "emoji": "💜",
@@ -23390,7 +23472,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.101294762076512,
+      "score": 0.09936286712078136,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -23457,7 +23539,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.03665095947006052,
+      "score": 0.035951951917533614,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -24167,7 +24249,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.027383498038489135,
+      "score": 0.02686123962505943,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -24256,7 +24338,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.04833294774807395,
+      "score": 0.047411141170557426,
       "reactions": [
         {
           "emoji": "👀",
@@ -24315,7 +24397,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.03437280806568689,
+      "score": 0.033717249444933726,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -24465,7 +24547,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.025434559791139764,
+      "score": 0.024949471552079414,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -24558,7 +24640,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.01723826490381436,
+      "score": 0.016909496502264903,
       "reactions": [
         {
           "emoji": "😮",
@@ -24603,7 +24685,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.015128430352925971,
+      "score": 0.014839900742037858,
       "reactions": [
         {
           "emoji": "💜",
@@ -24647,7 +24729,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.018543093903613077,
+      "score": 0.018189439787233686,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -24699,7 +24781,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.04415482052059901,
+      "score": 0.043312699237264496,
       "reactions": [
         {
           "emoji": "☝️",
@@ -24772,7 +24854,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.050096818179243455,
+      "score": 0.04914137104303778,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -24849,7 +24931,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.04759549918247735,
+      "score": 0.04668775723312897,
       "reactions": [
         {
           "emoji": "👆",
@@ -24909,7 +24991,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.06752615630799629,
+      "score": 0.0662382966193308,
       "reactions": [
         {
           "emoji": "👆",
@@ -24961,7 +25043,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.036033610292725816,
+      "score": 0.035346376831348,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -25186,7 +25268,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.031706931267275626,
+      "score": 0.03110221628180894,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -25265,7 +25347,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00522310989614706,
+      "score": 0.005123494679577697,
       "reactions": [
         {
           "emoji": "💜",
@@ -25375,7 +25457,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07532551406893698,
+      "score": 0.07388890493254674,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -25467,7 +25549,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07155236409804175,
+      "score": 0.07018771652458482,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -25517,7 +25599,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 5,
-      "score": 0.019391002277908742,
+      "score": 0.019021176842522882,
       "reactions": [
         {
           "emoji": {
@@ -25569,7 +25651,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.02172235309300906,
+      "score": 0.02130806410602979,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -25618,7 +25700,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.0819797031862045,
+      "score": 0.08041618527263167,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -25694,7 +25776,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09939974188890016,
+      "score": 0.09750398878163642,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -25759,7 +25841,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.0769138904683959,
+      "score": 0.07544698779766074,
       "reactions": [
         {
           "emoji": "‼️",
@@ -25879,7 +25961,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.01422797294504457,
+      "score": 0.013956616868981689,
       "reactions": [
         {
           "emoji": "🤝",
@@ -26019,7 +26101,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1173906879573749,
+      "score": 0.11515181130407567,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -26086,7 +26168,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.023284857321158474,
+      "score": 0.02284076823420573,
       "reactions": [
         {
           "emoji": "☝️",
@@ -26181,7 +26263,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.025595008592927508,
+      "score": 0.025106860272334088,
       "reactions": [
         {
           "emoji": "⬆️",
@@ -26283,7 +26365,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.14102728371536194,
+      "score": 0.13833760961529049,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -26375,7 +26457,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.2068728661146761,
+      "score": 0.20292738425232065,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -26430,7 +26512,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.212442187849601,
+      "score": 0.20839048781420294,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -26661,7 +26743,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.32019048600109173,
+      "score": 0.3140838090900862,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -26741,7 +26823,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.26503320476410414,
+      "score": 0.25997848820335884,
       "reactions": [
         {
           "emoji": "💜",
@@ -26806,7 +26888,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.47358719946450384,
+      "score": 0.4645549385362142,
       "reactions": [
         {
           "emoji": "👍",
@@ -26913,7 +26995,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.21784957409677175,
+      "score": 0.21369474432395755,
       "reactions": [
         {
           "emoji": "👍",
@@ -27092,7 +27174,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 13,
-      "score": 0.8449656719743918,
+      "score": 0.828850476223008,
       "reactions": [
         {
           "emoji": "👍",
@@ -27234,7 +27316,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.36578549821933626,
+      "score": 0.35880923267111786,
       "reactions": [
         {
           "emoji": "➕",
@@ -27458,7 +27540,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.43475753031901576,
+      "score": 0.4264658293211415,
       "reactions": [
         {
           "emoji": "💜",
@@ -27545,7 +27627,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.16951761820849376,
+      "score": 0.16628457609643377,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -27593,7 +27675,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00023357599026439118,
+      "score": 0.00022912122608783166,
       "reactions": [
         {
           "emoji": "✅",
@@ -27668,7 +27750,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.13825251593995813,
+      "score": 0.1356157622452337,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -27732,7 +27814,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07660806645164596,
+      "score": 0.07514699646034254,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -27820,7 +27902,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.14193086704245989,
+      "score": 0.13922395978999305,
       "reactions": [
         {
           "emoji": "❤️",
@@ -27906,7 +27988,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.12709230055376713,
+      "score": 0.1246683946249831,
       "reactions": [
         {
           "emoji": {
@@ -27996,7 +28078,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.019876508343608587,
+      "score": 0.019497423330530124,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -28057,7 +28139,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0951682563591374,
+      "score": 0.09335320619625706,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -28181,7 +28263,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.022483387022318016,
+      "score": 0.022054583586822038,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -28320,7 +28402,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.02205463977598425,
+      "score": 0.021634013413275595,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -28413,7 +28495,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.010485040096876137,
+      "score": 0.01028506928240807,
       "reactions": [
         {
           "emoji": "👍",
@@ -28467,7 +28549,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.010572244819630417,
+      "score": 0.010370610835610927,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -28553,7 +28635,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.020639296555592743,
+      "score": 0.020245663636296672,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -28621,7 +28703,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.009123934461482896,
+      "score": 0.008949922670535187,
       "reactions": [
         {
           "emoji": "➕",
@@ -28734,7 +28816,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0169248468837182,
+      "score": 0.016602055994526195,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -28803,7 +28885,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.015425139386459199,
+      "score": 0.015130950937212104,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -28941,7 +29023,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 6,
-      "score": 0.03608019025517656,
+      "score": 0.035392068420178516,
       "reactions": [
         {
           "emoji": "💜",
@@ -29054,7 +29136,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.01615473977648474,
+      "score": 0.0158466363795711,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -29091,7 +29173,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.010426404121374574,
+      "score": 0.01022755161295684,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -29160,7 +29242,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.004033046862032255,
+      "score": 0.003956128542375208,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -29323,7 +29405,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.003467610768056829,
+      "score": 0.003401476452580712,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -29356,7 +29438,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00315443720796356,
+      "score": 0.003094275742500704,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -29391,7 +29473,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0031497407606937266,
+      "score": 0.0030896688659313182,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -29523,7 +29605,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0024744318731835216,
+      "score": 0.002427239477879887,
       "reactions": [
         {
           "emoji": "⬆️",
@@ -29553,7 +29635,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.004896820545397703,
+      "score": 0.004803428323363296,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -29590,7 +29672,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0023651927531154215,
+      "score": 0.002320083767661433,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -29621,7 +29703,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.007014550702889687,
+      "score": 0.006880769105087092,
       "reactions": [
         {
           "emoji": "👍",
@@ -29662,7 +29744,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00228673047570825,
+      "score": 0.002243117923779855,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -29907,7 +29989,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.007445043577562674,
+      "score": 0.007303051614327457,
       "reactions": [
         {
           "emoji": "💜",
@@ -29993,7 +30075,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0016019626408500683,
+      "score": 0.0015714099895413093,
       "reactions": [
         {
           "emoji": "👍",
@@ -30075,7 +30157,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.003108136676826255,
+      "score": 0.003048858255666167,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -30131,7 +30213,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.006163420372896635,
+      "score": 0.006045871543279444,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -30184,7 +30266,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.001488053685373953,
+      "score": 0.0014596735070735297,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -30213,7 +30295,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0028831144749880203,
+      "score": 0.0028281276800457876,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -30356,7 +30438,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 6.755760151515866e-7,
+      "score": 6.626914210311303e-7,
       "reactions": [],
       "comments_count": 12,
       "activity_7d": 0,
@@ -30692,7 +30774,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.01819136264428776,
+      "score": 0.017844416750838494,
       "reactions": [
         {
           "emoji": "‼️",
