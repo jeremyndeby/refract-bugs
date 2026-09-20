@@ -1,7 +1,150 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-09-19T18:20:04.412Z",
+  "generated_at": "2026-09-20T00:20:03.960Z",
   "bugs": [
+    {
+      "id": "1551024123424145459",
+      "title": "Watched film still appears after unmarking",
+      "body": "User accidentally marked a film as watched, then unmarked it as unwatched, but the film still appears on the watched films page (heart section).\n\n📱 via app · 2407FPN8EG · Android 16 · v1.6.727-01a0b54c",
+      "author_key": "Ochre Robin",
+      "posted_at": "2026-09-20T00:16:07.659Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1550951681108344943",
+      "title": "Persian and RTL layout bugs and issues",
+      "body": "👋🏼 hello\nAs instructed by Florent, I will sequentially post all the weird stuff I encountered throughout using the app in Persian – my native language🦁☀️ – for a few days.\n\nThe most important of which, is the issue with the app's font. Two fonts are used, one seems specific and intentional because it (more or less) matches the intended vibe of Refract. The other font is my device's default font, which immediately makes everything ugly wherever used because it clashes with the existing elements' design and style, especially since it's a serif font. I imagine on other devices with different default fonts it could look even worse.\n\nThe other issues encountered so far is a button display bug and translation issues. Details forthcoming.\n\n[identity removed]\nPhone: Samsung Galaxy A50, Android 11\nRefract version: Refract v1.6.727-01a0b54c | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
+      "author_key": "Lilac Wren",
+      "posted_at": "2026-09-19T19:28:16.065Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "⏳ Waiting on us",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 14,
+      "activity_7d": 14,
+      "comments": [
+        {
+          "text": "These two are the only instances I saw of the fonts being in unison. This is the good font that I mentioned.\n\nThe language settings page and search tab",
+          "date": "2026-09-19T21:00:15.434Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "To showcase the difference. Red is the good font, and the blues fall back to the system's default. Disjointed. Very unattractive.",
+          "date": "2026-09-19T21:02:39.926Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "This is another display bug. The direction of the gradient background of the buttons and the direction of the arrows should be swapped.\n\nI think swapping the buttons of the two sides would fix it.",
+          "date": "2026-09-19T21:04:50.192Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "About the translations, there are some instances where the literal translation is very jarring or unnatural. I will come up with some better alternatives to be considered.",
+          "date": "2026-09-19T21:07:20.222Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "Set Up to Date = همه‌اش را دیده‌ام\nRemove from Library = حذف از کتابخانه",
+          "date": "2026-09-19T21:50:51.009Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "Fun ride = سرگرم‌کننده\nBoring = حوصله‌سربر\nFrustrating = رو مخ\nSlow burn = آهسته و پیوسته\nWholesome = گوگولی\nOverhyped = آش دهن‌سوزی نیست\nUnderrated = دست‌کم گرفتنش",
+          "date": "2026-09-19T21:51:28.739Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "Crew = دست‌اندرکاران\n\nYou might think it's longer, but trust me. It's standard in all Iranian shows and movies, in the credits and their ads and everything.",
+          "date": "2026-09-19T21:54:39.418Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "Untranslated titles and names here.\n\nProducer = تهیه‌کننده\nExecutive producer = تهیه‌کننده اجرایی OR مدیر اجرایی تولید",
+          "date": "2026-09-19T21:59:03.314Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "More untranslated and one mistranslation.\n\nUnique = خاص OR ویژه\n17 to unlock = ۱۷ تا هنوز باز نشده\nNot all is revealed = برخی نشان‌ها پنهان هستند...",
+          "date": "2026-09-19T22:02:21.524Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "Mark as Rewatch = دوباره تماشا کردم",
+          "date": "2026-09-19T22:17:07.253Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "English (LTR) text in the middle of a Persian (RTL) paragraph does not sit right and the text is completely thrown out of order in those lines. This is a common issue among western devs, so no worries😁 very important to fix though",
+          "date": "2026-09-19T22:19:25.007Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "I gotta say though, if the UI design is intended to have two fonts working in tandem, I do not suggest this one for long text and paragraphs. I don't like it here.\n\nBest for titles or one liners like settings and such. You do you.",
+          "date": "2026-09-19T22:21:12.489Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "More untranslated crew titles\n\nWriter = نویسنده\nDirector of photography = کارگردان فیلم‌برداری",
+          "date": "2026-09-19T22:23:21.592Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        },
+        {
+          "text": "Exooo mission accomplished? Hopefully.",
+          "date": "2026-09-19T22:25:00.187Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
     {
       "id": "1550850896823328918",
       "title": "Refract shows unusually high sustained energy and CPU usage on Apple Silicon",
@@ -236,7 +379,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.690087492377374,
+      "score": 3.5998617070677956,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -364,7 +507,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8149889071956917,
+      "score": 1.770610880978649,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 5,
@@ -534,7 +677,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.6147401675120747,
+      "score": 1.5752583937097864,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 7,
@@ -621,7 +764,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.3885782577321848,
+      "score": 1.354626335446739,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -692,7 +835,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9100668279899224,
+      "score": 1.8633640655472532,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -1113,7 +1256,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.4957537124247926,
+      "score": 0.4836321114827921,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1146,7 +1289,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 1.4785821707225537,
+      "score": 1.4424295760283192,
       "reactions": [
         {
           "emoji": "💜",
@@ -1357,7 +1500,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.46091639386051575,
+      "score": 0.4496465950592598,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1523,7 +1666,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.830418560911138,
+      "score": 0.8101141190927177,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -1553,7 +1696,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.4126459522664822,
+      "score": 0.40255640691695566,
       "reactions": [
         {
           "emoji": "💜",
@@ -1704,7 +1847,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8102363210671054,
+      "score": 0.7904253522199888,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -1769,7 +1912,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0964857807048132,
+      "score": 1.0696757685169611,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -2058,7 +2201,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6160634362494496,
+      "score": 0.6010001599854191,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2088,7 +2231,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.7931809048430223,
+      "score": 1.7493361028767234,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 3,
@@ -2240,7 +2383,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2875936143980984,
+      "score": 0.2805617053274625,
       "reactions": [
         {
           "emoji": "➕",
@@ -2280,7 +2423,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3887577407535618,
+      "score": 0.37925228254230686,
       "reactions": [
         {
           "emoji": "💜",
@@ -2337,7 +2480,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2736849129402159,
+      "score": 0.2669930834786045,
       "reactions": [
         {
           "emoji": "➕",
@@ -2396,7 +2539,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.5455960329132291,
+      "score": 0.5322557447403674,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2621,7 +2764,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.4396028079537854,
+      "score": 0.4288541444996373,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3095,15 +3238,15 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.9376670629714294,
+      "score": 6.94122774944169,
       "reactions": [
         {
           "emoji": "☝️",
           "count": 3
         }
       ],
-      "comments_count": 2,
-      "activity_7d": 0,
+      "comments_count": 3,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "device is Realme 12 pro",
@@ -3117,6 +3260,13 @@
           "date": "2026-09-02T20:39:05.206Z",
           "is_team": false,
           "author_key": "Ochre Wren",
+          "reactions": []
+        },
+        {
+          "text": "I'm also having this problem. I can only see the first watch date if I delete the rewatch, that doesn't happen with tv shows.\n\n[mention removed]\nSamsung A25, Android 16, Refract 1.6.4",
+          "date": "2026-09-19T22:17:27.139Z",
+          "is_team": false,
+          "author_key": "Coral Otter",
           "reactions": []
         }
       ],
@@ -3172,7 +3322,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.16761365801266803,
+      "score": 0.1635153611690177,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3199,7 +3349,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.17135676581632703,
+      "score": 0.16716694679555177,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3247,7 +3397,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3122078259474801,
+      "score": 0.304574078418703,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3412,7 +3562,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.14769744175451174,
+      "score": 0.1440861133786821,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3583,7 +3733,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2715041105828958,
+      "score": 0.26486560359824485,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -3665,7 +3815,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.27185063836770024,
+      "score": 0.2652036584832657,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -3777,7 +3927,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.12044040136605978,
+      "score": 0.11749553086672845,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3824,7 +3974,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.11991938658556935,
+      "score": 0.11698725534183152,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -4082,7 +4232,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.10336634511801157,
+      "score": 0.10083894985106494,
       "reactions": [
         {
           "emoji": "💜",
@@ -4110,7 +4260,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.10352921646407419,
+      "score": 0.10099783885385435,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4181,7 +4331,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3270330146368561,
+      "score": 0.31903677860485913,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -4277,7 +4427,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.11210378838217372,
+      "score": 0.10936275517798703,
       "reactions": [
         {
           "emoji": "➕",
@@ -4547,7 +4697,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.17961981798856758,
+      "score": 0.1752279602972094,
       "reactions": [
         {
           "emoji": "💜",
@@ -4630,7 +4780,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.18282909982979384,
+      "score": 0.17835877246122545,
       "reactions": [
         {
           "emoji": "💜",
@@ -4671,25 +4821,28 @@
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
+        "⏳ Waiting on us",
         "💥 Crash"
       ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-08-25T09:49:05.200Z"
-        }
-      ],
+      "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8231122035066272,
+      "score": 3.9361461736920678,
       "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
+      "comments_count": 2,
+      "activity_7d": 2,
       "comments": [
         {
           "text": "I had a similar issue today where the freeze did not appear and it said my streak was broken even though it hadn't been two days yet. Once I did an action to bring the streak back to life, it fixed on my profile (after a cache clear) but took a while to update on the goal on my homepage.\n\nAndroid 16\nSamsung Galaxy s22+\nRefract v1.6.727-01a0b54c\n[name removed]",
           "date": "2026-09-18T19:53:25.161Z",
           "is_team": false,
           "author_key": "Silver Lynx",
+          "reactions": []
+        },
+        {
+          "text": "I have a similar issue even when there's activity, streak went from possibly over 60 or 70, to 39",
+          "date": "2026-09-19T20:26:02.801Z",
+          "is_team": false,
+          "author_key": "Amber Otter",
           "reactions": []
         }
       ],
@@ -4917,7 +5070,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.20330011664910824,
+      "score": 0.198329255465983,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -5096,7 +5249,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0761083686469361,
+      "score": 0.07424745414450605,
       "reactions": [
         {
           "emoji": "💜",
@@ -5264,7 +5417,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.1451105183986865,
+      "score": 1.1171115899173956,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5604,7 +5757,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.16964051866268318,
+      "score": 0.1654926633480646,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5761,7 +5914,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.05459030163465918,
+      "score": 0.0532555222167054,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5786,72 +5939,6 @@
       ]
     },
     {
-      "id": "1540106516735201360",
-      "title": "Statistics/reports don't match watch dates data",
-      "body": "TLDR; I think there may be conflicts between the watch data and the stats/reports.\n\nFrom July 28, 2026 to August 5, 2026 I manually fixed a lot (over 200 episodes) of watch dates for shows and a few movies. I did not mark them as 'date unknown', I corrected/changed the dates.\n\nI waited a couple weeks to see if the Stats/Report sections would update, which they did update and removed the large watch dates on specific days and the Report section changed the Longest Streak and First Tracked. However, it looks like the stats breakdown and records section haven't updated fully.\n\nThe Stats tab shows I watched 301 episodes belonging to 3 titles in June 2014 but from my refract export data I watched 10 episodes between 5 shows. My export data also shows my biggest month should most likely be May, 2022 (see photo of pivot table from export data). Also, July, 2014 shows only 1 title while my export data shows around 5 titles, etc.\n\n- Date of final edits made to watch dates: August 6, 2026\n- Current version: v1.6.716-01a02013\n- Android 14, Galaxy S23\n- [mention removed]",
-      "author_key": "Teal Lynx",
-      "posted_at": "2026-08-20T21:13:27.385Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📊 Stats",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.05189640052825384,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "Forgot to add this.",
-          "date": "2026-08-20T21:16:23.921Z",
-          "is_team": false,
-          "author_key": "Teal Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1540106516735201360/1540106517317951588.webp"
-        }
-      ]
-    },
-    {
-      "id": "1540104097942872074",
-      "title": "Activity section doesn't update after change.",
-      "body": "I mistakenly marked a movie as watched, and then I unmarked it and added it to my watchlist, but the movie is still shown as completed in the activity section.",
-      "author_key": "Silver Otter",
-      "posted_at": "2026-08-20T21:03:50.700Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⚠ Critical"
-      ],
-      "status_tags": [],
-      "reactors_unique": 2,
-      "score": 0.10370324068383553,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 2
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1539981791752884336",
       "title": "wrong data on first tracked stat",
       "body": "Hello. 👋 So i think this might be a bug.\nIt shows that my first tracked is 18th May 2011. On heat map it show something was there... but when i want to see details, nothing is there. No biggie, but ... :octosus:",
@@ -5867,7 +5954,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.13716859606555806,
+      "score": 0.13381470694358125,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -6098,7 +6185,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.2743266705533646,
+      "score": 0.2676191495709576,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -6133,7 +6220,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.31449381713706526,
+      "score": 0.30680417517469616,
       "reactions": [
         {
           "emoji": "💜",
@@ -6202,7 +6289,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7104718341828088,
+      "score": 0.6931001920979265,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -6491,7 +6578,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.733885110519118,
+      "score": 1.6914901412788672,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -6580,7 +6667,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.03150434216708251,
+      "score": 0.030734034140901985,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6621,7 +6708,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6373200142722781,
+      "score": 0.6217369965525055,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6671,7 +6758,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.17200221584330233,
+      "score": 0.16779661501906507,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -6784,7 +6871,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.033462742956999254,
+      "score": 0.03264455036179801,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6977,7 +7064,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.22544668697428322,
+      "score": 0.21993432326482754,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -7330,7 +7417,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.027219688930347635,
+      "score": 0.026554144328845286,
       "reactions": [
         {
           "emoji": "👍",
@@ -7360,7 +7447,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.09012327875435486,
+      "score": 0.08791968775086705,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -7479,7 +7566,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.05731573342309741,
+      "score": 0.0559143148742484,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -7626,7 +7713,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.04350496906973779,
+      "score": 0.042441235484207786,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7905,7 +7992,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.8307677684719648,
+      "score": 1.7860039356438637,
       "reactions": [
         {
           "emoji": "👆",
@@ -7980,7 +8067,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.06249419309920227,
+      "score": 0.06096615679618463,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -8082,7 +8169,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.019038432895613393,
+      "score": 0.018572926979393577,
       "reactions": [
         {
           "emoji": "🤔",
@@ -9077,7 +9164,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6376949236896508,
+      "score": 0.6221027391149804,
       "reactions": [
         {
           "emoji": "👆",
@@ -9141,7 +9228,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.054958392715269054,
+      "score": 0.05361461315656467,
       "reactions": [
         {
           "emoji": "💜",
@@ -9190,7 +9277,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.013610361047072809,
+      "score": 0.013277576115453773,
       "reactions": [
         {
           "emoji": "❤️",
@@ -9232,7 +9319,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9746446866049918,
+      "score": 0.950813793048024,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9394,7 +9481,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.013084374846056759,
+      "score": 0.012764450725501609,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9534,7 +9621,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.027242294184023345,
+      "score": 0.026576196864795676,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9746,7 +9833,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.049367880504167405,
+      "score": 0.04816079373542301,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -9888,7 +9975,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5874576613381565,
+      "score": 0.5730938206596213,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -10142,7 +10229,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6348306163929517,
+      "score": 0.619308466573757,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10273,7 +10360,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1778319361951286,
+      "score": 0.17348379373794495,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -10319,7 +10406,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.913295011820022,
+      "score": 0.8909641701174873,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10365,7 +10452,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 1.7730974491515141,
+      "score": 1.7297437047997677,
       "reactions": [
         {
           "emoji": "👍",
@@ -11069,7 +11156,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.08064629644421001,
+      "score": 0.078674425738158,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11152,7 +11239,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 54.900797316185965,
+      "score": 53.55842601409428,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12671,6 +12758,72 @@
       ]
     },
     {
+      "id": "1540106516735201360",
+      "title": "Statistics/reports don't match watch dates data",
+      "body": "TLDR; I think there may be conflicts between the watch data and the stats/reports.\n\nFrom July 28, 2026 to August 5, 2026 I manually fixed a lot (over 200 episodes) of watch dates for shows and a few movies. I did not mark them as 'date unknown', I corrected/changed the dates.\n\nI waited a couple weeks to see if the Stats/Report sections would update, which they did update and removed the large watch dates on specific days and the Report section changed the Longest Streak and First Tracked. However, it looks like the stats breakdown and records section haven't updated fully.\n\nThe Stats tab shows I watched 301 episodes belonging to 3 titles in June 2014 but from my refract export data I watched 10 episodes between 5 shows. My export data also shows my biggest month should most likely be May, 2022 (see photo of pivot table from export data). Also, July, 2014 shows only 1 title while my export data shows around 5 titles, etc.\n\n- Date of final edits made to watch dates: August 6, 2026\n- Current version: v1.6.716-01a02013\n- Android 14, Galaxy S23\n- [mention removed]",
+      "author_key": "Teal Lynx",
+      "posted_at": "2026-08-20T21:13:27.385Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us",
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.050627489289137004,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "Forgot to add this.",
+          "date": "2026-08-20T21:16:23.921Z",
+          "is_team": false,
+          "author_key": "Teal Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1540106516735201360/1540106517317951588.webp"
+        }
+      ]
+    },
+    {
+      "id": "1540104097942872074",
+      "title": "Activity section doesn't update after change.",
+      "body": "I mistakenly marked a movie as watched, and then I unmarked it and added it to my watchlist, but the movie is still shown as completed in the activity section.",
+      "author_key": "Silver Otter",
+      "posted_at": "2026-08-20T21:03:50.700Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⚠ Critical"
+      ],
+      "status_tags": [],
+      "reactors_unique": 2,
+      "score": 0.10116760803307173,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 2
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
       "id": "1538481113809293323",
       "title": "Can't export data",
       "body": "Exporting doesn't work. It says export successful but it doesn't get downloaded. I also tried sending it to myself in email, but no attachment is attached.\n\nFirst picture after I click on export. When I close that it says export successful as seen in the second picture.",
@@ -12685,7 +12838,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.10162612216206195,
+      "score": 0.09914127683007987,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -12885,7 +13038,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.04890964895028484,
+      "score": 0.047713766333715144,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12914,7 +13067,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8092281977979694,
+      "score": 0.789441878424296,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13057,7 +13210,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.08620945373030905,
+      "score": 0.0841015590855358,
       "reactions": [
         {
           "emoji": "💜",
@@ -13117,39 +13270,6 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": []
-    },
-    {
-      "id": "1549154735251263518",
-      "title": "follower bug",
-      "body": "me and my friend can’t find eachothers profiles anymore even when we search. none of us have blocked eachother, only thing that has happened was a misclick on the unfollow button, but we added eachother back and now he’s gone. any clue why?",
-      "author_key": "Sage Panda",
-      "posted_at": "2026-09-14T20:27:50.787Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "👤 Profile",
-        "🐌 Performance",
-        "🔍 Search"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "[mention removed]/ Ataboy\niPhone 11, IOS 26.6.2\nRefract v1.6.724-01a09bba",
-          "date": "2026-09-14T20:31:53.546Z",
-          "is_team": false,
-          "author_key": "Sage Panda",
-          "reactions": []
-        }
-      ],
       "images": []
     },
     {
@@ -13442,7 +13562,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.597656769868156,
+      "score": 3.5096909945291688,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 7,
@@ -13528,7 +13648,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.892928796282082,
+      "score": 0.8710959259134223,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13583,7 +13703,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 4.227886710848219,
+      "score": 4.124511276126358,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13673,7 +13793,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 2.3767772324548613,
+      "score": 2.3186630027117596,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13790,7 +13910,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.2401212103408947,
+      "score": 2.185348336849639,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13869,7 +13989,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.618827184165188,
+      "score": 3.530343774147016,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13933,7 +14053,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 5.352191260847511,
+      "score": 5.2213256213106245,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14050,7 +14170,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 4.801295370543991,
+      "score": 4.6838996052117485,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14269,7 +14389,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8070089409512928,
+      "score": 0.7872768842996303,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14396,7 +14516,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8044651001348009,
+      "score": 0.7847952425599475,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14457,7 +14577,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.724928511352783,
+      "score": 2.658301686011341,
       "reactions": [
         {
           "emoji": "💜",
@@ -14573,7 +14693,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 4.180599953159162,
+      "score": 4.078380719978878,
       "reactions": [
         {
           "emoji": "💜",
@@ -14798,7 +14918,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 12.811301305970746,
+      "score": 12.49805406628968,
       "reactions": [
         {
           "emoji": {
@@ -15446,7 +15566,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.033686656751280686,
+      "score": 0.03286298927290325,
       "reactions": [
         {
           "emoji": "👆",
@@ -15488,7 +15608,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.03493031774111023,
+      "score": 0.034076241691202186,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15537,7 +15657,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07014406125371422,
+      "score": 0.06842897915213995,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -15683,7 +15803,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.404573374496701,
+      "score": 1.3702303579691326,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 1,
@@ -15883,7 +16003,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.9469583080177975,
+      "score": 2.8749026648481584,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 2,
@@ -15970,7 +16090,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.20792188905797612,
+      "score": 0.20283802159899061,
       "reactions": [
         {
           "emoji": "👍",
@@ -16160,7 +16280,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.3396414830363015,
+      "score": 1.3068861066150321,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 1,
@@ -16420,7 +16540,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6438816788712225,
+      "score": 0.6281382228576151,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16463,7 +16583,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.986120356803235,
+      "score": 1.9375580207388237,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16568,7 +16688,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.2978634926444836,
+      "score": 1.2661296237076696,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 1,
@@ -16906,7 +17026,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.009748907704679125,
+      "score": 0.009510538599506886,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16997,7 +17117,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6072268606752468,
+      "score": 0.5923796462179558,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17158,7 +17278,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.01739045469345939,
+      "score": 0.016965243249327175,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -17814,7 +17934,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3782918327688267,
+      "score": 0.3690422749308966,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17851,10 +17971,10 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0363612776957813,
+      "score": 1.011021360867875,
       "reactions": [],
       "comments_count": 5,
-      "activity_7d": 5,
+      "activity_7d": 4,
       "comments": [
         {
           "text": "This also happens to me \nDevice: Samsung A71 Android 13\n[identity removed]\nApp version: Refract v1.6.723-01a091ce | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied\n\nIf I copy the link, it will download the ici file and opening that will allow me to add it to my calendar but I think the downside of that is that it won't update over time",
@@ -17947,11 +18067,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1548477432707678278/1548477432980574239.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1548748598534209596",
