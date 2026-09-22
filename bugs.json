@@ -1,7 +1,34 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-09-22T00:20:04.054Z",
+  "generated_at": "2026-09-22T04:10:03.970Z",
   "bugs": [
+    {
+      "id": "1551787231755374632",
+      "title": "Rewatches Not Displaying on Episode Pages",
+      "body": "Octo told me to split this out into it's own bug report so here we are. Rewatches aren't showing by default on either the series page or the episode page until I click on the checkmark and then they appear until I close the app. Then it resets to not displaying again.\n\nAndroid 16\nSamsung Galaxy s22+\n[name removed] (same as discord)\nRefract v1.6.729-01a0bf6e | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
+      "author_key": "Coral Finch",
+      "posted_at": "2026-09-22T02:48:26.863Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us",
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1551787231755374632/1551787231948308511.webp"
+        }
+      ]
+    },
     {
       "id": "1551694320959225856",
       "title": "Watch date dont match in edit",
@@ -103,7 +130,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9207682050336305,
+      "score": 1.8906287596126023,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -202,7 +229,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9160106538344032,
+      "score": 0.9016372104204755,
       "reactions": [
         {
           "emoji": "💜",
@@ -225,7 +252,7 @@
     {
       "id": "1551332574222225449",
       "title": "Unable to Remove Show-Wide Rewatch",
-      "body": "During the big migration in July I had marked a show as rewatched via the series page. I wanted to edit the individual episode dates now that I can do that however it doesn't allow me to do so for show-wide rewatches.\n\nTo get around this, I removed the re watch from the series. However, it still says I've rewatched the episodes. Cleared the cache and it's still happening. Added wrinkle tho is the episode will display as normal until I click on the watch button and then it will show the stale rewatch.\n\nI think that part is related to a different bug where rewatches aren't showing by default (episode one has three rewatches which are legitimate and those also didn't appear at first.)\n\nAndroid 16\nSamsung Galaxy s22+\n[name removed]\nRefract v1.6.729-01a0bf6e | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
+      "body": "During the big migration in July I had marked a show as rewatched via the series page. I wanted to edit the individual episode dates now that I can do that however it doesn't allow me to do so for show-wide rewatches.\n\nTo get around this, I removed the re watch from the series. However, it still says I've rewatched the episodes. Cleared the cache and it's still happening. \n\n(Moved to other bug: Added wrinkle tho is the episode will display as normal until I click on the watch button and then it will show the stale rewatch.\n\nI think that part is related to a different bug where rewatches aren't showing by default (episode one has three rewatches which are legitimate and those also didn't appear at first.)\n\nAndroid 16\nSamsung Galaxy s22+\n[name removed]\nRefract v1.6.729-01a0bf6e | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
       "author_key": "Silver Panda",
       "posted_at": "2026-09-20T20:41:48.060Z",
       "status": "open",
@@ -240,9 +267,17 @@
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]",
+          "date": "2026-09-22T02:26:09.249Z",
+          "is_team": false,
+          "author_key": "Silver Panda",
+          "reactions": []
+        }
+      ],
       "images": [
         {
           "url": "./assets/bugs/1551332574222225449/1551332574545182740.webp"
@@ -382,7 +417,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.553668861873465,
+      "score": 2.5135983509788584,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -430,25 +465,36 @@
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
+        "⏳ Waiting on us",
         "🐌 Performance"
       ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-09-20T01:00:09.343Z"
-        }
-      ],
+      "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8225426146608392,
+      "score": 0.9886688767469837,
       "reactions": [
         {
           "emoji": "🛠️",
           "count": 1
         }
       ],
-      "comments_count": 0,
-      "activity_7d": 1,
-      "comments": [],
+      "comments_count": 2,
+      "activity_7d": 3,
+      "comments": [
+        {
+          "text": "In addition, it’s not correctly marking shows as complete when watching the season finales/the final episode of a most recently released season, like the ones circled below",
+          "date": "2026-09-22T01:22:58.763Z",
+          "is_team": false,
+          "author_key": "Sage Tern",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]\niPhone 14 Pro, iOS 27.0\nRefract v1.6.730-01a0c4fc | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied",
+          "date": "2026-09-22T01:24:20.648Z",
+          "is_team": false,
+          "author_key": "Sage Tern",
+          "reactions": []
+        }
+      ],
       "images": [
         {
           "url": "./assets/bugs/1551034948805333002/1551034949208121395.webp"
@@ -492,7 +538,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8138701776541102,
+      "score": 0.8010994561610506,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -818,7 +864,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8756656002529158,
+      "score": 0.861925225179687,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -853,7 +899,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.9530935169053727,
+      "score": 2.906755494106623,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -981,7 +1027,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4524945509196154,
+      "score": 1.429702951117485,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 5,
@@ -1151,7 +1197,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.2922400159933511,
+      "score": 1.2719630261250092,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 7,
@@ -1238,7 +1284,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1112477574299522,
+      "score": 1.093810780367062,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -1309,7 +1355,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.7275873779780038,
+      "score": 3.669096501235948,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -1744,7 +1790,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3967404776086284,
+      "score": 0.3905150840708442,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1777,7 +1823,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 1.1832758522913929,
+      "score": 1.1647086572104368,
       "reactions": [
         {
           "emoji": "💜",
@@ -1988,7 +2034,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.36886095989772094,
+      "score": 0.36307303361923965,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2154,7 +2200,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6645651826983243,
+      "score": 0.6541372580793299,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2184,7 +2230,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.33023121780516623,
+      "score": 0.3250494443151244,
       "reactions": [
         {
           "emoji": "💜",
@@ -2335,7 +2381,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6484137928564415,
+      "score": 0.6382393053421107,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2400,7 +2446,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8774927578457447,
+      "score": 0.8637237122039377,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2689,7 +2735,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.49302162708846753,
+      "score": 0.48528545237353915,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2719,7 +2765,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4350421001315627,
+      "score": 1.4125243528362634,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 3,
@@ -2871,7 +2917,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.23015466162707277,
+      "score": 0.2265432243675816,
       "reactions": [
         {
           "emoji": "➕",
@@ -2911,7 +2957,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3111140226993611,
+      "score": 0.306232223801248,
       "reactions": [
         {
           "emoji": "💜",
@@ -2968,7 +3014,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.21902384259129348,
+      "score": 0.2155870629047157,
       "reactions": [
         {
           "emoji": "➕",
@@ -3027,7 +3073,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.436628158810218,
+      "score": 0.42977687372164886,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -3252,7 +3298,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3518041794031695,
+      "score": 0.34628389703061435,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3454,7 +3500,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2467165240979416,
+      "score": 0.24284520886426111,
       "reactions": [
         {
           "emoji": "💜",
@@ -3731,7 +3777,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 7.39303729194672,
+      "score": 7.277030559134131,
       "reactions": [
         {
           "emoji": "☝️",
@@ -3827,7 +3873,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1341374175665167,
+      "score": 0.13203262045197217,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3854,7 +3900,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1371329420387404,
+      "score": 0.13498114110244308,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3902,7 +3948,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.24985285813335303,
+      "score": 0.2459323295858356,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -4067,7 +4113,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.11819892038054479,
+      "score": 0.11634421979757073,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4238,7 +4284,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.21727859581425712,
+      "score": 0.21386920140500992,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -4320,7 +4366,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2175559141588349,
+      "score": 0.2141421682504902,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -4432,7 +4478,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0963857277591126,
+      "score": 0.09487330560762713,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4479,7 +4525,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09596877142036549,
+      "score": 0.09446289187656252,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -4737,7 +4783,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08272174691379545,
+      "score": 0.08142373106279026,
       "reactions": [
         {
           "emoji": "💜",
@@ -4765,7 +4811,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08285208916642245,
+      "score": 0.08155202806956258,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4836,7 +4882,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.26171712116124385,
+      "score": 0.25761042631471504,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -4932,7 +4978,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08971412503789847,
+      "score": 0.08830638933715695,
       "reactions": [
         {
           "emoji": "➕",
@@ -5202,7 +5248,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.14374567570700733,
+      "score": 0.14149011205485684,
       "reactions": [
         {
           "emoji": "💜",
@@ -5232,7 +5278,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9399177488566675,
+      "score": 1.9094778212486792,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 3,
@@ -5300,7 +5346,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.14631399134148074,
+      "score": 0.14401812735080613,
       "reactions": [
         {
           "emoji": "💜",
@@ -5346,7 +5392,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.2289595248340532,
+      "score": 3.1782927920599437,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -5590,7 +5636,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.16269648286192723,
+      "score": 0.160143555469356,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -5769,7 +5815,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06090780516662233,
+      "score": 0.059952079501899604,
       "reactions": [
         {
           "emoji": "💜",
@@ -5937,7 +5983,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.91640603508961,
+      "score": 0.9020263876101785,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6116,6 +6162,33 @@
           "reactions": []
         }
       ],
+      "images": []
+    },
+    {
+      "id": "1540661788155187271",
+      "title": "Date unknown marking in \"Continue\" not working",
+      "body": "With the option set as \"Unknown date\" in the settings, when you mark an episode as watched in the \"Continue\" section, it still sets the episode as watched with the current date.\n\nApp version 1.6.716\nOS: Android 16.0.9\n[identity removed]\nDevice: OnePlus 12",
+      "author_key": "Sage Lynx",
+      "posted_at": "2026-08-22T09:59:54.408Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-22T04:01:57.754Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
       "images": []
     },
     {
@@ -6317,7 +6390,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.04368738307051887,
+      "score": 0.043001869069302694,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6357,7 +6430,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.915418630042598,
+      "score": 0.9010544762809638,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6407,7 +6480,7 @@
         }
       ],
       "reactors_unique": 3,
-      "score": 4.258596603335353,
+      "score": 4.191773475193165,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6450,7 +6523,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.10977292343365011,
+      "score": 0.10805043811456534,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -6499,7 +6572,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8622833394099336,
+      "score": 0.8487529500701368,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6751,7 +6824,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.21953742668671916,
+      "score": 0.21609258817254695,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -6864,6 +6937,77 @@
       "images": []
     },
     {
+      "id": "1539252836745875607",
+      "title": "Badges Count Inconsistency",
+      "body": "Hi, not sure this is fixed, it was marked as fixed but it is still happening, because I checked it again and it shows Gold and my count went down to 16",
+      "author_key": "Golden Wren",
+      "posted_at": "2026-08-18T12:41:14.215Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-22T04:02:11.954Z"
+        }
+      ],
+      "reactors_unique": 1,
+      "score": 0.24773305042606833,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 1
+        }
+      ],
+      "comments_count": 5,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "& somehow now it shows 15, I don't understand why it's dropping",
+          "date": "2026-08-18T12:42:26.339Z",
+          "is_team": false,
+          "author_key": "Golden Wren",
+          "reactions": []
+        },
+        {
+          "text": "this does not go beyond 14/18 too, even when there's a lot of episodes and movies tracked for the weekend",
+          "date": "2026-08-22T18:41:47.154Z",
+          "is_team": false,
+          "author_key": "Golden Wren",
+          "reactions": []
+        },
+        {
+          "text": "Badges Count Inconsistency",
+          "date": "2026-08-22T18:42:17.703Z",
+          "is_team": false,
+          "author_key": "Golden Wren",
+          "reactions": []
+        },
+        {
+          "text": "[name removed]\niPhone 15, iOS 26.6\napp version: Refract v1.6.716-01a02050 \n\ni have a new badge, but no idea which one, no notification or mention on the activity tab",
+          "date": "2026-08-22T18:51:45.243Z",
+          "is_team": false,
+          "author_key": "Velvet Seal",
+          "reactions": []
+        },
+        {
+          "text": "https://discord.com/channels/1490347491151970366/1538623899942649876/1538623899942649876",
+          "date": "2026-08-22T19:52:33.733Z",
+          "is_team": false,
+          "author_key": "Velvet Panda",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1539252836745875607/1539252837765349428.webp"
+        }
+      ]
+    },
+    {
       "id": "1538623899942649876",
       "title": "Explorer Platinum Badge Bug",
       "body": "This seems to be bugged as there is someone with 23/25 genres having the Platinum badge:\n\nhttps://discord.com/channels/1490347491151970366/1490374069940387872/1538621004736364586\n\nSecondly, I have 24/25 genres discovered and apparently War & Politics is the last genre I need to discover. Except, there aren't any movies or shows that I could find that have those tagged genres on the app.\n\nBecause of that, I'm unable to unlock the Platinum badge for Explorer. \n\n[identity removed]\nSamsung Galaxy S26 Ultra\nAndroid 16\nRefract v1.6.713-01a001cf",
@@ -6880,7 +7024,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5685745315803901,
+      "score": 0.5596528298271825,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -6943,6 +7087,53 @@
         }
       ],
       "images": []
+    },
+    {
+      "id": "1538613833533362227",
+      "title": "Broken and missing items in imported Letterboxd list",
+      "body": "List has broken items in that can’t be clicked on and show as not rated. List also 183 items instead of 216.\n\nYou need to add a feature to manually import csv files as lists.",
+      "author_key": "Ochre Robin",
+      "posted_at": "2026-08-16T18:22:03.977Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import",
+        "👤 Profile",
+        "🐌 Performance"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-22T04:02:02.116Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Refract username is: [name removed]\niPhone 13 Pro Max iOS 26.5.2\nRefract v1.6.713-01a001d3",
+          "date": "2026-08-16T18:22:56.622Z",
+          "is_team": false,
+          "author_key": "Ochre Robin",
+          "reactions": []
+        },
+        {
+          "text": "its part of the same, is there any update?",
+          "date": "2026-08-22T11:32:32.164Z",
+          "is_team": false,
+          "author_key": "Ochre Robin",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1538613833533362227/1538613834409840781.webp"
+        }
+      ]
     },
     {
       "id": "1538613607984791693",
@@ -7096,7 +7287,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.08132908586177423,
+      "score": 0.08005292274222162,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -7211,7 +7402,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.3875890177427594,
+      "score": 1.365815873353198,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -7300,7 +7491,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.025212212122385502,
+      "score": 0.02481659848758321,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7341,7 +7532,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5100327854635678,
+      "score": 0.5020296827153394,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7434,7 +7625,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9936052528245457,
+      "score": 0.9780142454301746,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7943,7 +8134,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.021783621252530312,
+      "score": 0.021441806835729566,
       "reactions": [
         {
           "emoji": "💜",
@@ -7969,7 +8160,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.02178330109474002,
+      "score": 0.021441491701647098,
       "reactions": [
         {
           "emoji": "👍",
@@ -7999,7 +8190,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07212362058122265,
+      "score": 0.07099190363569108,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8118,7 +8309,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.04586848445682219,
+      "score": 0.04514874603122308,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -8261,7 +8452,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9937048914215649,
+      "score": 0.9781123205631336,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8547,7 +8738,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.4651220165380772,
+      "score": 1.4421322747582652,
       "reactions": [
         {
           "emoji": "👆",
@@ -8622,7 +8813,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.050012688551887924,
+      "score": 0.04922792197098641,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -8724,7 +8915,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.015236027024349,
+      "score": 0.014996953197673676,
       "reactions": [
         {
           "emoji": "🤔",
@@ -8762,6 +8953,60 @@
       "activity_7d": 0,
       "comments": [],
       "images": []
+    },
+    {
+      "id": "1536292123349885018",
+      "title": "Can’t scroll properly and move keyboard away to edit review properly",
+      "body": "Formatting options are no visible to select unless the screen is dragged up away from the keyboard but then you can’t select the text you wish to use the formatting options on.",
+      "author_key": "Ivory Fox",
+      "posted_at": "2026-08-10T08:36:25.134Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "📱 iOS",
+        "🐌 Performance"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-22T04:02:06.747Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 3,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "[identity removed]\niPhone 13 Pro Max iOS 26.5.2\nRefract v1.6.709-019fe2c0",
+          "date": "2026-08-10T19:41:18.791Z",
+          "is_team": false,
+          "author_key": "Ivory Fox",
+          "reactions": []
+        },
+        {
+          "text": "Any update?",
+          "date": "2026-08-14T18:20:40.344Z",
+          "is_team": false,
+          "author_key": "Ivory Fox",
+          "reactions": []
+        },
+        {
+          "text": "update?",
+          "date": "2026-08-22T11:32:36.991Z",
+          "is_team": false,
+          "author_key": "Ivory Fox",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1536292123349885018/1536292123589218455.webp"
+        }
+      ]
     },
     {
       "id": "1536273336433246229",
@@ -9156,7 +9401,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.64155271492647,
+      "score": 1.61579453737667,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -9358,68 +9603,6 @@
       ]
     },
     {
-      "id": "1535787153412591626",
-      "title": "Comments problems!",
-      "body": "I have a problem with the comments I can’t describe it so I took a screen recording . \nThe problem persists even when I stop scrolling between comments . \n\n[identity removed]\n• device and OS version: iPhone 13 Pro , iOS 26.5.2\n• app version: Refract v1.6.707",
-      "author_key": "Velvet Otter",
-      "posted_at": "2026-08-08T23:09:50.919Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "📱 iOS",
-        "👤 Profile"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-09-08T04:03:41.825Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "The first is the same problem I have.",
-          "date": "2026-08-08T23:35:06.388Z",
-          "is_team": false,
-          "author_key": "Velvet Otter",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1535782930373287936",
-      "title": "Graphic Glitch when viewing comments and reviews on the profile page",
-      "body": "There is a Graphic Glitch when I try to read long comments and reviews on my profile page (see attached video)\n\nOS: Android 16\nDevice: OnePlus 12R\nApp Version: Refract v1.6.707-019fe2bc\n[identity removed]",
-      "author_key": "Ochre Wren",
-      "posted_at": "2026-08-08T22:53:04.068Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-08-15T10:25:41.501Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1535669949178056714",
       "title": "Rewatch History Dates Not Showing for Series",
       "body": "The main button for viewing the rewatch history dates of a series doesn't work for any of my rewatched series. It only allows me to add a new rewatch, even though the series is already marked as x2.\n\nThere is another button below that could possibly let me view the rewatch history, but it doesn't display any dates either. *(Side Note: How many buttons in a page seem to lead to the same place? I'm confused...)*\n\nAlso, inside each episode, I was able to manually add the rewatch dates to each episode, which I expected to update the overall series rewatch history. However, even after doing this, the finished rewatch date doesn't appear and I'm getting the same behaviour when clicking on these buttons.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.304.0\nApp Version: 1.6.2\nImport used: TV Time Out by Refract",
@@ -9462,33 +9645,6 @@
           "reactions": []
         }
       ],
-      "images": []
-    },
-    {
-      "id": "1535622075677409382",
-      "title": "Ratings wrong and the import isn't canceled",
-      "body": "[identity removed]\nDevice: iPhone 16 Pro Max\nOS version: iOS 26.5.2\nRefract app version: 1.6.706\n\nI imported the ratings and comments from TvTime's GDPR, but the ratings are all wrong. I tried to delete the import, but neither the comments nor the ratings will delete 🥲",
-      "author_key": "Ochre Robin",
-      "posted_at": "2026-08-08T12:13:53.320Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "📱 iOS"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-09-08T04:03:22.483Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
       "images": []
     },
     {
@@ -9573,7 +9729,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5103328169864401,
+      "score": 0.5023250063386929,
       "reactions": [
         {
           "emoji": "👆",
@@ -9637,7 +9793,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.04398195803277254,
+      "score": 0.04329182175283787,
       "reactions": [
         {
           "emoji": "💜",
@@ -9681,7 +9837,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.779986087388175,
+      "score": 0.7677470530016255,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9936,7 +10092,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.03950799761831412,
+      "score": 0.03888806381537484,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10078,7 +10234,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.4701290727490119,
+      "score": 0.4627521131076432,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -10332,7 +10488,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.508040576673499,
+      "score": 0.5000687343698876,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10498,7 +10654,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.14231487436581847,
+      "score": 0.14008176191773208,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -10544,7 +10700,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7308893309437834,
+      "score": 0.7194206909272197,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10590,7 +10746,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 3.9900177890894994,
+      "score": 3.9274090250189335,
       "reactions": [
         {
           "emoji": "👍",
@@ -11349,7 +11505,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 7.8654009674805785,
+      "score": 7.741982211093088,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11439,7 +11595,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 43.9358657382166,
+      "score": 43.246452708590034,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12979,189 +13135,6 @@
       "images": []
     },
     {
-      "id": "1539252836745875607",
-      "title": "Badges Count Inconsistency",
-      "body": "Hi, not sure this is fixed, it was marked as fixed but it is still happening, because I checked it again and it shows Gold and my count went down to 16",
-      "author_key": "Golden Wren",
-      "posted_at": "2026-08-18T12:41:14.215Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.25168228515252583,
-      "reactions": [
-        {
-          "emoji": "💜",
-          "count": 1
-        }
-      ],
-      "comments_count": 5,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "& somehow now it shows 15, I don't understand why it's dropping",
-          "date": "2026-08-18T12:42:26.339Z",
-          "is_team": false,
-          "author_key": "Golden Wren",
-          "reactions": []
-        },
-        {
-          "text": "this does not go beyond 14/18 too, even when there's a lot of episodes and movies tracked for the weekend",
-          "date": "2026-08-22T18:41:47.154Z",
-          "is_team": false,
-          "author_key": "Golden Wren",
-          "reactions": []
-        },
-        {
-          "text": "Badges Count Inconsistency",
-          "date": "2026-08-22T18:42:17.703Z",
-          "is_team": false,
-          "author_key": "Golden Wren",
-          "reactions": []
-        },
-        {
-          "text": "[name removed]\niPhone 15, iOS 26.6\napp version: Refract v1.6.716-01a02050 \n\ni have a new badge, but no idea which one, no notification or mention on the activity tab",
-          "date": "2026-08-22T18:51:45.243Z",
-          "is_team": false,
-          "author_key": "Velvet Seal",
-          "reactions": []
-        },
-        {
-          "text": "https://discord.com/channels/1490347491151970366/1538623899942649876/1538623899942649876",
-          "date": "2026-08-22T19:52:33.733Z",
-          "is_team": false,
-          "author_key": "Velvet Panda",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1539252836745875607/1539252837765349428.webp"
-        }
-      ]
-    },
-    {
-      "id": "1538613833533362227",
-      "title": "Broken and missing items in imported Letterboxd list",
-      "body": "List has broken items in that can’t be clicked on and show as not rated. List also 183 items instead of 216.\n\nYou need to add a feature to manually import csv files as lists.",
-      "author_key": "Ochre Robin",
-      "posted_at": "2026-08-16T18:22:03.977Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "👤 Profile",
-        "⏳ Waiting on us",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Refract username is: [name removed]\niPhone 13 Pro Max iOS 26.5.2\nRefract v1.6.713-01a001d3",
-          "date": "2026-08-16T18:22:56.622Z",
-          "is_team": false,
-          "author_key": "Ochre Robin",
-          "reactions": []
-        },
-        {
-          "text": "its part of the same, is there any update?",
-          "date": "2026-08-22T11:32:32.164Z",
-          "is_team": false,
-          "author_key": "Ochre Robin",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1538613833533362227/1538613834409840781.webp"
-        }
-      ]
-    },
-    {
-      "id": "1536292123349885018",
-      "title": "Can’t scroll properly and move keyboard away to edit review properly",
-      "body": "Formatting options are no visible to select unless the screen is dragged up away from the keyboard but then you can’t select the text you wish to use the formatting options on.",
-      "author_key": "Ivory Fox",
-      "posted_at": "2026-08-10T08:36:25.134Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 3,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "[identity removed]\niPhone 13 Pro Max iOS 26.5.2\nRefract v1.6.709-019fe2c0",
-          "date": "2026-08-10T19:41:18.791Z",
-          "is_team": false,
-          "author_key": "Ivory Fox",
-          "reactions": []
-        },
-        {
-          "text": "Any update?",
-          "date": "2026-08-14T18:20:40.344Z",
-          "is_team": false,
-          "author_key": "Ivory Fox",
-          "reactions": []
-        },
-        {
-          "text": "update?",
-          "date": "2026-08-22T11:32:36.991Z",
-          "is_team": false,
-          "author_key": "Ivory Fox",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1536292123349885018/1536292123589218455.webp"
-        }
-      ]
-    },
-    {
-      "id": "1540661788155187271",
-      "title": "Date unknown marking in \"Continue\" not working",
-      "body": "With the option set as \"Unknown date\" in the settings, when you mark an episode as watched in the \"Continue\" section, it still sets the episode as watched with the current date.\n\nApp version 1.6.716\nOS: Android 16.0.9\n[identity removed]\nDevice: OnePlus 12",
-      "author_key": "Sage Lynx",
-      "posted_at": "2026-08-22T09:59:54.408Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1540514974999257201",
       "title": "Watch time not updating when adding new films or episodes",
       "body": "The watch time does not change when adding new films or episodes, and it even decreases. Additionally, newly added films do not appear in the journal/log.\n\n📱 via app · 22111317G · Android 14 · v1.6.716-01a02013",
@@ -13220,7 +13193,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6476070146170431,
+      "score": 0.6374451865421227,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13363,7 +13336,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.06899147498069502,
+      "score": 0.06790890562680443,
       "reactions": [
         {
           "emoji": "💜",
@@ -13442,7 +13415,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.8289600199152938,
+      "score": 2.784569819215874,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13498,7 +13471,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.7861251453803475,
+      "score": 3.7267157320647124,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 1,
@@ -13569,7 +13542,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.7528506354735818,
+      "score": 3.6939633441259274,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 1,
@@ -13608,6 +13581,86 @@
           "url": "./assets/bugs/1537960645574525101/1537960646157541506.webp"
         }
       ]
+    },
+    {
+      "id": "1535622075677409382",
+      "title": "Ratings wrong and the import isn't canceled",
+      "body": "[identity removed]\nDevice: iPhone 16 Pro Max\nOS version: iOS 26.5.2\nRefract app version: 1.6.706\n\nI imported the ratings and comments from TvTime's GDPR, but the ratings are all wrong. I tried to delete the import, but neither the comments nor the ratings will delete 🥲",
+      "author_key": "Ochre Robin",
+      "posted_at": "2026-08-08T12:13:53.320Z",
+      "status": "inactive",
+      "resolved_at": "2026-09-22T04:01:52.936Z",
+      "terminal_attribution": {
+        "applied_at": "2026-09-22T04:01:52.936Z"
+      },
+      "tags": [
+        "🔗 Import",
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1535782930373287936",
+      "title": "Graphic Glitch when viewing comments and reviews on the profile page",
+      "body": "There is a Graphic Glitch when I try to read long comments and reviews on my profile page (see attached video)\n\nOS: Android 16\nDevice: OnePlus 12R\nApp Version: Refract v1.6.707-019fe2bc\n[identity removed]",
+      "author_key": "Ochre Wren",
+      "posted_at": "2026-08-08T22:53:04.068Z",
+      "status": "inactive",
+      "resolved_at": "2026-09-22T04:01:48.831Z",
+      "terminal_attribution": {
+        "applied_at": "2026-09-22T04:01:48.831Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1535787153412591626",
+      "title": "Comments problems!",
+      "body": "I have a problem with the comments I can’t describe it so I took a screen recording . \nThe problem persists even when I stop scrolling between comments . \n\n[identity removed]\n• device and OS version: iPhone 13 Pro , iOS 26.5.2\n• app version: Refract v1.6.707",
+      "author_key": "Velvet Otter",
+      "posted_at": "2026-08-08T23:09:50.919Z",
+      "status": "inactive",
+      "resolved_at": "2026-09-22T04:01:44.868Z",
+      "terminal_attribution": {
+        "applied_at": "2026-09-22T04:01:44.868Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "👤 Profile"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "The first is the same problem I have.",
+          "date": "2026-08-08T23:35:06.388Z",
+          "is_team": false,
+          "author_key": "Velvet Otter",
+          "reactions": []
+        }
+      ],
+      "images": []
     },
     {
       "id": "1551595399565807668",
@@ -13664,7 +13717,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.8423680362024393,
+      "score": 3.7820760960239532,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13833,7 +13886,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.021801391567720842,
+      "score": 0.021459298310691807,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13945,7 +13998,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.010892063956174003,
+      "score": 0.010721152772685464,
       "reactions": [
         {
           "emoji": "❤️",
@@ -14083,7 +14136,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 2.896065504797587,
+      "score": 2.850622328474267,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14146,7 +14199,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.879123301302437,
+      "score": 2.8339459710172887,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 7,
@@ -14283,7 +14336,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7145907095172654,
+      "score": 0.7033778168676329,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14339,7 +14392,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 4.28323755095127,
+      "score": 4.2160277730853695,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14762,7 +14815,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.90208103487779,
+      "score": 1.87223481637686,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14879,7 +14932,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.7927183127785273,
+      "score": 1.764588142984135,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14995,7 +15048,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.3834820615520025,
+      "score": 3.3303906616319434,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15116,7 +15169,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.010471129102078862,
+      "score": 0.010306822954548107,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15177,7 +15230,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.645830993582364,
+      "score": 0.6356970336744097,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15304,7 +15357,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6437952153416747,
+      "score": 0.6336931995418194,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15365,7 +15418,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.1806986250405065,
+      "score": 2.146480520525407,
       "reactions": [
         {
           "emoji": "💜",
@@ -15481,7 +15534,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.34563953942875,
+      "score": 3.293141939753373,
       "reactions": [
         {
           "emoji": "💜",
@@ -15706,7 +15759,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 10.252594527347993,
+      "score": 10.091717482230761,
       "reactions": [
         {
           "emoji": {
@@ -16354,7 +16407,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.026958669100372118,
+      "score": 0.026535651198553,
       "reactions": [
         {
           "emoji": "👆",
@@ -16396,7 +16449,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.027953942847642452,
+      "score": 0.027515307757499295,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16445,7 +16498,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.05613470492655,
+      "score": 0.055253875646408095,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -16591,7 +16644,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1240482874219946,
+      "score": 1.1064104527678322,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 1,
@@ -16791,7 +16844,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.3583840469839434,
+      "score": 2.321377818392893,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 2,
@@ -16878,7 +16931,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1663951827343378,
+      "score": 0.16378421774897362,
       "reactions": [
         {
           "emoji": "👍",
@@ -17068,7 +17121,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0720847640344848,
+      "score": 1.055262307192657,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 1,
@@ -17328,7 +17381,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5152839371577425,
+      "score": 0.5071984367524364,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17371,7 +17424,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.5894471774951624,
+      "score": 1.5645066061497075,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17476,7 +17529,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.0386507837209373,
+      "score": 1.022352951152995,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 1,
@@ -17778,7 +17831,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.007801830227350213,
+      "score": 0.007679408981670949,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17809,7 +17862,7 @@
       "id": "1537791810074845215",
       "title": "Inconsistent visual appearance in user comments (greyed out)",
       "body": "Hey team, noticed a visual bug when browsing my own comments.\n\n​Issue: While scrolling through my comments, some comments appear greyed out / dimmed as if they are disabled or failed, while others render completely normal.\n\nLocation: Comments section / User comments\n\n​Not sure if this is a styling/opacity glitch or an issue with comment status handling. \n:thank_you: \n\nNote: the attached photo has BNHA spoiler",
-      "author_key": "Teal Lynx",
+      "author_key": "Sage Fox",
       "posted_at": "2026-08-14T11:55:38.312Z",
       "status": "fixed",
       "resolved_at": "2026-09-14T17:28:17.079Z",
@@ -17833,18 +17886,22 @@
           "text": "Refract v1.6.712-019ffbc1\nOne ui 8",
           "date": "2026-08-14T12:01:20.099Z",
           "is_team": false,
-          "author_key": "Teal Lynx",
+          "author_key": "Sage Fox",
           "reactions": []
         },
         {
           "text": "No, everything is smooth now! Thank you",
           "date": "2026-09-14T17:23:22.347Z",
           "is_team": false,
-          "author_key": "Teal Lynx",
+          "author_key": "Sage Fox",
           "reactions": []
         }
       ],
-      "images": []
+      "images": [
+        {
+          "url": "./assets/bugs/1537791810074845215/1537791810506850365.webp"
+        }
+      ]
     },
     {
       "id": "1536402684494483477",
