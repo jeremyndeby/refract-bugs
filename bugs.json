@@ -1,7 +1,38 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-09-21T18:20:03.441Z",
+  "generated_at": "2026-09-22T00:20:04.054Z",
   "bugs": [
+    {
+      "id": "1551694320959225856",
+      "title": "Watch date dont match in edit",
+      "body": "if you try to edit your watch date for an episode, the edit space shows a day less exactly than what you marked\n\neg: if you edit it as 20th September, it'll mark it as 21st September",
+      "author_key": "Misty Finch",
+      "posted_at": "2026-09-21T20:39:15.203Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-09-21T20:40:04.448Z"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1551694320959225856/1551694321244442764.webp"
+        }
+      ]
+    },
     {
       "id": "1551654548093804544",
       "title": "Bug: Completed shows are still shown as “Up to date”",
@@ -16,21 +47,32 @@
         "📊 Stats",
         "🤖 Android"
       ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-09-21T18:02:32.226Z"
-        }
-      ],
+      "status_tags": [],
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
+      "comments_count": 3,
+      "activity_7d": 3,
       "comments": [
         {
           "text": "this is not a bug, and the way i understand it, it might rather be a data issue. series will stay in the up to date section if they are marked as returning series on TMDB, the same way they will move to the watched section if they are marked as ended. if they are returning, it makes sense that it is in the up to date section, as you are up to date until a new episode releases",
           "date": "2026-09-21T18:11:02.085Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Teal Fox",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "Yes, that makes sense. In that case, it might indeed be a data issue rather than a bug in the filter itself.\n\nHowever, I've noticed the opposite issue with quite a few anime, including some mainstream ones. \nFor example, Chainsaw Man and Solo Leveling both have new seasons announced, but they are currently mapped in the app as ended rather than returning/up to date.\n\nSo it seems that in some cases the TMDB status isn't being mapped correctly to Refract. If a series is marked as “returning” on TMDB, it should probably remain in “Up to date” rather than being moved to “Watched”.",
+          "date": "2026-09-21T19:09:11.996Z",
+          "is_team": false,
+          "author_key": "Amber Wren",
+          "reactions": []
+        },
+        {
+          "text": "both chainsaw man and solo leveling are marked as ended on TMDB so that's why they appear as ended, thus in the watched section. you can update the status yourself over there with a free account and it will update automatically on refract after a day or two. always check TMDB first, 99% of the time, the fix has to happen there. it's annoying but it's what we're working with until refract gets its own database :)",
+          "date": "2026-09-21T19:54:28.298Z",
           "is_team": true,
           "team_role": "mod",
           "author_key": "Teal Fox",
@@ -61,7 +103,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9689121297108105,
+      "score": 1.9207682050336305,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -126,9 +168,17 @@
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "It does show 41 though",
+          "date": "2026-09-22T00:00:44.095Z",
+          "is_team": false,
+          "author_key": "Velvet Fox",
+          "reactions": []
+        }
+      ],
       "images": [
         {
           "url": "./assets/bugs/1551526662905004082/1551526663265845268.webp"
@@ -152,7 +202,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9389703986938439,
+      "score": 0.9160106538344032,
       "reactions": [
         {
           "emoji": "💜",
@@ -332,7 +382,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.6176763985529594,
+      "score": 2.553668861873465,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -389,7 +439,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.8431595894630167,
+      "score": 0.8225426146608392,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -442,7 +492,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8342697784114003,
+      "score": 0.8138701776541102,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -719,19 +769,15 @@
       "terminal_attribution": null,
       "tags": [
         "🎨 UI",
+        "⏳ Waiting on us",
         "🤖 Android"
       ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-09-18T19:23:16.223Z"
-        }
-      ],
+      "status_tags": [],
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
+      "comments_count": 2,
+      "activity_7d": 2,
       "comments": [
         {
           "text": "what is your refract username and which version are you running? profile > settings > scroll all the way down (you can tap to copy)",
@@ -740,6 +786,13 @@
           "team_role": "mod",
           "author_key": "Ivory Wren",
           "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "Sorry, about the delay!\n\nRefract v1.6.729-01a0bf6e | native 1.6.4 (72) | runtime 1.6.4 | state pending-restart\n\n[identity removed]\n\nI opened the app today and it seems to be working normally! The posters are loading correctly.",
+          "date": "2026-09-21T22:37:46.074Z",
+          "is_team": false,
+          "author_key": "Azure Heron",
           "reactions": []
         }
       ],
@@ -765,7 +818,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8976140990829639,
+      "score": 0.8756656002529158,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -800,7 +853,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.0271126054502457,
+      "score": 2.9530935169053727,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -928,7 +981,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4889012282429024,
+      "score": 1.4524945509196154,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 5,
@@ -1098,7 +1151,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.3246299242768094,
+      "score": 1.2922400159933511,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 7,
@@ -1185,7 +1238,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1391011070382961,
+      "score": 1.1112477574299522,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -1256,7 +1309,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.8210191025779214,
+      "score": 3.7275873779780038,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -1297,12 +1350,19 @@
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
+      "comments_count": 2,
+      "activity_7d": 2,
       "comments": [
         {
           "text": "None of them have anything to do with this",
           "date": "2026-09-17T14:08:52.078Z",
+          "is_team": false,
+          "author_key": "Teal Finch",
+          "reactions": []
+        },
+        {
+          "text": "My episodes can be unmarked as watched. I have done it manually now for many of them",
+          "date": "2026-09-21T21:28:43.650Z",
           "is_team": false,
           "author_key": "Teal Finch",
           "reactions": []
@@ -1431,7 +1491,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 3,
-      "activity_7d": 3,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "Exo: I think it's because it orders by millisecond if they're all marked at the same time it can be messy\nI'll fix it later \nIf you can create a bug report I wouldn't mind please as I won't forget",
@@ -1580,7 +1640,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 1,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "No problem \n\n- helldjo\n- samsung galaxy S26 ultra",
@@ -1684,7 +1744,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.4066847507490951,
+      "score": 0.3967404776086284,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1717,7 +1777,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 1.2129345812081627,
+      "score": 1.1832758522913929,
       "reactions": [
         {
           "emoji": "💜",
@@ -1928,7 +1988,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.3781064348192289,
+      "score": 0.36886095989772094,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2094,7 +2154,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6812224638918895,
+      "score": 0.6645651826983243,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2124,7 +2184,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.338508440863316,
+      "score": 0.33023121780516623,
       "reactions": [
         {
           "emoji": "💜",
@@ -2275,7 +2335,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6646662405599784,
+      "score": 0.6484137928564415,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2340,7 +2400,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8994870542568291,
+      "score": 0.8774927578457447,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2629,7 +2689,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5053791807050697,
+      "score": 0.49302162708846753,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2659,7 +2719,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4710113329605217,
+      "score": 1.4350421001315627,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 3,
@@ -2811,7 +2871,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.23592347259782792,
+      "score": 0.23015466162707277,
       "reactions": [
         {
           "emoji": "➕",
@@ -2851,7 +2911,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3189120745598616,
+      "score": 0.3111140226993611,
       "reactions": [
         {
           "emoji": "💜",
@@ -2908,7 +2968,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.22451366033847822,
+      "score": 0.21902384259129348,
       "reactions": [
         {
           "emoji": "➕",
@@ -2967,7 +3027,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.4475722139724216,
+      "score": 0.436628158810218,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -3192,7 +3252,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3606221272793978,
+      "score": 0.3518041794031695,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3393,11 +3453,16 @@
         "📊 Stats"
       ],
       "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
+      "reactors_unique": 1,
+      "score": 0.2467165240979416,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 1
+        }
+      ],
       "comments_count": 1,
-      "activity_7d": 0,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "It's not the same issue reported by the bot",
@@ -3666,7 +3731,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 7.578343269829062,
+      "score": 7.39303729194672,
       "reactions": [
         {
           "emoji": "☝️",
@@ -3762,7 +3827,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.13749956283255663,
+      "score": 0.1341374175665167,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3789,7 +3854,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.14057016992234012,
+      "score": 0.1371329420387404,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3837,7 +3902,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.256115403062422,
+      "score": 0.24985285813335303,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -4002,7 +4067,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.12116156829652555,
+      "score": 0.11819892038054479,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4056,19 +4121,12 @@
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 1,
+      "comments_count": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "Missing years and lack of episodes order",
           "date": "2026-08-30T22:35:45.780Z",
-          "is_team": false,
-          "author_key": "Golden Wren",
-          "reactions": []
-        },
-        {
-          "text": "This is solved?",
-          "date": "2026-09-20T21:31:28.707Z",
           "is_team": false,
           "author_key": "Golden Wren",
           "reactions": []
@@ -4180,7 +4238,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.22272466906944302,
+      "score": 0.21727859581425712,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -4262,7 +4320,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.22300893837950334,
+      "score": 0.2175559141588349,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -4374,7 +4432,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09880162948271942,
+      "score": 0.0963857277591126,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4421,7 +4479,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09837422216164468,
+      "score": 0.09596877142036549,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -4679,7 +4737,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08479516188502714,
+      "score": 0.08272174691379545,
       "reactions": [
         {
           "emoji": "💜",
@@ -4687,7 +4745,7 @@
         }
       ],
       "comments_count": 0,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [],
       "images": []
     },
@@ -4707,7 +4765,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08492877115736856,
+      "score": 0.08285208916642245,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4778,7 +4836,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.26827704303775923,
+      "score": 0.26171712116124385,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -4874,7 +4932,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09196280349216727,
+      "score": 0.08971412503789847,
       "reactions": [
         {
           "emoji": "➕",
@@ -5144,7 +5202,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.1473486513111289,
+      "score": 0.14374567570700733,
       "reactions": [
         {
           "emoji": "💜",
@@ -5174,7 +5232,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9885416555498985,
+      "score": 1.9399177488566675,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 3,
@@ -5242,7 +5300,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.14998134160264276,
+      "score": 0.14631399134148074,
       "reactions": [
         {
           "emoji": "💜",
@@ -5288,7 +5346,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.3098931761418395,
+      "score": 3.2289595248340532,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -5532,7 +5590,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1667744591610037,
+      "score": 0.16269648286192723,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -5711,7 +5769,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06243445516869422,
+      "score": 0.06090780516662233,
       "reactions": [
         {
           "emoji": "💜",
@@ -5879,7 +5937,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9393756901533741,
+      "score": 0.91640603508961,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6012,27 +6070,6 @@
           "url": "./assets/bugs/1540920443886633000/1540920444625092718.webp"
         }
       ]
-    },
-    {
-      "id": "1540877305503813683",
-      "title": "Horror genre missing or incorrectly classified in TV statistics",
-      "body": "Horror TV shows such as Channel Zero and The Haunting of Hill House are not being counted under the Horror genre in Refract's genre statistics. This causes inaccurate genre statistics, particularly affecting users who watch horror content frequently. The TV genre data should be checked to ensure Horror is correctly classified and included.\n\n📱 via app · Redmi Note 8 Pro · Redmi/begonia/begonia:10/QP1A.190711.020/V12.0.7.0.QGGMIXM:user/release-keys 10 · v1.6.716-01a02013",
-      "author_key": "Golden Finch",
-      "posted_at": "2026-08-23T00:16:17.748Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
     },
     {
       "id": "1540830938500563026",
@@ -6280,7 +6317,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.044782404361676374,
+      "score": 0.04368738307051887,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6320,7 +6357,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9383635358658837,
+      "score": 0.915418630042598,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6370,7 +6407,7 @@
         }
       ],
       "reactors_unique": 3,
-      "score": 4.3653380381238795,
+      "score": 4.258596603335353,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6413,7 +6450,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.11252437430811466,
+      "score": 0.10977292343365011,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -6462,7 +6499,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8838964127803419,
+      "score": 0.8622833394099336,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6714,7 +6751,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.2250401173843936,
+      "score": 0.21953742668671916,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -6827,73 +6864,6 @@
       "images": []
     },
     {
-      "id": "1539252836745875607",
-      "title": "Badges Count Inconsistency",
-      "body": "Hi, not sure this is fixed, it was marked as fixed but it is still happening, because I checked it again and it shows Gold and my count went down to 16",
-      "author_key": "Golden Wren",
-      "posted_at": "2026-08-18T12:41:14.215Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.2579906845456486,
-      "reactions": [
-        {
-          "emoji": "💜",
-          "count": 1
-        }
-      ],
-      "comments_count": 5,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "& somehow now it shows 15, I don't understand why it's dropping",
-          "date": "2026-08-18T12:42:26.339Z",
-          "is_team": false,
-          "author_key": "Golden Wren",
-          "reactions": []
-        },
-        {
-          "text": "this does not go beyond 14/18 too, even when there's a lot of episodes and movies tracked for the weekend",
-          "date": "2026-08-22T18:41:47.154Z",
-          "is_team": false,
-          "author_key": "Golden Wren",
-          "reactions": []
-        },
-        {
-          "text": "Badges Count Inconsistency",
-          "date": "2026-08-22T18:42:17.703Z",
-          "is_team": false,
-          "author_key": "Golden Wren",
-          "reactions": []
-        },
-        {
-          "text": "[name removed]\niPhone 15, iOS 26.6\napp version: Refract v1.6.716-01a02050 \n\ni have a new badge, but no idea which one, no notification or mention on the activity tab",
-          "date": "2026-08-22T18:51:45.243Z",
-          "is_team": false,
-          "author_key": "Velvet Seal",
-          "reactions": []
-        },
-        {
-          "text": "https://discord.com/channels/1490347491151970366/1538623899942649876/1538623899942649876",
-          "date": "2026-08-22T19:52:33.733Z",
-          "is_team": false,
-          "author_key": "Velvet Panda",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1539252836745875607/1539252837765349428.webp"
-        }
-      ]
-    },
-    {
       "id": "1538623899942649876",
       "title": "Explorer Platinum Badge Bug",
       "body": "This seems to be bugged as there is someone with 23/25 genres having the Platinum badge:\n\nhttps://discord.com/channels/1490347491151970366/1490374069940387872/1538621004736364586\n\nSecondly, I have 24/25 genres discovered and apparently War & Politics is the last genre I need to discover. Except, there aren't any movies or shows that I could find that have those tagged genres on the app.\n\nBecause of that, I'm unable to unlock the Platinum badge for Explorer. \n\n[identity removed]\nSamsung Galaxy S26 Ultra\nAndroid 16\nRefract v1.6.713-01a001cf",
@@ -6910,7 +6880,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5828258136195417,
+      "score": 0.5685745315803901,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -7126,7 +7096,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.08336759387827093,
+      "score": 0.08132908586177423,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -7241,7 +7211,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.4223688422827643,
+      "score": 1.3875890177427594,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -7330,7 +7300,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.02584415450782495,
+      "score": 0.025212212122385502,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7371,7 +7341,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5228167226101224,
+      "score": 0.5100327854635678,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7459,28 +7429,31 @@
       "terminal_attribution": null,
       "tags": [
         "🎨 UI",
+        "⏳ Waiting on us",
         "🤖 Android"
       ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-09-16T04:04:07.224Z"
-        }
-      ],
+      "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.027450701704856653,
+      "score": 0.9936052528245457,
       "reactions": [
         {
           "emoji": "🛠️",
           "count": 1
         }
       ],
-      "comments_count": 1,
-      "activity_7d": 0,
+      "comments_count": 2,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "[mention removed]\n\nOneplus 9rt , Oxygen OS 14",
           "date": "2026-08-16T10:54:57.881Z",
+          "is_team": false,
+          "author_key": "Sage Wren",
+          "reactions": []
+        },
+        {
+          "text": "Still happening",
+          "date": "2026-09-21T22:46:46.452Z",
           "is_team": false,
           "author_key": "Sage Wren",
           "reactions": []
@@ -7957,6 +7930,32 @@
       "images": []
     },
     {
+      "id": "1537745670092492921",
+      "title": "Series marked as 'in progress' instead of 'up to date' after completing final season",
+      "body": "A short series where the user completed season 2 (the final season) is displayed as 'in progress' at the last unwatched episode of season 1, instead of 'up to date'. Other series where the user has not watched all seasons are correctly marked as 'up to date' after completing the final season.\n\n📱 via app · 2407FPN8EG · Xiaomi/rothko_eea/rothko:16/BP2A.250605.031.A3/OS3.0.301.0.WNNEUXM:user/release-keys 16 · v1.6.711-019ff4cb",
+      "author_key": "Amber Sparrow",
+      "posted_at": "2026-08-14T08:52:17.683Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.021783621252530312,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
       "id": "1537745616304603148",
       "title": "iOS battery drain excessive compared to usage",
       "body": "Refract is consuming more battery than Reddit despite significantly lower usage time. User reports the battery drain is disproportionate and requests optimization investigation.\n\n📱 via app · iPhone 17 · iOS 26.5.2 · v1.6.711-019ff4cf",
@@ -7970,7 +7969,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.022329298058026463,
+      "score": 0.02178330109474002,
       "reactions": [
         {
           "emoji": "👍",
@@ -8000,7 +7999,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07393139423533049,
+      "score": 0.07212362058122265,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8119,7 +8118,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.04701817490617396,
+      "score": 0.04586848445682219,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -8254,27 +8253,23 @@
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
+        "⏳ Waiting on us",
         "🤖 Android",
         "📊 Stats",
         "🔗 Import",
         "👤 Profile"
       ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-09-18T04:02:06.391Z"
-        }
-      ],
+      "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.035688704005736434,
+      "score": 0.9937048914215649,
       "reactions": [
         {
           "emoji": "🛠️",
           "count": 1
         }
       ],
-      "comments_count": 7,
-      "activity_7d": 0,
+      "comments_count": 8,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "I also reimport and the reimport said no change detacted , these are the screenshot of reimport",
@@ -8330,6 +8325,13 @@
         {
           "text": "Are ypu converting vote key into ratings?\nHow to convert them is there any documentation",
           "date": "2026-08-19T02:31:29.969Z",
+          "is_team": false,
+          "author_key": "Silver Finch",
+          "reactions": []
+        },
+        {
+          "text": "Fixed 👍",
+          "date": "2026-09-21T22:48:13.946Z",
           "is_team": false,
           "author_key": "Silver Finch",
           "reactions": []
@@ -8545,7 +8547,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.501845200429937,
+      "score": 1.4651220165380772,
       "reactions": [
         {
           "emoji": "👆",
@@ -8620,7 +8622,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.051266253195573354,
+      "score": 0.050012688551887924,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -8722,7 +8724,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.01561791700749087,
+      "score": 0.015236027024349,
       "reactions": [
         {
           "emoji": "🤔",
@@ -9154,7 +9156,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.6826981222972968,
+      "score": 1.64155271492647,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -9571,7 +9573,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5231242744027492,
+      "score": 0.5103328169864401,
       "reactions": [
         {
           "emoji": "👆",
@@ -9635,7 +9637,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.04508436282536313,
+      "score": 0.04398195803277254,
       "reactions": [
         {
           "emoji": "💜",
@@ -9679,7 +9681,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7995363857230057,
+      "score": 0.779986087388175,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9934,7 +9936,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.04049826289680927,
+      "score": 0.03950799761831412,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10076,7 +10078,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.48191282604504526,
+      "score": 0.4701290727490119,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -10330,7 +10332,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.520774579241962,
+      "score": 0.508040576673499,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10496,7 +10498,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.14588198703144611,
+      "score": 0.14231487436581847,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -10542,7 +10544,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7492090224110296,
+      "score": 0.7308893309437834,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10588,15 +10590,15 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 1.4545361458517205,
+      "score": 3.9900177890894994,
       "reactions": [
         {
           "emoji": "👍",
           "count": 2
         }
       ],
-      "comments_count": 67,
-      "activity_7d": 0,
+      "comments_count": 74,
+      "activity_7d": 7,
       "comments": [
         {
           "text": "Boulet You asked to be notified",
@@ -11265,6 +11267,61 @@
           "is_team": false,
           "author_key": "Ivory Wren",
           "reactions": []
+        },
+        {
+          "text": "Hi. No updates on this yet?",
+          "date": "2026-09-21T21:22:32.101Z",
+          "is_team": false,
+          "author_key": "Ivory Wren",
+          "reactions": []
+        },
+        {
+          "text": "Hey Fabio, we have enhanced telemetry now. Can you describe what's happening? Boulet's off for some resting well deserved days 💜",
+          "date": "2026-09-21T21:48:45.570Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Velvet Fox",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "The same issue as before, nothing really changed, the last couple updates made it a bit less frequent.\nThe app wont connect after the phone is idle for a while, showing the authentication connection error message. Reconnecting the phone network makes the app load properly. As soon as the network is disconnected, local app cache loads on the UI, and as the network reconnects a proper refresh can be made normally.\nAs a workaround I've set the Samsung routines to prompt a network reconnection if I see that the app is not loading.",
+          "date": "2026-09-21T21:55:29.333Z",
+          "is_team": false,
+          "author_key": "Ivory Wren",
+          "reactions": []
+        },
+        {
+          "text": "To understand correctly, why do you make the phone reconnect to the phone network? Because it's a way to fix it? Killing it and restarting the app doesn't work? \n\nCan you remind me of your exact phone model and OS version?",
+          "date": "2026-09-21T22:48:00.004Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Velvet Fox",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "Killing the app doesnt work. Nothing realy does, except reconnecting or waiting and retrying a couple times on the error message\nSince the problem started back in July, I've tried everything, killing the app, wiping cache and app data, reinstalling, I've reseted network settings on my phone, nothing really solve it.\nMe and Boulet manage to figure it out that disabling IPv6 on my router makes the app load consistently, but I cant leave IPv6 disabled, but adb logs doesn't point to IPv6 issues directly.\nThe workaround is to reestabilish connection everytime the app misbehave.\nI've sent Boulet some adb logs sometime ago, I can DM them to you if you want.\n\nI'm using Android 16 (OneUI 8.5)\n\nAlso: https://discord.com/channels/1490347491151970366/1531756804990570698/1541646727784955948",
+          "date": "2026-09-21T23:13:17.966Z",
+          "is_team": false,
+          "author_key": "Ivory Wren",
+          "reactions": []
+        },
+        {
+          "text": "Thanks for this. I'll have a thorough look. So it happens only when on WiFi using your router? Nothing's happening while on mobile internet from your provider or another WiFi from someplace else?",
+          "date": "2026-09-21T23:24:42.209Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Velvet Fox",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "Happens on Mobile too. Tested on three different ISP.",
+          "date": "2026-09-21T23:43:43.858Z",
+          "is_team": false,
+          "author_key": "Ivory Wren",
+          "reactions": []
         }
       ],
       "images": [
@@ -11292,15 +11349,15 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.06615708192649528,
+      "score": 7.8654009674805785,
       "reactions": [
         {
           "emoji": "🛠️",
           "count": 6
         }
       ],
-      "comments_count": 5,
-      "activity_7d": 0,
+      "comments_count": 6,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "It doesn’t move to ‘Watching’ for me. Marking an older episode still leaves it in ‘Up to Date’ - and missing from Continue as you say.",
@@ -11357,6 +11414,13 @@
           "is_team": false,
           "author_key": "Golden Wren",
           "reactions": []
+        },
+        {
+          "text": "This is still happening.",
+          "date": "2026-09-21T20:13:18.740Z",
+          "is_team": false,
+          "author_key": "Golden Wren",
+          "reactions": []
         }
       ],
       "images": []
@@ -11375,7 +11439,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 45.03711523057289,
+      "score": 43.9358657382166,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12894,6 +12958,94 @@
       ]
     },
     {
+      "id": "1540877305503813683",
+      "title": "Horror genre missing or incorrectly classified in TV statistics",
+      "body": "Horror TV shows such as Channel Zero and The Haunting of Hill House are not being counted under the Horror genre in Refract's genre statistics. This causes inaccurate genre statistics, particularly affecting users who watch horror content frequently. The TV genre data should be checked to ensure Horror is correctly classified and included.\n\n📱 via app · Redmi Note 8 Pro · Redmi/begonia/begonia:10/QP1A.190711.020/V12.0.7.0.QGGMIXM:user/release-keys 10 · v1.6.716-01a02013",
+      "author_key": "Golden Finch",
+      "posted_at": "2026-08-23T00:16:17.748Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1539252836745875607",
+      "title": "Badges Count Inconsistency",
+      "body": "Hi, not sure this is fixed, it was marked as fixed but it is still happening, because I checked it again and it shows Gold and my count went down to 16",
+      "author_key": "Golden Wren",
+      "posted_at": "2026-08-18T12:41:14.215Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.25168228515252583,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 1
+        }
+      ],
+      "comments_count": 5,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "& somehow now it shows 15, I don't understand why it's dropping",
+          "date": "2026-08-18T12:42:26.339Z",
+          "is_team": false,
+          "author_key": "Golden Wren",
+          "reactions": []
+        },
+        {
+          "text": "this does not go beyond 14/18 too, even when there's a lot of episodes and movies tracked for the weekend",
+          "date": "2026-08-22T18:41:47.154Z",
+          "is_team": false,
+          "author_key": "Golden Wren",
+          "reactions": []
+        },
+        {
+          "text": "Badges Count Inconsistency",
+          "date": "2026-08-22T18:42:17.703Z",
+          "is_team": false,
+          "author_key": "Golden Wren",
+          "reactions": []
+        },
+        {
+          "text": "[name removed]\niPhone 15, iOS 26.6\napp version: Refract v1.6.716-01a02050 \n\ni have a new badge, but no idea which one, no notification or mention on the activity tab",
+          "date": "2026-08-22T18:51:45.243Z",
+          "is_team": false,
+          "author_key": "Velvet Seal",
+          "reactions": []
+        },
+        {
+          "text": "https://discord.com/channels/1490347491151970366/1538623899942649876/1538623899942649876",
+          "date": "2026-08-22T19:52:33.733Z",
+          "is_team": false,
+          "author_key": "Velvet Panda",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1539252836745875607/1539252837765349428.webp"
+        }
+      ]
+    },
+    {
       "id": "1538613833533362227",
       "title": "Broken and missing items in imported Letterboxd list",
       "body": "List has broken items in that can’t be clicked on and show as not rated. List also 183 items instead of 216.\n\nYou need to add a feature to manually import csv files as lists.",
@@ -13068,7 +13220,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6638392404787735,
+      "score": 0.6476070146170431,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13211,7 +13363,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.07072074161793615,
+      "score": 0.06899147498069502,
       "reactions": [
         {
           "emoji": "💜",
@@ -13290,7 +13442,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.8998677107843083,
+      "score": 2.8289600199152938,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13346,7 +13498,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.881024115146654,
+      "score": 3.7861251453803475,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 1,
@@ -13417,7 +13569,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.846915581907753,
+      "score": 3.7528506354735818,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 1,
@@ -13512,7 +13664,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.938676730209427,
+      "score": 3.8423680362024393,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13681,7 +13833,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.02234784196748457,
+      "score": 0.021801391567720842,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13793,7 +13945,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.011165072799880837,
+      "score": 0.010892063956174003,
       "reactions": [
         {
           "emoji": "❤️",
@@ -13931,7 +14083,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 2.968655190090047,
+      "score": 2.896065504797587,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13994,7 +14146,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.9512883314143297,
+      "score": 2.879123301302437,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 7,
@@ -14131,7 +14283,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7325018771448082,
+      "score": 0.7145907095172654,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14187,7 +14339,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 4.390596609419159,
+      "score": 4.28323755095127,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14610,7 +14762,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.9497565669035013,
+      "score": 1.90208103487779,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14727,7 +14879,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.837652675598376,
+      "score": 1.7927183127785273,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14843,7 +14995,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.468288809753614,
+      "score": 3.3834820615520025,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14851,7 +15003,7 @@
         }
       ],
       "comments_count": 3,
-      "activity_7d": 3,
+      "activity_7d": 2,
       "comments": [
         {
           "text": "[identity removed]\ndevice: realme gt 7t Android 16\napp version: 1.6.723-01a091ce",
@@ -14964,7 +15116,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.010733587242240909,
+      "score": 0.010471129102078862,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15025,7 +15177,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6620187035974167,
+      "score": 0.645830993582364,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15152,7 +15304,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6599318987133134,
+      "score": 0.6437952153416747,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15213,7 +15365,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.2353576880510486,
+      "score": 2.1806986250405065,
       "reactions": [
         {
           "emoji": "💜",
@@ -15329,7 +15481,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.429497767382097,
+      "score": 3.34563953942875,
       "reactions": [
         {
           "emoji": "💜",
@@ -15554,7 +15706,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 10.50957511322856,
+      "score": 10.252594527347993,
       "reactions": [
         {
           "emoji": {
@@ -15569,7 +15721,7 @@
         }
       ],
       "comments_count": 9,
-      "activity_7d": 3,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "[name removed]\nSamsung s24 ultra - android v16\nRefract v1.6.720-embedded",
@@ -16202,7 +16354,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0276343863114151,
+      "score": 0.026958669100372118,
       "reactions": [
         {
           "emoji": "👆",
@@ -16244,7 +16396,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.028654606527601458,
+      "score": 0.027953942847642452,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16293,7 +16445,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.05754171749510315,
+      "score": 0.05613470492655,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -16439,7 +16591,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1522224814456874,
+      "score": 1.1240482874219946,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 1,
@@ -16639,7 +16791,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.41749678303419,
+      "score": 2.3583840469839434,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 2,
@@ -16726,7 +16878,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.17056586669464796,
+      "score": 0.1663951827343378,
       "reactions": [
         {
           "emoji": "👍",
@@ -16916,7 +17068,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0989564958717604,
+      "score": 1.0720847640344848,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 1,
@@ -17176,7 +17328,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5281994940650626,
+      "score": 0.5152839371577425,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17219,7 +17371,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.629286563107204,
+      "score": 1.5894471774951624,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17227,7 +17379,7 @@
         }
       ],
       "comments_count": 5,
-      "activity_7d": 6,
+      "activity_7d": 2,
       "comments": [
         {
           "text": "Fastburger\niPhone 16 pro\niOS 27\nRefract v1.6.725-01a0a1b3 | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied",
@@ -17324,7 +17476,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.0646844951111565,
+      "score": 1.0386507837209373,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 1,
@@ -17626,7 +17778,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.007997382572409532,
+      "score": 0.007801830227350213,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17692,11 +17844,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1537791810074845215/1537791810506850365.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1536402684494483477",
