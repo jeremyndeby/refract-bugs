@@ -1,40 +1,13 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-10-03T18:20:03.741Z",
+  "generated_at": "2026-10-03T23:20:03.922Z",
   "bugs": [
     {
-      "id": "1555991939797753958",
-      "title": "Studio marked unwatched",
-      "body": "When I did my import a couple of months ago, The Studio was one of my caught up shows. It imported correctly yesterday it was in my continue watching queue and only the first episode was marked as watched.",
-      "author_key": "Silver Badger",
-      "posted_at": "2026-10-03T17:16:27.380Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "📊 Stats"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-10-03T17:17:26.186Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1555916387501871175",
-      "title": "Movies with unknown watch dates appear in recent activity",
-      "body": "A movie marked as watched with an unknown date is appearing in the user's recent activity profile section, despite not having been watched recently. Movies without confirmed dates should not display in recent activity.\n\n📱 via app · RMX3241 · Android 13 · v1.6.738-01a0fd29",
-      "author_key": "Sage Badger",
-      "posted_at": "2026-10-03T12:16:14.309Z",
+      "id": "1556037109801025568",
+      "title": "Watched status not persisting for pre-release media",
+      "body": "After the update that allows marking content as watched even if it hasn't aired on TV yet, the watched status doesn't persist long-term. The app continues to suggest watching the item when it airs on television, despite having marked it as watched previously.\n\n📱 via app · Redmi Note 9 Pro · Android 12 · v1.6.739-01a102e5",
+      "author_key": "Azure Badger",
+      "posted_at": "2026-10-03T20:15:56.748Z",
       "status": "open",
       "resolved_at": null,
       "terminal_attribution": null,
@@ -51,61 +24,72 @@
       "images": []
     },
     {
-      "id": "1555798513638449202",
-      "title": "Watch time Error.",
-      "body": "Watch time is not updating properly for 10 days or so. Yesterday night it was 1y 7mo 2h, now it's 1y 6mo 26d 6h something. What's happening. Fix this ASAP. We're losing our watching hours. [mention removed] [mention removed]\n\nRefract Username - [mention removed] \nMoto G64 android version 15 \nApp Version 1.6.4",
-      "author_key": "Lilac Tern",
-      "posted_at": "2026-10-03T04:27:50.990Z",
+      "id": "1556034172206710904",
+      "title": "Netflix/TVTime import issue",
+      "body": "Not sure if this is an actual bug or intended behaviour.\n\nI had a show that was marked as complete (but with the wrong date) on TVTime, and that was imported to Refract.\n\nI’ve since obtained my Netflix history, which included some additional watch records for that show, but when I import the Netflix file, those watches are completely ignored.\n\nI’ve also checked a couple of items that weren’t imported from TvTime, and would appear that the Netflix import only works for items not previously marked as watched at all, and won’t create any rewatch records, which is a massive functional gap IMO.\n\nUsername [mention removed] \niPhone 12 iOS 26.4.2\nRefract v1.6.739-01a102e7",
+      "author_key": "Sage Panda",
+      "posted_at": "2026-10-03T20:04:16.371Z",
       "status": "open",
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
-        "⏳ Waiting on us",
-        "📊 Stats",
-        "👤 Profile",
-        "💥 Crash"
+        "🔗 Import",
+        "⏳ Waiting on us"
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9171852276744414,
+      "score": 0,
       "reactions": [],
-      "comments_count": 4,
-      "activity_7d": 4,
+      "comments_count": 2,
+      "activity_7d": 2,
       "comments": [
         {
-          "text": "Refract Username - [mention removed] \nMoto G64 android version 15 \nApp Version 1.6.4 [mention removed]",
-          "date": "2026-10-03T04:35:27.050Z",
+          "text": "The first potential match is actually the exact opposite - that one reported the import incorrectly creating rewatch events, while this one is that it isn’t creating any!\n\n[identity removed]",
+          "date": "2026-10-03T20:07:51.785Z",
           "is_team": false,
-          "author_key": "Lilac Tern",
+          "author_key": "Sage Panda",
           "reactions": []
         },
         {
-          "text": "I just marked a movie and an episode as watched that's it. But it fluctuating since 1 week. At times 1y 7mo 2h will appear again go back to 1y 6mo 26d like that. [mention removed]",
-          "date": "2026-10-03T05:57:33.135Z",
+          "text": "I can also provide the import csv on request",
+          "date": "2026-10-03T20:08:08.557Z",
           "is_team": false,
-          "author_key": "Lilac Tern",
-          "reactions": []
-        },
-        {
-          "text": "[mention removed] it's reduced again. Exooo i lost 5 days of watch time",
-          "date": "2026-10-03T07:50:58.673Z",
-          "is_team": false,
-          "author_key": "Lilac Tern",
-          "reactions": []
-        },
-        {
-          "text": "It's happening to me too",
-          "date": "2026-10-03T08:05:04.729Z",
-          "is_team": false,
-          "author_key": "Ivory Fox",
+          "author_key": "Sage Panda",
           "reactions": []
         }
       ],
-      "images": [
+      "images": []
+    },
+    {
+      "id": "1555991939797753958",
+      "title": "Studio marked unwatched",
+      "body": "When I did my import a couple of months ago, The Studio was one of my caught up shows. It imported correctly yesterday it was in my continue watching queue and only the first episode was marked as watched.",
+      "author_key": "Silver Badger",
+      "posted_at": "2026-10-03T17:16:27.380Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import",
+        "📊 Stats",
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
         {
-          "url": "./assets/bugs/1555798513638449202/1555798514074914866.webp"
+          "text": "username same as discord [name removed]",
+          "date": "2026-10-03T21:43:10.811Z",
+          "is_team": false,
+          "author_key": "Silver Badger",
+          "reactions": []
         }
-      ]
+      ],
+      "images": []
     },
     {
       "id": "1555795516695126117",
@@ -252,7 +236,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8842871007308724,
+      "score": 0.866231502446096,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -312,7 +296,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.7686270785575968,
+      "score": 1.732514802330091,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -379,7 +363,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7938423890922384,
+      "score": 0.7776335138671786,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -409,7 +393,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.337219371966932,
+      "score": 2.2894974340931884,
       "reactions": [
         {
           "emoji": "💜",
@@ -579,192 +563,6 @@
       ]
     },
     {
-      "id": "1554587625640296552",
-      "title": "Stats decremented instead of incremented when marking episodes",
-      "body": "User marked 3 episodes and the stats removed 3 episodes instead of adding them.\n\n📱 via app · iPhone 16 Pro Max · iOS 27.0.1 · v1.6.733-01a0e78d",
-      "author_key": "Velvet Panda",
-      "posted_at": "2026-09-29T20:16:12.794Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 2.8753829090164498,
-      "reactions": [
-        {
-          "emoji": "🎯",
-          "count": 1
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "Same!",
-          "date": "2026-10-03T08:03:04.894Z",
-          "is_team": false,
-          "author_key": "Teal Tern",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1553870412201459804",
-      "title": "Watch time is changing evertime I enter the app",
-      "body": "I understand that watch time is calculated based on episodes & movies runtime in the app. But the watch time changes almost everytime I enter the app and I am not able to get accurate watch time.",
-      "author_key": "Ivory Robin",
-      "posted_at": "2026-09-27T20:46:15.785Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 3.6959336033606958,
-      "reactions": [],
-      "comments_count": 15,
-      "activity_7d": 16,
-      "comments": [
-        {
-          "text": "[identity removed]\nDevice: Samsung Galaxy A52s, Android version 14.\nApp version: Refract v1.6.732-01a0dfd8 | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied\n\nI can see that this was raised by other people but I don't see a solution for it.",
-          "date": "2026-09-28T04:01:18.719Z",
-          "is_team": false,
-          "author_key": "Ivory Robin",
-          "reactions": []
-        },
-        {
-          "text": "I am attaching screenshots of 2 times I checked the watch time and there is a difference in watch time for shows. I didn't log any new activity.",
-          "date": "2026-09-28T07:58:40.754Z",
-          "is_team": false,
-          "author_key": "Ivory Robin",
-          "reactions": []
-        },
-        {
-          "text": "Hi [mention removed] I have the same issue, I watched a lot of stuff the past 4 days and it decreases with every update 🥲\n\n[identity removed]\nDevice: iPhone 17 Pro Max, iOS 27\nRefract v1.6.733-01a0e78d | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied\n\nYesterday I reached 6mo 22 d and now I’m again on 6mo 20d… 🥹",
-          "date": "2026-09-28T20:27:06.423Z",
-          "is_team": false,
-          "author_key": "Lilac Otter",
-          "reactions": []
-        },
-        {
-          "text": "Same issue for me, [mention removed] — I’ve marked watched a considerable amount of movies that didn’t import and it’s decreasing every time I pause and take a break from using the app. Earlier when I closed the app I was at 3y 3mo 25d 7h — and I just went in to log a movie I finished watching and it’s at 3y 3mo 23d 5h. This isn’t the first time I’ve noticed it since July/post-TV Time import, but wanted to give things a chance to settle after that major event. Still happening — hope it can be fixed once and for all! TIA 💪🏻\n\n[identity removed]\nDevice: iPhone 17 Pro Max, iOS 26.7.1\nRefract v1.6.736-01a0f825",
-          "date": "2026-10-02T02:00:41.681Z",
-          "is_team": false,
-          "author_key": "Amber Badger",
-          "reactions": []
-        },
-        {
-          "text": "It’s still happening to me, it decreased again 😭 [mention removed]",
-          "date": "2026-10-02T03:05:21.765Z",
-          "is_team": false,
-          "author_key": "Lilac Otter",
-          "reactions": []
-        },
-        {
-          "text": "Thanks [mention removed] , [mention removed] and [mention removed] , we dug into this today.\n\nYour watch time is recalculated from the runtime of every episode and movie you've logged. When TMDB has no runtime for an episode, we use an estimate based on the show. We checked the calculation itself and it's consistent, so something in the underlying data is shifting, and we're tracking down exactly what.\n\nTo catch it in the act: next time you see it drop, please post here when it happened and the before/after values. A screenshot of your profile is perfect. We took a snapshot of your stats today, so we can compare and see exactly what moved.",
-          "date": "2026-10-02T09:55:09.750Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Teal Robin",
-          "team_name": "Exooo",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            },
-            {
-              "emoji": "👍",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "Hi Exooo ,\nThanks for responding.\n\nYou can see in the below 2 screenshots that even though the total watch time changed by an hour which is jot much, the watch time for movies and shows fifders. These 2 snaps were taken in a space of 1 hour.\nThere is no pattern really. Sometimes watch time goes up and sometimes it comes down. Sometimes it is by many hours and somtimes it is just 1 hour like this example.\nAppreciate your support.",
-          "date": "2026-10-02T11:00:48.182Z",
-          "is_team": false,
-          "author_key": "Ivory Robin",
-          "reactions": []
-        },
-        {
-          "text": "Yeah it's perfect thanks! \nI think I already have your last time\nSo if it changes AGAIN one more time, ping me here and I'll have the materials to dig into it!",
-          "date": "2026-10-02T11:12:34.400Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Teal Robin",
-          "team_name": "Exooo",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "Hi! So this was 2 hours ago",
-          "date": "2026-10-02T16:44:20.029Z",
-          "is_team": false,
-          "author_key": "Lilac Otter",
-          "reactions": []
-        },
-        {
-          "text": "And now I logged a movie and it’s like this 😅",
-          "date": "2026-10-02T16:44:37.669Z",
-          "is_team": false,
-          "author_key": "Lilac Otter",
-          "reactions": []
-        },
-        {
-          "text": "Exooo 😅 just happened now",
-          "date": "2026-10-02T16:45:24.878Z",
-          "is_team": false,
-          "author_key": "Lilac Otter",
-          "reactions": []
-        },
-        {
-          "text": "The movie was 90 minutes long",
-          "date": "2026-10-02T16:46:03.162Z",
-          "is_team": false,
-          "author_key": "Lilac Otter",
-          "reactions": []
-        },
-        {
-          "text": "Nice thanks! I'll have a look when I come back 🙏",
-          "date": "2026-10-02T17:59:38.606Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Teal Robin",
-          "team_name": "Exooo",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "Thank you! 🙌🏼😁",
-          "date": "2026-10-02T20:50:39.496Z",
-          "is_team": false,
-          "author_key": "Lilac Otter",
-          "reactions": []
-        },
-        {
-          "text": "Hi Exooo ,\n\nIt changed again. Watch time is now less even though I logged activity today.\nThanks.",
-          "date": "2026-10-02T23:10:19.551Z",
-          "is_team": false,
-          "author_key": "Ivory Robin",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1553868999735906314",
       "title": "Android back button not working",
       "body": "Normally when using my phones back button in apps, it goes back to the previous page. It does not seem to be doing that in refract (I could be wrong, but I feel like it used to work?)\n\nI have attached a video.\n\nRefract v1.6.732-01a0dfd8 | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied\nSamsung A73 - Android 16 - OneUI 8.0\n[identity removed]",
@@ -846,10 +644,10 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9434451472099852,
+      "score": 1.9037633913215197,
       "reactions": [],
-      "comments_count": 8,
-      "activity_7d": 8,
+      "comments_count": 10,
+      "activity_7d": 10,
       "comments": [
         {
           "text": "Username [mention removed]\nDevice LG Velvet, Android 13\nApp version 1.6.732-01a0dfd8",
@@ -914,6 +712,24 @@
           "date": "2026-10-03T11:22:54.933Z",
           "is_team": false,
           "author_key": "Azure Panda",
+          "reactions": []
+        },
+        {
+          "text": "Hey [mention removed], no",
+          "date": "2026-10-03T23:17:13.457Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ochre Lynx",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "I'm trying some fixes but your phone is struggling. Only your phone currently is struggling so I'll check this later on. I've already tried something, apparently it didn't work out. I'm prioritizing other bugs right now, no need to ping this thread, as long as it's open it means I have it on my radar.",
+          "date": "2026-10-03T23:18:46.446Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ochre Lynx",
+          "team_name": "Exooo",
           "reactions": []
         }
       ],
@@ -1004,7 +820,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0267346023863722,
+      "score": 1.0057704748870049,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -1093,7 +909,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 1,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "[name removed]\nNothing Phone 3A\nAndroid 16 \nRefract v1.6.732-01a0dfd8",
@@ -1129,7 +945,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 1,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "[name removed]\nNothing Phone 3A\nAndroid 16 \nRefract v1.6.732-01a0dfd8",
@@ -1164,7 +980,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 4,
-      "activity_7d": 4,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "I'm on Refract v1.6.731-01a0ddee | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
@@ -1216,7 +1032,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 1,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "[name removed]\nNothing Phone 3A\nAndroid 16 \nRefract v1.6.731-01a0ddee",
@@ -1247,7 +1063,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 6.158294109144147,
+      "score": 6.032552498232588,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1255,7 +1071,7 @@
         }
       ],
       "comments_count": 14,
-      "activity_7d": 18,
+      "activity_7d": 7,
       "comments": [
         {
           "text": "[mention removed] this is fixed for next update thanks mate\ndo you have the name of the show / episode in mind? so I can check",
@@ -1418,7 +1234,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8998377833787066,
+      "score": 1.8610464137041127,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -1643,7 +1459,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.746208929535215,
+      "score": 0.7309726463676047,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -1682,7 +1498,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.8179027034744311,
+      "score": 0.8012025586484336,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -1716,7 +1532,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 3,
-      "activity_7d": 2,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "[name removed]\nNothing Phone 3A\nAndroid 16 \nRefract v1.6.730-01a0c4fa",
@@ -1781,7 +1597,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.5483629861393817,
+      "score": 3.4759116107960697,
       "reactions": [],
       "comments_count": 15,
       "activity_7d": 4,
@@ -2161,7 +1977,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6000324862065641,
+      "score": 0.5877808707303156,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2411,7 +2227,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 4.020843213679026,
+      "score": 3.9387446172251654,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2484,7 +2300,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.8636516308882878,
+      "score": 1.825599119252332,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2571,7 +2387,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.25424647537760725,
+      "score": 0.24905520636447318,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2896,7 +2712,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9225225825300416,
+      "score": 0.9036862824810754,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2955,7 +2771,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.35559810847976603,
+      "score": 0.3483374161183935,
       "reactions": [
         {
           "emoji": "💯",
@@ -3013,7 +2829,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.22033680773790873,
+      "score": 0.2158379149183962,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3048,7 +2864,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 4.889083544426777,
+      "score": 4.789256996707241,
       "reactions": [],
       "comments_count": 11,
       "activity_7d": 6,
@@ -3267,7 +3083,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.40368535231898256,
+      "score": 0.3954428024176036,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -3354,7 +3170,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.34714483139337904,
+      "score": 0.34005674018737275,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3425,7 +3241,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1644682143836231,
+      "score": 1.140691807064186,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3860,7 +3676,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.12393852341704963,
+      "score": 0.12140791521415145,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3893,7 +3709,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.3696458269446231,
+      "score": 0.36209830470502485,
       "reactions": [
         {
           "emoji": "💜",
@@ -4104,7 +3920,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.11522918707835131,
+      "score": 0.11287640831357179,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4270,7 +4086,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.20760479987943847,
+      "score": 0.20336587242531587,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -4300,7 +4116,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1031615673996363,
+      "score": 0.10105518835389854,
       "reactions": [
         {
           "emoji": "💜",
@@ -4458,7 +4274,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.20255923603830506,
+      "score": 0.19842333018628483,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -4523,7 +4339,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.31713588350111,
+      "score": 2.269824015388189,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 1,
@@ -4819,7 +4635,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.15401597750329224,
+      "score": 0.150871240214986,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -4849,7 +4665,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.335901150288896,
+      "score": 3.267787874591945,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 3,
@@ -5022,7 +4838,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.07189845889067337,
+      "score": 0.0704304179230379,
       "reactions": [
         {
           "emoji": "➕",
@@ -5062,7 +4878,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09718950992879151,
+      "score": 0.09520506986705346,
       "reactions": [
         {
           "emoji": "💜",
@@ -5119,7 +4935,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06842128085219318,
+      "score": 0.06702423778758668,
       "reactions": [
         {
           "emoji": "➕",
@@ -5178,7 +4994,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.13639911312156608,
+      "score": 0.1336140814379791,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -5403,7 +5219,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.10990078650403726,
+      "score": 0.10765680437350766,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -5472,33 +5288,6 @@
       ]
     },
     {
-      "id": "1545203740192018532",
-      "title": "Choose a specific date option squished",
-      "body": "If you go to mark a season as watched and click on the Choose a specific date option, the text on that screen is cut off and you can't see the year in the date picker. If you go into the calendar view on the date picker you can see the full date. \n\nIt can be reproduced by clicking on Choose a specific date option when marking a session as watched.\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.719-01a05d02",
-      "author_key": "Amber Tern",
-      "posted_at": "2026-09-03T22:48:00.159Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1545203740192018532/1545203740452069486.webp"
-        }
-      ]
-    },
-    {
       "id": "1545138149024469082",
       "title": "Incomplete grade records",
       "body": "I'm not sure if this is specific to this series, since I haven't noticed it in others. But I've rated all the episodes manually, and for some of them, the ratings don't show up in the episode list but do appear on each episode's individual profile. I tried changing the ratings, but they still don't show up in the episode list (I'm not sure if I explained myself clearly, so I've included several screenshots)",
@@ -5548,7 +5337,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.07707225106849247,
+      "score": 0.07549857030005655,
       "reactions": [
         {
           "emoji": "💜",
@@ -5569,112 +5358,6 @@
       "images": []
     },
     {
-      "id": "1544861417734406154",
-      "title": "UI interface",
-      "body": "Bugging out badly",
-      "author_key": "Ivory Lynx",
-      "posted_at": "2026-09-03T00:07:44.125Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "🤖 Android",
-        "⚠ Critical",
-        "💥 Crash",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Its been so bad today, tryed restarting, tryed different networks and shows up same results",
-          "date": "2026-09-03T00:08:41.435Z",
-          "is_team": false,
-          "author_key": "Ivory Lynx",
-          "reactions": []
-        },
-        {
-          "text": "[name removed]\nSamsung ultra \n1.6.3",
-          "date": "2026-09-03T00:10:26.657Z",
-          "is_team": false,
-          "author_key": "Ivory Lynx",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1544729758129201232",
-      "title": "It does not mark the episode as viewed",
-      "body": "When entering a series and going directly to the episode list, the checkbox does not allow rating it and sometimes the checkmark is not displayed.\n\nIn order to mark the episode as viewed and rate it, you absolutely must enter the chapter.",
-      "author_key": "Teal Wren",
-      "posted_at": "2026-09-02T15:24:34.029Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🤖 Android",
-        "🐌 Performance"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-09-02T15:25:41.800Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1544628745791348766",
-      "title": "Error importing from Netflix",
-      "body": "I imported my viewing history from Netflix and several \"rewatch\" dates were added to episodes of series that I had already entered manually. I wanted to delete them, but when I tried to do so, I got an error saying that it couldn't find what I was looking for, and the \"rewatch\" date wasn't deleted.\n\nGoogle Pixel 8 Pro \nRefract v1.6.719-01a05d02",
-      "author_key": "Misty Sparrow",
-      "posted_at": "2026-09-02T08:43:10.811Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "📊 Stats"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-10-03T04:01:54.868Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "[identity removed]\nGoogle Pixel 8 Pro with Android 17",
-          "date": "2026-09-02T08:47:25.266Z",
-          "is_team": false,
-          "author_key": "Misty Sparrow",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1544628745791348766/1544628746730995752.webp"
-        }
-      ]
-    },
-    {
       "id": "1544470352044888074",
       "title": "Watched and rated episodes not shown on activity section",
       "body": "Only new achievements shows in the section \n[identity removed]\niphone 14\nRefract v1.6.719-01a05d05\niOS 26.6.1\n\nHere is a video",
@@ -5689,7 +5372,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.259397512226134,
+      "score": 1.2336828144285437,
       "reactions": [
         {
           "emoji": "💜",
@@ -5788,7 +5471,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 2.309525186474525,
+      "score": 2.2623687155036247,
       "reactions": [
         {
           "emoji": "☝️",
@@ -5851,7 +5534,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.7006519123919384,
+      "score": 1.665927570346231,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 2,
@@ -5978,7 +5661,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.03692438883411663,
+      "score": 0.036170457298590836,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6128,7 +5811,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.0679627118564168,
+      "score": 0.06657503196986272,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -6223,7 +5906,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.06022024699343332,
+      "score": 0.05899065471800063,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6249,7 +5932,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.029979869701426645,
+      "score": 0.029367733118735903,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -6390,7 +6073,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.025882324019969892,
+      "score": 0.02535385216417245,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6465,7 +6148,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5746510860017248,
+      "score": 0.5629177143917782,
       "reactions": [
         {
           "emoji": "➕",
@@ -6758,7 +6441,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6060146491556104,
+      "score": 0.5936408883591455,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -6805,7 +6488,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.045707310107154314,
+      "score": 0.04477404665765883,
       "reactions": [
         {
           "emoji": "💜",
@@ -6851,7 +6534,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.008700897104146,
+      "score": 0.9881049863727182,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -7086,7 +6769,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.05082506824762678,
+      "score": 0.04978730911451602,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -7168,7 +6851,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.7859749204117117,
+      "score": 0.7699266851574219,
       "reactions": [
         {
           "emoji": "💜",
@@ -7309,7 +6992,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.286277849752251,
+      "score": 0.28043255601373107,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7677,7 +7360,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.013647585903892565,
+      "score": 0.01336892603377347,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7717,7 +7400,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.28596939238415275,
+      "score": 0.2801303968064017,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7767,7 +7450,7 @@
         }
       ],
       "reactors_unique": 3,
-      "score": 1.3303512110173652,
+      "score": 1.303187762603448,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7810,7 +7493,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.3314349835844814,
+      "score": 1.304249406427436,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7949,7 +7632,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.0685817203788611,
+      "score": 0.06718140141931041,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -8084,7 +7767,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 1.756332241006423,
+      "score": 1.720471003890103,
       "reactions": [
         {
           "emoji": "💜",
@@ -8160,7 +7843,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1776180951370656,
+      "score": 0.17399144382523327,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -8287,7 +7970,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.752203288571172,
+      "score": 0.7368446110605495,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -8335,7 +8018,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.025406550078588507,
+      "score": 0.024887792695786125,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -8420,7 +8103,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.43347161097688747,
+      "score": 0.42462087769220563,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -8476,7 +8159,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.007876091598620232,
+      "score": 0.007715275562921814,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8517,7 +8200,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.7885665996622002,
+      "score": 1.752047193235964,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8578,7 +8261,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3103942623570111,
+      "score": 0.3040565535898181,
       "reactions": [
         {
           "emoji": "🔄",
@@ -8785,7 +8468,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.02253083701518905,
+      "score": 0.022070796671018238,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8805,54 +8488,6 @@
       ]
     },
     {
-      "id": "1537574652581380196",
-      "title": "Movie titles in English in library regardless of chosen language",
-      "body": "Titles in my library are all in English, despite the app language being set to Spanish. This happens for all titles, regardless of their original language.\nThe same occurs in profile, diary, and recent activity.",
-      "author_key": "Velvet Otter",
-      "posted_at": "2026-08-13T21:32:43.931Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-10-03T04:02:02.055Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 3,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "This is on Android 17 with Refract v1.6.713-01a001cf.",
-          "date": "2026-08-15T07:58:45.310Z",
-          "is_team": false,
-          "author_key": "Velvet Otter",
-          "reactions": []
-        },
-        {
-          "text": "Movie titles in English in library regardless of chosen language",
-          "date": "2026-09-02T21:01:12.498Z",
-          "is_team": false,
-          "author_key": "Velvet Otter",
-          "reactions": []
-        },
-        {
-          "text": "There has been a change as of version Refract v1.6.719-01a05d02. Now, titles of Spanish movies or shows appear in Spanish. All other titles still appear in English.",
-          "date": "2026-09-02T21:08:04.098Z",
-          "is_team": false,
-          "author_key": "Velvet Otter",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1537174279416975411",
       "title": "Bug in Importing ratings",
       "body": "I imported my ratings with tvtime gdpr zip file it said i have 383 rattings , after importing it said 200 applied 88 not found and 95 skipped when i check in my profile it only shows 9 ratings and all new ratings are missing \n\nRefract v1.6.711-019ff4cb\nOxygen OS 14\n\n[identity removed]",
@@ -8870,7 +8505,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3104253886506132,
+      "score": 0.3040870443388637,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9010,7 +8645,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.6865384411368302,
+      "score": 0.6725205251342357,
       "reactions": [
         {
           "emoji": "👆",
@@ -9295,7 +8930,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 2.237903158520136,
+      "score": 2.1922090842799085,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 3,
@@ -9581,7 +9216,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.15942385352209199,
+      "score": 0.15616869684975465,
       "reactions": [
         {
           "emoji": "👆",
@@ -9641,7 +9276,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.24366135903101466,
+      "score": 0.23868621960791275,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9929,7 +9564,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.14686452827588178,
+      "score": 0.14386581109156366,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -10068,7 +9703,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.15870777614724146,
+      "score": 0.1554672405243466,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10190,7 +9825,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.04445801823776113,
+      "score": 0.043550263146484997,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -10236,7 +9871,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.22832392854002498,
+      "score": 0.2236619526623792,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10280,7 +9915,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 5.097380535263911,
+      "score": 4.993300926759734,
       "reactions": [
         {
           "emoji": "👍",
@@ -11123,7 +10758,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 2.457087786626629,
+      "score": 2.4069183450628056,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11213,7 +10848,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 25.896624629077994,
+      "score": 25.36786077981703,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12810,6 +12445,33 @@
       ]
     },
     {
+      "id": "1545203740192018532",
+      "title": "Choose a specific date option squished",
+      "body": "If you go to mark a season as watched and click on the Choose a specific date option, the text on that screen is cut off and you can't see the year in the date picker. If you go into the calendar view on the date picker you can see the full date. \n\nIt can be reproduced by clicking on Choose a specific date option when marking a session as watched.\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.719-01a05d02",
+      "author_key": "Amber Tern",
+      "posted_at": "2026-09-03T22:48:00.159Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "⏳ Waiting on us",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1545203740192018532/1545203740452069486.webp"
+        }
+      ]
+    },
+    {
       "id": "1533873744253161604",
       "title": "Weekend Binge Challenge",
       "body": "Yesterday I completed the 3 items but it didn't count",
@@ -13076,7 +12738,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.04490498902984909,
+      "score": 0.04398810757558485,
       "reactions": [
         {
           "emoji": "💜",
@@ -13155,7 +12817,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.286154335838943,
+      "score": 0.280311564038829,
       "reactions": [
         {
           "emoji": "💜",
@@ -13214,7 +12876,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.025841606152141518,
+      "score": 0.02531396568409573,
       "reactions": [
         {
           "emoji": "💜",
@@ -13382,16 +13044,48 @@
       "images": []
     },
     {
-      "id": "1540514974999257201",
-      "title": "Watch time not updating when adding new films or episodes",
-      "body": "The watch time does not change when adding new films or episodes, and it even decreases. Additionally, newly added films do not appear in the journal/log.\n\n📱 via app · 22111317G · Android 14 · v1.6.716-01a02013",
-      "author_key": "Teal Lynx",
-      "posted_at": "2026-08-22T00:16:31.424Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
+      "id": "1556028144174112888",
+      "title": "Checkbox overlap",
+      "body": "Hey ! I had a problem with checking an episode tonight. The checkbox is overlapping the comment information of the episode. It took me a few tries to be able to check it.\nI have a Google pixel 9 - Android 17\nHope it helps \nGood night !",
+      "author_key": "Sage Otter",
+      "posted_at": "2026-10-03T19:40:19.176Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-03T23:16:11.096Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-03T23:16:11.096Z",
+        "applied_by": "Exooo"
+      },
       "tags": [
-        "⏳ Waiting on us"
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1556028144174112888/1556028144547536936.webp"
+        }
+      ]
+    },
+    {
+      "id": "1555916387501871175",
+      "title": "Movies with unknown watch dates appear in recent activity",
+      "body": "A movie marked as watched with an unknown date is appearing in the user's recent activity profile section, despite not having been watched recently. Movies without confirmed dates should not display in recent activity.\n\n📱 via app · RMX3241 · Android 13 · v1.6.738-01a0fd29",
+      "author_key": "Sage Badger",
+      "posted_at": "2026-10-03T12:16:14.309Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-03T23:16:50.961Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-03T23:16:50.961Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "General"
       ],
       "status_tags": [],
       "reactors_unique": 0,
@@ -13420,7 +13114,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8809478817744786,
+      "score": 0.8629604645092057,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13461,7 +13155,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.6701621259453507,
+      "score": 1.636060332091756,
       "reactions": [
         {
           "emoji": "😂",
@@ -13519,6 +13213,262 @@
       "images": [
         {
           "url": "./assets/bugs/1554288641973424232/1554288642686718062.webp"
+        }
+      ]
+    },
+    {
+      "id": "1553870412201459804",
+      "title": "Watch time is changing evertime I enter the app",
+      "body": "I understand that watch time is calculated based on episodes & movies runtime in the app. But the watch time changes almost everytime I enter the app and I am not able to get accurate watch time.",
+      "author_key": "Ivory Robin",
+      "posted_at": "2026-09-27T20:46:15.785Z",
+      "status": "fixed",
+      "resolved_at": "2026-09-27T20:46:15.785Z",
+      "terminal_attribution": null,
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 3.6204690937299078,
+      "reactions": [],
+      "comments_count": 15,
+      "activity_7d": 16,
+      "comments": [
+        {
+          "text": "[identity removed]\nDevice: Samsung Galaxy A52s, Android version 14.\nApp version: Refract v1.6.732-01a0dfd8 | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied\n\nI can see that this was raised by other people but I don't see a solution for it.",
+          "date": "2026-09-28T04:01:18.719Z",
+          "is_team": false,
+          "author_key": "Ivory Robin",
+          "reactions": []
+        },
+        {
+          "text": "I am attaching screenshots of 2 times I checked the watch time and there is a difference in watch time for shows. I didn't log any new activity.",
+          "date": "2026-09-28T07:58:40.754Z",
+          "is_team": false,
+          "author_key": "Ivory Robin",
+          "reactions": []
+        },
+        {
+          "text": "Hi [mention removed] I have the same issue, I watched a lot of stuff the past 4 days and it decreases with every update 🥲\n\n[identity removed]\nDevice: iPhone 17 Pro Max, iOS 27\nRefract v1.6.733-01a0e78d | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied\n\nYesterday I reached 6mo 22 d and now I’m again on 6mo 20d… 🥹",
+          "date": "2026-09-28T20:27:06.423Z",
+          "is_team": false,
+          "author_key": "Lilac Otter",
+          "reactions": []
+        },
+        {
+          "text": "Same issue for me, [mention removed] — I’ve marked watched a considerable amount of movies that didn’t import and it’s decreasing every time I pause and take a break from using the app. Earlier when I closed the app I was at 3y 3mo 25d 7h — and I just went in to log a movie I finished watching and it’s at 3y 3mo 23d 5h. This isn’t the first time I’ve noticed it since July/post-TV Time import, but wanted to give things a chance to settle after that major event. Still happening — hope it can be fixed once and for all! TIA 💪🏻\n\n[identity removed]\nDevice: iPhone 17 Pro Max, iOS 26.7.1\nRefract v1.6.736-01a0f825",
+          "date": "2026-10-02T02:00:41.681Z",
+          "is_team": false,
+          "author_key": "Amber Badger",
+          "reactions": []
+        },
+        {
+          "text": "It’s still happening to me, it decreased again 😭 [mention removed]",
+          "date": "2026-10-02T03:05:21.765Z",
+          "is_team": false,
+          "author_key": "Lilac Otter",
+          "reactions": []
+        },
+        {
+          "text": "Thanks [mention removed] , [mention removed] and [mention removed] , we dug into this today.\n\nYour watch time is recalculated from the runtime of every episode and movie you've logged. When TMDB has no runtime for an episode, we use an estimate based on the show. We checked the calculation itself and it's consistent, so something in the underlying data is shifting, and we're tracking down exactly what.\n\nTo catch it in the act: next time you see it drop, please post here when it happened and the before/after values. A screenshot of your profile is perfect. We took a snapshot of your stats today, so we can compare and see exactly what moved.",
+          "date": "2026-10-02T09:55:09.750Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Teal Robin",
+          "team_name": "Exooo",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            },
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Hi Exooo ,\nThanks for responding.\n\nYou can see in the below 2 screenshots that even though the total watch time changed by an hour which is jot much, the watch time for movies and shows fifders. These 2 snaps were taken in a space of 1 hour.\nThere is no pattern really. Sometimes watch time goes up and sometimes it comes down. Sometimes it is by many hours and somtimes it is just 1 hour like this example.\nAppreciate your support.",
+          "date": "2026-10-02T11:00:48.182Z",
+          "is_team": false,
+          "author_key": "Ivory Robin",
+          "reactions": []
+        },
+        {
+          "text": "Yeah it's perfect thanks! \nI think I already have your last time\nSo if it changes AGAIN one more time, ping me here and I'll have the materials to dig into it!",
+          "date": "2026-10-02T11:12:34.400Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Teal Robin",
+          "team_name": "Exooo",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Hi! So this was 2 hours ago",
+          "date": "2026-10-02T16:44:20.029Z",
+          "is_team": false,
+          "author_key": "Lilac Otter",
+          "reactions": []
+        },
+        {
+          "text": "And now I logged a movie and it’s like this 😅",
+          "date": "2026-10-02T16:44:37.669Z",
+          "is_team": false,
+          "author_key": "Lilac Otter",
+          "reactions": []
+        },
+        {
+          "text": "Exooo 😅 just happened now",
+          "date": "2026-10-02T16:45:24.878Z",
+          "is_team": false,
+          "author_key": "Lilac Otter",
+          "reactions": []
+        },
+        {
+          "text": "The movie was 90 minutes long",
+          "date": "2026-10-02T16:46:03.162Z",
+          "is_team": false,
+          "author_key": "Lilac Otter",
+          "reactions": []
+        },
+        {
+          "text": "Nice thanks! I'll have a look when I come back 🙏",
+          "date": "2026-10-02T17:59:38.606Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Teal Robin",
+          "team_name": "Exooo",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Thank you! 🙌🏼😁",
+          "date": "2026-10-02T20:50:39.496Z",
+          "is_team": false,
+          "author_key": "Lilac Otter",
+          "reactions": []
+        },
+        {
+          "text": "Hi Exooo ,\n\nIt changed again. Watch time is now less even though I logged activity today.\nThanks.",
+          "date": "2026-10-02T23:10:19.551Z",
+          "is_team": false,
+          "author_key": "Ivory Robin",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1544861417734406154",
+      "title": "UI interface",
+      "body": "Bugging out badly",
+      "author_key": "Ivory Lynx",
+      "posted_at": "2026-09-03T00:07:44.125Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-03T23:22:02.339Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-03T23:22:02.339Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android",
+        "⚠ Critical",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Its been so bad today, tryed restarting, tryed different networks and shows up same results",
+          "date": "2026-09-03T00:08:41.435Z",
+          "is_team": false,
+          "author_key": "Ivory Lynx",
+          "reactions": []
+        },
+        {
+          "text": "[name removed]\nSamsung ultra \n1.6.3",
+          "date": "2026-09-03T00:10:26.657Z",
+          "is_team": false,
+          "author_key": "Ivory Lynx",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1544729758129201232",
+      "title": "It does not mark the episode as viewed",
+      "body": "When entering a series and going directly to the episode list, the checkbox does not allow rating it and sometimes the checkmark is not displayed.\n\nIn order to mark the episode as viewed and rate it, you absolutely must enter the chapter.",
+      "author_key": "Teal Wren",
+      "posted_at": "2026-09-02T15:24:34.029Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-03T23:22:17.258Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-03T23:22:17.258Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🤖 Android",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1544628745791348766",
+      "title": "Error importing from Netflix",
+      "body": "I imported my viewing history from Netflix and several \"rewatch\" dates were added to episodes of series that I had already entered manually. I wanted to delete them, but when I tried to do so, I got an error saying that it couldn't find what I was looking for, and the \"rewatch\" date wasn't deleted.\n\nGoogle Pixel 8 Pro \nRefract v1.6.719-01a05d02",
+      "author_key": "Misty Sparrow",
+      "posted_at": "2026-09-02T08:43:10.811Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-03T23:22:36.279Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-03T23:22:36.279Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🔗 Import",
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "[identity removed]\nGoogle Pixel 8 Pro with Android 17",
+          "date": "2026-09-02T08:47:25.266Z",
+          "is_team": false,
+          "author_key": "Misty Sparrow",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1544628745791348766/1544628746730995752.webp"
         }
       ]
     },
@@ -13614,7 +13564,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0419034467276367,
+      "score": 0.041047851525313366,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13643,7 +13593,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.042839224398180505,
+      "score": 0.041964522250059554,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13692,7 +13642,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.08175831653276254,
+      "score": 0.08008895449125472,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -13774,6 +13724,52 @@
       ]
     },
     {
+      "id": "1537574652581380196",
+      "title": "Movie titles in English in library regardless of chosen language",
+      "body": "Titles in my library are all in English, despite the app language being set to Spanish. This happens for all titles, regardless of their original language.\nThe same occurs in profile, diary, and recent activity.",
+      "author_key": "Velvet Otter",
+      "posted_at": "2026-08-13T21:32:43.931Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-03T23:22:09.226Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-03T23:22:09.226Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 3,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "This is on Android 17 with Refract v1.6.713-01a001cf.",
+          "date": "2026-08-15T07:58:45.310Z",
+          "is_team": false,
+          "author_key": "Velvet Otter",
+          "reactions": []
+        },
+        {
+          "text": "Movie titles in English in library regardless of chosen language",
+          "date": "2026-09-02T21:01:12.498Z",
+          "is_team": false,
+          "author_key": "Velvet Otter",
+          "reactions": []
+        },
+        {
+          "text": "There has been a change as of version Refract v1.6.719-01a05d02. Now, titles of Spanish movies or shows appear in Spanish. All other titles still appear in English.",
+          "date": "2026-09-02T21:08:04.098Z",
+          "is_team": false,
+          "author_key": "Velvet Otter",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
       "id": "1537219217986949230",
       "title": "Stats are counting the entire show even if we watch only last season",
       "body": "Hello, my stats are bugged, and I finally found why\nI have one tv shows, I watched only last seasons, s31 s32 and s33, so it says TV show up to date, but the full show is marked at up to date with the date of the finale of s33, but I didn't watched s1 to s30, not marked watched, but count as watched in my stats for the month of the finale of s33 \nI'm not sure it's really clear\n\nFor example koh lanta \n\n[identity removed]\nAndroid 16, one ui 8.5, Refract v1.6.711-019ff4cb",
@@ -13826,6 +13822,102 @@
         }
       ],
       "images": []
+    },
+    {
+      "id": "1554587625640296552",
+      "title": "Stats decremented instead of incremented when marking episodes",
+      "body": "User marked 3 episodes and the stats removed 3 episodes instead of adding them.\n\n📱 via app · iPhone 16 Pro Max · iOS 27.0.1 · v1.6.733-01a0e78d",
+      "author_key": "Velvet Panda",
+      "posted_at": "2026-09-29T20:16:12.794Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-03T23:19:09.919Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-03T23:19:09.919Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 2.81667261156079,
+      "reactions": [
+        {
+          "emoji": "🎯",
+          "count": 1
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Same!",
+          "date": "2026-10-03T08:03:04.894Z",
+          "is_team": false,
+          "author_key": "Teal Tern",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1555798513638449202",
+      "title": "Watch time Error.",
+      "body": "Watch time is not updating properly for 10 days or so. Yesterday night it was 1y 7mo 2h, now it's 1y 6mo 26d 6h something. What's happening. Fix this ASAP. We're losing our watching hours. [mention removed] [mention removed]\n\nRefract Username - [mention removed] \nMoto G64 android version 15 \nApp Version 1.6.4",
+      "author_key": "Lilac Tern",
+      "posted_at": "2026-10-03T04:27:50.990Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-03T23:19:04.184Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-03T23:19:04.184Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "📊 Stats",
+        "👤 Profile",
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 1.8780396534827712,
+      "reactions": [],
+      "comments_count": 4,
+      "activity_7d": 4,
+      "comments": [
+        {
+          "text": "Refract Username - [mention removed] \nMoto G64 android version 15 \nApp Version 1.6.4 [mention removed]",
+          "date": "2026-10-03T04:35:27.050Z",
+          "is_team": false,
+          "author_key": "Lilac Tern",
+          "reactions": []
+        },
+        {
+          "text": "I just marked a movie and an episode as watched that's it. But it fluctuating since 1 week. At times 1y 7mo 2h will appear again go back to 1y 6mo 26d like that. [mention removed]",
+          "date": "2026-10-03T05:57:33.135Z",
+          "is_team": false,
+          "author_key": "Lilac Tern",
+          "reactions": []
+        },
+        {
+          "text": "[mention removed] it's reduced again. Exooo i lost 5 days of watch time",
+          "date": "2026-10-03T07:50:58.673Z",
+          "is_team": false,
+          "author_key": "Lilac Tern",
+          "reactions": []
+        },
+        {
+          "text": "It's happening to me too",
+          "date": "2026-10-03T08:05:04.729Z",
+          "is_team": false,
+          "author_key": "Ivory Fox",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1555798513638449202/1555798514074914866.webp"
+        }
+      ]
     },
     {
       "id": "1554665272848424960",
@@ -13921,7 +14013,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 2.4191469387307123,
+      "score": 2.36975218302132,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14115,7 +14207,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.899560947897797,
+      "score": 1.8607752307202603,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -14461,7 +14553,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.428739867686796,
+      "score": 1.3995674947288776,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 1,
@@ -14750,7 +14842,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.013739608744812178,
+      "score": 0.013459069928989481,
       "reactions": [
         {
           "emoji": "💜",
@@ -14876,7 +14968,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.015623560289586549,
+      "score": 0.015304554473337947,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -15314,7 +15406,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 3.4971344324945757,
+      "score": 3.4257290547515407,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15529,7 +15621,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.014328944374978489,
+      "score": 0.014036372354798963,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -15675,7 +15767,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.006805027480402852,
+      "score": 0.006666080703500343,
       "reactions": [
         {
           "emoji": "💜",
@@ -15703,7 +15795,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00680492746569291,
+      "score": 0.006665982730916114,
       "reactions": [
         {
           "emoji": "👍",
@@ -15770,7 +15862,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.3692584850300047,
+      "score": 1.3413006180281117,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15949,7 +16041,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.012341979617235987,
+      "score": 0.0120899779473897,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -16440,7 +16532,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.004759611884126568,
+      "score": 0.004662428921602059,
       "reactions": [
         {
           "emoji": "🤔",
@@ -16514,7 +16606,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1827549405067244,
+      "score": 1.15860515017565,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -16715,7 +16807,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.006810578783457798,
+      "score": 0.006671518658641664,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -16747,7 +16839,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0034025928784205185,
+      "score": 0.003333117874105034,
       "reactions": [
         {
           "emoji": "❤️",
@@ -16803,11 +16895,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1535362347168956477/1535362348125261875.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1535379578720096326",
