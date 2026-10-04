@@ -1,6 +1,6 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-10-04T06:20:03.722Z",
+  "generated_at": "2026-10-04T11:40:03.931Z",
   "bugs": [
     {
       "id": "1556117345078878269",
@@ -28,6 +28,64 @@
           "url": "./assets/bugs/1556117345078878269/1556117346891075704.webp"
         }
       ]
+    },
+    {
+      "id": "1556034172206710904",
+      "title": "Netflix/TVTime import issue",
+      "body": "Not sure if this is an actual bug or intended behaviour.\n\nI had a show that was marked as complete (but with the wrong date) on TVTime, and that was imported to Refract.\n\nI’ve since obtained my Netflix history, which included some additional watch records for that show, but when I import the Netflix file, those watches are completely ignored.\n\nI’ve also checked a couple of items that weren’t imported from TvTime, and would appear that the Netflix import only works for items not previously marked as watched at all, and won’t create any rewatch records, which is a massive functional gap IMO.\n\nUsername [mention removed] \niPhone 12 iOS 26.4.2\nRefract v1.6.739-01a102e7",
+      "author_key": "Sage Panda",
+      "posted_at": "2026-10-03T20:04:16.371Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import"
+      ],
+      "status_tags": [
+        {
+          "tag": "🔍 Investigating",
+          "applied_at": "2026-10-04T11:35:08.525Z",
+          "applied_by": "Exooo"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 4,
+      "activity_7d": 4,
+      "comments": [
+        {
+          "text": "The first potential match is actually the exact opposite - that one reported the import incorrectly creating rewatch events, while this one is that it isn’t creating any!\n\n[identity removed]",
+          "date": "2026-10-03T20:07:51.785Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "I can also provide the import csv on request",
+          "date": "2026-10-03T20:08:08.557Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "This definitely isn’t fixed",
+          "date": "2026-10-04T09:34:23.897Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "Can you elaborate and give me more material?",
+          "date": "2026-10-04T11:35:01.691Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Amber Fox",
+          "team_name": "Exooo",
+          "reactions": []
+        }
+      ],
+      "images": []
     },
     {
       "id": "1555991939797753958",
@@ -205,7 +263,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8415717659609945,
+      "score": 0.8232553183647419,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -265,7 +323,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.6831938547989123,
+      "score": 1.6465598643506307,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -332,7 +390,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7554959704047235,
+      "score": 0.7390529254847262,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -362,7 +420,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.224320396259047,
+      "score": 2.175909019329319,
       "reactions": [
         {
           "emoji": "💜",
@@ -613,10 +671,10 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8495673670169275,
+      "score": 1.8093123286186044,
       "reactions": [],
       "comments_count": 10,
-      "activity_7d": 10,
+      "activity_7d": 9,
       "comments": [
         {
           "text": "Username [mention removed]\nDevice LG Velvet, Android 13\nApp version 1.6.732-01a0dfd8",
@@ -789,7 +847,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9771383657970306,
+      "score": 0.9558713694512444,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -1032,7 +1090,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 5.860818782108343,
+      "score": 5.733260581565531,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1203,7 +1261,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8080664493194272,
+      "score": 1.7687146605487039,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -1428,7 +1486,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7101634368360404,
+      "score": 0.6947070350154204,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -1467,7 +1525,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.7783940554807841,
+      "score": 0.7614526435856648,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -1517,7 +1575,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.3769599285659826,
+      "score": 3.303461847869808,
       "reactions": [],
       "comments_count": 15,
       "activity_7d": 3,
@@ -1897,7 +1955,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5710480212065301,
+      "score": 0.5586194065851385,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2147,7 +2205,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.8266170808003066,
+      "score": 3.743332405545823,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2220,7 +2278,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.7736282626382853,
+      "score": 1.7350260061916827,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2228,7 +2286,7 @@
         }
       ],
       "comments_count": 4,
-      "activity_7d": 4,
+      "activity_7d": 3,
       "comments": [
         {
           "text": "In addition, it’s not correctly marking shows as complete when watching the season finales/the final episode of a most recently released season, like the ones circled below",
@@ -2307,7 +2365,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2419651435558042,
+      "score": 0.2366988762553574,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2491,33 +2549,6 @@
       ]
     },
     {
-      "id": "1550637295026053200",
-      "title": "Tapping the watched checkmark marks the episode as unwatched",
-      "body": "It's basically what's in the title. When I tap the checkmark on a watched episode in the episode list, it immediately marks the episode as unwatched.\n\nIt should open a bottom sheet with options to either mark the episode as unwatched or mark a rewatch. I was trying to mark a rewatch and got my previous watch date from 2024 deleted.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Velvet Finch",
-      "posted_at": "2026-09-18T22:39:00.582Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1550637295026053200/1550637296351576117.webp"
-        }
-      ]
-    },
-    {
       "id": "1550601400608751626",
       "title": "Season 5 of The Traitors not found despite notification",
       "body": "Received a notification about the newest season of The Traitors having its first episode. When clicked, the app displayed a 'not found' error. Season 5 is also missing from The Traitors show page.\n\n📱 via app · iPhone 14 · iOS 26.6.2 · v1.6.726-01a0ae9e",
@@ -2618,40 +2649,6 @@
       ]
     },
     {
-      "id": "1550546310342639626",
-      "title": "Rewatches count overlaps with comments count in season page",
-      "body": "[identity removed]\nDevice: iPhone 17 iOS27\nRefract v1.6.728-01a0b551 | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied",
-      "author_key": "Silver Robin",
-      "posted_at": "2026-09-18T16:37:28.143Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0.8779602894546663,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Not all of mine overlaps, but neither looks right. Shouldn't the \"x2\" be inside a green circle with \"x2\" in white?",
-          "date": "2026-09-18T22:47:18.970Z",
-          "is_team": false,
-          "author_key": "Golden Otter",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1550546310342639626/1550546310497701988.webp"
-        }
-      ]
-    },
-    {
       "id": "1550540892471820378",
       "title": "Collection tab auto-scrolls after marking last episode as seen",
       "body": "When the last episode in the 'Watching' section of the Collection tab is marked as seen from the Home tab, switching back to the Collection tab causes the list to automatically scroll down. This occurs reproducibly 100% of the time.\n\n📱 via app · iPhone 14 Pro Max · iOS 27.0 · v1.6.727-01a0b3a9",
@@ -2691,7 +2688,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3384210036292099,
+      "score": 0.33105541601189314,
       "reactions": [
         {
           "emoji": "💯",
@@ -2749,7 +2746,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2096934765201718,
+      "score": 0.20512958817540078,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2783,7 +2780,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 4.652917213214342,
+      "score": 4.551648470900698,
       "reactions": [],
       "comments_count": 12,
       "activity_7d": 7,
@@ -3011,7 +3008,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3841854015091725,
+      "score": 0.3758237714514525,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -3098,7 +3095,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3303760606238573,
+      "score": 0.3231855677315925,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3169,7 +3166,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1082187795957956,
+      "score": 1.0840988744104425,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -3604,7 +3601,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.11795169457575137,
+      "score": 0.11538452666450506,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3637,7 +3634,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.35179014949419124,
+      "score": 0.3441335881660789,
       "reactions": [
         {
           "emoji": "💜",
@@ -3848,7 +3845,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.10966306121578412,
+      "score": 0.10727629184536698,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4014,7 +4011,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1975764860893195,
+      "score": 0.19327631883076807,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -4044,7 +4041,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09817836580909096,
+      "score": 0.09604155589559005,
       "reactions": [
         {
           "emoji": "💜",
@@ -4202,7 +4199,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.19277464733294503,
+      "score": 0.18857899003005538,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -4267,7 +4264,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.2052070372143766,
+      "score": 2.157211654325193,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 1,
@@ -4563,7 +4560,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.14657626246784092,
+      "score": 0.1433860931454647,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -4593,7 +4590,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.1747610247843645,
+      "score": 3.1056637162800973,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 3,
@@ -4766,7 +4763,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06842541632518184,
+      "score": 0.06693616656293394,
       "reactions": [
         {
           "emoji": "➕",
@@ -4806,7 +4803,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09249478753682465,
+      "score": 0.09048167826038617,
       "reactions": [
         {
           "emoji": "💜",
@@ -4863,7 +4860,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06511620276774562,
+      "score": 0.06369897661555833,
       "reactions": [
         {
           "emoji": "➕",
@@ -4922,7 +4919,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.1298103776594219,
+      "score": 0.12698511061029097,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -5040,50 +5037,6 @@
       "images": []
     },
     {
-      "id": "1545392978519134259",
-      "title": "Mismatched comments on \"Memory\" (Anh, Mình Bình Yên Nhé!)",
-      "body": "Some of the comments associated to the 2022 vietnamese drama \"Memory\" (Anh, Mình Bình Yên Nhé!) are instead related to 2022 action thriller \"Memory\" (dir: Martin Campbell). I have reconstructed the correspondence as a comment specifically refers to Liam Neeson, who is involved in the 2022 movie, and because in my library they had the same vote and the same watched date (back in July 2024). I believe it is a remnant of early failures in TVTime imports (as that is what I used before the migration).\nI simply have removed the series from my list of watched items, but it may be helpful to fix it for other users as well.\nDetails: Refract v1.6.719-01a05d02 on Galaxy A53, Android v16, user [name removed]",
-      "author_key": "Amber Robin",
-      "posted_at": "2026-09-04T11:19:58.092Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1545391102402760745",
-      "title": "Mismatched comments on \"The hunt\"",
-      "body": "Some of the comments associated to the documentary series \"The hunt\" are instead related to2020 satirical action thriller \"The hunt\" (dir: Craig Zobel). I have reconstructed the correspondence as a comment specifically refers to the movie and its premise, rather than talking about the Jacksonville Jaguars on which the series in based on, and because I had them both in my library dated back to February 2022. I believe it is a remnant of early failures in TVTime imports (as that is what I used before the migration).\nI simply have removed the series from my list of watched items, but it may be helpful to fix it for other users as well.\nDetails: Refract v1.6.719-01a05d02 on Galaxy A53, Android v16, user [name removed]",
-      "author_key": "Ochre Badger",
-      "posted_at": "2026-09-04T11:12:30.791Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1545384914776629379",
       "title": "Mismatched comments on multiple items",
       "body": "Some of the comments associated to the 2003 action comedy movie \"T.R.Y.\" (dir: Kazuki Ōmori) are instead related to 1990 supernatural romance \"Ghost\" (dir: Jerry Zucker). I have reconstructed the correspondence as a comment specifically refers to Whoopi Goldberg and [Patrick] Swayze. I believe it is a remnant of early failures in TVTime imports (as that is what I used before the migration).\nI simply have removed the movie from my list of watched items, but it may be helpful to fix it for other users as well. The error may also appear in the reviews (T.R.Y. currently has 35 ratings with an average of 8.2 on Refract)\nDetails: Refract v1.6.719-01a05d02 on Galaxy A53, Android v16, user [name removed]",
@@ -5132,121 +5085,6 @@
       "images": []
     },
     {
-      "id": "1545379532058529802",
-      "title": "Notofication not working properly",
-      "body": "I just got notified about the monthly wrap. However, I don't think it should be displayed like this. \n\nOnePlus Nord 4",
-      "author_key": "Coral Robin",
-      "posted_at": "2026-09-04T10:26:32.206Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔔 Notifications",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0.10459204810548677,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Same here \n[identity removed]\nOS: iOS 27 Developer beta 7 \nApp version: Refract v1.6.719-01a05d05",
-          "date": "2026-09-04T10:53:16.487Z",
-          "is_team": false,
-          "author_key": "Velvet Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "roket6210\nAndroid 16\nRefract v1.6.719-01a05d02",
-          "date": "2026-09-04T11:07:56.424Z",
-          "is_team": false,
-          "author_key": "Coral Robin",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1545379532058529802/1545379532314517595.webp"
-        }
-      ]
-    },
-    {
-      "id": "1545313141448118332",
-      "title": "Episode progress bar not updated",
-      "body": "A new Dark Matter episode is out so the progress bar should be 10/11, but it’s still 10/10. I’m not sure if the servers maybe slow or if it’s just a ui issue.",
-      "author_key": "Coral Lynx",
-      "posted_at": "2026-09-04T06:02:43.451Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "name: fasterburger\niOS 27, iPhone 16 pro\nRefract v1.6.719-01a05d05",
-          "date": "2026-09-04T07:02:02.147Z",
-          "is_team": false,
-          "author_key": "Coral Lynx",
-          "reactions": []
-        },
-        {
-          "text": "Looks like it has the same issue for silo, it’s supposed to be 29/30",
-          "date": "2026-09-04T07:20:27.862Z",
-          "is_team": false,
-          "author_key": "Coral Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1545313141448118332/1545313141699641364.webp"
-        }
-      ]
-    },
-    {
-      "id": "1545203740192018532",
-      "title": "Choose a specific date option squished",
-      "body": "If you go to mark a season as watched and click on the Choose a specific date option, the text on that screen is cut off and you can't see the year in the date picker. If you go into the calendar view on the date picker you can see the full date. \n\nIt can be reproduced by clicking on Choose a specific date option when marking a session as watched.\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.719-01a05d02",
-      "author_key": "Amber Tern",
-      "posted_at": "2026-09-03T22:48:00.159Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-10-04T04:02:41.034Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1545203740192018532/1545203740452069486.webp"
-        }
-      ]
-    },
-    {
       "id": "1545138149024469082",
       "title": "Incomplete grade records",
       "body": "I'm not sure if this is specific to this series, since I haven't noticed it in others. But I've rated all the episodes manually, and for some of them, the ratings don't show up in the episode list but do appear on each episode's individual profile. I tried changing the ratings, but they still don't show up in the episode list (I'm not sure if I explained myself clearly, so I've included several screenshots)",
@@ -5282,46 +5120,6 @@
       ]
     },
     {
-      "id": "1545053423299334214",
-      "title": "Continue tab is broken after marking an episode",
-      "body": "The page get broken after marking an episode in 'continue tab'\n\nOne UI 8.5\nVersion 1.6.3",
-      "author_key": "Teal Wren",
-      "posted_at": "2026-09-03T12:50:41.819Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "🤖 Android",
-        "🐌 Performance"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-10-04T04:02:32.870Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "[mention removed]\nOne Ul 8.5\nVersion 1.6.3",
-          "date": "2026-09-03T13:01:38.666Z",
-          "is_team": false,
-          "author_key": "Teal Wren",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1545053423299334214/1545053423483879434.webp"
-        }
-      ]
-    },
-    {
       "id": "1545011639315603550",
       "title": "Returning series not updating Completed status to In progress.",
       "body": "I have found an edge case of interest. I had the italian series \"Le ricette di Arturo & kiwi\" (also known as \"Arturo & kiwi\") added, with the entire first season watched. At the time, the series had 4 seasons, but all episodes of seasons 2 through 4 had no air date added on TMDB. This meant that having watched the entire season 1, the series counted as completed (purple line in the library). I knew there was a season 5 that came out in 2025 (4th season aired in 2010 and we all thought it ended there), so I took care of updating TMDB and also added all original air dates. Refract now reads all episodes and dates correctly, but the series never reverted to In progress (yellow line) and it still says I have completed it despite me not having marked any episode from seasons 3 to 5 as watched. My guess is that this may also happen if someone has effectively completed a series but an unexpected season is added.\n[identity removed]",
@@ -5336,7 +5134,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0733492893707161,
+      "score": 0.07175287362897964,
       "reactions": [
         {
           "emoji": "💜",
@@ -5371,7 +5169,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.1985625341984911,
+      "score": 1.1724763360435309,
       "reactions": [
         {
           "emoji": "💜",
@@ -5470,7 +5268,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 2.1979639735854226,
+      "score": 2.1501262328614845,
       "reactions": [
         {
           "emoji": "☝️",
@@ -5517,6 +5315,57 @@
       "images": []
     },
     {
+      "id": "1544400017408663592",
+      "title": "Small visual bug on Wrap",
+      "body": "On the image I got after clicking on Share on the Wrap, the little banner on the bottom slightly cuts the tiles with the info, also saw it on some other people's images",
+      "author_key": "Coral Wren",
+      "posted_at": "2026-09-01T17:34:17.715Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [
+        {
+          "tag": "🔍 Investigating",
+          "applied_at": "2026-10-04T11:35:27.872Z",
+          "applied_by": "Exooo"
+        }
+      ],
+      "reactors_unique": 0,
+      "score": 1.9750714629546304,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[name removed]\nNothing Phone 3a - Android 16\nRefract v1.6.719-01a05d02",
+          "date": "2026-09-01T17:40:14.856Z",
+          "is_team": false,
+          "author_key": "Coral Wren",
+          "reactions": []
+        },
+        {
+          "text": "The problem still exists. The screenshots show what it looks like originally and what it looks like after sharing.",
+          "date": "2026-10-04T08:37:39.987Z",
+          "is_team": false,
+          "author_key": "Sage Finch",
+          "reactions": [
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1544400017408663592/1544400017714978987.webp"
+        }
+      ]
+    },
+    {
       "id": "1544103642251141120",
       "title": "Watch time decreases",
       "body": "So my watched time is decreasing instead of increasing, and I’ve watched movies and episodes in the past two weeks. \n\nAnd also now just 6 hours later, even though I’ve watched some episodes today, it decreased again to 6m 19d 12h. 🥹\n\nHope you can fix it! Thanks. 💜",
@@ -5533,7 +5382,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.6185022172252737,
+      "score": 1.5832762124502997,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 2,
@@ -5660,7 +5509,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.03514076264651439,
+      "score": 0.03437593905862674,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5810,7 +5659,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.06467978486764112,
+      "score": 0.06327205716338262,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -5905,7 +5754,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.05731131842473295,
+      "score": 0.05606396222404094,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5931,7 +5780,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.028531697304028405,
+      "score": 0.02791071718131171,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -6072,7 +5921,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.024632082854830546,
+      "score": 0.024095976163701405,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6147,7 +5996,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5468926651289678,
+      "score": 0.5349897814453985,
       "reactions": [
         {
           "emoji": "➕",
@@ -6440,7 +6289,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5767412168136291,
+      "score": 0.564188692238018,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -6487,7 +6336,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.04349942643335199,
+      "score": 0.04255268012250856,
       "reactions": [
         {
           "emoji": "💜",
@@ -6533,7 +6382,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9599757755153903,
+      "score": 0.9390823155668844,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -6768,7 +6617,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.04836997215597861,
+      "score": 0.04731722051189809,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -6850,7 +6699,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.7480085384319611,
+      "score": 0.7317284542491305,
       "reactions": [
         {
           "emoji": "💜",
@@ -6991,7 +6840,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.27244924795622655,
+      "score": 0.26651950723217765,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7359,7 +7208,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.012988341637857679,
+      "score": 0.012705655967313136,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7399,7 +7248,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.27215569056770467,
+      "score": 0.26623233899398235,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7449,7 +7298,7 @@
         }
       ],
       "reactors_unique": 3,
-      "score": 1.2660888268966968,
+      "score": 1.2385329480185916,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7492,7 +7341,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.267120248018247,
+      "score": 1.2395419207029597,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7631,7 +7480,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.0652688922909517,
+      "score": 0.06384834291695085,
       "reactions": [
         {
           "emoji": "👍🏻",
@@ -7666,9 +7515,7 @@
       ],
       "status_tags": [
         {
-          "tag": "🛠 In Progress",
-          "applied_at": "2026-08-20T09:56:57.174Z",
-          "applied_by": "Boulet"
+          "tag": "🛠 In Progress"
         }
       ],
       "reactors_unique": 0,
@@ -7766,7 +7613,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 1.671492917239614,
+      "score": 1.6351135926657123,
       "reactions": [
         {
           "emoji": "💜",
@@ -7842,7 +7689,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1690382839098103,
+      "score": 0.16535923834979321,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -7969,7 +7816,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7158682394001907,
+      "score": 0.7002876750049222,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -8017,7 +7864,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.024179291091029377,
+      "score": 0.023653039217931358,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -8102,7 +7949,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.4125328401174997,
+      "score": 0.4035542402483405,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -8158,7 +8005,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.0074956383622954885,
+      "score": 0.007332499016589575,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8199,7 +8046,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.7021702008007353,
+      "score": 1.6651231983418686,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8260,7 +8107,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2954007214399597,
+      "score": 0.2889714517650536,
       "reactions": [
         {
           "emoji": "🔄",
@@ -8467,7 +8314,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.02144248884754766,
+      "score": 0.02097580229840843,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8504,7 +8351,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2954303441833571,
+      "score": 0.2890004297821792,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8644,7 +8491,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.6533753210129338,
+      "score": 0.6391548881133672,
       "reactions": [
         {
           "emoji": "👆",
@@ -8929,7 +8776,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 2.129801635248173,
+      "score": 2.0834474185072036,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 3,
@@ -8960,7 +8807,12 @@
           "date": "2026-09-27T21:34:30.614Z",
           "is_team": false,
           "author_key": "Velvet Finch",
-          "reactions": []
+          "reactions": [
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
         }
       ],
       "images": [
@@ -9215,7 +9067,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.15172291197508567,
+      "score": 0.14842072803932932,
       "reactions": [
         {
           "emoji": "👆",
@@ -9275,7 +9127,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.23189133941533688,
+      "score": 0.2268443241301037,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9521,7 +9373,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1397702627529091,
+      "score": 0.13672822308763502,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -9660,7 +9512,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.15104142459342013,
+      "score": 0.14775407293747483,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -9729,59 +9581,6 @@
       ]
     },
     {
-      "id": "1533873744253161604",
-      "title": "Weekend Binge Challenge",
-      "body": "Yesterday I completed the 3 items but it didn't count",
-      "author_key": "Ochre Heron",
-      "posted_at": "2026-08-03T16:26:38.626Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "📱 iOS",
-        "📊 Stats"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-10-04T04:02:37.245Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 3,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "- [name removed]\n- iPhone 15, iOS 26.5.2\n- v1.6.703-019fbeb9\n- After I completed the third item, I refreshed the app to see the challenge completed. It didn't changed, so I went to the tv show page to check, and at the card with the completion date was \"Watched on Aug 3, 2026\", but yesterday was August 2. When I finished the show was about 22h40, so I think is something related with the Time Zone. After that I changed the completion date to August 2 but it didn't counted on the challenge.\n Just to clarify, I'm from Brazil, so my time zone is UTC-3 (Brasília Time / BRT).",
-          "date": "2026-08-03T16:59:54.524Z",
-          "is_team": false,
-          "author_key": "Ochre Heron",
-          "reactions": []
-        },
-        {
-          "text": "screenshot of my journal",
-          "date": "2026-08-03T17:02:53.288Z",
-          "is_team": false,
-          "author_key": "Ochre Heron",
-          "reactions": []
-        },
-        {
-          "text": "it was solved",
-          "date": "2026-09-03T17:56:43.977Z",
-          "is_team": false,
-          "author_key": "Ochre Heron",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1533873744253161604/1533873744483713035.webp"
-        }
-      ]
-    },
-    {
       "id": "1533700083072237628",
       "title": "Send button when replying to comment disappears after 12 lines",
       "body": "[identity removed]\nOS: iOS 26.5\nRefract version: v1.6.703-019fbeb9\n\nTV Time had this same issue. When you are replying to a comment from someone else (not writing your own comment), the reply field gives you about 12-13 lines before the send button disappears beneath the message keyboard (I have an iPhone 12, but I believe this issue effects many other users as well). Would be great if this could be fixed? Replying to other users’ comments is the central part of the community aspect of this app. You can’t discuss episodes/topics with other users if you can’t send your reply through.",
@@ -9826,24 +9625,20 @@
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
+        "⏳ Waiting on us",
         "🤖 Android"
       ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-10-03T04:01:50.369Z"
-        }
-      ],
+      "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.04231048139066507,
+      "score": 0.9933302457129666,
       "reactions": [
         {
           "emoji": "👆🏾",
           "count": 1
         }
       ],
-      "comments_count": 1,
-      "activity_7d": 0,
+      "comments_count": 2,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "Yes this is still happening even with the new export",
@@ -9856,6 +9651,13 @@
               "count": 1
             }
           ]
+        },
+        {
+          "text": "Yes this is still happening",
+          "date": "2026-10-04T10:02:44.796Z",
+          "is_team": false,
+          "author_key": "Coral Wren",
+          "reactions": []
         }
       ],
       "images": [
@@ -9881,7 +9683,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.21729478083957796,
+      "score": 0.21256545337498262,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9925,7 +9727,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 4.851152454097404,
+      "score": 4.745569207010398,
       "reactions": [
         {
           "emoji": "👍",
@@ -10768,7 +10570,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 2.338398587973852,
+      "score": 2.2875043482569755,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10858,7 +10660,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 24.64569267550018,
+      "score": 24.109289772476615,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12455,6 +12257,134 @@
       ]
     },
     {
+      "id": "1545392978519134259",
+      "title": "Mismatched comments on \"Memory\" (Anh, Mình Bình Yên Nhé!)",
+      "body": "Some of the comments associated to the 2022 vietnamese drama \"Memory\" (Anh, Mình Bình Yên Nhé!) are instead related to 2022 action thriller \"Memory\" (dir: Martin Campbell). I have reconstructed the correspondence as a comment specifically refers to Liam Neeson, who is involved in the 2022 movie, and because in my library they had the same vote and the same watched date (back in July 2024). I believe it is a remnant of early failures in TVTime imports (as that is what I used before the migration).\nI simply have removed the series from my list of watched items, but it may be helpful to fix it for other users as well.\nDetails: Refract v1.6.719-01a05d02 on Galaxy A53, Android v16, user [name removed]",
+      "author_key": "Amber Robin",
+      "posted_at": "2026-09-04T11:19:58.092Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import",
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1545391102402760745",
+      "title": "Mismatched comments on \"The hunt\"",
+      "body": "Some of the comments associated to the documentary series \"The hunt\" are instead related to2020 satirical action thriller \"The hunt\" (dir: Craig Zobel). I have reconstructed the correspondence as a comment specifically refers to the movie and its premise, rather than talking about the Jacksonville Jaguars on which the series in based on, and because I had them both in my library dated back to February 2022. I believe it is a remnant of early failures in TVTime imports (as that is what I used before the migration).\nI simply have removed the series from my list of watched items, but it may be helpful to fix it for other users as well.\nDetails: Refract v1.6.719-01a05d02 on Galaxy A53, Android v16, user [name removed]",
+      "author_key": "Ochre Badger",
+      "posted_at": "2026-09-04T11:12:30.791Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import",
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1545379532058529802",
+      "title": "Notofication not working properly",
+      "body": "I just got notified about the monthly wrap. However, I don't think it should be displayed like this. \n\nOnePlus Nord 4",
+      "author_key": "Coral Robin",
+      "posted_at": "2026-09-04T10:26:32.206Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🔔 Notifications",
+        "⏳ Waiting on us",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0.10231564715479514,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Same here \n[identity removed]\nOS: iOS 27 Developer beta 7 \nApp version: Refract v1.6.719-01a05d05",
+          "date": "2026-09-04T10:53:16.487Z",
+          "is_team": false,
+          "author_key": "Velvet Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "roket6210\nAndroid 16\nRefract v1.6.719-01a05d02",
+          "date": "2026-09-04T11:07:56.424Z",
+          "is_team": false,
+          "author_key": "Coral Robin",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1545379532058529802/1545379532314517595.webp"
+        }
+      ]
+    },
+    {
+      "id": "1545313141448118332",
+      "title": "Episode progress bar not updated",
+      "body": "A new Dark Matter episode is out so the progress bar should be 10/11, but it’s still 10/10. I’m not sure if the servers maybe slow or if it’s just a ui issue.",
+      "author_key": "Coral Lynx",
+      "posted_at": "2026-09-04T06:02:43.451Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "⏳ Waiting on us",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "name: fasterburger\niOS 27, iPhone 16 pro\nRefract v1.6.719-01a05d05",
+          "date": "2026-09-04T07:02:02.147Z",
+          "is_team": false,
+          "author_key": "Coral Lynx",
+          "reactions": []
+        },
+        {
+          "text": "Looks like it has the same issue for silo, it’s supposed to be 29/30",
+          "date": "2026-09-04T07:20:27.862Z",
+          "is_team": false,
+          "author_key": "Coral Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1545313141448118332/1545313141699641364.webp"
+        }
+      ]
+    },
+    {
       "id": "1534318275897458698",
       "title": "Journal only shows the latest episode rating instead of each episode rating",
       "body": "When I rate individual episodes of a TV show, the Journal doesn't keep a separate rating entry for each episode.\n\nInstead, every new episode rating overwrites the previous one in the Journal. This makes it look like I've only rated the entire show, even though I rated multiple episodes.\n\n**Expected behavior:**\nThe Journal should display a separate \"Rated\" entry for each episode that was rated, ideally associated with the specific episode.\n\nI believe this also applies to the activity page.",
@@ -12678,7 +12608,7 @@
         }
       ],
       "reactors_unique": 2,
-      "score": 0.04273586133629531,
+      "score": 0.04180573369144365,
       "reactions": [
         {
           "emoji": "💜",
@@ -12757,7 +12687,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.27233170036104226,
+      "score": 0.26640451800985515,
       "reactions": [
         {
           "emoji": "💜",
@@ -12816,7 +12746,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.024593331856533517,
+      "score": 0.024058068564218736,
       "reactions": [
         {
           "emoji": "💜",
@@ -12963,16 +12893,20 @@
       "images": []
     },
     {
-      "id": "1540877305503813683",
-      "title": "Horror genre missing or incorrectly classified in TV statistics",
-      "body": "Horror TV shows such as Channel Zero and The Haunting of Hill House are not being counted under the Horror genre in Refract's genre statistics. This causes inaccurate genre statistics, particularly affecting users who watch horror content frequently. The TV genre data should be checked to ensure Horror is correctly classified and included.\n\n📱 via app · Redmi Note 8 Pro · Redmi/begonia/begonia:10/QP1A.190711.020/V12.0.7.0.QGGMIXM:user/release-keys 10 · v1.6.716-01a02013",
-      "author_key": "Golden Finch",
-      "posted_at": "2026-08-23T00:16:17.748Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
+      "id": "1556239976717488192",
+      "title": "share to instagram feature not showing rating",
+      "body": "Hi, I wanted to test out the new share to Instagram feature for a movie I watched. When I try, it shows the card but not the rating I gave the movie\n\n[identity removed]\nApp version: v1.6.740-01a104a9\niPhone 13 iOS 26.6.2",
+      "author_key": "Golden Badger",
+      "posted_at": "2026-10-04T09:42:03.990Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-04T11:34:25.331Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-04T11:34:25.331Z",
+        "applied_by": "Exooo"
+      },
       "tags": [
-        "⏳ Waiting on us"
+        "🎨 UI",
+        "📱 iOS"
       ],
       "status_tags": [],
       "reactors_unique": 0,
@@ -12981,49 +12915,11 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": []
-    },
-    {
-      "id": "1540514974999257201",
-      "title": "Watch time not updating when adding new films or episodes",
-      "body": "The watch time does not change when adding new films or episodes, and it even decreases. Additionally, newly added films do not appear in the journal/log.\n\n📱 via app · 22111317G · Android 14 · v1.6.716-01a02013",
-      "author_key": "Teal Lynx",
-      "posted_at": "2026-08-22T00:16:31.424Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1540358019097821294",
-      "title": "Sort by frequency option not working in lists",
-      "body": "The option to organize by number of times in lists is not functioning. When activated, it does not sort as expected.\n\n📱 via app · iPhone 12 Pro Max · iOS 26.6 · v1.6.716-01a02050",
-      "author_key": "Coral Seal",
-      "posted_at": "2026-08-21T13:52:50.221Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
+      "images": [
+        {
+          "url": "./assets/bugs/1556239976717488192/1556239978131103794.webp"
+        }
+      ]
     },
     {
       "id": "1556037109801025568",
@@ -13047,45 +12943,6 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": []
-    },
-    {
-      "id": "1556034172206710904",
-      "title": "Netflix/TVTime import issue",
-      "body": "Not sure if this is an actual bug or intended behaviour.\n\nI had a show that was marked as complete (but with the wrong date) on TVTime, and that was imported to Refract.\n\nI’ve since obtained my Netflix history, which included some additional watch records for that show, but when I import the Netflix file, those watches are completely ignored.\n\nI’ve also checked a couple of items that weren’t imported from TvTime, and would appear that the Netflix import only works for items not previously marked as watched at all, and won’t create any rewatch records, which is a massive functional gap IMO.\n\nUsername [mention removed] \niPhone 12 iOS 26.4.2\nRefract v1.6.739-01a102e7",
-      "author_key": "Sage Panda",
-      "posted_at": "2026-10-03T20:04:16.371Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-03T23:31:01.098Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-03T23:31:01.098Z",
-        "applied_by": "Exooo"
-      },
-      "tags": [
-        "🔗 Import"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "The first potential match is actually the exact opposite - that one reported the import incorrectly creating rewatch events, while this one is that it isn’t creating any!\n\n[identity removed]",
-          "date": "2026-10-03T20:07:51.785Z",
-          "is_team": false,
-          "author_key": "Sage Panda",
-          "reactions": []
-        },
-        {
-          "text": "I can also provide the import csv on request",
-          "date": "2026-10-03T20:08:08.557Z",
-          "is_team": false,
-          "author_key": "Sage Panda",
-          "reactions": []
-        }
-      ],
       "images": []
     },
     {
@@ -13142,89 +12999,6 @@
       "images": []
     },
     {
-      "id": "1555131607667580938",
-      "title": "Spooky time challenge showing incorrect progress",
-      "body": "Before the event started I had 17 out of 32 movies watched and it shows that on the homepag and if I go to the challenges section itself. If I go into the challenge itself, it says 0 out of 32 movies watched which is correct because I haven't watched any of them this month. \n\nIt can be replicated by having movies previously watched before the challenge started\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.735-01a0f64d | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
-      "author_key": "Ochre Lynx",
-      "posted_at": "2026-10-01T08:17:48.216Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-02T11:37:52.081Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-02T11:37:52.081Z",
-        "applied_by": "Eli"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.8383938473961526,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "This isn't happening anymore and was fixed in an update from yesterday",
-          "date": "2026-10-02T11:36:43.103Z",
-          "is_team": false,
-          "author_key": "Ochre Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1555131607667580938/1555131608162377778.webp"
-        }
-      ]
-    },
-    {
-      "id": "1554626858912587836",
-      "title": "All cast members show Yu Jae Seok's profile picture",
-      "body": "For the series [Jae-seok's B&B Rules!](https://www.themoviedb.org/tv/318167) the profile picture displayed on all cast is the one from Yu Jae Seok, but the images are correct in TMDB.\n\nWhat you did right before it happened: Nothing. The page already displayed the cast members like this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Misty Robin",
-      "posted_at": "2026-09-29T22:52:06.735Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-02T09:45:11.272Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-02T09:45:11.272Z",
-        "applied_by": "Exooo"
-      },
-      "tags": [
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 2,
-      "score": 1.5894852346158692,
-      "reactions": [
-        {
-          "emoji": "😂",
-          "count": 2
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 3,
-      "comments": [
-        {
-          "text": "It's fixed!",
-          "date": "2026-10-01T22:39:08.577Z",
-          "is_team": false,
-          "author_key": "Misty Robin",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1554626858912587836/1554626859197796522.webp"
-        }
-      ]
-    },
-    {
       "id": "1554288641973424232",
       "title": "Multiple active pages in navigation bar",
       "body": "Quite often, multiple pages are marked as active in the navigation bar and not only the current one.\n\n[identity removed]\nRefract v1.6.733-01a0e789\nGalaxy S22, Android 16",
@@ -13278,7 +13052,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.970831437161139,
+      "score": 3.8844079984550386,
       "reactions": [],
       "comments_count": 18,
       "activity_7d": 19,
@@ -13501,6 +13275,81 @@
       ]
     },
     {
+      "id": "1545203740192018532",
+      "title": "Choose a specific date option squished",
+      "body": "If you go to mark a season as watched and click on the Choose a specific date option, the text on that screen is cut off and you can't see the year in the date picker. If you go into the calendar view on the date picker you can see the full date. \n\nIt can be reproduced by clicking on Choose a specific date option when marking a session as watched.\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.719-01a05d02",
+      "author_key": "Amber Tern",
+      "posted_at": "2026-09-03T22:48:00.159Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-04T11:34:32.647Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-04T11:34:32.647Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "It is still happening",
+          "date": "2026-10-04T09:59:12.518Z",
+          "is_team": false,
+          "author_key": "Amber Tern",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1545203740192018532/1545203740452069486.webp"
+        }
+      ]
+    },
+    {
+      "id": "1545053423299334214",
+      "title": "Continue tab is broken after marking an episode",
+      "body": "The page get broken after marking an episode in 'continue tab'\n\nOne UI 8.5\nVersion 1.6.3",
+      "author_key": "Teal Wren",
+      "posted_at": "2026-09-03T12:50:41.819Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-04T11:36:03.510Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-04T11:36:03.510Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "[mention removed]\nOne Ul 8.5\nVersion 1.6.3",
+          "date": "2026-09-03T13:01:38.666Z",
+          "is_team": false,
+          "author_key": "Teal Wren",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1545053423299334214/1545053423483879434.webp"
+        }
+      ]
+    },
+    {
       "id": "1544861417734406154",
       "title": "UI interface",
       "body": "Bugging out badly",
@@ -13605,257 +13454,6 @@
       ]
     },
     {
-      "id": "1544415984809410581",
-      "title": "\"We couldn't reach our servers\" error",
-      "body": "Cannot log in to the app. \n\nIt was initially stuck on loading when trying to access it, so I uninstalled it to see if that would fix it. I reinstalled it and am now trying to log back in, but seems like I'm fully locked out.\n\nDevice: Samsung S24 Ultra",
-      "author_key": "Misty Robin",
-      "posted_at": "2026-09-01T18:37:44.640Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-02T08:55:06.803Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-02T08:55:06.803Z",
-        "applied_by": "Exooo"
-      },
-      "tags": [
-        "⚠ Critical",
-        "🤖 Android",
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "I cannot access my username since I can't log into the app. Same thing for the app's version but I just re-downloaded it so it should be the latest.\n\nAndroid version: 16\nOne UI version: 8.5",
-          "date": "2026-09-01T18:43:04.412Z",
-          "is_team": false,
-          "author_key": "Misty Robin",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1544415984809410581/1544415985036165240.webp"
-        }
-      ]
-    },
-    {
-      "id": "1544400017408663592",
-      "title": "Small visual bug on Wrap",
-      "body": "On the image I got after clicking on Share on the Wrap, the little banner on the bottom slightly cuts the tiles with the info, also saw it on some other people's images",
-      "author_key": "Coral Wren",
-      "posted_at": "2026-09-01T17:34:17.715Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-02T08:55:16.553Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-02T08:55:16.553Z",
-        "applied_by": "Exooo"
-      },
-      "tags": [
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "[name removed]\nNothing Phone 3a - Android 16\nRefract v1.6.719-01a05d02",
-          "date": "2026-09-01T17:40:14.856Z",
-          "is_team": false,
-          "author_key": "Coral Wren",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1544400017408663592/1544400017714978987.webp"
-        }
-      ]
-    },
-    {
-      "id": "1544397941576433664",
-      "title": "Unable to remove rating",
-      "body": "I realised that I rated an episode instead of the entire show and I am unable to remove the rating from the episode. I tried unwatching the episode but it stayed. The episode in question is\nhttps://getrefract.app/episode/5148/2/20\nThe same happens with movies.\n\nIt can be reproduced by rating an episode/movie and want to remove it\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.719-01a05d02",
-      "author_key": "Ivory Seal",
-      "posted_at": "2026-09-01T17:26:02.798Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-02T08:55:22.857Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-02T08:55:22.857Z",
-        "applied_by": "Exooo"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.03987930801352069,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1544383737092112424",
-      "title": "Trendsetter Achivement not is updating",
-      "body": "I have 1 list in following only that is synced , copied and liked by other person but trendsetter Achivement still shows 0",
-      "author_key": "Ochre Fox",
-      "posted_at": "2026-09-01T16:29:36.185Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-02T08:54:50.584Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-02T08:54:50.584Z",
-        "applied_by": "Exooo"
-      },
-      "tags": [
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.0407698831062655,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Refract v1.6.719-01a05d02",
-          "date": "2026-09-01T16:31:25.728Z",
-          "is_team": false,
-          "author_key": "Ochre Fox",
-          "reactions": []
-        },
-        {
-          "text": "Journalist achievement was not unlocked after posting a review with followers setting",
-          "date": "2026-09-01T22:47:13.809Z",
-          "is_team": false,
-          "author_key": "Ochre Fox",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1544383737092112424/1544383737343778910.webp"
-        }
-      ]
-    },
-    {
-      "id": "1542536415068291213",
-      "title": "Show has been marked as unwatched",
-      "body": "I had previously marked the show “Amanda and Alan’s Italian Job” as watched. I was looking at it today and it is showing that I haven’t watched any episodes and I’m not sure why as I haven’t changed anything. Is it possible to restore the dates I watched it?\n\n[mention removed]\nRefract v1.6.717-01a04235\niOS 18.7.8\niPhone 15",
-      "author_key": "Misty Finch",
-      "posted_at": "2026-08-27T14:09:00.293Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-02T08:55:43.579Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-02T08:55:43.579Z",
-        "applied_by": "Exooo"
-      },
-      "tags": [
-        "📱 iOS",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0.07780899525686456,
-      "reactions": [],
-      "comments_count": 9,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "This seems to be fixed now",
-          "date": "2026-08-28T15:54:46.978Z",
-          "is_team": false,
-          "author_key": "Misty Finch",
-          "reactions": []
-        },
-        {
-          "text": "Did you do anything differently? This is impacting me currently",
-          "date": "2026-08-29T02:46:52.082Z",
-          "is_team": false,
-          "author_key": "Ivory Panda",
-          "reactions": []
-        },
-        {
-          "text": "[mention removed] \nRefract v1.6.717-01a04235\niOS 18.7.8 \niPhone 15 Pro\n\nShow - Survivor\nInterestingly enough shows date I watched when you are in the episode but not registering as watched episode and all episodes watched not showing. I did try reimporting my tvtime export as some episodes were in there and no errors were given in that log",
-          "date": "2026-08-29T02:50:21.093Z",
-          "is_team": false,
-          "author_key": "Ivory Panda",
-          "reactions": []
-        },
-        {
-          "text": "It had just sorted itself out when I looked again a day or 2 later. I think your issue is something slightly separate which I do also see but haven’t got round to doing a bug report for (or seeing if anyone else has already reported it). I see you have survivor as marked as plan to watch. Did you watch some episodes and then put it back on plan to watch? If I do that the eps stop showing as watched on the overall show page but if you go into each episode it still has the dates. Does that sound like your issue?",
-          "date": "2026-08-29T07:35:36.783Z",
-          "is_team": false,
-          "author_key": "Misty Finch",
-          "reactions": []
-        },
-        {
-          "text": "It only is plan to watch because nothing is showing as watched anymore 🙁 It was in watching until this happened. I hope someone can look into it soon with this bug report, otherwise I think I hit my limit with so many bugs and data not matching my original stuff :/",
-          "date": "2026-08-31T01:40:52.806Z",
-          "is_team": false,
-          "author_key": "Ivory Panda",
-          "reactions": []
-        },
-        {
-          "text": "Hey! There is indeed some Trakt import messing with the status\nAll your data is saved and there in the database, however the status of Survivor has been put in \"plan to watch\" instead of ongoing. \nI'm releasing fixes to prevent it from happening (either manually or through Trakt import).\nWhen a show is on \"planned\" status, there is a guard in the code to not display épisodes watched (legacy code I'll fix). This is why when you go to the episode detail page (where this guard isn't) you can see the true data. \nI'll release the fix first to prevent it from happening again then I'll heal your data, in the meantime you can just use the episode detail page this is a mirror of database truth 🙏🏻💜",
-          "date": "2026-09-01T05:46:28.582Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Velvet Badger",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "[mention removed] can you check Survivor and tell me if it's alright now?",
-          "date": "2026-09-01T10:00:31.212Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Velvet Badger",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "You are amazing, it is back!!! Thank you",
-          "date": "2026-09-01T11:26:09.366Z",
-          "is_team": false,
-          "author_key": "Ivory Panda",
-          "reactions": []
-        },
-        {
-          "text": "Niceee",
-          "date": "2026-09-01T11:30:38.670Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Velvet Badger",
-          "team_name": "Exooo",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1542536415068291213/1542536415425069176.webp"
-        }
-      ]
-    },
-    {
       "id": "1537574652581380196",
       "title": "Movie titles in English in library regardless of chosen language",
       "body": "Titles in my library are all in English, despite the app language being set to Spanish. This happens for all titles, regardless of their original language.\nThe same occurs in profile, diary, and recent activity.",
@@ -13902,58 +13500,55 @@
       "images": []
     },
     {
-      "id": "1537219217986949230",
-      "title": "Stats are counting the entire show even if we watch only last season",
-      "body": "Hello, my stats are bugged, and I finally found why\nI have one tv shows, I watched only last seasons, s31 s32 and s33, so it says TV show up to date, but the full show is marked at up to date with the date of the finale of s33, but I didn't watched s1 to s30, not marked watched, but count as watched in my stats for the month of the finale of s33 \nI'm not sure it's really clear\n\nFor example koh lanta \n\n[identity removed]\nAndroid 16, one ui 8.5, Refract v1.6.711-019ff4cb",
-      "author_key": "Sage Panda",
-      "posted_at": "2026-08-12T22:00:21.720Z",
+      "id": "1533873744253161604",
+      "title": "Weekend Binge Challenge",
+      "body": "Yesterday I completed the 3 items but it didn't count",
+      "author_key": "Ochre Heron",
+      "posted_at": "2026-08-03T16:26:38.626Z",
       "status": "fixed",
-      "resolved_at": "2026-10-02T08:55:34.629Z",
+      "resolved_at": "2026-10-04T11:35:54.195Z",
       "terminal_attribution": {
-        "applied_at": "2026-10-02T08:55:34.629Z",
+        "applied_at": "2026-10-04T11:35:54.195Z",
         "applied_by": "Exooo"
       },
       "tags": [
-        "📊 Stats",
-        "🤖 Android"
+        "📱 iOS",
+        "📊 Stats"
       ],
       "status_tags": [],
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 4,
+      "comments_count": 3,
       "activity_7d": 0,
       "comments": [
         {
-          "text": "For example, s3 : \nEpisode 1, not marked as watched, but on the episode page, marked as watched",
-          "date": "2026-09-01T16:58:42.951Z",
+          "text": "- [name removed]\n- iPhone 15, iOS 26.5.2\n- v1.6.703-019fbeb9\n- After I completed the third item, I refreshed the app to see the challenge completed. It didn't changed, so I went to the tv show page to check, and at the card with the completion date was \"Watched on Aug 3, 2026\", but yesterday was August 2. When I finished the show was about 22h40, so I think is something related with the Time Zone. After that I changed the completion date to August 2 but it didn't counted on the challenge.\n Just to clarify, I'm from Brazil, so my time zone is UTC-3 (Brasília Time / BRT).",
+          "date": "2026-08-03T16:59:54.524Z",
           "is_team": false,
-          "author_key": "Sage Panda",
+          "author_key": "Ochre Heron",
           "reactions": []
         },
         {
-          "text": "Same for all seasons not watched",
-          "date": "2026-09-01T16:59:18.798Z",
+          "text": "screenshot of my journal",
+          "date": "2026-08-03T17:02:53.288Z",
           "is_team": false,
-          "author_key": "Sage Panda",
+          "author_key": "Ochre Heron",
           "reactions": []
         },
         {
-          "text": "And it seems that, because I watched the last season, it marked the series as \"up to date\" and counted every seasons before",
-          "date": "2026-09-01T16:59:48.819Z",
+          "text": "it was solved",
+          "date": "2026-09-03T17:56:43.977Z",
           "is_team": false,
-          "author_key": "Sage Panda",
-          "reactions": []
-        },
-        {
-          "text": "Because 23 of June is the date I watched the last episode of s33 of the tv show",
-          "date": "2026-09-01T17:00:34.468Z",
-          "is_team": false,
-          "author_key": "Sage Panda",
+          "author_key": "Ochre Heron",
           "reactions": []
         }
       ],
-      "images": []
+      "images": [
+        {
+          "url": "./assets/bugs/1533873744253161604/1533873744483713035.webp"
+        }
+      ]
     },
     {
       "id": "1526211664020508762",
@@ -13973,7 +13568,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.1141742761698926,
+      "score": 0.11168932214589693,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14273,6 +13868,456 @@
       ]
     },
     {
+      "id": "1555131607667580938",
+      "title": "Spooky time challenge showing incorrect progress",
+      "body": "Before the event started I had 17 out of 32 movies watched and it shows that on the homepag and if I go to the challenges section itself. If I go into the challenge itself, it says 0 out of 32 movies watched which is correct because I haven't watched any of them this month. \n\nIt can be replicated by having movies previously watched before the challenge started\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.735-01a0f64d | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
+      "author_key": "Ochre Lynx",
+      "posted_at": "2026-10-01T08:17:48.216Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-02T11:37:52.081Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-02T11:37:52.081Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.8201465658309058,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "This isn't happening anymore and was fixed in an update from yesterday",
+          "date": "2026-10-02T11:36:43.103Z",
+          "is_team": false,
+          "author_key": "Ochre Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1555131607667580938/1555131608162377778.webp"
+        }
+      ]
+    },
+    {
+      "id": "1550546310342639626",
+      "title": "Rewatches count overlaps with comments count in season page",
+      "body": "[identity removed]\nDevice: iPhone 17 iOS27\nRefract v1.6.728-01a0b551 | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied",
+      "author_key": "Silver Robin",
+      "posted_at": "2026-09-18T16:37:28.143Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-04T11:32:15.883Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-04T11:32:15.883Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 3.97010405514964,
+      "reactions": [],
+      "comments_count": 3,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Not all of mine overlaps, but neither looks right. Shouldn't the \"x2\" be inside a green circle with \"x2\" in white?",
+          "date": "2026-09-18T22:47:18.970Z",
+          "is_team": false,
+          "author_key": "Golden Otter",
+          "reactions": []
+        },
+        {
+          "text": "bump",
+          "date": "2026-10-04T09:50:58.072Z",
+          "is_team": false,
+          "author_key": "Golden Otter",
+          "reactions": []
+        },
+        {
+          "text": "This is not a bug, this will already be changed for the shows revamping",
+          "date": "2026-10-04T11:32:13.079Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Silver Wren",
+          "team_name": "Exooo",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1550546310342639626/1550546310497701988.webp"
+        }
+      ]
+    },
+    {
+      "id": "1550637295026053200",
+      "title": "Tapping the watched checkmark marks the episode as unwatched",
+      "body": "It's basically what's in the title. When I tap the checkmark on a watched episode in the episode list, it immediately marks the episode as unwatched.\n\nIt should open a bottom sheet with options to either mark the episode as unwatched or mark a rewatch. I was trying to mark a rewatch and got my previous watch date from 2024 deleted.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Velvet Finch",
+      "posted_at": "2026-09-18T22:39:00.582Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-04T11:31:22.313Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-04T11:31:22.313Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "bump",
+          "date": "2026-10-04T09:51:19.957Z",
+          "is_team": false,
+          "author_key": "Velvet Finch",
+          "reactions": []
+        },
+        {
+          "text": "This is not a bug, put a suggestion if needed but some users like it that way\nWill be studied for the shows revamping",
+          "date": "2026-10-04T11:31:16.150Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Coral Wren",
+          "team_name": "Exooo",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1550637295026053200/1550637296351576117.webp"
+        }
+      ]
+    },
+    {
+      "id": "1554626858912587836",
+      "title": "All cast members show Yu Jae Seok's profile picture",
+      "body": "For the series [Jae-seok's B&B Rules!](https://www.themoviedb.org/tv/318167) the profile picture displayed on all cast is the one from Yu Jae Seok, but the images are correct in TMDB.\n\nWhat you did right before it happened: Nothing. The page already displayed the cast members like this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Misty Robin",
+      "posted_at": "2026-09-29T22:52:06.735Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-02T09:45:11.272Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-02T09:45:11.272Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 2,
+      "score": 1.5548907719896028,
+      "reactions": [
+        {
+          "emoji": "😂",
+          "count": 2
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 3,
+      "comments": [
+        {
+          "text": "It's fixed!",
+          "date": "2026-10-01T22:39:08.577Z",
+          "is_team": false,
+          "author_key": "Misty Robin",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1554626858912587836/1554626859197796522.webp"
+        }
+      ]
+    },
+    {
+      "id": "1542536415068291213",
+      "title": "Show has been marked as unwatched",
+      "body": "I had previously marked the show “Amanda and Alan’s Italian Job” as watched. I was looking at it today and it is showing that I haven’t watched any episodes and I’m not sure why as I haven’t changed anything. Is it possible to restore the dates I watched it?\n\n[mention removed]\nRefract v1.6.717-01a04235\niOS 18.7.8\niPhone 15",
+      "author_key": "Misty Finch",
+      "posted_at": "2026-08-27T14:09:00.293Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-02T08:55:43.579Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-02T08:55:43.579Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "📱 iOS",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0.0761155159342639,
+      "reactions": [],
+      "comments_count": 9,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "This seems to be fixed now",
+          "date": "2026-08-28T15:54:46.978Z",
+          "is_team": false,
+          "author_key": "Misty Finch",
+          "reactions": []
+        },
+        {
+          "text": "Did you do anything differently? This is impacting me currently",
+          "date": "2026-08-29T02:46:52.082Z",
+          "is_team": false,
+          "author_key": "Ivory Panda",
+          "reactions": []
+        },
+        {
+          "text": "[mention removed] \nRefract v1.6.717-01a04235\niOS 18.7.8 \niPhone 15 Pro\n\nShow - Survivor\nInterestingly enough shows date I watched when you are in the episode but not registering as watched episode and all episodes watched not showing. I did try reimporting my tvtime export as some episodes were in there and no errors were given in that log",
+          "date": "2026-08-29T02:50:21.093Z",
+          "is_team": false,
+          "author_key": "Ivory Panda",
+          "reactions": []
+        },
+        {
+          "text": "It had just sorted itself out when I looked again a day or 2 later. I think your issue is something slightly separate which I do also see but haven’t got round to doing a bug report for (or seeing if anyone else has already reported it). I see you have survivor as marked as plan to watch. Did you watch some episodes and then put it back on plan to watch? If I do that the eps stop showing as watched on the overall show page but if you go into each episode it still has the dates. Does that sound like your issue?",
+          "date": "2026-08-29T07:35:36.783Z",
+          "is_team": false,
+          "author_key": "Misty Finch",
+          "reactions": []
+        },
+        {
+          "text": "It only is plan to watch because nothing is showing as watched anymore 🙁 It was in watching until this happened. I hope someone can look into it soon with this bug report, otherwise I think I hit my limit with so many bugs and data not matching my original stuff :/",
+          "date": "2026-08-31T01:40:52.806Z",
+          "is_team": false,
+          "author_key": "Ivory Panda",
+          "reactions": []
+        },
+        {
+          "text": "Hey! There is indeed some Trakt import messing with the status\nAll your data is saved and there in the database, however the status of Survivor has been put in \"plan to watch\" instead of ongoing. \nI'm releasing fixes to prevent it from happening (either manually or through Trakt import).\nWhen a show is on \"planned\" status, there is a guard in the code to not display épisodes watched (legacy code I'll fix). This is why when you go to the episode detail page (where this guard isn't) you can see the true data. \nI'll release the fix first to prevent it from happening again then I'll heal your data, in the meantime you can just use the episode detail page this is a mirror of database truth 🙏🏻💜",
+          "date": "2026-09-01T05:46:28.582Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Velvet Badger",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "[mention removed] can you check Survivor and tell me if it's alright now?",
+          "date": "2026-09-01T10:00:31.212Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Velvet Badger",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "You are amazing, it is back!!! Thank you",
+          "date": "2026-09-01T11:26:09.366Z",
+          "is_team": false,
+          "author_key": "Ivory Panda",
+          "reactions": []
+        },
+        {
+          "text": "Niceee",
+          "date": "2026-09-01T11:30:38.670Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Velvet Badger",
+          "team_name": "Exooo",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1542536415068291213/1542536415425069176.webp"
+        }
+      ]
+    },
+    {
+      "id": "1537219217986949230",
+      "title": "Stats are counting the entire show even if we watch only last season",
+      "body": "Hello, my stats are bugged, and I finally found why\nI have one tv shows, I watched only last seasons, s31 s32 and s33, so it says TV show up to date, but the full show is marked at up to date with the date of the finale of s33, but I didn't watched s1 to s30, not marked watched, but count as watched in my stats for the month of the finale of s33 \nI'm not sure it's really clear\n\nFor example koh lanta \n\n[identity removed]\nAndroid 16, one ui 8.5, Refract v1.6.711-019ff4cb",
+      "author_key": "Sage Panda",
+      "posted_at": "2026-08-12T22:00:21.720Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-02T08:55:34.629Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-02T08:55:34.629Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 4,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "For example, s3 : \nEpisode 1, not marked as watched, but on the episode page, marked as watched",
+          "date": "2026-09-01T16:58:42.951Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "Same for all seasons not watched",
+          "date": "2026-09-01T16:59:18.798Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "And it seems that, because I watched the last season, it marked the series as \"up to date\" and counted every seasons before",
+          "date": "2026-09-01T16:59:48.819Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "Because 23 of June is the date I watched the last episode of s33 of the tv show",
+          "date": "2026-09-01T17:00:34.468Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1544397941576433664",
+      "title": "Unable to remove rating",
+      "body": "I realised that I rated an episode instead of the entire show and I am unable to remove the rating from the episode. I tried unwatching the episode but it stayed. The episode in question is\nhttps://getrefract.app/episode/5148/2/20\nThe same happens with movies.\n\nIt can be reproduced by rating an episode/movie and want to remove it\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.719-01a05d02",
+      "author_key": "Ivory Seal",
+      "posted_at": "2026-09-01T17:26:02.798Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-02T08:55:22.857Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-02T08:55:22.857Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.03901135202337367,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1544415984809410581",
+      "title": "\"We couldn't reach our servers\" error",
+      "body": "Cannot log in to the app. \n\nIt was initially stuck on loading when trying to access it, so I uninstalled it to see if that would fix it. I reinstalled it and am now trying to log back in, but seems like I'm fully locked out.\n\nDevice: Samsung S24 Ultra",
+      "author_key": "Misty Robin",
+      "posted_at": "2026-09-01T18:37:44.640Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-02T08:55:06.803Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-02T08:55:06.803Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "⚠ Critical",
+        "🤖 Android",
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "I cannot access my username since I can't log into the app. Same thing for the app's version but I just re-downloaded it so it should be the latest.\n\nAndroid version: 16\nOne UI version: 8.5",
+          "date": "2026-09-01T18:43:04.412Z",
+          "is_team": false,
+          "author_key": "Misty Robin",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1544415984809410581/1544415985036165240.webp"
+        }
+      ]
+    },
+    {
+      "id": "1544383737092112424",
+      "title": "Trendsetter Achivement not is updating",
+      "body": "I have 1 list in following only that is synced , copied and liked by other person but trendsetter Achivement still shows 0",
+      "author_key": "Ochre Fox",
+      "posted_at": "2026-09-01T16:29:36.185Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-02T08:54:50.584Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-02T08:54:50.584Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.03988254413218701,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Refract v1.6.719-01a05d02",
+          "date": "2026-09-01T16:31:25.728Z",
+          "is_team": false,
+          "author_key": "Ochre Fox",
+          "reactions": []
+        },
+        {
+          "text": "Journalist achievement was not unlocked after posting a review with followers setting",
+          "date": "2026-09-01T22:47:13.809Z",
+          "is_team": false,
+          "author_key": "Ochre Fox",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1544383737092112424/1544383737343778910.webp"
+        }
+      ]
+    },
+    {
       "id": "1554587625640296552",
       "title": "Stats decremented instead of incremented when marking episodes",
       "body": "User marked 3 episodes and the stats removed 3 episodes instead of adding them.\n\n📱 via app · iPhone 16 Pro Max · iOS 27.0.1 · v1.6.733-01a0e78d",
@@ -14289,7 +14334,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.736488037148808,
+      "score": 2.676929551755738,
       "reactions": [
         {
           "emoji": "🎯",
@@ -14328,7 +14373,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8245759283323013,
+      "score": 1.784864817850214,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 4,
@@ -14462,7 +14507,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 2.302290466143924,
+      "score": 2.2521821041715815,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14656,7 +14701,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8078029863283276,
+      "score": 1.768456931716312,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -15002,7 +15047,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.3597248365991872,
+      "score": 1.3301310102349522,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 1,
@@ -15291,7 +15336,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.013075919331434201,
+      "score": 0.012791327570048817,
       "reactions": [
         {
           "emoji": "💜",
@@ -15417,7 +15462,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.014868866924145085,
+      "score": 0.01454525242940171,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -15855,7 +15900,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 3.328205961304837,
+      "score": 3.255768989741082,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16070,7 +16115,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.013636787206373078,
+      "score": 0.013339988396872192,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -16216,7 +16261,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00647631181022811,
+      "score": 0.006335357668600538,
       "reactions": [
         {
           "emoji": "💜",
@@ -16244,7 +16289,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.006476216626711356,
+      "score": 0.0063352645567120915,
       "reactions": [
         {
           "emoji": "👍",
@@ -16311,7 +16356,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.3031166917976806,
+      "score": 1.2747549173626047,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16743,7 +16788,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0045296996589712785,
+      "score": 0.004431112693740132,
       "reactions": [
         {
           "emoji": "🤔",
@@ -16817,7 +16862,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1256221685905503,
+      "score": 1.1011234861274737,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -16957,11 +17002,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1551595399565807668/1551595399867932762.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1551489859326181437",
@@ -17106,11 +17147,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1535362347168956477/1535362348125261875.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1535379578720096326",
@@ -17186,15 +17223,15 @@
           "text": "It's normal it should be in 728 [mention removed]",
           "date": "2026-09-18T14:25:29.807Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Silver Seal",
-          "team_name": "Exooo",
           "reactions": [
             {
               "emoji": "💜",
               "count": 1
             }
-          ]
+          ],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "\"...::: MARVEL :::...\" — 65 titles on Refract\nhttps://getrefract.app/list/marvel-ah2nt https://getrefract.app/list/marvel-ah2nt\n\nit works!",
@@ -17246,15 +17283,15 @@
           "text": "loooool love it",
           "date": "2026-09-18T11:34:42.220Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Misty Robin",
-          "team_name": "Exooo",
           "reactions": [
             {
               "emoji": "😭",
               "count": 2
             }
-          ]
+          ],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I'm a little curious: should I have replied to this thread from the get go? the bot says to open a new report, which is why I made a new thread, but I want to make sure which way is correct in case I find myself in the same situation later on",
@@ -17267,10 +17304,10 @@
           "text": "it was fixed just not released, but 1.6.728 is out so it should work now?",
           "date": "2026-09-18T16:33:40.544Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Azure Sparrow",
-          "team_name": "Eli",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "yes, it's fixed! 🧡",
@@ -17285,11 +17322,7 @@
           ]
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1550090969213567066/1550090969519489084.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1548228036464222258",
@@ -17340,11 +17373,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1548228036464222258/1548228036690968626.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1534914502137479198",
