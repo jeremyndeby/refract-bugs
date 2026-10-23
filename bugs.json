@@ -1,6 +1,6 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-10-23T06:20:04.179Z",
+  "generated_at": "2026-10-23T09:20:03.925Z",
   "bugs": [
     {
       "id": "1562994016855920741",
@@ -135,7 +135,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.8688916402877247,
+      "score": 3.821300199402425,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -391,7 +391,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9266556288876417,
+      "score": 1.9029557360000457,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -709,7 +709,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 6.344527424330425,
+      "score": 6.2664830566061,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -839,7 +839,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6077613712703136,
+      "score": 0.6002852664675882,
       "reactions": [
         {
           "emoji": "👍",
@@ -1064,7 +1064,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 13.863071097153988,
+      "score": 13.692540725680509,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 19,
@@ -1246,54 +1246,6 @@
       ]
     },
     {
-      "id": "1560666591602147399",
-      "title": "Series character pictures show the wrong actors",
-      "body": "I've found 3 series where the character's picture doesn't match the actor who plays them. I'm sure these are not isolated cases, but everything is correct in TMDB, so I've no clue where this info is being pulled from.\n\n1. [Take Charge of My Heart](https://www.themoviedb.org/tv/289423) - Chae Soo Bin's character picture gets applied to every character that has the same name has her character. This includes an actress playing her younger self, parents and friends, a total of 7 actors.\n\n2. [A-Teen](https://www.themoviedb.org/tv/87687-a-teen) - The character image of actress Kang Min-ah, is being applied to actor Ryu Ui-hyun. The characters are siblings, it recognized the first name (last name) and applied her picture to both.\n\n3. [12 Monkeys](https://www.themoviedb.org/tv/60948-12-monkeys) - I noticed that in S02 E11, the character picture for actress Emily Hampshire also appears as character picture for actress Glenda MacInnis. It's possible that happens in other episodes and with other actors, but I only noticed this one.\n\nWhat you did right before it happened: Just marked an episode as watched and noticed this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.744-01a1310d",
-      "author_key": "Azure Wren",
-      "posted_at": "2026-10-16T14:51:51.221Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 3,
-      "activity_7d": 4,
-      "comments": [
-        {
-          "text": "Update to A-Teen. I finally found the mix up, and these 3 series have the exact same problem.",
-          "date": "2026-10-17T10:45:06.365Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "4. [Agent Kim Reactivated](https://www.themoviedb.org/tv/296206) - At least in episode 1, the pictures of actors Joo Sang Wook and Yoo Ji An are applied in other actors.",
-          "date": "2026-10-21T08:06:15.076Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "5. [The East Palace](https://www.themoviedb.org/tv/279323) - In episode 1 the character pictures from actors Nam Joo Hyuk and Jang Young Nam are applied in other actors. In episode 2 it happens with Roh Yoon Seo and Cho Seung Woo.",
-          "date": "2026-10-22T14:53:16.036Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1560666591602147399/1560666591983702016.webp"
-        }
-      ]
-    },
-    {
       "id": "1560627389946396743",
       "title": "Continue section shows incorrect episode count after marking episode as viewed",
       "body": "In the continue section, there is one show that displays 460/460 episodes despite having 2 episodes pending. When marking one episode as viewed, the count changes to 461/461 instead of the expected 461/460.\n\n📱 via app · 25102PCBEG · Android 16 · v1.6.744-01a1310d\n[identity removed]",
@@ -1313,31 +1265,6 @@
       "activity_7d": 0,
       "comments": [],
       "images": []
-    },
-    {
-      "id": "1560506575792246875",
-      "title": "Watch list cards become blank and unclickable partway through list",
-      "body": "Approximately halfway down the watch list, cards stop loading and display as blank. Cards are unclickable. Issue occurs intermittently (noticed within the past hour). Scrolling slowly through the entire list works, but using the jump-to-top button causes cards in the first half of the list to also appear blank.\n\n📱 via app · iPhone 14 · iOS 26.6.2 · v1.6.744-01a13117\n[identity removed]",
-      "author_key": "Silver Robin",
-      "posted_at": "2026-10-16T04:16:00.479Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1560506575792246875/1560506576131989634.webp"
-        }
-      ]
     },
     {
       "id": "1560073289152598147",
@@ -1390,7 +1317,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.4299058243577253,
+      "score": 0.424617530053198,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1401,41 +1328,6 @@
       "activity_7d": 0,
       "comments": [],
       "images": []
-    },
-    {
-      "id": "1559952183053652119",
-      "title": "Problem in achievements page",
-      "body": "I’ve noticed that when I scroll to the bottom of the achievements page, I can't switch sections (all – in progress – to unlock...); specifically, those buttons don't seem to be clickable. I can only switch sections when I scroll back up—roughly to where the first badge is visible. In the screenshot with layout boundaries enabled, I’ve indicated the point where they stop working or become inaccessible.",
-      "author_key": "Velvet Finch",
-      "posted_at": "2026-10-14T15:33:02.950Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "- [name removed] \n- Oppo A5 Pro CPH2695_16.0.5.1200(EX01B40P02)\n- Refract v1.6.744-01a1310d | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-10-14T15:38:20.501Z",
-          "is_team": false,
-          "author_key": "Velvet Finch",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1559952183053652119/1559952183280148651.webp"
-        }
-      ]
     },
     {
       "id": "1559949046162919454",
@@ -1453,7 +1345,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.5674500139769125,
+      "score": 1.5481687283745855,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -1641,7 +1533,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9921166978391514,
+      "score": 1.9676115648768906,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 2,
@@ -1671,34 +1563,6 @@
       "images": [
         {
           "url": "./assets/bugs/1559150539814473729/1559150540179505194.webp"
-        }
-      ]
-    },
-    {
-      "id": "1558942867211161770",
-      "title": "Spoiler comments aren’t being hidden if the comment contains new lines",
-      "body": "[identity removed]\n\n2. Hello! When I comment on an episode and click the spoiler button to write a spoiler filled commentary and post it, it doesn’t seem to hide the comment if I include new lines in my comment. I have screenshots of what I mean. Right before posting the comment I mark the episode as watched, but sometimes I mark the episode as watched after posting the comment. I also will do speech to text on my notes app with live commentary during an episode because it’s quicker than typing it all by hand and then go to the comment section on an episode in Refract, click the spoiler button, and tap in between the 4 |||| and paste what I had from the notes app. I have also just done a straight speech to text in the Refract comment section after clicking the spoiler button.\n\nI saw that this has been a reported issue over a month ago and as recent as about a week ago with it getting flagged as fixed with the next update, but I’m still having the same issue.\n\n3. I have an iPhone 13 Pro on iOS 26.7.1\n\n4. Refract v1.6.743-01a12b02\n\n5. Screenshots:",
-      "author_key": "Amber Heron",
-      "posted_at": "2026-10-11T20:42:23.301Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1558942867211161770/1558942868113195008.webp"
         }
       ]
     },
@@ -1769,29 +1633,6 @@
       "images": []
     },
     {
-      "id": "1558650278444539935",
-      "title": "Marking First Episode on Series Page Not Bringing Up Ratings Drawer",
-      "body": "When I marked the first episode of The Terror watched via the series page, it didn't bring up the ratings drawer. I've noticed it on the continue screen too when moving items from Not Watched or Old Friends to continue.\n\nAndroid 16\nSamsung Galaxy s22+\n[name removed]\nRefract v1.6.742-01a120b7 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Azure Panda",
-      "posted_at": "2026-10-11T01:19:44.703Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📊 Stats",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1558392682374631538",
       "title": "Imported comments lose reactions after re-import from Trakt ZIP",
       "body": "User imports Trakt data to Refract via ZIP file. Imported comments receive reactions and replies from other users. However, on the next day when re-importing, those reactions/replies disappear and the user's original comment appears to be deleted. User performed daily imports. User asks if direct synchronization is planned to avoid this issue.\n\n📱 via app · moto g24 · motorola/fogorow_g/fogorow:14/UTA34.82-126/82-126:user/release-keys 14 · v1.6.742-01a120b7\n[identity removed]",
@@ -1828,7 +1669,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 9.893629667274425,
+      "score": 9.771927604971093,
       "reactions": [
         {
           "emoji": "👍",
@@ -1943,72 +1784,6 @@
       "images": []
     },
     {
-      "id": "1557510027458248744",
-      "title": "Unaired things on Still to Finish/Continue sections",
-      "body": "Hi. Even after the last update, it still appears many things on the Still to Finish section. Please see the new print-screens. \n\nAnd in the case of Continue Section, Life is Strange, still appears too. Luckily in here, it's the only case 😅\n\nInformation:\nAndroid: 16\nRefract version: last one\n[identity removed]\n\nMany thanks.",
-      "author_key": "Golden Fox",
-      "posted_at": "2026-10-07T21:48:47.683Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 5,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "It's in my post ahah",
-          "date": "2026-10-14T21:45:56.419Z",
-          "is_team": false,
-          "author_key": "Golden Fox",
-          "reactions": []
-        },
-        {
-          "text": "with the amount of updates, having the actual full version is needed, we don't know when exo will get to this report and \"last one\" doesn't tell him which one it was when it occurred. thanks",
-          "date": "2026-10-15T07:02:40.049Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Misty Finch",
-          "team_name": "Eli",
-          "reactions": []
-        },
-        {
-          "text": "I understand, but my apps are always updated. And if it passes many time, a specific version refered in my text will be outdated",
-          "date": "2026-10-15T07:07:12.591Z",
-          "is_team": false,
-          "author_key": "Golden Fox",
-          "reactions": []
-        },
-        {
-          "text": "not when debugging is needed. as long as the thread does not have a proper version, the \"waiting on user\" tag stays activated, and only \"waiting on us\" threads are looked at",
-          "date": "2026-10-15T10:14:53.481Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Misty Finch",
-          "team_name": "Eli",
-          "reactions": []
-        },
-        {
-          "text": "Ok. Understood now. The version is 1.6.744",
-          "date": "2026-10-15T10:18:17.904Z",
-          "is_team": false,
-          "author_key": "Golden Fox",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1557510027458248744/1557510028108369980.webp"
-        }
-      ]
-    },
-    {
       "id": "1557486761955958844",
       "title": "Incorrect air times for US national stations and missing returning seasons in Journal",
       "body": "Air times are incorrect for US national stations except in the Upcoming section. Returning seasons of shows only appear in Upcoming, not in Continue, Ongoing, or other sections—they only appear after airing begins. Push notifications for new episodes, shows, or seasons are unreliable: either don't arrive or arrive at wrong times/dates. Widget shows nothing because Continue section is empty.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.741-01a11748\n[identity removed]",
@@ -2028,31 +1803,6 @@
       "activity_7d": 0,
       "comments": [],
       "images": []
-    },
-    {
-      "id": "1557486709997047899",
-      "title": "Show marked as finished not displaying as completed status",
-      "body": "This Is Us is marked as finished with all 106 episodes watched, but Refract displays it as up to date (green) instead of completed (purple). No manual option to mark as completed is available.\n\n📱 via app · SM-S918B · samsung/dm3qxeea/dm3q:16/BP4A.251205.006/S918BXXU9FZDP:user/release-keys 16 · v1.6.741-01a11748\n[identity removed]",
-      "author_key": "Silver Finch",
-      "posted_at": "2026-10-07T20:16:08.367Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1557486709997047899/1557486710206505182.webp"
-        }
-      ]
     },
     {
       "id": "1557486629029945464",
@@ -2095,7 +1845,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7863191623705681,
+      "score": 0.7766466087267152,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2134,7 +1884,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.083668983513483,
+      "score": 2.0580376610383886,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2196,41 +1946,6 @@
       ]
     },
     {
-      "id": "1557440592672202772",
-      "title": "Uneven Episodenames in Widget",
-      "body": "Uneven Episodenames in Widget\n\n[name removed]\nNothing Phone 3A\nAndroid 16\nRefract v1.6.741-01a11748 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Ivory Robin",
-      "posted_at": "2026-10-07T17:12:53.140Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "This is a Visual Bug. Like this Screenshot 90 % of the Series and Episode Name is cut Off.",
-          "date": "2026-10-07T17:21:53.328Z",
-          "is_team": false,
-          "author_key": "Ivory Robin",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1557440592672202772/1557440592882049054.webp"
-        }
-      ]
-    },
-    {
       "id": "1557438639187828757",
       "title": "Nothing Happens after clicking Episodes on Widget",
       "body": "Nothing Happens after clicking Episodes on Widget.\n\n[name removed]\nNothing Phone 3A\nAndroid 16\nRefract v1.6.741-01a11748 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -2245,7 +1960,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.6263761499010343,
+      "score": 1.6063700107811703,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2316,68 +2031,6 @@
           "date": "2026-10-14T04:12:48.730Z",
           "is_team": false,
           "author_key": "Ochre Seal",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1557302302770200586",
-      "title": "“Remove from your review” doesn’t delete comment",
-      "body": "[identity removed]\nDevice: iPhone 17 iOS27.0.1\nRefract v1.6.740-01a104a9 | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied\n\nTried waiting a bit and closing/reopening the app but the comment I tried to remove is still under one of my reviews",
-      "author_key": "Velvet Seal",
-      "posted_at": "2026-10-07T08:03:22.258Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1557302302770200586/1557302302950301847.webp"
-        }
-      ]
-    },
-    {
-      "id": "1557130296439210064",
-      "title": "Episode checking off buggy and not smooth",
-      "body": "The first problem, which has been bothering me for a while is that the refresh rate seems to reduce during the episode check off animation, as can be seen in the video. \n\nThe second issue, is that the interface is bugged when multiple episodes are checked off repeatedly one after another. You can see in the video the old friends section overlapping with ongoing. \n\nThe third problem is that, where the episode is placement is kind of inconsistent, sometimes it’s at the top sometimes at the bottom. \n\nName: fastburger\nOS: ios 27\niPhone 16 pro max\n\nRefract v1.6.740-01a104a9 | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied",
-      "author_key": "Teal Sparrow",
-      "posted_at": "2026-10-06T20:39:52.753Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.3916889069379958,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Bump, still persists",
-          "date": "2026-10-13T19:09:41.629Z",
-          "is_team": false,
-          "author_key": "Teal Sparrow",
           "reactions": []
         }
       ],
@@ -2477,27 +2130,6 @@
       ]
     },
     {
-      "id": "1556580681625374752",
-      "title": "Calendar sync shows primetime TV times 4 hours early",
-      "body": "Networks ABC, Fox, NBC, CBS primetime shows display 4 hours earlier than correct time in calendar sync. User reports times appear at 3-6pm instead of 7-10pm. Issue persists after removing and redoing sync. Device timezone is GMT -5 (UTC -7). Problem has not been resolved in recent updates.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.740-01a104a6\n[identity removed]",
-      "author_key": "Amber Finch",
-      "posted_at": "2026-10-05T08:15:54.370Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1556288040333221928",
       "title": "Previously watched series adds \"Started\" entry dated today to My Journal & Activity heatmap",
       "body": "I've been marking previously watched series, and every time I do in the present day a \"TV Show Added\" entry appears in My Journal and a \"Planned TV Show\" appears on my Activity heatmap.\n\nI never added these series to my Plan to Watch list for them to be appearing as such. I'm marking the episodes directly as watched and setting their watch dates to past or unknown dates. I don't think these entries should appear, they don't appear when I'm marking previously watched movies.\n\nWhat you did right before it happened: I either went to the last episode and marked all episodes, or marked them individually and set their watch dates to release date. I never added them to my Plan to Watch list.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
@@ -2542,48 +2174,6 @@
       "images": [
         {
           "url": "./assets/bugs/1556288040333221928/1556288040664567888.webp"
-        }
-      ]
-    },
-    {
-      "id": "1556117345078878269",
-      "title": "Favorite characters overlapping after voting",
-      "body": "It's probably third time I've noticed a bug in the Favorite Characters section (it doesn't happen all the time), where the characters overlap and get hidden behind each other.\n\nWhat you did right before it happened: I voted for a character, and all three times I noticed this bug, it was after I voted on a character.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Ochre Heron",
-      "posted_at": "2026-10-04T01:34:46.329Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "It just happened again and this time I noticed another detail. I voted for a character and it looked fine, went back to the main series page and back again to that episode and the characters are now overlapping. I think this were my steps...",
-          "date": "2026-10-05T15:59:20.107Z",
-          "is_team": false,
-          "author_key": "Ochre Heron",
-          "reactions": []
-        },
-        {
-          "text": "Bump. It's happening a lot more than before, sometimes it doesn't even fix itself after I close and open the app again.",
-          "date": "2026-10-20T14:50:59.016Z",
-          "is_team": false,
-          "author_key": "Ochre Heron",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1556117345078878269/1556117346891075704.webp"
         }
       ]
     },
@@ -2768,114 +2358,6 @@
       "images": []
     },
     {
-      "id": "1555615401365475408",
-      "title": "Wraps not working with large text size",
-      "body": "I didn't see another post for this. I'm legally blind and the monthly wraps don't really work properly with the larger text size I have set on my phone. It cuts off text in the app (I can scroll down to see other fields) but if you click share it breaks it too.",
-      "author_key": "Golden Robin",
-      "posted_at": "2026-10-02T16:20:13.622Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "stxrrygloss\nSamsung galaxy a14 5g android version 15\nRefract v1.6.738-01a0fd29 | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
-          "date": "2026-10-02T16:24:17.626Z",
-          "is_team": false,
-          "author_key": "Golden Robin",
-          "reactions": []
-        },
-        {
-          "text": "Idk if this helps but these are my font settings on my phone",
-          "date": "2026-10-02T16:28:10.883Z",
-          "is_team": false,
-          "author_key": "Golden Robin",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1555615401365475408/1555615401684238417.webp"
-        }
-      ]
-    },
-    {
-      "id": "1555573131920547941",
-      "title": "Letterboxd data import bug",
-      "body": "J’ai importé mes données letterboxd mais il manque beaucoup de films. Quand je veux voir ce qui manque, ça me ramène sur tv time import",
-      "author_key": "Sage Sparrow",
-      "posted_at": "2026-10-02T13:32:15.801Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 5,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "@[name removed] \nSamsung s24 \nRefract v1.6.737-01a0fc2a",
-          "date": "2026-10-02T13:35:49.462Z",
-          "is_team": false,
-          "author_key": "Sage Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "Depuis que j’ai ajouté les films je n'ai plus accès à la collection et même en allant dans les paramètres je ne vois pas ce que je peux changer",
-          "date": "2026-10-02T18:59:28.447Z",
-          "is_team": false,
-          "author_key": "Sage Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "all media types are currently hidden, go to display settings and enable the movies to see all the movies you added, then let me know if the issue persists",
-          "date": "2026-10-02T19:05:36.701Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Velvet Badger",
-          "team_name": "Eli",
-          "reactions": []
-        },
-        {
-          "text": "I cannot find enable the movies unfortunately",
-          "date": "2026-10-02T19:08:09.595Z",
-          "is_team": false,
-          "author_key": "Sage Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "profile > settings > content & tracking",
-          "date": "2026-10-02T19:27:36.278Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Velvet Badger",
-          "team_name": "Eli",
-          "reactions": [
-            {
-              "emoji": "👍",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1555372768239820941",
       "title": "Challenges not visible, trophies section empty",
       "body": "I don't see the challenges. The trophies section is empty.\n\n📱 via app · CPH2399 · Android 14 · v1.6.736-01a0f820",
@@ -2932,7 +2414,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.11511992765758822,
+      "score": 0.1137038313330531,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2947,40 +2429,6 @@
           "url": "./assets/bugs/1555163029153386577/1555163030122143775.webp"
         }
       ]
-    },
-    {
-      "id": "1555070753769132183",
-      "title": "Cast members missing for shows with large casts",
-      "body": "Shows with more than 15 cast members display incomplete cast information. Users cannot vote for missing cast members, and they do not appear in the full cast view either.\n\n📱 via app · moto g85 5G · motorola/malmo_gn/malmo:16/W1UO36H.35-39/fb0f94-6ff1bd:user/release-keys 16 · v1.6.732-01a0dfd8",
-      "author_key": "Lilac Heron",
-      "posted_at": "2026-10-01T04:15:59.516Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 2,
-      "score": 0.45191258570175163,
-      "reactions": [
-        {
-          "emoji": "💜",
-          "count": 2
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "I don’t think those shows contribute to your most watched crew stats either if the actor isn’t one of the 15 to appear",
-          "date": "2026-10-01T05:49:33.319Z",
-          "is_team": false,
-          "author_key": "Teal Sparrow",
-          "reactions": []
-        }
-      ],
-      "images": []
     },
     {
       "id": "1531756804990570698",
@@ -3000,7 +2448,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 2.3647281727358282,
+      "score": 2.3356395262949086,
       "reactions": [
         {
           "emoji": "👍",
@@ -3869,7 +3317,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.356317289340334,
+      "score": 0.3519342115008138,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3959,7 +3407,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 21.697691275889373,
+      "score": 21.430786826834506,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5596,6 +5044,620 @@
       ]
     },
     {
+      "id": "1559130723745534112",
+      "title": "TV Time GDPR import misses old ratings",
+      "body": "The ratings from the following two tables are imported:\n✅ ratings-3-prod-episode_votes.csv\n✅ ratings-v2-prod-votes.csv\n\nBut older ratings were stored in this table, which seems to be completely ignored:\n❎ ratings-prod-episode_votes.csv\n\nThis table looks kind of messy, because some episodes seem to have multiple entries. But I didn't analyze it in detail.\n\nAll I know is that the same GDPR export imports all these ratings correctly into Bingers.\n\nI assume it should be an easy fix that would probably add a ton more ratings to older episodes.\n\n[identity removed]\n• Device: LinageOS v19 (Android v12)\n• App version: Refract v1.6.743-01a12aff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Silver Panda",
+      "posted_at": "2026-10-12T09:08:51.789Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-22T14:17:16.966Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-22T14:17:16.966Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🔗 Import"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Good morning 🌞 \n\nCan I get some feedback about the current priority of this bug?\n\nI'm kind of annoyed that I can't see my original rating while rewatching a show and am therefore tempted to write my own script to import these ratings for my account.\n\nBut I also have the hypothesis, that it's an even easier fix for you.\nAnd we could probably add a ton more ratings from the community, when you reprocess their imports as well. Just like you did when you added favorite charaters.\n\nThank you 🙂",
+          "date": "2026-10-20T06:39:02.797Z",
+          "is_team": false,
+          "author_key": "Silver Panda",
+          "reactions": []
+        },
+        {
+          "text": "Hey [mention removed] ! Good news: your older TV Time ratings are now in Refract. Your oldest vote file (ratings-prod-episode_votes.csv) used vote codes our importer didn’t recognise, so those rows were dropped at import. We fixed the importer and replayed that file for your account. 1,422 episode ratings were added, across 85 shows. We only filled episodes that had no rating yet, so nothing you rated in Refract was changed. A handful of votes (about 100, with two very rare codes) still couldn’t be mapped to a star value, so those stay out. Let us know if anything looks off! 💜",
+          "date": "2026-10-23T08:37:59.559Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Lynx",
+          "team_name": "Exooo",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1558650278444539935",
+      "title": "Marking First Episode on Series Page Not Bringing Up Ratings Drawer",
+      "body": "When I marked the first episode of The Terror watched via the series page, it didn't bring up the ratings drawer. I've noticed it on the continue screen too when moving items from Not Watched or Old Friends to continue.\n\nAndroid 16\nSamsung Galaxy s22+\n[name removed]\nRefract v1.6.742-01a120b7 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Azure Panda",
+      "posted_at": "2026-10-11T01:19:44.703Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:06.801Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:06.801Z"
+      },
+      "tags": [
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1560506575792246875",
+      "title": "Watch list cards become blank and unclickable partway through list",
+      "body": "Approximately halfway down the watch list, cards stop loading and display as blank. Cards are unclickable. Issue occurs intermittently (noticed within the past hour). Scrolling slowly through the entire list works, but using the jump-to-top button causes cards in the first half of the list to also appear blank.\n\n📱 via app · iPhone 14 · iOS 26.6.2 · v1.6.744-01a13117\n[identity removed]",
+      "author_key": "Silver Robin",
+      "posted_at": "2026-10-16T04:16:00.479Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:06.447Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:06.447Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1560506575792246875/1560506576131989634.webp"
+        }
+      ]
+    },
+    {
+      "id": "1559952183053652119",
+      "title": "Problem in achievements page",
+      "body": "I’ve noticed that when I scroll to the bottom of the achievements page, I can't switch sections (all – in progress – to unlock...); specifically, those buttons don't seem to be clickable. I can only switch sections when I scroll back up—roughly to where the first badge is visible. In the screenshot with layout boundaries enabled, I’ve indicated the point where they stop working or become inaccessible.",
+      "author_key": "Velvet Finch",
+      "posted_at": "2026-10-14T15:33:02.950Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:06.007Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:06.007Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "- [name removed] \n- Oppo A5 Pro CPH2695_16.0.5.1200(EX01B40P02)\n- Refract v1.6.744-01a1310d | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-10-14T15:38:20.501Z",
+          "is_team": false,
+          "author_key": "Velvet Finch",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1559952183053652119/1559952183280148651.webp"
+        }
+      ]
+    },
+    {
+      "id": "1555070753769132183",
+      "title": "Cast members missing for shows with large casts",
+      "body": "Shows with more than 15 cast members display incomplete cast information. Users cannot vote for missing cast members, and they do not appear in the full cast view either.\n\n📱 via app · moto g85 5G · motorola/malmo_gn/malmo:16/W1UO36H.35-39/fb0f94-6ff1bd:user/release-keys 16 · v1.6.732-01a0dfd8",
+      "author_key": "Lilac Heron",
+      "posted_at": "2026-10-01T04:15:59.516Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:05.403Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:05.403Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 2,
+      "score": 0.4463535850608994,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 2
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "I don’t think those shows contribute to your most watched crew stats either if the actor isn’t one of the 15 to appear",
+          "date": "2026-10-01T05:49:33.319Z",
+          "is_team": false,
+          "author_key": "Teal Sparrow",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1560666591602147399",
+      "title": "Series character pictures show the wrong actors",
+      "body": "I've found 3 series where the character's picture doesn't match the actor who plays them. I'm sure these are not isolated cases, but everything is correct in TMDB, so I've no clue where this info is being pulled from.\n\n1. [Take Charge of My Heart](https://www.themoviedb.org/tv/289423) - Chae Soo Bin's character picture gets applied to every character that has the same name has her character. This includes an actress playing her younger self, parents and friends, a total of 7 actors.\n\n2. [A-Teen](https://www.themoviedb.org/tv/87687-a-teen) - The character image of actress Kang Min-ah, is being applied to actor Ryu Ui-hyun. The characters are siblings, it recognized the first name (last name) and applied her picture to both.\n\n3. [12 Monkeys](https://www.themoviedb.org/tv/60948-12-monkeys) - I noticed that in S02 E11, the character picture for actress Emily Hampshire also appears as character picture for actress Glenda MacInnis. It's possible that happens in other episodes and with other actors, but I only noticed this one.\n\nWhat you did right before it happened: Just marked an episode as watched and noticed this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.744-01a1310d",
+      "author_key": "Azure Wren",
+      "posted_at": "2026-10-16T14:51:51.221Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:04.905Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:04.905Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 3,
+      "activity_7d": 4,
+      "comments": [
+        {
+          "text": "Update to A-Teen. I finally found the mix up, and these 3 series have the exact same problem.",
+          "date": "2026-10-17T10:45:06.365Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "4. [Agent Kim Reactivated](https://www.themoviedb.org/tv/296206) - At least in episode 1, the pictures of actors Joo Sang Wook and Yoo Ji An are applied in other actors.",
+          "date": "2026-10-21T08:06:15.076Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "5. [The East Palace](https://www.themoviedb.org/tv/279323) - In episode 1 the character pictures from actors Nam Joo Hyuk and Jang Young Nam are applied in other actors. In episode 2 it happens with Roh Yoon Seo and Cho Seung Woo.",
+          "date": "2026-10-22T14:53:16.036Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1560666591602147399/1560666591983702016.webp"
+        }
+      ]
+    },
+    {
+      "id": "1557510027458248744",
+      "title": "Unaired things on Still to Finish/Continue sections",
+      "body": "Hi. Even after the last update, it still appears many things on the Still to Finish section. Please see the new print-screens. \n\nAnd in the case of Continue Section, Life is Strange, still appears too. Luckily in here, it's the only case 😅\n\nInformation:\nAndroid: 16\nRefract version: last one\n[identity removed]\n\nMany thanks.",
+      "author_key": "Golden Fox",
+      "posted_at": "2026-10-07T21:48:47.683Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:04.196Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:04.196Z"
+      },
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 5,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "It's in my post ahah",
+          "date": "2026-10-14T21:45:56.419Z",
+          "is_team": false,
+          "author_key": "Golden Fox",
+          "reactions": []
+        },
+        {
+          "text": "with the amount of updates, having the actual full version is needed, we don't know when exo will get to this report and \"last one\" doesn't tell him which one it was when it occurred. thanks",
+          "date": "2026-10-15T07:02:40.049Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Misty Finch",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "I understand, but my apps are always updated. And if it passes many time, a specific version refered in my text will be outdated",
+          "date": "2026-10-15T07:07:12.591Z",
+          "is_team": false,
+          "author_key": "Golden Fox",
+          "reactions": []
+        },
+        {
+          "text": "not when debugging is needed. as long as the thread does not have a proper version, the \"waiting on user\" tag stays activated, and only \"waiting on us\" threads are looked at",
+          "date": "2026-10-15T10:14:53.481Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Misty Finch",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "Ok. Understood now. The version is 1.6.744",
+          "date": "2026-10-15T10:18:17.904Z",
+          "is_team": false,
+          "author_key": "Golden Fox",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1557510027458248744/1557510028108369980.webp"
+        }
+      ]
+    },
+    {
+      "id": "1557486709997047899",
+      "title": "Show marked as finished not displaying as completed status",
+      "body": "This Is Us is marked as finished with all 106 episodes watched, but Refract displays it as up to date (green) instead of completed (purple). No manual option to mark as completed is available.\n\n📱 via app · SM-S918B · samsung/dm3qxeea/dm3q:16/BP4A.251205.006/S918BXXU9FZDP:user/release-keys 16 · v1.6.741-01a11748\n[identity removed]",
+      "author_key": "Silver Finch",
+      "posted_at": "2026-10-07T20:16:08.367Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:03.508Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:03.508Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1557486709997047899/1557486710206505182.webp"
+        }
+      ]
+    },
+    {
+      "id": "1557440592672202772",
+      "title": "Uneven Episodenames in Widget",
+      "body": "Uneven Episodenames in Widget\n\n[name removed]\nNothing Phone 3A\nAndroid 16\nRefract v1.6.741-01a11748 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Ivory Robin",
+      "posted_at": "2026-10-07T17:12:53.140Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:02.860Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:02.860Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "This is a Visual Bug. Like this Screenshot 90 % of the Series and Episode Name is cut Off.",
+          "date": "2026-10-07T17:21:53.328Z",
+          "is_team": false,
+          "author_key": "Ivory Robin",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1557440592672202772/1557440592882049054.webp"
+        }
+      ]
+    },
+    {
+      "id": "1557302302770200586",
+      "title": "“Remove from your review” doesn’t delete comment",
+      "body": "[identity removed]\nDevice: iPhone 17 iOS27.0.1\nRefract v1.6.740-01a104a9 | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied\n\nTried waiting a bit and closing/reopening the app but the comment I tried to remove is still under one of my reviews",
+      "author_key": "Velvet Seal",
+      "posted_at": "2026-10-07T08:03:22.258Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:02.035Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:02.035Z"
+      },
+      "tags": [
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1557302302770200586/1557302302950301847.webp"
+        }
+      ]
+    },
+    {
+      "id": "1557130296439210064",
+      "title": "Episode checking off buggy and not smooth",
+      "body": "The first problem, which has been bothering me for a while is that the refresh rate seems to reduce during the episode check off animation, as can be seen in the video. \n\nThe second issue, is that the interface is bugged when multiple episodes are checked off repeatedly one after another. You can see in the video the old friends section overlapping with ongoing. \n\nThe third problem is that, where the episode is placement is kind of inconsistent, sometimes it’s at the top sometimes at the bottom. \n\nName: fastburger\nOS: ios 27\niPhone 16 pro max\n\nRefract v1.6.740-01a104a9 | native 1.6.4 (26) | runtime 1.6.4 | state ota-applied",
+      "author_key": "Teal Sparrow",
+      "posted_at": "2026-10-06T20:39:52.753Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:01.557Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:01.557Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.38687072095784236,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Bump, still persists",
+          "date": "2026-10-13T19:09:41.629Z",
+          "is_team": false,
+          "author_key": "Teal Sparrow",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1556580681625374752",
+      "title": "Calendar sync shows primetime TV times 4 hours early",
+      "body": "Networks ABC, Fox, NBC, CBS primetime shows display 4 hours earlier than correct time in calendar sync. User reports times appear at 3-6pm instead of 7-10pm. Issue persists after removing and redoing sync. Device timezone is GMT -5 (UTC -7). Problem has not been resolved in recent updates.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.740-01a104a6\n[identity removed]",
+      "author_key": "Amber Finch",
+      "posted_at": "2026-10-05T08:15:54.370Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:12:00.866Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:12:00.866Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1556117345078878269",
+      "title": "Favorite characters overlapping after voting",
+      "body": "It's probably third time I've noticed a bug in the Favorite Characters section (it doesn't happen all the time), where the characters overlap and get hidden behind each other.\n\nWhat you did right before it happened: I voted for a character, and all three times I noticed this bug, it was after I voted on a character.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Ochre Heron",
+      "posted_at": "2026-10-04T01:34:46.329Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:11:58.059Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:11:58.059Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "It just happened again and this time I noticed another detail. I voted for a character and it looked fine, went back to the main series page and back again to that episode and the characters are now overlapping. I think this were my steps...",
+          "date": "2026-10-05T15:59:20.107Z",
+          "is_team": false,
+          "author_key": "Ochre Heron",
+          "reactions": []
+        },
+        {
+          "text": "Bump. It's happening a lot more than before, sometimes it doesn't even fix itself after I close and open the app again.",
+          "date": "2026-10-20T14:50:59.016Z",
+          "is_team": false,
+          "author_key": "Ochre Heron",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1556117345078878269/1556117346891075704.webp"
+        }
+      ]
+    },
+    {
+      "id": "1555615401365475408",
+      "title": "Wraps not working with large text size",
+      "body": "I didn't see another post for this. I'm legally blind and the monthly wraps don't really work properly with the larger text size I have set on my phone. It cuts off text in the app (I can scroll down to see other fields) but if you click share it breaks it too.",
+      "author_key": "Golden Robin",
+      "posted_at": "2026-10-02T16:20:13.622Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:11:57.435Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:11:57.435Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "stxrrygloss\nSamsung galaxy a14 5g android version 15\nRefract v1.6.738-01a0fd29 | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
+          "date": "2026-10-02T16:24:17.626Z",
+          "is_team": false,
+          "author_key": "Golden Robin",
+          "reactions": []
+        },
+        {
+          "text": "Idk if this helps but these are my font settings on my phone",
+          "date": "2026-10-02T16:28:10.883Z",
+          "is_team": false,
+          "author_key": "Golden Robin",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1555615401365475408/1555615401684238417.webp"
+        }
+      ]
+    },
+    {
+      "id": "1555573131920547941",
+      "title": "Letterboxd data import bug",
+      "body": "J’ai importé mes données letterboxd mais il manque beaucoup de films. Quand je veux voir ce qui manque, ça me ramène sur tv time import",
+      "author_key": "Sage Sparrow",
+      "posted_at": "2026-10-02T13:32:15.801Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:11:56.852Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:11:56.852Z"
+      },
+      "tags": [
+        "🔗 Import"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 5,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "@[name removed] \nSamsung s24 \nRefract v1.6.737-01a0fc2a",
+          "date": "2026-10-02T13:35:49.462Z",
+          "is_team": false,
+          "author_key": "Sage Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "Depuis que j’ai ajouté les films je n'ai plus accès à la collection et même en allant dans les paramètres je ne vois pas ce que je peux changer",
+          "date": "2026-10-02T18:59:28.447Z",
+          "is_team": false,
+          "author_key": "Sage Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "all media types are currently hidden, go to display settings and enable the movies to see all the movies you added, then let me know if the issue persists",
+          "date": "2026-10-02T19:05:36.701Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Velvet Badger",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "I cannot find enable the movies unfortunately",
+          "date": "2026-10-02T19:08:09.595Z",
+          "is_team": false,
+          "author_key": "Sage Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "profile > settings > content & tracking",
+          "date": "2026-10-02T19:27:36.278Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Velvet Badger",
+          "team_name": "Eli",
+          "reactions": [
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1558942867211161770",
+      "title": "Spoiler comments aren’t being hidden if the comment contains new lines",
+      "body": "[identity removed]\n\n2. Hello! When I comment on an episode and click the spoiler button to write a spoiler filled commentary and post it, it doesn’t seem to hide the comment if I include new lines in my comment. I have screenshots of what I mean. Right before posting the comment I mark the episode as watched, but sometimes I mark the episode as watched after posting the comment. I also will do speech to text on my notes app with live commentary during an episode because it’s quicker than typing it all by hand and then go to the comment section on an episode in Refract, click the spoiler button, and tap in between the 4 |||| and paste what I had from the notes app. I have also just done a straight speech to text in the Refract comment section after clicking the spoiler button.\n\nI saw that this has been a reported issue over a month ago and as recent as about a week ago with it getting flagged as fixed with the next update, but I’m still having the same issue.\n\n3. I have an iPhone 13 Pro on iOS 26.7.1\n\n4. Refract v1.6.743-01a12b02\n\n5. Screenshots:",
+      "author_key": "Amber Heron",
+      "posted_at": "2026-10-11T20:42:23.301Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-23T09:11:56.302Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T09:11:56.302Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "📱 iOS",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1558942867211161770/1558942868113195008.webp"
+        }
+      ]
+    },
+    {
       "id": "1562164940025110598",
       "title": "Crash issue",
       "body": "Often when I open the app on my tablet or mobile, it closes or gets stuck and displays a message saying that the app is not responding. I think it mostly happens when I'm rating something inside a chapter.",
@@ -5786,7 +5848,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.4304268724287606,
+      "score": 0.4251321686843274,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5823,7 +5885,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.935043261379403,
+      "score": 2.898939138840746,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5872,38 +5934,6 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": []
-    },
-    {
-      "id": "1559130723745534112",
-      "title": "TV Time GDPR import misses old ratings",
-      "body": "The ratings from the following two tables are imported:\n✅ ratings-3-prod-episode_votes.csv\n✅ ratings-v2-prod-votes.csv\n\nBut older ratings were stored in this table, which seems to be completely ignored:\n❎ ratings-prod-episode_votes.csv\n\nThis table looks kind of messy, because some episodes seem to have multiple entries. But I didn't analyze it in detail.\n\nAll I know is that the same GDPR export imports all these ratings correctly into Bingers.\n\nI assume it should be an easy fix that would probably add a ton more ratings to older episodes.\n\n[identity removed]\n• Device: LinageOS v19 (Android v12)\n• App version: Refract v1.6.743-01a12aff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Silver Panda",
-      "posted_at": "2026-10-12T09:08:51.789Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-22T14:17:16.966Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-22T14:17:16.966Z",
-        "applied_by": "Exooo"
-      },
-      "tags": [
-        "🔗 Import"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "Good morning 🌞 \n\nCan I get some feedback about the current priority of this bug?\n\nI'm kind of annoyed that I can't see my original rating while rewatching a show and am therefore tempted to write my own script to import these ratings for my account.\n\nBut I also have the hypothesis, that it's an even easier fix for you.\nAnd we could probably add a ton more ratings from the community, when you reprocess their imports as well. Just like you did when you added favorite charaters.\n\nThank you 🙂",
-          "date": "2026-10-20T06:39:02.797Z",
-          "is_team": false,
-          "author_key": "Silver Panda",
-          "reactions": []
-        }
-      ],
       "images": []
     },
     {
@@ -6233,7 +6263,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.4298097508289467,
+      "score": 1.4122215853902425,
       "reactions": [
         {
           "emoji": "💜",
@@ -6393,7 +6423,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8686247228931091,
+      "score": 0.8579397241920335,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -6505,7 +6535,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8641490207343493,
+      "score": 0.8535190778824711,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6715,7 +6745,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.017973081364519132,
+      "score": 0.017751993539163922,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6745,7 +6775,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.12823586704797166,
+      "score": 0.126658430858641,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6786,7 +6816,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.25647940212618814,
+      "score": 0.25332443542268096,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -7072,7 +7102,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.40711140001551716,
+      "score": 0.40210350113155424,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -7578,7 +7608,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3026799058393305,
+      "score": 0.2989566242938052,
       "reactions": [
         {
           "emoji": "💜",
@@ -7702,7 +7732,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6290157914429888,
+      "score": 0.6212782348925158,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -7800,7 +7830,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.08701437130774888,
+      "score": 0.08594400291977397,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -7838,7 +7868,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.34540208785187493,
+      "score": 0.341153278483712,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8138,7 +8168,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0111767173047513,
+      "score": 0.011039231913493035,
       "reactions": [
         {
           "emoji": "💜",
@@ -8235,7 +8265,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.1376674941653633,
+      "score": 2.111371933152073,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8420,7 +8450,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 2,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "- naoriemadrea\n- Galaxy 23+, One UI 8.5\n- Refract v1.6.744-01a1310d | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -8456,7 +8486,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0326646720523942,
+      "score": 1.019961809252478,
       "reactions": [],
       "comments_count": 10,
       "activity_7d": 1,
@@ -8807,7 +8837,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8512633472832869,
+      "score": 0.8407919117826943,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -8914,7 +8944,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.0430861563027136,
+      "score": 3.005652992393842,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 4,
@@ -8991,7 +9021,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7866687851649865,
+      "score": 0.7769919307926306,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9208,7 +9238,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8496437283726833,
+      "score": 0.8391922158900523,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9252,7 +9282,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 17.165755147984427,
+      "score": 16.954598285158443,
       "reactions": [
         {
           "emoji": "💯",
@@ -9340,7 +9370,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8619247152785006,
+      "score": 1.8390210807860483,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -9398,7 +9428,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9300877723268407,
+      "score": 0.9186467134008428,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9429,7 +9459,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.821526506962695,
+      "score": 1.7991198129694062,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 4,
@@ -9485,7 +9515,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.11860906062548647,
+      "score": 0.1171500442915994,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9646,7 +9676,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8000757728156952,
+      "score": 0.7902339983784854,
       "reactions": [
         {
           "emoji": "👍",
@@ -9710,7 +9740,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.16886663957652132,
+      "score": 0.16678940210333448,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9779,7 +9809,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.428655851193442,
+      "score": 1.4110818799352414,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 4,
@@ -10056,7 +10086,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0358371542732103,
+      "score": 1.0230952666015454,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 5,
@@ -10356,7 +10386,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 6,
-      "score": 3.488570059261555,
+      "score": 3.445656974278584,
       "reactions": [
         {
           "emoji": "😭",
@@ -10601,7 +10631,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.30765061079323613,
+      "score": 0.30386618434292495,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10864,7 +10894,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3360220100950737,
+      "score": 0.3318885855599762,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -10952,7 +10982,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.48375937638359345,
+      "score": 0.4778086266846028,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -11038,7 +11068,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.3349183364903849,
+      "score": 0.3307984883027267,
       "reactions": [
         {
           "emoji": "☝️",
@@ -11172,7 +11202,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08333365962545808,
+      "score": 0.08230856786674301,
       "reactions": [
         {
           "emoji": "➕",
@@ -11222,7 +11252,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.19292234488338605,
+      "score": 0.19054919690571653,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11266,7 +11296,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.10908158767275375,
+      "score": 0.1077397692880402,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -11311,7 +11341,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1826329161704331,
+      "score": 0.1803863390000814,
       "reactions": [
         {
           "emoji": "💜",
@@ -11541,7 +11571,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.005354630881131069,
+      "score": 0.005288763283189504,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11652,7 +11682,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.035334820123016634,
+      "score": 0.034900164630067225,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -11728,7 +11758,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.32453198928835725,
+      "score": 0.3205399041074818,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -11790,7 +11820,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.04147016613863761,
+      "score": 0.0409600394295464,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11894,7 +11924,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.007370453203625712,
+      "score": 0.007279788868578028,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -12000,7 +12030,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.15472789848111407,
+      "score": 0.152824582410643,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -12053,7 +12083,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.021297721188608454,
+      "score": 0.021035736792771563,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -12118,7 +12148,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.02987670499310192,
+      "score": 0.02950919006331677,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -12187,7 +12217,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00037320454463827873,
+      "score": 0.00036861373577733137,
       "reactions": [
         {
           "emoji": "‼️",
@@ -12308,7 +12338,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.003753353700595836,
+      "score": 0.0037071834980232344,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12446,7 +12476,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2593709537221086,
+      "score": 0.2561804178893419,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12540,7 +12570,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.003267334124371254,
+      "score": 0.0032271424743355454,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -12641,7 +12671,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000987643577152024,
+      "score": 0.0009754945212238817,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -12808,7 +12838,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.023015182811867024,
+      "score": 0.022732071829680445,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -12940,7 +12970,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.004488365083294515,
+      "score": 0.004433153466792019,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13101,7 +13131,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.01234578378322464,
+      "score": 0.012193917643324606,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13162,7 +13192,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.045016679350420814,
+      "score": 0.04446292679455997,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13463,7 +13493,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.05156745102787576,
+      "score": 0.05093311708281436,
       "reactions": [
         {
           "emoji": "💯",
@@ -13522,7 +13552,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.058540875612009616,
+      "score": 0.05782076120196753,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -13659,7 +13689,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.014960088223141795,
+      "score": 0.014776063385925731,
       "reactions": [
         {
           "emoji": "💜",
@@ -13787,7 +13817,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0347217409163634,
+      "score": 1.0219935740034507,
       "reactions": [],
       "comments_count": 12,
       "activity_7d": 0,
@@ -13897,7 +13927,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.017397491089190534,
+      "score": 0.01718348363028373,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14251,7 +14281,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.006628295874922316,
+      "score": 0.0065467608564646305,
       "reactions": [
         {
           "emoji": "💜",
@@ -14367,7 +14397,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2546964527285483,
+      "score": 0.25156341817997036,
       "reactions": [
         {
           "emoji": "💜",
@@ -14516,7 +14546,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0009868385488304423,
+      "score": 0.000974699395598303,
       "reactions": [
         {
           "emoji": "💜",
@@ -14546,7 +14576,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.09955912755956657,
+      "score": 0.09833444546082204,
       "reactions": [
         {
           "emoji": "👆",
@@ -14612,7 +14642,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0006902203552085493,
+      "score": 0.000681729918079043,
       "reactions": [
         {
           "emoji": "🤔",
@@ -14703,7 +14733,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.02311902556040593,
+      "score": 0.022834637203072154,
       "reactions": [
         {
           "emoji": "👆",
@@ -14866,7 +14896,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.006076674440886569,
+      "score": 0.006001924946891653,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14895,7 +14925,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.416976816836847,
+      "score": 0.4118475629382924,
       "reactions": [
         {
           "emoji": "🎯",
@@ -14934,7 +14964,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.27802272560483554,
+      "score": 0.2746027533387195,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -14992,7 +15022,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.27546692127795347,
+      "score": 0.27207838809616597,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -15139,7 +15169,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.17151850928934026,
+      "score": 0.16940865102642672,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -15374,7 +15404,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.0006700086427728142,
+      "score": 0.0006617668309879827,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15453,7 +15483,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00009880424141949632,
+      "score": 0.00009758884521512428,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -15570,7 +15600,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0072579891147841035,
+      "score": 0.007168708206447089,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -15658,7 +15688,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0056348828093908555,
+      "score": 0.005565567817643309,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15754,7 +15784,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0009877190414308529,
+      "score": 0.0009755690572126217,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -15807,7 +15837,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.007673136337379932,
+      "score": 0.007578748681079972,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15915,7 +15945,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.015002923034464424,
+      "score": 0.014818371283966616,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -18046,7 +18076,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.006098254561914792,
+      "score": 0.00602323960970866,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -18147,7 +18177,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0015331158166827113,
+      "score": 0.0015142568778589432,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -18192,7 +18222,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0003800260063639072,
+      "score": 0.00037535128634114644,
       "reactions": [
         {
           "emoji": "👆",
@@ -18356,7 +18386,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0006706230835707415,
+      "score": 0.0006623737135171263,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -18386,7 +18416,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 5,
-      "score": 0.0068246648075347815,
+      "score": 0.006740714244441309,
       "reactions": [
         {
           "emoji": "💜",
@@ -18462,7 +18492,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.002078110710792635,
+      "score": 0.002052547760924532,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -18526,7 +18556,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000751912042382105,
+      "score": 0.000742662732542734,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -18568,10 +18598,10 @@
           "text": "This show as a \"Returning Series\" signal meaning that it's up-to-date and not completed 🙏",
           "date": "2026-04-11T18:15:42.995Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Got it, and there is another show which i am able to find",
@@ -18584,10 +18614,10 @@
           "text": "From your import?",
           "date": "2026-04-11T18:36:02.115Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "No it's not in your database,",
@@ -18600,10 +18630,10 @@
           "text": "Oh, great info, tell me",
           "date": "2026-04-11T18:36:33.775Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "It's the tom and jerry cartoon from 1940",
@@ -18616,10 +18646,10 @@
           "text": "That's very precise hehe",
           "date": "2026-04-11T18:36:46.538Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Yea I am making sure everything is there in my library, so i found that this is not there",
@@ -18632,19 +18662,19 @@
           "text": "Thanks for this, I find it indeed on TVDB and not TMDB",
           "date": "2026-04-11T18:38:26.241Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I'm noting this aside and keep you posted on this",
           "date": "2026-04-11T18:38:39.281Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Got it",
@@ -18664,19 +18694,19 @@
           "text": "this will be fixed tonight, thanks!",
           "date": "2026-04-11T18:49:01.005Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I've finally get rid off the issue with JP CN KR names, but forgot this sorting",
           "date": "2026-04-11T18:49:34.215Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I'll keep listing the shows/movies which I can't find in your database here",
@@ -18696,19 +18726,19 @@
           "text": "perfect",
           "date": "2026-04-11T19:04:22.119Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "was it during an import for 13B?",
           "date": "2026-04-11T19:04:58.610Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "No I can't find it at all",
@@ -18721,10 +18751,10 @@
           "text": "You mean a Search ?",
           "date": "2026-04-11T19:05:37.304Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I think you don't have many Indian movies in your database",
@@ -18744,10 +18774,10 @@
           "text": "https://www.themoviedb.org/movie/19950 it should be available though I'll deep dive",
           "date": "2026-04-11T19:06:01.955Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Yes this one",
@@ -18774,19 +18804,19 @@
           "text": "yeah",
           "date": "2026-04-11T19:06:47.721Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "ok",
           "date": "2026-04-11T19:06:49.031Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "It didn't show for me",
@@ -18799,10 +18829,10 @@
           "text": "I changed the names for CN JP KR, maybe I can change as well for IN",
           "date": "2026-04-11T19:07:14.306Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Yea",
@@ -18815,19 +18845,19 @@
           "text": "Oh, I've already corrected this sorry",
           "date": "2026-04-11T19:09:47.803Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Just not in production yet ahah",
           "date": "2026-04-11T19:09:53.161Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Got it, thanks for all the work you're doing",
@@ -18861,10 +18891,10 @@
           "text": "Yup sorry I'm enabling the notification system and some back database is rebooting",
           "date": "2026-04-11T23:38:25.742Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "AHH got it",
@@ -18877,10 +18907,10 @@
           "text": "I think this is just the reason",
           "date": "2026-04-11T23:38:38.751Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I'll wait then",
@@ -18893,10 +18923,10 @@
           "text": "Thanks! Sorry for that",
           "date": "2026-04-11T23:38:50.343Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "No problem!",
@@ -18923,10 +18953,10 @@
           "text": "Yeah this is apparently a common issue from TMDB",
           "date": "2026-04-12T09:30:12.331Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Another issue has been found",
@@ -18995,10 +19025,10 @@
           "text": "Thanks for the clear report [mention removed]! We are trying to map both dbs but there are differences between the 2 and things that are in tvdb and not in tmdb and vice versa. Not an easy fix but we are looking considering different options. Merging data from different dbs raises also other issues and the bugs will keep flowding haha. So we need time to figure it out 🙏",
           "date": "2026-04-12T16:03:56.045Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Coral Otter",
-          "team_name": "J",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "Yes, I will adding what I have noticed here.",
@@ -19042,10 +19072,10 @@
           "text": "I will have a look at it thx!",
           "date": "2026-04-12T16:43:56.358Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Coral Otter",
-          "team_name": "J",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "Both these shows don't have their English names displayed, maybe something you want to take a look at",
@@ -19058,55 +19088,55 @@
           "text": "I insist we keep the spanish name for that left one haha",
           "date": "2026-04-13T21:57:58.156Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Coral Otter",
-          "team_name": "J",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "Yeah lol how would you name it",
           "date": "2026-04-13T21:58:37.038Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "oh it's something like Heist",
           "date": "2026-04-13T21:58:43.697Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Money Heist its written on the poster",
           "date": "2026-04-13T21:58:54.333Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "money heist...........",
           "date": "2026-04-13T21:58:55.188Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Coral Otter",
-          "team_name": "J",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "ahahaha",
           "date": "2026-04-13T21:59:05.282Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Azure Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "If it was intentional, then it's fine but yea it would be good if you can add options for the title type, it can be in the original language, in English, in romanji",
@@ -19133,10 +19163,10 @@
           "text": "we are joking haha, it was not intentional, probably the default name in the database but we will look into it",
           "date": "2026-04-14T00:12:29.225Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Coral Otter",
-          "team_name": "J",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "Ik but this feature would be as good addition😌",
@@ -19153,11 +19183,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1492588560987984024/1492588561181049022.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1529868134222270575",
@@ -19189,19 +19215,19 @@
           "text": "Hey, sorry for this and thanks for raising the issue up again. We'll have a look. cc Boulet",
           "date": "2026-08-09T19:05:08.271Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Lilac Seal",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Hey [mention removed] can you please share your email in DM so we can check it",
           "date": "2026-08-09T19:07:12.442Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ivory Wren",
-          "team_name": "Boulet",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Boulet"
         },
         {
           "text": "it's alright, I'm in my no-anime period so it was not too urgent, just very excited to see the app",
@@ -19237,10 +19263,10 @@
           "text": "Hi can you tell me what show/episode/movie did not save your rating? and your username?",
           "date": "2026-07-23T14:15:53.199Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Sage Tern",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I have rated twinkling watermelon as a show and also the episodes, both dont show up under stats > rating \n[mention removed]",
@@ -19265,10 +19291,10 @@
           "text": "but is it saved when you go back to the title page?",
           "date": "2026-07-23T15:29:27.945Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Coral Badger",
-          "team_name": "Eli",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "yes, it stays. It seems like I would need to add a comment as well, otherwise it doesn't stick. \nIf I go back to the title it shows the rating I set on",
@@ -19295,10 +19321,10 @@
           "text": "thank you for reporting! it might take a little longer to fix but it will get there :octolove:",
           "date": "2026-07-24T05:16:26.063Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Coral Badger",
-          "team_name": "Eli",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "of course! I'm happy to help to make this app amazing, which it already is!",
@@ -19406,11 +19432,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1525868455612518522/1525868455826555091.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1531695087539453972",
@@ -19435,10 +19457,10 @@
           "text": "Hey what's your username? Let's have a look 🙂",
           "date": "2026-07-28T17:03:03.302Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Coral Robin",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I think I'm seeing a similar issue. I'll try a few things and feed back",
@@ -19455,11 +19477,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1531695087539453972/1531695087866740837.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1532382455640887496",
@@ -19529,11 +19547,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1532382455640887496/1532382455909060648.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1530188492800262195",
@@ -19586,11 +19600,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1530188492800262195/1530188493542785054.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1526742010382389298",
@@ -19697,10 +19707,10 @@
           "text": "hello, its normal to get that message, if you did the upload of your files just know do not worry you are i nthe queue and your shows and movie are going to be uploaded, just wait patiently!",
           "date": "2026-07-04T12:59:50.153Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Ivory Heron",
-          "team_name": "Ghemon",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Ghemon"
         },
         {
           "text": "He isn’t talking about an import. He’s saying the normal functionality of the app isn’t working. I’m having the same issue.",
@@ -19713,10 +19723,10 @@
           "text": "its normal please check <#1491155345274437702> <#1490373955553460325> <#1493662414846169129>",
           "date": "2026-07-04T18:41:34.199Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Ivory Heron",
-          "team_name": "Ghemon",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Ghemon"
         },
         {
           "text": "I can’t mark anything as watched. It just reverts back to unwatched.",
@@ -19734,10 +19744,10 @@
           "text": "Unfortunately, it's the Saturday peak with all new users.\nEven with the database upgrade, the app is slow and you need to retry multiple time.\nThe devs are on it and are pushing upgrades every day.",
           "date": "2026-07-04T18:43:58.339Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ivory Badger",
-          "team_name": "Boulet",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Boulet"
         },
         {
           "text": "Thanks. I just wanted to point out that the issue exists.",
@@ -19767,10 +19777,10 @@
           "text": "👋 Thanks for the report! This thread was opened while the app was unstable during the big TV Time migration wave (July 1–10). Most errors reported in that period were caused by the overload, and the stability updates shipped on **July 10** should have fixed them (see <#1491155345274437702>).\n\nThe team is too small to re-check every report one by one, so we're closing this thread for now. **Please clear the app cache (Android) or force-close the app (iOS) — or if that's not enough, uninstall and reinstall the app (your data is safe on the server) — then test again. If the issue is still there, just reply here and the thread will reopen** so we can take a look. Thanks for helping us keep the bug report section actionable 🙏",
           "date": "2026-07-12T22:55:33.929Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ivory Badger",
-          "team_name": "Boulet",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Boulet"
         }
       ],
       "images": []
@@ -19799,10 +19809,10 @@
           "text": "clicking on \"mark a rewatch\" lets you pick a date for the rewatch, while clicking on \"date unknown\" just adds a rewatch without date",
           "date": "2026-07-10T21:14:46.089Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Misty Lynx",
-          "team_name": "Eli",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "Wow you are right. I thought date unknown was supposed to open the date picker so you can pick a date and mark it after. Thanks a lot!",
@@ -19815,10 +19825,10 @@
           "text": "no problem! i thought it was a bit confusing as well, i believe making it more intuitive has been mentioned in the suggestions",
           "date": "2026-07-10T22:12:16.939Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Misty Lynx",
-          "team_name": "Eli",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "Eli sorry I didn't understand. Why with unknown date does the history say x4 when should be x3?",
@@ -19831,10 +19841,10 @@
           "text": "x2 means you have watched 2 times total (orginal first watch +1), x3 means you have watched 3 times total (original first watch + 2), and so on",
           "date": "2026-07-21T14:33:22.300Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Misty Lynx",
-          "team_name": "Eli",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "Ok I understand thank you. But maybe in some series there is a bug. When I press for the FIRST rewatch, it appears already the x2 in the bottom, so when I put the date, it's x2 but in the bottom there are 2 rewatches (x2 and x3). I tried in other series and it works right (when I click for the first rewatch, in the bottom there is nothing, unless I put a date or unknown",
@@ -19858,11 +19868,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1524866084174434457/1524866084552052829.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1532419373862752337",
@@ -19906,11 +19912,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1532419373862752337/1532419374307082260.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1529880106670096547",
@@ -20080,10 +20082,10 @@
           "text": "It's a bug, will be fixed soon, no need to panic like that",
           "date": "2026-07-13T19:10:47.729Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Misty Robin",
-          "team_name": "J",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "I am not panicking but this was an issue from the very beginning so it's not just some new suprise bug...",
@@ -20122,15 +20124,15 @@
           "text": "they know and they are doing what they can \nhttps://discord.com/channels/1490347491151970366/1490374069940387872/1527652941350309946",
           "date": "2026-07-20T03:47:04.189Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Silver Lynx",
-          "team_name": "Eli",
           "reactions": [
             {
               "emoji": "💜",
               "count": 1
             }
-          ]
+          ],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "Same thing for me and it has to do with the air date.",
