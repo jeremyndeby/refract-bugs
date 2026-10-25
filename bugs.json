@@ -1,11 +1,36 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-10-25T06:20:03.848Z",
+  "generated_at": "2026-10-25T09:40:03.861Z",
   "bugs": [
+    {
+      "id": "1563828519018958859",
+      "title": "Cannot mark episode as watched/unwatched after using 'continue from here' option",
+      "body": "User accidentally tapped the new 'continue watching from here' option on a previous episode. After this, marking the next episode as watched fails—it appears as watched but cannot be toggled or rated. The episode cannot be unmarked as watched either.\n\n📱 via app · iPhone 12 mini · iOS 18.3.1 · v1.6.750-01a16db2\n[identity removed]",
+      "author_key": "Coral Heron",
+      "posted_at": "2026-10-25T08:16:13.463Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1563828519018958859/1563828519606296646.webp"
+        }
+      ]
+    },
     {
       "id": "1563690972238315641",
       "title": "Journal and recent activity do not match",
-      "body": "I watched Mobland the latest, reviewed Prisoners and watched \"What's eating gilbert grape\" before that.\n\nYet recent activity makes it seem like I watched Gilbert the latest and then I watched Mobland. Prisoners does not seem to show here.\n\nRefract v1.6.750-01a16dac | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nPixel 10 Pro\nUsername [mention removed]",
+      "body": "I watched Mobland the latest, reviewed Prisoners and watched \"What's eating gilbert grape\" before that.\n\nYet recent activity makes it seem like I watched Gilbert the latest and then I watched Mobland. Prisoners does not seem to show here.\n\nRefract v1.6.750-01a16dac | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nPixel 10 Pro on Android 17\n[identity removed]",
       "author_key": "Misty Otter",
       "posted_at": "2026-10-24T23:09:39.755Z",
       "status": "open",
@@ -186,7 +211,7 @@
     {
       "id": "1563489875322212422",
       "title": "Not possible to remove old Monster series from widget",
-      "body": "Hello,\nI've this strange behaviour: the Monster series was initially consider a single one with different seasons, but then was divided into separate Tv shows itmes.\nIn app the \"Continue\" section is fine, but the widget keeps telling me I've an \"old friend\" to recover.\nIf I open the series from the widgetm the \"old\" series page gets open, but even if tried, the show can't be removed. With in app search can't even be found.\n\n[identity removed]\nOS: Android 15\nPhone: Moto g84\nRefract v1.6.749-01a169bc | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "body": "Hello,\nI've this strange behaviour: the Monster series was initially considered a single one with different seasons, but then was divided into separate Tv shows items.\nIn app the \"Continue\" section is fine, but the widget keeps telling me I've an \"old friend\" to recover.\nIf I open the series from the widget, the \"old\" series page gets open, but even if tried, the show can't be removed. With in app search it can't even be found.\n\n[identity removed]\nOS: Android 15\nPhone: Moto g84\nRefract v1.6.749-01a169bc | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
       "author_key": "Amber Finch",
       "posted_at": "2026-10-24T09:50:34.514Z",
       "status": "open",
@@ -280,7 +305,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8784593773931704,
+      "score": 1.8528018847241887,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -338,79 +363,6 @@
       ]
     },
     {
-      "id": "1563284353411448885",
-      "title": "Button to expand seasons episodes unresponsive",
-      "body": "These arrows to expand to see the episodes from each seasons are a bit unresponsive, I have to tap them numerous times until it works.\n\nThe calendar button right beside it works normally.\n\n[name removed]\nandroid 15 moto g54\nRefract v1.6.749-01a169bc | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Amber Panda",
-      "posted_at": "2026-10-23T20:13:54.272Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "lol nevermind, it works if I tap anywhere else and the arrow itself isn't a button",
-          "date": "2026-10-23T20:20:19.660Z",
-          "is_team": false,
-          "author_key": "Amber Panda",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1563284353411448885/1563284353751056394.webp"
-        }
-      ]
-    },
-    {
-      "id": "1563244029104226324",
-      "title": "Titles are shown in their original language rather than what I selected (English)",
-      "body": "As per title. In my Home, titles are shown in their original language; while in my Profile, they're shown in Italian even though I had specifically selected \"Show all titles in English\". :octocry:\n\n[mention removed]\nPoco X6 Pro\nAndroid 16\nRefract v1.6.749-01a169bc | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Lilac Robin",
-      "posted_at": "2026-10-23T17:33:40.208Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "That IS my Refract username, my dear [name removed]! 😁",
-          "date": "2026-10-23T17:35:30.875Z",
-          "is_team": false,
-          "author_key": "Lilac Robin",
-          "reactions": [
-            {
-              "emoji": "😂",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1563244029104226324/1563244029397835776.webp"
-        }
-      ]
-    },
-    {
       "id": "1563238536650424531",
       "title": "Update 749 - Feedback and Bugs",
       "body": "Screenshots, usernames, etc.",
@@ -432,7 +384,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 12.199052745556036,
+      "score": 12.032428377654087,
       "reactions": [
         {
           "emoji": "😂",
@@ -536,33 +488,6 @@
       "images": [
         {
           "url": "./assets/bugs/1563133989689229424/1563133989965795398.webp"
-        }
-      ]
-    },
-    {
-      "id": "1563131520548601856",
-      "title": "Missing flags for former countries",
-      "body": "The former country of Yugoslavia doesn't have a flag displayed next to its name. I assume these flags aren't included in icon packages or Material Design Icons, but their last flag still exists and could easily be added.\n\nJust checked Soviet Union too and it doesn't have a flag either.\n\nYugoslavia flag: https://en.wikipedia.org/wiki/Yugoslavia\nSoviet Union flag: https://en.wikipedia.org/wiki/Soviet_Union\n\nWhat you did right before it happened: Absolutely nothing. It's like this by default.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.744-01a1310d",
-      "author_key": "Golden Otter",
-      "posted_at": "2026-10-23T10:06:36.078Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1563131520548601856/1563131520879960104.webp"
         }
       ]
     },
@@ -727,7 +652,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.17378980507173,
+      "score": 3.1304396588633394,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -949,57 +874,6 @@
       ]
     },
     {
-      "id": "1562391870217261169",
-      "title": "Rating not showing when sharing to Instagram stories",
-      "body": "When I share a watched movie to my Instagram stories, majority of the time it shows the rating I gave it, but sometimes it doesn’t. The movie I logged most recently has this bug\n\niPhone 13\niOS 27.0.1\nRefract version: v1.6.748-01a1551c\n[identity removed]",
-      "author_key": "Silver Fox",
-      "posted_at": "2026-10-21T09:07:29.697Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 1.580504330794054,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "Before it happened I attempted to share the watched movie to my Instagram stories",
-          "date": "2026-10-21T09:10:26.910Z",
-          "is_team": false,
-          "author_key": "Silver Fox",
-          "reactions": []
-        },
-        {
-          "text": "For me, I fix this issue by waiting a few minutes after I rate it or basically just close the app and try it again",
-          "date": "2026-10-22T21:16:44.689Z",
-          "is_team": false,
-          "author_key": "Lilac Otter",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            },
-            {
-              "emoji": "👍",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1562391870217261169/1562391870691344485.webp"
-        }
-      ]
-    },
-    {
       "id": "1562169198380327103",
       "title": "Unable to scroll past august in journal.",
       "body": "Today I was going through my journal when I saw that I can't go past August 1st, if I do I get taken right back to the start.\n\nI should be able to scroll till the beginning of I want to, but I am not able to too.\n\nI am using a OnePlus 12r, android 16\nRefract Version: Refract v1.6.748-01a15515 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n[identity removed]",
@@ -1030,53 +904,6 @@
           "reactions": []
         }
       ],
-      "images": []
-    },
-    {
-      "id": "1562134265955618816",
-      "title": "Unable to read friends' full reviews (Followers-only visibility)",
-      "body": "Hi everyone! I'm running into an issue regarding reading reviews from friends I mutually follow, and I'm not sure if it's a bug or a missing feature.\n\nThe Problem:\n1. In their Profile/Journal: I can see a preview of my friend's review. However, if the review is long, it gets cut off, and tapping on it doesn't open or expand the full text, nothing happens.\n2. On the Movie Page: If I go to the movie's main page, head to the Reviews section, and filter by the \"Following\" option, their review doesn't show up at all.\n\nContext:\n-We mutually follow each other.\n-My friend sets their reviews to \"Followers Only\" (not Public).\n-Since we follow each other, I should be able to read their full review, but I can't access it anywhere.\n\n[identity removed]\nDevice: iPhone 12 pro max\nOS: iOS 27.0.1\nApp Version: Refract v1.6.748-01a1551c | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Coral Finch",
-      "posted_at": "2026-10-20T16:03:52.055Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "👤 Profile"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1562110292328980581",
-      "title": "Can't close badge page from anywhere but top of page.",
-      "body": "I was looking at the levels for the 'Casting Director' badge and noticed that when in the specific badge page, it can only be closed from the top of the page. \n\nWhen you are halfway down or at the bottom of the badge specific page, the close/exit button does not work.\n\n[identity removed]\nDevice/OS: Samsung S23, Android 14\nApp version: Refract v1.6.748-01a15515 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Lilac Sparrow",
-      "posted_at": "2026-10-20T14:28:36.297Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
       "images": []
     },
     {
@@ -1123,43 +950,6 @@
           "url": "./assets/bugs/1562091552233488394/1562091552464048228.webp"
         }
       ]
-    },
-    {
-      "id": "1562046123072426055",
-      "title": "Dropped values not importing correctly",
-      "body": "Hi, so I have a problem, I tried importing from simkl, but it misses the dropped and makes it as if I was still watching them. I tried editing the csv file and using case sensitive names from refract like \"Dropped\", but still doesn't work. Also checked the template and it also doesn't have this dropped field",
-      "author_key": "Ivory Wren",
-      "posted_at": "2026-10-20T10:13:37.154Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "pixel 8, android, v1.6.758-01a15515",
-          "date": "2026-10-20T10:20:02.104Z",
-          "is_team": false,
-          "author_key": "Ivory Wren",
-          "reactions": []
-        },
-        {
-          "text": "[identity removed]",
-          "date": "2026-10-20T10:20:08.823Z",
-          "is_team": false,
-          "author_key": "Ivory Wren",
-          "reactions": []
-        }
-      ],
-      "images": []
     },
     {
       "id": "1561732157188210718",
@@ -1235,7 +1025,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 8.58987999297315,
+      "score": 8.472552577965116,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1370,33 +1160,6 @@
       ]
     },
     {
-      "id": "1561251257249697892",
-      "title": "Episodes are marked as watched on their own",
-      "body": "I spent hours marking Naruto Shippuden episodes, entering dates and leaving unwatched episodes unmarked. Out of the blue everything was marked as watched and all the dates showed Jun 21, 2020. It's not the first time that a tv show marks everything as watched on its own, and it only happens when there are episodes UNMARKED in the seasons 🫤.\n\n[mention removed]\nSamsung A25, Android 16, Refract 1.6.5",
-      "author_key": "Velvet Robin",
-      "posted_at": "2026-10-18T05:35:06.374Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android",
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1561251257249697892/1561251257463742574.webp"
-        }
-      ]
-    },
-    {
       "id": "1561202547983908965",
       "title": "Profile badges have a lot of space underneath them",
       "body": "If you go to the badges section of you profile, there is a lot of blank space underneath them.\nThis can be replicated by going to the badges section of your profile\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.746-01a14a01 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -1459,37 +1222,6 @@
       ]
     },
     {
-      "id": "1560737778650587246",
-      "title": "Error in the journal section",
-      "body": "When I scroll through the newspaper and scroll down far enough, it starts to freeze like this.\n\n[identity removed]\nYour device and OS version: Iphone 17pro - iOS 27.2\nYour Refract app version: v1.6.5",
-      "author_key": "Silver Lynx",
-      "posted_at": "2026-10-16T19:34:43.536Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Just keep scrolling down the activity log until it starts doing that at some point.",
-          "date": "2026-10-16T19:36:34.992Z",
-          "is_team": false,
-          "author_key": "Silver Lynx",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1560680247052075008",
       "title": "745 - Bugs and feedbacks (Movies/Shows Revamp)",
       "body": "If you spot any!",
@@ -1511,7 +1243,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 11.372371677967125,
+      "score": 11.21703877778948,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -1764,7 +1496,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9488413378947802,
+      "score": 0.9358813080085622,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1800,7 +1532,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.2858351530231795,
+      "score": 1.2682721934994048,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -1967,7 +1699,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9134940649824037,
+      "score": 1.8873580406769126,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 3,
@@ -2004,41 +1736,6 @@
       "images": [
         {
           "url": "./assets/bugs/1559150539814473729/1559150540179505194.webp"
-        }
-      ]
-    },
-    {
-      "id": "1558819843648659556",
-      "title": "Inconsistent release year",
-      "body": "Independents' Day is showing an inconsistent release year. On the search results page it says 2017 but when you go into the movie itself it says 2016. On TBDM it does show both a 2017 and a 2016 release date. The search results page on TMDB https://www.themoviedb.org/search/movie?query=Independent%27s%20Day said the release date is December 6 2017 and if you click into the movie https://www.themoviedb.org/movie/401132-independents-day it says 2016-06-07\n\nIt can be reproduced by searching for the movie and clicking into it. \n\nRefract link: https://getrefract.app/item/movie/401132\nTBDM link https://www.themoviedb.org/movie/401132-independents-day\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.742-01a120b7 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Silver Tern",
-      "posted_at": "2026-10-11T12:33:32.198Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "It does also happen in the update that was just released \nRefract v1.6.743-01a12aff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-10-11T13:05:26.746Z",
-          "is_team": false,
-          "author_key": "Silver Tern",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1558819843648659556/1558819844168749056.webp"
         }
       ]
     },
@@ -2114,7 +1811,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 8.116097294163447,
+      "score": 8.005241180194817,
       "reactions": [
         {
           "emoji": "👍",
@@ -2171,31 +1868,6 @@
         }
       ],
       "images": []
-    },
-    {
-      "id": "1557788704939188254",
-      "title": "Update notification persists after update and app restart",
-      "body": "When opening the app, a notification appears at the top indicating an update is available. The user has already completed the update and restarted the app, but the same update notification continues to appear.\n\n📱 via app · iPhone 16e · iOS 26.6.1 · v1.6.741-01a1174b\n[identity removed]",
-      "author_key": "Velvet Seal",
-      "posted_at": "2026-10-08T16:16:09.572Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1557788704939188254/1557788705303957604.webp"
-        }
-      ]
     },
     {
       "id": "1557725738268885042",
@@ -2269,7 +1941,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6450456546978028,
+      "score": 0.6362351079509603,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2308,7 +1980,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.709307985820832,
+      "score": 1.685960897433917,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2384,7 +2056,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.3341743640521915,
+      "score": 1.315951149125757,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2461,33 +2133,6 @@
       "images": []
     },
     {
-      "id": "1556974745629630494",
-      "title": "Watch number on episode increases then decreases",
-      "body": "When I mark an episode as watched, the watch number does go up by one, but a second or two later it goes back down. \n\nIt can be reproduced by marking an episode as watched\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.740-01a104a6 | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
-      "author_key": "Azure Badger",
-      "posted_at": "2026-10-06T10:21:46.550Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1556974745629630494/1556974745910644806.webp"
-        }
-      ]
-    },
-    {
       "id": "1556630909136932935",
       "title": "Activity heatmap issues",
       "body": "Since the original [Activity heatmap issues](https://discord.com/channels/1490347491151970366/1526211664020508762) report was marked as fixed, I'm opening a new one to report newly found problems.\n\nIn my heatmap I have sort of \"ghost\" records (season 2) that comes from TVDB, however they don't exist in TMDB because they separated the seasons. I know I had similar problems to this when I imported my file from TV Time, which my also be showing up on my heatmap but I no longer remember them.\n\nWhat you did right before it happened: I guess an import from TV Time, because these \"ghost\" records comes from TVDB.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
@@ -2525,54 +2170,6 @@
       "images": [
         {
           "url": "./assets/bugs/1556630909136932935/1556630909439189062.webp"
-        }
-      ]
-    },
-    {
-      "id": "1556288040333221928",
-      "title": "Previously watched series adds \"Started\" entry dated today to My Journal & Activity heatmap",
-      "body": "I've been marking previously watched series, and every time I do in the present day a \"TV Show Added\" entry appears in My Journal and a \"Planned TV Show\" appears on my Activity heatmap.\n\nI never added these series to my Plan to Watch list for them to be appearing as such. I'm marking the episodes directly as watched and setting their watch dates to past or unknown dates. I don't think these entries should appear, they don't appear when I'm marking previously watched movies.\n\nWhat you did right before it happened: I either went to the last episode and marked all episodes, or marked them individually and set their watch dates to release date. I never added them to my Plan to Watch list.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Ochre Heron",
-      "posted_at": "2026-10-04T12:53:03.249Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 3,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "Now showing up as \"Started\" both in my My Journal and Activity heatmap. I've not started these titles on this date, I simply marked them as watched, same as I do for movies and added their respective watched dates. Status entries like this shouldn't exist, when the user provides dates.",
-          "date": "2026-10-12T22:46:15.578Z",
-          "is_team": false,
-          "author_key": "Ochre Heron",
-          "reactions": []
-        },
-        {
-          "text": "Previously watched series adds \"Started\" entry dated today to My Journal & Activity heatmap",
-          "date": "2026-10-12T22:48:48.107Z",
-          "is_team": false,
-          "author_key": "Ochre Heron",
-          "reactions": []
-        },
-        {
-          "text": "Bump, because I still have a lot of old series to add and I'd love not to have incorrect status displayed in my heatmap and journal. 🙂",
-          "date": "2026-10-20T14:58:15.423Z",
-          "is_team": false,
-          "author_key": "Ochre Heron",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1556288040333221928/1556288040664567888.webp"
         }
       ]
     },
@@ -2778,7 +2375,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09443698266335439,
+      "score": 0.09314708722056429,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2812,7 +2409,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 1.9398708633350934,
+      "score": 1.9133745637324568,
       "reactions": [
         {
           "emoji": "👍",
@@ -3681,7 +3278,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.292299781286985,
+      "score": 0.2883073183219762,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3771,7 +3368,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 62.49934216230603,
+      "score": 61.64567642290053,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5464,6 +5061,448 @@
       "images": []
     },
     {
+      "id": "1563131520548601856",
+      "title": "Missing flags for former countries",
+      "body": "The former country of Yugoslavia doesn't have a flag displayed next to its name. I assume these flags aren't included in icon packages or Material Design Icons, but their last flag still exists and could easily be added.\n\nJust checked Soviet Union too and it doesn't have a flag either.\n\nYugoslavia flag: https://en.wikipedia.org/wiki/Yugoslavia\nSoviet Union flag: https://en.wikipedia.org/wiki/Soviet_Union\n\nWhat you did right before it happened: Absolutely nothing. It's like this by default.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.744-01a1310d",
+      "author_key": "Golden Otter",
+      "posted_at": "2026-10-23T10:06:36.078Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:29.938Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:29.938Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1563131520548601856/1563131520879960104.webp"
+        }
+      ]
+    },
+    {
+      "id": "1560737778650587246",
+      "title": "Error in the journal section",
+      "body": "When I scroll through the newspaper and scroll down far enough, it starts to freeze like this.\n\n[identity removed]\nYour device and OS version: Iphone 17pro - iOS 27.2\nYour Refract app version: v1.6.5",
+      "author_key": "Silver Lynx",
+      "posted_at": "2026-10-16T19:34:43.536Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:29.473Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:29.473Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Just keep scrolling down the activity log until it starts doing that at some point.",
+          "date": "2026-10-16T19:36:34.992Z",
+          "is_team": false,
+          "author_key": "Silver Lynx",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1562134265955618816",
+      "title": "Unable to read friends' full reviews (Followers-only visibility)",
+      "body": "Hi everyone! I'm running into an issue regarding reading reviews from friends I mutually follow, and I'm not sure if it's a bug or a missing feature.\n\nThe Problem:\n1. In their Profile/Journal: I can see a preview of my friend's review. However, if the review is long, it gets cut off, and tapping on it doesn't open or expand the full text, nothing happens.\n2. On the Movie Page: If I go to the movie's main page, head to the Reviews section, and filter by the \"Following\" option, their review doesn't show up at all.\n\nContext:\n-We mutually follow each other.\n-My friend sets their reviews to \"Followers Only\" (not Public).\n-Since we follow each other, I should be able to read their full review, but I can't access it anywhere.\n\n[identity removed]\nDevice: iPhone 12 pro max\nOS: iOS 27.0.1\nApp Version: Refract v1.6.748-01a1551c | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Coral Finch",
+      "posted_at": "2026-10-20T16:03:52.055Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:28.913Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:28.913Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "📱 iOS",
+        "👤 Profile"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1557788704939188254",
+      "title": "Update notification persists after update and app restart",
+      "body": "When opening the app, a notification appears at the top indicating an update is available. The user has already completed the update and restarted the app, but the same update notification continues to appear.\n\n📱 via app · iPhone 16e · iOS 26.6.1 · v1.6.741-01a1174b\n[identity removed]",
+      "author_key": "Velvet Seal",
+      "posted_at": "2026-10-08T16:16:09.572Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:28.574Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:28.574Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1557788704939188254/1557788705303957604.webp"
+        }
+      ]
+    },
+    {
+      "id": "1558819843648659556",
+      "title": "Inconsistent release year",
+      "body": "Independents' Day is showing an inconsistent release year. On the search results page it says 2017 but when you go into the movie itself it says 2016. On TBDM it does show both a 2017 and a 2016 release date. The search results page on TMDB https://www.themoviedb.org/search/movie?query=Independent%27s%20Day said the release date is December 6 2017 and if you click into the movie https://www.themoviedb.org/movie/401132-independents-day it says 2016-06-07\n\nIt can be reproduced by searching for the movie and clicking into it. \n\nRefract link: https://getrefract.app/item/movie/401132\nTBDM link https://www.themoviedb.org/movie/401132-independents-day\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.742-01a120b7 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Silver Tern",
+      "posted_at": "2026-10-11T12:33:32.198Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:28.029Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:28.029Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "It does also happen in the update that was just released \nRefract v1.6.743-01a12aff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-10-11T13:05:26.746Z",
+          "is_team": false,
+          "author_key": "Silver Tern",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1558819843648659556/1558819844168749056.webp"
+        }
+      ]
+    },
+    {
+      "id": "1556974745629630494",
+      "title": "Watch number on episode increases then decreases",
+      "body": "When I mark an episode as watched, the watch number does go up by one, but a second or two later it goes back down. \n\nIt can be reproduced by marking an episode as watched\n\n[identity removed]\nDevice: Samsung A71 Android 13 \nApp version: Refract v1.6.740-01a104a6 | native 1.6.4 (72) | runtime 1.6.4 | state ota-applied",
+      "author_key": "Azure Badger",
+      "posted_at": "2026-10-06T10:21:46.550Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:27.503Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:27.503Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1556974745629630494/1556974745910644806.webp"
+        }
+      ]
+    },
+    {
+      "id": "1562110292328980581",
+      "title": "Can't close badge page from anywhere but top of page.",
+      "body": "I was looking at the levels for the 'Casting Director' badge and noticed that when in the specific badge page, it can only be closed from the top of the page. \n\nWhen you are halfway down or at the bottom of the badge specific page, the close/exit button does not work.\n\n[identity removed]\nDevice/OS: Samsung S23, Android 14\nApp version: Refract v1.6.748-01a15515 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Lilac Sparrow",
+      "posted_at": "2026-10-20T14:28:36.297Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:26.967Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:26.967Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1561251257249697892",
+      "title": "Episodes are marked as watched on their own",
+      "body": "I spent hours marking Naruto Shippuden episodes, entering dates and leaving unwatched episodes unmarked. Out of the blue everything was marked as watched and all the dates showed Jun 21, 2020. It's not the first time that a tv show marks everything as watched on its own, and it only happens when there are episodes UNMARKED in the seasons 🫤.\n\n[mention removed]\nSamsung A25, Android 16, Refract 1.6.5",
+      "author_key": "Velvet Robin",
+      "posted_at": "2026-10-18T05:35:06.374Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:26.427Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:26.427Z"
+      },
+      "tags": [
+        "🤖 Android",
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1561251257249697892/1561251257463742574.webp"
+        }
+      ]
+    },
+    {
+      "id": "1556288040333221928",
+      "title": "Previously watched series adds \"Started\" entry dated today to My Journal & Activity heatmap",
+      "body": "I've been marking previously watched series, and every time I do in the present day a \"TV Show Added\" entry appears in My Journal and a \"Planned TV Show\" appears on my Activity heatmap.\n\nI never added these series to my Plan to Watch list for them to be appearing as such. I'm marking the episodes directly as watched and setting their watch dates to past or unknown dates. I don't think these entries should appear, they don't appear when I'm marking previously watched movies.\n\nWhat you did right before it happened: I either went to the last episode and marked all episodes, or marked them individually and set their watch dates to release date. I never added them to my Plan to Watch list.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Ochre Heron",
+      "posted_at": "2026-10-04T12:53:03.249Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:25.892Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:25.892Z"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 3,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "Now showing up as \"Started\" both in my My Journal and Activity heatmap. I've not started these titles on this date, I simply marked them as watched, same as I do for movies and added their respective watched dates. Status entries like this shouldn't exist, when the user provides dates.",
+          "date": "2026-10-12T22:46:15.578Z",
+          "is_team": false,
+          "author_key": "Ochre Heron",
+          "reactions": []
+        },
+        {
+          "text": "Previously watched series adds \"Started\" entry dated today to My Journal & Activity heatmap",
+          "date": "2026-10-12T22:48:48.107Z",
+          "is_team": false,
+          "author_key": "Ochre Heron",
+          "reactions": []
+        },
+        {
+          "text": "Bump, because I still have a lot of old series to add and I'd love not to have incorrect status displayed in my heatmap and journal. 🙂",
+          "date": "2026-10-20T14:58:15.423Z",
+          "is_team": false,
+          "author_key": "Ochre Heron",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1556288040333221928/1556288040664567888.webp"
+        }
+      ]
+    },
+    {
+      "id": "1562391870217261169",
+      "title": "Rating not showing when sharing to Instagram stories",
+      "body": "When I share a watched movie to my Instagram stories, majority of the time it shows the rating I gave it, but sometimes it doesn’t. The movie I logged most recently has this bug\n\niPhone 13\niOS 27.0.1\nRefract version: v1.6.748-01a1551c\n[identity removed]",
+      "author_key": "Silver Fox",
+      "posted_at": "2026-10-21T09:07:29.697Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:25.351Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:25.351Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 1.5589165452030143,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Before it happened I attempted to share the watched movie to my Instagram stories",
+          "date": "2026-10-21T09:10:26.910Z",
+          "is_team": false,
+          "author_key": "Silver Fox",
+          "reactions": []
+        },
+        {
+          "text": "For me, I fix this issue by waiting a few minutes after I rate it or basically just close the app and try it again",
+          "date": "2026-10-22T21:16:44.689Z",
+          "is_team": false,
+          "author_key": "Lilac Otter",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            },
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1562391870217261169/1562391870691344485.webp"
+        }
+      ]
+    },
+    {
+      "id": "1562046123072426055",
+      "title": "Dropped values not importing correctly",
+      "body": "Hi, so I have a problem, I tried importing from simkl, but it misses the dropped and makes it as if I was still watching them. I tried editing the csv file and using case sensitive names from refract like \"Dropped\", but still doesn't work. Also checked the template and it also doesn't have this dropped field",
+      "author_key": "Ivory Wren",
+      "posted_at": "2026-10-20T10:13:37.154Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:24.890Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:24.890Z"
+      },
+      "tags": [
+        "🔗 Import"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "pixel 8, android, v1.6.758-01a15515",
+          "date": "2026-10-20T10:20:02.104Z",
+          "is_team": false,
+          "author_key": "Ivory Wren",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]",
+          "date": "2026-10-20T10:20:08.823Z",
+          "is_team": false,
+          "author_key": "Ivory Wren",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1563244029104226324",
+      "title": "Titles are shown in their original language rather than what I selected (English)",
+      "body": "As per title. In my Home, titles are shown in their original language; while in my Profile, they're shown in Italian even though I had specifically selected \"Show all titles in English\". :octocry:\n\n[mention removed]\nPoco X6 Pro\nAndroid 16\nRefract v1.6.749-01a169bc | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Lilac Robin",
+      "posted_at": "2026-10-23T17:33:40.208Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:24.402Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:24.402Z"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "That IS my Refract username, my dear [name removed]! 😁",
+          "date": "2026-10-23T17:35:30.875Z",
+          "is_team": false,
+          "author_key": "Lilac Robin",
+          "reactions": [
+            {
+              "emoji": "😂",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1563244029104226324/1563244029397835776.webp"
+        }
+      ]
+    },
+    {
+      "id": "1563284353411448885",
+      "title": "Button to expand seasons episodes unresponsive",
+      "body": "These arrows to expand to see the episodes from each seasons are a bit unresponsive, I have to tap them numerous times until it works.\n\nThe calendar button right beside it works normally.\n\n[name removed]\nandroid 15 moto g54\nRefract v1.6.749-01a169bc | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Amber Panda",
+      "posted_at": "2026-10-23T20:13:54.272Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T09:32:23.937Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T09:32:23.937Z"
+      },
+      "tags": [
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "lol nevermind, it works if I tap anywhere else and the arrow itself isn't a button",
+          "date": "2026-10-23T20:20:19.660Z",
+          "is_team": false,
+          "author_key": "Amber Panda",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1563284353411448885/1563284353751056394.webp"
+        }
+      ]
+    },
+    {
       "id": "1561835443626975262",
       "title": "Collection list reordering causes lag",
       "body": "When reordering collection lists, the app experiences significant lag.\n\n📱 via app · SM-S916U · samsung/dm2qsqw/dm2q:16/BP4A.251205.006/S916USQU7FZE2:user/release-keys 16 · v1.6.748-01a15515\n[identity removed]",
@@ -5811,7 +5850,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.7115565716517838,
+      "score": 1.6881787702906252,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6003,7 +6042,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.4985683300012728,
+      "score": 0.49175848709173586,
       "reactions": [
         {
           "emoji": "👍",
@@ -6166,7 +6205,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.3707200125091015,
+      "score": 0.36565642363533146,
       "reactions": [
         {
           "emoji": "💜",
@@ -6410,7 +6449,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.32131638080901387,
+      "score": 0.316927586042277,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6827,7 +6866,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.35309451557596905,
+      "score": 0.34827166976206575,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6864,7 +6903,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.407720672093486,
+      "score": 2.3748341075839443,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7242,7 +7281,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.1729239359196897,
+      "score": 1.1569032076306938,
       "reactions": [
         {
           "emoji": "💜",
@@ -7402,7 +7441,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7125638416035824,
+      "score": 0.7028310777428611,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -7514,7 +7553,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7088922634869741,
+      "score": 0.6992096489612578,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7724,7 +7763,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.014743959692857491,
+      "score": 0.01454257496115452,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7754,7 +7793,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.10519645555415934,
+      "score": 0.10375959867044576,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7795,7 +7834,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.21039920146702576,
+      "score": 0.2075254017808748,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -8081,7 +8120,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3339680019576967,
+      "score": 0.3294064012837469,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -8587,7 +8626,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.24829912250566333,
+      "score": 0.2449076555449859,
       "reactions": [
         {
           "emoji": "💜",
@@ -8711,7 +8750,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5160040889546383,
+      "score": 0.5089560945775169,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8809,7 +8848,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07138099234299598,
+      "score": 0.07040601395922781,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8847,7 +8886,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.28334565219129404,
+      "score": 0.2794754918453329,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9147,7 +9186,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.009168659847333022,
+      "score": 0.009043426996599888,
       "reactions": [
         {
           "emoji": "💜",
@@ -9244,7 +9283,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.7536048900844143,
+      "score": 1.7296527593366784,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9465,7 +9504,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.847131662745119,
+      "score": 0.8355608645217854,
       "reactions": [],
       "comments_count": 10,
       "activity_7d": 0,
@@ -9816,7 +9855,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6983216859591361,
+      "score": 0.6887834527911919,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9923,7 +9962,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.496352112386949,
+      "score": 2.4622549491511645,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 3,
@@ -10000,7 +10039,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6453324627461314,
+      "score": 0.6365179985467818,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10217,7 +10256,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6969930547994916,
+      "score": 0.6874729691329777,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10261,7 +10300,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 14.081681202365983,
+      "score": 13.88934239719148,
       "reactions": [
         {
           "emoji": "💯",
@@ -10349,7 +10388,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.5274032535898363,
+      "score": 1.5065407647581934,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -10407,7 +10446,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7629841732691366,
+      "score": 0.7525627284043725,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10438,7 +10477,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4942631624172822,
+      "score": 1.4738533273169587,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 4,
@@ -10494,7 +10533,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.09729924288453534,
+      "score": 0.09597025241444496,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10655,7 +10694,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6563306929057585,
+      "score": 0.6473660061287538,
       "reactions": [
         {
           "emoji": "👍",
@@ -10719,7 +10758,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.13852732744534252,
+      "score": 0.13663521099547024,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10788,7 +10827,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1719773508923126,
+      "score": 1.1559695518147186,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 4,
@@ -11335,7 +11374,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.25237676907049494,
+      "score": 0.24892960636888056,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -11598,7 +11637,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.27565083984625205,
+      "score": 0.2718857813692523,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -11686,7 +11725,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3968450707913661,
+      "score": 0.3914246450866159,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -11772,7 +11811,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.2747454570233752,
+      "score": 0.2709927649852882,
       "reactions": [
         {
           "emoji": "☝️",
@@ -11906,7 +11945,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06836157326932198,
+      "score": 0.06742783651349615,
       "reactions": [
         {
           "emoji": "➕",
@@ -11956,7 +11995,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.15826108050828924,
+      "score": 0.15609942475901156,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12000,7 +12039,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.08948351700309634,
+      "score": 0.08826127993524567,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -12045,7 +12084,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.14982029513991074,
+      "score": 0.14777393035263947,
       "reactions": [
         {
           "emoji": "💜",
@@ -12275,7 +12314,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0043925946964987065,
+      "score": 0.004332597143408351,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12386,7 +12425,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.02898641324111458,
+      "score": 0.0285904937476273,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -12462,7 +12501,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.26622516596159734,
+      "score": 0.2625888508375315,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -12524,7 +12563,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.03401945640836058,
+      "score": 0.033554791607031995,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12628,7 +12667,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.006046245646385149,
+      "score": 0.005963661212985118,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -12734,7 +12773,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.12692881383543037,
+      "score": 0.12519511911215955,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -12787,7 +12826,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.017471280321161634,
+      "score": 0.017232643674475127,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -12852,7 +12891,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.02450892672434493,
+      "score": 0.024174164303968744,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -12921,7 +12960,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00030615299912905257,
+      "score": 0.00030197131789320845,
       "reactions": [
         {
           "emoji": "‼️",
@@ -13042,7 +13081,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.003079009912227319,
+      "score": 0.0030369543452017887,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13180,7 +13219,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.21277124437471712,
+      "score": 0.20986504543934797,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13274,7 +13313,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.002680310718891383,
+      "score": 0.002643700902651447,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13375,7 +13414,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0008101992528218116,
+      "score": 0.0007991329068364446,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13542,7 +13581,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.018880175347773084,
+      "score": 0.018622294891903535,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -13674,7 +13713,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0036819659652552747,
+      "score": 0.003631674744748778,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13835,7 +13874,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.010127686776956177,
+      "score": 0.009989354773421395,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13896,7 +13935,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.036928787690193206,
+      "score": 0.03642438492756844,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14197,7 +14236,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.04230261934491302,
+      "score": 0.04172481651415548,
       "reactions": [
         {
           "emoji": "💯",
@@ -14256,7 +14295,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.048023168253828644,
+      "score": 0.04736722961483407,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -14393,7 +14432,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.012272293953947503,
+      "score": 0.012104669199351017,
       "reactions": [
         {
           "emoji": "💜",
@@ -14521,7 +14560,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8488191497041255,
+      "score": 0.8372253024413499,
       "reactions": [],
       "comments_count": 12,
       "activity_7d": 0,
@@ -14631,7 +14670,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.014271782460310212,
+      "score": 0.01407684710091113,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14985,7 +15024,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0054374275189736174,
+      "score": 0.00536315880793032,
       "reactions": [
         {
           "emoji": "💜",
@@ -15101,7 +15140,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.20893658448332356,
+      "score": 0.20608276238358647,
       "reactions": [
         {
           "emoji": "💜",
@@ -15250,7 +15289,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0008095388593765097,
+      "score": 0.0007984815335702241,
       "reactions": [
         {
           "emoji": "💜",
@@ -15280,7 +15319,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.08167190333273058,
+      "score": 0.0805563634992691,
       "reactions": [
         {
           "emoji": "👆",
@@ -15346,7 +15385,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0005662123756071309,
+      "score": 0.000558478596505457,
       "reactions": [
         {
           "emoji": "🤔",
@@ -15437,7 +15476,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.01896536125817995,
+      "score": 0.018706317265372596,
       "reactions": [
         {
           "emoji": "👆",
@@ -15600,7 +15639,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0049849127818404,
+      "score": 0.004916824877095248,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15740,7 +15779,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1407027507555433,
+      "score": 0.13878092064334477,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -15975,7 +16014,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.0005496319870008459,
+      "score": 0.0005421246760380279,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16054,7 +16093,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00008105264330735366,
+      "score": 0.00007994556181999905,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -16171,7 +16210,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.005953987343028886,
+      "score": 0.005872663046936323,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -16259,7 +16298,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00462249534905264,
+      "score": 0.0045593576299419345,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16355,7 +16394,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0008102611588613347,
+      "score": 0.0007991939673140277,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -16408,7 +16447,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.006294547416864527,
+      "score": 0.006208571480335687,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16516,7 +16555,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.012307432877473368,
+      "score": 0.012139328167503021,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
