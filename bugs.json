@@ -1,6 +1,6 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-10-25T19:10:04.751Z",
+  "generated_at": "2026-10-25T19:30:05.618Z",
   "bugs": [
     {
       "id": "1563933574636241049",
@@ -26,52 +26,6 @@
       "images": [
         {
           "url": "./assets/bugs/1563933574636241049/1563933575152402543.webp"
-        }
-      ]
-    },
-    {
-      "id": "1563913753697980507",
-      "title": "Inconsistency with number of seasons",
-      "body": "[identity removed]\nDevice: Samsung S25FE - Android 17 - OneUI 9\nVersion: Refract v1.6.750-01a16dac | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nFor the series \"true detective\" it shows 2 different number of seasons. The one below the logo shows 5, and the one on the seasons tab shows 4.",
-      "author_key": "Sage Wren",
-      "posted_at": "2026-10-25T13:54:54.994Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 1.9704895188655602,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "That linked bug report is not releted. To get this I just went to the \"true detective\" series page",
-          "date": "2026-10-25T15:13:06.065Z",
-          "is_team": false,
-          "author_key": "Sage Wren",
-          "reactions": []
-        },
-        {
-          "text": "I wonder if it’s because TMDB has the 5th Season created already. That season won’t sync to Refract until they add episodes though. \nI agree those numbers should be the same- how is up to the devs though \n\nhttps://www.themoviedb.org/tv/46648-true-detective/seasons",
-          "date": "2026-10-25T15:33:54.256Z",
-          "is_team": false,
-          "author_key": "Teal Otter",
-          "reactions": [
-            {
-              "emoji": "💯",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1563913753697980507/1563913754146639952.webp"
         }
       ]
     },
@@ -356,7 +310,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.78158280042176,
+      "score": 1.7791325200671915,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -435,7 +389,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 11.569918846518412,
+      "score": 11.55400628559401,
       "reactions": [
         {
           "emoji": "😂",
@@ -509,61 +463,6 @@
       ]
     },
     {
-      "id": "1563119927588556860",
-      "title": "Followers / Following",
-      "body": "Hi, I think there is problem with my followers and the people I follow. I have for both categories Followers and Following the same number of people but I know and I can see that I follow one profile (Refract profile) that doesn't follow me back. I have checked both lists to check if is someone that I haven't followed back but everyone is listed as Friend. So is it possible that someone is missing? I think the people I follow should be one number more... 🤔 \n\nRefract name: [name removed]\nAndroid 16\nSamsung A33\nVersion app: v1.6.748-01a15515",
-      "author_key": "Golden Heron",
-      "posted_at": "2026-10-23T09:20:32.101Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "👤 Profile",
-        "🤖 Android",
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1563119927588556860/1563119928167505940.webp"
-        }
-      ]
-    },
-    {
-      "id": "1562994016855920741",
-      "title": "Release date information can be too squished to see full information",
-      "body": "If a movie has multiple release types e.g. theatrical, digital, physical and US theatrical the info box for them are all squished in the same line making the release year unreadable this happens for me on https://getrefract.app/item/movie/493922\nIt can be replicated by viewing at the information about the movie\n\n[identity removed]\nDevice Samsung A71 Android 13 \nApp version: Refract v1.6.748-01a15515 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Ochre Finch",
-      "posted_at": "2026-10-23T01:00:12.643Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1562994016855920741/1562994017095000176.webp"
-        }
-      ]
-    },
-    {
       "id": "1562960775843155969",
       "title": "I can't change my photo",
       "body": "I click the \"use photo\" button a thousand times and it doesn't work.",
@@ -594,34 +493,6 @@
       "images": [
         {
           "url": "./assets/bugs/1562960775843155969/1562960776631816223.webp"
-        }
-      ]
-    },
-    {
-      "id": "1562946766163157042",
-      "title": "Collection Sorting Wrong Order - Using Old Import Dates",
-      "body": "Right now I have my collection storing by Last Watched and filtered by movies. It should be showing all of the films that have a date unknown at the bottom. However, the bulk of the films that had been marked date unknown by the Healing & Fixing tool seem to still be sorting by their old TV Time date ie the one they were imported with.\n\nThe good news is when I've added dates to them, they properly sort, but anything else stays where it shouldn't. In this case, I have a bunch of films popping up in the middle of 2019. Thanks!\n\n[name removed]\nAndroid 16\nSamsung Galaxy s22+\nRefract v1.6.748-01a15515 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Velvet Otter",
-      "posted_at": "2026-10-22T21:52:27.200Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🔗 Import",
-        "🤖 Android",
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1562946766163157042/1562946766352162856.webp"
         }
       ]
     },
@@ -694,42 +565,6 @@
       ]
     },
     {
-      "id": "1562585866419830794",
-      "title": "Names suddenly written in a different alphabet",
-      "body": "Just a bunch of names written in a different alphabet from what they should be. And this happens every now and then for about 5ish days. The names change \n\nRefract name: Hannah311\nDevice: Xiaomi T12\nOS: 2.0.211.0.VLQEUXM\nApp version: v1.6.748",
-      "author_key": "Azure Lynx",
-      "posted_at": "2026-10-21T21:58:21.996Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "I put the OS version in my original text, at least that's what my phone says it is",
-          "date": "2026-10-24T17:21:29.088Z",
-          "is_team": false,
-          "author_key": "Azure Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1562585866419830794/1562585866667434064.webp"
-        }
-      ]
-    },
-    {
       "id": "1561732157188210718",
       "title": "New shows/season won't switch from \"upcoming\" section to \"continue\" section even after starting them",
       "body": "That's pretty much it. I can still see the show, and update the episodes, from the upcoming section. However it's kind of annoying and I'm pretty sure it's not supposed to work like that.\n[identity removed]\nDevice: samsung galaxy s23, android 16\nRefract version: 1.6.747-01a15017\n\nFirst pic is my \"continue\" section. The only show I've watched lately is Ted Lasso season 4, which also came out recently, so I can't really work this out.\n\nSecond pic is my \"upcoming\" section. I've watched the 1st episode of Tokyo Revengers, but as you can see it didn't switch to the continue section. Neither did Helluva Boss, of which I've watched the first 3 episodes, but since there are just 3 of them out, I guess that would count as an \"up to date\". However, it wouldn't switch to the continue section even after watching just 1 or 2 (so when I still wasn't \"up to date\").\n\nThird pic is the continue secrion from the home page. I haven't watched Inuyasha in a while, but Tokyo Revengers still won't come up.\n\nPlease let me know and keep up the good work!",
@@ -777,7 +612,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 8.146879638358472,
+      "score": 8.13567491684669,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -948,7 +783,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8999073540085903,
+      "score": 0.8986696763042832,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -984,7 +819,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.2195216039129169,
+      "score": 1.2178443482572536,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -1095,7 +930,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8148106666073718,
+      "score": 1.812314686671667,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 3,
@@ -1263,7 +1098,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.611779130135464,
+      "score": 0.6109377264221193,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1302,7 +1137,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.621154944744151,
+      "score": 1.618925307080452,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1378,7 +1213,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.2653678479103565,
+      "score": 1.2636275381260997,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1697,7 +1532,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08956664491209021,
+      "score": 0.08944346040985951,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1731,7 +1566,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 1.8398271513080198,
+      "score": 1.8372967652245973,
       "reactions": [
         {
           "emoji": "👍",
@@ -2600,7 +2435,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.27722519271649787,
+      "score": 0.27684391408979375,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2690,7 +2525,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 59.2761037976566,
+      "score": 59.194579058757924,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4383,6 +4218,176 @@
       "images": []
     },
     {
+      "id": "1562946766163157042",
+      "title": "Collection Sorting Wrong Order - Using Old Import Dates",
+      "body": "Right now I have my collection storing by Last Watched and filtered by movies. It should be showing all of the films that have a date unknown at the bottom. However, the bulk of the films that had been marked date unknown by the Healing & Fixing tool seem to still be sorting by their old TV Time date ie the one they were imported with.\n\nThe good news is when I've added dates to them, they properly sort, but anything else stays where it shouldn't. In this case, I have a bunch of films popping up in the middle of 2019. Thanks!\n\n[name removed]\nAndroid 16\nSamsung Galaxy s22+\nRefract v1.6.748-01a15515 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Velvet Otter",
+      "posted_at": "2026-10-22T21:52:27.200Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T19:21:45.654Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T19:21:45.654Z"
+      },
+      "tags": [
+        "🔗 Import",
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1562946766163157042/1562946766352162856.webp"
+        }
+      ]
+    },
+    {
+      "id": "1562585866419830794",
+      "title": "Names suddenly written in a different alphabet",
+      "body": "Just a bunch of names written in a different alphabet from what they should be. And this happens every now and then for about 5ish days. The names change \n\nRefract name: Hannah311\nDevice: Xiaomi T12\nOS: 2.0.211.0.VLQEUXM\nApp version: v1.6.748",
+      "author_key": "Azure Lynx",
+      "posted_at": "2026-10-21T21:58:21.996Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T19:21:45.027Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T19:21:45.027Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "I put the OS version in my original text, at least that's what my phone says it is",
+          "date": "2026-10-24T17:21:29.088Z",
+          "is_team": false,
+          "author_key": "Azure Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1562585866419830794/1562585866667434064.webp"
+        }
+      ]
+    },
+    {
+      "id": "1563913753697980507",
+      "title": "Inconsistency with number of seasons",
+      "body": "[identity removed]\nDevice: Samsung S25FE - Android 17 - OneUI 9\nVersion: Refract v1.6.750-01a16dac | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nFor the series \"true detective\" it shows 2 different number of seasons. The one below the logo shows 5, and the one on the seasons tab shows 4.",
+      "author_key": "Sage Wren",
+      "posted_at": "2026-10-25T13:54:54.994Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T19:21:44.518Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T19:21:44.518Z"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 1.967779427728726,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "That linked bug report is not releted. To get this I just went to the \"true detective\" series page",
+          "date": "2026-10-25T15:13:06.065Z",
+          "is_team": false,
+          "author_key": "Sage Wren",
+          "reactions": []
+        },
+        {
+          "text": "I wonder if it’s because TMDB has the 5th Season created already. That season won’t sync to Refract until they add episodes though. \nI agree those numbers should be the same- how is up to the devs though \n\nhttps://www.themoviedb.org/tv/46648-true-detective/seasons",
+          "date": "2026-10-25T15:33:54.256Z",
+          "is_team": false,
+          "author_key": "Teal Otter",
+          "reactions": [
+            {
+              "emoji": "💯",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1563913753697980507/1563913754146639952.webp"
+        }
+      ]
+    },
+    {
+      "id": "1562994016855920741",
+      "title": "Release date information can be too squished to see full information",
+      "body": "If a movie has multiple release types e.g. theatrical, digital, physical and US theatrical the info box for them are all squished in the same line making the release year unreadable this happens for me on https://getrefract.app/item/movie/493922\nIt can be replicated by viewing at the information about the movie\n\n[identity removed]\nDevice Samsung A71 Android 13 \nApp version: Refract v1.6.748-01a15515 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Ochre Finch",
+      "posted_at": "2026-10-23T01:00:12.643Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T19:21:44.005Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T19:21:44.005Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1562994016855920741/1562994017095000176.webp"
+        }
+      ]
+    },
+    {
+      "id": "1563119927588556860",
+      "title": "Followers / Following",
+      "body": "Hi, I think there is problem with my followers and the people I follow. I have for both categories Followers and Following the same number of people but I know and I can see that I follow one profile (Refract profile) that doesn't follow me back. I have checked both lists to check if is someone that I haven't followed back but everyone is listed as Friend. So is it possible that someone is missing? I think the people I follow should be one number more... 🤔 \n\nRefract name: [name removed]\nAndroid 16\nSamsung A33\nVersion app: v1.6.748-01a15515",
+      "author_key": "Golden Heron",
+      "posted_at": "2026-10-23T09:20:32.101Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-25T19:21:43.398Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-25T19:21:43.398Z"
+      },
+      "tags": [
+        "👤 Profile",
+        "🤖 Android",
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1563119927588556860/1563119928167505940.webp"
+        }
+      ]
+    },
+    {
       "id": "1563991200476823703",
       "title": "Greek Series Bug",
       "body": "There is a Greek TV series that airing now, the problem is that the episodes of season 7 that have aired from September till now are also on season 6, at the same time...\n\n[identity removed]\nAndroid 16\nSamsung A33\nApp Version: v1.6.750-01a16dac",
@@ -4594,7 +4599,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.0101099852989996,
+      "score": 3.0059700635618105,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -4759,7 +4764,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 7.697531029868388,
+      "score": 7.686944315034419,
       "reactions": [
         {
           "emoji": "👍",
@@ -4974,7 +4979,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 10.785871669786497,
+      "score": 10.771037439542964,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -5510,7 +5515,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4989939977527822,
+      "score": 1.496932372807009,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6006,7 +6011,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.6232875657046606,
+      "score": 1.6210549949641258,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6198,7 +6203,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.47285598626994146,
+      "score": 0.4722056489780553,
       "reactions": [
         {
           "emoji": "👍",
@@ -6361,7 +6366,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.35160110780512016,
+      "score": 0.3511175370797542,
       "reactions": [
         {
           "emoji": "💜",
@@ -6605,7 +6610,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3047453378190838,
+      "score": 0.3043262096628019,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7022,7 +7027,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.33488459928603126,
+      "score": 0.33442401942722033,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7059,7 +7064,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.2835488428685093,
+      "score": 2.280408189025728,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7437,7 +7442,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.1124334843681518,
+      "score": 1.1109035111825856,
       "reactions": [
         {
           "emoji": "💜",
@@ -7597,7 +7602,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6758152450254916,
+      "score": 0.6748857699442257,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -7709,7 +7714,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6723330188449969,
+      "score": 0.6714083330052965,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7919,7 +7924,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.013983578945081803,
+      "score": 0.013964346783226868,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7949,7 +7954,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09977122642955899,
+      "score": 0.09963400716811702,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7990,7 +7995,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.19954841880920232,
+      "score": 0.19927397208111447,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -8276,7 +8281,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3167444850496326,
+      "score": 0.3163088539978782,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -8782,7 +8787,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.23549375160286798,
+      "score": 0.23516986785576424,
       "reactions": [
         {
           "emoji": "💜",
@@ -8906,7 +8911,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.4893925420440268,
+      "score": 0.48871946138161876,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9004,7 +9009,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.06769970634754989,
+      "score": 0.06760659629931963,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9042,7 +9047,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2687328491600582,
+      "score": 0.2683632503848745,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9342,7 +9347,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00869581045164501,
+      "score": 0.008683850764162802,
       "reactions": [
         {
           "emoji": "💜",
@@ -9439,7 +9444,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.6631673532623723,
+      "score": 1.6608799342936365,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9660,7 +9665,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8034430865009335,
+      "score": 0.8023380798684037,
       "reactions": [],
       "comments_count": 10,
       "activity_7d": 0,
@@ -10011,7 +10016,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6623075909114657,
+      "score": 0.6613966934340609,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10118,7 +10123,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.36760935091238,
+      "score": 2.364353085372288,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 3,
@@ -10195,7 +10200,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6120511468168329,
+      "score": 0.6112093689883304,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10412,7 +10417,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6610474803918482,
+      "score": 0.6601383159936189,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10456,7 +10461,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 13.355455717106345,
+      "score": 13.337087437640363,
       "reactions": [
         {
           "emoji": "💯",
@@ -10544,7 +10549,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.448631468240864,
+      "score": 1.446639108847408,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -10602,7 +10607,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.723635281363765,
+      "score": 0.722640037520269,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10633,7 +10638,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.417200489669815,
+      "score": 1.4152513585278321,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 4,
@@ -10689,7 +10694,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0922812916283072,
+      "score": 0.09215437356650422,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10850,7 +10855,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6224821723281024,
+      "score": 0.6216260483031266,
       "reactions": [
         {
           "emoji": "👍",
@@ -10914,7 +10919,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.13138314670797355,
+      "score": 0.13120245033886632,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10983,7 +10988,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1115357169614102,
+      "score": 1.1100069785103952,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 4,
@@ -11530,7 +11535,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.2393611043247482,
+      "score": 0.23903190165651633,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -11793,7 +11798,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.261434876421662,
+      "score": 0.26107531483320073,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -11881,7 +11886,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.37637883526403915,
+      "score": 0.3758611867631081,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -11967,7 +11972,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.2605761863246352,
+      "score": 0.26021780572617614,
       "reactions": [
         {
           "emoji": "☝️",
@@ -12101,7 +12106,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06483600583123197,
+      "score": 0.06474683434208237,
       "reactions": [
         {
           "emoji": "➕",
@@ -12151,7 +12156,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.1500991836198314,
+      "score": 0.14989274635473576,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12195,7 +12200,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0848686411495375,
+      "score": 0.08475191799522863,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -12240,7 +12245,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.14209370944491279,
+      "score": 0.1418982824208765,
       "reactions": [
         {
           "emoji": "💜",
@@ -12470,7 +12475,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0041660582361733815,
+      "score": 0.004160328493694012,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12581,7 +12586,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.027491515599316823,
+      "score": 0.027453705445012265,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -12657,7 +12662,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.25249530675229337,
+      "score": 0.2521480401028794,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -12719,7 +12724,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.03226499286928544,
+      "score": 0.03222061756539883,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12823,7 +12828,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.005734426509490668,
+      "score": 0.005726539728916902,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -12929,7 +12934,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.12038279577861072,
+      "score": 0.12021722862144318,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -12982,7 +12987,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.016570245221232596,
+      "score": 0.01654745551629924,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -13047,7 +13052,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.023244943614104546,
+      "score": 0.023212973935980565,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -13116,7 +13121,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0002903639674672055,
+      "score": 0.00028996461857082464,
       "reactions": [
         {
           "emoji": "‼️",
@@ -13237,7 +13242,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0029202181148920117,
+      "score": 0.0029162018249523683,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13375,7 +13380,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2017981298740591,
+      "score": 0.2015205890305451,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13469,7 +13474,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.002542080778552552,
+      "score": 0.002538584555648994,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13570,7 +13575,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0007684153679942908,
+      "score": 0.0007673585363500374,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -13737,7 +13742,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.017906480211043265,
+      "score": 0.01788185272997968,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -13869,7 +13874,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.003492078303306377,
+      "score": 0.003487275511731839,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14030,7 +14035,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.009605378102412623,
+      "score": 0.009592167451042967,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -14091,7 +14096,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0350242830806261,
+      "score": 0.03497611281722603,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14392,7 +14397,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.04012097357264887,
+      "score": 0.040065793631908556,
       "reactions": [
         {
           "emoji": "💯",
@@ -14451,7 +14456,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.04554650029297591,
+      "score": 0.04548385841359718,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -14588,7 +14593,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.01163938283318893,
+      "score": 0.011623374735732708,
       "reactions": [
         {
           "emoji": "💜",
@@ -14716,7 +14721,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8050435457806411,
+      "score": 0.8039363379740034,
       "reactions": [],
       "comments_count": 12,
       "activity_7d": 0,
@@ -14826,7 +14831,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.01353575300517546,
+      "score": 0.0135171367558128,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15180,7 +15185,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0051570065676835655,
+      "score": 0.005149913935290513,
       "reactions": [
         {
           "emoji": "💜",
@@ -15296,7 +15301,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1981612324302322,
+      "score": 0.19788869355370853,
       "reactions": [
         {
           "emoji": "💜",
@@ -15445,7 +15450,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.000767789032595283,
+      "score": 0.0007667330623745465,
       "reactions": [
         {
           "emoji": "💜",
@@ -15475,7 +15480,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.07745989080542487,
+      "score": 0.07735335719460272,
       "reactions": [
         {
           "emoji": "👆",
@@ -15541,7 +15546,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0005370114690302785,
+      "score": 0.0005362728961991805,
       "reactions": [
         {
           "emoji": "🤔",
@@ -15632,7 +15637,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.017987272883296712,
+      "score": 0.01796253428491791,
       "reactions": [
         {
           "emoji": "👆",
@@ -15795,7 +15800,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00472782908196508,
+      "score": 0.004721326714117481,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15935,7 +15940,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.13344637831134673,
+      "score": 0.1332628442992945,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -16021,11 +16026,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1538670168564301834/1538670169206038669.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1538117855394930718",
