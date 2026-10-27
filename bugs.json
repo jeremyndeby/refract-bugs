@@ -1,6 +1,6 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-10-27T18:00:06.062Z",
+  "generated_at": "2026-10-27T18:20:04.146Z",
   "bugs": [
     {
       "id": "1564661431763337227",
@@ -104,7 +104,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 4.805338484183393,
+      "score": 4.7987448203529715,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -568,7 +568,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4685450531599777,
+      "score": 1.466529983372025,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -612,7 +612,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 13.6757933606014,
+      "score": 13.657028067723296,
       "reactions": [
         {
           "emoji": "😂",
@@ -842,7 +842,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 6.7154104702676705,
+      "score": 6.70619589375657,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1013,7 +1013,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.984479319063942,
+      "score": 2.9803841541960505,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1063,7 +1063,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0052423149931986,
+      "score": 1.0038629678535547,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -1137,7 +1137,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.495934528688362,
+      "score": 1.4938818763253794,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 3,
@@ -1305,7 +1305,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5042848499515503,
+      "score": 0.5035928935396764,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1344,7 +1344,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.3363056008097178,
+      "score": 1.334471983898974,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1420,7 +1420,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.043033022678784,
+      "score": 1.041601820873082,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1739,7 +1739,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.07382909920473424,
+      "score": 0.07372779432003962,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1773,7 +1773,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 1.516555425368489,
+      "score": 1.5144744779621833,
       "reactions": [
         {
           "emoji": "👍",
@@ -2642,7 +2642,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.2285146024528056,
+      "score": 0.22820104525514395,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2732,7 +2732,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 48.86083822881453,
+      "score": 48.79379364021502,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4376,53 +4376,6 @@
       ]
     },
     {
-      "id": "1559514467958521976",
-      "title": "tv shows didn't transfer correctly",
-      "body": "I did the TV time gdpr import and some tv shows didn't transfer correctly , if I do it again would it work or mess up? the ones I noticed for now are hill house, bly manor and white lotus (just a few episodes appear logged)",
-      "author_key": "Silver Wren",
-      "posted_at": "2026-10-13T10:33:43.539Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-27T14:40:36.601Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-27T14:40:36.601Z"
-      },
-      "tags": [
-        "🔗 Import"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 3,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "[identity removed]\ndevice: Oppo a74, android 11\napp version: Refract v1.6.744-01a1310d | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-10-13T19:26:32.810Z",
-          "is_team": false,
-          "author_key": "Silver Wren",
-          "reactions": []
-        },
-        {
-          "text": "I don't know of what should I do the screen recording",
-          "date": "2026-10-13T19:26:50.149Z",
-          "is_team": false,
-          "author_key": "Silver Wren",
-          "reactions": []
-        },
-        {
-          "text": "Hey! Thanks for the report, it helped us find the problem.\n\nHill House and Bly Manor: TV Time exports both shows under one entry called “The Haunting”. TheTVDB now treats them as two seasons of the same show. Our importer no longer recognised that entry, so it skipped both shows. That’s fixed now: season 1 goes to Hill House and season 2 goes to Bly Manor.\n\nYou can run the TV Time import again. It won’t duplicate anything you already have; it only adds what’s missing, so both shows should show up.\n\nWhite Lotus is a different case, and we left it alone on purpose. From what we can see, you added the show yourself back in July, so those episodes were already in your library as “not watched”. When an import finds an episode you already have, it never overwrites what you set yourself, so an import can’t undo your own changes. That’s why only a few season 2 episodes came through. The quickest fix is to mark them as watched in the app.",
-          "date": "2026-10-27T15:03:13.470Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Ochre Finch",
-          "team_name": "Exooo",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1559130723745534112",
       "title": "TV Time GDPR import misses old ratings",
       "body": "The ratings from the following two tables are imported:\n✅ ratings-3-prod-episode_votes.csv\n✅ ratings-v2-prod-votes.csv\n\nBut older ratings were stored in this table, which seems to be completely ignored:\n❎ ratings-prod-episode_votes.csv\n\nThis table looks kind of messy, because some episodes seem to have multiple entries. But I didn't analyze it in detail.\n\nAll I know is that the same GDPR export imports all these ratings correctly into Bingers.\n\nI assume it should be an easy fix that would probably add a ton more ratings to older episodes.\n\n[identity removed]\n• Device: LinageOS v19 (Android v12)\n• App version: Refract v1.6.743-01a12aff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -4467,6 +4420,53 @@
               "count": 1
             }
           ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1559514467958521976",
+      "title": "tv shows didn't transfer correctly",
+      "body": "I did the TV time gdpr import and some tv shows didn't transfer correctly , if I do it again would it work or mess up? the ones I noticed for now are hill house, bly manor and white lotus (just a few episodes appear logged)",
+      "author_key": "Silver Wren",
+      "posted_at": "2026-10-13T10:33:43.539Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-27T14:40:36.601Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-27T14:40:36.601Z"
+      },
+      "tags": [
+        "🔗 Import"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 3,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]\ndevice: Oppo a74, android 11\napp version: Refract v1.6.744-01a1310d | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-10-13T19:26:32.810Z",
+          "is_team": false,
+          "author_key": "Silver Wren",
+          "reactions": []
+        },
+        {
+          "text": "I don't know of what should I do the screen recording",
+          "date": "2026-10-13T19:26:50.149Z",
+          "is_team": false,
+          "author_key": "Silver Wren",
+          "reactions": []
+        },
+        {
+          "text": "Hey! Thanks for the report, it helped us find the problem.\n\nHill House and Bly Manor: TV Time exports both shows under one entry called “The Haunting”. TheTVDB now treats them as two seasons of the same show. Our importer no longer recognised that entry, so it skipped both shows. That’s fixed now: season 1 goes to Hill House and season 2 goes to Bly Manor.\n\nYou can run the TV Time import again. It won’t duplicate anything you already have; it only adds what’s missing, so both shows should show up.\n\nWhite Lotus is a different case, and we left it alone on purpose. From what we can see, you added the show yourself back in July, so those episodes were already in your library as “not watched”. When an import finds an episode you already have, it never overwrites what you set yourself, so an import can’t undo your own changes. That’s why only a few season 2 episodes came through. The quickest fix is to mark them as watched in the app.",
+          "date": "2026-10-27T15:03:13.470Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ochre Finch",
+          "team_name": "Exooo",
+          "reactions": []
         }
       ],
       "images": []
@@ -4688,7 +4688,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.863076528427614,
+      "score": 1.860520100746352,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -5103,7 +5103,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.6242594139034996,
+      "score": 1.6220306800517785,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -5403,7 +5403,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.4812105995476745,
+      "score": 2.4778059968043413,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -5568,7 +5568,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 6.345015854880603,
+      "score": 6.336309516776954,
       "reactions": [
         {
           "emoji": "👍",
@@ -5783,7 +5783,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 8.890711383682849,
+      "score": 8.878511959590194,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -6319,7 +6319,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.23560926811553,
+      "score": 1.2339138220680719,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6815,7 +6815,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.3380635039288324,
+      "score": 1.3362274749045082,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -7007,7 +7007,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3897715667940973,
+      "score": 0.3892367402276533,
       "reactions": [
         {
           "emoji": "👍",
@@ -7170,7 +7170,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.28982209944468595,
+      "score": 0.28942441892734977,
       "reactions": [
         {
           "emoji": "💜",
@@ -7414,7 +7414,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.25119924722097453,
+      "score": 0.25085456320005034,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7831,7 +7831,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.2760428095424692,
+      "score": 0.275664036331192,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7868,7 +7868,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.882311816239951,
+      "score": 1.8797289947839455,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8246,7 +8246,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.9169703984858999,
+      "score": 0.9157121739987041,
       "reactions": [
         {
           "emoji": "💜",
@@ -8406,7 +8406,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5570693288559669,
+      "score": 0.5563049440167294,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -8518,7 +8518,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.55419895649374,
+      "score": 0.5534385102470669,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8728,7 +8728,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.011526556992136694,
+      "score": 0.011510740782273746,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8758,7 +8758,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.08224065756929574,
+      "score": 0.08212781073218119,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8799,7 +8799,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.16448623282553906,
+      "score": 0.16426053240348687,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9085,7 +9085,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2610900523541343,
+      "score": 0.26073179662660184,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -9591,7 +9591,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1941156952596344,
+      "score": 0.1938493386558356,
       "reactions": [
         {
           "emoji": "💜",
@@ -9715,7 +9715,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.4034025230272784,
+      "score": 0.40284899269139446,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9813,7 +9813,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0558043492750051,
+      "score": 0.05572777712080491,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9851,7 +9851,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.22151442872156377,
+      "score": 0.2212104768394257,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10151,7 +10151,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.007167889934140012,
+      "score": 0.007158054486178386,
       "reactions": [
         {
           "emoji": "💜",
@@ -10248,7 +10248,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.3709361072819204,
+      "score": 1.3690549719874645,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10469,7 +10469,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6622719807898967,
+      "score": 0.6613632417239579,
       "reactions": [],
       "comments_count": 10,
       "activity_7d": 0,
@@ -10820,7 +10820,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5459350730558702,
+      "score": 0.545185966128894,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10927,7 +10927,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9516022490083391,
+      "score": 1.9489243504163851,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -11004,7 +11004,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5045090712180033,
+      "score": 0.5038168071400493,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11221,7 +11221,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5448963736086253,
+      "score": 0.5441486919371225,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11265,7 +11265,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 11.008799827552554,
+      "score": 10.993694060190231,
       "reactions": [
         {
           "emoji": "💯",
@@ -11353,7 +11353,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1940958208809465,
+      "score": 1.1924573376710506,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -11411,7 +11411,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5964870184463004,
+      "score": 0.5956685464714768,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11442,7 +11442,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1681875060467637,
+      "score": 1.1665845730315092,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 3,
@@ -11498,7 +11498,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07606676169520826,
+      "score": 0.07596238639325235,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -11659,7 +11659,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5131072856318009,
+      "score": 0.5124032234806054,
       "reactions": [
         {
           "emoji": "👍",
@@ -11723,7 +11723,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.10829812126661204,
+      "score": 0.10814951957966559,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -12108,7 +12108,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.19730352447935828,
+      "score": 0.197032793683337,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -12371,7 +12371,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2154987657052106,
+      "score": 0.21520306823840213,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -12459,7 +12459,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3102461903596451,
+      "score": 0.30982048484677976,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -12545,7 +12545,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.21479095403690784,
+      "score": 0.21449622779662395,
       "reactions": [
         {
           "emoji": "☝️",
@@ -12679,7 +12679,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.053443822879052666,
+      "score": 0.05337048973029801,
       "reactions": [
         {
           "emoji": "➕",
@@ -12729,7 +12729,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.12372560710401562,
+      "score": 0.12355583653256806,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12773,7 +12773,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.06995657069604495,
+      "score": 0.06986057951635655,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -12818,7 +12818,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.11712675607391275,
+      "score": 0.11696604014148865,
       "reactions": [
         {
           "emoji": "💜",
@@ -13048,7 +13048,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0034340498866852866,
+      "score": 0.0034293378418201372,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13159,7 +13159,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0226610456879633,
+      "score": 0.022629951246270156,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -13235,7 +13235,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2081299469154118,
+      "score": 0.20784436060187295,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -13297,7 +13297,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.026595786430590865,
+      "score": 0.02655929291913351,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13401,7 +13401,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.004726843838651998,
+      "score": 0.004720357881553745,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -13507,7 +13507,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.09923061627244895,
+      "score": 0.09909445659763313,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -13560,7 +13560,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.013658726186359792,
+      "score": 0.01363998431227099,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -13625,7 +13625,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.01916062893478465,
+      "score": 0.019134337603509806,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -13694,7 +13694,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00023934479381981222,
+      "score": 0.0002390163759330798,
       "reactions": [
         {
           "emoji": "‼️",
@@ -13815,7 +13815,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.002407113419459143,
+      "score": 0.0024038104894487282,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13953,7 +13953,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.16634065242060508,
+      "score": 0.16611240744951633,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14047,7 +14047,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.002095417710135421,
+      "score": 0.0020925424746009373,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -14148,7 +14148,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0006333989007824832,
+      "score": 0.0006325297800252119,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -14315,7 +14315,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.014760174451173062,
+      "score": 0.014739921220577608,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -14447,7 +14447,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.002878493391580697,
+      "score": 0.0028745436557140918,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14608,7 +14608,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.007917639580203566,
+      "score": 0.007906775360358458,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -14669,7 +14669,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0288702482120684,
+      "score": 0.028830633789059947,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14970,7 +14970,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.03307141113740405,
+      "score": 0.03302603207240054,
       "reactions": [
         {
           "emoji": "💯",
@@ -15029,7 +15029,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.037543631246420246,
+      "score": 0.037492115607256196,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -15166,7 +15166,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.009594254096676446,
+      "score": 0.00958108930372266,
       "reactions": [
         {
           "emoji": "💜",
@@ -15294,7 +15294,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6635912271125721,
+      "score": 0.6626806778376776,
       "reactions": [],
       "comments_count": 12,
       "activity_7d": 0,
@@ -15404,7 +15404,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.011157417500797602,
+      "score": 0.011142107807118763,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15830,7 +15830,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0006328826173116192,
+      "score": 0.000632014204974714,
       "reactions": [
         {
           "emoji": "💜",
@@ -15860,7 +15860,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.06384959454799945,
+      "score": 0.06376198307930808,
       "reactions": [
         {
           "emoji": "👆",
@@ -15926,7 +15926,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0004426544397194983,
+      "score": 0.0004420470497139532,
       "reactions": [
         {
           "emoji": "🤔",
@@ -16017,7 +16017,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.014826771231935258,
+      "score": 0.014806426620308882,
       "reactions": [
         {
           "emoji": "👆",
@@ -16180,7 +16180,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0038971132909803876,
+      "score": 0.003891765851869829,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16287,7 +16287,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.10999882727025095,
+      "score": 0.10984789195296832,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -16522,7 +16522,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.0004296921963192603,
+      "score": 0.000429102592506249,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16601,7 +16601,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00006336546842963277,
+      "score": 0.00006327852125647162,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -16718,7 +16718,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.004654717990929486,
+      "score": 0.004648331001592808,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -16806,7 +16806,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0036137819959283775,
+      "score": 0.003608823330952744,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16902,7 +16902,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0006334472977876009,
+      "score": 0.0006325781106221921,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -16955,7 +16955,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.004920961604048855,
+      "score": 0.004914209287506261,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17063,7 +17063,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.009621725061946354,
+      "score": 0.009608522574601073,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -19194,7 +19194,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.003910953126781721,
+      "score": 0.003905586697286814,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -19295,7 +19295,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0009832229921033484,
+      "score": 0.0009818738588629721,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -19340,7 +19340,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00024371955659729317,
+      "score": 0.00024338513586285554,
       "reactions": [
         {
           "emoji": "👆",
@@ -19504,7 +19504,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00043008625155842447,
+      "score": 0.0004294961070409885,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -19534,7 +19534,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 5,
-      "score": 0.004376816988742537,
+      "score": 0.004370811322343377,
       "reactions": [
         {
           "emoji": "💜",
@@ -19610,7 +19610,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0013327409506534477,
+      "score": 0.0013309122249912345,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -19674,7 +19674,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00048221876003414583,
+      "score": 0.00048155708169309795,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -19871,7 +19871,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00033464395098624453,
+      "score": 0.00033418476799155014,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -19960,7 +19960,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00024397254202039204,
+      "score": 0.00024363777415102535,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -20010,7 +20010,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0006591266884509452,
+      "score": 0.0006582222652100839,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -20084,7 +20084,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0006262166920276406,
+      "score": 0.0006253574263659562,
       "reactions": [
         {
           "emoji": "👆",
@@ -20141,7 +20141,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0004171698995406494,
+      "score": 0.00041659747824570925,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -20217,7 +20217,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00006872075421926054,
+      "score": 0.00006862645876994185,
       "reactions": [
         {
           "emoji": "💜",
@@ -20324,7 +20324,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0009910620763674495,
+      "score": 0.0009897021866972096,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -20413,7 +20413,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000941418527420954,
+      "score": 0.0009401267563388581,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -20461,7 +20461,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.001078611621360471,
+      "score": 0.0010771316002426555,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -20534,7 +20534,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0013078080621745987,
+      "score": 0.001306013548271972,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -20596,7 +20596,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.0010119604350704533,
+      "score": 0.0010105718696363003,
       "reactions": [
         {
           "emoji": "‼️",
@@ -20713,7 +20713,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00018719824993840568,
+      "score": 0.000186941385134022,
       "reactions": [
         {
           "emoji": "🤝",
@@ -20850,7 +20850,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0015445159636981044,
+      "score": 0.0015423966501307322,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -20915,7 +20915,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.0003367549850046103,
+      "score": 0.0003362929053464035,
       "reactions": [
         {
           "emoji": "⬆️",
@@ -21015,7 +21015,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.004212764450554285,
+      "score": 0.004206983889481404,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -21091,7 +21091,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.006231013741410236,
+      "score": 0.006222463831748548,
       "reactions": [
         {
           "emoji": "👍",
@@ -21195,7 +21195,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0028662592470662714,
+      "score": 0.002862326298328484,
       "reactions": [
         {
           "emoji": "👍",
@@ -21371,7 +21371,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 13,
-      "score": 0.011117261444240092,
+      "score": 0.011102006850849949,
       "reactions": [
         {
           "emoji": "👍",
@@ -21510,7 +21510,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.004812660621719577,
+      "score": 0.004806056910789754,
       "reactions": [
         {
           "emoji": "➕",
@@ -21725,7 +21725,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.0057201295741575574,
+      "score": 0.0057122806761865695,
       "reactions": [
         {
           "emoji": "💜",
@@ -21808,7 +21808,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0000030731725997801435,
+      "score": 0.0000030689557340832675,
       "reactions": [
         {
           "emoji": "✅",
@@ -21881,7 +21881,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.0018673924968238536,
+      "score": 0.0018648301469698265,
       "reactions": [
         {
           "emoji": "❤️",
@@ -21925,7 +21925,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00026151635170950857,
+      "score": 0.00026115751103366307,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -22013,7 +22013,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0002958152028769275,
+      "score": 0.0002954092988994827,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -22142,7 +22142,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00013795226939567924,
+      "score": 0.00013776297765441423,
       "reactions": [
         {
           "emoji": "👍",
@@ -22253,7 +22253,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00020294943695453387,
+      "score": 0.00020267095909782176,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -22312,7 +22312,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00021254883081722227,
+      "score": 0.0002122571811150065,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -22347,7 +22347,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00013718079252826324,
+      "score": 0.0001369925593719727,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -22459,11 +22459,7 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1528121151807688854/1528121152680231073.webp"
-        }
-      ],
+      "images": [],
       "bulk_closed": true
     },
     {
