@@ -1,6 +1,6 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-10-30T08:20:04.007Z",
+  "generated_at": "2026-10-30T08:50:04.062Z",
   "bugs": [
     {
       "id": "1565597718787793026",
@@ -31,321 +31,11 @@
       "images": []
     },
     {
-      "id": "1565499897384407060",
-      "title": "Heat map showing episodes as watched/show complete 12 hours after marking",
-      "body": "[identity removed]\nDevice: iPhone 16 Pro, iOS 26.5\nRefract: Refract v1.6.751-01a179df | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nBug:\nThursday 29/10 approx 4pm AEDT - I watched the final 2 episodes of MHA (S8E10 & S8E11). These show correctly on the heat map (screenshot 1).\nHowever, the “finished the show” listing on the heat map is showing on the next day (approx 12 hours later). I also watched 2 specials (S0E18 & S0E19) which are also incorrectly appearing on the heat map 12 hours later on Friday 30/10 (screenshot 2)",
-      "author_key": "Sage Fox",
-      "posted_at": "2026-10-29T22:57:41.118Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1565499897384407060/1565499898021814452.webp"
-        }
-      ]
-    },
-    {
-      "id": "1565499654727270461",
-      "title": "Customise artwork sheet buttons wrapping",
-      "body": "[identity removed]\nDevice: Samsung S25FE - Android 17 - OneUI 9\nVersion: Refract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nThere is a small visual bug in the customise artwork sheet, where the save and reset buttons wrap to a new line.\n\nThis doesent happen on the customise poster sheet (I have attached screenshots of both for reference)",
-      "author_key": "Misty Lynx",
-      "posted_at": "2026-10-29T22:56:43.264Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "I have removed that mini suggestion from this report and made a new suggestion post for it",
-          "date": "2026-10-29T23:17:41.054Z",
-          "is_team": false,
-          "author_key": "Misty Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1565499654727270461/1565499654983000245.webp"
-        }
-      ]
-    },
-    {
       "id": "1565459241513259108",
       "title": "Edge of Your Seat and Heartstopper not unlocked even with uploaded TV series",
       "body": "Edge of Your Seat, Showstopper, and Heartstopper are not unlocked even when TV series have been uploaded\n\n📱 via app · SM-S921B · samsung/e1sxeea/e1s:16/BP4A.251205.006/S921BXXUEDZDR:user/release-keys 16 · v1.6.751-01a179d2\n[identity removed]",
       "author_key": "Amber Sparrow",
       "posted_at": "2026-10-29T20:16:08.003Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1565414496560742570",
-      "title": "Specials (Season 0) only show generic \"Episodio X\" instead of pulling the actual titles from TMDB",
-      "body": "When browsing the Specials (Season 0) of a show with the app set to Spanish, the episodes don't show their actual titles or descriptions. Instead, they all just show up as generic \"Episodio 2\", \"Episodio 3\", \"Episodio 5\", etc.\n\nFor example, I went to the Specials tab on *She-Ra: Princess of Power* (1985) and every single special is named \"Episodio X\" with no synopsis. I checked TMDB (even with ?language=es-ES in the URL) and the titles and overviews are definitely there (like Episode 5 and Episode 6 in my screenshot), likely falling back to English on TMDB since there's no Spanish translation entered. It seems like the app replaces the title with \"Episodio X\" when a Spanish translation is missing on TMDB instead of falling back to the original English title and overview. I think this also happens on other shows with specials like *South Park*.\n\n[identity removed]\nDevice: Realme 8\nAndroid 13 (with Realme UI 4.0)\nRefract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Silver Sparrow",
-      "posted_at": "2026-10-29T17:18:19.975Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.939875960094622,
-      "reactions": [
-        {
-          "emoji": "💜",
-          "count": 1
-        },
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 2,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1565414496560742570/1565414497013997668.webp"
-        }
-      ]
-    },
-    {
-      "id": "1565087517030748351",
-      "title": "The Backlog Challenge",
-      "body": "I don't think this challenge is working for me anymore. It worked at first, but it stopped recently. After I got the 4 shows logged in this challenge, I've then watched and finished 3 more shows that was in progress in my list. Those 3 shows have been in my list before this challenge existed. It still haven't recorded those recent shows that i finished in this challenge. Is this challenge no longer exist but it does say this is a permanent challenge. \n[identity removed]\nDevice: Samsung z Flip 7 & Samsung Galaxy Tab A\nRefract App Version: Refract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Azure Heron",
-      "posted_at": "2026-10-28T19:39:01.980Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📊 Stats",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 3,
-      "activity_7d": 3,
-      "comments": [
-        {
-          "text": "It's One UI version 8.5.\nI haven't updated to 9.0 yet because there are still issues with the 9.0 update to the Samsung z flip 7.",
-          "date": "2026-10-29T00:03:25.169Z",
-          "is_team": false,
-          "author_key": "Azure Heron",
-          "reactions": []
-        },
-        {
-          "text": "On my tablet (Samsung Galaxy Tab A9) runs on One UI version 8.0",
-          "date": "2026-10-29T00:09:02.510Z",
-          "is_team": false,
-          "author_key": "Azure Heron",
-          "reactions": []
-        },
-        {
-          "text": "Both phone and tablet are on Android version 16",
-          "date": "2026-10-29T00:12:45.284Z",
-          "is_team": false,
-          "author_key": "Azure Heron",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1565087517030748351/1565087517273755648.webp"
-        }
-      ]
-    },
-    {
-      "id": "1565082435350298624",
-      "title": "Episode box data display issue in tracking page",
-      "body": "When an episode is marked as watched, the displayed data's transition from the marked episode to the next one is very awkward and jarring.\n\nThe displayed data like the episode title, the special indicator like \"finale\", etc. aren't updated simultaneously and worst of all, the checkmark circle remains colored.\n\nI suggest implementing an actual visual transition for the entire card. TV Time and Bingers do this by dragging the card off the sides of the screen, but if you want to try something else, I'd be amicable to that.\n\nThe tiny checkmark could even be removed in favor of something new like that? Might be worth considering.\n\n[identity removed]\nSamsung Galaxy A50 running Android 11\nRefract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Teal Panda",
-      "posted_at": "2026-10-28T19:18:50.413Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "I literally have a screen recording attached, Octo. Get your head out of your inkhole",
-          "date": "2026-10-28T19:20:34.663Z",
-          "is_team": false,
-          "author_key": "Teal Panda",
-          "reactions": []
-        },
-        {
-          "text": "wow wow wow, let's be nice to our hard working friend!",
-          "date": "2026-10-28T20:50:29.127Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Golden Tern",
-          "team_name": "J",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1564994830017495111",
-      "title": "Edit watch date, remove entry, and watched with buttons are too close together",
-      "body": "**Problem:** The edit watch date, remove watched entry, and watched with buttons are too close together, making it easy to tap the wrong one. I frequently hit the remove button by accident when trying to edit a watch date.\n\n**Expected behaviour:** Increase the size and spacing between the buttons and ensure they meet the recommended minimum size for buttons, to avoid accidental hits.\n\n**What you did right before it happened:** Attempted to edit a watch date and accidentally tapped the remove button.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Amber Badger",
-      "posted_at": "2026-10-28T13:30:43.674Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 3,
-      "score": 2.514144847583058,
-      "reactions": [
-        {
-          "emoji": "💜",
-          "count": 3
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 3,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1564994830017495111/1564994830222758078.webp"
-        }
-      ]
-    },
-    {
-      "id": "1564976017737781258",
-      "title": "Release time displayed in wrong timezone",
-      "body": "The app displays release times in what appears to be a US timezone rather than the user's local timezone. User is in Europe and sees incorrect times.\n\n📱 via app · Pixel 11 Pro · Android 17 · v1.6.751-01a179d2\n[identity removed]",
-      "author_key": "Lilac Seal",
-      "posted_at": "2026-10-28T12:15:58.477Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1564976017737781258/1564976018115002518.webp"
-        }
-      ]
-    },
-    {
-      "id": "1564813171376787607",
-      "title": "Problem with ice breaker",
-      "body": "I had an ice breaker here and now I don't, but I do not have activities on test day\n\n[identity removed]\n\nDevice: Samsung Galaxy A53 5G\n\nAndroid 16 (con One UI 8.0)\n\nRefract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Teal Finch",
-      "posted_at": "2026-10-28T01:28:52.879Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "👤 Profile",
-        "🤖 Android",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "Android 16 (con One UI 8.0)",
-          "date": "2026-10-28T01:40:42.188Z",
-          "is_team": false,
-          "author_key": "Teal Finch",
-          "reactions": []
-        },
-        {
-          "text": "I didn't do anything. One moment it was there, and the next it wasn't.",
-          "date": "2026-10-28T01:43:53.768Z",
-          "is_team": false,
-          "author_key": "Teal Finch",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1564813171376787607/1564813172076969994.webp"
-        }
-      ]
-    },
-    {
-      "id": "1564794808088797295",
-      "title": "Series completion counter not updating after finishing 2 series",
-      "body": "User completed 2 series but the counter remains stuck at 5 instead of incrementing to 7.\n\n📱 via app · iPhone 16 Pro · iOS 26.6.2 · v1.6.751-01a179df\n[identity removed]",
-      "author_key": "Coral Badger",
-      "posted_at": "2026-10-28T00:15:54.730Z",
       "status": "open",
       "resolved_at": null,
       "terminal_attribution": null,
@@ -398,7 +88,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7073886518434744,
+      "score": 0.7059308125757142,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -469,7 +159,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 4.230792551457095,
+      "score": 4.222073418772131,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -532,7 +222,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 10.574549341392718,
+      "score": 10.552756521803973,
       "reactions": [
         {
           "emoji": "😂",
@@ -622,10 +312,14 @@
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
-        "⏳ Waiting on us",
         "👤 Profile"
       ],
-      "status_tags": [],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-10-30T08:51:05.034Z"
+        }
+      ],
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
@@ -710,7 +404,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 5.192564518423518,
+      "score": 5.181863294371352,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -860,7 +554,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.307692357265915,
+      "score": 2.302936492823412,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -932,7 +626,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1567031665366216,
+      "score": 1.154319346421717,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 1,
@@ -1076,7 +770,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.0332731080634279,
+      "score": 1.0311436618144247,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1152,7 +846,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.8065056170557522,
+      "score": 0.8048435101571626,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1229,44 +923,6 @@
       "images": []
     },
     {
-      "id": "1555991939797753958",
-      "title": "Studio marked unwatched",
-      "body": "When I did my import a couple of months ago, The Studio was one of my caught up shows. It imported correctly, but yesterday it was in my continue watching queue and only the first episode was marked as watched.",
-      "author_key": "Silver Badger",
-      "posted_at": "2026-10-03T17:16:27.380Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "📊 Stats",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "username same as discord [name removed]",
-          "date": "2026-10-03T21:43:10.811Z",
-          "is_team": false,
-          "author_key": "Silver Badger",
-          "reactions": []
-        },
-        {
-          "text": "I just guessed on the dates and filled it back in. I didn’t remove it, so I’m not sure what happened",
-          "date": "2026-10-24T17:40:57.887Z",
-          "is_team": false,
-          "author_key": "Silver Badger",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1555163029153386577",
       "title": "Back button behind the \"Traffic Lights\" controls in iOS on iPad",
       "body": "Hi ! I know it's a system problem for some apps since iPadOS 26/27, but I just got the problem this morning on Refract.\nWhen the app is on the side, hovering another app, the back button is sometimes stuck behind the Traffic light window control 🚥. \nWhen you try to go back sometimes, the target is the 🚥 menu when you want to go back (so it expands the menu), and sometimes the other way around.\nI saw this behavior on episode details page, tv show page and movies. I don't know if it's everywhere or not.\n(on the screenshot, it's half-behind, but sometimes, it's blocked by the button, sometimes it's below and not blocked)\n\nThis morning, i was using Refract 1.6.734, and I just tried on the new version 1.6.735. still here.\nDevice/System : iPadOS 27.0 (edit2: and same after the update 27.0.1) on an iPad Air 4, in landscape mode.\n[identity removed]",
@@ -1281,7 +937,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.05708695881733533,
+      "score": 0.056969309756915665,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1315,7 +971,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 1.1726478860609721,
+      "score": 1.1702312058794333,
       "reactions": [
         {
           "emoji": "👍",
@@ -2183,7 +1839,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.17669460740957482,
+      "score": 0.17633046199048752,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2273,7 +1929,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 37.78072182641442,
+      "score": 37.70286049841695,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3936,7 +3592,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 2,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "Good morning 🌞 \n\nCan I get some feedback about the current priority of this bug?\n\nI'm kind of annoyed that I can't see my original rating while rewatching a show and am therefore tempted to write my own script to import these ratings for my account.\n\nBut I also have the hypothesis, that it's an even easier fix for you.\nAnd we could probably add a ton more ratings from the community, when you reprocess their imports as well. Just like you did when you added favorite charaters.\n\nThank you 🙂",
@@ -3966,6 +3622,45 @@
       "images": []
     },
     {
+      "id": "1555991939797753958",
+      "title": "Studio marked unwatched",
+      "body": "When I did my import a couple of months ago, The Studio was one of my caught up shows. It imported correctly, but yesterday it was in my continue watching queue and only the first episode was marked as watched.",
+      "author_key": "Silver Badger",
+      "posted_at": "2026-10-03T17:16:27.380Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-30T08:51:06.614Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:51:06.614Z"
+      },
+      "tags": [
+        "🔗 Import",
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "username same as discord [name removed]",
+          "date": "2026-10-03T21:43:10.811Z",
+          "is_team": false,
+          "author_key": "Silver Badger",
+          "reactions": []
+        },
+        {
+          "text": "I just guessed on the dates and filled it back in. I didn’t remove it, so I’m not sure what happened",
+          "date": "2026-10-24T17:40:57.887Z",
+          "is_team": false,
+          "author_key": "Silver Badger",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
       "id": "1555251964923875358",
       "title": "Final Girl badge shows zero despite logging horror series",
       "body": "User reports that the Final Girl badge displays zero even though they have logged multiple horror series.\n\n📱 via app · SM-S921B · samsung/e1sxeea/e1s:16/BP4A.251205.006/S921BXXUEDZDR:user/release-keys 16 · v1.6.735-01a0f6e6",
@@ -3989,6 +3684,328 @@
       "images": []
     },
     {
+      "id": "1565087517030748351",
+      "title": "The Backlog Challenge",
+      "body": "I don't think this challenge is working for me anymore. It worked at first, but it stopped recently. After I got the 4 shows logged in this challenge, I've then watched and finished 3 more shows that was in progress in my list. Those 3 shows have been in my list before this challenge existed. It still haven't recorded those recent shows that i finished in this challenge. Is this challenge no longer exist but it does say this is a permanent challenge. \n[identity removed]\nDevice: Samsung z Flip 7 & Samsung Galaxy Tab A\nRefract App Version: Refract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Azure Heron",
+      "posted_at": "2026-10-28T19:39:01.980Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-30T08:49:00.932Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:49:00.932Z"
+      },
+      "tags": [
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 3,
+      "activity_7d": 3,
+      "comments": [
+        {
+          "text": "It's One UI version 8.5.\nI haven't updated to 9.0 yet because there are still issues with the 9.0 update to the Samsung z flip 7.",
+          "date": "2026-10-29T00:03:25.169Z",
+          "is_team": false,
+          "author_key": "Azure Heron",
+          "reactions": []
+        },
+        {
+          "text": "On my tablet (Samsung Galaxy Tab A9) runs on One UI version 8.0",
+          "date": "2026-10-29T00:09:02.510Z",
+          "is_team": false,
+          "author_key": "Azure Heron",
+          "reactions": []
+        },
+        {
+          "text": "Both phone and tablet are on Android version 16",
+          "date": "2026-10-29T00:12:45.284Z",
+          "is_team": false,
+          "author_key": "Azure Heron",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1565087517030748351/1565087517273755648.webp"
+        }
+      ]
+    },
+    {
+      "id": "1564976017737781258",
+      "title": "Release time displayed in wrong timezone",
+      "body": "The app displays release times in what appears to be a US timezone rather than the user's local timezone. User is in Europe and sees incorrect times.\n\n📱 via app · Pixel 11 Pro · Android 17 · v1.6.751-01a179d2\n[identity removed]",
+      "author_key": "Lilac Seal",
+      "posted_at": "2026-10-28T12:15:58.477Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-30T08:49:00.478Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:49:00.478Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1564976017737781258/1564976018115002518.webp"
+        }
+      ]
+    },
+    {
+      "id": "1564813171376787607",
+      "title": "Problem with ice breaker",
+      "body": "I had an ice breaker here and now I don't, but I do not have activities on test day\n\n[identity removed]\n\nDevice: Samsung Galaxy A53 5G\n\nAndroid 16 (con One UI 8.0)\n\nRefract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Teal Finch",
+      "posted_at": "2026-10-28T01:28:52.879Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-30T08:48:59.904Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:48:59.904Z"
+      },
+      "tags": [
+        "👤 Profile",
+        "🤖 Android",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Android 16 (con One UI 8.0)",
+          "date": "2026-10-28T01:40:42.188Z",
+          "is_team": false,
+          "author_key": "Teal Finch",
+          "reactions": []
+        },
+        {
+          "text": "I didn't do anything. One moment it was there, and the next it wasn't.",
+          "date": "2026-10-28T01:43:53.768Z",
+          "is_team": false,
+          "author_key": "Teal Finch",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1564813171376787607/1564813172076969994.webp"
+        }
+      ]
+    },
+    {
+      "id": "1564794808088797295",
+      "title": "Series completion counter not updating after finishing 2 series",
+      "body": "User completed 2 series but the counter remains stuck at 5 instead of incrementing to 7.\n\n📱 via app · iPhone 16 Pro · iOS 26.6.2 · v1.6.751-01a179df\n[identity removed]",
+      "author_key": "Coral Badger",
+      "posted_at": "2026-10-28T00:15:54.730Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-30T08:48:59.437Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:48:59.437Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1564994830017495111",
+      "title": "Edit watch date, remove entry, and watched with buttons are too close together",
+      "body": "**Problem:** The edit watch date, remove watched entry, and watched with buttons are too close together, making it easy to tap the wrong one. I frequently hit the remove button by accident when trying to edit a watch date.\n\n**Expected behaviour:** Increase the size and spacing between the buttons and ensure they meet the recommended minimum size for buttons, to avoid accidental hits.\n\n**What you did right before it happened:** Attempted to edit a watch date and accidentally tapped the remove button.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Amber Badger",
+      "posted_at": "2026-10-28T13:30:43.674Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-30T08:48:58.758Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:48:58.758Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 3,
+      "score": 2.5089635104579964,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 3
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 3,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1564994830017495111/1564994830222758078.webp"
+        }
+      ]
+    },
+    {
+      "id": "1565499654727270461",
+      "title": "Customise artwork sheet buttons wrapping",
+      "body": "[identity removed]\nDevice: Samsung S25FE - Android 17 - OneUI 9\nVersion: Refract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nThere is a small visual bug in the customise artwork sheet, where the save and reset buttons wrap to a new line.\n\nThis doesent happen on the customise poster sheet (I have attached screenshots of both for reference)",
+      "author_key": "Misty Lynx",
+      "posted_at": "2026-10-29T22:56:43.264Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-30T08:41:57.609Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:41:57.609Z"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "I have removed that mini suggestion from this report and made a new suggestion post for it",
+          "date": "2026-10-29T23:17:41.054Z",
+          "is_team": false,
+          "author_key": "Misty Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1565499654727270461/1565499654983000245.webp"
+        }
+      ]
+    },
+    {
+      "id": "1565082435350298624",
+      "title": "Episode box data display issue in tracking page",
+      "body": "When an episode is marked as watched, the displayed data's transition from the marked episode to the next one is very awkward and jarring.\n\nThe displayed data like the episode title, the special indicator like \"finale\", etc. aren't updated simultaneously and worst of all, the checkmark circle remains colored.\n\nI suggest implementing an actual visual transition for the entire card. TV Time and Bingers do this by dragging the card off the sides of the screen, but if you want to try something else, I'd be amicable to that.\n\nThe tiny checkmark could even be removed in favor of something new like that? Might be worth considering.\n\n[identity removed]\nSamsung Galaxy A50 running Android 11\nRefract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Teal Panda",
+      "posted_at": "2026-10-28T19:18:50.413Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-30T08:41:54.764Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:41:54.764Z"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "I literally have a screen recording attached, Octo. Get your head out of your inkhole",
+          "date": "2026-10-28T19:20:34.663Z",
+          "is_team": false,
+          "author_key": "Teal Panda",
+          "reactions": []
+        },
+        {
+          "text": "wow wow wow, let's be nice to our hard working friend!",
+          "date": "2026-10-28T20:50:29.127Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Golden Tern",
+          "team_name": "J",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1565499897384407060",
+      "title": "Heat map showing episodes as watched/show complete 12 hours after marking",
+      "body": "[identity removed]\nDevice: iPhone 16 Pro, iOS 26.5\nRefract: Refract v1.6.751-01a179df | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nBug:\nThursday 29/10 approx 4pm AEDT - I watched the final 2 episodes of MHA (S8E10 & S8E11). These show correctly on the heat map (screenshot 1).\nHowever, the “finished the show” listing on the heat map is showing on the next day (approx 12 hours later). I also watched 2 specials (S0E18 & S0E19) which are also incorrectly appearing on the heat map 12 hours later on Friday 30/10 (screenshot 2)",
+      "author_key": "Sage Fox",
+      "posted_at": "2026-10-29T22:57:41.118Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-30T08:41:53.881Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:41:53.881Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1565499897384407060/1565499898021814452.webp"
+        }
+      ]
+    },
+    {
+      "id": "1565414496560742570",
+      "title": "Specials (Season 0) only show generic \"Episodio X\" instead of pulling the actual titles from TMDB",
+      "body": "When browsing the Specials (Season 0) of a show with the app set to Spanish, the episodes don't show their actual titles or descriptions. Instead, they all just show up as generic \"Episodio 2\", \"Episodio 3\", \"Episodio 5\", etc.\n\nFor example, I went to the Specials tab on *She-Ra: Princess of Power* (1985) and every single special is named \"Episodio X\" with no synopsis. I checked TMDB (even with ?language=es-ES in the URL) and the titles and overviews are definitely there (like Episode 5 and Episode 6 in my screenshot), likely falling back to English on TMDB since there's no Spanish translation entered. It seems like the app replaces the title with \"Episodio X\" when a Spanish translation is missing on TMDB instead of falling back to the original English title and overview. I think this also happens on other shows with specials like *South Park*.\n\n[identity removed]\nDevice: Realme 8\nAndroid 13 (with Realme UI 4.0)\nRefract v1.6.751-01a179d2 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Silver Sparrow",
+      "posted_at": "2026-10-29T17:18:19.975Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-30T08:41:53.321Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-30T08:41:53.321Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.9379389936506749,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 1
+        },
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 2,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1565414496560742570/1565414497013997668.webp"
+        }
+      ]
+    },
+    {
       "id": "1565278045756194826",
       "title": "Activity log shows shared wraps without recipient information or unshare option",
       "body": "User reports that after viewing wraps in the app, the Activity log incorrectly shows that all wraps were shared. The log does not indicate who the wraps were shared with, and there is no way to unshare them or prevent this from happening again. User feels forced to avoid viewing wraps to prevent this behavior.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.751-01a179d2\n[identity removed]",
@@ -4004,7 +4021,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9054782670279651,
+      "score": 0.903612189914151,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4136,7 +4153,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7772846649303248,
+      "score": 0.7756827787482236,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -4445,7 +4462,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9715737306277448,
+      "score": 1.9675105645078144,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -4487,7 +4504,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.459882393435599,
+      "score": 3.4527520098736946,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 1,
@@ -4789,7 +4806,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3899287512848899,
+      "score": 0.3891251570460363,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5194,7 +5211,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 3.7156373720504945,
+      "score": 3.7079799095627703,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5236,7 +5253,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.6121169906688653,
+      "score": 1.608794619795236,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -5529,7 +5546,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4405887948998732,
+      "score": 1.4376199221190795,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -5944,7 +5961,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.255927964298289,
+      "score": 1.2533396543231987,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6244,7 +6261,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.91854930967966,
+      "score": 1.914595420239256,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -6409,7 +6426,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 4.906163866342849,
+      "score": 4.896052878104937,
       "reactions": [
         {
           "emoji": "👍",
@@ -6624,7 +6641,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 6.874574931622236,
+      "score": 6.860407295120914,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -7160,7 +7177,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9554115675666535,
+      "score": 0.9534425841846876,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -7656,7 +7673,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0346323735027565,
+      "score": 1.032500125978206,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -7848,7 +7865,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.30138351437878685,
+      "score": 0.30076240076497357,
       "reactions": [
         {
           "emoji": "👍",
@@ -8011,7 +8028,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.2240994734267529,
+      "score": 0.2236376325258641,
       "reactions": [
         {
           "emoji": "💜",
@@ -8255,7 +8272,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.19423508122837638,
+      "score": 0.19383478709324511,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8672,7 +8689,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.21344489733611674,
+      "score": 0.21300501417990725,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8795,7 +8812,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.42852389297389143,
+      "score": 0.42764075898987447,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8901,7 +8918,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0635910377119691,
+      "score": 0.06345998456090066,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8972,7 +8989,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2018829597937262,
+      "score": 0.20146690434031744,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -9120,7 +9137,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.15009630105814117,
+      "score": 0.1497869714116196,
       "reactions": [
         {
           "emoji": "💜",
@@ -9188,7 +9205,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.31192339425686355,
+      "score": 0.3112805592728761,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9250,7 +9267,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.17128185506918098,
+      "score": 0.17092886465362372,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9312,7 +9329,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.005542435731779917,
+      "score": 0.00553101346704925,
       "reactions": [
         {
           "emoji": "💜",
@@ -9403,7 +9420,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.5120893211548703,
+      "score": 0.511033969306866,
       "reactions": [],
       "comments_count": 10,
       "activity_7d": 0,
@@ -9583,7 +9600,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.5090396390724743,
+      "score": 1.5059296976891716,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -9658,7 +9675,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.05881718914408697,
+      "score": 0.058695974296025626,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9819,7 +9836,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.39675053331625937,
+      "score": 0.3959328802404489,
       "reactions": [
         {
           "emoji": "👍",
@@ -10443,7 +10460,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.23989201660421353,
+      "score": 0.2393976292530503,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -10529,7 +10546,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.1660830550490429,
+      "score": 0.16574077870812454,
       "reactions": [
         {
           "emoji": "☝️",
@@ -10663,7 +10680,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.04132442828913461,
+      "score": 0.04123926382668436,
       "reactions": [
         {
           "emoji": "➕",
@@ -10713,7 +10730,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.09566849268755312,
+      "score": 0.09547133192597758,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10757,7 +10774,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.054092599169502514,
+      "score": 0.05398112110866707,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -10802,7 +10819,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0905660555583587,
+      "score": 0.09037941027959284,
       "reactions": [
         {
           "emoji": "💜",
@@ -11032,7 +11049,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0026553143214472132,
+      "score": 0.002649842051746586,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11143,7 +11160,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.017522226275023558,
+      "score": 0.017486115164878174,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -11219,7 +11236,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1609325568942117,
+      "score": 0.16060089508384762,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -11281,7 +11298,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.020564690359657366,
+      "score": 0.020522309112718348,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11385,7 +11402,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.003654942867510949,
+      "score": 0.003647410488782801,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -11491,7 +11508,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.07672820291163525,
+      "score": 0.07657007571118078,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -11544,7 +11561,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.010561352470733932,
+      "score": 0.010539586848240036,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -11609,7 +11626,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.01481559502549306,
+      "score": 0.014785061942799264,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -11678,7 +11695,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00018506884866690998,
+      "score": 0.00018468744498716086,
       "reactions": [
         {
           "emoji": "‼️",
@@ -11799,7 +11816,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0018612550623739398,
+      "score": 0.0018574192491895244,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11937,7 +11954,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.12861977291705673,
+      "score": 0.12835470370074936,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12031,7 +12048,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0016202422325632998,
+      "score": 0.0016169031165854575,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -12132,7 +12149,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000489763756478237,
+      "score": 0.0004887544148182332,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -12299,7 +12316,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.011413026572275579,
+      "score": 0.011389505756303066,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -12527,7 +12544,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.006122165508103631,
+      "score": 0.006109548493032519,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -12588,7 +12605,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.022323375044279482,
+      "score": 0.022277369368836883,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12782,7 +12799,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00862726269501884,
+      "score": 0.00860948298891625,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13208,7 +13225,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0004893645500195817,
+      "score": 0.0004883560310740071,
       "reactions": [
         {
           "emoji": "💜",
@@ -13238,7 +13255,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.04937049501792474,
+      "score": 0.04926874862134582,
       "reactions": [
         {
           "emoji": "👆",
@@ -13304,7 +13321,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00034227419869369366,
+      "score": 0.00034156881450934706,
       "reactions": [
         {
           "emoji": "🤔",
@@ -13395,7 +13412,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.011464521277231892,
+      "score": 0.011440894337132605,
       "reactions": [
         {
           "emoji": "👆",
@@ -13585,7 +13602,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.08505451901720251,
+      "score": 0.08487923232381182,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -13820,7 +13837,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.00033225138840424875,
+      "score": 0.0003315666599745218,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13899,7 +13916,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00004899615362571898,
+      "score": 0.0000488951786997873,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -14016,7 +14033,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0035991729157852466,
+      "score": 0.0035917554719311242,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -14104,7 +14121,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.002794288785839093,
+      "score": 0.0027885301072020506,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14200,7 +14217,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000489801178549857,
+      "score": 0.0004887917597676583,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -14253,7 +14270,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0038050407692636666,
+      "score": 0.0037971990575901707,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14361,7 +14378,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.007439817474135345,
+      "score": 0.007424484943665009,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -16526,11 +16543,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1533761791279104080/1533761791753195530.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1533121288665829406",
@@ -16573,11 +16586,7 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1533403497851256872/1533403498555637890.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1529453055421190185",
