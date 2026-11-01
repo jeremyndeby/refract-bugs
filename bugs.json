@@ -1,6 +1,6 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-11-01T05:00:05.942Z",
+  "generated_at": "2026-11-01T06:20:03.876Z",
   "bugs": [
     {
       "id": "1566244551633666150",
@@ -380,7 +380,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.7522575148307216,
+      "score": 1.7426486435173414,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -505,7 +505,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.5730013629588804,
+      "score": 2.558891770746224,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -583,7 +583,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 3.518722476496955,
+      "score": 3.4994268243579354,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -646,7 +646,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 8.794783481778088,
+      "score": 8.746555443381796,
       "reactions": [
         {
           "emoji": "😂",
@@ -787,10 +787,10 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0,
+      "score": 1.9943410066207348,
       "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 0,
+      "comments_count": 3,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "not the same no",
@@ -804,6 +804,13 @@
           "date": "2026-10-22T13:14:41.983Z",
           "is_team": false,
           "author_key": "Sage Badger",
+          "reactions": []
+        },
+        {
+          "text": "It's similar for me. However, marking the episodes as watched again unfortunately caused my watched episode count to become inaccurate. Those four episodes are now being counted twice, which makes tracking quite difficult.",
+          "date": "2026-11-01T05:38:51.522Z",
+          "is_team": false,
+          "author_key": "Teal Otter",
           "reactions": []
         }
       ],
@@ -831,7 +838,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 4.31862192707718,
+      "score": 4.29493985866132,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -981,7 +988,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6380025318172572,
+      "score": 0.6345039112241334,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1135,7 +1142,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8593664816892221,
+      "score": 0.8546539654844444,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1211,7 +1218,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.6707654435048469,
+      "score": 0.6670871606191702,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1288,6 +1295,41 @@
       "images": []
     },
     {
+      "id": "1555163029153386577",
+      "title": "Back button behind the \"Traffic Lights\" controls in iOS on iPad",
+      "body": "Hi ! I know it's a system problem for some apps since iPadOS 26/27, but I just got the problem this morning on Refract.\nWhen the app is on the side, hovering another app, the back button is sometimes stuck behind the Traffic light window control 🚥. \nWhen you try to go back sometimes, the target is the 🚥 menu when you want to go back (so it expands the menu), and sometimes the other way around.\nI saw this behavior on episode details page, tv show page and movies. I don't know if it's everywhere or not.\n(on the screenshot, it's half-behind, but sometimes, it's blocked by the button, sometimes it's below and not blocked)\n\nThis morning, i was using Refract 1.6.734, and I just tried on the new version 1.6.735. still here.\nDevice/System : iPadOS 27.0 (edit2: and same after the update 27.0.1) on an iPad Air 4, in landscape mode.\n[identity removed]",
+      "author_key": "Ivory Seal",
+      "posted_at": "2026-10-01T10:22:39.682Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-11-01T05:02:43.077Z"
+        }
+      ],
+      "reactors_unique": 1,
+      "score": 0.04721848981642889,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1555163029153386577/1555163030122143775.webp"
+        }
+      ]
+    },
+    {
       "id": "1531756804990570698",
       "title": "Frequent connection error - Disabling wifi (no mobile data) makes the app load.",
       "body": "# Info:\n\n[identity removed]\nPrimary device: Android 16, Samsung OneUI 8.5\nSecondary device: Android 13, Samsung OneUI 5.1\nRefract version 1.6.695\n\n# Issue description\n\nBoth devices drops connection from time to time.\nRamdomly, after the phone been idle for couple minutes/hours, the app stops loading.\nReopening the app causes the error message to appear.\nNeed to tap retry a few times to get the app to load.\n\n# Troubleshooting:\n\n- Reset cache, storage and reinstalled the app: **no result**\n- Disabled battery optimization (also make sure OneUI doesn't auto sleep the app): **no result**\n- Change DNS from Cloudflare (1.1.1.1) to Google DNS (8.8.8.8): **no result**\n- Changed SSO (Google Auth) to user/password login: **no result**\n- Reset wifi/modem: **no result**\n- Reset wifi settings on Samsung: **no result**\n- Other applications arent't affected, discarding general device internet access issue.\n- Device memory usage is not a issue, there is plenty of available memory when error occurs\n- Swithing off wifi makes the app load instantly even if device has no SIM card.\n- Switched to Mobile data: **still monitoring**\n\n# Observation\n\nThe important part that I have observe on the last tests is that when switching wifi off, the apps loads instantly even without mobile data active.\nTested that in both devices and in both cases the app loads the moment the wifi shuts down and the device goes offline.\nStill testing if the problem happens using mobile data but as the coverage in my area is spotty, I have to keep switching to wifi to use the phone regularly.",
@@ -1305,7 +1347,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 0.9752835724073263,
+      "score": 0.9699354005421763,
       "reactions": [
         {
           "emoji": "👍",
@@ -2173,7 +2215,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.14695574859933694,
+      "score": 0.14614988595352094,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2263,7 +2305,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 31.42197908595134,
+      "score": 31.249670078346487,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3907,41 +3949,6 @@
       ]
     },
     {
-      "id": "1555163029153386577",
-      "title": "Back button behind the \"Traffic Lights\" controls in iOS on iPad",
-      "body": "Hi ! I know it's a system problem for some apps since iPadOS 26/27, but I just got the problem this morning on Refract.\nWhen the app is on the side, hovering another app, the back button is sometimes stuck behind the Traffic light window control 🚥. \nWhen you try to go back sometimes, the target is the 🚥 menu when you want to go back (so it expands the menu), and sometimes the other way around.\nI saw this behavior on episode details page, tv show page and movies. I don't know if it's everywhere or not.\n(on the screenshot, it's half-behind, but sometimes, it's blocked by the button, sometimes it's below and not blocked)\n\nThis morning, i was using Refract 1.6.734, and I just tried on the new version 1.6.735. still here.\nDevice/System : iPadOS 27.0 (edit2: and same after the update 27.0.1) on an iPad Air 4, in landscape mode.\n[identity removed]",
-      "author_key": "Ivory Seal",
-      "posted_at": "2026-10-01T10:22:39.682Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-01T05:02:43.077Z"
-        }
-      ],
-      "reactors_unique": 1,
-      "score": 0.04747885004104791,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1555163029153386577/1555163030122143775.webp"
-        }
-      ]
-    },
-    {
       "id": "1559130723745534112",
       "title": "TV Time GDPR import misses old ratings",
       "body": "The ratings from the following two tables are imported:\n✅ ratings-3-prod-episode_votes.csv\n✅ ratings-v2-prod-votes.csv\n\nBut older ratings were stored in this table, which seems to be completely ignored:\n❎ ratings-prod-episode_votes.csv\n\nThis table looks kind of messy, because some episodes seem to have multiple entries. But I didn't analyze it in detail.\n\nAll I know is that the same GDPR export imports all these ratings correctly into Bingers.\n\nI assume it should be an easy fix that would probably add a ton more ratings to older episodes.\n\n[identity removed]\n• Device: LinageOS v19 (Android v12)\n• App version: Refract v1.6.743-01a12aff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -4117,7 +4124,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9620224535296236,
+      "score": 0.9567470017890493,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -4357,7 +4364,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 2.0909978158377758,
+      "score": 2.079531391092047,
       "reactions": [
         {
           "emoji": "💜",
@@ -4498,7 +4505,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7816886849640281,
+      "score": 0.7774021312369807,
       "reactions": [
         {
           "emoji": "💜",
@@ -4534,7 +4541,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7530803487572328,
+      "score": 0.7489506748373909,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4666,7 +4673,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6464625688595346,
+      "score": 0.6429175558802703,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -4975,7 +4982,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.6397449687391397,
+      "score": 1.630753083552162,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -5017,7 +5024,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.87756154331534,
+      "score": 2.86178183152525,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 1,
@@ -5319,7 +5326,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3243011905431278,
+      "score": 0.3225228169990965,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5724,7 +5731,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 3.0902712852331495,
+      "score": 3.073325134994435,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5766,7 +5773,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.3407871505908542,
+      "score": 1.3334346632540226,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 3,
@@ -6059,7 +6066,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1981282727412526,
+      "score": 1.1915580852589605,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6474,7 +6481,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.04454706844831,
+      "score": 1.0388190756866653,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6774,7 +6781,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.5956449048565453,
+      "score": 1.5868948516121748,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -6939,7 +6946,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 4.080424379099425,
+      "score": 4.058048516858346,
       "reactions": [
         {
           "emoji": "👍",
@@ -7154,7 +7161,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 5.717538979766495,
+      "score": 5.686185656513024,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -7690,7 +7697,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7946095480252633,
+      "score": 0.7902521400377192,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -7839,98 +7846,6 @@
       ]
     },
     {
-      "id": "1561835443626975262",
-      "title": "Collection list reordering causes lag",
-      "body": "When reordering collection lists, the app experiences significant lag.\n\n📱 via app · SM-S916U · samsung/dm2qsqw/dm2q:16/BP4A.251205.006/S916USQU7FZE2:user/release-keys 16 · v1.6.748-01a15515\n[identity removed]",
-      "author_key": "Sage Fox",
-      "posted_at": "2026-10-19T20:16:27.260Z",
-      "status": "off_topic",
-      "resolved_at": "2026-10-24T16:26:58.942Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-24T16:26:58.942Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1561231308259070023",
-      "title": "Reviews and comments not displaying for certain shows and movies",
-      "body": "Reviews aren't showing up for certain TV shows (example: Being Gordon Ramsey) and movies (example: Ant-Man). User reports writing reviews but comments fail to display when submitted.\n\n📱 via app · iPhone 15 Pro Max · iOS 26.6.2 · v1.6.746-01a14a04\n[identity removed]",
-      "author_key": "Amber Panda",
-      "posted_at": "2026-10-18T04:15:50.164Z",
-      "status": "off_topic",
-      "resolved_at": "2026-10-24T16:26:58.505Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-24T16:26:58.505Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1559902636163997786",
-      "title": "Rewatched status not displaying for Naruto series",
-      "body": "User marked Naruto and Naruto Shippuden as rewatched, but these titles do not appear in the rewatched section. However, rewatch time appears to be calculated overall with other rewatched shows and anime.\n\n📱 via app · CPH2717 · Android 16 · v1.6.744-01a1310d\n[identity removed]",
-      "author_key": "Velvet Finch",
-      "posted_at": "2026-10-14T12:16:10.051Z",
-      "status": "off_topic",
-      "resolved_at": "2026-10-24T16:26:57.866Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-24T16:26:57.866Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1557486761955958844",
-      "title": "Incorrect air times for US national stations and missing returning seasons in Journal",
-      "body": "Air times are incorrect for US national stations except in the Upcoming section. Returning seasons of shows only appear in Upcoming, not in Continue, Ongoing, or other sections—they only appear after airing begins. Push notifications for new episodes, shows, or seasons are unreliable: either don't arrive or arrive at wrong times/dates. Widget shows nothing because Continue section is empty.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.741-01a11748\n[identity removed]",
-      "author_key": "Azure Tern",
-      "posted_at": "2026-10-07T20:16:20.755Z",
-      "status": "off_topic",
-      "resolved_at": "2026-10-24T16:26:57.073Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-24T16:26:57.073Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1556761924304371772",
       "title": "Episode list checkmarks display incorrectly until interaction",
       "body": "In episode lists, checkmarks often display incorrectly—either showing as ticked when they shouldn't be or vice versa. When you tap on an episode and return to the list, the display corrects itself. This may occur more frequently in seasons with long episode lists.\n\n📱 via app · 22101320G · POCO/redwood_eea/redwood:14/UKQ1.240624.001/OS2.0.13.0.UMSEUXM:user/release-keys 14 · v1.6.740-01a104a6\n[identity removed]",
@@ -7981,29 +7896,6 @@
       "images": []
     },
     {
-      "id": "1555372768239820941",
-      "title": "Challenges not visible, trophies section empty",
-      "body": "I don't see the challenges. The trophies section is empty.\n\n📱 via app · CPH2399 · Android 14 · v1.6.736-01a0f820",
-      "author_key": "Silver Robin",
-      "posted_at": "2026-10-02T00:16:05.377Z",
-      "status": "off_topic",
-      "resolved_at": "2026-10-24T16:26:54.742Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-24T16:26:54.742Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1563495063911272639",
       "title": "Issues with countdown and christmas badges",
       "body": "[identity removed]\nDevice : Samsung Galaxy A16 (android)\nApp version : Refract v1.6.749-01a169bc\n\nHello, I have a problem with the Christmas and Countdown badges.\nI watched and rated Christmas movies in December to get it, but I still haven't managed to get it.\n\nAnd I get the Countdown one, but it doesn't show up in my achievements alongside all my other badges.\nIs this where I should post it ?",
@@ -8031,58 +7923,6 @@
           "url": "./assets/bugs/1563495063911272639/1563495064448008202.webp"
         }
       ]
-    },
-    {
-      "id": "1563458847845392424",
-      "title": "Wrong date",
-      "body": "I am Dragon was released im 2015 not 2017.",
-      "author_key": "Ochre Heron",
-      "posted_at": "2026-10-24T07:47:16.987Z",
-      "status": "off_topic",
-      "resolved_at": "2026-10-24T07:51:03.272Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-24T07:51:03.272Z",
-        "applied_by": "Eli"
-      },
-      "tags": [
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1563458847845392424/1563458848088526939.webp"
-        }
-      ]
-    },
-    {
-      "id": "1563345281414729728",
-      "title": "Series \"Il Paradiso delle Signore\" not updating for over a week",
-      "body": "The series \"Il Paradiso delle Signore\" has not been updated for more than a week.\n\n📱 via app · SM-S911B · Android 17 · v1.6.749-01a169bc\n[identity removed]",
-      "author_key": "Amber Sparrow",
-      "posted_at": "2026-10-24T00:16:00.640Z",
-      "status": "off_topic",
-      "resolved_at": "2026-10-24T06:00:05.206Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-24T06:00:05.206Z",
-        "applied_by": "Eli"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
     },
     {
       "id": "1563292909489627147",
@@ -8588,7 +8428,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.1775207242178571,
+      "score": 0.17654725212255712,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8659,7 +8499,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0528882498915736,
+      "score": 0.05259822608919481,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8730,7 +8570,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1679047364313011,
+      "score": 0.16698399562030727,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -8878,7 +8718,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.12483411128027065,
+      "score": 0.12414955726885404,
       "reactions": [
         {
           "emoji": "💜",
@@ -8946,7 +8786,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2594246456113384,
+      "score": 0.25800203619799567,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9035,7 +8875,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0046096075254829505,
+      "score": 0.004584329776554688,
       "reactions": [
         {
           "emoji": "💜",
@@ -9097,7 +8937,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.42590133702044336,
+      "score": 0.4235658177802698,
       "reactions": [],
       "comments_count": 10,
       "activity_7d": 0,
@@ -9277,7 +9117,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.2550583918609832,
+      "score": 1.2481760161393216,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -9482,7 +9322,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.32997482201325884,
+      "score": 0.32816533592200514,
       "reactions": [
         {
           "emoji": "👍",
@@ -9939,7 +9779,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1995166202291607,
+      "score": 0.19842252902827467,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -10025,7 +9865,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.1381301899487082,
+      "score": 0.13737272410337656,
       "reactions": [
         {
           "emoji": "☝️",
@@ -10159,7 +9999,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.034369256559101495,
+      "score": 0.03418078553779453,
       "reactions": [
         {
           "emoji": "➕",
@@ -10210,7 +10050,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.04498846071862268,
+      "score": 0.04474175706577857,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -10413,38 +10253,6 @@
       ]
     },
     {
-      "id": "1543935004080341142",
-      "title": "TV Time GDPR import doesn't apply episode watch date",
-      "body": "Refract v 1.6.718\nDevice : iOS app on a Macbook using macOS 26\n[identity removed]\n\nPrevious user of TV Time and Letterboxd (on Android, iOS and the web), I imported my tv shows with the GDPR TV Time import a few weeks ago.\nSince then, i tried again to import the GDPR data to update the series and watched dates.\nBut, all dates remain on the \"unknown date\", whereas i can see the created_at\" and \"updated_at\" parameter in the CSV file from the GDPR ZIP.\n\nI tried to reimport the data today following the advices from @ Invisible and got the same result : \"unknown date\" on episodes. We checked the cache, same thing.\nExamples from episodes with dates : Rooster S01E06 (at the bottom of the CSV on the 18/04/2026) - Plur1bus (in 2026), Mad Men (in 2023) or You (2023-2025).\n\nHope it might help 🙂",
-      "author_key": "Ochre Seal",
-      "posted_at": "2026-08-31T10:46:29.898Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-05T12:01:28.703Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-05T12:01:28.703Z"
-      },
-      "tags": [
-        "🔗 Import"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.0022084075433626985,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1543935004080341142/1543935004281933914.webp"
-        }
-      ]
-    },
-    {
       "id": "1540920443886633000",
       "title": "Items originally marked watched via tvtime import are now populating as unwatched",
       "body": "For example Kingdom: Legendary War episodes 1-5 previously watched (i confirmed was on tv time imported data) and it was marked watched at one point but now not watched. iPhone 16pro iOS 26.6",
@@ -10539,7 +10347,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.014573120918196868,
+      "score": 0.014493206155468168,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10615,7 +10423,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.13384655434092613,
+      "score": 0.13311257870919635,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -10677,7 +10485,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.017103518385888535,
+      "score": 0.017009727658335614,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10733,63 +10541,6 @@
       "images": [
         {
           "url": "./assets/bugs/1539684264537358517/1539684265216712744.webp"
-        }
-      ]
-    },
-    {
-      "id": "1541621784154087475",
-      "title": "Data missing from Refract export",
-      "body": "I exported my Refract data and was checking my tv shows and realized that many episodes and even entire seasons are missing from the export. They are marked correctly on the app but the data is missing from the export. I manually checked some of the recent ones, but I believe there are more missing, because the README.txt of the export says the episode list have 1 row per watched episode. The app episode counting says 9409 and the export shows only 9131 lines, so I understand there are 278 episodes missing on the export. \n\nHere are some examples of missing data that I found:\nSniper Butterfly: completed (30 episodes) on the app, is not shown at all on the export csv;\nOur Sticky Love: completed (12 episodes) on the app, only episodes 1-3 are shown on the export csv;\nAffinity: completed (40 episodes) on the app, is not shown at all on the export csv;\nRoad to Success: completed (32 episodes) on the app, only episodes 1-4, 6, 11-16 are shown on the export csv;\n\nI'm sending my most recent export from the app and also a screenshot showing that the shows I listed above are marked as complete on the app.\n\n[identity removed]\nDevice and OS version: iPhone 16 pro max, iOS 26.6\nRefract app version: v1.6.716-embedded",
-      "author_key": "Amber Lynx",
-      "posted_at": "2026-08-25T01:34:35.290Z",
-      "status": "fixed",
-      "resolved_at": "2026-10-05T08:20:21.156Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-05T08:20:21.156Z"
-      },
-      "tags": [
-        "📱 iOS",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0.0030397920630246306,
-      "reactions": [],
-      "comments_count": 4,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "I crossed my Refract export data with my Sofa Time export data and I was able to find out exactly which episodes are missing on the export. I double checked all these tv shows on Refract and they are correctly marked as watched, but for some reason they are missing on the Refract export file. I'm sending a csv file with the names, episodes and other data from the tv shows, in case it helps to solve the problem.",
-          "date": "2026-08-25T13:46:59.568Z",
-          "is_team": false,
-          "author_key": "Amber Lynx",
-          "reactions": []
-        },
-        {
-          "text": "I have the same, for me most episodes which are missing from the export are those where I've changed the 'watched on' date manually.",
-          "date": "2026-08-26T17:39:06.348Z",
-          "is_team": false,
-          "author_key": "Golden Otter",
-          "reactions": []
-        },
-        {
-          "text": "With me this happened with some episodes that I changed manually, but I also have some older tv shows that I didn’t changed the date and have the same problem",
-          "date": "2026-08-26T20:01:18.783Z",
-          "is_team": false,
-          "author_key": "Amber Lynx",
-          "reactions": []
-        },
-        {
-          "text": "Yeah, I looked more at the previous export and saw it also happened when I did a lot of episodes at once.\naka, binge watch ep1-8, mark them as watched one after another in quick succession (think within 1 minute).",
-          "date": "2026-08-27T16:13:02.259Z",
-          "is_team": false,
-          "author_key": "Golden Otter",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1541621784154087475/1541621785148133396.webp"
         }
       ]
     },
@@ -10859,7 +10610,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.06381434421156067,
+      "score": 0.06346440488113304,
       "reactions": [
         {
           "emoji": "👆🏾",
@@ -10912,7 +10663,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.008783807730818497,
+      "score": 0.008735639880252846,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -10977,7 +10728,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.012322033421592507,
+      "score": 0.012254462968924937,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -11046,7 +10797,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00015392055024758701,
+      "score": 0.00015307649465227873,
       "reactions": [
         {
           "emoji": "‼️",
@@ -11167,7 +10918,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.001547993654336313,
+      "score": 0.0015395049067107212,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11305,7 +11056,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.1069722233791192,
+      "score": 0.10638561877342836,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11399,7 +11150,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0013475448610985616,
+      "score": 0.001340155316439911,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -11500,7 +11251,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00040733331098922115,
+      "score": 0.0004050996134111993,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -11667,7 +11418,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.009492139507263743,
+      "score": 0.009440087370952747,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -11895,7 +11646,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0050917649863923145,
+      "score": 0.005063843225978607,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -11956,7 +11707,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.018566204928323577,
+      "score": 0.01846439325257148,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12150,7 +11901,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.007175237922065329,
+      "score": 0.007135891001163317,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12549,7 +12300,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0004070012935901757,
+      "score": 0.00040476941669914483,
       "reactions": [
         {
           "emoji": "💜",
@@ -12579,7 +12330,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.041061117599709,
+      "score": 0.0408359503559336,
       "reactions": [
         {
           "emoji": "👆",
@@ -12645,7 +12396,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0002846672110296916,
+      "score": 0.00028310617871864626,
       "reactions": [
         {
           "emoji": "🤔",
@@ -12736,7 +12487,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.009534967316367259,
+      "score": 0.009482680324789366,
       "reactions": [
         {
           "emoji": "👆",
@@ -12926,7 +12677,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0707392868247332,
+      "score": 0.07035137312018573,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -13084,27 +12835,6 @@
       "images": []
     },
     {
-      "id": "1545380322190041089",
-      "title": "Mismatched comments on \"Bethune: the making of a hero\"",
-      "body": "Some of the comments associated to the 1990 biographical period drama \"Bethune: the making of a hero\" (dir: Phillip Borsos) are instead related to 2024 legal thriller \"Mea culpa\" (dir: Tyler Perry). I have reconstructed the correspondence as a comment specifically refers to Tyler Perry, who is not involved in the 1990 movie, and because in my library they had the same vote and the same watched date (back in april 2024). I believe it is a remnant of early failures in TVTime imports (as that is what I used before the migration).\nI simply have removed the movie from my list of watched items, but it may be helpful to fix it for other users as well.\nDetails: Refract v1.6.719-01a05d02 on Galaxy A53, Android v16, user [name removed]",
-      "author_key": "Ivory Panda",
-      "posted_at": "2026-09-04T10:29:40.588Z",
-      "status": "duplicate",
-      "resolved_at": "2026-09-08T05:24:37.836Z",
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1527805428392529971",
       "title": "Plan to Watch shudnt contain unreleased movies",
       "body": "The app has many things done in a right way and many in wrong ways like \n\nThe 'plan to watch' tab or section shudnt contain the unreleased titles (move them to an upcoming tab maybe)... \n\nIt makes browsing thru my movies watchlist unnecessarily tiresome... \n\nAlso, not sure which of these tags is correct please check and correct it if you wud like to...",
@@ -13119,7 +12849,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.00027633130530654556,
+      "score": 0.00027481598468153735,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13198,7 +12928,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00004074978031370009,
+      "score": 0.00004052632035318126,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -13315,7 +13045,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0029934085591625014,
+      "score": 0.002976993575982282,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -13403,7 +13133,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.002323991695874839,
+      "score": 0.0023112476003580426,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13499,7 +13229,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00040736443468127807,
+      "score": 0.00040513056642996757,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -13552,7 +13282,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.003164627505592105,
+      "score": 0.0031472736074357878,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -13660,7 +13390,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.006187647503127724,
+      "score": 0.006153716241263019,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -15791,7 +15521,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.002515099859326602,
+      "score": 0.0025013077821438704,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15892,7 +15622,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0006323021342781318,
+      "score": 0.0006288347730095789,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -15937,7 +15667,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00015673392204968882,
+      "score": 0.0001558744387404892,
       "reactions": [
         {
           "emoji": "👆",
@@ -16101,7 +15831,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00027658471879539643,
+      "score": 0.00027506800852441246,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -16131,7 +15861,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 5,
-      "score": 0.0028146928474550915,
+      "score": 0.0027992578893345074,
       "reactions": [
         {
           "emoji": "💜",
@@ -16207,7 +15937,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00085707408625109,
+      "score": 0.0008523741408771282,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -16271,7 +16001,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0003101106804940286,
+      "score": 0.0003084101235858392,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -16468,7 +16198,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00021520660738335044,
+      "score": 0.00021402647684966249,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -16557,7 +16287,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0001568966147697041,
+      "score": 0.00015603623930087764,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -16607,7 +16337,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00042387862693858024,
+      "score": 0.0004215541996530514,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -16681,7 +16411,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00040271449515497934,
+      "score": 0.00040050612582157616,
       "reactions": [
         {
           "emoji": "👆",
@@ -16738,7 +16468,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00026827832542022126,
+      "score": 0.0002668071649981293,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16813,7 +16543,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0006373433810255994,
+      "score": 0.0006338483750239833,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -16902,7 +16632,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000605418047500943,
+      "score": 0.0006020981107564874,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -16950,7 +16680,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.0006936457301353802,
+      "score": 0.0006898419784028097,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17023,7 +16753,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0008410399630404739,
+      "score": 0.000836427944141502,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17085,7 +16815,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.0006507829333112416,
+      "score": 0.0006472142287080628,
       "reactions": [
         {
           "emoji": "‼️",
@@ -17200,7 +16930,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0009932647508412843,
+      "score": 0.000987817975415773,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -17254,7 +16984,7 @@
       "id": "1525588570524356728",
       "title": "Choosing a custom watched date cause the app to freeze",
       "body": "Device: iPhone 14 Pro, Mac\nOS: iOS 26\nVersion: 1.6.689-019f4c97\n[identity removed]\n\nWhen I select a custom watched date once it save, the app is freezed I need to close it to be able to use it again\nPS: Just happened choosing the airing date too",
-      "author_key": "Misty Finch",
+      "author_key": "Velvet Robin",
       "posted_at": "2026-07-11T19:44:19.278Z",
       "status": "fixed",
       "resolved_at": "2026-08-18T11:09:41.673Z",
@@ -17265,7 +16995,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.00023198067611078244,
+      "score": 0.0002153766198064654,
       "reactions": [
         {
           "emoji": "⬆️",
@@ -17279,72 +17009,72 @@
           "text": "Thanks! We will investigate",
           "date": "2026-07-11T21:06:13.428Z",
           "is_team": true,
-          "author_key": "Amber Finch",
+          "team_role": "dev",
+          "author_key": "Silver Otter",
+          "team_name": "J",
           "reactions": [
             {
               "emoji": "🦾",
               "count": 1
             }
-          ],
-          "team_role": "dev",
-          "team_name": "J"
+          ]
         },
         {
           "text": "That’s been happening with me too!!",
           "date": "2026-07-11T23:25:22.370Z",
           "is_team": false,
-          "author_key": "Azure Tern",
+          "author_key": "Sage Tern",
           "reactions": []
         },
         {
           "text": "Hi just to add I have the same thing but for any kind of button or date custom, aired or live date all four freeze the app and I have to relaunch it, IPhone 17 PM IOS",
           "date": "2026-07-13T17:49:57.916Z",
           "is_team": false,
-          "author_key": "Golden Fox",
+          "author_key": "Ochre Wren",
           "reactions": []
         },
         {
           "text": "UPDATE: I think I find how to avoid that, it’s by waiting for the rating UI to show before changing the date, i haven’t had any crash since I tried that",
           "date": "2026-07-14T15:13:11.430Z",
           "is_team": false,
-          "author_key": "Misty Finch",
+          "author_key": "Velvet Robin",
           "reactions": []
         },
         {
           "text": "Latest version as of now\nAnd still crashing/freezing",
           "date": "2026-07-15T13:52:41.934Z",
           "is_team": false,
-          "author_key": "Misty Badger",
+          "author_key": "Azure Seal",
           "reactions": []
         },
         {
           "text": "Seems to be freezing right after picking the date\nIt logs the date properly so its saving it but it must be catching on something after the data is saved",
           "date": "2026-07-15T13:55:45.311Z",
           "is_team": false,
-          "author_key": "Misty Badger",
+          "author_key": "Azure Seal",
           "reactions": []
         },
         {
           "text": "We Ill look into this later this week thanks Exooo",
           "date": "2026-07-15T14:28:16.510Z",
           "is_team": true,
-          "author_key": "Amber Finch",
-          "reactions": [],
           "team_role": "dev",
-          "team_name": "J"
+          "author_key": "Silver Otter",
+          "team_name": "J",
+          "reactions": []
         },
         {
           "text": "Tnx!",
           "date": "2026-07-15T14:48:58.592Z",
           "is_team": false,
-          "author_key": "Misty Badger",
+          "author_key": "Azure Seal",
           "reactions": []
         },
         {
           "text": "I can confirm this work somehow",
           "date": "2026-07-15T17:52:03.241Z",
           "is_team": false,
-          "author_key": "Golden Fox",
+          "author_key": "Ochre Wren",
           "reactions": []
         }
       ],
@@ -17354,7 +17084,7 @@
       "id": "1530177634435203094",
       "title": "\"Undo last import\" feature on IMDb data import didn't work as expected",
       "body": "1. Device: **Poco X5 Pro**\n2. OS: **Android 14**\n3. Refract app version: **1.6.694-019f90b5**\n\n4. What happened: \nI imported my data from IMDb and unfortunately I didn't know at the time that every rated title would be translated as \"Watched\" in Refract. This is obviously true in my case for movies but not necessarily for TV shows which many times I've rated while they were still ongoing, let's say after a 2nd or 3rd season.\n\nThe thing is I now have a lot of shows on hold or that I haven't returned to for quite some time and because of the issue described above now I don't have a clue where I've stopped watching since the IMDb data import checked these shows as completed. \n\nThat's why I decided to hit the **\"Undo last Import\"** option but I still find loads of shows I have definitely not completed under the \"Watched\" category. Also, *some* titles from my IMDb watchlist remained in my Refract \"Plan to watch\" list *(even though I didn't add them in Refract myself)*, but not all.\n\n[identity removed]\n\n*Note: I restarted the app, cleared the cache/restarted again and a day has passed since but the issue persists.*",
-      "author_key": "Coral Sparrow",
+      "author_key": "Lilac Panda",
       "posted_at": "2026-07-24T11:39:37.375Z",
       "status": "fixed",
       "resolved_at": "2026-08-18T11:09:24.371Z",
@@ -17365,7 +17095,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.002958467225561611,
+      "score": 0.0026943356677817313,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -17379,14 +17109,14 @@
           "text": "same here, very frustrating after literally 10 days of imdb import queue...i think i'll abandon refract for now...in addition at least add the possibility su make bulk action...",
           "date": "2026-07-24T14:54:33.139Z",
           "is_team": false,
-          "author_key": "Ivory Robin",
+          "author_key": "Ivory Lynx",
           "reactions": []
         },
         {
           "text": "Leaving my comment here instead of the post I created as new, so it might get more traction. Here is my issue that I posted before:\n\nIMDb import marked every show I rated as fully watched\n\nMy TV shows' watch time jumped from around 4 months to over 8 months. It's all messed up now. Movies were imported perfectly. I'm a TV time refugee, so the previous import was from TV time only.\n\nIdeally, I'd like one of two solutions. Either reset the IMDb import so I can manually add the roughly 900 movies I've watched, or reset the IMDb import and allow me to import movies only. Is either option possible?\n\nAt the moment, the app is practically unusable for me because it's showing incorrect statistics, and I can't realistically go through thousands of episodes manually to figure out which ones I've actually watched.\n\nIf neither option is possible, then I'll have to completely wipe my data and do the TV Time import again. In that case, I'd really appreciate it if I could be added to the earliest possible queue so I don't have to wait another week for the import.\n\n[identity removed]\n\nSamsung S24 FE, One UI 8.5, Android 16\n\nApp version: 1.6.1",
           "date": "2026-08-02T21:09:38.454Z",
           "is_team": false,
-          "author_key": "Azure Otter",
+          "author_key": "Ochre Panda",
           "reactions": [
             {
               "emoji": "👍",
@@ -17398,30 +17128,30 @@
           "text": "Thanks everyone, I'll check today",
           "date": "2026-08-10T07:09:16.581Z",
           "is_team": true,
-          "author_key": "Sage Otter",
-          "reactions": [],
           "team_role": "dev",
-          "team_name": "Exooo"
+          "author_key": "Sage Seal",
+          "team_name": "Exooo",
+          "reactions": []
         },
         {
           "text": "Alright so it seems both of you:\n* have movies/shows in \"ratings.csv\" and hence the imported added them as \"watched\" (as you rated them)\n* have both TVTime import & imdb meaning that when you \"Undo\" only the IMDB-pure data goes out, if you created a show in your library with TV Time and you update some things with imdb, then it's not gone with the Undo to avoid messing further with your data",
           "date": "2026-08-10T07:21:12.515Z",
           "is_team": true,
-          "author_key": "Sage Otter",
+          "team_role": "dev",
+          "author_key": "Sage Seal",
+          "team_name": "Exooo",
           "reactions": [
             {
               "emoji": "👍",
               "count": 1
             }
-          ],
-          "team_role": "dev",
-          "team_name": "Exooo"
+          ]
         },
         {
           "text": "Sigh... Thanks for the clarification though! On my way to fix things manually ⛏️",
           "date": "2026-08-13T20:40:30.704Z",
           "is_team": false,
-          "author_key": "Coral Sparrow",
+          "author_key": "Lilac Panda",
           "reactions": []
         }
       ],
@@ -17431,7 +17161,7 @@
       "id": "1535313500807630929",
       "title": "Viewing comments screen",
       "body": "I searched on \"comments, shaking and jittering\" before posting, but as I am not an experienced user of Discord, I'm unsure if this may still have already been noted. I am also unsure if my screen recording will come through. When viewing past the 3rd comment from within my profile, the display in Firefox on my S26+ is jittering/shaking.",
-      "author_key": "Lilac Sparrow",
+      "author_key": "Amber Lynx",
       "posted_at": "2026-08-07T15:47:43.338Z",
       "status": "fixed",
       "resolved_at": "2026-08-18T11:09:14.637Z",
@@ -17441,7 +17171,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.004375808368198879,
+      "score": 0.003985136782976502,
       "reactions": [
         {
           "emoji": "👍",
@@ -17455,77 +17185,77 @@
           "text": "Refract v1.6.705-019fd80b",
           "date": "2026-08-07T15:50:33.551Z",
           "is_team": false,
-          "author_key": "Lilac Sparrow",
+          "author_key": "Amber Lynx",
           "reactions": []
         },
         {
           "text": "@[name removed], android 16, I have a screen recording but apparently can't figure out how to send ot from here.",
           "date": "2026-08-07T15:54:34.056Z",
           "is_team": false,
-          "author_key": "Lilac Sparrow",
+          "author_key": "Amber Lynx",
           "reactions": []
         },
         {
           "text": "If you tell me how to send the screen recording, I will send it.",
           "date": "2026-08-07T15:59:01.378Z",
           "is_team": false,
-          "author_key": "Lilac Sparrow",
+          "author_key": "Amber Lynx",
           "reactions": []
         },
         {
           "text": "same issue \n[mention removed] on refract, Android 14, Refract v. 1.6.2",
           "date": "2026-08-07T20:14:14.300Z",
           "is_team": false,
-          "author_key": "Ochre Lynx",
+          "author_key": "Coral Fox",
           "reactions": []
         },
         {
           "text": "That's it! How did you add the video?",
           "date": "2026-08-07T20:45:44.915Z",
           "is_team": false,
-          "author_key": "Lilac Sparrow",
+          "author_key": "Amber Lynx",
           "reactions": []
         },
         {
           "text": "just added it in the same way you would add a photo",
           "date": "2026-08-07T20:46:24.821Z",
           "is_team": false,
-          "author_key": "Ochre Lynx",
+          "author_key": "Coral Fox",
           "reactions": []
         },
         {
           "text": "Yesterday i recorded, didn't sent report yet, so someone report now, good\nso I just post video done :Haha: ``Android 14, Refract 1.6.705, Red Magic 9 Pro``",
           "date": "2026-08-07T20:49:18.851Z",
           "is_team": false,
-          "author_key": "Velvet Fox",
+          "author_key": "Coral Finch",
           "reactions": []
         },
         {
           "text": "I have the same issue as well, \n@ [name removed] on refract, iOS 26.6\nRefract v1.6.705",
           "date": "2026-08-07T21:29:44.778Z",
           "is_team": false,
-          "author_key": "Velvet Sparrow",
+          "author_key": "Ivory Tern",
           "reactions": []
         },
         {
           "text": "Same issue for me too. Just left a comment on an episode and went back to read it and saw this glitch.\n\n@[name removed]\niOS 26.5\nRefract v1.6.705-019fd815",
           "date": "2026-08-08T04:03:37.889Z",
           "is_team": false,
-          "author_key": "Sage Badger",
+          "author_key": "Teal Finch",
           "reactions": []
         },
         {
           "text": "Same problem.\n\nAndroid 14, Xiaomi 11T Pro",
           "date": "2026-08-08T18:19:07.286Z",
           "is_team": false,
-          "author_key": "Lilac Tern",
+          "author_key": "Misty Otter",
           "reactions": []
         },
         {
           "text": "Good afternoon!\n\nSame issue here. I think it may be related to the existence of gifs, but could be the quantity too, there's quite in the course of 10 years.\n\n[identity removed]\nPhone software: Android One UI 8.5\nApp version: Refract v1.6.707-019fe2bc",
           "date": "2026-08-09T15:49:40.781Z",
           "is_team": false,
-          "author_key": "Teal Finch",
+          "author_key": "Coral Lynx",
           "reactions": []
         }
       ],
@@ -17535,7 +17265,7 @@
       "id": "1526623949113266238",
       "title": "Unable to mark episode as seen (\"episode not aired yet\" error)",
       "body": "Device: iPhone 11\nOS version: iOS 26\nRefract app version: 1.6.689-019f4c97\n[identity removed]\n\nWhat happened:\nI am unable to mark an episode as watched because the app incorrectly claims it hasn't aired yet, even though the app itself shows it was already released.\n\nThis is happening with the anime \"Oh Boy, Was I Wrong About Her\", specifically for Season 1, Episode 2. The app correctly displays the release date as July 13th, but when I try to mark it as seen, it blocks the action and shows the error message: \"questo episodio non è ancora andato in onda\" (this episode has not aired yet).\n\nSteps to reproduce:\n- Open the app and go to the anime \"Oh Boy, Was I Wrong About Her\".\n- Go to Season 1, Episode 2.\n- Try to mark the episode as seen.\n- The error message pops up and prevents saving, despite the release date being in the past.\n\n(I have attached a screenshot showing both the release date and the error message).",
-      "author_key": "Misty Finch",
+      "author_key": "Sage Lynx",
       "posted_at": "2026-07-14T16:18:32.770Z",
       "status": "fixed",
       "resolved_at": "2026-08-18T11:09:11.227Z",
@@ -17545,7 +17275,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.002012866881577666,
+      "score": 0.0018331583958993394,
       "reactions": [
         {
           "emoji": "👍",
@@ -17559,25 +17289,25 @@
           "text": "they are aware and are working on a fix :)\nhttps://discord.com/channels/1490347491151970366/1526267586436661329/1526304909207539804",
           "date": "2026-07-14T16:22:30.431Z",
           "is_team": true,
-          "author_key": "Coral Panda",
-          "reactions": [],
           "team_role": "mod",
-          "team_name": "Eli"
+          "author_key": "Amber Lynx",
+          "team_name": "Eli",
+          "reactions": []
         },
         {
           "text": "Yes it should be fixed by tomorrow or early Friday 😊 Exooo",
           "date": "2026-07-14T16:22:57.281Z",
           "is_team": true,
-          "author_key": "Silver Sparrow",
-          "reactions": [],
           "team_role": "dev",
-          "team_name": "J"
+          "author_key": "Ochre Tern",
+          "team_name": "J",
+          "reactions": []
         },
         {
           "text": "Thank you so much for the quick update and for all your hard work! Sorry for the duplicate post, I didn't realize it was already being tracked. Appreciate the quick fix! 🙌",
           "date": "2026-07-14T16:37:03.872Z",
           "is_team": false,
-          "author_key": "Misty Finch",
+          "author_key": "Sage Lynx",
           "reactions": [
             {
               "emoji": "💜",
@@ -17589,16 +17319,16 @@
           "text": "No worries, there are so many anyway haha",
           "date": "2026-07-14T16:38:38.173Z",
           "is_team": true,
-          "author_key": "Silver Sparrow",
-          "reactions": [],
           "team_role": "dev",
-          "team_name": "J"
+          "author_key": "Ochre Tern",
+          "team_name": "J",
+          "reactions": []
         },
         {
           "text": "Show: Quarterback\nSeason 3 episodes 2-7 cannot mark watched. Refract does list the release date as July 14th.",
           "date": "2026-07-15T12:01:28.457Z",
           "is_team": false,
-          "author_key": "Ochre Sparrow",
+          "author_key": "Azure Finch",
           "reactions": [
             {
               "emoji": "👍",
@@ -17610,72 +17340,72 @@
           "text": "Hi everyone, just a quick update since it's Friday afternoon: unfortunately, the issue still persists on my end. J , do you know if the fix was deployed or if there's any update on this? Thanks again for your patience and hard work!",
           "date": "2026-07-17T11:30:20.125Z",
           "is_team": false,
-          "author_key": "Misty Finch",
+          "author_key": "Sage Lynx",
           "reactions": []
         },
         {
           "text": "Exooo will know better, should slowly be back but it was supposed to take a few days to resorb",
           "date": "2026-07-17T11:32:55.488Z",
           "is_team": true,
-          "author_key": "Silver Sparrow",
+          "team_role": "dev",
+          "author_key": "Ochre Tern",
+          "team_name": "J",
           "reactions": [
             {
               "emoji": "👍",
               "count": 1
             }
-          ],
-          "team_role": "dev",
-          "team_name": "J"
+          ]
         },
         {
           "text": "Yes. Issue still persists. Same with Red River episode 2.",
           "date": "2026-07-18T12:22:02.867Z",
           "is_team": false,
-          "author_key": "Amber Finch",
+          "author_key": "Velvet Finch",
           "reactions": []
         },
         {
           "text": "Issue still happening for me",
           "date": "2026-07-19T01:27:38.691Z",
           "is_team": false,
-          "author_key": "Golden Wren",
+          "author_key": "Velvet Robin",
           "reactions": []
         },
         {
           "text": "Another such case",
           "date": "2026-07-19T17:55:33.626Z",
           "is_team": false,
-          "author_key": "Amber Finch",
+          "author_key": "Velvet Finch",
           "reactions": []
         },
         {
           "text": "Same thing happening to me too. With this show.",
           "date": "2026-07-19T18:12:31.861Z",
           "is_team": false,
-          "author_key": "Silver Fox",
+          "author_key": "Silver Robin",
           "reactions": []
         },
         {
           "text": "Another one",
           "date": "2026-07-20T21:08:22.017Z",
           "is_team": false,
-          "author_key": "Amber Finch",
+          "author_key": "Velvet Finch",
           "reactions": []
         },
         {
           "text": "forwarding to https://discord.com/channels/1490347491151970366/1528852992932057160",
           "date": "2026-07-20T21:10:31.415Z",
           "is_team": true,
-          "author_key": "Coral Panda",
-          "reactions": [],
           "team_role": "mod",
-          "team_name": "Eli"
+          "author_key": "Amber Lynx",
+          "team_name": "Eli",
+          "reactions": []
         },
         {
           "text": "There’s too many shows to report having this problem. Where you mark a show off, come out of the show page go back into it and it’s shows unmarked. \n\nAlso, when a new episode airs it still appears in up-to-date rather than watching. So you have to go looking for the show in search or up-to-date to find it and tick it off. As it doesn’t appear in continuing.",
           "date": "2026-07-23T19:25:50.393Z",
           "is_team": false,
-          "author_key": "Ochre Otter",
+          "author_key": "Teal Seal",
           "reactions": [
             {
               "emoji": "💯",
@@ -17687,26 +17417,30 @@
           "text": "Hello,\n\nIf I watched an episode of a tv show before his official release date I can't set it as watched in Refract I can only rate the episode. i have to wait the release date to set it as watched.\n\nCan you fix it.\n\n[identity removed]\n\nOnePlus 15 Android 16\n\nRefract version: 1.6.1\n\nThanks in advance",
           "date": "2026-08-02T23:20:04.944Z",
           "is_team": false,
-          "author_key": "Ivory Sparrow",
+          "author_key": "Velvet Lynx",
           "reactions": []
         },
         {
           "text": "there is no fix available. more information below\n<#1520462360425533602>",
           "date": "2026-08-03T05:23:50.997Z",
           "is_team": true,
-          "author_key": "Coral Panda",
-          "reactions": [],
           "team_role": "mod",
-          "team_name": "Eli"
+          "author_key": "Amber Lynx",
+          "team_name": "Eli",
+          "reactions": []
         }
       ],
-      "images": []
+      "images": [
+        {
+          "url": "./assets/bugs/1526623949113266238/1526623949449068644.webp"
+        }
+      ]
     },
     {
       "id": "1534214791420186784",
       "title": "Remove from library does not work",
       "body": "I've added a show to my library and now the \"Remove from library\" button (or the blue flag) does not do anything.",
-      "author_key": "Ochre Otter",
+      "author_key": "Coral Panda",
       "posted_at": "2026-08-04T15:01:50.607Z",
       "status": "fixed",
       "resolved_at": "2026-08-06T18:43:40.764Z",
@@ -17717,7 +17451,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 13,
-      "score": 0.007850306875181292,
+      "score": 0.007110208602650359,
       "reactions": [
         {
           "emoji": "👍",
@@ -17731,115 +17465,749 @@
           "text": "I can add these info, but I am not sure this connected to my device / account.\n\n[identity removed]\ndevice version: Samsung S10e, Android 12\napp version: v1.6.704-019fcb71",
           "date": "2026-08-04T15:12:10.577Z",
           "is_team": false,
-          "author_key": "Ochre Otter",
+          "author_key": "Coral Panda",
           "reactions": []
         },
         {
           "text": "it will be fixed next update!\nhttps://discord.com/channels/1490347491151970366/1490374069940387872/1534161918745514055",
           "date": "2026-08-04T17:07:56.480Z",
           "is_team": true,
-          "author_key": "Ivory Lynx",
+          "team_role": "mod",
+          "author_key": "Ochre Wren",
+          "team_name": "Eli",
           "reactions": [
             {
               "emoji": "💜",
               "count": 4
             }
-          ],
-          "team_role": "mod",
-          "team_name": "Eli"
+          ]
         },
         {
           "text": "I did notice that clearing the app cache and logging back in allowed me to remove stuff from my library again",
           "date": "2026-08-04T17:25:39.901Z",
           "is_team": false,
-          "author_key": "Velvet Fox",
+          "author_key": "Teal Tern",
           "reactions": []
         },
         {
           "text": "Happens to me too",
           "date": "2026-08-05T00:21:06.724Z",
           "is_team": false,
-          "author_key": "Velvet Robin",
+          "author_key": "Amber Wren",
           "reactions": []
         },
         {
           "text": "Same here.\nRefract ID: [name removed]\nPhone/OS: S23+/ One-UI 8.5",
           "date": "2026-08-05T18:21:36.757Z",
           "is_team": false,
-          "author_key": "Sage Panda",
+          "author_key": "Teal Otter",
           "reactions": []
         },
         {
           "text": "happening to me too!\n\n[identity removed]\ndevice/os version: samsung galaxy s23+, one ui 8.5\napp version: 1.6.704",
           "date": "2026-08-06T10:02:59.375Z",
           "is_team": false,
-          "author_key": "Golden Finch",
+          "author_key": "Amber Fox",
           "reactions": []
         },
         {
           "text": "To me too! :/\n[identity removed]\nDevice/OS: Samsung Galaxy s24, Android16\nApp Version: Refract v1.6.704-embedded",
           "date": "2026-08-06T14:19:56.725Z",
           "is_team": false,
-          "author_key": "Velvet Heron",
+          "author_key": "Amber Badger",
           "reactions": []
         },
         {
           "text": "Same for me \n[mention removed]\nPixel 7 Pro Android 17\n1.6.705 version",
           "date": "2026-08-06T18:27:14.200Z",
           "is_team": false,
-          "author_key": "Silver Heron",
+          "author_key": "Ochre Finch",
           "reactions": []
         },
         {
           "text": "It’s still happening after 1.6.705",
           "date": "2026-08-06T18:39:01.964Z",
           "is_team": false,
-          "author_key": "Velvet Robin",
+          "author_key": "Amber Wren",
           "reactions": []
         },
         {
           "text": "thanks sam, it was fixed for me, will raise the issue again though",
           "date": "2026-08-06T18:43:40.764Z",
           "is_team": true,
-          "author_key": "Ivory Lynx",
+          "team_role": "mod",
+          "author_key": "Ochre Wren",
+          "team_name": "Eli",
           "reactions": [
             {
               "emoji": "👍",
               "count": 1
             }
-          ],
-          "team_role": "mod",
-          "team_name": "Eli"
+          ]
         },
         {
           "text": "It was able to work for me now",
           "date": "2026-08-07T16:58:38.333Z",
           "is_team": false,
-          "author_key": "Velvet Robin",
+          "author_key": "Amber Wren",
           "reactions": []
         },
         {
           "text": "I have one anime show that does this. It's Dragon Ball Z (1989). I've added it to my library and removed it but it still shows and counts as \"watched\". It won't go away from my watched anime stats.\n\nEdit: fixed with newest update",
           "date": "2026-08-07T17:50:52.420Z",
           "is_team": false,
-          "author_key": "Ivory Fox",
+          "author_key": "Misty Heron",
           "reactions": []
         },
         {
           "text": "Still not working for me. There is a show in my library that I don't remember having added (probably an error during an import), and won't go away.",
           "date": "2026-08-09T07:19:54.440Z",
           "is_team": false,
-          "author_key": "Teal Heron",
+          "author_key": "Golden Badger",
           "reactions": []
         },
         {
           "text": "If I search for this show, it won't appear.",
           "date": "2026-08-09T07:21:49.248Z",
           "is_team": false,
-          "author_key": "Teal Heron",
+          "author_key": "Golden Badger",
           "reactions": []
         }
       ],
+      "images": []
+    },
+    {
+      "id": "1532520529431494868",
+      "title": "GDPR Ratings all imported with a 6",
+      "body": "[identity removed]\niOS 25.5.2 iPhone 13 Pro\n\nI just imported my GDPR data from TV time and all the ratings show as if I rated them a 6",
+      "author_key": "Misty Finch",
+      "posted_at": "2026-07-30T22:49:27.071Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-07T16:06:34.267Z",
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.003078008116100952,
+      "reactions": [
+        {
+          "emoji": "➕",
+          "count": 1
+        }
+      ],
+      "comments_count": 8,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Same problem 🤚",
+          "date": "2026-07-30T23:07:14.299Z",
+          "is_team": false,
+          "author_key": "Azure Seal",
+          "reactions": []
+        },
+        {
+          "text": "Same Problem here as well",
+          "date": "2026-08-07T07:02:03.168Z",
+          "is_team": false,
+          "author_key": "Amber Finch",
+          "reactions": []
+        },
+        {
+          "text": "Same and **if** I understood things correctly, add stuff here https://discord.com/channels/1490347491151970366/1526006075160133742\nAnd the devs will get to it\nIt might take some time because it's individual accounts that needs to have it fixed",
+          "date": "2026-08-07T08:47:43.732Z",
+          "is_team": false,
+          "author_key": "Sage Badger",
+          "reactions": []
+        },
+        {
+          "text": "Currently into it guys, the issue has been fixed and later tonight or tomorrow I'll clean all imported data issues",
+          "date": "2026-08-07T16:06:34.267Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Amber Seal",
+          "team_name": "Exooo",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 2
+            },
+            {
+              "emoji": "🫡",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Hi! Any news about this issue? 👀",
+          "date": "2026-08-11T03:36:40.518Z",
+          "is_team": false,
+          "author_key": "Ivory Fox",
+          "reactions": []
+        },
+        {
+          "text": "latest news above! not sure if that means you have to reimport the ratings though. exo will advise",
+          "date": "2026-08-11T05:22:59.112Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Sage Lynx",
+          "team_name": "Eli",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Thank you! We’ll keep waiting then 😅🙌🏼",
+          "date": "2026-08-11T12:36:24.698Z",
+          "is_team": false,
+          "author_key": "Ivory Fox",
+          "reactions": []
+        },
+        {
+          "text": "I just reimported the file and it worked 🥳",
+          "date": "2026-08-12T16:01:50.707Z",
+          "is_team": false,
+          "author_key": "Ivory Fox",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            },
+            {
+              "emoji": "🥳",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1536174959322202242",
+      "title": "autolist generation genre filters not functioning as expected or intended",
+      "body": "Filtering by sci-fi tvshows finds zero titles in my library. Likewise most of the other tv show genre filters also yield zero results as well. Movies seem to display properly, it appears to only affect tv shows. \n\nGenre filtering/sorting for tv shows in profile—>stats—>genre also appears to be non functional. \n\n[identity removed]\nDevice: iPhone 13mini \nOS: iOS 26.6 (23G71)\nApp version: Refract v1.6.707-019fe0a7",
+      "author_key": "Silver Fox",
+      "posted_at": "2026-08-10T00:50:51.053Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-18T11:04:59.515Z",
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "📱 iOS",
+        "🐌 Performance",
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 6,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "I'm checking and the issue is that movies uses `Sci-Fi` while TV Shows uses `Sci-Fi & Fantasy`. Same for `Action/Adventure`.\nThat's why you do not have any TV Show in your smart list.\n\nWe need to revisit that i.e. \"genre normalization between movies and tvshow\" cc Exooo J\nOr doing something like:\n```\nconst CANONICAL_TO_STORED: Record<string, string[]> = {\n 'Sci-Fi': ['Sci-Fi', 'Science Fiction', 'Sci-Fi & Fantasy'],\n Fantasy: ['Fantasy', 'Sci-Fi & Fantasy'],\n Action: ['Action', 'Action & Adventure'],\n Adventure: ['Adventure', 'Action & Adventure'],\n War: ['War', 'War & Politics'],\n History: ['History', 'Historical'],\n};\n```",
+          "date": "2026-08-10T01:29:38.362Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Sage Panda",
+          "team_name": "Boulet",
+          "reactions": []
+        },
+        {
+          "text": "Agree. Fyi should be fixed in RMDB",
+          "date": "2026-08-10T08:17:40.992Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Misty Sparrow",
+          "team_name": "J",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Seems to be filtering things now, but I am noticing titles which I would say are purely fantasy, sneaking their way into a purely sci-fi list. For example, The Sandman and Sweet tooth. \n\nAlso, is it possible to have genre labels on a tv show or movies content description page, maybe under the title by the year or something? Just a thought.",
+          "date": "2026-08-10T12:25:58.125Z",
+          "is_team": false,
+          "author_key": "Silver Fox",
+          "reactions": []
+        },
+        {
+          "text": "Might also be pretty cool if the auto lists could be made public, and allowed for granular title removal of media to refine those AI auto generated lists in a customized fashion after they’ve been created.",
+          "date": "2026-08-10T12:28:17.562Z",
+          "is_team": false,
+          "author_key": "Silver Fox",
+          "reactions": []
+        },
+        {
+          "text": "Thanks for all the support and hard work!",
+          "date": "2026-08-10T12:28:48.274Z",
+          "is_team": false,
+          "author_key": "Silver Fox",
+          "reactions": []
+        },
+        {
+          "text": "yes this has been suggested :)",
+          "date": "2026-08-10T12:30:36.822Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Coral Badger",
+          "team_name": "Eli",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1533634963226755132",
+      "title": "Genre filtering in auto list generation yields zero results from library.",
+      "body": "Has anyone reached out regarding autolist generation filters not functioning as expected or intended?\n\nFiltering by sci-fi tvshows finds zero titles in my library.\nI am uncertain, if other genres fail as I have not tried.\n\n[identity removed]\nDevice: iPhone 13mini \nOS: iOS 26.5.2 (23F84)\nApp version: Refract v1.6.703-019fbeb9",
+      "author_key": "Silver Lynx",
+      "posted_at": "2026-08-03T00:37:48.793Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-18T11:04:02.237Z",
+      "terminal_attribution": null,
+      "tags": [
+        "🔍 Search",
+        "📱 iOS",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1533634963226755132/1533634963478417491.webp"
+        }
+      ]
+    },
+    {
+      "id": "1530308931753349372",
+      "title": "Inflated Watch History number in stats",
+      "body": "My Watch History shows that I've watched over 7k episodes this month when I can only find 67 episodes with 7/26 watch dates in my Refract data.\n\nDevice: iPhone 15 Pro\nOS version: iOS 26.5.2\nRefract app version: v1.6.695-019f9589\n[identity removed]",
+      "author_key": "Teal Fox",
+      "posted_at": "2026-07-24T20:21:21.095Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-18T11:03:59.881Z",
+      "terminal_attribution": null,
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 8,
+      "score": 0.0036583932752181384,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 8
+        }
+      ],
+      "comments_count": 4,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Same goes for me, but I thing it's an already known bug that happens with episodes watched on an unknown date",
+          "date": "2026-07-24T22:33:21.285Z",
+          "is_team": false,
+          "author_key": "Silver Otter",
+          "reactions": [
+            {
+              "emoji": "👆🏼",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "i have this issue as well, but it's not tied to the current month but rather january 2016 (for some reason). i managed to bring it down from 27 days to 16 days by manually changing dates, but for the life of me i can't find anything else that could be causing these stats. 710 episodes across only 16 titles??? 😭\n\ndevice: iPhone 13 Pro\nOS version: iOS 26.5.2\nrefract app version: Refract v1.6.707-019fe2c0\n[identity removed]",
+          "date": "2026-08-07T23:56:26.510Z",
+          "is_team": false,
+          "author_key": "Ivory Lynx",
+          "reactions": []
+        },
+        {
+          "text": "i managed to fix this by using the self healing tool! if anyone else is having the same issue, try it: settings > import & export > heal import dates > audit my data",
+          "date": "2026-08-09T22:48:37.196Z",
+          "is_team": false,
+          "author_key": "Ivory Lynx",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            },
+            {
+              "emoji": "👍🏼",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Yes use this new tool!",
+          "date": "2026-08-10T07:06:38.839Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ochre Tern",
+          "team_name": "Exooo",
+          "reactions": [
+            {
+              "emoji": {
+                "name": "octolove",
+                "id": "1528814869196050702"
+              },
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1530308931753349372/1530308932004872262.webp"
+        }
+      ]
+    },
+    {
+      "id": "1517582099081592873",
+      "title": "Unknown Title when rated an episode",
+      "body": "I mark as watched an episode and rated it, but on Activity says unknown title - rated?\n\nSorry idk how to explain it properly😔 not sure if this only happens for that show or every shows.",
+      "author_key": "Golden Finch",
+      "posted_at": "2026-06-19T17:29:27.733Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-17T04:13:51.303Z",
+      "terminal_attribution": null,
+      "tags": [
+        "👤 Profile"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.0000019654928838349125,
+      "reactions": [
+        {
+          "emoji": "✅",
+          "count": 1
+        }
+      ],
+      "comments_count": 3,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Thanks [name removed], I got it and will patch it soon",
+          "date": "2026-06-20T10:43:33.478Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Sage Otter",
+          "team_name": "Exooo",
+          "reactions": [
+            {
+              "emoji": "🫡",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "It's a mapping between server and application, the real data is saved, only the display is broken",
+          "date": "2026-06-20T10:44:07.948Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Sage Otter",
+          "team_name": "Exooo",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Fixed!",
+          "date": "2026-06-21T13:36:45.367Z",
+          "is_team": false,
+          "author_key": "Golden Finch",
+          "reactions": [
+            {
+              "emoji": "🔥",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1517582099081592873/1517582099652149348.webp"
+        }
+      ]
+    },
+    {
+      "id": "1561835443626975262",
+      "title": "Collection list reordering causes lag",
+      "body": "When reordering collection lists, the app experiences significant lag.\n\n📱 via app · SM-S916U · samsung/dm2qsqw/dm2q:16/BP4A.251205.006/S916USQU7FZE2:user/release-keys 16 · v1.6.748-01a15515\n[identity removed]",
+      "author_key": "Sage Fox",
+      "posted_at": "2026-10-19T20:16:27.260Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-24T16:26:58.942Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-24T16:26:58.942Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1561231308259070023",
+      "title": "Reviews and comments not displaying for certain shows and movies",
+      "body": "Reviews aren't showing up for certain TV shows (example: Being Gordon Ramsey) and movies (example: Ant-Man). User reports writing reviews but comments fail to display when submitted.\n\n📱 via app · iPhone 15 Pro Max · iOS 26.6.2 · v1.6.746-01a14a04\n[identity removed]",
+      "author_key": "Amber Panda",
+      "posted_at": "2026-10-18T04:15:50.164Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-24T16:26:58.505Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-24T16:26:58.505Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1559902636163997786",
+      "title": "Rewatched status not displaying for Naruto series",
+      "body": "User marked Naruto and Naruto Shippuden as rewatched, but these titles do not appear in the rewatched section. However, rewatch time appears to be calculated overall with other rewatched shows and anime.\n\n📱 via app · CPH2717 · Android 16 · v1.6.744-01a1310d\n[identity removed]",
+      "author_key": "Velvet Finch",
+      "posted_at": "2026-10-14T12:16:10.051Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-24T16:26:57.866Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-24T16:26:57.866Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1557486761955958844",
+      "title": "Incorrect air times for US national stations and missing returning seasons in Journal",
+      "body": "Air times are incorrect for US national stations except in the Upcoming section. Returning seasons of shows only appear in Upcoming, not in Continue, Ongoing, or other sections—they only appear after airing begins. Push notifications for new episodes, shows, or seasons are unreliable: either don't arrive or arrive at wrong times/dates. Widget shows nothing because Continue section is empty.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.741-01a11748\n[identity removed]",
+      "author_key": "Azure Tern",
+      "posted_at": "2026-10-07T20:16:20.755Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-24T16:26:57.073Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-24T16:26:57.073Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1555372768239820941",
+      "title": "Challenges not visible, trophies section empty",
+      "body": "I don't see the challenges. The trophies section is empty.\n\n📱 via app · CPH2399 · Android 14 · v1.6.736-01a0f820",
+      "author_key": "Silver Robin",
+      "posted_at": "2026-10-02T00:16:05.377Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-24T16:26:54.742Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-24T16:26:54.742Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1563458847845392424",
+      "title": "Wrong date",
+      "body": "I am Dragon was released im 2015 not 2017.",
+      "author_key": "Ochre Heron",
+      "posted_at": "2026-10-24T07:47:16.987Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-24T07:51:03.272Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-24T07:51:03.272Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1563345281414729728",
+      "title": "Series \"Il Paradiso delle Signore\" not updating for over a week",
+      "body": "The series \"Il Paradiso delle Signore\" has not been updated for more than a week.\n\n📱 via app · SM-S911B · Android 17 · v1.6.749-01a169bc\n[identity removed]",
+      "author_key": "Amber Sparrow",
+      "posted_at": "2026-10-24T00:16:00.640Z",
+      "status": "off_topic",
+      "resolved_at": "2026-10-24T06:00:05.206Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-24T06:00:05.206Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1543935004080341142",
+      "title": "TV Time GDPR import doesn't apply episode watch date",
+      "body": "Refract v 1.6.718\nDevice : iOS app on a Macbook using macOS 26\n[identity removed]\n\nPrevious user of TV Time and Letterboxd (on Android, iOS and the web), I imported my tv shows with the GDPR TV Time import a few weeks ago.\nSince then, i tried again to import the GDPR data to update the series and watched dates.\nBut, all dates remain on the \"unknown date\", whereas i can see the created_at\" and \"updated_at\" parameter in the CSV file from the GDPR ZIP.\n\nI tried to reimport the data today following the advices from @ Invisible and got the same result : \"unknown date\" on episodes. We checked the cache, same thing.\nExamples from episodes with dates : Rooster S01E06 (at the bottom of the CSV on the 18/04/2026) - Plur1bus (in 2026), Mad Men (in 2023) or You (2023-2025).\n\nHope it might help 🙂",
+      "author_key": "Ochre Seal",
+      "posted_at": "2026-08-31T10:46:29.898Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-05T12:01:28.703Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-05T12:01:28.703Z"
+      },
+      "tags": [
+        "🔗 Import"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.0022084075433626985,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1541621784154087475",
+      "title": "Data missing from Refract export",
+      "body": "I exported my Refract data and was checking my tv shows and realized that many episodes and even entire seasons are missing from the export. They are marked correctly on the app but the data is missing from the export. I manually checked some of the recent ones, but I believe there are more missing, because the README.txt of the export says the episode list have 1 row per watched episode. The app episode counting says 9409 and the export shows only 9131 lines, so I understand there are 278 episodes missing on the export. \n\nHere are some examples of missing data that I found:\nSniper Butterfly: completed (30 episodes) on the app, is not shown at all on the export csv;\nOur Sticky Love: completed (12 episodes) on the app, only episodes 1-3 are shown on the export csv;\nAffinity: completed (40 episodes) on the app, is not shown at all on the export csv;\nRoad to Success: completed (32 episodes) on the app, only episodes 1-4, 6, 11-16 are shown on the export csv;\n\nI'm sending my most recent export from the app and also a screenshot showing that the shows I listed above are marked as complete on the app.\n\n[identity removed]\nDevice and OS version: iPhone 16 pro max, iOS 26.6\nRefract app version: v1.6.716-embedded",
+      "author_key": "Amber Lynx",
+      "posted_at": "2026-08-25T01:34:35.290Z",
+      "status": "fixed",
+      "resolved_at": "2026-10-05T08:20:21.156Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-05T08:20:21.156Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0.0030397920630246306,
+      "reactions": [],
+      "comments_count": 4,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "I crossed my Refract export data with my Sofa Time export data and I was able to find out exactly which episodes are missing on the export. I double checked all these tv shows on Refract and they are correctly marked as watched, but for some reason they are missing on the Refract export file. I'm sending a csv file with the names, episodes and other data from the tv shows, in case it helps to solve the problem.",
+          "date": "2026-08-25T13:46:59.568Z",
+          "is_team": false,
+          "author_key": "Amber Lynx",
+          "reactions": []
+        },
+        {
+          "text": "I have the same, for me most episodes which are missing from the export are those where I've changed the 'watched on' date manually.",
+          "date": "2026-08-26T17:39:06.348Z",
+          "is_team": false,
+          "author_key": "Golden Otter",
+          "reactions": []
+        },
+        {
+          "text": "With me this happened with some episodes that I changed manually, but I also have some older tv shows that I didn’t changed the date and have the same problem",
+          "date": "2026-08-26T20:01:18.783Z",
+          "is_team": false,
+          "author_key": "Amber Lynx",
+          "reactions": []
+        },
+        {
+          "text": "Yeah, I looked more at the previous export and saw it also happened when I did a lot of episodes at once.\naka, binge watch ep1-8, mark them as watched one after another in quick succession (think within 1 minute).",
+          "date": "2026-08-27T16:13:02.259Z",
+          "is_team": false,
+          "author_key": "Golden Otter",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1545380322190041089",
+      "title": "Mismatched comments on \"Bethune: the making of a hero\"",
+      "body": "Some of the comments associated to the 1990 biographical period drama \"Bethune: the making of a hero\" (dir: Phillip Borsos) are instead related to 2024 legal thriller \"Mea culpa\" (dir: Tyler Perry). I have reconstructed the correspondence as a comment specifically refers to Tyler Perry, who is not involved in the 1990 movie, and because in my library they had the same vote and the same watched date (back in april 2024). I believe it is a remnant of early failures in TVTime imports (as that is what I used before the migration).\nI simply have removed the movie from my list of watched items, but it may be helpful to fix it for other users as well.\nDetails: Refract v1.6.719-01a05d02 on Galaxy A53, Android v16, user [name removed]",
+      "author_key": "Ivory Panda",
+      "posted_at": "2026-09-04T10:29:40.588Z",
+      "status": "duplicate",
+      "resolved_at": "2026-09-08T05:24:37.836Z",
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
       "images": []
     },
     {
@@ -21813,363 +22181,6 @@
           "reactions": [],
           "team_role": "dev",
           "team_name": "Boulet"
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1532520529431494868",
-      "title": "GDPR Ratings all imported with a 6",
-      "body": "[identity removed]\niOS 25.5.2 iPhone 13 Pro\n\nI just imported my GDPR data from TV time and all the ratings show as if I rated them a 6",
-      "author_key": "Velvet Fox",
-      "posted_at": "2026-07-30T22:49:27.071Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-07T16:06:34.267Z",
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.0037728072563427595,
-      "reactions": [
-        {
-          "emoji": "➕",
-          "count": 1
-        }
-      ],
-      "comments_count": 8,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Same problem 🤚",
-          "date": "2026-07-30T23:07:14.299Z",
-          "is_team": false,
-          "author_key": "Silver Seal",
-          "reactions": []
-        },
-        {
-          "text": "Same Problem here as well",
-          "date": "2026-08-07T07:02:03.168Z",
-          "is_team": false,
-          "author_key": "Teal Lynx",
-          "reactions": []
-        },
-        {
-          "text": "Same and **if** I understood things correctly, add stuff here https://discord.com/channels/1490347491151970366/1526006075160133742\nAnd the devs will get to it\nIt might take some time because it's individual accounts that needs to have it fixed",
-          "date": "2026-08-07T08:47:43.732Z",
-          "is_team": false,
-          "author_key": "Ochre Fox",
-          "reactions": []
-        },
-        {
-          "text": "Currently into it guys, the issue has been fixed and later tonight or tomorrow I'll clean all imported data issues",
-          "date": "2026-08-07T16:06:34.267Z",
-          "is_team": true,
-          "author_key": "Teal Finch",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 2
-            },
-            {
-              "emoji": "🫡",
-              "count": 1
-            }
-          ],
-          "team_role": "dev",
-          "team_name": "Exooo"
-        },
-        {
-          "text": "Hi! Any news about this issue? 👀",
-          "date": "2026-08-11T03:36:40.518Z",
-          "is_team": false,
-          "author_key": "Coral Lynx",
-          "reactions": []
-        },
-        {
-          "text": "latest news above! not sure if that means you have to reimport the ratings though. exo will advise",
-          "date": "2026-08-11T05:22:59.112Z",
-          "is_team": true,
-          "author_key": "Ochre Otter",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ],
-          "team_role": "mod",
-          "team_name": "Eli"
-        },
-        {
-          "text": "Thank you! We’ll keep waiting then 😅🙌🏼",
-          "date": "2026-08-11T12:36:24.698Z",
-          "is_team": false,
-          "author_key": "Coral Lynx",
-          "reactions": []
-        },
-        {
-          "text": "I just reimported the file and it worked 🥳",
-          "date": "2026-08-12T16:01:50.707Z",
-          "is_team": false,
-          "author_key": "Coral Lynx",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            },
-            {
-              "emoji": "🥳",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1536174959322202242",
-      "title": "autolist generation genre filters not functioning as expected or intended",
-      "body": "Filtering by sci-fi tvshows finds zero titles in my library. Likewise most of the other tv show genre filters also yield zero results as well. Movies seem to display properly, it appears to only affect tv shows. \n\nGenre filtering/sorting for tv shows in profile—>stats—>genre also appears to be non functional. \n\n[identity removed]\nDevice: iPhone 13mini \nOS: iOS 26.6 (23G71)\nApp version: Refract v1.6.707-019fe0a7",
-      "author_key": "Ivory Robin",
-      "posted_at": "2026-08-10T00:50:51.053Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-18T11:04:59.515Z",
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "📱 iOS",
-        "🐌 Performance",
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 6,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "I'm checking and the issue is that movies uses `Sci-Fi` while TV Shows uses `Sci-Fi & Fantasy`. Same for `Action/Adventure`.\nThat's why you do not have any TV Show in your smart list.\n\nWe need to revisit that i.e. \"genre normalization between movies and tvshow\" cc Exooo J\nOr doing something like:\n```\nconst CANONICAL_TO_STORED: Record<string, string[]> = {\n 'Sci-Fi': ['Sci-Fi', 'Science Fiction', 'Sci-Fi & Fantasy'],\n Fantasy: ['Fantasy', 'Sci-Fi & Fantasy'],\n Action: ['Action', 'Action & Adventure'],\n Adventure: ['Adventure', 'Action & Adventure'],\n War: ['War', 'War & Politics'],\n History: ['History', 'Historical'],\n};\n```",
-          "date": "2026-08-10T01:29:38.362Z",
-          "is_team": true,
-          "author_key": "Velvet Panda",
-          "reactions": [],
-          "team_role": "dev",
-          "team_name": "Boulet"
-        },
-        {
-          "text": "Agree. Fyi should be fixed in RMDB",
-          "date": "2026-08-10T08:17:40.992Z",
-          "is_team": true,
-          "author_key": "Golden Robin",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ],
-          "team_role": "dev",
-          "team_name": "J"
-        },
-        {
-          "text": "Seems to be filtering things now, but I am noticing titles which I would say are purely fantasy, sneaking their way into a purely sci-fi list. For example, The Sandman and Sweet tooth. \n\nAlso, is it possible to have genre labels on a tv show or movies content description page, maybe under the title by the year or something? Just a thought.",
-          "date": "2026-08-10T12:25:58.125Z",
-          "is_team": false,
-          "author_key": "Ivory Robin",
-          "reactions": []
-        },
-        {
-          "text": "Might also be pretty cool if the auto lists could be made public, and allowed for granular title removal of media to refine those AI auto generated lists in a customized fashion after they’ve been created.",
-          "date": "2026-08-10T12:28:17.562Z",
-          "is_team": false,
-          "author_key": "Ivory Robin",
-          "reactions": []
-        },
-        {
-          "text": "Thanks for all the support and hard work!",
-          "date": "2026-08-10T12:28:48.274Z",
-          "is_team": false,
-          "author_key": "Ivory Robin",
-          "reactions": []
-        },
-        {
-          "text": "yes this has been suggested :)",
-          "date": "2026-08-10T12:30:36.822Z",
-          "is_team": true,
-          "author_key": "Ivory Tern",
-          "reactions": [],
-          "team_role": "mod",
-          "team_name": "Eli"
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1533634963226755132",
-      "title": "Genre filtering in auto list generation yields zero results from library.",
-      "body": "Has anyone reached out regarding autolist generation filters not functioning as expected or intended?\n\nFiltering by sci-fi tvshows finds zero titles in my library.\nI am uncertain, if other genres fail as I have not tried.\n\n[identity removed]\nDevice: iPhone 13mini \nOS: iOS 26.5.2 (23F84)\nApp version: Refract v1.6.703-019fbeb9",
-      "author_key": "Coral Sparrow",
-      "posted_at": "2026-08-03T00:37:48.793Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-18T11:04:02.237Z",
-      "terminal_attribution": null,
-      "tags": [
-        "🔍 Search",
-        "📱 iOS",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1530308931753349372",
-      "title": "Inflated Watch History number in stats",
-      "body": "My Watch History shows that I've watched over 7k episodes this month when I can only find 67 episodes with 7/26 watch dates in my Refract data.\n\nDevice: iPhone 15 Pro\nOS version: iOS 26.5.2\nRefract app version: v1.6.695-019f9589\n[identity removed]",
-      "author_key": "Silver Sparrow",
-      "posted_at": "2026-07-24T20:21:21.095Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-18T11:03:59.881Z",
-      "terminal_attribution": null,
-      "tags": [
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 8,
-      "score": 0.004484202826853708,
-      "reactions": [
-        {
-          "emoji": "💜",
-          "count": 8
-        }
-      ],
-      "comments_count": 4,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Same goes for me, but I thing it's an already known bug that happens with episodes watched on an unknown date",
-          "date": "2026-07-24T22:33:21.285Z",
-          "is_team": false,
-          "author_key": "Ochre Fox",
-          "reactions": [
-            {
-              "emoji": "👆🏼",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "i have this issue as well, but it's not tied to the current month but rather january 2016 (for some reason). i managed to bring it down from 27 days to 16 days by manually changing dates, but for the life of me i can't find anything else that could be causing these stats. 710 episodes across only 16 titles??? 😭\n\ndevice: iPhone 13 Pro\nOS version: iOS 26.5.2\nrefract app version: Refract v1.6.707-019fe2c0\n[identity removed]",
-          "date": "2026-08-07T23:56:26.510Z",
-          "is_team": false,
-          "author_key": "Teal Seal",
-          "reactions": []
-        },
-        {
-          "text": "i managed to fix this by using the self healing tool! if anyone else is having the same issue, try it: settings > import & export > heal import dates > audit my data",
-          "date": "2026-08-09T22:48:37.196Z",
-          "is_team": false,
-          "author_key": "Teal Seal",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            },
-            {
-              "emoji": "👍🏼",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "Yes use this new tool!",
-          "date": "2026-08-10T07:06:38.839Z",
-          "is_team": true,
-          "author_key": "Golden Tern",
-          "reactions": [
-            {
-              "emoji": {
-                "name": "octolove",
-                "id": "1528814869196050702"
-              },
-              "count": 1
-            }
-          ],
-          "team_role": "dev",
-          "team_name": "Exooo"
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1517582099081592873",
-      "title": "Unknown Title when rated an episode",
-      "body": "I mark as watched an episode and rated it, but on Activity says unknown title - rated?\n\nSorry idk how to explain it properly😔 not sure if this only happens for that show or every shows.",
-      "author_key": "Amber Seal",
-      "posted_at": "2026-06-19T17:29:27.733Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-17T04:13:51.303Z",
-      "terminal_attribution": null,
-      "tags": [
-        "👤 Profile"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.0000024091638276171443,
-      "reactions": [
-        {
-          "emoji": "✅",
-          "count": 1
-        }
-      ],
-      "comments_count": 3,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Thanks [name removed], I got it and will patch it soon",
-          "date": "2026-06-20T10:43:33.478Z",
-          "is_team": true,
-          "author_key": "Amber Panda",
-          "reactions": [
-            {
-              "emoji": "🫡",
-              "count": 1
-            }
-          ],
-          "team_role": "dev",
-          "team_name": "Exooo"
-        },
-        {
-          "text": "It's a mapping between server and application, the real data is saved, only the display is broken",
-          "date": "2026-06-20T10:44:07.948Z",
-          "is_team": true,
-          "author_key": "Amber Panda",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ],
-          "team_role": "dev",
-          "team_name": "Exooo"
-        },
-        {
-          "text": "Fixed!",
-          "date": "2026-06-21T13:36:45.367Z",
-          "is_team": false,
-          "author_key": "Amber Seal",
-          "reactions": [
-            {
-              "emoji": "🔥",
-              "count": 1
-            }
-          ]
         }
       ],
       "images": []
