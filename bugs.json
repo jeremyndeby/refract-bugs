@@ -1,7 +1,125 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-11-04T12:20:05.479Z",
+  "generated_at": "2026-11-04T18:20:05.463Z",
   "bugs": [
+    {
+      "id": "1567543578081628175",
+      "title": "Rewatched count doesn’t update when filtering profile stats by media type",
+      "body": "In Profile → Stats → Library → Status Breakdown, the Rewatched count stays the same when switching between All, Movies, TV, and Anime.\n\nI have four rewatched movies and no rewatched TV shows or anime. The count correctly shows 4 under All and Movies, but also shows 4 under TV and Anime. The other status counts update correctly with each filter.\n\n- Steps to reproduce:\n\n1. Open my profile → Stats → Library.\n2. Scroll to Status Breakdown.\n3. Switch between All, Movies, TV, and Anime.\n4. Observe the Rewatched count.\n\n- Expected: Rewatched should reflect the selected media type: 4 for All and Movies, 0 for TV and Anime.\n\n- Actual: Rewatched shows 4 for every filter.\n\nAccount and device:\n\n[identity removed]\n- Device: iPhone 17 Pro Max\n- OS: iOS 27.2\n- App version: v1.6.754",
+      "author_key": "Ivory Lynx",
+      "posted_at": "2026-11-04T14:18:32.566Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us",
+        "📊 Stats",
+        "👤 Profile"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1567543578081628175/1567543578383614082.webp"
+        }
+      ]
+    },
+    {
+      "id": "1567538267530993704",
+      "title": "Big library bug",
+      "body": "if you have a big library on android the app crashed a lot more than on iPhone \nFor example upcoming takes a lot longer to load sometimes it will load sometime it will just kick you out of the app in comparison to iPhone\n\nAlso notice one more thing for someone with a big library (I don’t know if it happens with everyone that has a big library) but sometimes when I want to log an episode as watched it lags abit I have to mark it a 2 to 3 times for it to register and mark it as watched",
+      "author_key": "Azure Heron",
+      "posted_at": "2026-11-04T13:57:26.432Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "📱 iOS",
+        "🤖 Android",
+        "⚠ Critical",
+        "🐌 Performance"
+      ],
+      "status_tags": [
+        {
+          "tag": "💬 Waiting on user",
+          "applied_at": "2026-11-04T13:58:18.328Z"
+        }
+      ],
+      "reactors_unique": 1,
+      "score": 0.9821010653559078,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 1,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1567537360839778444",
+      "title": "Bugs so far for a big library",
+      "body": "I’ve been testing the app with the new update so far it keeping up with how much I’m putting in through the wringer\n\nThat’s removing over 10k plan to watch shows movies and anime in 3 weeks im down to 1k left \nThe app is holding up great doesn’t lag or crash\n\nOne thing I have noticed if I start removing from the middle at some point I’ll have to refresh the page to see how much I have left because it doesn’t move them up after awhile\n\nAlso tested it on android the same things I’m doing on iPhone the app on android lags a lot more than on iPhone sometimes the app crashes or kicked me out or shows error occurred",
+      "author_key": "Amber Fox",
+      "posted_at": "2026-11-04T13:53:50.260Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us",
+        "📱 iOS",
+        "🤖 Android",
+        "⚠ Critical",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 2.9505029454008658,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 3,
+      "activity_7d": 6,
+      "comments": [
+        {
+          "text": "This usually happens on my android, thanks for sharing this [name removed]",
+          "date": "2026-11-04T14:09:40.855Z",
+          "is_team": false,
+          "author_key": "Sage Heron",
+          "reactions": []
+        },
+        {
+          "text": "Also this sometimes happens with a big library it says can’t load your list",
+          "date": "2026-11-04T14:14:45.311Z",
+          "is_team": false,
+          "author_key": "Amber Fox",
+          "reactions": [
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "The upcoming takes a while to open, and that's if it opens. I usually have to try 2 to 3 times for it to give me the data",
+          "date": "2026-11-04T14:18:09.294Z",
+          "is_team": false,
+          "author_key": "Sage Heron",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
     {
       "id": "1567476227868991560",
       "title": "Favorite characters overlapping again after voting",
@@ -480,7 +598,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9168198562752496,
+      "score": 0.8944023821970145,
       "reactions": [
         {
           "emoji": "💜",
@@ -606,7 +724,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 34.3224498592295,
+      "score": 33.48321996607827,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -922,7 +1040,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.4312306061176,
+      "score": 2.3717837598066156,
       "reactions": [
         {
           "emoji": "👍",
@@ -1204,7 +1322,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.2631214437911926,
+      "score": 1.2322364318337826,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -1290,7 +1408,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.854757744766355,
+      "score": 1.809406432422807,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1368,7 +1486,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.5364843792624434,
+      "score": 2.4744639371518473,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1376,7 +1494,7 @@
         }
       ],
       "comments_count": 4,
-      "activity_7d": 3,
+      "activity_7d": 1,
       "comments": [
         {
           "text": "[mention removed] I also have this issue for the vampire diaries\n[identity removed]\nDevice: samsung 23+\nOs: one ui 8.5\nApp version:Refract v1.6.747-01a15017",
@@ -1431,7 +1549,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 6.339752870403672,
+      "score": 6.184737417082137,
       "reactions": [
         {
           "emoji": "😂",
@@ -1575,7 +1693,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 3.113094917584081,
+      "score": 3.0369755751196266,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1725,7 +1843,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.45990653332098996,
+      "score": 0.4486612022796005,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1879,7 +1997,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6194775721660479,
+      "score": 0.6043305153903586,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1955,7 +2073,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.48352380188075955,
+      "score": 0.4717009969745607,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2049,7 +2167,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 0.703036844561048,
+      "score": 0.6858466516009821,
       "reactions": [
         {
           "emoji": "👍",
@@ -2917,7 +3035,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.10593360608993731,
+      "score": 0.1033433874638017,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3007,7 +3125,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 22.65065223227636,
+      "score": 22.09681343199657,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4651,6 +4769,49 @@
       ]
     },
     {
+      "id": "1567596828512223346",
+      "title": "Completed show showing wrong number of episode",
+      "body": "Hi, I attached a screenshot of a show. It’s completed but extra episodes just got added to it. The show only has 10 episodes. But it’s showing 23 here. \n\nIve also screenshot of my app version.",
+      "author_key": "Silver Wren",
+      "posted_at": "2026-11-04T17:50:08.458Z",
+      "status": "off_topic",
+      "resolved_at": "2026-11-04T18:23:02.945Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-04T18:23:02.945Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 3.9993332131533346,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Hi, I have the same problem 👀",
+          "date": "2026-11-04T18:13:05.974Z",
+          "is_team": false,
+          "author_key": "Azure Seal",
+          "reactions": []
+        },
+        {
+          "text": "Same !",
+          "date": "2026-11-04T18:17:40.001Z",
+          "is_team": false,
+          "author_key": "Coral Seal",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1567596828512223346/1567596829174927440.webp"
+        }
+      ]
+    },
+    {
       "id": "1559130723745534112",
       "title": "TV Time GDPR import misses old ratings",
       "body": "The ratings from the following two tables are imported:\n✅ ratings-3-prod-episode_votes.csv\n✅ ratings-v2-prod-votes.csv\n\nBut older ratings were stored in this table, which seems to be completely ignored:\n❎ ratings-prod-episode_votes.csv\n\nThis table looks kind of messy, because some episodes seem to have multiple entries. But I didn't analyze it in detail.\n\nAll I know is that the same GDPR export imports all these ratings correctly into Bingers.\n\nI assume it should be an easy fix that would probably add a ton more ratings to older episodes.\n\n[identity removed]\n• Device: LinageOS v19 (Android v12)\n• App version: Refract v1.6.743-01a12aff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -4877,7 +5038,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8293737211689574,
+      "score": 0.8090944222770138,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5351,7 +5512,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6934775169614693,
+      "score": 0.6765210623712717,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -5591,7 +5752,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 1.5073036684110872,
+      "score": 1.4704480738432382,
       "reactions": [
         {
           "emoji": "💜",
@@ -5732,7 +5893,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5634832391872421,
+      "score": 0.5497053188885705,
       "reactions": [
         {
           "emoji": "💜",
@@ -5768,7 +5929,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5428608120450296,
+      "score": 0.5295871377252452,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5900,7 +6061,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.46600498295691617,
+      "score": 0.45461053664964873,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -6209,7 +6370,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.1820163502413148,
+      "score": 1.153114466506775,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6251,7 +6412,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.0743011003959766,
+      "score": 2.023581658806329,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 1,
@@ -6553,7 +6714,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.23377373733883577,
+      "score": 0.2280576561904011,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6958,7 +7119,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 2.227633720770346,
+      "score": 2.1731650911378533,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7000,7 +7161,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9665114785566256,
+      "score": 0.9428789777239266,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -7134,7 +7295,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 4.1215095554906265,
+      "score": 4.020733123794681,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -8003,7 +8164,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.1279664841377951,
+      "score": 0.1248375321180423,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8074,7 +8235,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.038124694570984635,
+      "score": 0.037192494699400384,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8145,7 +8306,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.12103476304450225,
+      "score": 0.11807530089439268,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -8293,7 +8454,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.18700723503603778,
+      "score": 0.18243465753875873,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8382,7 +8543,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0033228529845747354,
+      "score": 0.0032416047762842677,
       "reactions": [
         {
           "emoji": "💜",
@@ -8444,7 +8605,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3070125864358655,
+      "score": 0.2995057172826612,
       "reactions": [],
       "comments_count": 10,
       "activity_7d": 0,
@@ -8624,7 +8785,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9047135792268786,
+      "score": 0.8825921198455966,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -8829,7 +8990,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.23786359600026855,
+      "score": 0.2320475123269117,
       "reactions": [
         {
           "emoji": "👍",
@@ -9286,7 +9447,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1438223088051887,
+      "score": 0.14030566062458436,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -9372,7 +9533,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.09957166882290086,
+      "score": 0.09713700808831285,
       "reactions": [
         {
           "emoji": "☝️",
@@ -9506,7 +9667,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.024775208323849652,
+      "score": 0.024169421280101303,
       "reactions": [
         {
           "emoji": "➕",
@@ -9765,7 +9926,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.010505089222867312,
+      "score": 0.010248225713933357,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9841,7 +10002,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.09648379392564321,
+      "score": 0.09412463587022638,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -9903,7 +10064,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.012329135788913877,
+      "score": 0.012027671897110856,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10029,7 +10190,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.006331840958894419,
+      "score": 0.006177018962411709,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -10094,7 +10255,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.008882384303787027,
+      "score": 0.008665198104644226,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -10163,7 +10324,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00011095420964803179,
+      "score": 0.00010824123053699787,
       "reactions": [
         {
           "emoji": "‼️",
@@ -10284,7 +10445,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0011158770689214483,
+      "score": 0.0010885923792456895,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10422,7 +10583,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.07711133100960922,
+      "score": 0.07522585563272431,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10516,7 +10677,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0009713827996843562,
+      "score": 0.000947631188522228,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10617,7 +10778,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0002936277547827535,
+      "score": 0.0002864481626999263,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10784,7 +10945,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.006842444593676453,
+      "score": 0.0066751376540845455,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10989,7 +11150,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.003670418010265249,
+      "score": 0.003580671371339153,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -11107,7 +11268,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.005172297340405494,
+      "score": 0.005045827739251201,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11506,7 +11667,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00029338841878738954,
+      "score": 0.0002862146787903732,
       "reactions": [
         {
           "emoji": "💜",
@@ -11536,7 +11697,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.029599061614659358,
+      "score": 0.02887532489370475,
       "reactions": [
         {
           "emoji": "👆",
@@ -11602,7 +11763,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00020520343360066738,
+      "score": 0.00020018593466451126,
       "reactions": [
         {
           "emoji": "🤔",
@@ -11666,7 +11827,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.006873317181530332,
+      "score": 0.006705255365794326,
       "reactions": [
         {
           "emoji": "👆",
@@ -11856,7 +12017,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.050992681926348135,
+      "score": 0.04974584252006853,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -12028,7 +12189,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.00019919446449469401,
+      "score": 0.0001943238929055497,
       "reactions": [
         {
           "emoji": "🛠️",
