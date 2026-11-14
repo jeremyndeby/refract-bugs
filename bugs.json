@@ -1,6 +1,6 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-11-14T16:30:07.730Z",
+  "generated_at": "2026-11-14T16:40:05.234Z",
   "bugs": [
     {
       "id": "1571197001318801549",
@@ -81,7 +81,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.195316991451045,
+      "score": 3.1931296340314907,
       "reactions": [
         {
           "emoji": "💜",
@@ -137,7 +137,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.479056023541291,
+      "score": 1.478043534271624,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -359,7 +359,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.6340317742757433,
+      "score": 1.632913196202015,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -454,7 +454,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 6.636671294332876,
+      "score": 6.632128154407906,
       "reactions": [
         {
           "emoji": "💜",
@@ -766,7 +766,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.33479118726886375,
+      "score": 0.33456200562916005,
       "reactions": [
         {
           "emoji": "💜",
@@ -892,7 +892,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 17.81772425470799,
+      "score": 17.805527113875833,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1243,7 +1243,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.8878020862826332,
+      "score": 0.8871943404828515,
       "reactions": [
         {
           "emoji": "👍",
@@ -1407,7 +1407,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8415633458676421,
+      "score": 0.8409872528435282,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -1448,7 +1448,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.46124865745125865,
+      "score": 0.46093290922476504,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -1490,7 +1490,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8018688135570817,
+      "score": 0.8013198934644788,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -1546,7 +1546,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.3126453663783018,
+      "score": 2.311062242696214,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1674,7 +1674,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 10.618558512588029,
+      "score": 10.611289567813655,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1845,7 +1845,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9936774042282587,
+      "score": 0.9929971813744395,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2034,7 +2034,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 5.6119525880247,
+      "score": 5.608110920307713,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2117,7 +2117,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.4698578019397273,
+      "score": 3.467482507335725,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2221,7 +2221,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.03868332204170181,
+      "score": 0.038656841335184315,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2311,7 +2311,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 46.13866479139061,
+      "score": 46.10708052259043,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3999,678 +3999,6 @@
       ]
     },
     {
-      "id": "1571057695967150080",
-      "title": "Refract watchlist bug",
-      "body": "Found a small inconsistency with the watchlist on Refract.\n\nAfter adding Dexter: Resurrection to my watchlist, it correctly appears as the first entry in the dedicated Plan to Watch section, but it's completely absent from the Watchlist row on the home page.\n\nI'm currently developing and testing a native Refract integration for Harbor, and the API write is successful, so this seems to be an issue with how Refract's home page retrieves, refreshes or displays watchlist entries rather than the integration itself.\n\nMight be worth looking into. Both sections should ideally reflect the same watchlist state.",
-      "author_key": "Sage Heron",
-      "posted_at": "2026-11-14T07:02:23.559Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:32:44.784Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:32:44.784Z"
-      },
-      "tags": [
-        "🎨 UI"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "[identity removed]\nOS version: Android 16 - HyperOS 3.03\nApp version: 1.6.759-01a1baa6",
-          "date": "2026-11-14T07:20:40.480Z",
-          "is_team": false,
-          "author_key": "Sage Heron",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1571057695967150080/1571057696499830844.webp"
-        }
-      ]
-    },
-    {
-      "id": "1570612664181457036",
-      "title": "Not able to reply to comments",
-      "body": "This has been happening for a while where when I tap on Reply to a comment, nothing happens. Sometimes it works correctly, but most of the time it doesn't. Might be a bug.",
-      "author_key": "Teal Badger",
-      "posted_at": "2026-11-13T01:33:59.713Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:31:15.871Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:31:15.871Z"
-      },
-      "tags": [
-        "🤖 Android",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "[identity removed]\nDevice: Samsung Galaxy S24+, Android 17, One UI 9.0\nApp version: Refract v1.6.759-01a1baa6",
-          "date": "2026-11-13T01:50:49.109Z",
-          "is_team": false,
-          "author_key": "Teal Badger",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1570501289136099409",
-      "title": "Not getting notifications, again.",
-      "body": "Hi. After couple of days of getting my notifications now I started to not get them again. I remember seeing only notifications today for the new episode release but not for the others. \n\n[identity removed]\nAndroid 16\nSamsung A33\nApp Version: v1.6.759-01a1baa6",
-      "author_key": "Lilac Badger",
-      "posted_at": "2026-11-12T18:11:25.833Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:33:36.323Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:33:36.323Z"
-      },
-      "tags": [
-        "🤖 Android",
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "I did nothing, I just opened the app and saw I had notifications while I didn't get any in my phone while I was off the app.",
-          "date": "2026-11-12T18:14:13.264Z",
-          "is_team": false,
-          "author_key": "Lilac Badger",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1570501289136099409/1570501289371107448.webp"
-        }
-      ]
-    },
-    {
-      "id": "1570392466715312159",
-      "title": "Ratings misaligned in Recent Activity/Journal",
-      "body": "This isn't exactly a bug, since everything works as intended, but I can't ignore the alignment any longer, and this seems like the best place to post it. Plus, it's an easy and straightforward fix that will make it look much cleaner. 🙂\n\nWhat you did right before it happened: Nothing. This is just a small visual detail that I noticed inside my Recent Activity/Journal.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Golden Heron",
-      "posted_at": "2026-11-12T10:59:00.546Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:30:20.350Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:30:20.350Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1570392466715312159/1570392467109314591.webp"
-        }
-      ]
-    },
-    {
-      "id": "1570383074410373200",
-      "title": "Comments aren't sorted correctly when \"All\" is selected",
-      "body": "By default, the \"All\" comments filter is selected, but comments from people I follow are prioritised over the most liked comments, even though the correct order should be based on likes, regardless of whether we follow the users or not. Comments from people we follow should only be prioritised when the \"Following\" filter is selected.\n\nWhat you did right before it happened: I watched an episode, opened the comments and noticed that the expected behaviour for the default \"All\" filter combined with \"Most Liked\" wasn't correctly applied.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Velvet Sparrow",
-      "posted_at": "2026-11-12T10:21:41.246Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:32:14.634Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:32:14.634Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1570383074410373200/1570383074586263623.webp"
-        }
-      ]
-    },
-    {
-      "id": "1570379142900355172",
-      "title": "Rewatch entries are removed without confirmation",
-      "body": "Rewatch entries are removed in less than a second, without an undo option like it was mentioned [here](https://discord.com/channels/1490347491151970366/1491221394644668469/1569691832458285068) or a confirmation prompt like the one shown when removing a first-watch entry.\n\nThe behaviour should be consistent regardless of whether it's a first watch or a rewatch. So, since the undo button mentioned isn't available for me to test which one I'd prefer, I suggest applying the same confirmation prompt used for first-watch entries to rewatches.\n\nWhat you did right before it happened: I added a rewatch date to an episode, removed it and noticed it takes less than a second to be deleted without a prompt or undo button appearing.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Silver Badger",
-      "posted_at": "2026-11-12T10:06:03.901Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:31:55.441Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:31:55.441Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1570373815702130808",
-      "title": "Remaining time is inconsistent across the three locations",
-      "body": "The remaining time to finish a show doesn't match across these three different places where it's displayed. All three values are being updated, but each one has a difference of 1 hour. In two of the places, the difference between them can be of 2 hours, which is quite a big difference.\n\nWhat you did right before it happened: I've done nothing, I just happened to notice this while navigating from the continue page, to the seasons page and overview title page.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Velvet Badger",
-      "posted_at": "2026-11-12T09:44:53.798Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:32:34.437Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:32:34.437Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1570373815702130808/1570373816016965702.webp"
-        }
-      ]
-    },
-    {
-      "id": "1570155908699259131",
-      "title": "Match section names to their content instead of using “Activity” for 3 different sections",
-      "body": "I'm not sure whether this should be reported as a bug due to the naming not being updated properly everywhere or as a suggestion, since it might just be an oversight. Either way, I believe these sections need consistent naming throughout the app, with clear titles/naming that accurately reflects their content and avoids confusion.\n\nSo here it goes:\n\n1. Orange squares: Clicking on the \"Day Streak\" dropdown opens a section labelled \"Activity\". There is no need to have \"Activity\" mentioned here, but if a title/naming should be added it needs to be consistent, and \"Daily Streak\" actually makes more sense in this context.\n\n2. Green squares: Clicking on \"Recent Activity\" actually opens the \"Journal\" page. The naming should match in both places, either use \"Recent Activity\" or \"Journal\". Personally I prefer \"Recent Activity\" because it's more intuitive and clearly describes what's displayed.\n\n3. Pink squares: This one actually took me by surprise but clicking on the \"Activity\" tab opens nothing more than all of my comments/reviews. Since that's all it contains, why not just call it \"Comments\"?\n\nIn short, my suggested naming:\n- Orange squares: **Daily Streak**\n- Green squares: **Recent Activity**\n- Pink squares: **Comments**\n\nIf I should move this to <#1490873391086047252> let me know. 😉\n\nWhat you did right before it happened: I've done nothing, I just paid attention to how things are named and their actual content.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Ochre Robin",
-      "posted_at": "2026-11-11T19:19:00.720Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:33:22.898Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:33:22.898Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1570155908699259131/1570155908942532769.webp"
-        }
-      ]
-    },
-    {
-      "id": "1570130884806582282",
-      "title": "\"Rating\" dialog appears behind the bulk editor",
-      "body": "Sometimes, when using the bulk editor, the rating \"dialog\" doesn't appear or appears behind the bulk editor instead of on top of it.\n\nWhat you did right before it happened: Long pressed on an episode, it opened the bulk editor and tapped on the rating icon. Nothing happened kept pressing and the \"dialog\" response sometimes appears on top of the editor, other behind. It glitches.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Silver Wren",
-      "posted_at": "2026-11-11T17:39:34.559Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:30:40.929Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:30:40.929Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1570085019157012630",
-      "title": "Voting percentages are duplicated for characters voiced by the same actor",
-      "body": "Characters voiced by the same actor in the series [The Cuphead Show!](https://www.themoviedb.org/tv/103786-the-cuphead-show) are receiving the exact same voting percentage, even though they should have separate results. Each character should have its own accurate voting percentage, and the combined total across all characters should add up to 100%, which currently is way over.\n\nNote: Same issue might be happening in other animated series where one actor voices multiple characters.\n\nWhat you did right before it happened: Voted for a character and noticed this problem.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.744-01a1310d",
-      "author_key": "Coral Finch",
-      "posted_at": "2026-11-11T14:37:19.336Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:33:03.689Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:33:03.689Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1570085019157012630/1570085019425308754.webp"
-        }
-      ]
-    },
-    {
-      "id": "1569838935708930129",
-      "title": "Trouble writing a post on Activity",
-      "body": "I was trying to write a post on Activity and the window was so small while I was writing that I couldn't see what I wrote above. I took a screen recording. I only could saw what I wrote if I closed my keyboard. The same happened when I also tried to edit the post. \n\nUsername [name removed]\nAndroid 16\nSamsung A33 Android\nApp Version: v1.6.759-01a1baa6",
-      "author_key": "Silver Sparrow",
-      "posted_at": "2026-11-10T22:19:28.470Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:31:01.759Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:31:01.759Z"
-      },
-      "tags": [
-        "🤖 Android",
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1569818857282084884",
-      "title": "Awards and nomination not showing",
-      "body": "Latest version of the app (stable). \n\nAwards and nomination took a few seconds to load and showing \"No award details for this title yet.\" Even if it says \"7 wins 20 nominations\". \n\nSee screenshot attached.",
-      "author_key": "Teal Tern",
-      "posted_at": "2026-11-10T20:59:41.400Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:32:24.285Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:32:24.285Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "[identity removed]\n- phone: pixel 9a, android 17 stock, CP3A.261005.005",
-          "date": "2026-11-11T08:30:49.281Z",
-          "is_team": false,
-          "author_key": "Teal Tern",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1569818857282084884/1569818857529417799.webp"
-        }
-      ]
-    },
-    {
-      "id": "1569814485449969825",
-      "title": "Custom list header displays redundant owner and member information",
-      "body": "I'm debating if this is a bug report or a suggestion because it also feels like this scenario wasn't taken into consideration. But currently, the list header displays both the owner and member information even when the list belongs to me and I'm the only member. The owner information should only be displayed when the list belongs to someone else, while the member information should only be displayed when the list is shared.\n\nWhat you did right before it happened: Nothing, this how my own custom lists are displayed when I open them.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Silver Sparrow",
-      "posted_at": "2026-11-10T20:42:19.074Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:32:54.216Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:32:54.216Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "👤 Profile"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "Custom list header displays redundant owner and member information",
-          "date": "2026-11-10T20:47:02.006Z",
-          "is_team": false,
-          "author_key": "Silver Sparrow",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1569814485449969825/1569814485764669450.webp"
-        }
-      ]
-    },
-    {
-      "id": "1569810762728472708",
-      "title": "Custom list header gets duplicated when selecting a filter after scrolling",
-      "body": "If I scroll down inside a custom list and then select a filter, the header gets duplicated. Both the collapsed and expanded headers are shown. In a situation like this, only the expanded header should be shown, only after scrolling the collapsed one should appear.\n\nWhat you did right before it happened: Selected any list, picked a filter a watched filter where I've no title in and it displayed the list like this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Sage Wren",
-      "posted_at": "2026-11-10T20:27:31.508Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:30:50.740Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:30:50.740Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1569730654856544377",
-      "title": "Title logos ignore the app's language settings",
-      "body": "Whenever a logo is available for a title, the app displays it regardless of the language selected in the app settings.\n\nFor example, this title [Kid Auto Races at Venice](https://www.themoviedb.org/movie/22885-kid-auto-races-at-venice) only has a Portuguese logo available, so this logo is displayed even though my app is set to English. I can't even choose the option to not display this logo.\n\nWhat you did right before it happened: Absolutely nothing. I opened this title and noticed the Portuguese logo was displayed. I have done nothing, because I'm not able to do anything.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Misty Finch",
-      "posted_at": "2026-11-10T15:09:12.303Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:31:45.782Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:31:45.782Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 1.3574308381397167,
-      "reactions": [],
-      "comments_count": 5,
-      "activity_7d": 5,
-      "comments": [
-        {
-          "text": "I'd love for this to be fixed, I chose to have all titles in English, but they all display in my own language (Italian). 🥲",
-          "date": "2026-11-10T17:07:05.653Z",
-          "is_team": false,
-          "author_key": "Velvet Wren",
-          "reactions": []
-        },
-        {
-          "text": "All your title logos are in Italian? Or is it also the title regardless of having a logo or not? Because they are two separate problems.",
-          "date": "2026-11-10T17:43:18.377Z",
-          "is_team": false,
-          "author_key": "Misty Finch",
-          "reactions": []
-        },
-        {
-          "text": "All my title logos are in Italian, but luckily all my titles are in English (as that was fixed some time ago). :octoog:",
-          "date": "2026-11-10T18:30:52.524Z",
-          "is_team": false,
-          "author_key": "Velvet Wren",
-          "reactions": []
-        },
-        {
-          "text": "It matches. You should also add your username, device and app version.",
-          "date": "2026-11-10T18:33:07.345Z",
-          "is_team": false,
-          "author_key": "Misty Finch",
-          "reactions": []
-        },
-        {
-          "text": "Yeah, sure! 👍\n\n[mention removed]\nPoco X6 Pro\nAndroid 16\nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-10T18:34:11.164Z",
-          "is_team": false,
-          "author_key": "Velvet Wren",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1569730654856544377/1569730657041645608.webp"
-        }
-      ]
-    },
-    {
-      "id": "1569725517270097920",
-      "title": "Comments section in Activity replaced attached images with title posters",
-      "body": "In a recent update to the Activity page, the Comments replaced the images that I previously attached to my comments are no longer displayed with the title poster in every single comment. This makes it considerably harder to identify the specific comment I'm looking for and makes scrolling much longer than necessary.\n\nNote: I'm not attaching any image to avoid spoilers. But it's easy to replicate the problem.\n\nWhat you did right before it happened: Absolutely nothing. I just opened the Comments section in my Activity and noticed things were now displayed like this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Velvet Panda",
-      "posted_at": "2026-11-10T14:48:47.407Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:30:30.477Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:30:30.477Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1569695090740437092",
-      "title": "Incorrect completion date displayed in feed when previously watched series are added",
-      "body": "I just added a previously watched series from 2006–2008 and marked each episode as watched using its original release date. By doing this, no record was created in my Activity or Journal for today. However, it created an incorrect entry in my feed.\n\nThe feed should either not display this record at all or provide the correct context by showing the actual date the series was completed, because \"now\" it was definitely not the completion date of this series.\n\nWhat you did right before it happened: Added a previously watched series and marked each episode as watched using its original release date (2006–2008). Then checked whether any records had been created and found an incorrect completion entry in my feed, despite everything appearing correctly in my Activity and Journal.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
-      "author_key": "Azure Fox",
-      "posted_at": "2026-11-10T12:47:53.157Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:31:35.956Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:31:35.956Z"
-      },
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1569695090740437092/1569695091121979496.webp"
-        }
-      ]
-    },
-    {
-      "id": "1569643428088914022",
-      "title": "Streak freeze not working properly?",
-      "body": "Twice now, the streak freeze didn't count. Even not having any activity on the app, it didn't use the streak freeze.",
-      "author_key": "Coral Panda",
-      "posted_at": "2026-11-10T09:22:35.821Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:33:13.148Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:33:13.148Z"
-      },
-      "tags": [
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 1.6416281774208232,
-      "reactions": [],
-      "comments_count": 8,
-      "activity_7d": 9,
-      "comments": [
-        {
-          "text": "[identity removed]\nPoco F5 Android 15\nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-10T09:24:13.939Z",
-          "is_team": false,
-          "author_key": "Coral Panda",
-          "reactions": []
-        },
-        {
-          "text": "have you marked anything as watched today? yesterday's freeze will only appear once you have at least one activity log today",
-          "date": "2026-11-10T09:31:04.180Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Golden Fox",
-          "team_name": "Eli",
-          "reactions": []
-        },
-        {
-          "text": "Yes I did.",
-          "date": "2026-11-10T09:31:54.588Z",
-          "is_team": false,
-          "author_key": "Coral Panda",
-          "reactions": []
-        },
-        {
-          "text": "have you posted or commented on anything in the activity feed on these days? oct 21st and nov 9th?",
-          "date": "2026-11-11T17:33:39.392Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Golden Fox",
-          "team_name": "Eli",
-          "reactions": []
-        },
-        {
-          "text": "Not sure about Oct 21, but Nov 9, probably I made a post in the feed. Does it count? I thought what was supposed to count were reviews and comments on titles. Like it's said on the faq.",
-          "date": "2026-11-11T17:41:16.201Z",
-          "is_team": false,
-          "author_key": "Coral Panda",
-          "reactions": []
-        },
-        {
-          "text": "yeah, it might have been updated to count feed posts and comments after the revamp because someone else is reporting the same as you, but i don't know for sure so i'll be asking exo later. good one for making the report though, thanks :)",
-          "date": "2026-11-11T18:15:07.433Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Golden Fox",
-          "team_name": "Eli",
-          "reactions": []
-        },
-        {
-          "text": "It's not really a big problem. It was more like it was weird when it didn't not register the freeze streak. It happened before and I just let it be. I decided to report cuz it happened again. If posting and commenting on the feed counts, it would really be good to update the faq. As it may help the next ones that go through the same situation. Anyway, thanks. I appreciate the help",
-          "date": "2026-11-11T18:20:41.078Z",
-          "is_team": false,
-          "author_key": "Coral Panda",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "[identity removed]\ndevice: motorola razr 60 ultra\nandroid version 16\nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nI'm also having this issue for 24/10 and 04/11, I should have a streak freeze for each day but it seems to have counted something despite both days showing as empty in the heat map.",
-          "date": "2026-11-12T16:38:36.781Z",
-          "is_team": false,
-          "author_key": "Silver Wren",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1569643428088914022/1569643428570992690.webp"
-        }
-      ]
-    },
-    {
-      "id": "1569446051633561752",
-      "title": "Notifications/Releases page doesn't refresh marked episodes",
-      "body": "When navigating to Home → Notifications → Releases, episodes that have been watched and checked off don't become unmarked when returning to the page. The page may need to refresh to reflect the updated status of individual episodes.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.759-01a1baa6\n[identity removed]",
-      "author_key": "Teal Heron",
-      "posted_at": "2026-11-09T20:18:17.607Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:32:05.249Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:32:05.249Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1568985968193708162",
-      "title": "Rewatch with a friend don't add a new rewatch",
-      "body": "Hello, \nYesterday, I watched an episode with a friend. First Time for him but 3rd rewatch for me. When he tagged me, he's add on my last rewatch instead of add a new rewatch. I have to add a rewatch before accept his tag if I want add him on the new rewatch. \n(but if I add him first, it's okay. Idem if we watch together for the first time.)\nIs it normal or not ?\nThank you.\n\n-[name removed]\n-Samsung A54, One UI 8.5\n-Refract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Ochre Tern",
-      "posted_at": "2026-11-08T13:50:05.167Z",
-      "status": "fixed",
-      "resolved_at": "2026-11-14T16:31:26.426Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-14T16:31:26.426Z"
-      },
-      "tags": [
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1568985968193708162/1568985968420065401.webp"
-        }
-      ]
-    },
-    {
       "id": "1568010782040399892",
       "title": "Guide chapters are misaligned",
       "body": "I feel like this should be two cards next to eachother, or that the width of each chapter should be screen-wide.\n\nAnyone else has it like this, or just me?\n\nHappens as soon as I open the Refracr Guide.\n\nPixel 10 Pro, Android 17\nRefract v1.6.756-01a1aca7 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n[identity removed]",
@@ -4906,6 +4234,678 @@
         }
       ],
       "images": []
+    },
+    {
+      "id": "1570501289136099409",
+      "title": "Not getting notifications, again.",
+      "body": "Hi. After couple of days of getting my notifications now I started to not get them again. I remember seeing only notifications today for the new episode release but not for the others. \n\n[identity removed]\nAndroid 16\nSamsung A33\nApp Version: v1.6.759-01a1baa6",
+      "author_key": "Lilac Badger",
+      "posted_at": "2026-11-12T18:11:25.833Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:33:36.323Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:33:36.323Z"
+      },
+      "tags": [
+        "🤖 Android",
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "I did nothing, I just opened the app and saw I had notifications while I didn't get any in my phone while I was off the app.",
+          "date": "2026-11-12T18:14:13.264Z",
+          "is_team": false,
+          "author_key": "Lilac Badger",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1570501289136099409/1570501289371107448.webp"
+        }
+      ]
+    },
+    {
+      "id": "1570155908699259131",
+      "title": "Match section names to their content instead of using “Activity” for 3 different sections",
+      "body": "I'm not sure whether this should be reported as a bug due to the naming not being updated properly everywhere or as a suggestion, since it might just be an oversight. Either way, I believe these sections need consistent naming throughout the app, with clear titles/naming that accurately reflects their content and avoids confusion.\n\nSo here it goes:\n\n1. Orange squares: Clicking on the \"Day Streak\" dropdown opens a section labelled \"Activity\". There is no need to have \"Activity\" mentioned here, but if a title/naming should be added it needs to be consistent, and \"Daily Streak\" actually makes more sense in this context.\n\n2. Green squares: Clicking on \"Recent Activity\" actually opens the \"Journal\" page. The naming should match in both places, either use \"Recent Activity\" or \"Journal\". Personally I prefer \"Recent Activity\" because it's more intuitive and clearly describes what's displayed.\n\n3. Pink squares: This one actually took me by surprise but clicking on the \"Activity\" tab opens nothing more than all of my comments/reviews. Since that's all it contains, why not just call it \"Comments\"?\n\nIn short, my suggested naming:\n- Orange squares: **Daily Streak**\n- Green squares: **Recent Activity**\n- Pink squares: **Comments**\n\nIf I should move this to <#1490873391086047252> let me know. 😉\n\nWhat you did right before it happened: I've done nothing, I just paid attention to how things are named and their actual content.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Ochre Robin",
+      "posted_at": "2026-11-11T19:19:00.720Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:33:22.898Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:33:22.898Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1570155908699259131/1570155908942532769.webp"
+        }
+      ]
+    },
+    {
+      "id": "1569643428088914022",
+      "title": "Streak freeze not working properly?",
+      "body": "Twice now, the streak freeze didn't count. Even not having any activity on the app, it didn't use the streak freeze.",
+      "author_key": "Coral Panda",
+      "posted_at": "2026-11-10T09:22:35.821Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:33:13.148Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:33:13.148Z"
+      },
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 1.6405043992217783,
+      "reactions": [],
+      "comments_count": 8,
+      "activity_7d": 9,
+      "comments": [
+        {
+          "text": "[identity removed]\nPoco F5 Android 15\nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-10T09:24:13.939Z",
+          "is_team": false,
+          "author_key": "Coral Panda",
+          "reactions": []
+        },
+        {
+          "text": "have you marked anything as watched today? yesterday's freeze will only appear once you have at least one activity log today",
+          "date": "2026-11-10T09:31:04.180Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Golden Fox",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "Yes I did.",
+          "date": "2026-11-10T09:31:54.588Z",
+          "is_team": false,
+          "author_key": "Coral Panda",
+          "reactions": []
+        },
+        {
+          "text": "have you posted or commented on anything in the activity feed on these days? oct 21st and nov 9th?",
+          "date": "2026-11-11T17:33:39.392Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Golden Fox",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "Not sure about Oct 21, but Nov 9, probably I made a post in the feed. Does it count? I thought what was supposed to count were reviews and comments on titles. Like it's said on the faq.",
+          "date": "2026-11-11T17:41:16.201Z",
+          "is_team": false,
+          "author_key": "Coral Panda",
+          "reactions": []
+        },
+        {
+          "text": "yeah, it might have been updated to count feed posts and comments after the revamp because someone else is reporting the same as you, but i don't know for sure so i'll be asking exo later. good one for making the report though, thanks :)",
+          "date": "2026-11-11T18:15:07.433Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Golden Fox",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "It's not really a big problem. It was more like it was weird when it didn't not register the freeze streak. It happened before and I just let it be. I decided to report cuz it happened again. If posting and commenting on the feed counts, it would really be good to update the faq. As it may help the next ones that go through the same situation. Anyway, thanks. I appreciate the help",
+          "date": "2026-11-11T18:20:41.078Z",
+          "is_team": false,
+          "author_key": "Coral Panda",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "[identity removed]\ndevice: motorola razr 60 ultra\nandroid version 16\nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nI'm also having this issue for 24/10 and 04/11, I should have a streak freeze for each day but it seems to have counted something despite both days showing as empty in the heat map.",
+          "date": "2026-11-12T16:38:36.781Z",
+          "is_team": false,
+          "author_key": "Silver Wren",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1569643428088914022/1569643428570992690.webp"
+        }
+      ]
+    },
+    {
+      "id": "1570085019157012630",
+      "title": "Voting percentages are duplicated for characters voiced by the same actor",
+      "body": "Characters voiced by the same actor in the series [The Cuphead Show!](https://www.themoviedb.org/tv/103786-the-cuphead-show) are receiving the exact same voting percentage, even though they should have separate results. Each character should have its own accurate voting percentage, and the combined total across all characters should add up to 100%, which currently is way over.\n\nNote: Same issue might be happening in other animated series where one actor voices multiple characters.\n\nWhat you did right before it happened: Voted for a character and noticed this problem.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.744-01a1310d",
+      "author_key": "Coral Finch",
+      "posted_at": "2026-11-11T14:37:19.336Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:33:03.689Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:33:03.689Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1570085019157012630/1570085019425308754.webp"
+        }
+      ]
+    },
+    {
+      "id": "1569814485449969825",
+      "title": "Custom list header displays redundant owner and member information",
+      "body": "I'm debating if this is a bug report or a suggestion because it also feels like this scenario wasn't taken into consideration. But currently, the list header displays both the owner and member information even when the list belongs to me and I'm the only member. The owner information should only be displayed when the list belongs to someone else, while the member information should only be displayed when the list is shared.\n\nWhat you did right before it happened: Nothing, this how my own custom lists are displayed when I open them.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Silver Sparrow",
+      "posted_at": "2026-11-10T20:42:19.074Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:32:54.216Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:32:54.216Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "👤 Profile"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "Custom list header displays redundant owner and member information",
+          "date": "2026-11-10T20:47:02.006Z",
+          "is_team": false,
+          "author_key": "Silver Sparrow",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1569814485449969825/1569814485764669450.webp"
+        }
+      ]
+    },
+    {
+      "id": "1571057695967150080",
+      "title": "Refract watchlist bug",
+      "body": "Found a small inconsistency with the watchlist on Refract.\n\nAfter adding Dexter: Resurrection to my watchlist, it correctly appears as the first entry in the dedicated Plan to Watch section, but it's completely absent from the Watchlist row on the home page.\n\nI'm currently developing and testing a native Refract integration for Harbor, and the API write is successful, so this seems to be an issue with how Refract's home page retrieves, refreshes or displays watchlist entries rather than the integration itself.\n\nMight be worth looking into. Both sections should ideally reflect the same watchlist state.",
+      "author_key": "Sage Heron",
+      "posted_at": "2026-11-14T07:02:23.559Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:32:44.784Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:32:44.784Z"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]\nOS version: Android 16 - HyperOS 3.03\nApp version: 1.6.759-01a1baa6",
+          "date": "2026-11-14T07:20:40.480Z",
+          "is_team": false,
+          "author_key": "Sage Heron",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1571057695967150080/1571057696499830844.webp"
+        }
+      ]
+    },
+    {
+      "id": "1570373815702130808",
+      "title": "Remaining time is inconsistent across the three locations",
+      "body": "The remaining time to finish a show doesn't match across these three different places where it's displayed. All three values are being updated, but each one has a difference of 1 hour. In two of the places, the difference between them can be of 2 hours, which is quite a big difference.\n\nWhat you did right before it happened: I've done nothing, I just happened to notice this while navigating from the continue page, to the seasons page and overview title page.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Velvet Badger",
+      "posted_at": "2026-11-12T09:44:53.798Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:32:34.437Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:32:34.437Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1570373815702130808/1570373816016965702.webp"
+        }
+      ]
+    },
+    {
+      "id": "1569818857282084884",
+      "title": "Awards and nomination not showing",
+      "body": "Latest version of the app (stable). \n\nAwards and nomination took a few seconds to load and showing \"No award details for this title yet.\" Even if it says \"7 wins 20 nominations\". \n\nSee screenshot attached.",
+      "author_key": "Teal Tern",
+      "posted_at": "2026-11-10T20:59:41.400Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:32:24.285Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:32:24.285Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]\n- phone: pixel 9a, android 17 stock, CP3A.261005.005",
+          "date": "2026-11-11T08:30:49.281Z",
+          "is_team": false,
+          "author_key": "Teal Tern",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1569818857282084884/1569818857529417799.webp"
+        }
+      ]
+    },
+    {
+      "id": "1570383074410373200",
+      "title": "Comments aren't sorted correctly when \"All\" is selected",
+      "body": "By default, the \"All\" comments filter is selected, but comments from people I follow are prioritised over the most liked comments, even though the correct order should be based on likes, regardless of whether we follow the users or not. Comments from people we follow should only be prioritised when the \"Following\" filter is selected.\n\nWhat you did right before it happened: I watched an episode, opened the comments and noticed that the expected behaviour for the default \"All\" filter combined with \"Most Liked\" wasn't correctly applied.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Velvet Sparrow",
+      "posted_at": "2026-11-12T10:21:41.246Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:32:14.634Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:32:14.634Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1570383074410373200/1570383074586263623.webp"
+        }
+      ]
+    },
+    {
+      "id": "1569446051633561752",
+      "title": "Notifications/Releases page doesn't refresh marked episodes",
+      "body": "When navigating to Home → Notifications → Releases, episodes that have been watched and checked off don't become unmarked when returning to the page. The page may need to refresh to reflect the updated status of individual episodes.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.759-01a1baa6\n[identity removed]",
+      "author_key": "Teal Heron",
+      "posted_at": "2026-11-09T20:18:17.607Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:32:05.249Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:32:05.249Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1570379142900355172",
+      "title": "Rewatch entries are removed without confirmation",
+      "body": "Rewatch entries are removed in less than a second, without an undo option like it was mentioned [here](https://discord.com/channels/1490347491151970366/1491221394644668469/1569691832458285068) or a confirmation prompt like the one shown when removing a first-watch entry.\n\nThe behaviour should be consistent regardless of whether it's a first watch or a rewatch. So, since the undo button mentioned isn't available for me to test which one I'd prefer, I suggest applying the same confirmation prompt used for first-watch entries to rewatches.\n\nWhat you did right before it happened: I added a rewatch date to an episode, removed it and noticed it takes less than a second to be deleted without a prompt or undo button appearing.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Silver Badger",
+      "posted_at": "2026-11-12T10:06:03.901Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:31:55.441Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:31:55.441Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1569730654856544377",
+      "title": "Title logos ignore the app's language settings",
+      "body": "Whenever a logo is available for a title, the app displays it regardless of the language selected in the app settings.\n\nFor example, this title [Kid Auto Races at Venice](https://www.themoviedb.org/movie/22885-kid-auto-races-at-venice) only has a Portuguese logo available, so this logo is displayed even though my app is set to English. I can't even choose the option to not display this logo.\n\nWhat you did right before it happened: Absolutely nothing. I opened this title and noticed the Portuguese logo was displayed. I have done nothing, because I'm not able to do anything.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Misty Finch",
+      "posted_at": "2026-11-10T15:09:12.303Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:31:45.782Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:31:45.782Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 1.3565016075114942,
+      "reactions": [],
+      "comments_count": 5,
+      "activity_7d": 5,
+      "comments": [
+        {
+          "text": "I'd love for this to be fixed, I chose to have all titles in English, but they all display in my own language (Italian). 🥲",
+          "date": "2026-11-10T17:07:05.653Z",
+          "is_team": false,
+          "author_key": "Velvet Wren",
+          "reactions": []
+        },
+        {
+          "text": "All your title logos are in Italian? Or is it also the title regardless of having a logo or not? Because they are two separate problems.",
+          "date": "2026-11-10T17:43:18.377Z",
+          "is_team": false,
+          "author_key": "Misty Finch",
+          "reactions": []
+        },
+        {
+          "text": "All my title logos are in Italian, but luckily all my titles are in English (as that was fixed some time ago). :octoog:",
+          "date": "2026-11-10T18:30:52.524Z",
+          "is_team": false,
+          "author_key": "Velvet Wren",
+          "reactions": []
+        },
+        {
+          "text": "It matches. You should also add your username, device and app version.",
+          "date": "2026-11-10T18:33:07.345Z",
+          "is_team": false,
+          "author_key": "Misty Finch",
+          "reactions": []
+        },
+        {
+          "text": "Yeah, sure! 👍\n\n[mention removed]\nPoco X6 Pro\nAndroid 16\nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-10T18:34:11.164Z",
+          "is_team": false,
+          "author_key": "Velvet Wren",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1569730654856544377/1569730657041645608.webp"
+        }
+      ]
+    },
+    {
+      "id": "1569695090740437092",
+      "title": "Incorrect completion date displayed in feed when previously watched series are added",
+      "body": "I just added a previously watched series from 2006–2008 and marked each episode as watched using its original release date. By doing this, no record was created in my Activity or Journal for today. However, it created an incorrect entry in my feed.\n\nThe feed should either not display this record at all or provide the correct context by showing the actual date the series was completed, because \"now\" it was definitely not the completion date of this series.\n\nWhat you did right before it happened: Added a previously watched series and marked each episode as watched using its original release date (2006–2008). Then checked whether any records had been created and found an incorrect completion entry in my feed, despite everything appearing correctly in my Activity and Journal.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Azure Fox",
+      "posted_at": "2026-11-10T12:47:53.157Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:31:35.956Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:31:35.956Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1569695090740437092/1569695091121979496.webp"
+        }
+      ]
+    },
+    {
+      "id": "1568985968193708162",
+      "title": "Rewatch with a friend don't add a new rewatch",
+      "body": "Hello, \nYesterday, I watched an episode with a friend. First Time for him but 3rd rewatch for me. When he tagged me, he's add on my last rewatch instead of add a new rewatch. I have to add a rewatch before accept his tag if I want add him on the new rewatch. \n(but if I add him first, it's okay. Idem if we watch together for the first time.)\nIs it normal or not ?\nThank you.\n\n-[name removed]\n-Samsung A54, One UI 8.5\n-Refract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Ochre Tern",
+      "posted_at": "2026-11-08T13:50:05.167Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:31:26.426Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:31:26.426Z"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1568985968193708162/1568985968420065401.webp"
+        }
+      ]
+    },
+    {
+      "id": "1570612664181457036",
+      "title": "Not able to reply to comments",
+      "body": "This has been happening for a while where when I tap on Reply to a comment, nothing happens. Sometimes it works correctly, but most of the time it doesn't. Might be a bug.",
+      "author_key": "Teal Badger",
+      "posted_at": "2026-11-13T01:33:59.713Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:31:15.871Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:31:15.871Z"
+      },
+      "tags": [
+        "🤖 Android",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]\nDevice: Samsung Galaxy S24+, Android 17, One UI 9.0\nApp version: Refract v1.6.759-01a1baa6",
+          "date": "2026-11-13T01:50:49.109Z",
+          "is_team": false,
+          "author_key": "Teal Badger",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1569838935708930129",
+      "title": "Trouble writing a post on Activity",
+      "body": "I was trying to write a post on Activity and the window was so small while I was writing that I couldn't see what I wrote above. I took a screen recording. I only could saw what I wrote if I closed my keyboard. The same happened when I also tried to edit the post. \n\nUsername [name removed]\nAndroid 16\nSamsung A33 Android\nApp Version: v1.6.759-01a1baa6",
+      "author_key": "Silver Sparrow",
+      "posted_at": "2026-11-10T22:19:28.470Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:31:01.759Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:31:01.759Z"
+      },
+      "tags": [
+        "🤖 Android",
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1569810762728472708",
+      "title": "Custom list header gets duplicated when selecting a filter after scrolling",
+      "body": "If I scroll down inside a custom list and then select a filter, the header gets duplicated. Both the collapsed and expanded headers are shown. In a situation like this, only the expanded header should be shown, only after scrolling the collapsed one should appear.\n\nWhat you did right before it happened: Selected any list, picked a filter a watched filter where I've no title in and it displayed the list like this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Sage Wren",
+      "posted_at": "2026-11-10T20:27:31.508Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:30:50.740Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:30:50.740Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1570130884806582282",
+      "title": "\"Rating\" dialog appears behind the bulk editor",
+      "body": "Sometimes, when using the bulk editor, the rating \"dialog\" doesn't appear or appears behind the bulk editor instead of on top of it.\n\nWhat you did right before it happened: Long pressed on an episode, it opened the bulk editor and tapped on the rating icon. Nothing happened kept pressing and the \"dialog\" response sometimes appears on top of the editor, other behind. It glitches.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Silver Wren",
+      "posted_at": "2026-11-11T17:39:34.559Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:30:40.929Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:30:40.929Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1569725517270097920",
+      "title": "Comments section in Activity replaced attached images with title posters",
+      "body": "In a recent update to the Activity page, the Comments replaced the images that I previously attached to my comments are no longer displayed with the title poster in every single comment. This makes it considerably harder to identify the specific comment I'm looking for and makes scrolling much longer than necessary.\n\nNote: I'm not attaching any image to avoid spoilers. But it's easy to replicate the problem.\n\nWhat you did right before it happened: Absolutely nothing. I just opened the Comments section in my Activity and noticed things were now displayed like this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Velvet Panda",
+      "posted_at": "2026-11-10T14:48:47.407Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:30:30.477Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:30:30.477Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1570392466715312159",
+      "title": "Ratings misaligned in Recent Activity/Journal",
+      "body": "This isn't exactly a bug, since everything works as intended, but I can't ignore the alignment any longer, and this seems like the best place to post it. Plus, it's an easy and straightforward fix that will make it look much cleaner. 🙂\n\nWhat you did right before it happened: Nothing. This is just a small visual detail that I noticed inside my Recent Activity/Journal.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.726-01a0ae9a",
+      "author_key": "Golden Heron",
+      "posted_at": "2026-11-12T10:59:00.546Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-14T16:30:20.350Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T16:30:20.350Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1570392466715312159/1570392467109314591.webp"
+        }
+      ]
     },
     {
       "id": "1571046592180523138",
@@ -5714,7 +5714,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 5.185321760845773,
+      "score": 5.18177214368519,
       "reactions": [
         {
           "emoji": "👍",
@@ -6918,7 +6918,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5022762996225385,
+      "score": 0.5019324658828548,
       "reactions": [
         {
           "emoji": "👆",
@@ -6956,7 +6956,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.5698916602027726,
+      "score": 1.5688169893078259,
       "reactions": [
         {
           "emoji": "☝️",
@@ -7030,7 +7030,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0486464016649055,
+      "score": 1.047928549729305,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -7071,7 +7071,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0016856326420107,
+      "score": 1.0009999277474786,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -7273,7 +7273,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3676184100503594,
+      "score": 0.3673667565027021,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7304,7 +7304,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.1044272732196805,
+      "score": 1.103671236433065,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7476,7 +7476,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 2.3150604515664113,
+      "score": 2.3134756746353595,
       "reactions": [
         {
           "emoji": "😂",
@@ -7764,7 +7764,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9262371566342407,
+      "score": 0.9256031000688824,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8124,7 +8124,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.17016904733192603,
+      "score": 0.17005255794159146,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8187,7 +8187,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.5050340238359912,
+      "score": 1.5040037513004252,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -8700,7 +8700,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.04672897392206185,
+      "score": 0.04669698555656011,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8767,7 +8767,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0441977469653636,
+      "score": 0.04416749135378863,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -8848,7 +8848,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.06828863251276064,
+      "score": 0.06824188546156115,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8937,7 +8937,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0012133920183025327,
+      "score": 0.001212561389591465,
       "reactions": [
         {
           "emoji": "💜",
@@ -9197,7 +9197,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.052518977628013386,
+      "score": 0.05248302570972501,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -9355,7 +9355,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.009047056903057368,
+      "score": 0.009040863731270346,
       "reactions": [
         {
           "emoji": "➕",
@@ -9578,7 +9578,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.003836098519481899,
+      "score": 0.0038334725144310144,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9654,7 +9654,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.03523257453411079,
+      "score": 0.03520845604022635,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -9716,7 +9716,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.004502177805724021,
+      "score": 0.004499095835436298,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9792,7 +9792,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0023121712926660906,
+      "score": 0.00231058849351163,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -9857,7 +9857,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.003243542301673701,
+      "score": 0.0032413219315701454,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -9926,7 +9926,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.000040516674378604185,
+      "score": 0.00004048893864892391,
       "reactions": [
         {
           "emoji": "‼️",
@@ -10000,7 +10000,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0004074800585886882,
+      "score": 0.0004072011177099406,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10057,7 +10057,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.02815841507346109,
+      "score": 0.028139139202460313,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10151,7 +10151,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0003547157040425655,
+      "score": 0.0003544728830551182,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10217,7 +10217,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00010722279187777082,
+      "score": 0.00010714939240911509,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10384,7 +10384,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0024986262390139726,
+      "score": 0.0024969158019408364,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10554,7 +10554,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0013403108528016016,
+      "score": 0.0013393933416763432,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10672,7 +10672,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0018887457068578835,
+      "score": 0.001887452764108669,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11034,7 +11034,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0001071353945755685,
+      "score": 0.00010706205493482267,
       "reactions": [
         {
           "emoji": "💜",
@@ -11064,7 +11064,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.010808562786014747,
+      "score": 0.010801163773626318,
       "reactions": [
         {
           "emoji": "👆",
@@ -11130,7 +11130,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00007493326054904903,
+      "score": 0.00007488196491112888,
       "reactions": [
         {
           "emoji": "🤔",
@@ -11194,7 +11194,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.002509899849932102,
+      "score": 0.002508181695497417,
       "reactions": [
         {
           "emoji": "👆",
@@ -11378,7 +11378,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.018620779651853724,
+      "score": 0.018608032778652007,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -11519,7 +11519,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.00007273899099055163,
+      "score": 0.00007268919744203663,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11598,7 +11598,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000010726609132530208,
+      "score": 0.000010719266221596656,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -11715,7 +11715,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0007879582010240061,
+      "score": 0.0007874188034550255,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -11803,7 +11803,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0006117468697251953,
+      "score": 0.0006113280977980392,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11899,7 +11899,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00010723098460118872,
+      "score": 0.00010715757952419605,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -11952,7 +11952,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.000833028351103233,
+      "score": 0.0008324581007182605,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12060,7 +12060,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.001628781203358121,
+      "score": 0.0016276662195679283,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -14225,11 +14225,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1533761791279104080/1533761791753195530.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1533121288665829406",
@@ -14272,11 +14268,7 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1533403497851256872/1533403498555637890.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1529453055421190185",
@@ -14372,15 +14364,15 @@
           "text": "no tags please, there's a lot going on already, share your username and a written list of the items on which this issue applies to and they will investigate when they can!",
           "date": "2026-07-29T20:20:54.893Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Ivory Badger",
-          "team_name": "Eli",
           "reactions": [
             {
               "emoji": "💜",
               "count": 1
             }
-          ]
+          ],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "alright, will do that.\n\nthank you",
@@ -14393,15 +14385,15 @@
           "text": "Investigating and try to fix for next update thanks [name removed]",
           "date": "2026-07-30T06:29:24.883Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ochre Otter",
-          "team_name": "Exooo",
           "reactions": [
             {
               "emoji": "💜",
               "count": 1
             }
-          ]
+          ],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "1. \nnot sure if it's fixed, saw it in announcement but titles are still in different languages\n\nshows in hindi characters and if I click the arrow to see more, it is in english letters\n\n2.\nas for journal dates, the ratings goes to a day before",
@@ -14421,19 +14413,19 @@
           "text": "~~can you show me a visual example? I'll fix this~~ -- nevermind it's in last message thanks",
           "date": "2026-08-04T17:19:44.041Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ochre Otter",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "For the titles I'll clean it once and for all, this is a redundant topic I'm sorry it happens",
           "date": "2026-08-04T17:19:59.676Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ochre Otter",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "the English, Indian characters are good now, but the rated dates and watched is not, will this be part of next update?",
@@ -14451,10 +14443,10 @@
           "text": "[mention removed] can you go in Library/Collection (4th tab) > click on 📖 book icon -> you're on My Journal page, are the dates correct there for you?",
           "date": "2026-08-04T17:27:20.190Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ochre Otter",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "it seems to be correct after July 29th, ad you can see one of the indian title showed different days and anything ager that showed right",
@@ -14481,11 +14473,7 @@
           ]
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1531751347920048318/1531751348398194739.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1525084490710519888",
@@ -14616,10 +14604,10 @@
           "text": "do you have it set properly in settings > content & tracking > marking?",
           "date": "2026-07-14T06:47:48.590Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Ivory Lynx",
-          "team_name": "Eli",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "I have it set like this, but I didn’t know it was gonna do it for everything. I mainly thought the setting was for like if I had already watched the show a long time ago, but don’t remember when I watched it. It would mark that show as the release date. Not every show that I say I just watched.",
@@ -14684,11 +14672,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1523208859248885891/1523208859802669156.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1529868134222270575",
@@ -14720,19 +14704,19 @@
           "text": "Hey, sorry for this and thanks for raising the issue up again. We'll have a look. cc Boulet",
           "date": "2026-08-09T19:05:08.271Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ochre Lynx",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Hey [mention removed] can you please share your email in DM so we can check it",
           "date": "2026-08-09T19:07:12.442Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Velvet Tern",
-          "team_name": "Boulet",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Boulet"
         },
         {
           "text": "it's alright, I'm in my no-anime period so it was not too urgent, just very excited to see the app",
@@ -14828,11 +14812,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1525868455612518522/1525868455826555091.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1531695087539453972",
@@ -14857,10 +14837,10 @@
           "text": "Hey what's your username? Let's have a look 🙂",
           "date": "2026-07-28T17:03:03.302Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Golden Finch",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "I think I'm seeing a similar issue. I'll try a few things and feed back",
@@ -14877,11 +14857,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1531695087539453972/1531695087866740837.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1530188492800262195",
@@ -14934,11 +14910,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1530188492800262195/1530188493542785054.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1526742010382389298",
