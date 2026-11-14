@@ -1,37 +1,98 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-11-14T05:00:06.357Z",
+  "generated_at": "2026-11-14T12:00:09.678Z",
   "bugs": [
     {
-      "id": "1570982035294789772",
-      "title": "Nswf content",
-      "body": "Bonjour, \n\nIl y a du contenu p dans le catalogue et au moment de l’importation de données certains films sont parfois confondu avec leur homonyme nsfw.",
-      "author_key": "Coral Heron",
-      "posted_at": "2026-11-14T02:01:44.649Z",
+      "id": "1571103045033402378",
+      "title": "Rewatch Status Bug",
+      "body": "Not able to remove rewatches of some shows which happened due to import , when trying to remove imported rewatches it shows \n\nimport_removal_scope_unsupported",
+      "author_key": "Lilac Heron",
+      "posted_at": "2026-11-14T10:02:35.619Z",
       "status": "open",
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
-        "⚠ Critical",
-        "🔍 Search"
+        "🔗 Import",
+        "⏳ Waiting on us",
+        "🤖 Android",
+        "🐌 Performance"
       ],
-      "status_tags": [
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
         {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-14T02:02:43.767Z"
+          "text": "@[name removed]\nOnePlus Nord Ce4, Android 16 \nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-14T10:04:18.711Z",
+          "is_team": false,
+          "author_key": "Lilac Heron",
+          "reactions": []
         }
       ],
+      "images": [
+        {
+          "url": "./assets/bugs/1571103045033402378/1571103045272739881.webp"
+        }
+      ]
+    },
+    {
+      "id": "1571057695967150080",
+      "title": "Refract watchlist bug",
+      "body": "Found a small inconsistency with the watchlist on Refract.\n\nAfter adding Dexter: Resurrection to my watchlist, it correctly appears as the first entry in the dedicated Plan to Watch section, but it's completely absent from the Watchlist row on the home page.\n\nI'm currently developing and testing a native Refract integration for Harbor, and the API write is successful, so this seems to be an issue with how Refract's home page retrieves, refreshes or displays watchlist entries rather than the integration itself.\n\nMight be worth looking into. Both sections should ideally reflect the same watchlist state.",
+      "author_key": "Sage Heron",
+      "posted_at": "2026-11-14T07:02:23.559Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "⏳ Waiting on us"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]\nOS version: Android 16 - HyperOS 3.03\nApp version: 1.6.759-01a1baa6",
+          "date": "2026-11-14T07:20:40.480Z",
+          "is_team": false,
+          "author_key": "Sage Heron",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1571057695967150080/1571057696499830844.webp"
+        }
+      ]
+    },
+    {
+      "id": "1571046592180523138",
+      "title": "Bug - Bio",
+      "body": "Hi,\n\nCopy paste doesn’t work in my bio box. \nI tried to CP/CL my text but he vanished after the paste. \n\nCheers,\n[name removed] \n\niPhone 16\niOS 27.2\nVersion Refract : Refract v1.6.759-01a1baac | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Teal Sparrow",
+      "posted_at": "2026-11-14T06:18:16.210Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "⏳ Waiting on us",
+        "👤 Profile"
+      ],
+      "status_tags": [],
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1570982035294789772/1570982035533861006.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1570936408070299698",
@@ -548,7 +609,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.3505866375170212,
+      "score": 3.255189550282405,
       "reactions": [
         {
           "emoji": "💜",
@@ -804,7 +865,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.5509276112120711,
+      "score": 1.5067699777503036,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -1004,7 +1065,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4233923081162159,
+      "score": 1.3828658287630151,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 5,
@@ -1139,7 +1200,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.7213996137953762,
+      "score": 1.6723883429677202,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 9,
@@ -1634,7 +1695,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.7134340795653782,
+      "score": 1.664649601489565,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1728,16 +1789,16 @@
         "⏳ Waiting on us"
       ],
       "status_tags": [],
-      "reactors_unique": 2,
-      "score": 5.964999640557406,
+      "reactors_unique": 3,
+      "score": 6.7610265597345425,
       "reactions": [
         {
           "emoji": "💜",
-          "count": 2
+          "count": 3
         }
       ],
       "comments_count": 3,
-      "activity_7d": 4,
+      "activity_7d": 5,
       "comments": [
         {
           "text": "Here's a bigger screenshot showing my rating above!",
@@ -2041,7 +2102,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3510596543074465,
+      "score": 0.3410643692754082,
       "reactions": [
         {
           "emoji": "💜",
@@ -2167,7 +2228,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 18.68353874076101,
+      "score": 18.151585573173456,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2518,7 +2579,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9309429440074064,
+      "score": 0.9044373630904667,
       "reactions": [
         {
           "emoji": "👍",
@@ -2682,7 +2743,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8824573301592066,
+      "score": 0.8573322198387017,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2723,7 +2784,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.4836620568048986,
+      "score": 0.469891348443427,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2765,7 +2826,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.8408339263159923,
+      "score": 0.8168939074188734,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -2821,7 +2882,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.4250234585908723,
+      "score": 2.3559787809111987,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2949,7 +3010,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 11.134544822050142,
+      "score": 10.817524771945122,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3120,7 +3181,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.17610289251079503,
+      "score": 0.1710889338174093,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3302,7 +3363,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 5.884653510785398,
+      "score": 5.717107088308795,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3385,7 +3446,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.6384681758863158,
+      "score": 3.5348745955595517,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3489,7 +3550,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 0.04056305595797393,
+      "score": 0.039408154501495554,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3579,7 +3640,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 48.380675262114735,
+      "score": 47.00319245156134,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5504,6 +5565,35 @@
       "images": []
     },
     {
+      "id": "1570982035294789772",
+      "title": "Nswf content",
+      "body": "Bonjour, \n\nIl y a du contenu p dans le catalogue et au moment de l’importation de données certains films sont parfois confondu avec leur homonyme nsfw.",
+      "author_key": "Coral Heron",
+      "posted_at": "2026-11-14T02:01:44.649Z",
+      "status": "duplicate",
+      "resolved_at": "2026-11-14T06:46:31.317Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-14T06:46:31.317Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "⚠ Critical",
+        "🔍 Search"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1570982035294789772/1570982035533861006.webp"
+        }
+      ]
+    },
+    {
       "id": "1531756804990570698",
       "title": "Frequent connection error - Disabling wifi (no mobile data) makes the app load.",
       "body": "# Info:\n\n[identity removed]\nPrimary device: Android 16, Samsung OneUI 8.5\nSecondary device: Android 13, Samsung OneUI 5.1\nRefract version 1.6.695\n\n# Issue description\n\nBoth devices drops connection from time to time.\nRamdomly, after the phone been idle for couple minutes/hours, the app stops loading.\nReopening the app causes the error message to appear.\nNeed to tap retry a few times to get the app to load.\n\n# Troubleshooting:\n\n- Reset cache, storage and reinstalled the app: **no result**\n- Disabled battery optimization (also make sure OneUI doesn't auto sleep the app): **no result**\n- Change DNS from Cloudflare (1.1.1.1) to Google DNS (8.8.8.8): **no result**\n- Changed SSO (Google Auth) to user/password login: **no result**\n- Reset wifi/modem: **no result**\n- Reset wifi settings on Samsung: **no result**\n- Other applications arent't affected, discarding general device internet access issue.\n- Device memory usage is not a issue, there is plenty of available memory when error occurs\n- Swithing off wifi makes the app load instantly even if device has no SIM card.\n- Switched to Mobile data: **still monitoring**\n\n# Observation\n\nThe important part that I have observe on the last tests is that when switching wifi off, the apps loads instantly even without mobile data active.\nTested that in both devices and in both cases the app loads the moment the wifi shuts down and the device goes offline.\nStill testing if the problem happens using mobile data but as the coverage in my area is spotty, I have to keep switching to wifi to use the phone regularly.",
@@ -5520,7 +5610,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 5.437291464226942,
+      "score": 5.2824822250552375,
       "reactions": [
         {
           "emoji": "👍",
@@ -6724,7 +6814,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5266833501525405,
+      "score": 0.5116877499979493,
       "reactions": [
         {
           "emoji": "👆",
@@ -6762,7 +6852,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.6461772128079675,
+      "score": 1.5993076558726318,
       "reactions": [
         {
           "emoji": "☝️",
@@ -6836,7 +6926,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0996031474495949,
+      "score": 1.0682955142709334,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -6877,7 +6967,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0503604195460385,
+      "score": 1.0204548133309204,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -7079,7 +7169,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3854820462932022,
+      "score": 0.37450669529470887,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7110,7 +7200,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.1580945720439384,
+      "score": 1.1251215852606202,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7282,7 +7372,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 2.4275558997168694,
+      "score": 2.3584391189898346,
       "reactions": [
         {
           "emoji": "😂",
@@ -7570,7 +7660,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9712456850114036,
+      "score": 0.943592614261996,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7761,53 +7851,6 @@
       ]
     },
     {
-      "id": "1567150334420197466",
-      "title": "Release anniversary achievement not counting episode watches",
-      "body": "The release anniversary achievement does not seem to count episode watches on anniversary dates, only movies. Can this be corrected?\n\n📱 via app · GM1913 · OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:12/SKQ1.211113.001/P.202301251815:user/release-keys 12 · v1.6.753-01a19d6d\n[identity removed]",
-      "author_key": "Ivory Panda",
-      "posted_at": "2026-11-03T12:15:55.971Z",
-      "status": "off_topic",
-      "resolved_at": "2026-11-06T18:11:52.686Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-06T18:11:52.686Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1568297886972641362",
-      "title": "Drag regions appearing twice",
-      "body": "Drag regions appear 2 times (duplicate display issue)\n\n📱 via app · 23117RA68G · Redmi/emerald_eea/emerald:16/BP2A.250605.031.A3/OS3.0.302.0.WNFEUXM:user/release-keys 16 · v1.6.756-01a1aca7\n[identity removed]",
-      "author_key": "Amber Lynx",
-      "posted_at": "2026-11-06T16:15:53.820Z",
-      "status": "off_topic",
-      "resolved_at": "2026-11-06T16:23:23.270Z",
-      "terminal_attribution": {
-        "applied_at": "2026-11-06T16:23:23.270Z",
-        "applied_by": "Eli"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1568019010262405141",
       "title": "Incorrect Episode Comments",
       "body": "I know I’ve seen this reported a number of times but can’t seem to see a resolution. I’m seeing this issue the most with one piece - comments that match episodes from the past are appearing. Is there an update on this? I posted this previous as a bug and was told by a moderator to post it in the data channel so I did but now have been told to post as a bug report so I’m v confused 😂",
@@ -7977,7 +8020,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.1784380509460601,
+      "score": 0.17335760619006635,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8040,7 +8083,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 1.5781679572840606,
+      "score": 1.533234743319036,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -8383,78 +8426,6 @@
       ]
     },
     {
-      "id": "1563284929171947670",
-      "title": "Rewatch 'just now' button not working on iOS app",
-      "body": "The rewatch 'just now' (à l'instant) button does not function on the iOS app—tapping it has no effect. Users must work around this by manually adding an entry with today's date and time.\n\n📱 via app · iPhone 17 Pro · iOS 27.0.1 · v1.6.748-01a1551c\n[identity removed]",
-      "author_key": "Ochre Seal",
-      "posted_at": "2026-10-23T20:16:11.544Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-23T20:17:39.685Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-23T20:17:39.685Z",
-        "applied_by": "Eli"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1563255053546950798",
-      "title": "bug rewatched",
-      "body": "It’s impossible to indicate that you’ve rewatched a series more than twice.",
-      "author_key": "Lilac Otter",
-      "posted_at": "2026-10-23T18:17:28.640Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-23T18:20:25.946Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-23T18:20:25.946Z",
-        "applied_by": "Eli"
-      },
-      "tags": [
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1563224451544387667",
-      "title": "Rewatch button freezes on American Horror Story 8x6",
-      "body": "The rewatch button doesn't work for American Horror Story season 8 episode 6. The app freezes when clicking \"now\".\n\n📱 via app · iPhone 14 · iOS 27.0.1 · v1.6.748-01a1551c\n[identity removed]",
-      "author_key": "Amber Wren",
-      "posted_at": "2026-10-23T16:15:52.554Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-23T16:19:21.457Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-23T16:19:21.457Z",
-        "applied_by": "Eli"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1560666591602147399",
       "title": "Series character pictures show the wrong actors",
       "body": "I've found 3 series where the character's picture doesn't match the actor who plays them. I'm sure these are not isolated cases, but everything is correct in TMDB, so I've no clue where this info is being pulled from.\n\n1. [Take Charge of My Heart](https://www.themoviedb.org/tv/289423) - Chae Soo Bin's character picture gets applied to every character that has the same name has her character. This includes an actress playing her younger self, parents and friends, a total of 7 actors.\n\n2. [A-Teen](https://www.themoviedb.org/tv/87687-a-teen) - The character image of actress Kang Min-ah, is being applied to actor Ryu Ui-hyun. The characters are siblings, it recognized the first name (last name) and applied her picture to both.\n\n3. [12 Monkeys](https://www.themoviedb.org/tv/60948-12-monkeys) - I noticed that in S02 E11, the character picture for actress Emily Hampshire also appears as character picture for actress Glenda MacInnis. It's possible that happens in other episodes and with other actors, but I only noticed this one.\n\nWhat you did right before it happened: Just marked an episode as watched and noticed this.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.744-01a1310d",
@@ -8609,180 +8580,6 @@
       "images": []
     },
     {
-      "id": "1562164940025110598",
-      "title": "Crash issue",
-      "body": "Often when I open the app on my tablet or mobile, it closes or gets stuck and displays a message saying that the app is not responding. I think it mostly happens when I'm rating something inside a chapter.",
-      "author_key": "Ochre Lynx",
-      "posted_at": "2026-10-20T18:05:45.323Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-22T06:18:27.906Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-22T06:18:27.906Z"
-      },
-      "tags": [
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Here is my info:\n[identity removed]\n• Device: REDMI PAD 2 9.7\nOS version: 3.0.303.0.WDNEUXM.C\nandroid version: BP2A.250605.031.A3\n• App version: v1.6.748-01a15515\nHope this helps you reproduce and fix it!",
-          "date": "2026-10-20T18:21:28.680Z",
-          "is_team": false,
-          "author_key": "Ochre Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1562164940025110598/1562164940909973524.webp"
-        }
-      ]
-    },
-    {
-      "id": "1561777707480522882",
-      "title": "bug with One Piece and rewatches",
-      "body": "Hi,\n\nI used to mark certain One Piece episodes as \"rewatches\" and everything was fine, but recently the app showed 1700 episodes, which isn't the case, and 100% completion, which isn't true either. \n\nExtra episodes were also added to my total episode count.\n\nCan you help me please ?\nThanks\n\n[mention removed]\nIPhone 15, IOS 18.7.8\nRefract v1.6.747-01a1501f",
-      "author_key": "Amber Tern",
-      "posted_at": "2026-10-19T16:27:01.890Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-22T06:18:27.226Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-22T06:18:27.226Z"
-      },
-      "tags": [
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "I was just checking off episodes I'd rewatched. However, I didn't check them all in episode order.",
-          "date": "2026-10-19T16:42:03.001Z",
-          "is_team": false,
-          "author_key": "Amber Tern",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1561777707480522882/1561777707837300776.webp"
-        }
-      ]
-    },
-    {
-      "id": "1559600612318908505",
-      "title": "Some genre badges do not mark series among titles",
-      "body": "Some genre badges do not mark series among titles\n\n📱 via app · SM-S921B · samsung/e1sxeea/e1s:16/BP4A.251205.006/S921BXXUEDZDR:user/release-keys 16 · v1.6.744-01a1310d\n[identity removed]",
-      "author_key": "Golden Robin",
-      "posted_at": "2026-10-13T16:16:01.955Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-22T06:18:26.599Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-22T06:18:26.599Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1559600612318908505/1559600612872552619.webp"
-        }
-      ]
-    },
-    {
-      "id": "1558996677229019136",
-      "title": "Library items marked as started when added to collection",
-      "body": "User reports that items added to their library/collection are being automatically marked as started. They note this is problematic for rewatches of older shows they've already completed, as marking them started doesn't accurately reflect that they've already watched the entire series. User indicates this behavior appears to be a recent change.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.743-01a12aff\n[identity removed]",
-      "author_key": "Velvet Otter",
-      "posted_at": "2026-10-12T00:16:12.609Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-22T06:18:25.892Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-22T06:18:25.892Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1558587216505086003",
-      "title": "Episode overlay in continue tab",
-      "body": "Episode overlay after marking watched",
-      "author_key": "Golden Sparrow",
-      "posted_at": "2026-10-10T21:09:09.565Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-22T06:18:25.124Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-22T06:18:25.124Z"
-      },
-      "tags": [
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1558587216505086003/1558587264504692828.webp"
-        }
-      ]
-    },
-    {
-      "id": "1558513479982522459",
-      "title": "List items misalign and animation lags when marking episode as watched",
-      "body": "When an episode is marked as watched, the list items become misaligned and the animation is not smooth, experiencing lag.\n\n📱 via app · Pixel 8 · Android 16 · v1.6.742-01a120b7\n[identity removed]",
-      "author_key": "Silver Finch",
-      "posted_at": "2026-10-10T16:16:09.408Z",
-      "status": "duplicate",
-      "resolved_at": "2026-10-22T06:18:24.723Z",
-      "terminal_attribution": {
-        "applied_at": "2026-10-22T06:18:24.723Z"
-      },
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1558513479982522459/1558513481316049066.webp"
-        }
-      ]
-    },
-    {
       "id": "1557452115431923854",
       "title": "Widget bug IG !",
       "body": "I am very Happy that the Android widget has been released; however, I have unfortunately encountered several issues, including problems with the check button, widget resizing, and launching the app by the widget. I hope that these matters will be addressed in a future update along with the inclusion of the rating display feature.",
@@ -8799,7 +8596,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.04899966921186156,
+      "score": 0.047604562556229656,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8866,7 +8663,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.04634544265458196,
+      "score": 0.045025906491469224,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -8947,7 +8744,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0716069736441583,
+      "score": 0.06956819731918588,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9036,7 +8833,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0012723542275998206,
+      "score": 0.0012361280677134956,
       "reactions": [
         {
           "emoji": "💜",
@@ -9296,7 +9093,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.055071025856676115,
+      "score": 0.053503057012377765,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -9454,7 +9251,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00948667942784436,
+      "score": 0.009216577000164539,
       "reactions": [
         {
           "emoji": "➕",
@@ -9677,7 +9474,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.004022505583628507,
+      "score": 0.003907977783700461,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9753,7 +9550,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.036944626700622235,
+      "score": 0.03589274828125941,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -9815,7 +9612,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.004720951578808553,
+      "score": 0.004586537794502487,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9891,7 +9688,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0024245263482729983,
+      "score": 0.0023554958241973002,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -9956,7 +9753,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00340115535431553,
+      "score": 0.0033043184868842917,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -10025,7 +9822,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00004248549615978194,
+      "score": 0.00004127585945378585,
       "reactions": [
         {
           "emoji": "‼️",
@@ -10099,7 +9896,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00042728068702251314,
+      "score": 0.00041511525529866456,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10156,7 +9953,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.02952671347826183,
+      "score": 0.028686036078699167,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10250,7 +10047,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00037195236067728664,
+      "score": 0.0003613622235946213,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10316,7 +10113,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00011243305583268026,
+      "score": 0.00010923188923241203,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10483,7 +10280,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.002620041676925404,
+      "score": 0.0025454444879993436,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10653,7 +10450,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.001405440413433515,
+      "score": 0.001365425056056358,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10771,7 +10568,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0019805252949854713,
+      "score": 0.0019241362608323047,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11133,7 +10930,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00011234141164410742,
+      "score": 0.0001091428543148707,
       "reactions": [
         {
           "emoji": "💜",
@@ -11163,7 +10960,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.011333781949796146,
+      "score": 0.011011089268682819,
       "reactions": [
         {
           "emoji": "👆",
@@ -11229,7 +11026,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00007857448327441513,
+      "score": 0.00007633732971109196,
       "reactions": [
         {
           "emoji": "🤔",
@@ -11293,7 +11090,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.002631863105034074,
+      "score": 0.0025569293392841575,
       "reactions": [
         {
           "emoji": "👆",
@@ -11477,7 +11274,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.019525616910176236,
+      "score": 0.018969688297904887,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -11618,7 +11415,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.0000762735878447968,
+      "score": 0.00007410194481612428,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11697,7 +11494,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00001124784593249467,
+      "score": 0.000010927600000749753,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -11814,7 +11611,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0008262473570968197,
+      "score": 0.000802722643448242,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -11902,7 +11699,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0006414734102212805,
+      "score": 0.0006232095354154899,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11998,7 +11795,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00011244164666410099,
+      "score": 0.00010924023546777137,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -12051,7 +11848,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0008735075954426134,
+      "score": 0.0008486372997906586,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12159,7 +11956,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0017079283683001153,
+      "score": 0.0016593006474953968,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -14290,7 +14087,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.0006942235149433115,
+      "score": 0.0006744577519948727,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -14391,7 +14188,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00017452945597247582,
+      "score": 0.00016956029578124582,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -14436,7 +14233,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00004326204936662775,
+      "score": 0.00004203030282673383,
       "reactions": [
         {
           "emoji": "👆",
@@ -14600,7 +14397,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00007634353560544396,
+      "score": 0.00007416990104115507,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -14630,7 +14427,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 5,
-      "score": 0.0007769178447527911,
+      "score": 0.0007547976289732229,
       "reactions": [
         {
           "emoji": "💜",
@@ -14706,7 +14503,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0002365715152492456,
+      "score": 0.00022983590864688008,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -14770,7 +14567,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00008559744689090314,
+      "score": 0.00008316033721683033,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -14858,7 +14655,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00005940181136851402,
+      "score": 0.00005771053745320462,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -14947,7 +14744,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000043306956176799076,
+      "score": 0.0000420739310611359,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -14997,7 +14794,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00011115815990700449,
+      "score": 0.00010799329183323158,
       "reactions": [
         {
           "emoji": "👆",
@@ -15054,7 +14851,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00007405078624043063,
+      "score": 0.00007194243027802363,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15129,7 +14926,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00017592095222807998,
+      "score": 0.00017091217369414084,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -15218,7 +15015,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00016710884992803115,
+      "score": 0.00016235096742597642,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -15266,7 +15063,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.0001914616531484095,
+      "score": 0.00018601040356036169,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15339,7 +15136,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00023214574052979233,
+      "score": 0.00022553614350803724,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15401,7 +15198,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.00017963056765046763,
+      "score": 0.00017451616984911605,
       "reactions": [
         {
           "emoji": "‼️",
@@ -15516,7 +15313,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0002741631685284058,
+      "score": 0.00026635726152341496,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -15581,7 +15378,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.00005977653574103564,
+      "score": 0.000058074592764597186,
       "reactions": [
         {
           "emoji": "⬆️",
@@ -15681,7 +15478,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.0007477972887132624,
+      "score": 0.0007265061863175173,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15757,7 +15554,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0011060516761502255,
+      "score": 0.0010745604420319258,
       "reactions": [
         {
           "emoji": "👍",
@@ -15861,7 +15658,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0005087825153441612,
+      "score": 0.0004942965834012994,
       "reactions": [
         {
           "emoji": "👍",
@@ -16037,7 +15834,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 13,
-      "score": 0.0019733972937474313,
+      "score": 0.00191721120631061,
       "reactions": [
         {
           "emoji": "👍",
@@ -16281,7 +16078,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.0010153659044670209,
+      "score": 0.000986456653567819,
       "reactions": [
         {
           "emoji": "💜",
@@ -16364,7 +16161,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 5.455111874486841e-7,
+      "score": 5.299795256931591e-7,
       "reactions": [
         {
           "emoji": "✅",
@@ -16425,7 +16222,7 @@
       "id": "1531412807516688436",
       "title": "rewatched isn’t counting",
       "body": "I rewatched a TV show and marked each episode one by one. When I finished, I noticed that the show doesn't appear under 'Rewatched'.\n\nIt only appears there if I mark it as rewatched on the main TV show page.",
-      "author_key": "Sage Finch",
+      "author_key": "Misty Finch",
       "posted_at": "2026-07-27T21:27:45.586Z",
       "status": "fixed",
       "resolved_at": "2026-08-15T10:54:19.427Z",
@@ -16437,7 +16234,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.0003550723244067036,
+      "score": 0.0003220384659880386,
       "reactions": [
         {
           "emoji": "❤️",
@@ -16451,19 +16248,543 @@
           "text": "motorola razr 60 ultra \nandroid 16\n[identity removed]\n\nI also still have this problem, I've marked each episode individually but on the show's main page the x2 hasn't appeared. \n\nscreenshots to show the x2 on each of the episodes, one to show the rewatch date visible when clicking the x2 button, and the main shows page\n\nlink to the example show: https://getrefract.app/item/tv/206013",
           "date": "2026-08-07T04:50:54.442Z",
           "is_team": false,
-          "author_key": "Amber Otter",
+          "author_key": "Coral Panda",
           "reactions": []
         },
         {
           "text": "Done, it was just cache, it'll be fixed normally on next update but you can force it by killing the app and starting it again",
           "date": "2026-08-07T07:31:27.176Z",
           "is_team": true,
-          "author_key": "Misty Robin",
-          "reactions": [],
           "team_role": "dev",
-          "team_name": "Exooo"
+          "author_key": "Silver Sparrow",
+          "team_name": "Exooo",
+          "reactions": []
         }
       ],
+      "images": []
+    },
+    {
+      "id": "1525357365589835796",
+      "title": "Crash Report – Ici tout commence Season 1",
+      "body": "🇫🇷\n\nLorsque j'ouvre la saison 1 de Ici tout commence, Refract plante systématiquement.\n\nLe problème semble venir du fait que TMDB renvoie toujours la structure par défaut avec seulement deux saisons contenant plus de 1 000 épisodes chacune. Le chargement d'une liste aussi volumineuse provoque un ralentissement important, puis un crash de l'application.\n\nLa prise en charge des TMDB Episode Groups permettrait d'utiliser la véritable organisation des saisons (Saison 1, 2, 3, etc.), de réduire le nombre d'épisodes chargés simultanément et d'éviter ce problème.\n\nEpisode Group concerné :\nhttps://www.themoviedb.org/tv/112470-ici-tout-commence/episode_group/6865862ce3fc54222031f6e4\n\n🇬🇧\n\nOpening Season 1 of Ici tout commence consistently crashes Refract.\n\nThe issue appears to be caused by TMDB's default season structure, which still contains only two seasons with over 1,000 episodes each. Loading such a large episode list causes major slowdowns and eventually crashes the app.\n\nSupporting TMDB Episode Groups would use the correct season structure (Season 1, 2, 3, etc.), dramatically reduce the number of loaded episodes, and likely prevent this crash.\n\nEpisode Group:\nhttps://www.themoviedb.org/tv/112470-ici-tout-commence/episode_group/6865862ce3fc54222031f6e4",
+      "author_key": "Ivory Fox",
+      "posted_at": "2026-07-11T04:25:35.726Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-14T11:48:41.840Z",
+      "terminal_attribution": null,
+      "tags": [
+        "⚠ Critical",
+        "💥 Crash",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1525357365589835796/1525357931816685618.webp"
+        }
+      ],
+      "bulk_closed": true
+    },
+    {
+      "id": "1532420240267284550",
+      "title": "IPv6",
+      "body": "Hello\n\nThis app doesn't work on IPv6 wifi?\n\nTiA",
+      "author_key": "Amber Wren",
+      "posted_at": "2026-07-30T16:10:56.271Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-14T11:46:03.401Z",
+      "terminal_attribution": null,
+      "tags": [
+        "⚠ Critical",
+        "🤖 Android",
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0.0000510143819858199,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "[mention removed]\n\nPixel 10 pro is where I use refract\n\nAndroid 17\n\nIt works when I disconnect from my wifi, or only use IPv4\n\nApp version 1.6.6.99",
+          "date": "2026-07-30T16:14:58.056Z",
+          "is_team": false,
+          "author_key": "Amber Wren",
+          "reactions": []
+        },
+        {
+          "text": "I had this issue that the app wouldn't let me login for some time, but if I disabled wifi, the app loads. Could be related?\nhttps://discord.com/channels/1490347491151970366/1531756804990570698",
+          "date": "2026-07-30T16:32:05.876Z",
+          "is_team": false,
+          "author_key": "Coral Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [],
+      "bulk_closed": true
+    },
+    {
+      "id": "1532420321980715239",
+      "title": "TV Time Out import missing not finding movies despite being correct",
+      "body": "My TV Time out JSON import is mostly correct, but it couldn’t find 5 movies despite them being correct in the JSON file and the data matching what I can look up in refract. I even tried changing to alternate or original titles, but the issue is still there. And the issue is only with these 5 moves for me. I attached screenshots\n\n[identity removed]\nDevice and OS: iPhone 17 iOS 26.5.2\nRefract version: v1.6.699-019fb2de",
+      "author_key": "Velvet Finch",
+      "posted_at": "2026-07-30T16:11:15.753Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-14T11:45:54.249Z",
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import",
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1532420321980715239/1532420322454667294.webp"
+        }
+      ],
+      "bulk_closed": true
+    },
+    {
+      "id": "1532059447105556581",
+      "title": "Rewatches not included in CSV Export",
+      "body": "When exporting from Refract, no rewatch data is included for movies or TV shows, not even a rewatch count.",
+      "author_key": "Lilac Panda",
+      "posted_at": "2026-07-29T16:17:16.478Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-14T11:42:40.561Z",
+      "terminal_attribution": null,
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Username [name removed]\niPhone 12, iOS 26.4.2\nRefract v1.6.695-019f9589\n\nFor examples of items with rewatches that aren’t present in the data, see:\n\nElf — Track on Refract https://getrefract.app/item/movie/10719\n\nHalo: The Fall of Reach S1E1 — Act 1 https://getrefract.app/episode/77184/1/1",
+          "date": "2026-07-29T16:27:37.846Z",
+          "is_team": false,
+          "author_key": "Lilac Panda",
+          "reactions": []
+        }
+      ],
+      "images": [],
+      "bulk_closed": true
+    },
+    {
+      "id": "1531347893145964726",
+      "title": "Non-existent or incorrect movie entry",
+      "body": "On Refract, there is a movie called “The End of Evangelion_Revival_Air” but it doesn’t load anytime I try to open it. In addition, when I try to search for it on TMDB, it doesn’t seem to exist there. I will attach a short video showing what I’m talking about. It’s possible it’s an error entry for the actual movie, which shows up and loads on Refract. Because of that it seems that the “_Air” entry is an incorrect entry. I wasn’t sure whether to post this in bugs or data issues.\n\nI googled it and I see the same title on an entry in Letterboxd, but I still don’t think that’s correct. But maybe it’s pulling or referencing from there?",
+      "author_key": "Golden Robin",
+      "posted_at": "2026-07-27T17:09:48.794Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-14T11:39:44.955Z",
+      "terminal_attribution": null,
+      "tags": [
+        "🎨 UI",
+        "🔍 Search"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Non-existent or incorrect movie entry",
+          "date": "2026-07-27T17:26:21.023Z",
+          "is_team": false,
+          "author_key": "Golden Robin",
+          "reactions": []
+        }
+      ],
+      "images": [],
+      "bulk_closed": true
+    },
+    {
+      "id": "1530086446398963782",
+      "title": "Season marked as watched even though I watched only 1 episode (GIGN/Elite Force)",
+      "body": "As soon as I mark episode one of the show GIGN (Elite Force) as watched the season is marked as watched and the show goes to my Up to Date section. But the rest of the individual episodes are still unwatched.\nBecause the show is considered Up to Date the next episode doesn’t show in my Continue list.\n\nI’m on iOS.",
+      "author_key": "Sage Badger",
+      "posted_at": "2026-07-24T05:37:16.453Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-14T11:38:30.532Z",
+      "terminal_attribution": null,
+      "tags": [
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0.000034999350945844123,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Linking to this bug: <#1526328463097598086>",
+          "date": "2026-07-26T21:12:51.195Z",
+          "is_team": false,
+          "author_key": "Velvet Finch",
+          "reactions": []
+        }
+      ],
+      "images": [],
+      "bulk_closed": true
+    },
+    {
+      "id": "1530341762743406713",
+      "title": "Activity says I watched a series on a set date even though I marked it as watched on an unknown date",
+      "body": "As per title, I marked the episodes of the tv series Galavant as \"watched on an unknown date\" because it was so many years ago, but they still show up in my activity as watched on the 13th of September 2015.",
+      "author_key": "Coral Robin",
+      "posted_at": "2026-07-24T22:31:48.613Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-14T11:35:35.278Z",
+      "terminal_attribution": null,
+      "tags": [
+        "👤 Profile",
+        "🤖 Android",
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1530341762743406713/1530341763083010169.webp"
+        }
+      ],
+      "bulk_closed": true
+    },
+    {
+      "id": "1529608192630198334",
+      "title": "Activity Heatmap Does Not Update After Changing a Watch Date",
+      "body": "The activity heatmap does not appear to update correctly after changing the watch date of an episode, and this may also affect movies.\n\nFor example, I changed an episode’s watch date from today to yesterday, but the activity heatmap continued showing activity for today instead of moving it to yesterday.\n\nThis may be a refresh or delayed-sync issue, but the heatmap should reflect the updated watch date once the change is saved.\n\nSteps to reproduce\n\n1. Mark an episode as watched today.\n2. Confirm that today appears as active in the activity heatmap.\n3. Edit the episode’s watch date and change it to yesterday.\n4. Return to the profile activity heatmap.\n\nExpected result\n\nThe activity should be removed from today and added to yesterday.\n\nActual result\n\nThe heatmap still shows today as an active watch day and does not immediately reflect the edited date.\n\nDevice: iPhone 15 Pro Max\nOS: iOS 26.5\n[identity removed]",
+      "author_key": "Silver Seal",
+      "posted_at": "2026-07-22T21:56:51.869Z",
+      "status": "fixed",
+      "resolved_at": "2026-08-14T11:31:35.409Z",
+      "terminal_attribution": null,
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0.000024217100779738875,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "I’m seeing the same issue so linking this up to my bug report https://discord.com/channels/1490347491151970366/1526211664020508762",
+          "date": "2026-07-22T22:17:13.889Z",
+          "is_team": false,
+          "author_key": "Coral Finch",
+          "reactions": [
+            {
+              "emoji": {
+                "name": "thank_you",
+                "id": "1526362398884237332"
+              },
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [],
+      "bulk_closed": true
+    },
+    {
+      "id": "1567150334420197466",
+      "title": "Release anniversary achievement not counting episode watches",
+      "body": "The release anniversary achievement does not seem to count episode watches on anniversary dates, only movies. Can this be corrected?\n\n📱 via app · GM1913 · OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:12/SKQ1.211113.001/P.202301251815:user/release-keys 12 · v1.6.753-01a19d6d\n[identity removed]",
+      "author_key": "Ivory Panda",
+      "posted_at": "2026-11-03T12:15:55.971Z",
+      "status": "off_topic",
+      "resolved_at": "2026-11-06T18:11:52.686Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-06T18:11:52.686Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1568297886972641362",
+      "title": "Drag regions appearing twice",
+      "body": "Drag regions appear 2 times (duplicate display issue)\n\n📱 via app · 23117RA68G · Redmi/emerald_eea/emerald:16/BP2A.250605.031.A3/OS3.0.302.0.WNFEUXM:user/release-keys 16 · v1.6.756-01a1aca7\n[identity removed]",
+      "author_key": "Amber Lynx",
+      "posted_at": "2026-11-06T16:15:53.820Z",
+      "status": "off_topic",
+      "resolved_at": "2026-11-06T16:23:23.270Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-06T16:23:23.270Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1563284929171947670",
+      "title": "Rewatch 'just now' button not working on iOS app",
+      "body": "The rewatch 'just now' (à l'instant) button does not function on the iOS app—tapping it has no effect. Users must work around this by manually adding an entry with today's date and time.\n\n📱 via app · iPhone 17 Pro · iOS 27.0.1 · v1.6.748-01a1551c\n[identity removed]",
+      "author_key": "Ochre Seal",
+      "posted_at": "2026-10-23T20:16:11.544Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-23T20:17:39.685Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T20:17:39.685Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1563255053546950798",
+      "title": "bug rewatched",
+      "body": "It’s impossible to indicate that you’ve rewatched a series more than twice.",
+      "author_key": "Lilac Otter",
+      "posted_at": "2026-10-23T18:17:28.640Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-23T18:20:25.946Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T18:20:25.946Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1563224451544387667",
+      "title": "Rewatch button freezes on American Horror Story 8x6",
+      "body": "The rewatch button doesn't work for American Horror Story season 8 episode 6. The app freezes when clicking \"now\".\n\n📱 via app · iPhone 14 · iOS 27.0.1 · v1.6.748-01a1551c\n[identity removed]",
+      "author_key": "Amber Wren",
+      "posted_at": "2026-10-23T16:15:52.554Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-23T16:19:21.457Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-23T16:19:21.457Z",
+        "applied_by": "Eli"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1562164940025110598",
+      "title": "Crash issue",
+      "body": "Often when I open the app on my tablet or mobile, it closes or gets stuck and displays a message saying that the app is not responding. I think it mostly happens when I'm rating something inside a chapter.",
+      "author_key": "Ochre Lynx",
+      "posted_at": "2026-10-20T18:05:45.323Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-22T06:18:27.906Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-22T06:18:27.906Z"
+      },
+      "tags": [
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Here is my info:\n[identity removed]\n• Device: REDMI PAD 2 9.7\nOS version: 3.0.303.0.WDNEUXM.C\nandroid version: BP2A.250605.031.A3\n• App version: v1.6.748-01a15515\nHope this helps you reproduce and fix it!",
+          "date": "2026-10-20T18:21:28.680Z",
+          "is_team": false,
+          "author_key": "Ochre Lynx",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1561777707480522882",
+      "title": "bug with One Piece and rewatches",
+      "body": "Hi,\n\nI used to mark certain One Piece episodes as \"rewatches\" and everything was fine, but recently the app showed 1700 episodes, which isn't the case, and 100% completion, which isn't true either. \n\nExtra episodes were also added to my total episode count.\n\nCan you help me please ?\nThanks\n\n[mention removed]\nIPhone 15, IOS 18.7.8\nRefract v1.6.747-01a1501f",
+      "author_key": "Amber Tern",
+      "posted_at": "2026-10-19T16:27:01.890Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-22T06:18:27.226Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-22T06:18:27.226Z"
+      },
+      "tags": [
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "I was just checking off episodes I'd rewatched. However, I didn't check them all in episode order.",
+          "date": "2026-10-19T16:42:03.001Z",
+          "is_team": false,
+          "author_key": "Amber Tern",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1559600612318908505",
+      "title": "Some genre badges do not mark series among titles",
+      "body": "Some genre badges do not mark series among titles\n\n📱 via app · SM-S921B · samsung/e1sxeea/e1s:16/BP4A.251205.006/S921BXXUEDZDR:user/release-keys 16 · v1.6.744-01a1310d\n[identity removed]",
+      "author_key": "Golden Robin",
+      "posted_at": "2026-10-13T16:16:01.955Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-22T06:18:26.599Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-22T06:18:26.599Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1558996677229019136",
+      "title": "Library items marked as started when added to collection",
+      "body": "User reports that items added to their library/collection are being automatically marked as started. They note this is problematic for rewatches of older shows they've already completed, as marking them started doesn't accurately reflect that they've already watched the entire series. User indicates this behavior appears to be a recent change.\n\n📱 via app · moto g pure · motorola/ellis_trac/ellis:12/S3RH32.20-42-13-3-12/3a9e2:user/release-keys 12 · v1.6.743-01a12aff\n[identity removed]",
+      "author_key": "Velvet Otter",
+      "posted_at": "2026-10-12T00:16:12.609Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-22T06:18:25.892Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-22T06:18:25.892Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1558587216505086003",
+      "title": "Episode overlay in continue tab",
+      "body": "Episode overlay after marking watched",
+      "author_key": "Golden Sparrow",
+      "posted_at": "2026-10-10T21:09:09.565Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-22T06:18:25.124Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-22T06:18:25.124Z"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1558513479982522459",
+      "title": "List items misalign and animation lags when marking episode as watched",
+      "body": "When an episode is marked as watched, the list items become misaligned and the animation is not smooth, experiencing lag.\n\n📱 via app · Pixel 8 · Android 16 · v1.6.742-01a120b7\n[identity removed]",
+      "author_key": "Silver Finch",
+      "posted_at": "2026-10-10T16:16:09.408Z",
+      "status": "duplicate",
+      "resolved_at": "2026-10-22T06:18:24.723Z",
+      "terminal_attribution": {
+        "applied_at": "2026-10-22T06:18:24.723Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
       "images": []
     },
     {
@@ -20957,92 +21278,6 @@
       "images": []
     },
     {
-      "id": "1525357365589835796",
-      "title": "Crash Report – Ici tout commence Season 1",
-      "body": "🇫🇷\n\nLorsque j'ouvre la saison 1 de Ici tout commence, Refract plante systématiquement.\n\nLe problème semble venir du fait que TMDB renvoie toujours la structure par défaut avec seulement deux saisons contenant plus de 1 000 épisodes chacune. Le chargement d'une liste aussi volumineuse provoque un ralentissement important, puis un crash de l'application.\n\nLa prise en charge des TMDB Episode Groups permettrait d'utiliser la véritable organisation des saisons (Saison 1, 2, 3, etc.), de réduire le nombre d'épisodes chargés simultanément et d'éviter ce problème.\n\nEpisode Group concerné :\nhttps://www.themoviedb.org/tv/112470-ici-tout-commence/episode_group/6865862ce3fc54222031f6e4\n\n🇬🇧\n\nOpening Season 1 of Ici tout commence consistently crashes Refract.\n\nThe issue appears to be caused by TMDB's default season structure, which still contains only two seasons with over 1,000 episodes each. Loading such a large episode list causes major slowdowns and eventually crashes the app.\n\nSupporting TMDB Episode Groups would use the correct season structure (Season 1, 2, 3, etc.), dramatically reduce the number of loaded episodes, and likely prevent this crash.\n\nEpisode Group:\nhttps://www.themoviedb.org/tv/112470-ici-tout-commence/episode_group/6865862ce3fc54222031f6e4",
-      "author_key": "Silver Robin",
-      "posted_at": "2026-07-11T04:25:35.726Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-14T11:48:41.840Z",
-      "terminal_attribution": null,
-      "tags": [
-        "⚠ Critical",
-        "💥 Crash",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [],
-      "bulk_closed": true
-    },
-    {
-      "id": "1532420240267284550",
-      "title": "IPv6",
-      "body": "Hello\n\nThis app doesn't work on IPv6 wifi?\n\nTiA",
-      "author_key": "Amber Finch",
-      "posted_at": "2026-07-30T16:10:56.271Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-14T11:46:03.401Z",
-      "terminal_attribution": null,
-      "tags": [
-        "⚠ Critical",
-        "🤖 Android",
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0.00015605733151945046,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "[mention removed]\n\nPixel 10 pro is where I use refract\n\nAndroid 17\n\nIt works when I disconnect from my wifi, or only use IPv4\n\nApp version 1.6.6.99",
-          "date": "2026-07-30T16:14:58.056Z",
-          "is_team": false,
-          "author_key": "Amber Finch",
-          "reactions": []
-        },
-        {
-          "text": "I had this issue that the app wouldn't let me login for some time, but if I disabled wifi, the app loads. Could be related?\nhttps://discord.com/channels/1490347491151970366/1531756804990570698",
-          "date": "2026-07-30T16:32:05.876Z",
-          "is_team": false,
-          "author_key": "Ochre Tern",
-          "reactions": []
-        }
-      ],
-      "images": [],
-      "bulk_closed": true
-    },
-    {
-      "id": "1532420321980715239",
-      "title": "TV Time Out import missing not finding movies despite being correct",
-      "body": "My TV Time out JSON import is mostly correct, but it couldn’t find 5 movies despite them being correct in the JSON file and the data matching what I can look up in refract. I even tried changing to alternate or original titles, but the issue is still there. And the issue is only with these 5 moves for me. I attached screenshots\n\n[identity removed]\nDevice and OS: iPhone 17 iOS 26.5.2\nRefract version: v1.6.699-019fb2de",
-      "author_key": "Golden Robin",
-      "posted_at": "2026-07-30T16:11:15.753Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-14T11:45:54.249Z",
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [],
-      "bulk_closed": true
-    },
-    {
       "id": "1532253055180083411",
       "title": "Issue with GDPR upload",
       "body": "It seems there is an issue with GDPR imports. When I tried mine with no previous other import (JSON, etc) and before adding anything to my library. It says 35 are already in library, and it couldn’t find 515 item (shows maybe? It doesn’t specify) which is a lot. It also gave me different numbers in different places.\n\n[identity removed]\nDevice and OS: iPhone 17 iOS 26.5.2\nRefract version: v1.6.697-019faf4b",
@@ -21150,121 +21385,6 @@
       "bulk_closed": true
     },
     {
-      "id": "1532059447105556581",
-      "title": "Rewatches not included in CSV Export",
-      "body": "When exporting from Refract, no rewatch data is included for movies or TV shows, not even a rewatch count.",
-      "author_key": "Amber Tern",
-      "posted_at": "2026-07-29T16:17:16.478Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-14T11:42:40.561Z",
-      "terminal_attribution": null,
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Username [name removed]\niPhone 12, iOS 26.4.2\nRefract v1.6.695-019f9589\n\nFor examples of items with rewatches that aren’t present in the data, see:\n\nElf — Track on Refract https://getrefract.app/item/movie/10719\n\nHalo: The Fall of Reach S1E1 — Act 1 https://getrefract.app/episode/77184/1/1",
-          "date": "2026-07-29T16:27:37.846Z",
-          "is_team": false,
-          "author_key": "Amber Tern",
-          "reactions": []
-        }
-      ],
-      "images": [],
-      "bulk_closed": true
-    },
-    {
-      "id": "1531347893145964726",
-      "title": "Non-existent or incorrect movie entry",
-      "body": "On Refract, there is a movie called “The End of Evangelion_Revival_Air” but it doesn’t load anytime I try to open it. In addition, when I try to search for it on TMDB, it doesn’t seem to exist there. I will attach a short video showing what I’m talking about. It’s possible it’s an error entry for the actual movie, which shows up and loads on Refract. Because of that it seems that the “_Air” entry is an incorrect entry. I wasn’t sure whether to post this in bugs or data issues.\n\nI googled it and I see the same title on an entry in Letterboxd, but I still don’t think that’s correct. But maybe it’s pulling or referencing from there?",
-      "author_key": "Golden Heron",
-      "posted_at": "2026-07-27T17:09:48.794Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-14T11:39:44.955Z",
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "🔍 Search"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Non-existent or incorrect movie entry",
-          "date": "2026-07-27T17:26:21.023Z",
-          "is_team": false,
-          "author_key": "Golden Heron",
-          "reactions": []
-        }
-      ],
-      "images": [],
-      "bulk_closed": true
-    },
-    {
-      "id": "1530086446398963782",
-      "title": "Season marked as watched even though I watched only 1 episode (GIGN/Elite Force)",
-      "body": "As soon as I mark episode one of the show GIGN (Elite Force) as watched the season is marked as watched and the show goes to my Up to Date section. But the rest of the individual episodes are still unwatched.\nBecause the show is considered Up to Date the next episode doesn’t show in my Continue list.\n\nI’m on iOS.",
-      "author_key": "Lilac Wren",
-      "posted_at": "2026-07-24T05:37:16.453Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-14T11:38:30.532Z",
-      "terminal_attribution": null,
-      "tags": [
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0.00010706599003864038,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Linking to this bug: <#1526328463097598086>",
-          "date": "2026-07-26T21:12:51.195Z",
-          "is_team": false,
-          "author_key": "Lilac Robin",
-          "reactions": []
-        }
-      ],
-      "images": [],
-      "bulk_closed": true
-    },
-    {
-      "id": "1530341762743406713",
-      "title": "Activity says I watched a series on a set date even though I marked it as watched on an unknown date",
-      "body": "As per title, I marked the episodes of the tv series Galavant as \"watched on an unknown date\" because it was so many years ago, but they still show up in my activity as watched on the 13th of September 2015.",
-      "author_key": "Teal Heron",
-      "posted_at": "2026-07-24T22:31:48.613Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-14T11:35:35.278Z",
-      "terminal_attribution": null,
-      "tags": [
-        "👤 Profile",
-        "🤖 Android",
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [],
-      "bulk_closed": true
-    },
-    {
       "id": "1526197320419643512",
       "title": "filter and sort - movies",
       "body": "when i select filter and sort for my movies, and i choose the last watched recent first, it does not order correctly. it sorts it in a seemingly random order, and not recent first\n\niPhone 13 ios 26.5.2\nRefract v1.6.689-019f4c97\n\n[identity removed]",
@@ -21295,44 +21415,6 @@
           "is_team": false,
           "author_key": "Ochre Finch",
           "reactions": []
-        }
-      ],
-      "images": [],
-      "bulk_closed": true
-    },
-    {
-      "id": "1529608192630198334",
-      "title": "Activity Heatmap Does Not Update After Changing a Watch Date",
-      "body": "The activity heatmap does not appear to update correctly after changing the watch date of an episode, and this may also affect movies.\n\nFor example, I changed an episode’s watch date from today to yesterday, but the activity heatmap continued showing activity for today instead of moving it to yesterday.\n\nThis may be a refresh or delayed-sync issue, but the heatmap should reflect the updated watch date once the change is saved.\n\nSteps to reproduce\n\n1. Mark an episode as watched today.\n2. Confirm that today appears as active in the activity heatmap.\n3. Edit the episode’s watch date and change it to yesterday.\n4. Return to the profile activity heatmap.\n\nExpected result\n\nThe activity should be removed from today and added to yesterday.\n\nActual result\n\nThe heatmap still shows today as an active watch day and does not immediately reflect the edited date.\n\nDevice: iPhone 15 Pro Max\nOS: iOS 26.5\n[identity removed]",
-      "author_key": "Amber Otter",
-      "posted_at": "2026-07-22T21:56:51.869Z",
-      "status": "fixed",
-      "resolved_at": "2026-08-14T11:31:35.409Z",
-      "terminal_attribution": null,
-      "tags": [
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0.00007236973694888444,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "I’m seeing the same issue so linking this up to my bug report https://discord.com/channels/1490347491151970366/1526211664020508762",
-          "date": "2026-07-22T22:17:13.889Z",
-          "is_team": false,
-          "author_key": "Coral Seal",
-          "reactions": [
-            {
-              "emoji": {
-                "name": "thank_you",
-                "id": "1526362398884237332"
-              },
-              "count": 1
-            }
-          ]
         }
       ],
       "images": [],
