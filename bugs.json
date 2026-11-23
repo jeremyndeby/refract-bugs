@@ -1,6 +1,6 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-11-23T15:10:04.546Z",
+  "generated_at": "2026-11-23T15:20:04.610Z",
   "bugs": [
     {
       "id": "1574401645872283689",
@@ -34,41 +34,6 @@
       "images": [
         {
           "url": "./assets/bugs/1574401645872283689/1574401646275076168.webp"
-        }
-      ]
-    },
-    {
-      "id": "1574368391148474388",
-      "title": "Import connection issue",
-      "body": "Refract: `@[name removed]`\n\nTrying to import the \"Trakt\" data from the zip file.\nGives the error: \"Couldn't start the import. Check your connection and try again.\"\n\nPixel 8 Pro\nAndroid 17\nRefract `v1.7.764-embedded`\n\nI'm currently trying to convert my data from an unsupported app (using Claude, so who knows how well that's going), so it might be an issue with missing fields in the import data, or it's in the wrong format for Trakt.\nI'd imagine it could be rate limiting too, since I've imported using SIMKL/Trakt some times now, with 2 of the imports having 8000+ entries, iirc.",
-      "author_key": "Velvet Finch",
-      "posted_at": "2026-11-23T10:17:54.800Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "Just tested my theory, and it does work when a `watched-history-1.json` file is included in the zip file (with the relevant data ofc.).\n\nSo it's more of an issue with the error message being wrong/misleading, than an issue with importing.",
-          "date": "2026-11-23T10:48:48.552Z",
-          "is_team": false,
-          "author_key": "Velvet Finch",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1574368391148474388/1574368391744069812.webp"
         }
       ]
     },
@@ -114,223 +79,6 @@
       ]
     },
     {
-      "id": "1573720232235770006",
-      "title": "Wrong Air Dates",
-      "body": "I live in Palestine (UTC+2) and some Dexter Res episodes on Refract show that they are being aired on Sunday when in fact Paramount releases them every friday at 7:00 AM ET / 4:00 AM PT. For the first two episodes i thought it was a bug or Refract recalibrating the time zones between me and Paramount’s time zone. But it hasn’t been adjusted since. \n\nTruthfully the only reason i’m reporting this is because I depend on Refract to notify me of new episodes for shows, but I saw a clip online of the new episode of Dexter which ended up spoiling important events, if I knew about the episode earlier, that wouldn’t have happened.\n\n[identity removed]\niPhone 11, iOS 27.2.1\nRefract version: Refract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build",
-      "author_key": "Silver Finch",
-      "posted_at": "2026-11-21T15:22:21.673Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔔 Notifications",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1573720232235770006/1573720232508268696.webp"
-        }
-      ]
-    },
-    {
-      "id": "1573673162271621131",
-      "title": "Games marked as \"without console\"",
-      "body": "Even though I've marked the console I played each game on, I still have 7 games showing up as \"no console.\"\nI personally chucked every game so it must be a bug!\n\n[identity removed]\nApp v: 1.6.763\nAndroid v: Android 17\nSmartphone: Samsung S24FE\nSamsung v: One Ui 9",
-      "author_key": "Coral Wren",
-      "posted_at": "2026-11-21T12:15:19.319Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "📊 Stats",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 1.6807664495272325,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "I had the same issue, but after checking thoroughly there were some games (and DLCs!) that specified no console. Note that this doesn't track the consoles for which you *own* the game, but the consoles in which you have *played* the game.",
-          "date": "2026-11-21T21:01:11.880Z",
-          "is_team": false,
-          "author_key": "Misty Sparrow",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1573673162271621131/1573673162476879872.webp"
-        }
-      ]
-    },
-    {
-      "id": "1573317355122065558",
-      "title": "Disable the ability to rate for unreleased movies/shows.",
-      "body": "[identity removed]\nDevice: S23+\nOS version: One UI 9.0\nApp version: 1.6.763\n\nI saw these ratings when I was checking out the movies in the 'Coming Soon' list.",
-      "author_key": "Coral Robin",
-      "posted_at": "2026-11-20T12:41:28.284Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "📊 Stats"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-20T12:42:20.191Z"
-        }
-      ],
-      "reactors_unique": 1,
-      "score": 0.7354433256867272,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 1,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1573317355122065558/1573317355369406515.webp"
-        }
-      ]
-    },
-    {
-      "id": "1573247177092763728",
-      "title": "Fail to Comment",
-      "body": "Hi .. I can’t comment from this option .. the clip explain better",
-      "author_key": "Ivory Seal",
-      "posted_at": "2026-11-20T08:02:36.538Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "📱 iOS"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-20T08:03:29.865Z"
-        }
-      ],
-      "reactors_unique": 1,
-      "score": 0.72147492061787,
-      "reactions": [
-        {
-          "emoji": "👆",
-          "count": 1
-        }
-      ],
-      "comments_count": 0,
-      "activity_7d": 1,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1573241429680070727",
-      "title": "Comments not appearing in Activity (Following)",
-      "body": "As per the title, episode comments (and possibly reviews) are not appearing in the Activity → Following feed. This is happening to me and my friend both (both iPhone users).\n\n[identity removed]\nDevice/OS: iPhone 17, 27.2\nApp version: Refract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build",
-      "author_key": "Azure Panda",
-      "posted_at": "2026-11-20T07:39:46.248Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "iOS 27.2",
-          "date": "2026-11-20T07:56:38.377Z",
-          "is_team": false,
-          "author_key": "Azure Panda",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1573158022073810984",
-      "title": "notifications",
-      "body": "Ever since time went back one hour on November 1st the app is sending me notifications 40 minutes after a show starts. I have tried everything that Google told me to do but nothing is working. And just as an FYI TV Time did the same thing twice a year.",
-      "author_key": "Teal Otter",
-      "posted_at": "2026-11-20T02:08:20.325Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔔 Notifications"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-20T02:09:16.528Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1573012629163610162",
-      "title": "Wrong date when it was imported",
-      "body": "I was going through my fist imports and some of the shows have the wrong watch dates it says dates before the show even aired \nI’m not sure if it’s a bug or not or maybe the file was corrupt but this is what it showing on some of my shows \n\nUser name [name removed] \niPhone 17 pro max iOS 27.2.1\n\nRefract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build",
-      "author_key": "Sage Wren",
-      "posted_at": "2026-11-19T16:30:35.954Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "📱 iOS",
-        "⚠ Critical",
-        "🔗 Import",
-        "🐌 Performance"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-19T16:31:37.445Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1573012629163610162/1573012629507809483.webp"
-        }
-      ]
-    },
-    {
       "id": "1572646634343633086",
       "title": "Notifications arriving before air date and badges not appearing for same-day watched episodes",
       "body": "User in Australia reports two issues: (1) notifications for shows are arriving before the shows have aired, and (2) badges are not appearing when episodes are watched on the same day they air or within 24 hours after airing. User suspects these issues may be related to timezone handling.\n\n📱 via app · iPhone 16 · iOS 26.1 · v1.6.763-01a1ebb1\n[identity removed]",
@@ -344,7 +92,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6122873682371698,
+      "score": 0.6118664311192052,
       "reactions": [
         {
           "emoji": "💜",
@@ -354,84 +102,6 @@
       "comments_count": 0,
       "activity_7d": 1,
       "comments": [],
-      "images": []
-    },
-    {
-      "id": "1572523837650894939",
-      "title": "Shows no longer move between sections under Continue tab.",
-      "body": "When I watch an episode from a show in COMING BACK or OLD FRIENDS, it doesn't move it to ONGOING anymore. Shows also don't age out of ONGOING anymore either. The behavior has been happening for a few weeks. I tried clearing the data & cache, but problem persisted.\n\n[identity removed]\nVersion: 1.6.763-01a1ebaa\nDevice: Samsung Galaxy S22 Ultra\nOS: One UI 8, Android 16",
-      "author_key": "Coral Fox",
-      "posted_at": "2026-11-18T08:08:18.976Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⚠ Critical"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-18T08:09:17.213Z"
-        }
-      ],
-      "reactors_unique": 1,
-      "score": 1.8051077017123647,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "I received a notification informing me that a show that I was caught up to and had in the up to date section had its status changed to complete but when I opened the page it still showed me up to date, and there was no option to change it to complete. Then I changed the status to watching and now it is stuck there.\n\nOnePlus 12r, oxygen os 16\nVer.1.6.763",
-          "date": "2026-11-18T12:02:40.184Z",
-          "is_team": false,
-          "author_key": "Silver Heron",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1572451232377868298",
-      "title": "Not able to reply to comments",
-      "body": "This has been happening for a while where when I tap on Reply to a comment, nothing happens. Sometimes it works correctly, but most of the time it doesn't. Might be a bug.\n\nMy previous report was marked as fixed, but I'm still having the same issue.",
-      "author_key": "Sage Heron",
-      "posted_at": "2026-11-18T03:19:48.530Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "Here's my info:\n[identity removed]\nDevice: Samsung Galaxy S24+, Android 17, One UI 9.0\nApp version: Refract v1.6.763-01a1ebaa",
-          "date": "2026-11-18T03:21:34.463Z",
-          "is_team": false,
-          "author_key": "Sage Heron",
-          "reactions": []
-        },
-        {
-          "text": "This is happening ONLY when I open the episode from the Continue section. If I open the episode from the Show's overview page, it does work.",
-          "date": "2026-11-22T01:57:47.769Z",
-          "is_team": false,
-          "author_key": "Sage Heron",
-          "reactions": []
-        }
-      ],
       "images": []
     },
     {
@@ -454,340 +124,6 @@
       "activity_7d": 0,
       "comments": [],
       "images": []
-    },
-    {
-      "id": "1572147670599082096",
-      "title": "Issue of marking a show as \"watching\" and not appearing in \"continue\" section",
-      "body": "No written description was provided.",
-      "author_key": "Silver Panda",
-      "posted_at": "2026-11-17T07:13:33.762Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "🤖 Android"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-17T07:14:35.577Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1572147670599082096/1572147671047741521.webp"
-        }
-      ]
-    },
-    {
-      "id": "1571762277919625358",
-      "title": "Nuvio not tracking",
-      "body": "Hi, I connected the app to Stremio and Nuvio. I tried it first with Stremio and everything went well, but as soon as I tried with Nuvio the following message appeared and the tracking was not working both in Stremio and Nuvio. If I try to remove the access and just use Stremio, it works but if I instead try to use it only with Nuvio, it doesn't work. Is it possible to separate the two and use a different link to track?",
-      "author_key": "Silver Seal",
-      "posted_at": "2026-11-16T05:42:08.987Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Sure, my nickname is [name removed] Phone is Pixel 10 and the app version is Refract v1.6.761-01a1e0e8 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-16T13:36:48.888Z",
-          "is_team": false,
-          "author_key": "Silver Seal",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1571762277919625358/1571762278305628230.webp"
-        }
-      ]
-    },
-    {
-      "id": "1571676084460585121",
-      "title": "Episodes page freezing and slow",
-      "body": "Hi!\nFor a couple of weeks the episode pages are always so slow and crashing when I’m putting the info of the episode. I have to close the app and open again when i’m marking a few episodes… i have an iphone but i know a friend with android that says also happens.\n\nI atrached a video of me marking an episode as watched (rewatched in this case, but the bug is the same), and it took me 2:31min to mark the episode… everytime it seams that I’m not doing nothing , it’s the screen completely frozen and breaking…\n\n- [mention removed] - iphone 16 pro -iOS 27 (mine)\n- [mention removed] - xiaomi note 11 pro 5G - xiaomi hyper ios 1.1.12 tkceuxm (print attached) (my friend)\n\nCan you guys please fix that!🙏\nThank you!",
-      "author_key": "Teal Otter",
-      "posted_at": "2026-11-15T23:59:38.865Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "🤖 Android",
-        "💥 Crash",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Hi. The username i wrote is the refract one. It’s just the same here. @ [name removed] \nApp version: 1.6.761-01a1e0ea\nThank you",
-          "date": "2026-11-16T00:14:33.912Z",
-          "is_team": false,
-          "author_key": "Teal Otter",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1571676084460585121/1571676088671936542.webp"
-        }
-      ]
-    },
-    {
-      "id": "1571652361703661691",
-      "title": "trakt sync problem",
-      "body": "I connected my Trakt account to Refract, but I'm having problems with the movies. It completely destroyed my Trakt history; now they all show as unwatched, but they're still there in my history. Some movies, however, show as unwatched on Refract even though they're in my Trakt history, like \"La mia vita da zucchina\". \n\n[identity removed]\nVersion app: 1.6.5\nVersion phone: one ui 9 android 17",
-      "author_key": "Misty Seal",
-      "posted_at": "2026-11-15T22:25:22.919Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🔗 Import",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "[identity removed]\nPhone: A54 Samsung",
-          "date": "2026-11-15T22:54:11.510Z",
-          "is_team": false,
-          "author_key": "Misty Seal",
-          "reactions": []
-        },
-        {
-          "text": "The biggest problem has been solved, that is, it's shown unseen but is in the historical record. The only thing that remains is that films like \"My Life as a Zucchini\" are unseen on Refract",
-          "date": "2026-11-17T13:15:01.135Z",
-          "is_team": false,
-          "author_key": "Misty Seal",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1570239623236554812",
-      "title": "\"Weekly Ritual\" not unlocking after meeting unlock requirements",
-      "body": "I have recently completed watching and logging VisionQuest. After logging the series finale, I unlocked the \"Finale Night\" badge, however, despite logging all 8 episodes within the described parameters of the \"Weekly Ritual\" badge, it remains locked.\n\n[identity removed]\n-Device: Bluestacks on Windows \n-Refract: v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Coral Finch",
-      "posted_at": "2026-11-12T00:51:39.821Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📊 Stats",
-        "🤖 Android",
-        "👤 Profile"
-      ],
-      "status_tags": [],
-      "reactors_unique": 2,
-      "score": 1.3178503452986912,
-      "reactions": [
-        {
-          "emoji": "💜",
-          "count": 2
-        }
-      ],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Can't find the android version being used but it's Bluestacks V 5.22.288.1014 P64",
-          "date": "2026-11-12T03:42:18.230Z",
-          "is_team": false,
-          "author_key": "Coral Finch",
-          "reactions": []
-        },
-        {
-          "text": "For more data points - it doesn’t look like it’s contributing to weekly ritual for me either\n\n[identity removed]\nPhone: iPhone 16 Pro; iOS 26.5\nRefract: Refract v1.6.759-01a1baac | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nFinale Night is also not unlocking *but* this is because of TMDB’s data preventing it. TMDB lists the episode as being released on Tuesday but in Aus it is out Wednesday. If this badge requires the ep to be watched on Tuesday then it is impossible for me to have this show contribute.\n\nMight be ideal to allow a 2 day window for the finale night badge to help with TMDB’s data blocking people from legitimately unlocking the badge. Otherwise if RMDB will handle release date/time data better then that’ll be good.",
-          "date": "2026-11-12T10:03:47.770Z",
-          "is_team": false,
-          "author_key": "Velvet Seal",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            },
-            {
-              "emoji": "👆",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1570239623236554812/1570239623584546879.webp"
-        }
-      ]
-    },
-    {
-      "id": "1568943452933333094",
-      "title": "Home screen rows don't match their full section view",
-      "body": "The items in a home screen row don't match the list I see after opening that section. This happens in every section, not just one.\n\n**Example (Binnenkort):**\nHome screen row: Avengers: Doomsday, The Hunger Games: Sunrise on the Reaping, Dune: Part Three, Ebenezer\n\nFull section: Avengers: Doomsday, Eşref Tek, The Hunger Games: Sunrise on the Reaping, Harry Potter, Dune: Part Three, Blade Runner 2099, Ebenezer\n\n[identity removed]\nRefract v1.6.758-01a1b6fb | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Lilac Lynx",
-      "posted_at": "2026-11-08T11:01:08.739Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Home screen rows don't match their full section view",
-          "date": "2026-11-08T11:05:58.971Z",
-          "is_team": false,
-          "author_key": "Lilac Lynx",
-          "reactions": []
-        },
-        {
-          "text": "While small, the difference in spacing between the posters is still different in certain sections and match my original report's screenshots. Pulling down to refresh does not change this; nor is a setting limited to just movies or shows.",
-          "date": "2026-11-15T21:41:51.474Z",
-          "is_team": false,
-          "author_key": "Lilac Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1568943452933333094/1568943453386051624.webp"
-        }
-      ]
-    },
-    {
-      "id": "1568671513702440991",
-      "title": "Goal section shifted",
-      "body": "After the most recent update the goal line is shifted, I believe it’s due to the high number day streak with high number of watched items",
-      "author_key": "Silver Tern",
-      "posted_at": "2026-11-07T17:00:33.374Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.6739266694727596,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 7,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "[name removed] username\niOS device is 27.2\nRefract v1.6.757-01a1b1d4 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-07T17:07:06.029Z",
-          "is_team": false,
-          "author_key": "Silver Tern",
-          "reactions": []
-        },
-        {
-          "text": "I got the same problem.\n[identity removed]\nAndroid 16\nSamsung A33\nApp Version: v1.6.758-01a1b6fb",
-          "date": "2026-11-07T17:26:54.719Z",
-          "is_team": false,
-          "author_key": "Amber Heron",
-          "reactions": []
-        },
-        {
-          "text": "Atleast It’s not unique to me 😅",
-          "date": "2026-11-07T18:15:39.685Z",
-          "is_team": false,
-          "author_key": "Silver Tern",
-          "reactions": []
-        },
-        {
-          "text": "No it's not! 😅 It's like that for couple of days and I was waiting to see if something will change but it didn't and I asked about it on the Help section to see if it's only for me or for others too before reporting.",
-          "date": "2026-11-07T18:18:25.516Z",
-          "is_team": false,
-          "author_key": "Amber Heron",
-          "reactions": []
-        },
-        {
-          "text": "Yea I did the same, they’ve been pretty good at fixing these things quickly so I waited",
-          "date": "2026-11-07T18:21:04.322Z",
-          "is_team": false,
-          "author_key": "Silver Tern",
-          "reactions": []
-        },
-        {
-          "text": "Yeah one of the mods told me to report it but then someone else wrote there is a report already so I came to your post for save 😅",
-          "date": "2026-11-07T18:22:40.662Z",
-          "is_team": false,
-          "author_key": "Amber Heron",
-          "reactions": [
-            {
-              "emoji": "😂",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "Do you still have the problem?",
-          "date": "2026-11-08T13:14:44.525Z",
-          "is_team": false,
-          "author_key": "Amber Heron",
-          "reactions": [
-            {
-              "emoji": "👍",
-              "count": 1
-            },
-            {
-              "emoji": "😔",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1568671513702440991/1568671513975193764.webp"
-        }
-      ]
     },
     {
       "id": "1568393650973450260",
@@ -824,32 +160,6 @@
       ]
     },
     {
-      "id": "1567852482632097812",
-      "title": "Platforms unavailable for most films",
-      "body": "[identity removed]\nPhone : Xiaomi Redmi Note 13 5g, HyperOs 3.0.5.0, Android 15\nRefract v1.6.755-01a1a7ff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nMany older films (dating back to the late 1800s or early 1900s) have entered the public domain and are therefore distributed on YouTube. Yet, when I visit the page for a film like *La Lune à un mètre*, the only options listed are \"DVD/Blu-ray\" and \"Other.\"\nThis also happens with more recent films. For instance, Mattel recently (as of May) began making older Barbie movies available for free on YouTube, but I cannot indicate that I watched them via that platform. Specifically, the site claims there are no streaming options available in France, even though a perfectly legal one exists.\nFurthermore, before they were made free, these films were available to rent or purchase on YouTube-an option that is also missing (example: Pocahontas can be purchased on YouTube, but this is not listed as an option).\n\nI’ve also noticed this same issue with professional wrestling content; in France, certain PPV events are available on Netflix, yet this isn't reflected as an option. (Additionally, another platform that streams this content is missing entirely—likely because it hasn't been added to the database—as is Viki, which is owned by Rakuten)\n\nWhat I Did:\n\nGo to the film pages to select the platform where I watched them",
-      "author_key": "Sage Wren",
-      "posted_at": "2026-11-05T10:46:01.150Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1567852482632097812/1567852483194392706.webp"
-        }
-      ]
-    },
-    {
       "id": "1566482000599056434",
       "title": "Rewatch Removed by Update",
       "body": "I had logged a rewatch of Tatami Galaxy during the great TV Time migration. At some point during the last few updates, my rewatch was removed from episodes 2 to 11 (I tried to manually add ep 2 and ep 1 had previous rewatches).\n\nIt's also possible it was removed when a different glitch was fixed, as I used this show as an example of the rewatches not showing up on the main page because some were imported and being unable to Remove or change a date on a season wide rewatch. Thanks!\n\n[name removed]\nAndroid 16\nSamsung Galaxy s22+\nRefract v1.6.752-01a196e4 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -878,403 +188,6 @@
       ]
     },
     {
-      "id": "1566425609335476254",
-      "title": "Rewatch date not recorded in correct field",
-      "body": "The rewatch viewing date is not being recorded in the correct field. The first viewing is unknown, but the rewatch date is 01/11/26. Additionally, when viewing the episode list during a rewatch where the rewatch date is unknown, the first viewing date is displayed instead.\n\n📱 via app · SM-A566B · samsung/a56xnaeea/a56x:16/BP4A.251205.006/A566BXXUACZDR_OXMACZDR:user/release-keys 16 · v1.6.751-01a179d2\n[identity removed]",
-      "author_key": "Sage Panda",
-      "posted_at": "2026-11-01T12:16:08.046Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "General"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 1.386692993214004,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "https://discord.com/channels/1490347491151970366/1573101027790422066",
-          "date": "2026-11-19T22:24:17.509Z",
-          "is_team": false,
-          "author_key": "Azure Badger",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1566425609335476254/1566425609717030993.webp"
-        }
-      ]
-    },
-    {
-      "id": "1566415896677843055",
-      "title": "Update 752 - Bugs",
-      "body": "Screenshots, usernames, etc.",
-      "author_key": "Sage Tern",
-      "posted_at": "2026-11-01T11:37:32.368Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "General"
-      ],
-      "status_tags": [
-        {
-          "tag": "🔍 Investigating"
-        }
-      ],
-      "reactors_unique": 1,
-      "score": 7.348596124993735,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 36,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "Update 752 - Bugs",
-          "date": "2026-11-01T11:46:14.007Z",
-          "is_team": true,
-          "team_role": "dev",
-          "author_key": "Sage Tern",
-          "team_name": "Exooo",
-          "reactions": []
-        },
-        {
-          "text": "[name removed]\niOS 26.6.2\nRefract v1.6.752-01a196e8 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nnot possible to comment on these kind of posts, it opens the entry card and not the text input area of the comment section.",
-          "date": "2026-11-01T12:06:19.644Z",
-          "is_team": false,
-          "author_key": "Azure Finch",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "text": "similar issue regarding comments, I can’t swipe up to reach the text box at the bottom, screenshot is not cropped there\nrefract user [mention removed]\niOS 27.0.1 iPhone 17\nRefract v1.6.752-01a196e8 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-01T12:11:53.645Z",
-          "is_team": false,
-          "author_key": "Lilac Heron",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "that’s what i reported too",
-          "date": "2026-11-01T12:22:24.924Z",
-          "is_team": false,
-          "author_key": "Azure Finch",
-          "reactions": [
-            {
-              "emoji": "💯",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "Same here on both of my device\n\n[identity removed]\nXiaomi Pad 7 & REDMI Note 15 Pro, Android 16/HyperOS 3\nRefract v1.6.752-01a196e4 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-01T13:12:06.032Z",
-          "is_team": false,
-          "author_key": "Sage Panda",
-          "reactions": []
-        },
-        {
-          "text": "[identity removed]\nPhone : Xiaomi 13 5G 3.0.5.0\nRefract : v1.6.752-01a196e4 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nthe spoilers are not displaying",
-          "date": "2026-11-01T13:26:58.170Z",
-          "is_team": false,
-          "author_key": "Ochre Badger",
-          "reactions": []
-        },
-        {
-          "text": "@[name removed]\niPhone 17 Pro Max iOS 27.2\nRefract v1.6.752-01a196e8 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nDon’t have screenshots but it happened two times that the app closed itself when I’m scrolling a comments’ drawer in a written post.",
-          "date": "2026-11-01T15:39:12.260Z",
-          "is_team": false,
-          "author_key": "Teal Tern",
-          "reactions": []
-        },
-        {
-          "text": "[mention removed]\niPhone 17 - currently updating to iOS 27.2, so whatever was before that 😅 \nRefract v1.6.752-01a197bd | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nI can't see reviews/comments by people I follow in the Following tab, but they seem to show up in the For You tab. \n\nAdditionally, is it expected behavior to not be able to 💜 a review/comment and to be redirected to its page where only the emoji panel works?\n\nThank you so much for everything!",
-          "date": "2026-11-01T16:45:58.210Z",
-          "is_team": false,
-          "author_key": "Velvet Tern",
-          "reactions": []
-        },
-        {
-          "text": "i was made aware that pulling down to refresh the following and for you pages should be possible, but it isn't for me! i suspect it might be an issue on iphones?\n\n[name removed]\niphone 13 pro\nios 26.6.2\nRefract v1.6.752-01a197bd | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-01T18:10:51.827Z",
-          "is_team": false,
-          "author_key": "Amber Seal",
-          "reactions": []
-        },
-        {
-          "text": "I tried to comment on Florent’s post but couldn’t 😅 I think it’s because of the gif. Btw it swipes up/down itself 😅",
-          "date": "2026-11-01T19:05:04.922Z",
-          "is_team": false,
-          "author_key": "Teal Tern",
-          "reactions": [
-            {
-              "emoji": "💜",
-              "count": 2
-            }
-          ]
-        },
-        {
-          "text": "And also when I open comments to write one, the app suddenly closes 😬\n\n@[name removed]\niPhone 17 Pro Max iOS 27.2\nRefract v1.6.752-01a197bd | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-01T19:12:58.629Z",
-          "is_team": false,
-          "author_key": "Teal Tern",
-          "reactions": [
-            {
-              "emoji": "🙋‍♀️",
-              "count": 4
-            },
-            {
-              "emoji": "😂",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "I cut the video just for privacy reasons but when it stops is because the app closed",
-          "date": "2026-11-01T19:13:53.234Z",
-          "is_team": false,
-          "author_key": "Teal Tern",
-          "reactions": []
-        },
-        {
-          "text": "[identity removed]\nSamsung galaxy s26 ultra \nAndroid 17 / one UI 9.0\nRefract v1.6.752-01a197b6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nFollowing page has been like this since shortly after the update, not sure if it's just the server being a bit slow!\n\nFor you page also stuck buffering",
-          "date": "2026-11-01T19:15:16.129Z",
-          "is_team": false,
-          "author_key": "Misty Seal",
-          "reactions": []
-        },
-        {
-          "text": "[identity removed]\nAndroid 16\nSamsung Galaxy s22+\nRefract v1.6.752-01a197b6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nLegendary badges are showing their hint text in the activity feed, even for those who have not achieved them yet when tapped on. Unless this is new and expected? Anyway, I spoiler tagged the photo just in case",
-          "date": "2026-11-01T22:56:50.353Z",
-          "is_team": false,
-          "author_key": "Amber Tern",
-          "reactions": []
-        },
-        {
-          "text": "Oooh that's new!, because the description are different if you got it",
-          "date": "2026-11-02T01:30:18.567Z",
-          "is_team": false,
-          "author_key": "Sage Panda",
-          "reactions": []
-        },
-        {
-          "text": "Weird Text Cut off in App.\n\n[name removed]\nNothing Phone 3A\nAndroid 17\nRefract v1.6.752-01a197b6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-02T02:57:16.248Z",
-          "is_team": false,
-          "author_key": "Amber Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "it is new and expected :) just a little hint haha",
-          "date": "2026-11-02T04:24:54.167Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Ivory Seal",
-          "team_name": "Eli",
-          "reactions": [
-            {
-              "emoji": "🤘",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "i'm having Some success with refreshing the fyp, it works sometimes. also i think i see the tiniest little edge of a loading icon? but it's mostly covered by the for you and following tabs!",
-          "date": "2026-11-02T08:11:31.050Z",
-          "is_team": false,
-          "author_key": "Amber Seal",
-          "reactions": []
-        },
-        {
-          "text": "Hi guys. I have the app installed on two different mobile phones (both Android) and I love the latest update, Activity page is amazing!!!! However, it doesn't show the posts in chronological order (newest first), they are all just random. Is that a bug or did I miss something in the Settings?! Thank you",
-          "date": "2026-11-02T08:48:40.781Z",
-          "is_team": false,
-          "author_key": "Misty Heron",
-          "reactions": []
-        },
-        {
-          "text": "Good morning guys! Quick update: it got worse, it’s not just with gifs, now I can’t comment on anything, the app crashes and closes 🥲 I just can comment on my own posts.",
-          "date": "2026-11-02T09:42:30.760Z",
-          "is_team": false,
-          "author_key": "Teal Tern",
-          "reactions": []
-        },
-        {
-          "text": "The app kicks me out everytime I try to reply to comments on the activity feed",
-          "date": "2026-11-02T09:47:17.927Z",
-          "is_team": false,
-          "author_key": "Coral Robin",
-          "reactions": []
-        },
-        {
-          "text": "I don't get the notifications on my phone. I have them on but I don't get anything. I have to open the app and see that I got notifications...",
-          "date": "2026-11-02T11:41:03.972Z",
-          "is_team": false,
-          "author_key": "Ivory Badger",
-          "reactions": [
-            {
-              "emoji": "🙋‍♀️",
-              "count": 2
-            }
-          ]
-        },
-        {
-          "text": "Also media ate so much space on tablet, either it's landscape/portrait mode",
-          "date": "2026-11-02T11:52:26.073Z",
-          "is_team": false,
-          "author_key": "Sage Panda",
-          "reactions": []
-        },
-        {
-          "text": "Not sure if I'm supposed to post this here.\n\nI marked this episode as watched at 11h25, but the rating, character vote and reaction was added around 15h00.\n\nCharacter vote and reaction gets attached to my previous activity from 11h25, while the rating added a new activity entry. They should all be 1 entry, it's not even 24h since I first marked as watched.",
-          "date": "2026-11-02T15:19:28.388Z",
-          "is_team": false,
-          "author_key": "Lilac Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "To add even more context. When another episode is watched the two entries remain, but one becomes crowded with information, while the other erases the previous information.\n\nAnother detail: Both entries seem to remember previous reactions to the activity post, which in a logical point of view doesn't make sense. Let's say I like the activity of someone for an episode, they completely change views in the next episode. What makes you thing my reaction to their activity remains the same? If they changed their views, those that reacted to their activity could also change theirs. 😉",
-          "date": "2026-11-02T16:49:00.759Z",
-          "is_team": false,
-          "author_key": "Lilac Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "Hello, if I open comments bottom sheets from activity feed, there is a very big space at the bottom. I know that I’m on 753 version, but I think the issue is related to this update.\n\nRefract v1.6.753-01a19d74 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied | iOS 27.2",
-          "date": "2026-11-02T20:44:26.115Z",
-          "is_team": false,
-          "author_key": "Golden Wren",
-          "reactions": []
-        },
-        {
-          "text": "trying to comment on post crashes the app \n\niOS 27.2\nRefract v1.6.753-01a19d74 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-02T21:06:43.692Z",
-          "is_team": false,
-          "author_key": "Teal Robin",
-          "reactions": []
-        },
-        {
-          "text": "Whenever I try to like an activity from someone that doesn't have likes I get taken to the comment section instead, not sure if me not having the title as seen matters\nIt's actually just one specific user I cannot like their activity\nI have taken a screenshot of their user if needed",
-          "date": "2026-11-02T23:19:41.971Z",
-          "is_team": false,
-          "author_key": "Amber Fox",
-          "reactions": []
-        },
-        {
-          "text": "[identity removed]\nPhone : Xiaomi 13 5G 3.0.5.0\nRefract v1.6.754-01a1a27a | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nWhen I try to follow someone (via the new notifications in this update), I get a follow error. This is an account where you have to request to follow (and where the profile can only be viewed by followers).",
-          "date": "2026-11-03T18:27:44.114Z",
-          "is_team": false,
-          "author_key": "Ochre Badger",
-          "reactions": []
-        },
-        {
-          "text": "[identity removed]\nPhone : Xiaomi 13 5G 3.0.5.0\nRefract v1.6.754-01a1a27a | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n(Sorry it's me again 🥲)\n\nWhen the same person comments again on a post they’ve already commented on, their new reply gets bundled into the old notification—so it doesn’t actually show up as a new alert 😅 (for example, it might say \"9 hours ago,\" even though the reply was actually posted just 5 minutes ago). And I believe there wasn't a blue dot either, so, aside from the comment preview, there’s no way to tell at all that it’s a new comment.\n\nAlso, when comments come in overnight (from last night or early this morning), the notifications aren’t grouped into a single block, instead, they’re split up, with one section for \"Today\" and another for \"This Week.\" Because of this, I initially assumed the \"This Week\" notifications were ones I’d already read, but that wasn’t the case at all! 😅 (I don't have any screenshots for this one because I’ve already seen all the notifications, so the blue dots are gone now 😅)",
-          "date": "2026-11-04T07:24:55.812Z",
-          "is_team": false,
-          "author_key": "Ochre Badger",
-          "reactions": []
-        },
-        {
-          "text": "😅\n\n Basically, when I answer to a post from the Activity Page and I want to reply with a GIF, it ends up hidden underneath my keyboard. If I tap the GIF button again, nothing happens (well, it actually is open, just beneath the keyboard—if I collapse the keyboard, I can see the GIF menu). If I tap the text input area and then the GIF button, the GIF menu closes and reopens, which makes it visible again.\nAlso, if I’ve already started typing something and then try to add a GIF, everything I’ve written gets deleted! 😅",
-          "date": "2026-11-04T07:35:48.674Z",
-          "is_team": false,
-          "author_key": "Ochre Badger",
-          "reactions": []
-        },
-        {
-          "text": "I have a similar issue with GIFs as in the previous message, but this one looks a little different since both the text and the GIF are removed.\n\nIt definitly worked before. And I think the latest update caused the bug.\n\n[identity removed]\n• Device: LinageOS v19 (Android v12)\n• App version: Refract v1.6.755-01a1a7ff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-04T23:02:54.829Z",
-          "is_team": false,
-          "author_key": "Teal Fox",
-          "reactions": []
-        },
-        {
-          "text": "And I've just realized that the same bug happens as soon as I type @ or #, because it just deleted the whole comment I wrote :octocry:",
-          "date": "2026-11-04T23:51:19.258Z",
-          "is_team": false,
-          "author_key": "Teal Fox",
-          "reactions": []
-        },
-        {
-          "text": "[identity removed]\nPhone : Xiaomi Redmi Note 135G hyperOs 3.0.5.0\nRefract v1.6.755-01a1a7ff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nI uploaded a GIF from my files, and since it was saved as an image, I got a warning when I posted it.\n\nHowever, a few minutes later, I wanted to make another post, and the warning was still there 😅",
-          "date": "2026-11-05T16:13:08.046Z",
-          "is_team": false,
-          "author_key": "Ochre Badger",
-          "reactions": []
-        },
-        {
-          "text": "After the most recent update the app is lagging and takes a few tries to respond",
-          "date": "2026-11-05T21:02:02.177Z",
-          "is_team": false,
-          "author_key": "Coral Robin",
-          "reactions": []
-        },
-        {
-          "text": "[identity removed]\nPhone : samsung s20 FE \nAndroid 13, One UI 5.1\nRefract v1.6.757-01a1b1ce | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nImpossible d'envoyer une critique trop longue, le bouton disparaît",
-          "date": "2026-11-06T18:38:06.332Z",
-          "is_team": false,
-          "author_key": "Sage Lynx",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1566415896677843055/1566415896946282628.webp"
-        }
-      ]
-    },
-    {
-      "id": "1566155120956416170",
-      "title": "Rewatched movie not appearing in profile activity or Encore event",
-      "body": "User rewatched The Batman but it does not show up in their profile activity and does not count toward the Encore event.\n\n📱 via app · MI 8 Lite · Android 10 · v1.6.751-01a179d2\n[identity removed]",
-      "author_key": "Silver Wren",
-      "posted_at": "2026-10-31T18:21:18.591Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.36615781441864237,
-      "reactions": [
-        {
-          "emoji": "👍",
-          "count": 1
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "For me I rewatched Sully yesterday but the count in the challenge didn’t change",
-          "date": "2026-11-02T09:23:04.300Z",
-          "is_team": false,
-          "author_key": "Amber Badger",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1565932660013015101",
       "title": "Watched episodes are not marked",
       "body": "I was checking this tv show and noticed that even though there is progress marked on the poster and there is a date showing the \"last watched\", it appears that I have no episodes watched. I've tried expanding the seasons but nothing changes.\n\n[mention removed]\nSamsung A55, Android 16, Refract 1.6.5",
@@ -1290,7 +203,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3470874873790704,
+      "score": 0.34684887065398673,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -1332,7 +245,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.953808496242823,
+      "score": 0.9531527691768632,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1414,7 +327,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 19.0290526697768,
+      "score": 19.01597052076649,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3102,6 +2015,307 @@
       ]
     },
     {
+      "id": "1574368391148474388",
+      "title": "Import connection issue",
+      "body": "Refract: `@[name removed]`\n\nTrying to import the \"Trakt\" data from the zip file.\nGives the error: \"Couldn't start the import. Check your connection and try again.\"\n\nPixel 8 Pro\nAndroid 17\nRefract `v1.7.764-embedded`\n\nI'm currently trying to convert my data from an unsupported app (using Claude, so who knows how well that's going), so it might be an issue with missing fields in the import data, or it's in the wrong format for Trakt.\nI'd imagine it could be rate limiting too, since I've imported using SIMKL/Trakt some times now, with 2 of the imports having 8000+ entries, iirc.",
+      "author_key": "Velvet Finch",
+      "posted_at": "2026-11-23T10:17:54.800Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:21:01.963Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:21:01.963Z"
+      },
+      "tags": [
+        "🔗 Import",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "Just tested my theory, and it does work when a `watched-history-1.json` file is included in the zip file (with the relevant data ofc.).\n\nSo it's more of an issue with the error message being wrong/misleading, than an issue with importing.",
+          "date": "2026-11-23T10:48:48.552Z",
+          "is_team": false,
+          "author_key": "Velvet Finch",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1574368391148474388/1574368391744069812.webp"
+        }
+      ]
+    },
+    {
+      "id": "1573247177092763728",
+      "title": "Fail to Comment",
+      "body": "Hi .. I can’t comment from this option .. the clip explain better",
+      "author_key": "Ivory Seal",
+      "posted_at": "2026-11-20T08:02:36.538Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:29.250Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:29.250Z"
+      },
+      "tags": [
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.7209789189207536,
+      "reactions": [
+        {
+          "emoji": "👆",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 1,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1573158022073810984",
+      "title": "notifications",
+      "body": "Ever since time went back one hour on November 1st the app is sending me notifications 40 minutes after a show starts. I have tried everything that Google told me to do but nothing is working. And just as an FYI TV Time did the same thing twice a year.",
+      "author_key": "Teal Otter",
+      "posted_at": "2026-11-20T02:08:20.325Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:42.386Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:42.386Z"
+      },
+      "tags": [
+        "🔔 Notifications"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1573012629163610162",
+      "title": "Wrong date when it was imported",
+      "body": "I was going through my fist imports and some of the shows have the wrong watch dates it says dates before the show even aired \nI’m not sure if it’s a bug or not or maybe the file was corrupt but this is what it showing on some of my shows \n\nUser name [name removed] \niPhone 17 pro max iOS 27.2.1\n\nRefract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build",
+      "author_key": "Sage Wren",
+      "posted_at": "2026-11-19T16:30:35.954Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:55.344Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:55.344Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "⚠ Critical",
+        "🔗 Import",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1573012629163610162/1573012629507809483.webp"
+        }
+      ]
+    },
+    {
+      "id": "1572523837650894939",
+      "title": "Shows no longer move between sections under Continue tab.",
+      "body": "When I watch an episode from a show in COMING BACK or OLD FRIENDS, it doesn't move it to ONGOING anymore. Shows also don't age out of ONGOING anymore either. The behavior has been happening for a few weeks. I tried clearing the data & cache, but problem persisted.\n\n[identity removed]\nVersion: 1.6.763-01a1ebaa\nDevice: Samsung Galaxy S22 Ultra\nOS: One UI 8, Android 16",
+      "author_key": "Coral Fox",
+      "posted_at": "2026-11-18T08:08:18.976Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:22.728Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:22.728Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "⚠ Critical"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 1.8038667209686956,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "I received a notification informing me that a show that I was caught up to and had in the up to date section had its status changed to complete but when I opened the page it still showed me up to date, and there was no option to change it to complete. Then I changed the status to watching and now it is stuck there.\n\nOnePlus 12r, oxygen os 16\nVer.1.6.763",
+          "date": "2026-11-18T12:02:40.184Z",
+          "is_team": false,
+          "author_key": "Silver Heron",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1572451232377868298",
+      "title": "Not able to reply to comments",
+      "body": "This has been happening for a while where when I tap on Reply to a comment, nothing happens. Sometimes it works correctly, but most of the time it doesn't. Might be a bug.\n\nMy previous report was marked as fixed, but I'm still having the same issue.",
+      "author_key": "Sage Heron",
+      "posted_at": "2026-11-18T03:19:48.530Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:35.852Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:35.852Z"
+      },
+      "tags": [
+        "🤖 Android",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Here's my info:\n[identity removed]\nDevice: Samsung Galaxy S24+, Android 17, One UI 9.0\nApp version: Refract v1.6.763-01a1ebaa",
+          "date": "2026-11-18T03:21:34.463Z",
+          "is_team": false,
+          "author_key": "Sage Heron",
+          "reactions": []
+        },
+        {
+          "text": "This is happening ONLY when I open the episode from the Continue section. If I open the episode from the Show's overview page, it does work.",
+          "date": "2026-11-22T01:57:47.769Z",
+          "is_team": false,
+          "author_key": "Sage Heron",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1572147670599082096",
+      "title": "Issue of marking a show as \"watching\" and not appearing in \"continue\" section",
+      "body": "No written description was provided.",
+      "author_key": "Silver Panda",
+      "posted_at": "2026-11-17T07:13:33.762Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:09.291Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:09.291Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1572147670599082096/1572147671047741521.webp"
+        }
+      ]
+    },
+    {
+      "id": "1571676084460585121",
+      "title": "Episodes page freezing and slow",
+      "body": "Hi!\nFor a couple of weeks the episode pages are always so slow and crashing when I’m putting the info of the episode. I have to close the app and open again when i’m marking a few episodes… i have an iphone but i know a friend with android that says also happens.\n\nI atrached a video of me marking an episode as watched (rewatched in this case, but the bug is the same), and it took me 2:31min to mark the episode… everytime it seams that I’m not doing nothing , it’s the screen completely frozen and breaking…\n\n- [mention removed] - iphone 16 pro -iOS 27 (mine)\n- [mention removed] - xiaomi note 11 pro 5G - xiaomi hyper ios 1.1.12 tkceuxm (print attached) (my friend)\n\nCan you guys please fix that!🙏\nThank you!",
+      "author_key": "Teal Otter",
+      "posted_at": "2026-11-15T23:59:38.865Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:48.885Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:48.885Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "🤖 Android",
+        "💥 Crash",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Hi. The username i wrote is the refract one. It’s just the same here. @ [name removed] \nApp version: 1.6.761-01a1e0ea\nThank you",
+          "date": "2026-11-16T00:14:33.912Z",
+          "is_team": false,
+          "author_key": "Teal Otter",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1571676084460585121/1571676088671936542.webp"
+        }
+      ]
+    },
+    {
+      "id": "1568943452933333094",
+      "title": "Home screen rows don't match their full section view",
+      "body": "The items in a home screen row don't match the list I see after opening that section. This happens in every section, not just one.\n\n**Example (Binnenkort):**\nHome screen row: Avengers: Doomsday, The Hunger Games: Sunrise on the Reaping, Dune: Part Three, Ebenezer\n\nFull section: Avengers: Doomsday, Eşref Tek, The Hunger Games: Sunrise on the Reaping, Harry Potter, Dune: Part Three, Blade Runner 2099, Ebenezer\n\n[identity removed]\nRefract v1.6.758-01a1b6fb | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Lilac Lynx",
+      "posted_at": "2026-11-08T11:01:08.739Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:15.926Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:15.926Z"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Home screen rows don't match their full section view",
+          "date": "2026-11-08T11:05:58.971Z",
+          "is_team": false,
+          "author_key": "Lilac Lynx",
+          "reactions": []
+        },
+        {
+          "text": "While small, the difference in spacing between the posters is still different in certain sections and match my original report's screenshots. Pulling down to refresh does not change this; nor is a setting limited to just movies or shows.",
+          "date": "2026-11-15T21:41:51.474Z",
+          "is_team": false,
+          "author_key": "Lilac Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1568943452933333094/1568943453386051624.webp"
+        }
+      ]
+    },
+    {
       "id": "1568010782040399892",
       "title": "Guide chapters are misaligned",
       "body": "I feel like this should be two cards next to eachother, or that the width of each chapter should be screen-wide.\n\nAnyone else has it like this, or just me?\n\nHappens as soon as I open the Refracr Guide.\n\nPixel 10 Pro, Android 17\nRefract v1.6.756-01a1aca7 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n[identity removed]",
@@ -3125,6 +2339,33 @@
       "images": [
         {
           "url": "./assets/bugs/1568010782040399892/1568010782271217854.webp"
+        }
+      ]
+    },
+    {
+      "id": "1567852482632097812",
+      "title": "Platforms unavailable for most films",
+      "body": "[identity removed]\nPhone : Xiaomi Redmi Note 13 5g, HyperOs 3.0.5.0, Android 15\nRefract v1.6.755-01a1a7ff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nMany older films (dating back to the late 1800s or early 1900s) have entered the public domain and are therefore distributed on YouTube. Yet, when I visit the page for a film like *La Lune à un mètre*, the only options listed are \"DVD/Blu-ray\" and \"Other.\"\nThis also happens with more recent films. For instance, Mattel recently (as of May) began making older Barbie movies available for free on YouTube, but I cannot indicate that I watched them via that platform. Specifically, the site claims there are no streaming options available in France, even though a perfectly legal one exists.\nFurthermore, before they were made free, these films were available to rent or purchase on YouTube-an option that is also missing (example: Pocahontas can be purchased on YouTube, but this is not listed as an option).\n\nI’ve also noticed this same issue with professional wrestling content; in France, certain PPV events are available on Netflix, yet this isn't reflected as an option. (Additionally, another platform that streams this content is missing entirely—likely because it hasn't been added to the database—as is Viki, which is owned by Rakuten)\n\nWhat I Did:\n\nGo to the film pages to select the platform where I watched them",
+      "author_key": "Sage Wren",
+      "posted_at": "2026-11-05T10:46:01.150Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:20:02.875Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:20:02.875Z"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1567852482632097812/1567852483194392706.webp"
         }
       ]
     },
@@ -3290,6 +2531,765 @@
       ]
     },
     {
+      "id": "1566415896677843055",
+      "title": "Update 752 - Bugs",
+      "body": "Screenshots, usernames, etc.",
+      "author_key": "Sage Tern",
+      "posted_at": "2026-11-01T11:37:32.368Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:21:11.178Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:21:11.178Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [
+        {
+          "tag": "🔍 Investigating"
+        }
+      ],
+      "reactors_unique": 1,
+      "score": 7.343544090549768,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 36,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Update 752 - Bugs",
+          "date": "2026-11-01T11:46:14.007Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Sage Tern",
+          "team_name": "Exooo",
+          "reactions": []
+        },
+        {
+          "text": "[name removed]\niOS 26.6.2\nRefract v1.6.752-01a196e8 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nnot possible to comment on these kind of posts, it opens the entry card and not the text input area of the comment section.",
+          "date": "2026-11-01T12:06:19.644Z",
+          "is_team": false,
+          "author_key": "Azure Finch",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "text": "similar issue regarding comments, I can’t swipe up to reach the text box at the bottom, screenshot is not cropped there\nrefract user [mention removed]\niOS 27.0.1 iPhone 17\nRefract v1.6.752-01a196e8 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-01T12:11:53.645Z",
+          "is_team": false,
+          "author_key": "Lilac Heron",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "that’s what i reported too",
+          "date": "2026-11-01T12:22:24.924Z",
+          "is_team": false,
+          "author_key": "Azure Finch",
+          "reactions": [
+            {
+              "emoji": "💯",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Same here on both of my device\n\n[identity removed]\nXiaomi Pad 7 & REDMI Note 15 Pro, Android 16/HyperOS 3\nRefract v1.6.752-01a196e4 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-01T13:12:06.032Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]\nPhone : Xiaomi 13 5G 3.0.5.0\nRefract : v1.6.752-01a196e4 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nthe spoilers are not displaying",
+          "date": "2026-11-01T13:26:58.170Z",
+          "is_team": false,
+          "author_key": "Ochre Badger",
+          "reactions": []
+        },
+        {
+          "text": "@[name removed]\niPhone 17 Pro Max iOS 27.2\nRefract v1.6.752-01a196e8 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nDon’t have screenshots but it happened two times that the app closed itself when I’m scrolling a comments’ drawer in a written post.",
+          "date": "2026-11-01T15:39:12.260Z",
+          "is_team": false,
+          "author_key": "Teal Tern",
+          "reactions": []
+        },
+        {
+          "text": "[mention removed]\niPhone 17 - currently updating to iOS 27.2, so whatever was before that 😅 \nRefract v1.6.752-01a197bd | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nI can't see reviews/comments by people I follow in the Following tab, but they seem to show up in the For You tab. \n\nAdditionally, is it expected behavior to not be able to 💜 a review/comment and to be redirected to its page where only the emoji panel works?\n\nThank you so much for everything!",
+          "date": "2026-11-01T16:45:58.210Z",
+          "is_team": false,
+          "author_key": "Velvet Tern",
+          "reactions": []
+        },
+        {
+          "text": "i was made aware that pulling down to refresh the following and for you pages should be possible, but it isn't for me! i suspect it might be an issue on iphones?\n\n[name removed]\niphone 13 pro\nios 26.6.2\nRefract v1.6.752-01a197bd | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-01T18:10:51.827Z",
+          "is_team": false,
+          "author_key": "Amber Seal",
+          "reactions": []
+        },
+        {
+          "text": "I tried to comment on Florent’s post but couldn’t 😅 I think it’s because of the gif. Btw it swipes up/down itself 😅",
+          "date": "2026-11-01T19:05:04.922Z",
+          "is_team": false,
+          "author_key": "Teal Tern",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "text": "And also when I open comments to write one, the app suddenly closes 😬\n\n@[name removed]\niPhone 17 Pro Max iOS 27.2\nRefract v1.6.752-01a197bd | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-01T19:12:58.629Z",
+          "is_team": false,
+          "author_key": "Teal Tern",
+          "reactions": [
+            {
+              "emoji": "🙋‍♀️",
+              "count": 4
+            },
+            {
+              "emoji": "😂",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "I cut the video just for privacy reasons but when it stops is because the app closed",
+          "date": "2026-11-01T19:13:53.234Z",
+          "is_team": false,
+          "author_key": "Teal Tern",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]\nSamsung galaxy s26 ultra \nAndroid 17 / one UI 9.0\nRefract v1.6.752-01a197b6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nFollowing page has been like this since shortly after the update, not sure if it's just the server being a bit slow!\n\nFor you page also stuck buffering",
+          "date": "2026-11-01T19:15:16.129Z",
+          "is_team": false,
+          "author_key": "Misty Seal",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]\nAndroid 16\nSamsung Galaxy s22+\nRefract v1.6.752-01a197b6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nLegendary badges are showing their hint text in the activity feed, even for those who have not achieved them yet when tapped on. Unless this is new and expected? Anyway, I spoiler tagged the photo just in case",
+          "date": "2026-11-01T22:56:50.353Z",
+          "is_team": false,
+          "author_key": "Amber Tern",
+          "reactions": []
+        },
+        {
+          "text": "Oooh that's new!, because the description are different if you got it",
+          "date": "2026-11-02T01:30:18.567Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "Weird Text Cut off in App.\n\n[name removed]\nNothing Phone 3A\nAndroid 17\nRefract v1.6.752-01a197b6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-02T02:57:16.248Z",
+          "is_team": false,
+          "author_key": "Amber Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "it is new and expected :) just a little hint haha",
+          "date": "2026-11-02T04:24:54.167Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Ivory Seal",
+          "team_name": "Eli",
+          "reactions": [
+            {
+              "emoji": "🤘",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "i'm having Some success with refreshing the fyp, it works sometimes. also i think i see the tiniest little edge of a loading icon? but it's mostly covered by the for you and following tabs!",
+          "date": "2026-11-02T08:11:31.050Z",
+          "is_team": false,
+          "author_key": "Amber Seal",
+          "reactions": []
+        },
+        {
+          "text": "Hi guys. I have the app installed on two different mobile phones (both Android) and I love the latest update, Activity page is amazing!!!! However, it doesn't show the posts in chronological order (newest first), they are all just random. Is that a bug or did I miss something in the Settings?! Thank you",
+          "date": "2026-11-02T08:48:40.781Z",
+          "is_team": false,
+          "author_key": "Misty Heron",
+          "reactions": []
+        },
+        {
+          "text": "Good morning guys! Quick update: it got worse, it’s not just with gifs, now I can’t comment on anything, the app crashes and closes 🥲 I just can comment on my own posts.",
+          "date": "2026-11-02T09:42:30.760Z",
+          "is_team": false,
+          "author_key": "Teal Tern",
+          "reactions": []
+        },
+        {
+          "text": "The app kicks me out everytime I try to reply to comments on the activity feed",
+          "date": "2026-11-02T09:47:17.927Z",
+          "is_team": false,
+          "author_key": "Coral Robin",
+          "reactions": []
+        },
+        {
+          "text": "I don't get the notifications on my phone. I have them on but I don't get anything. I have to open the app and see that I got notifications...",
+          "date": "2026-11-02T11:41:03.972Z",
+          "is_team": false,
+          "author_key": "Ivory Badger",
+          "reactions": [
+            {
+              "emoji": "🙋‍♀️",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "text": "Also media ate so much space on tablet, either it's landscape/portrait mode",
+          "date": "2026-11-02T11:52:26.073Z",
+          "is_team": false,
+          "author_key": "Sage Panda",
+          "reactions": []
+        },
+        {
+          "text": "Not sure if I'm supposed to post this here.\n\nI marked this episode as watched at 11h25, but the rating, character vote and reaction was added around 15h00.\n\nCharacter vote and reaction gets attached to my previous activity from 11h25, while the rating added a new activity entry. They should all be 1 entry, it's not even 24h since I first marked as watched.",
+          "date": "2026-11-02T15:19:28.388Z",
+          "is_team": false,
+          "author_key": "Lilac Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "To add even more context. When another episode is watched the two entries remain, but one becomes crowded with information, while the other erases the previous information.\n\nAnother detail: Both entries seem to remember previous reactions to the activity post, which in a logical point of view doesn't make sense. Let's say I like the activity of someone for an episode, they completely change views in the next episode. What makes you thing my reaction to their activity remains the same? If they changed their views, those that reacted to their activity could also change theirs. 😉",
+          "date": "2026-11-02T16:49:00.759Z",
+          "is_team": false,
+          "author_key": "Lilac Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "Hello, if I open comments bottom sheets from activity feed, there is a very big space at the bottom. I know that I’m on 753 version, but I think the issue is related to this update.\n\nRefract v1.6.753-01a19d74 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied | iOS 27.2",
+          "date": "2026-11-02T20:44:26.115Z",
+          "is_team": false,
+          "author_key": "Golden Wren",
+          "reactions": []
+        },
+        {
+          "text": "trying to comment on post crashes the app \n\niOS 27.2\nRefract v1.6.753-01a19d74 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-02T21:06:43.692Z",
+          "is_team": false,
+          "author_key": "Teal Robin",
+          "reactions": []
+        },
+        {
+          "text": "Whenever I try to like an activity from someone that doesn't have likes I get taken to the comment section instead, not sure if me not having the title as seen matters\nIt's actually just one specific user I cannot like their activity\nI have taken a screenshot of their user if needed",
+          "date": "2026-11-02T23:19:41.971Z",
+          "is_team": false,
+          "author_key": "Amber Fox",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]\nPhone : Xiaomi 13 5G 3.0.5.0\nRefract v1.6.754-01a1a27a | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nWhen I try to follow someone (via the new notifications in this update), I get a follow error. This is an account where you have to request to follow (and where the profile can only be viewed by followers).",
+          "date": "2026-11-03T18:27:44.114Z",
+          "is_team": false,
+          "author_key": "Ochre Badger",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]\nPhone : Xiaomi 13 5G 3.0.5.0\nRefract v1.6.754-01a1a27a | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n(Sorry it's me again 🥲)\n\nWhen the same person comments again on a post they’ve already commented on, their new reply gets bundled into the old notification—so it doesn’t actually show up as a new alert 😅 (for example, it might say \"9 hours ago,\" even though the reply was actually posted just 5 minutes ago). And I believe there wasn't a blue dot either, so, aside from the comment preview, there’s no way to tell at all that it’s a new comment.\n\nAlso, when comments come in overnight (from last night or early this morning), the notifications aren’t grouped into a single block, instead, they’re split up, with one section for \"Today\" and another for \"This Week.\" Because of this, I initially assumed the \"This Week\" notifications were ones I’d already read, but that wasn’t the case at all! 😅 (I don't have any screenshots for this one because I’ve already seen all the notifications, so the blue dots are gone now 😅)",
+          "date": "2026-11-04T07:24:55.812Z",
+          "is_team": false,
+          "author_key": "Ochre Badger",
+          "reactions": []
+        },
+        {
+          "text": "😅\n\n Basically, when I answer to a post from the Activity Page and I want to reply with a GIF, it ends up hidden underneath my keyboard. If I tap the GIF button again, nothing happens (well, it actually is open, just beneath the keyboard—if I collapse the keyboard, I can see the GIF menu). If I tap the text input area and then the GIF button, the GIF menu closes and reopens, which makes it visible again.\nAlso, if I’ve already started typing something and then try to add a GIF, everything I’ve written gets deleted! 😅",
+          "date": "2026-11-04T07:35:48.674Z",
+          "is_team": false,
+          "author_key": "Ochre Badger",
+          "reactions": []
+        },
+        {
+          "text": "I have a similar issue with GIFs as in the previous message, but this one looks a little different since both the text and the GIF are removed.\n\nIt definitly worked before. And I think the latest update caused the bug.\n\n[identity removed]\n• Device: LinageOS v19 (Android v12)\n• App version: Refract v1.6.755-01a1a7ff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-04T23:02:54.829Z",
+          "is_team": false,
+          "author_key": "Teal Fox",
+          "reactions": []
+        },
+        {
+          "text": "And I've just realized that the same bug happens as soon as I type @ or #, because it just deleted the whole comment I wrote :octocry:",
+          "date": "2026-11-04T23:51:19.258Z",
+          "is_team": false,
+          "author_key": "Teal Fox",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]\nPhone : Xiaomi Redmi Note 135G hyperOs 3.0.5.0\nRefract v1.6.755-01a1a7ff | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nI uploaded a GIF from my files, and since it was saved as an image, I got a warning when I posted it.\n\nHowever, a few minutes later, I wanted to make another post, and the warning was still there 😅",
+          "date": "2026-11-05T16:13:08.046Z",
+          "is_team": false,
+          "author_key": "Ochre Badger",
+          "reactions": []
+        },
+        {
+          "text": "After the most recent update the app is lagging and takes a few tries to respond",
+          "date": "2026-11-05T21:02:02.177Z",
+          "is_team": false,
+          "author_key": "Coral Robin",
+          "reactions": []
+        },
+        {
+          "text": "[identity removed]\nPhone : samsung s20 FE \nAndroid 13, One UI 5.1\nRefract v1.6.757-01a1b1ce | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied\n\nImpossible d'envoyer une critique trop longue, le bouton disparaît",
+          "date": "2026-11-06T18:38:06.332Z",
+          "is_team": false,
+          "author_key": "Sage Lynx",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1566415896677843055/1566415896946282628.webp"
+        }
+      ]
+    },
+    {
+      "id": "1566155120956416170",
+      "title": "Rewatched movie not appearing in profile activity or Encore event",
+      "body": "User rewatched The Batman but it does not show up in their profile activity and does not count toward the Encore event.\n\n📱 via app · MI 8 Lite · Android 10 · v1.6.751-01a179d2\n[identity removed]",
+      "author_key": "Silver Wren",
+      "posted_at": "2026-10-31T18:21:18.591Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:56.410Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:56.410Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.36590608716912343,
+      "reactions": [
+        {
+          "emoji": "👍",
+          "count": 1
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "For me I rewatched Sully yesterday but the count in the challenge didn’t change",
+          "date": "2026-11-02T09:23:04.300Z",
+          "is_team": false,
+          "author_key": "Amber Badger",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1573317355122065558",
+      "title": "Disable the ability to rate for unreleased movies/shows.",
+      "body": "[identity removed]\nDevice: S23+\nOS version: One UI 9.0\nApp version: 1.6.763\n\nI saw these ratings when I was checking out the movies in the 'Coming Soon' list.",
+      "author_key": "Coral Robin",
+      "posted_at": "2026-11-20T12:41:28.284Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:49.823Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:49.823Z"
+      },
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.7349377209494744,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 0,
+      "activity_7d": 1,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1573317355122065558/1573317355369406515.webp"
+        }
+      ]
+    },
+    {
+      "id": "1571762277919625358",
+      "title": "Nuvio not tracking",
+      "body": "Hi, I connected the app to Stremio and Nuvio. I tried it first with Stremio and everything went well, but as soon as I tried with Nuvio the following message appeared and the tracking was not working both in Stremio and Nuvio. If I try to remove the access and just use Stremio, it works but if I instead try to use it only with Nuvio, it doesn't work. Is it possible to separate the two and use a different link to track?",
+      "author_key": "Silver Seal",
+      "posted_at": "2026-11-16T05:42:08.987Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:43.262Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:43.262Z"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Sure, my nickname is [name removed] Phone is Pixel 10 and the app version is Refract v1.6.761-01a1e0e8 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-16T13:36:48.888Z",
+          "is_team": false,
+          "author_key": "Silver Seal",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1571762277919625358/1571762278305628230.webp"
+        }
+      ]
+    },
+    {
+      "id": "1571652361703661691",
+      "title": "trakt sync problem",
+      "body": "I connected my Trakt account to Refract, but I'm having problems with the movies. It completely destroyed my Trakt history; now they all show as unwatched, but they're still there in my history. Some movies, however, show as unwatched on Refract even though they're in my Trakt history, like \"La mia vita da zucchina\". \n\n[identity removed]\nVersion app: 1.6.5\nVersion phone: one ui 9 android 17",
+      "author_key": "Misty Seal",
+      "posted_at": "2026-11-15T22:25:22.919Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:36.879Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:36.879Z"
+      },
+      "tags": [
+        "🔗 Import",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 2,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]\nPhone: A54 Samsung",
+          "date": "2026-11-15T22:54:11.510Z",
+          "is_team": false,
+          "author_key": "Misty Seal",
+          "reactions": []
+        },
+        {
+          "text": "The biggest problem has been solved, that is, it's shown unseen but is in the historical record. The only thing that remains is that films like \"My Life as a Zucchini\" are unseen on Refract",
+          "date": "2026-11-17T13:15:01.135Z",
+          "is_team": false,
+          "author_key": "Misty Seal",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1573673162271621131",
+      "title": "Games marked as \"without console\"",
+      "body": "Even though I've marked the console I played each game on, I still have 7 games showing up as \"no console.\"\nI personally chucked every game so it must be a bug!\n\n[identity removed]\nApp v: 1.6.763\nAndroid v: Android 17\nSmartphone: Samsung S24FE\nSamsung v: One Ui 9",
+      "author_key": "Coral Wren",
+      "posted_at": "2026-11-21T12:15:19.319Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:30.411Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:30.411Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "📊 Stats",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 1.679610951272757,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "I had the same issue, but after checking thoroughly there were some games (and DLCs!) that specified no console. Note that this doesn't track the consoles for which you *own* the game, but the consoles in which you have *played* the game.",
+          "date": "2026-11-21T21:01:11.880Z",
+          "is_team": false,
+          "author_key": "Misty Sparrow",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1573673162271621131/1573673162476879872.webp"
+        }
+      ]
+    },
+    {
+      "id": "1573241429680070727",
+      "title": "Comments not appearing in Activity (Following)",
+      "body": "As per the title, episode comments (and possibly reviews) are not appearing in the Activity → Following feed. This is happening to me and my friend both (both iPhone users).\n\n[identity removed]\nDevice/OS: iPhone 17, 27.2\nApp version: Refract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build",
+      "author_key": "Azure Panda",
+      "posted_at": "2026-11-20T07:39:46.248Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:23.912Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:23.912Z"
+      },
+      "tags": [
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "iOS 27.2",
+          "date": "2026-11-20T07:56:38.377Z",
+          "is_team": false,
+          "author_key": "Azure Panda",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1573720232235770006",
+      "title": "Wrong Air Dates",
+      "body": "I live in Palestine (UTC+2) and some Dexter Res episodes on Refract show that they are being aired on Sunday when in fact Paramount releases them every friday at 7:00 AM ET / 4:00 AM PT. For the first two episodes i thought it was a bug or Refract recalibrating the time zones between me and Paramount’s time zone. But it hasn’t been adjusted since. \n\nTruthfully the only reason i’m reporting this is because I depend on Refract to notify me of new episodes for shows, but I saw a clip online of the new episode of Dexter which ended up spoiling important events, if I knew about the episode earlier, that wouldn’t have happened.\n\n[identity removed]\niPhone 11, iOS 27.2.1\nRefract version: Refract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build",
+      "author_key": "Silver Finch",
+      "posted_at": "2026-11-21T15:22:21.673Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:17.316Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:17.316Z"
+      },
+      "tags": [
+        "🔔 Notifications"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1573720232235770006/1573720232508268696.webp"
+        }
+      ]
+    },
+    {
+      "id": "1570239623236554812",
+      "title": "\"Weekly Ritual\" not unlocking after meeting unlock requirements",
+      "body": "I have recently completed watching and logging VisionQuest. After logging the series finale, I unlocked the \"Finale Night\" badge, however, despite logging all 8 episodes within the described parameters of the \"Weekly Ritual\" badge, it remains locked.\n\n[identity removed]\n-Device: Bluestacks on Windows \n-Refract: v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Coral Finch",
+      "posted_at": "2026-11-12T00:51:39.821Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:10.714Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:10.714Z"
+      },
+      "tags": [
+        "📊 Stats",
+        "🤖 Android",
+        "👤 Profile"
+      ],
+      "status_tags": [],
+      "reactors_unique": 2,
+      "score": 1.3169443456732934,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 2
+        }
+      ],
+      "comments_count": 2,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "Can't find the android version being used but it's Bluestacks V 5.22.288.1014 P64",
+          "date": "2026-11-12T03:42:18.230Z",
+          "is_team": false,
+          "author_key": "Coral Finch",
+          "reactions": []
+        },
+        {
+          "text": "For more data points - it doesn’t look like it’s contributing to weekly ritual for me either\n\n[identity removed]\nPhone: iPhone 16 Pro; iOS 26.5\nRefract: Refract v1.6.759-01a1baac | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied\n\nFinale Night is also not unlocking *but* this is because of TMDB’s data preventing it. TMDB lists the episode as being released on Tuesday but in Aus it is out Wednesday. If this badge requires the ep to be watched on Tuesday then it is impossible for me to have this show contribute.\n\nMight be ideal to allow a 2 day window for the finale night badge to help with TMDB’s data blocking people from legitimately unlocking the badge. Otherwise if RMDB will handle release date/time data better then that’ll be good.",
+          "date": "2026-11-12T10:03:47.770Z",
+          "is_team": false,
+          "author_key": "Velvet Seal",
+          "reactions": [
+            {
+              "emoji": "💜",
+              "count": 1
+            },
+            {
+              "emoji": "👆",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1570239623236554812/1570239623584546879.webp"
+        }
+      ]
+    },
+    {
+      "id": "1568671513702440991",
+      "title": "Goal section shifted",
+      "body": "After the most recent update the goal line is shifted, I believe it’s due to the high number day streak with high number of watched items",
+      "author_key": "Silver Tern",
+      "posted_at": "2026-11-07T17:00:33.374Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:19:04.253Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:19:04.253Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.6734633563869712,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 7,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "[name removed] username\niOS device is 27.2\nRefract v1.6.757-01a1b1d4 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-07T17:07:06.029Z",
+          "is_team": false,
+          "author_key": "Silver Tern",
+          "reactions": []
+        },
+        {
+          "text": "I got the same problem.\n[identity removed]\nAndroid 16\nSamsung A33\nApp Version: v1.6.758-01a1b6fb",
+          "date": "2026-11-07T17:26:54.719Z",
+          "is_team": false,
+          "author_key": "Amber Heron",
+          "reactions": []
+        },
+        {
+          "text": "Atleast It’s not unique to me 😅",
+          "date": "2026-11-07T18:15:39.685Z",
+          "is_team": false,
+          "author_key": "Silver Tern",
+          "reactions": []
+        },
+        {
+          "text": "No it's not! 😅 It's like that for couple of days and I was waiting to see if something will change but it didn't and I asked about it on the Help section to see if it's only for me or for others too before reporting.",
+          "date": "2026-11-07T18:18:25.516Z",
+          "is_team": false,
+          "author_key": "Amber Heron",
+          "reactions": []
+        },
+        {
+          "text": "Yea I did the same, they’ve been pretty good at fixing these things quickly so I waited",
+          "date": "2026-11-07T18:21:04.322Z",
+          "is_team": false,
+          "author_key": "Silver Tern",
+          "reactions": []
+        },
+        {
+          "text": "Yeah one of the mods told me to report it but then someone else wrote there is a report already so I came to your post for save 😅",
+          "date": "2026-11-07T18:22:40.662Z",
+          "is_team": false,
+          "author_key": "Amber Heron",
+          "reactions": [
+            {
+              "emoji": "😂",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Do you still have the problem?",
+          "date": "2026-11-08T13:14:44.525Z",
+          "is_team": false,
+          "author_key": "Amber Heron",
+          "reactions": [
+            {
+              "emoji": "👍",
+              "count": 1
+            },
+            {
+              "emoji": "😔",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1568671513702440991/1568671513975193764.webp"
+        }
+      ]
+    },
+    {
+      "id": "1566425609335476254",
+      "title": "Rewatch date not recorded in correct field",
+      "body": "The rewatch viewing date is not being recorded in the correct field. The first viewing is unknown, but the rewatch date is 01/11/26. Additionally, when viewing the episode list during a rewatch where the rewatch date is unknown, the first viewing date is displayed instead.\n\n📱 via app · SM-A566B · samsung/a56xnaeea/a56x:16/BP4A.251205.006/A566BXXUACZDR_OXMACZDR:user/release-keys 16 · v1.6.751-01a179d2\n[identity removed]",
+      "author_key": "Sage Panda",
+      "posted_at": "2026-11-01T12:16:08.046Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T15:18:57.701Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T15:18:57.701Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 1.3857396654428535,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "https://discord.com/channels/1490347491151970366/1573101027790422066",
+          "date": "2026-11-19T22:24:17.509Z",
+          "is_team": false,
+          "author_key": "Azure Badger",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1566425609335476254/1566425609717030993.webp"
+        }
+      ]
+    },
+    {
       "id": "1566425533288419409",
       "title": "Scared cat badge not awarded despite meeting conditions",
       "body": "User watched 8 out of 32 proposed films and received the pumpkin badge as expected, but did not receive the scared cat badge that should have been awarded as a reward. The badge does not appear in their badge list.\n\n📱 via app · iPhone 17 · iOS 27.0 · v1.6.751-01a179df\n[identity removed]",
@@ -3363,7 +3363,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.605999218918586,
+      "score": 1.6048951218593714,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3447,7 +3447,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8649197554059609,
+      "score": 1.8636376548959737,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 3,
@@ -3489,7 +3489,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.8827997589205183,
+      "score": 1.8815053662132082,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -3617,7 +3617,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.9005291649317552,
+      "score": 0.8999100664969456,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -3743,7 +3743,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5054102536003665,
+      "score": 0.505062792675029,
       "reactions": [
         {
           "emoji": "💜",
@@ -3967,7 +3967,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.8065886334813963,
+      "score": 3.803971668749187,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4094,7 +4094,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.812207579268106,
+      "score": 1.8109617174797652,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4162,7 +4162,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 6.490127119022316,
+      "score": 6.485665267371563,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4609,7 +4609,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.256643012769054,
+      "score": 2.255091609203757,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -4862,7 +4862,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.983366794895705,
+      "score": 0.982690747003786,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -4936,7 +4936,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3307161998818051,
+      "score": 0.3304888381375261,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -4999,7 +4999,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0101381126980022,
+      "score": 1.0094436599819037,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 1,
@@ -5054,7 +5054,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 4.7476381510078465,
+      "score": 4.744374230789834,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5154,7 +5154,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.13807853271699114,
+      "score": 0.1379836060818362,
       "reactions": [
         {
           "emoji": "💜",
@@ -5236,7 +5236,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 22.388664392009865,
+      "score": 22.373272567266884,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5582,7 +5582,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.3145477195893864,
+      "score": 2.3129565075262,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5666,7 +5666,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 4.923397389062407,
+      "score": 4.92001263736728,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5836,7 +5836,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6123110443053104,
+      "score": 0.611890090910453,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5868,7 +5868,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 6,
-      "score": 11.47858105929887,
+      "score": 11.470689730684114,
       "reactions": [
         {
           "emoji": "💜",
@@ -6593,7 +6593,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.0857634738749935,
+      "score": 1.085017030013511,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6677,7 +6677,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5074534422603412,
+      "score": 0.5071045766776634,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6968,7 +6968,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 2.138591598673353,
+      "score": 2.1371213534408895,
       "reactions": [
         {
           "emoji": "👍",
@@ -7890,7 +7890,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.4131270106815117,
+      "score": 0.4128429929110158,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -7934,7 +7934,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 0.9548045541793571,
+      "score": 0.9541481423405616,
       "reactions": [
         {
           "emoji": "😂",
@@ -8055,7 +8055,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3820096597504083,
+      "score": 0.38174703462771,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8266,7 +8266,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07018312686519694,
+      "score": 0.07013487716303925,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8301,7 +8301,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.6207238947826085,
+      "score": 0.6202971576965999,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -8708,7 +8708,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.019272514928378823,
+      "score": 0.019259265403220007,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8747,7 +8747,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.018228556432918454,
+      "score": 0.018216024611411797,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -8828,7 +8828,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.028164403775178877,
+      "score": 0.028145041228163675,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8917,7 +8917,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0005004414568510481,
+      "score": 0.000500097411888691,
       "reactions": [
         {
           "emoji": "💜",
@@ -9169,7 +9169,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.021660496591413708,
+      "score": 0.02164560536960862,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -9323,7 +9323,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0037312939828911275,
+      "score": 0.0037287287819464158,
       "reactions": [
         {
           "emoji": "➕",
@@ -9532,7 +9532,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0015821290257037298,
+      "score": 0.0015810413389950437,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9604,7 +9604,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.014531034210303682,
+      "score": 0.014521044372232807,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -9664,7 +9664,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0018568413061187835,
+      "score": 0.0018555647594048373,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9736,7 +9736,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0009536129731673323,
+      "score": 0.0009529573805201502,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -9799,7 +9799,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.001337739996904182,
+      "score": 0.0013368203234826901,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -9868,7 +9868,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.000016710365032031045,
+      "score": 0.000016698876941207007,
       "reactions": [
         {
           "emoji": "‼️",
@@ -9940,7 +9940,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00016805773491335974,
+      "score": 0.00016794219808824153,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9993,7 +9993,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.01161342587508758,
+      "score": 0.011605441842962876,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10083,7 +10083,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0001462960370773983,
+      "score": 0.000146195461048214,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10145,7 +10145,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00004422208928818727,
+      "score": 0.000044191687356380415,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10306,7 +10306,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0010305129227136899,
+      "score": 0.00102980446266337,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10468,7 +10468,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0005527868204932176,
+      "score": 0.0005524067889865459,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10579,7 +10579,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0007789787957262271,
+      "score": 0.0007784432610961847,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10935,7 +10935,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00004418604386133484,
+      "score": 0.000044155666710143893,
       "reactions": [
         {
           "emoji": "💜",
@@ -10963,7 +10963,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.004457795028737872,
+      "score": 0.0044547303707207124,
       "reactions": [
         {
           "emoji": "👆",
@@ -11027,7 +11027,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00003090485969095562,
+      "score": 0.000030883613127259774,
       "reactions": [
         {
           "emoji": "🤔",
@@ -11087,7 +11087,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0010351625183816545,
+      "score": 0.0010344508618136492,
       "reactions": [
         {
           "emoji": "👆",
@@ -11265,7 +11265,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.007679801709683446,
+      "score": 0.007674521977051493,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -11420,10 +11420,10 @@
           "text": "there is a suggestion related to this here\nhttps://discord.com/channels/1490347491151970366/1514182910872129547",
           "date": "2026-07-18T05:55:58.499Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Ivory Badger",
-          "team_name": "Eli",
-          "reactions": []
+          "reactions": [],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "Ah that's nice.. but it feels like a bug or a problem that needs to be fixed instead of a suggestion for the section 😅😌",
@@ -11433,11 +11433,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1527805428392529971/1527805429114081340.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1508156611464659215",
@@ -11494,9 +11490,7 @@
           "text": "Can you DM me the files so we can fix this 😊",
           "date": "2026-07-12T07:22:43.844Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ivory Heron",
-          "team_name": "J",
           "reactions": [
             {
               "emoji": {
@@ -11505,7 +11499,9 @@
               },
               "count": 1
             }
-          ]
+          ],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "Omg didn’t expect such a fast reply thank you!! I’ll grab my laptop and DM the files now",
@@ -11532,15 +11528,15 @@
           "text": "I would recommend to reimport and send your usernames and we will try to bump you tomorrow or the day after when we have more time 🙏🏾",
           "date": "2026-07-13T19:25:01.546Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ivory Heron",
-          "team_name": "J",
           "reactions": [
             {
               "emoji": "💜",
               "count": 1
             }
-          ]
+          ],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "No rush from my side, not going to change the past and I have the backup. If you say the import will now consider the watch history, I’ll reimport and let it go through the normal process. If not, I can wait until Trakt import is fixed.\n\nThanks a lot, I really appreciate your work and the team.",
@@ -11560,9 +11556,7 @@
           "text": "hi, i think it will be done by the thursday probably, sorry for the delay 🥲",
           "date": "2026-07-14T21:46:59.289Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ivory Heron",
-          "team_name": "J",
           "reactions": [
             {
               "emoji": {
@@ -11571,7 +11565,9 @@
               },
               "count": 1
             }
-          ]
+          ],
+          "team_role": "dev",
+          "team_name": "J"
         },
         {
           "text": "Okee thanks for letting me know! Queue hasn’t gone down much overnight but hopefully not too long of a wait again 🤞🏽",
@@ -11581,11 +11577,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1525764143016054914/1525764143704051802.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1536081567300976790",
@@ -11625,10 +11617,10 @@
           "text": "Hey everyone, ghost activity is being healed today. 🙂",
           "date": "2026-08-25T08:49:43.040Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Silver Fox",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Mine is still there",
@@ -11655,26 +11647,22 @@
           "text": "Yes!",
           "date": "2026-08-27T12:29:49.548Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Silver Fox",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "These are double entries caused by bad data in July imports. I've cleaned the maximum I could which was the ones I was sure that I could clean for you. Then I left the ones where I didn't want to take a risk between removing true data.",
           "date": "2026-08-27T12:30:55.467Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Silver Fox",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1536081567300976790/1536081567921868840.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1534494178338144326",
@@ -11718,15 +11706,15 @@
           "text": "A cleaning is ongoing for these!",
           "date": "2026-08-05T16:25:49.600Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Ochre Heron",
-          "team_name": "Exooo",
           "reactions": [
             {
               "emoji": "❤️",
               "count": 2
             }
-          ]
+          ],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "Did the cleaning complete? I still see those in my Activity.",
@@ -11746,15 +11734,15 @@
           "text": "\"the fix ships with the next app update\" so it is not released yet :)",
           "date": "2026-08-15T08:00:31.499Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Coral Heron",
-          "team_name": "Eli",
           "reactions": [
             {
               "emoji": "👍",
               "count": 1
             }
-          ]
+          ],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "I can confirm the problem still persists in Refract v1.6.716-01a02013.",
@@ -11818,11 +11806,7 @@
           ]
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1534942873231949915/1534942873504448522.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1528421355890938057",
