@@ -1,7 +1,34 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-11-23T09:50:04.354Z",
+  "generated_at": "2026-11-23T10:40:04.309Z",
   "bugs": [
+    {
+      "id": "1574368391148474388",
+      "title": "Import connection issue",
+      "body": "Refract: `@[name removed]`\n\nTrying to import the \"Trakt\" data from the zip file.\nGives the error: \"Couldn't start the import. Check your connection and try again.\"\n\nPixel 8 Pro\nAndroid 17\nRefract `v1.7.764-embedded`\n\nI'm currently trying to convert my data from an unsupported app (using Claude, so who knows how well that's going), so it might be an issue with missing fields in the import data, or it's in the wrong format for Trakt.\nI'd imagine it could be rate limiting too, since I've imported using SIMKL/Trakt some times now, with 2 of the imports having 8000+ entries, iirc.",
+      "author_key": "Velvet Finch",
+      "posted_at": "2026-11-23T10:17:54.800Z",
+      "status": "open",
+      "resolved_at": null,
+      "terminal_attribution": null,
+      "tags": [
+        "🔗 Import",
+        "⏳ Waiting on us",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1574368391148474388/1574368391744069812.webp"
+        }
+      ]
+    },
     {
       "id": "1574226497454080131",
       "title": "Up to date but still showing in ongoing",
@@ -12,21 +39,25 @@
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
+        "⏳ Waiting on us",
         "📊 Stats",
         "👤 Profile"
       ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-23T00:54:59.089Z"
-        }
-      ],
+      "status_tags": [],
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
+      "comments_count": 1,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "[identity removed]\nDevice: Samsung Galaxy s9 - Android Version 10\nApp Version: v1.6.763-embedded",
+          "date": "2026-11-23T10:34:03.158Z",
+          "is_team": false,
+          "author_key": "Ivory Seal",
+          "reactions": []
+        }
+      ],
       "images": []
     },
     {
@@ -43,7 +74,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9246897673756043,
+      "score": 1.9180837033408946,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -76,7 +107,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.9064119554935597,
+      "score": 1.8998686259305315,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 3,
@@ -144,62 +175,6 @@
       ]
     },
     {
-      "id": "1573844737717440604",
-      "title": "I can't see the monthly wraps from the beginning.",
-      "body": "When I click to view the wrap, it jumps straight to the last photo. And no matter how many times I click to the left to go back to the beginning, it doesn't work.",
-      "author_key": "Lilac Wren",
-      "posted_at": "2026-11-21T23:37:06.093Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "👤 Profile",
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "[identity removed]\nDevice and OS: POCO X5 PRO 5g, 2.0.17.0.UMSMIXM\nRefract Version: Refract v1.6.763-embedded | native 1.6.6 (77) | runtime 1.6.6 | state store-build",
-          "date": "2026-11-21T23:43:57.474Z",
-          "is_team": false,
-          "author_key": "Lilac Wren",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1573794163076366538",
-      "title": "Wishlist section broken in home after gaming section added",
-      "body": "Since the gaming section was added, the wishlist section on the home page no longer displays all scheduled films, TV series, and anime, though they appear correctly in the personal library. Additionally, the Samsung widget stopped working properly during the same period—clicking to mark an episode as completed from the widget doesn't register the action; the app must be opened directly.\n\n📱 via app · SM-S948B · Android 17 · v1.6.763-embedded\n[identity removed]",
-      "author_key": "Ivory Seal",
-      "posted_at": "2026-11-21T20:16:08.159Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1573794163076366538/1573794163755974807.webp"
-        }
-      ]
-    },
-    {
       "id": "1573720232235770006",
       "title": "Wrong Air Dates",
       "body": "I live in Palestine (UTC+2) and some Dexter Res episodes on Refract show that they are being aired on Sunday when in fact Paramount releases them every friday at 7:00 AM ET / 4:00 AM PT. For the first two episodes i thought it was a bug or Refract recalibrating the time zones between me and Paramount’s time zone. But it hasn’t been adjusted since. \n\nTruthfully the only reason i’m reporting this is because I depend on Refract to notify me of new episodes for shows, but I saw a clip online of the new episode of Dexter which ended up spoiling important events, if I knew about the episode earlier, that wouldn’t have happened.\n\n[identity removed]\niPhone 11, iOS 27.2.1\nRefract version: Refract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build",
@@ -242,7 +217,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.7181614621663293,
+      "score": 1.712264260012801,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -280,7 +255,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 0.7518060466746016,
+      "score": 0.7492256417853574,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -293,53 +268,6 @@
       "images": [
         {
           "url": "./assets/bugs/1573317355122065558/1573317355369406515.webp"
-        }
-      ]
-    },
-    {
-      "id": "1573280154971541625",
-      "title": "Journal doesn’t update on profile",
-      "body": "Hi! I’m having this issue since 4 days ago. My activity doesn’t update on my profile, but when I enter my journal it’s updated there.\n\n[identity removed]\n• Device: iPhone 17 Pro Max iOS 27.2.1\n• Refract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build\n\nThanks for the help! :octolove:",
-      "author_key": "Golden Tern",
-      "posted_at": "2026-11-20T10:13:39.077Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "👤 Profile"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 2.918460456332792,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 2,
-      "activity_7d": 3,
-      "comments": [
-        {
-          "text": "Hi! Update: This problem persists but only with games.",
-          "date": "2026-11-22T14:58:15.300Z",
-          "is_team": false,
-          "author_key": "Golden Tern",
-          "reactions": []
-        },
-        {
-          "text": "Same on android, and only with games!\n\n[identity removed]\nDevice: Samsung galaxy S10e (Android 12)\nRefract v1.7.764",
-          "date": "2026-11-23T03:09:20.542Z",
-          "is_team": false,
-          "author_key": "Velvet Wren",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1573280154971541625/1573280155479187527.webp"
         }
       ]
     },
@@ -472,7 +400,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6259100187133431,
+      "score": 0.6237617235783693,
       "reactions": [
         {
           "emoji": "💜",
@@ -481,70 +409,6 @@
       ],
       "comments_count": 0,
       "activity_7d": 1,
-      "comments": [],
-      "images": []
-    },
-    {
-      "id": "1572586494944739329",
-      "title": "Watchlist in movies section only shows items added after update",
-      "body": "Since the games update, the watchlist in the movies section only displays items added after the update. Clicking on the section title takes you to the full watchlist where everything appears correctly.\n\n📱 via app · CPH2399 · Android 14 · v1.6.763-01a1ebaa\n[identity removed]",
-      "author_key": "Amber Robin",
-      "posted_at": "2026-11-18T12:17:17.639Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 1.8525269974421534,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 1,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "Having the same issue but for all watched media\n[name removed]\nSamsung Galaxy s22+\nAndroid 16\nRefract v1.6.763-01a1ebaa | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-18T12:59:45.348Z",
-          "is_team": false,
-          "author_key": "Ivory Finch",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1572586494944739329/1572586495238217768.webp"
-        }
-      ]
-    },
-    {
-      "id": "1572533470436003860",
-      "title": "Home page Your Watchlist Sorting issue",
-      "body": "Your Watchlist doesn't sort on the homepage by last released. It does for the first Two entries, but then the rest are random. This issue doesn't seem to effect the Games Planned list on the homepage.",
-      "author_key": "Ivory Seal",
-      "posted_at": "2026-11-18T08:46:35.611Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI"
-      ],
-      "status_tags": [
-        {
-          "tag": "💬 Waiting on user",
-          "applied_at": "2026-11-18T08:47:30.801Z"
-        }
-      ],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
       "comments": [],
       "images": []
     },
@@ -568,7 +432,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 1.8452691562317904,
+      "score": 1.8389356855530514,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -652,100 +516,6 @@
       ]
     },
     {
-      "id": "1572391732581114019",
-      "title": "% Completion not updating / not calculating correctly (shows unfinished game at top of Playing list)",
-      "body": "Hey, I’m having an issue with the % completion feature.\n\n**What I’m seeing:**\n- The % completion is not working/updating for me.\n- At the top of my “Playing” list it still shows a game I haven’t marked as started/completed yet (I like watching others play it first and only add time/% as I go).\n- I’m not sure if the % is supposed to be only for games I’ve marked, or for the entire collection / everything together. \n\nI have a video recording of the problem. I can send it here or wherever is most convenient.\n\nMy user [mention removed]Alex\nThanks!\nMy version \n\nRefract v1.6.763-01a1ebb1 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Ochre Otter",
-      "posted_at": "2026-11-17T23:23:22.673Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📊 Stats"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "I forgot to add I just got a new phone but same number I now have a iPhone 14 IOS 27.2.1 I did have an iPhone SE.",
-          "date": "2026-11-17T23:28:52.005Z",
-          "is_team": false,
-          "author_key": "Ochre Otter",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1572380204150562817",
-      "title": "Unable to post gifs as reply to comments, messages or posts in the app",
-      "body": "I have tried to upload a gif as a response on many different posts and images and I always get an error.\n\nOneplus 12r, oxygen os 16\nRefract Ver 1.6.763",
-      "author_key": "Ochre Wren",
-      "posted_at": "2026-11-17T22:37:34.081Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "it is different as the gifs are not missing rather i am unable to use gifs as a reply",
-          "date": "2026-11-17T23:07:57.832Z",
-          "is_team": false,
-          "author_key": "Ochre Wren",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1572355411300847686",
-      "title": "Total show hour is not showing for some shows",
-      "body": "The bug is not a big deal, but seeing how many hours a show is, is a very cool feature, but for some shows it cuts off at the number of hours, as is the case for adventure time, I thought it might be like that for every show with double digit seasons, and triple digit episodes but as you can see the walking dead does show the total hours. \n\nHope you guys fix that, thanks",
-      "author_key": "Silver Otter",
-      "posted_at": "2026-11-17T20:59:03.005Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "[identity removed]\nDevice: OnePlus 15r, Android 16\n\nRefract v1.6.762-01a1ea2a | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-          "date": "2026-11-17T21:03:39.753Z",
-          "is_team": false,
-          "author_key": "Silver Otter",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1572355411300847686/1572355411464421467.webp"
-        }
-      ]
-    },
-    {
       "id": "1572344589724029059",
       "title": "Watched episode count mismatch for \"Rote Rosen\" between watchlist and series page",
       "body": "The number of watched episodes for the series \"Rote Rosen\" in the watchlist does not match the number displayed on the series page. The number on the series page is correct, while the watchlist count is incorrect.\n\n📱 via app · 25010PN30G · Android 16 · v1.6.762-01a1e512\n[identity removed]",
@@ -765,124 +535,6 @@
       "activity_7d": 0,
       "comments": [],
       "images": []
-    },
-    {
-      "id": "1572308807827202230",
-      "title": "Watch List Empty",
-      "body": "I imported my games but somehow it emptied out my watchlist for tv and movies and everything I had there is gone. \n\n[identity removed]",
-      "author_key": "Lilac Seal",
-      "posted_at": "2026-11-17T17:53:51.871Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 6.634524566813739,
-      "reactions": [
-        {
-          "emoji": "🛠️",
-          "count": 1
-        }
-      ],
-      "comments_count": 10,
-      "activity_7d": 12,
-      "comments": [
-        {
-          "text": "i still see your full library on my end. could you kill and restart the app?",
-          "date": "2026-11-17T17:56:35.586Z",
-          "is_team": true,
-          "team_role": "mod",
-          "author_key": "Ochre Seal",
-          "team_name": "Eli",
-          "reactions": []
-        },
-        {
-          "text": "iOS version is 26.6.2",
-          "date": "2026-11-17T17:56:43.221Z",
-          "is_team": false,
-          "author_key": "Lilac Seal",
-          "reactions": []
-        },
-        {
-          "text": "Will do!",
-          "date": "2026-11-17T17:56:47.721Z",
-          "is_team": false,
-          "author_key": "Lilac Seal",
-          "reactions": []
-        },
-        {
-          "text": "Restarted and still no watchlist. I have the rest of my library but that’s still missing",
-          "date": "2026-11-17T17:57:52.270Z",
-          "is_team": false,
-          "author_key": "Lilac Seal",
-          "reactions": []
-        },
-        {
-          "text": "Same issue. I have Android\nI think this happen when you add too much games in watchlist\nBut if you go in Watchlist section it's all right. It's a preview issue only",
-          "date": "2026-11-17T18:00:33.125Z",
-          "is_team": false,
-          "author_key": "Sage Finch",
-          "reactions": []
-        },
-        {
-          "text": "Oh okay you’re right. I do see it if I click into it.",
-          "date": "2026-11-17T18:01:38.704Z",
-          "is_team": false,
-          "author_key": "Lilac Seal",
-          "reactions": [
-            {
-              "emoji": {
-                "name": "firePurple",
-                "id": "1542906418749898752"
-              },
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "Thank you!",
-          "date": "2026-11-17T18:03:30.487Z",
-          "is_team": false,
-          "author_key": "Lilac Seal",
-          "reactions": []
-        },
-        {
-          "text": "np :octolove:",
-          "date": "2026-11-17T18:04:23.882Z",
-          "is_team": false,
-          "author_key": "Sage Finch",
-          "reactions": []
-        },
-        {
-          "text": "It seems that the watchlist preview on the start page only shows a fix amount of items backwards. If you added a lot of games and filter for movies the previously added shows don’t show. Newly added movies or shows added after the games will be shown again. \n\nAt least that’s what I noticed",
-          "date": "2026-11-17T18:10:59.511Z",
-          "is_team": false,
-          "author_key": "Silver Finch",
-          "reactions": [
-            {
-              "emoji": "👍",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "text": "I have the same issue but my Watchlist is only empty on the Homescreen when i open the Watchlist is appears normally. The Issue only appears for the Movies & TV Tab on the Homescreen.",
-          "date": "2026-11-22T20:50:15.915Z",
-          "is_team": false,
-          "author_key": "Coral Wren",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1572308807827202230/1572308809072771092.webp"
-        }
-      ]
     },
     {
       "id": "1572147670599082096",
@@ -929,7 +581,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.6417307514624042,
+      "score": 1.636095880505148,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1009,31 +661,6 @@
       ]
     },
     {
-      "id": "1571676168816558261",
-      "title": "Unable to remove from watched library",
-      "body": "I am unable to remove a show from my library \n\nUsername [name removed] \nDevice iPhone iOS 27.2.1 \nRefract v1.6.761-01a1e0ea | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Misty Robin",
-      "posted_at": "2026-11-15T23:59:58.977Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "📱 iOS",
-        "🤖 Android",
-        "⚠ Critical",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": []
-    },
-    {
       "id": "1571676084460585121",
       "title": "Episodes page freezing and slow",
       "body": "Hi!\nFor a couple of weeks the episode pages are always so slow and crashing when I’m putting the info of the episode. I have to close the app and open again when i’m marking a few episodes… i have an iphone but i know a friend with android that says also happens.\n\nI atrached a video of me marking an episode as watched (rewatched in this case, but the bug is the same), and it took me 2:31min to mark the episode… everytime it seams that I’m not doing nothing , it’s the screen completely frozen and breaking…\n\n- [mention removed] - iphone 16 pro -iOS 27 (mine)\n- [mention removed] - xiaomi note 11 pro 5G - xiaomi hyper ios 1.1.12 tkceuxm (print attached) (my friend)\n\nCan you guys please fix that!🙏\nThank you!",
@@ -1109,37 +736,6 @@
       "images": []
     },
     {
-      "id": "1571316315245781114",
-      "title": "Replies on Comments Button",
-      "body": "When I tap on \"See all replies\" option in a comment, nothing happens, it doesn't show the rest of the replies.\n\nHere's my info:\n[identity removed]\nDevice: Samsung Galaxy S24+, Android 17, One UI 9.0\nApp version: Refract v1.6.759-01a1baa6",
-      "author_key": "Misty Fox",
-      "posted_at": "2026-11-15T00:10:03.200Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "I'm still having this issue",
-          "date": "2026-11-18T03:17:02.415Z",
-          "is_team": false,
-          "author_key": "Misty Fox",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1570239623236554812",
       "title": "\"Weekly Ritual\" not unlocking after meeting unlock requirements",
       "body": "I have recently completed watching and logging VisionQuest. After logging the series finale, I unlocked the \"Finale Night\" badge, however, despite logging all 8 episodes within the described parameters of the \"Weekly Ritual\" badge, it remains locked.\n\n[identity removed]\n-Device: Bluestacks on Windows \n-Refract: v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -1156,7 +752,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.347170915287903,
+      "score": 1.3425470546102285,
       "reactions": [
         {
           "emoji": "💜",
@@ -1195,129 +791,6 @@
           "url": "./assets/bugs/1570239623236554812/1570239623584546879.webp"
         }
       ]
-    },
-    {
-      "id": "1569975970624970752",
-      "title": "App crashes on activity feed",
-      "body": "Sometimes the app crashes when I'm scrolling down the activity feed and tap on that button on top that shows \"New Posts\". It doesn't happen every time and I can't figure out what causes it. When it happens my display shows blackscreen and I can't do anything but totally close the app. \n\n[identity removed]\nDevice: Galaxy S21 FE 5G, Android 16\nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Ivory Tern",
-      "posted_at": "2026-11-11T07:24:00.140Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "🤖 Android",
-        "💥 Crash"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0.9205648453881151,
-      "reactions": [],
-      "comments_count": 6,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "I've had the same problem. All I could notice is that it doesn't happen all the time and I've no clue what is triggering it.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.762-01a1e512",
-          "date": "2026-11-11T15:22:04.198Z",
-          "is_team": false,
-          "author_key": "Ivory Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "I was able to screen record this one. It was November 12 at 23:33. Timezone is UTC+0.\n\nIn this instance I was swipping between the episodes and things started to glitch, tried to see how else it was glitching and it would crash while I changed the date. Everything becomes black, I'm not kicked out of the app but I'm unable to do anything.\n\nThere were other situations, but I forgot to take notes. I'll take notes next time. 😉",
-          "date": "2026-11-14T21:21:33.655Z",
-          "is_team": false,
-          "author_key": "Ivory Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "There. November 14, 23:09. Same timezone.\n\nThings that might be important.\nI was scrolling through the activity feed. Got bored and locked my phone without closing the app. Unlocked my phone, the app was already opened and the notification of a new post was there, clicked it and it went all black. The app stays like this even if I lock my phone again and navigate to other apps.\n\nInteresting thing, it's a different \"black\" screen from the previous one. Lol",
-          "date": "2026-11-14T23:16:39.192Z",
-          "is_team": false,
-          "author_key": "Ivory Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "Another one November 15, 10h03. Same timezone. Same situation where I left the app opened and locked the phone, came back and saw it. In this video you can see that I'm able to scroll up and down just fine before tapping the button.",
-          "date": "2026-11-15T10:07:08.056Z",
-          "is_team": false,
-          "author_key": "Ivory Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "November 15th, 11:29. UTC+1\nI was scrolling through the activity feed, tapped on the button and the screen blackened. I made a screenrecord after crashing, maybe this is also helpful",
-          "date": "2026-11-15T10:35:35.763Z",
-          "is_team": false,
-          "author_key": "Ivory Tern",
-          "reactions": []
-        },
-        {
-          "text": "November 15, 13h42. Same timezone.\n\nThis is the last test I wanted to do. This time the app wasn't on standby, I was just normally scrolling and was able to add a reaction on a post too. I clicked the button and black screen again. I've no clue why sometimes this happens and others work just fine.\n\nIf you need additional testing let me know. 😉",
-          "date": "2026-11-15T13:46:25.945Z",
-          "is_team": false,
-          "author_key": "Ivory Sparrow",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
-      "id": "1569375841014521866",
-      "title": "Title posters disappear when scrolling through custom lists",
-      "body": "When viewing a list that contains both movies and series, if I select the filter Movies and scroll through the list, all the posters after the first 9 movies gradually disappear.\n\nWhat you did right before it happened: Opened an already existing list, selected Movies and scrolled through the list. Nothing else.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.762-01a1e512",
-      "author_key": "Golden Sparrow",
-      "posted_at": "2026-11-09T15:39:18.091Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 1,
-      "score": 0.5166550180509129,
-      "reactions": [
-        {
-          "emoji": "💜",
-          "count": 1
-        }
-      ],
-      "comments_count": 4,
-      "activity_7d": 2,
-      "comments": [
-        {
-          "text": "Title posters disappear when scrolling through custom lists",
-          "date": "2026-11-10T10:53:22.422Z",
-          "is_team": false,
-          "author_key": "Golden Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "I just noticed this doesn't happen when the default custom order is selected, but it happens with the other sort types. 😉",
-          "date": "2026-11-13T00:24:15.609Z",
-          "is_team": false,
-          "author_key": "Golden Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "Ooops sorry my bad. Out of habit I copied the message from past reports. My app is up to date in setting it says it's the: v1.6.759-01a1baa6\n\nI don't remember exactly, but most likely it was last released.",
-          "date": "2026-11-14T21:12:50.392Z",
-          "is_team": false,
-          "author_key": "Golden Sparrow",
-          "reactions": []
-        },
-        {
-          "text": "Update: Turns out it does happen with the default custom order too. But definitely this doesn't happen all times, I just don't know how to replicate it. I also updated this to the last version v1.6.762-01a1e512",
-          "date": "2026-11-16T17:46:35.178Z",
-          "is_team": false,
-          "author_key": "Golden Sparrow",
-          "reactions": []
-        }
-      ],
-      "images": []
     },
     {
       "id": "1568943452933333094",
@@ -1376,7 +849,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6889207195561884,
+      "score": 0.686556154385547,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -1517,97 +990,6 @@
       ]
     },
     {
-      "id": "1567476227868991560",
-      "title": "Favorite characters overlapping again after voting",
-      "body": "I reported this before on October 4 and unfortunately that report was deleted, but the problem seems to be back.\n\nWhat you did right before it happened: Voted for one character, changed my vote and the character pictures overlapped.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.762-01a1e512",
-      "author_key": "Azure Wren",
-      "posted_at": "2026-11-04T09:50:55.024Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "🤖 Android"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 1,
-      "comments": [
-        {
-          "text": "Still happening in app version: v1.6.762-01a1e512",
-          "date": "2026-11-16T17:28:23.325Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        }
-      ],
-      "images": [
-        {
-          "url": "./assets/bugs/1567476227868991560/1567476228204666940.webp"
-        }
-      ]
-    },
-    {
-      "id": "1567331638948405338",
-      "title": "Customize section settings not translated to French",
-      "body": "The customize section in settings is displayed only in English, even though the app is set to French language.\n\n📱 via app · SM-A715F · samsung/a71naeea/a71:13/TP1A.220624.014/A715FXXUADWH4:user/release-keys 13 · v1.6.754-01a1a27a\n[identity removed]",
-      "author_key": "Azure Robin",
-      "posted_at": "2026-11-04T00:16:22.339Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 0,
-      "activity_7d": 0,
-      "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1567331638948405338/1567331639246331934.webp"
-        }
-      ]
-    },
-    {
-      "id": "1567250607964815431",
-      "title": "No swipe right on profile",
-      "body": "I dont see anything other than that on video on my profile\nStats and activity are partially invisible because I cant swipe right\n\nPhone model LG Velvet",
-      "author_key": "Lilac Finch",
-      "posted_at": "2026-11-03T18:54:23.047Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "⏳ Waiting on us",
-        "👤 Profile",
-        "🐌 Performance"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "[mention removed] \nAndroid 13\nRefract v1.6.754-01a1a27a | native 1.6.5 (74)",
-          "date": "2026-11-03T19:00:59.147Z",
-          "is_team": false,
-          "author_key": "Lilac Finch",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1566482000599056434",
       "title": "Rewatch Removed by Update",
       "body": "I had logged a rewatch of Tatami Galaxy during the great TV Time migration. At some point during the last few updates, my rewatch was removed from episodes 2 to 11 (I tried to manually add ep 2 and ep 1 had previous rewatches).\n\nIt's also possible it was removed when a different glitch was fixed, as I used this show as an example of the rewatches not showing up on the main page because some were imported and being unable to Remove or change a date on a season wide rewatch. Thanks!\n\n[name removed]\nAndroid 16\nSamsung Galaxy s22+\nRefract v1.6.752-01a196e4 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
@@ -1649,7 +1031,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.417545228527465,
+      "score": 1.4126798238734368,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -1707,7 +1089,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 7.512093465776002,
+      "score": 7.48630989727015,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2033,7 +1415,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.37430438118402537,
+      "score": 0.37301966571845413,
       "reactions": [
         {
           "emoji": "👍",
@@ -2069,7 +1451,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3548097625238793,
+      "score": 0.35359195794513465,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2111,7 +1493,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.9750295771266727,
+      "score": 0.9716830077566817,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2215,37 +1597,6 @@
       "images": []
     },
     {
-      "id": "1557486629029945464",
-      "title": "Slight flickering when pressing reorder",
-      "body": "This report relates to a bug for which a fix was shipped, written about here: https://discord.com/channels/1490347491151970366/1542485566547828787\n\nSince the fix, the flickering has gotten a LOT better! But there is still a slight flickering when pressing reorder, as can be seen in the attached screen recording. To my knowledge, it happens when pressing reorder on favorites (titles as well as people) and lists.\n\n[identity removed]\nDevice: iPhone 13 Pro\nOS: iOS 26.6.2\nRefract: Refract v1.6.741-01a1174b | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
-      "author_key": "Teal Sparrow",
-      "posted_at": "2026-10-07T20:15:49.063Z",
-      "status": "open",
-      "resolved_at": null,
-      "terminal_attribution": null,
-      "tags": [
-        "🎨 UI",
-        "⏳ Waiting on us",
-        "📱 iOS"
-      ],
-      "status_tags": [],
-      "reactors_unique": 0,
-      "score": 0,
-      "reactions": [],
-      "comments_count": 1,
-      "activity_7d": 0,
-      "comments": [
-        {
-          "text": "yep octo, still happening!",
-          "date": "2026-11-07T14:38:12.049Z",
-          "is_team": false,
-          "author_key": "Teal Sparrow",
-          "reactions": []
-        }
-      ],
-      "images": []
-    },
-    {
       "id": "1500893204017315981",
       "title": "🌍 Translations Issues",
       "body": "Log them all here!",
@@ -2259,7 +1610,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 19.452425985740177,
+      "score": 19.38565991576337,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4135,6 +3486,702 @@
       ]
     },
     {
+      "id": "1557486629029945464",
+      "title": "Slight flickering when pressing reorder",
+      "body": "This report relates to a bug for which a fix was shipped, written about here: https://discord.com/channels/1490347491151970366/1542485566547828787\n\nSince the fix, the flickering has gotten a LOT better! But there is still a slight flickering when pressing reorder, as can be seen in the attached screen recording. To my knowledge, it happens when pressing reorder on favorites (titles as well as people) and lists.\n\n[identity removed]\nDevice: iPhone 13 Pro\nOS: iOS 26.6.2\nRefract: Refract v1.6.741-01a1174b | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Teal Sparrow",
+      "posted_at": "2026-10-07T20:15:49.063Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:34:12.066Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:34:12.066Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "📱 iOS"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "yep octo, still happening!",
+          "date": "2026-11-07T14:38:12.049Z",
+          "is_team": false,
+          "author_key": "Teal Sparrow",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1569975970624970752",
+      "title": "App crashes on activity feed",
+      "body": "Sometimes the app crashes when I'm scrolling down the activity feed and tap on that button on top that shows \"New Posts\". It doesn't happen every time and I can't figure out what causes it. When it happens my display shows blackscreen and I can't do anything but totally close the app. \n\n[identity removed]\nDevice: Galaxy S21 FE 5G, Android 16\nRefract v1.6.759-01a1baa6 | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Ivory Tern",
+      "posted_at": "2026-11-11T07:24:00.140Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:34:05.589Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:34:05.589Z"
+      },
+      "tags": [
+        "🤖 Android",
+        "💥 Crash"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0.9174052139400669,
+      "reactions": [],
+      "comments_count": 6,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "I've had the same problem. All I could notice is that it doesn't happen all the time and I've no clue what is triggering it.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.762-01a1e512",
+          "date": "2026-11-11T15:22:04.198Z",
+          "is_team": false,
+          "author_key": "Ivory Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "I was able to screen record this one. It was November 12 at 23:33. Timezone is UTC+0.\n\nIn this instance I was swipping between the episodes and things started to glitch, tried to see how else it was glitching and it would crash while I changed the date. Everything becomes black, I'm not kicked out of the app but I'm unable to do anything.\n\nThere were other situations, but I forgot to take notes. I'll take notes next time. 😉",
+          "date": "2026-11-14T21:21:33.655Z",
+          "is_team": false,
+          "author_key": "Ivory Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "There. November 14, 23:09. Same timezone.\n\nThings that might be important.\nI was scrolling through the activity feed. Got bored and locked my phone without closing the app. Unlocked my phone, the app was already opened and the notification of a new post was there, clicked it and it went all black. The app stays like this even if I lock my phone again and navigate to other apps.\n\nInteresting thing, it's a different \"black\" screen from the previous one. Lol",
+          "date": "2026-11-14T23:16:39.192Z",
+          "is_team": false,
+          "author_key": "Ivory Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "Another one November 15, 10h03. Same timezone. Same situation where I left the app opened and locked the phone, came back and saw it. In this video you can see that I'm able to scroll up and down just fine before tapping the button.",
+          "date": "2026-11-15T10:07:08.056Z",
+          "is_team": false,
+          "author_key": "Ivory Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "November 15th, 11:29. UTC+1\nI was scrolling through the activity feed, tapped on the button and the screen blackened. I made a screenrecord after crashing, maybe this is also helpful",
+          "date": "2026-11-15T10:35:35.763Z",
+          "is_team": false,
+          "author_key": "Ivory Tern",
+          "reactions": []
+        },
+        {
+          "text": "November 15, 13h42. Same timezone.\n\nThis is the last test I wanted to do. This time the app wasn't on standby, I was just normally scrolling and was able to add a reaction on a post too. I clicked the button and black screen again. I've no clue why sometimes this happens and others work just fine.\n\nIf you need additional testing let me know. 😉",
+          "date": "2026-11-15T13:46:25.945Z",
+          "is_team": false,
+          "author_key": "Ivory Sparrow",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1567250607964815431",
+      "title": "No swipe right on profile",
+      "body": "I dont see anything other than that on video on my profile\nStats and activity are partially invisible because I cant swipe right\n\nPhone model LG Velvet",
+      "author_key": "Lilac Finch",
+      "posted_at": "2026-11-03T18:54:23.047Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:58.994Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:58.994Z"
+      },
+      "tags": [
+        "👤 Profile",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 0,
+      "comments": [
+        {
+          "text": "[mention removed] \nAndroid 13\nRefract v1.6.754-01a1a27a | native 1.6.5 (74)",
+          "date": "2026-11-03T19:00:59.147Z",
+          "is_team": false,
+          "author_key": "Lilac Finch",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1567331638948405338",
+      "title": "Customize section settings not translated to French",
+      "body": "The customize section in settings is displayed only in English, even though the app is set to French language.\n\n📱 via app · SM-A715F · samsung/a71naeea/a71:13/TP1A.220624.014/A715FXXUADWH4:user/release-keys 13 · v1.6.754-01a1a27a\n[identity removed]",
+      "author_key": "Azure Robin",
+      "posted_at": "2026-11-04T00:16:22.339Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:52.294Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:52.294Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1567331638948405338/1567331639246331934.webp"
+        }
+      ]
+    },
+    {
+      "id": "1569375841014521866",
+      "title": "Title posters disappear when scrolling through custom lists",
+      "body": "When viewing a list that contains both movies and series, if I select the filter Movies and scroll through the list, all the posters after the first 9 movies gradually disappear.\n\nWhat you did right before it happened: Opened an already existing list, selected Movies and scrolled through the list. Nothing else.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.762-01a1e512",
+      "author_key": "Golden Sparrow",
+      "posted_at": "2026-11-09T15:39:18.091Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:45.730Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:45.730Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 0.5148817160928773,
+      "reactions": [
+        {
+          "emoji": "💜",
+          "count": 1
+        }
+      ],
+      "comments_count": 4,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Title posters disappear when scrolling through custom lists",
+          "date": "2026-11-10T10:53:22.422Z",
+          "is_team": false,
+          "author_key": "Golden Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "I just noticed this doesn't happen when the default custom order is selected, but it happens with the other sort types. 😉",
+          "date": "2026-11-13T00:24:15.609Z",
+          "is_team": false,
+          "author_key": "Golden Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "Ooops sorry my bad. Out of habit I copied the message from past reports. My app is up to date in setting it says it's the: v1.6.759-01a1baa6\n\nI don't remember exactly, but most likely it was last released.",
+          "date": "2026-11-14T21:12:50.392Z",
+          "is_team": false,
+          "author_key": "Golden Sparrow",
+          "reactions": []
+        },
+        {
+          "text": "Update: Turns out it does happen with the default custom order too. But definitely this doesn't happen all times, I just don't know how to replicate it. I also updated this to the last version v1.6.762-01a1e512",
+          "date": "2026-11-16T17:46:35.178Z",
+          "is_team": false,
+          "author_key": "Golden Sparrow",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1573844737717440604",
+      "title": "I can't see the monthly wraps from the beginning.",
+      "body": "When I click to view the wrap, it jumps straight to the last photo. And no matter how many times I click to the left to go back to the beginning, it doesn't work.",
+      "author_key": "Lilac Wren",
+      "posted_at": "2026-11-21T23:37:06.093Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:39.144Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:39.144Z"
+      },
+      "tags": [
+        "👤 Profile",
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]\nDevice and OS: POCO X5 PRO 5g, 2.0.17.0.UMSMIXM\nRefract Version: Refract v1.6.763-embedded | native 1.6.6 (77) | runtime 1.6.6 | state store-build",
+          "date": "2026-11-21T23:43:57.474Z",
+          "is_team": false,
+          "author_key": "Lilac Wren",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1572355411300847686",
+      "title": "Total show hour is not showing for some shows",
+      "body": "The bug is not a big deal, but seeing how many hours a show is, is a very cool feature, but for some shows it cuts off at the number of hours, as is the case for adventure time, I thought it might be like that for every show with double digit seasons, and triple digit episodes but as you can see the walking dead does show the total hours. \n\nHope you guys fix that, thanks",
+      "author_key": "Silver Otter",
+      "posted_at": "2026-11-17T20:59:03.005Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:32.715Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:32.715Z"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "[identity removed]\nDevice: OnePlus 15r, Android 16\n\nRefract v1.6.762-01a1ea2a | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-17T21:03:39.753Z",
+          "is_team": false,
+          "author_key": "Silver Otter",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1572355411300847686/1572355411464421467.webp"
+        }
+      ]
+    },
+    {
+      "id": "1567476227868991560",
+      "title": "Favorite characters overlapping again after voting",
+      "body": "I reported this before on October 4 and unfortunately that report was deleted, but the problem seems to be back.\n\nWhat you did right before it happened: Voted for one character, changed my vote and the character pictures overlapped.\n\n[identity removed]\nDevice: Xiaomi 15T Pro\nOS: Xiaomi HyperOS 3.0.336.0\nApp Version: 1.6.762-01a1e512",
+      "author_key": "Azure Wren",
+      "posted_at": "2026-11-04T09:50:55.024Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:26.284Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:26.284Z"
+      },
+      "tags": [
+        "🎨 UI",
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "Still happening in app version: v1.6.762-01a1e512",
+          "date": "2026-11-16T17:28:23.325Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1567476227868991560/1567476228204666940.webp"
+        }
+      ]
+    },
+    {
+      "id": "1571316315245781114",
+      "title": "Replies on Comments Button",
+      "body": "When I tap on \"See all replies\" option in a comment, nothing happens, it doesn't show the rest of the replies.\n\nHere's my info:\n[identity removed]\nDevice: Samsung Galaxy S24+, Android 17, One UI 9.0\nApp version: Refract v1.6.759-01a1baa6",
+      "author_key": "Misty Fox",
+      "posted_at": "2026-11-15T00:10:03.200Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:19.766Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:19.766Z"
+      },
+      "tags": [
+        "🤖 Android",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "I'm still having this issue",
+          "date": "2026-11-18T03:17:02.415Z",
+          "is_team": false,
+          "author_key": "Misty Fox",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1572380204150562817",
+      "title": "Unable to post gifs as reply to comments, messages or posts in the app",
+      "body": "I have tried to upload a gif as a response on many different posts and images and I always get an error.\n\nOneplus 12r, oxygen os 16\nRefract Ver 1.6.763",
+      "author_key": "Ochre Wren",
+      "posted_at": "2026-11-17T22:37:34.081Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:13.269Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:13.269Z"
+      },
+      "tags": [
+        "🤖 Android"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "it is different as the gifs are not missing rather i am unable to use gifs as a reply",
+          "date": "2026-11-17T23:07:57.832Z",
+          "is_team": false,
+          "author_key": "Ochre Wren",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1573280154971541625",
+      "title": "Journal doesn’t update on profile",
+      "body": "Hi! I’m having this issue since 4 days ago. My activity doesn’t update on my profile, but when I enter my journal it’s updated there.\n\n[identity removed]\n• Device: iPhone 17 Pro Max iOS 27.2.1\n• Refract v1.6.763-embedded | native 1.6.6 (30) | runtime 1.6.6 | state store-build\n\nThanks for the help! :octolove:",
+      "author_key": "Golden Tern",
+      "posted_at": "2026-11-20T10:13:39.077Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:33:06.214Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:33:06.214Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "👤 Profile"
+      ],
+      "status_tags": [],
+      "reactors_unique": 2,
+      "score": 3.8779246643782774,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 2
+        }
+      ],
+      "comments_count": 2,
+      "activity_7d": 4,
+      "comments": [
+        {
+          "text": "Hi! Update: This problem persists but only with games.",
+          "date": "2026-11-22T14:58:15.300Z",
+          "is_team": false,
+          "author_key": "Golden Tern",
+          "reactions": []
+        },
+        {
+          "text": "Same on android, and only with games!\n\n[identity removed]\nDevice: Samsung galaxy S10e (Android 12)\nRefract v1.7.764",
+          "date": "2026-11-23T03:09:20.542Z",
+          "is_team": false,
+          "author_key": "Velvet Wren",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1573280154971541625/1573280155479187527.webp"
+        }
+      ]
+    },
+    {
+      "id": "1572391732581114019",
+      "title": "% Completion not updating / not calculating correctly (shows unfinished game at top of Playing list)",
+      "body": "Hey, I’m having an issue with the % completion feature.\n\n**What I’m seeing:**\n- The % completion is not working/updating for me.\n- At the top of my “Playing” list it still shows a game I haven’t marked as started/completed yet (I like watching others play it first and only add time/% as I go).\n- I’m not sure if the % is supposed to be only for games I’ve marked, or for the entire collection / everything together. \n\nI have a video recording of the problem. I can send it here or wherever is most convenient.\n\nMy user [mention removed]Alex\nThanks!\nMy version \n\nRefract v1.6.763-01a1ebb1 | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Ochre Otter",
+      "posted_at": "2026-11-17T23:23:22.673Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:32:59.654Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:32:59.654Z"
+      },
+      "tags": [
+        "📊 Stats"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 1,
+      "activity_7d": 1,
+      "comments": [
+        {
+          "text": "I forgot to add I just got a new phone but same number I now have a iPhone 14 IOS 27.2.1 I did have an iPhone SE.",
+          "date": "2026-11-17T23:28:52.005Z",
+          "is_team": false,
+          "author_key": "Ochre Otter",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
+      "id": "1571676168816558261",
+      "title": "Unable to remove from watched library",
+      "body": "I am unable to remove a show from my library \n\nUsername [name removed] \nDevice iPhone iOS 27.2.1 \nRefract v1.6.761-01a1e0ea | native 1.6.5 (28) | runtime 1.6.5 | state ota-applied",
+      "author_key": "Misty Robin",
+      "posted_at": "2026-11-15T23:59:58.977Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:32:51.249Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:32:51.249Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "🤖 Android",
+        "⚠ Critical",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1572533470436003860",
+      "title": "Home page Your Watchlist Sorting issue",
+      "body": "Your Watchlist doesn't sort on the homepage by last released. It does for the first Two entries, but then the rest are random. This issue doesn't seem to effect the Games Planned list on the homepage.",
+      "author_key": "Ivory Seal",
+      "posted_at": "2026-11-18T08:46:35.611Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:32:44.523Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:32:44.523Z"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": []
+    },
+    {
+      "id": "1572586494944739329",
+      "title": "Watchlist in movies section only shows items added after update",
+      "body": "Since the games update, the watchlist in the movies section only displays items added after the update. Clicking on the section title takes you to the full watchlist where everything appears correctly.\n\n📱 via app · CPH2399 · Android 14 · v1.6.763-01a1ebaa\n[identity removed]",
+      "author_key": "Amber Robin",
+      "posted_at": "2026-11-18T12:17:17.639Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:32:38.036Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:32:38.036Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 1.8461686158584982,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 1,
+      "activity_7d": 2,
+      "comments": [
+        {
+          "text": "Having the same issue but for all watched media\n[name removed]\nSamsung Galaxy s22+\nAndroid 16\nRefract v1.6.763-01a1ebaa | native 1.6.5 (74) | runtime 1.6.5 | state ota-applied",
+          "date": "2026-11-18T12:59:45.348Z",
+          "is_team": false,
+          "author_key": "Ivory Finch",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1572586494944739329/1572586495238217768.webp"
+        }
+      ]
+    },
+    {
+      "id": "1573794163076366538",
+      "title": "Wishlist section broken in home after gaming section added",
+      "body": "Since the gaming section was added, the wishlist section on the home page no longer displays all scheduled films, TV series, and anime, though they appear correctly in the personal library. Additionally, the Samsung widget stopped working properly during the same period—clicking to mark an episode as completed from the widget doesn't register the action; the app must be opened directly.\n\n📱 via app · SM-S948B · Android 17 · v1.6.763-embedded\n[identity removed]",
+      "author_key": "Ivory Seal",
+      "posted_at": "2026-11-21T20:16:08.159Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:32:31.592Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:32:31.592Z"
+      },
+      "tags": [
+        "General"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 0,
+      "activity_7d": 0,
+      "comments": [],
+      "images": [
+        {
+          "url": "./assets/bugs/1573794163076366538/1573794163755974807.webp"
+        }
+      ]
+    },
+    {
+      "id": "1572308807827202230",
+      "title": "Watch List Empty",
+      "body": "I imported my games but somehow it emptied out my watchlist for tv and movies and everything I had there is gone. \n\n[identity removed]",
+      "author_key": "Lilac Seal",
+      "posted_at": "2026-11-17T17:53:51.871Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-23T10:32:24.851Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-23T10:32:24.851Z"
+      },
+      "tags": [
+        "📱 iOS",
+        "🐌 Performance"
+      ],
+      "status_tags": [],
+      "reactors_unique": 1,
+      "score": 6.611753055855904,
+      "reactions": [
+        {
+          "emoji": "🛠️",
+          "count": 1
+        }
+      ],
+      "comments_count": 10,
+      "activity_7d": 12,
+      "comments": [
+        {
+          "text": "i still see your full library on my end. could you kill and restart the app?",
+          "date": "2026-11-17T17:56:35.586Z",
+          "is_team": true,
+          "team_role": "mod",
+          "author_key": "Ochre Seal",
+          "team_name": "Eli",
+          "reactions": []
+        },
+        {
+          "text": "iOS version is 26.6.2",
+          "date": "2026-11-17T17:56:43.221Z",
+          "is_team": false,
+          "author_key": "Lilac Seal",
+          "reactions": []
+        },
+        {
+          "text": "Will do!",
+          "date": "2026-11-17T17:56:47.721Z",
+          "is_team": false,
+          "author_key": "Lilac Seal",
+          "reactions": []
+        },
+        {
+          "text": "Restarted and still no watchlist. I have the rest of my library but that’s still missing",
+          "date": "2026-11-17T17:57:52.270Z",
+          "is_team": false,
+          "author_key": "Lilac Seal",
+          "reactions": []
+        },
+        {
+          "text": "Same issue. I have Android\nI think this happen when you add too much games in watchlist\nBut if you go in Watchlist section it's all right. It's a preview issue only",
+          "date": "2026-11-17T18:00:33.125Z",
+          "is_team": false,
+          "author_key": "Sage Finch",
+          "reactions": []
+        },
+        {
+          "text": "Oh okay you’re right. I do see it if I click into it.",
+          "date": "2026-11-17T18:01:38.704Z",
+          "is_team": false,
+          "author_key": "Lilac Seal",
+          "reactions": [
+            {
+              "emoji": {
+                "name": "firePurple",
+                "id": "1542906418749898752"
+              },
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "Thank you!",
+          "date": "2026-11-17T18:03:30.487Z",
+          "is_team": false,
+          "author_key": "Lilac Seal",
+          "reactions": []
+        },
+        {
+          "text": "np :octolove:",
+          "date": "2026-11-17T18:04:23.882Z",
+          "is_team": false,
+          "author_key": "Sage Finch",
+          "reactions": []
+        },
+        {
+          "text": "It seems that the watchlist preview on the start page only shows a fix amount of items backwards. If you added a lot of games and filter for movies the previously added shows don’t show. Newly added movies or shows added after the games will be shown again. \n\nAt least that’s what I noticed",
+          "date": "2026-11-17T18:10:59.511Z",
+          "is_team": false,
+          "author_key": "Silver Finch",
+          "reactions": [
+            {
+              "emoji": "👍",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "text": "I have the same issue but my Watchlist is only empty on the Homescreen when i open the Watchlist is appears normally. The Issue only appears for the Movies & TV Tab on the Homescreen.",
+          "date": "2026-11-22T20:50:15.915Z",
+          "is_team": false,
+          "author_key": "Coral Wren",
+          "reactions": []
+        }
+      ],
+      "images": [
+        {
+          "url": "./assets/bugs/1572308807827202230/1572308809072771092.webp"
+        }
+      ]
+    },
+    {
       "id": "1562812545025450035",
       "title": "bug with watched episodes?",
       "body": "Hi! I noticed some of my watched episodes from really old shows appear as not watched- marked them again but I wonder if it was just me?",
@@ -4479,7 +4526,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 2.306850579684829,
+      "score": 2.2989328347545985,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -4732,7 +4779,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.005245512033554,
+      "score": 1.0017952332740045,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 1,
@@ -4806,7 +4853,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.33807423375855983,
+      "score": 0.33691387011214236,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -4869,7 +4916,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0326124591500034,
+      "score": 1.02906824950967,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 1,
@@ -4924,7 +4971,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 4.8532673350701145,
+      "score": 4.8366095882807425,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5024,7 +5071,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.14115061240872476,
+      "score": 0.14066614472987285,
       "reactions": [
         {
           "emoji": "💜",
@@ -5106,7 +5153,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 22.886784989399942,
+      "score": 22.808231255831355,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5452,7 +5499,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 2.366043595921391,
+      "score": 2.3579226842978604,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5536,7 +5583,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 5.0329370027565465,
+      "score": 5.015662580308609,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5706,7 +5753,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.6259342215452512,
+      "score": 0.6237858433395094,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5738,7 +5785,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 6,
-      "score": 11.73396555005433,
+      "score": 11.693691356717485,
       "reactions": [
         {
           "emoji": "💜",
@@ -6463,7 +6510,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.109920392785438,
+      "score": 1.1061108410787395,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6547,7 +6594,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5187436651776395,
+      "score": 0.5169631944088692,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6838,7 +6885,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 2.186172664968882,
+      "score": 2.178669119794738,
       "reactions": [
         {
           "emoji": "👍",
@@ -7760,7 +7807,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.4223185850316142,
+      "score": 0.4208690716279186,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -7804,7 +7851,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 0.9760477961428358,
+      "score": 0.9726977319654546,
       "reactions": [
         {
           "emoji": "😂",
@@ -7925,7 +7972,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.39050891082639316,
+      "score": 0.3891685769633615,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8136,7 +8183,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.07174461621841051,
+      "score": 0.07149836898578207,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8171,7 +8218,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.634534247730404,
+      "score": 0.632356351872186,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -8578,7 +8625,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.019701304983973177,
+      "score": 0.019633684692902092,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -8617,7 +8664,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.018634119679610588,
+      "score": 0.0185701622616825,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -8698,7 +8745,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.028791027560679642,
+      "score": 0.02869220884458585,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -8787,7 +8834,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0005115756716072606,
+      "score": 0.0005098198033616232,
       "reactions": [
         {
           "emoji": "💜",
@@ -9039,7 +9086,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0221424163394149,
+      "score": 0.02206641748354691,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -9193,7 +9240,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0038143107433040017,
+      "score": 0.0038012189809609664,
       "reactions": [
         {
           "emoji": "➕",
@@ -9402,7 +9449,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0016173294754327908,
+      "score": 0.001611778356358415,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -9474,7 +9521,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.014854332077241886,
+      "score": 0.014803347928752911,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -9534,7 +9581,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0018981537705189623,
+      "score": 0.0018916387853154663,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9606,7 +9653,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0009748297039001663,
+      "score": 0.0009714838205499972,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -9669,7 +9716,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0013675030874906984,
+      "score": 0.0013628094412123444,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -9738,7 +9785,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.000017082150363510336,
+      "score": 0.000017023519730633963,
       "reactions": [
         {
           "emoji": "‼️",
@@ -9810,7 +9857,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.000171796815451855,
+      "score": 0.00017120716158499754,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9863,7 +9910,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.011871810499259646,
+      "score": 0.011831063184188195,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9953,7 +10000,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0001495509462630843,
+      "score": 0.00014903764633069453,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10015,7 +10062,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00004520597707838208,
+      "score": 0.000045050817746008966,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10176,7 +10223,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0010534405839485227,
+      "score": 0.0010498248864619524,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -10338,7 +10385,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000565085656030352,
+      "score": 0.0005631461268178476,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -10449,7 +10496,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0007963101280597365,
+      "score": 0.0007935769729369643,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10805,7 +10852,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.000045169129684550236,
+      "score": 0.000045014096822555513,
       "reactions": [
         {
           "emoji": "💜",
@@ -10833,7 +10880,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.004556975555270303,
+      "score": 0.004541334763266839,
       "reactions": [
         {
           "emoji": "👆",
@@ -10897,7 +10944,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.000031592455292996465,
+      "score": 0.00003148402130731382,
       "reactions": [
         {
           "emoji": "🤔",
@@ -10957,7 +11004,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0010581936274743481,
+      "score": 0.0010545616162366367,
       "reactions": [
         {
           "emoji": "👆",
@@ -11135,7 +11182,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.007850667972560201,
+      "score": 0.007823722323333476,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -11276,7 +11323,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.00003066733389270405,
+      "score": 0.00003056207517781767,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11355,7 +11402,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000004522423246791559,
+      "score": 0.000004506901047803051,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -11472,7 +11519,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00033220940949588526,
+      "score": 0.0003310691755375285,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -11560,7 +11607,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00025791731856874444,
+      "score": 0.00025703207547606184,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11656,7 +11703,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0000452094311953712,
+      "score": 0.000045054260007519596,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -11709,7 +11756,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0003512113412281173,
+      "score": 0.00035000588741982254,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11817,7 +11864,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0006867070373306688,
+      "score": 0.0006843500701255702,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -13982,11 +14029,7 @@
           "reactions": []
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1533761791279104080/1533761791753195530.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1533121288665829406",
@@ -14029,11 +14072,7 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1533403497851256872/1533403498555637890.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1529453055421190185",
@@ -14129,15 +14168,15 @@
           "text": "no tags please, there's a lot going on already, share your username and a written list of the items on which this issue applies to and they will investigate when they can!",
           "date": "2026-07-29T20:20:54.893Z",
           "is_team": true,
-          "team_role": "mod",
           "author_key": "Sage Seal",
-          "team_name": "Eli",
           "reactions": [
             {
               "emoji": "💜",
               "count": 1
             }
-          ]
+          ],
+          "team_role": "mod",
+          "team_name": "Eli"
         },
         {
           "text": "alright, will do that.\n\nthank you",
@@ -14150,15 +14189,15 @@
           "text": "Investigating and try to fix for next update thanks [name removed]",
           "date": "2026-07-30T06:29:24.883Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Sage Robin",
-          "team_name": "Exooo",
           "reactions": [
             {
               "emoji": "💜",
               "count": 1
             }
-          ]
+          ],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "1. \nnot sure if it's fixed, saw it in announcement but titles are still in different languages\n\nshows in hindi characters and if I click the arrow to see more, it is in english letters\n\n2.\nas for journal dates, the ratings goes to a day before",
@@ -14178,19 +14217,19 @@
           "text": "~~can you show me a visual example? I'll fix this~~ -- nevermind it's in last message thanks",
           "date": "2026-08-04T17:19:44.041Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Sage Robin",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "For the titles I'll clean it once and for all, this is a redundant topic I'm sorry it happens",
           "date": "2026-08-04T17:19:59.676Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Sage Robin",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "the English, Indian characters are good now, but the rated dates and watched is not, will this be part of next update?",
@@ -14208,10 +14247,10 @@
           "text": "[mention removed] can you go in Library/Collection (4th tab) > click on 📖 book icon -> you're on My Journal page, are the dates correct there for you?",
           "date": "2026-08-04T17:27:20.190Z",
           "is_team": true,
-          "team_role": "dev",
           "author_key": "Sage Robin",
-          "team_name": "Exooo",
-          "reactions": []
+          "reactions": [],
+          "team_role": "dev",
+          "team_name": "Exooo"
         },
         {
           "text": "it seems to be correct after July 29th, ad you can see one of the indian title showed different days and anything ager that showed right",
@@ -14238,11 +14277,7 @@
           ]
         }
       ],
-      "images": [
-        {
-          "url": "./assets/bugs/1531751347920048318/1531751348398194739.webp"
-        }
-      ]
+      "images": []
     },
     {
       "id": "1525084490710519888",
