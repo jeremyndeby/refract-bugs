@@ -1,141 +1,41 @@
 {
   "schema_version": 6,
-  "generated_at": "2026-11-26T12:20:04.774Z",
+  "generated_at": "2026-11-26T14:40:04.241Z",
   "bugs": [
     {
-      "id": "1575416875553259570",
-      "title": "Persian and RTL bugs and issues - part 2",
-      "body": "In a previous post I had detailed numerous issues and some suggestions, and you guys really took it all and ran with it. Much appreciated, it made all the difference🙏🏻\n\nI have compiled more bugs regarding unspecified fonts defaulting to device's font, RTL/LTR alignments, translation fixes, and also some food for thought regarding uniformity of representation in some elements. They have been sequentially posted below.\n\n[identity removed]\nRefract v1.7.767-01a21425 | native 1.7.0 (84) | runtime 1.7.0 | state ota-applied\nSamsung Galaxy A50 running Android 11",
-      "author_key": "Azure Wren",
-      "posted_at": "2026-11-26T07:44:12.962Z",
+      "id": "1575518535042601111",
+      "title": "Button not appear",
+      "body": "No written description was provided.",
+      "author_key": "Teal Sparrow",
+      "posted_at": "2026-11-26T14:28:10.473Z",
       "status": "open",
       "resolved_at": null,
       "terminal_attribution": null,
       "tags": [
         "🎨 UI",
-        "⏳ Waiting on us"
+        "⏳ Waiting on us",
+        "⚠ Critical"
       ],
       "status_tags": [],
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 16,
-      "activity_7d": 16,
+      "comments_count": 1,
+      "activity_7d": 2,
       "comments": [
         {
-          "text": "These items have missing font assigment which all fall back on devices's default font, clashing with Refract's intentional design language.\n\nThere's also a missing translation for the error message.",
-          "date": "2026-11-26T07:48:37.054Z",
+          "text": "Refeact user [mention removed]\nAndroid\nRefract v1.7.768-01a21728 | native 1.7.0 (84) | runtime 1.7.0 | state ota-applied\nIt's Happening since the latest Update",
+          "date": "2026-11-26T14:33:23.246Z",
           "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "Same thing here. Everything in this page, barring the tab titles above the red line, lack an assigned font.",
-          "date": "2026-11-26T07:50:07.931Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "This line here has a missing translation, whatever it is\n\nAlso all lines miss fonts, part of the above.",
-          "date": "2026-11-26T07:52:24.452Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "The word مجموعه meaning Collection doesn't fit in the corner there, even though my device's scaling is at 100%. Note that some users may have even higher scaling",
-          "date": "2026-11-26T07:53:47.876Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "On to fix a few items of wordiness. The short English phrase \"Mark as\" translates to \"علامت‌گذاری به عنوانِ\" which is correct, but very unnecessary to fit there given how long it is.\n\nI suggest \"تماشا کرده‌ام\" for the whole button; much shorter and more natural.",
-          "date": "2026-11-26T08:07:24.782Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "Same issue here. The literal translation is not wrong, but unnatural and long for a single button.\n\nI suggest the opposite of the previous one, \"تماشا نکرده‌ام\" and for the prompt: \"تماشا پاک شود؟\" and the prompt button says تایید meaning confirm or پاک شود to mirror the prompt question.",
-          "date": "2026-11-26T08:11:37.195Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "Another item of wordiness which has the additional hazard of being misleading. These OTA updates are applied seamlessly but the phrase in Persian, other than being wordy can be intimidating for some, thinking they need to do any extra work or configuration. I suggest \"انجام شود\".\n\nI think there was a pop up prompt that goes with this, I couldn't manage to get a screenshot of that one. Keep that in mind for this change.",
-          "date": "2026-11-26T09:18:50.861Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "The text in these pop-ups usually has RTL direction, but not RTL __alignment__. The text is readable, but is sitting on the wrong side of the box, same with the CTA button.",
-          "date": "2026-11-26T09:21:25.796Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "This is another monumental mistake for RTL alignment, LOL.\n\nNumerics, including clocks, are written and read from __Left to Right, just like English__. So reverse the order of day, hour, etc, and keep the corresponding label below each of them.",
-          "date": "2026-11-26T09:23:50.006Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "All of the headings, subheadings and paragraphs of text in the event pages and in the popups in the homepage need RTL alignment if the language needs it.",
-          "date": "2026-11-26T11:04:40.721Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "Everything in this page in settings lacks an assigned font.\n\nI suggest streamlining the font assigments so we don't have to go on these whack-a-mole hunts every so often.",
-          "date": "2026-11-26T11:07:01.783Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "Now I want to direct your attention to an issue of __**uniformity of numeric characters**__ or lackthereof all across the app.\n\nIn many places, numbers inline with Persian text are shown with Persian characters (marked with 🟢 ), some are mixed (marked with 🔵 ) and standalone numbers are shown with English characters (marked with 🔴 ).",
-          "date": "2026-11-26T11:27:31.295Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": ".\nDo you see how messy it can look?\n\nI see this not as a data issue, but representational. You could opt to workshop the idea of transforming numerical characters according to the chosen language of the app like we see in the 🟢 items above, which would be the most uniform design. Other options would be less than optimal, but ultimately your choice.",
-          "date": "2026-11-26T11:34:05.979Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "This issue would also affect languages beyond Persian, particularly Arabic which uses the same numerics except with 4, 5, 6 written differently.",
-          "date": "2026-11-26T11:36:15.305Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "I know there are lots of things to do and fix all around, but prioritize fixing the backwards countdown clock ⏰. That's just downright wrong.",
-          "date": "2026-11-26T12:12:51.135Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
-          "reactions": []
-        },
-        {
-          "text": "And can I get that contribution badge in the app please? These posts are a lot of work 😄",
-          "date": "2026-11-26T12:13:58.121Z",
-          "is_team": false,
-          "author_key": "Azure Wren",
+          "author_key": "Teal Sparrow",
           "reactions": []
         }
       ],
-      "images": []
+      "images": [
+        {
+          "url": "./assets/bugs/1575518535042601111/1575518535382204588.webp"
+        }
+      ]
     },
     {
       "id": "1575331789537415228",
@@ -356,7 +256,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 3.9214740626513342,
+      "score": 3.8839053704617443,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -492,8 +392,8 @@
       "reactors_unique": 0,
       "score": 0,
       "reactions": [],
-      "comments_count": 2,
-      "activity_7d": 2,
+      "comments_count": 3,
+      "activity_7d": 3,
       "comments": [
         {
           "text": "Useless question Octo\nDid nothing,bugged after latest update",
@@ -505,6 +405,13 @@
         {
           "text": "Hii\nYes it does disappear after reopening the app, and on others profile,\nI've tried changing display size it does not help",
           "date": "2026-11-24T14:43:35.911Z",
+          "is_team": false,
+          "author_key": "Velvet Panda",
+          "reactions": []
+        },
+        {
+          "text": "Hi [mention removed] \nIt got fixed from the latest update,idk if the fix was intended (because the tag is not changed to fixed) but it's working fine now thanks",
+          "date": "2026-11-26T13:55:06.991Z",
           "is_team": false,
           "author_key": "Velvet Panda",
           "reactions": []
@@ -826,6 +733,152 @@
       ]
     },
     {
+      "id": "1575416875553259570",
+      "title": "Persian and RTL bugs and issues - part 2",
+      "body": "In a previous post I had detailed numerous issues and some suggestions, and you guys really took it all and ran with it. Much appreciated, it made all the difference🙏🏻\n\nI have compiled more bugs regarding unspecified fonts defaulting to device's font, RTL/LTR alignments, translation fixes, and also some food for thought regarding uniformity of representation in some elements. They have been sequentially posted below.\n\n[identity removed]\nRefract v1.7.767-01a21425 | native 1.7.0 (84) | runtime 1.7.0 | state ota-applied\nSamsung Galaxy A50 running Android 11",
+      "author_key": "Azure Wren",
+      "posted_at": "2026-11-26T07:44:12.962Z",
+      "status": "fixed",
+      "resolved_at": "2026-11-26T14:32:26.701Z",
+      "terminal_attribution": {
+        "applied_at": "2026-11-26T14:32:26.701Z",
+        "applied_by": "Exooo"
+      },
+      "tags": [
+        "🎨 UI"
+      ],
+      "status_tags": [],
+      "reactors_unique": 0,
+      "score": 0,
+      "reactions": [],
+      "comments_count": 17,
+      "activity_7d": 17,
+      "comments": [
+        {
+          "text": "These items have missing font assigment which all fall back on devices's default font, clashing with Refract's intentional design language.\n\nThere's also a missing translation for the error message.",
+          "date": "2026-11-26T07:48:37.054Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "Same thing here. Everything in this page, barring the tab titles above the red line, lack an assigned font.",
+          "date": "2026-11-26T07:50:07.931Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "This line here has a missing translation, whatever it is\n\nAlso all lines miss fonts, part of the above.",
+          "date": "2026-11-26T07:52:24.452Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "The word مجموعه meaning Collection doesn't fit in the corner there, even though my device's scaling is at 100%. Note that some users may have even higher scaling",
+          "date": "2026-11-26T07:53:47.876Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "On to fix a few items of wordiness. The short English phrase \"Mark as\" translates to \"علامت‌گذاری به عنوانِ\" which is correct, but very unnecessary to fit there given how long it is.\n\nI suggest \"تماشا کرده‌ام\" for the whole button; much shorter and more natural.",
+          "date": "2026-11-26T08:07:24.782Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "Same issue here. The literal translation is not wrong, but unnatural and long for a single button.\n\nI suggest the opposite of the previous one, \"تماشا نکرده‌ام\" and for the prompt: \"تماشا پاک شود؟\" and the prompt button says تایید meaning confirm or پاک شود to mirror the prompt question.",
+          "date": "2026-11-26T08:11:37.195Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "Another item of wordiness which has the additional hazard of being misleading. These OTA updates are applied seamlessly but the phrase in Persian, other than being wordy can be intimidating for some, thinking they need to do any extra work or configuration. I suggest \"انجام شود\".\n\nI think there was a pop up prompt that goes with this, I couldn't manage to get a screenshot of that one. Keep that in mind for this change.",
+          "date": "2026-11-26T09:18:50.861Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "The text in these pop-ups usually has RTL direction, but not RTL __alignment__. The text is readable, but is sitting on the wrong side of the box, same with the CTA button.",
+          "date": "2026-11-26T09:21:25.796Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "This is another monumental mistake for RTL alignment, LOL.\n\nNumerics, including clocks, are written and read from __Left to Right, just like English__. So reverse the order of day, hour, etc, and keep the corresponding label below each of them.",
+          "date": "2026-11-26T09:23:50.006Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "All of the headings, subheadings and paragraphs of text in the event pages and in the popups in the homepage need RTL alignment if the language needs it.",
+          "date": "2026-11-26T11:04:40.721Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "Everything in this page in settings lacks an assigned font.\n\nI suggest streamlining the font assigments so we don't have to go on these whack-a-mole hunts every so often.",
+          "date": "2026-11-26T11:07:01.783Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "Now I want to direct your attention to an issue of __**uniformity of numeric characters**__ or lackthereof all across the app.\n\nIn many places, numbers inline with Persian text are shown with Persian characters (marked with 🟢 ), some are mixed (marked with 🔵 ) and standalone numbers are shown with English characters (marked with 🔴 ).",
+          "date": "2026-11-26T11:27:31.295Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": ".\nDo you see how messy it can look?\n\nI see this not as a data issue, but representational. You could opt to workshop the idea of transforming numerical characters according to the chosen language of the app like we see in the 🟢 items above, which would be the most uniform design. Other options would be less than optimal, but ultimately your choice.",
+          "date": "2026-11-26T11:34:05.979Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "This issue would also affect languages beyond Persian, particularly Arabic which uses the same numerics except with 4, 5, 6 written differently.",
+          "date": "2026-11-26T11:36:15.305Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "I know there are lots of things to do and fix all around, but prioritize fixing the backwards countdown clock ⏰. That's just downright wrong.",
+          "date": "2026-11-26T12:12:51.135Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "And can I get that contribution badge in the app please? These posts are a lot of work 😄",
+          "date": "2026-11-26T12:13:58.121Z",
+          "is_team": false,
+          "author_key": "Azure Wren",
+          "reactions": []
+        },
+        {
+          "text": "Thank you so much for this second round 🙏 It's an incredibly careful report, and once again it made a real difference.\n\nWe went through every single item:\n• RTL alignment: the event pages and the Home popups now sit on the right side, buttons included.\n• Countdown: it now reads left to right, labels under each group, digits in the right order.\n• Fonts: instead of chasing screens one by one, we added a single rule. Any text in Persian or Arabic that had no font now gets the app's, so the screens you listed (profile, Stats, Wrap, favourites, Discord settings…) should all match.\n• \"مجموعه\" no longer gets cut off in the Library header.\n• The untranslated error is now translated.\n• Your shorter wordings are in: «تماشا کرده‌ام», «تماشا نکرده‌ام», «تماشا پاک شود؟» / «پاک شود», and «انجام شود» for the update button.\n• Numerals: we went with your favourite option. Numbers now show in Persian digits across the app (and Arabic digits in Arabic). English titles and usernames keep their Latin digits, so \"Blade Runner 2049\" stays as it is.\n\nAll of this will arrive with an upcoming update.\n\nAnd since you've genuinely helped build Refract: a little builder's gift is waiting for you in the app 🧱💜",
+          "date": "2026-11-26T14:31:23.206Z",
+          "is_team": true,
+          "team_role": "dev",
+          "author_key": "Ivory Robin",
+          "team_name": "Exooo",
+          "reactions": []
+        }
+      ],
+      "images": []
+    },
+    {
       "id": "1575419377313120338",
       "title": "Playstation connection mentions Xbox",
       "body": "As you can see in the image, after your connection it says \"50 played on Xbox\"\n\nRefract v1.7.767-01a21425 | native 1.7.0 (84) | runtime 1.7.0 | state ota-applied\nAndroid 17, Pixel 10 Pro",
@@ -983,7 +1036,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 7,
-      "score": 14.304777075568778,
+      "score": 14.167733770371093,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -2710,7 +2763,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7685493228977452,
+      "score": 0.7611864301479353,
       "reactions": [
         {
           "emoji": "💜",
@@ -2802,7 +2855,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 4.810934183328448,
+      "score": 4.764844243017675,
       "reactions": [
         {
           "emoji": "☝️",
@@ -2916,7 +2969,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.2609173046518838,
+      "score": 0.25841765228932895,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -2988,7 +3041,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.7170098348199644,
+      "score": 0.7101407031233374,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3039,7 +3092,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.679522039587248,
+      "score": 1.6634318027215158,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 2,
@@ -3131,7 +3184,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 1.5610697324687086,
+      "score": 1.5461142980252762,
       "reactions": [
         {
           "emoji": "👍",
@@ -3143,7 +3196,7 @@
       "comments": [],
       "images": [
         {
-          "url": "./assets/bugs/1574579511994097664/1574579512442622023.webp"
+          "url": "./assets/bugs/1574579511994097664/1574652457533837332.webp"
         }
       ]
     },
@@ -3199,7 +3252,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.46027694918993256,
+      "score": 0.45586738208587557,
       "reactions": [
         {
           "emoji": "💜",
@@ -3231,7 +3284,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 5.524186159481419,
+      "score": 5.471263088690219,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3725,7 +3778,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5423568941739318,
+      "score": 0.5371609808799533,
       "reactions": [
         {
           "emoji": "👆",
@@ -3754,7 +3807,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.356959997877317,
+      "score": 1.343959985213872,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -3887,7 +3940,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.27525310905545985,
+      "score": 0.272616116138225,
       "reactions": [
         {
           "emoji": "👍",
@@ -3923,7 +3976,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.55285741272726,
+      "score": 0.5475609018663822,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4031,7 +4084,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.2634885085356329,
+      "score": 1.2513839758767666,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -4126,7 +4179,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.9906723017483895,
+      "score": 0.9811814158798307,
       "reactions": [
         {
           "emoji": "💜",
@@ -4183,7 +4236,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.5066132791465666,
+      "score": 0.5017597985320479,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4279,7 +4332,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.0424236289852156,
+      "score": 1.0324369525918946,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 2,
@@ -4372,7 +4425,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.207283473793518,
+      "score": 1.1957173992797263,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -4456,7 +4509,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.4019227245756232,
+      "score": 1.3884919578609345,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 3,
@@ -4498,7 +4551,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.415363722865168,
+      "score": 1.40180418805986,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 1,
@@ -4626,7 +4679,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.6769579746266984,
+      "score": 0.670472549664626,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -4752,7 +4805,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.3799338377439432,
+      "score": 0.3762939775346011,
       "reactions": [
         {
           "emoji": "💜",
@@ -4976,7 +5029,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 2.8615403386228615,
+      "score": 2.8341260738713228,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5103,7 +5156,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.3622972139469338,
+      "score": 1.3492460694324382,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5171,7 +5224,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 4.878846216930811,
+      "score": 4.832105662528089,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -5618,7 +5671,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 1.696394234489229,
+      "score": 1.6801423578200174,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -5871,7 +5924,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7392297992238741,
+      "score": 0.7321477947682238,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -5945,7 +5998,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.24861045879085047,
+      "score": 0.24622870905791686,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -6008,7 +6061,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.7593546966544913,
+      "score": 0.7520798907000067,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -6063,7 +6116,7 @@
         }
       ],
       "reactors_unique": 6,
-      "score": 3.568958821239597,
+      "score": 3.5347673123196524,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6163,7 +6216,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.10379826382925016,
+      "score": 0.10280385076892803,
       "reactions": [
         {
           "emoji": "💜",
@@ -6245,7 +6298,7 @@
         }
       ],
       "reactors_unique": 1,
-      "score": 16.83030987959225,
+      "score": 16.66907134499531,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6591,7 +6644,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.7399231445755732,
+      "score": 1.723254250173168,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6675,7 +6728,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 3.7010829349815024,
+      "score": 3.66562564434767,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6845,7 +6898,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.4602947472843861,
+      "score": 0.4558850096701787,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -6877,7 +6930,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 6,
-      "score": 8.628834343283284,
+      "score": 8.546167974408055,
       "reactions": [
         {
           "emoji": "💜",
@@ -7454,7 +7507,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 2,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "[identity removed]\ndevice: iPhone 16 Pro, iOS 27.3\nRefract: 1.6.761-01a1e0ea",
@@ -7494,7 +7547,7 @@
       "score": 0,
       "reactions": [],
       "comments_count": 1,
-      "activity_7d": 1,
+      "activity_7d": 0,
       "comments": [
         {
           "text": "This seems to be fixed now",
@@ -7572,7 +7625,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.8162048169242421,
+      "score": 0.8083853727456528,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7632,7 +7685,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.38146977118274683,
+      "score": 0.3778151963508765,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -7894,7 +7947,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 1.6076510273837712,
+      "score": 1.5922493326049403,
       "reactions": [
         {
           "emoji": "👍",
@@ -8816,7 +8869,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.3105614291078877,
+      "score": 0.30758617374479974,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -8860,7 +8913,7 @@
         }
       ],
       "reactors_unique": 4,
-      "score": 0.7177586049759849,
+      "score": 0.7108822998759226,
       "reactions": [
         {
           "emoji": "😂",
@@ -8981,7 +9034,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.2871694728199817,
+      "score": 0.2844183181882649,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9168,7 +9221,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.052759010219544517,
+      "score": 0.05225356584237951,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9203,7 +9256,7 @@
         }
       ],
       "reactors_unique": 0,
-      "score": 0.46661896913274836,
+      "score": 0.46214864390782007,
       "reactions": [],
       "comments_count": 19,
       "activity_7d": 0,
@@ -9610,7 +9663,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.014487795820435035,
+      "score": 0.014348999150359512,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -9649,7 +9702,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.013703017207812597,
+      "score": 0.013571738911099628,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -9730,7 +9783,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.021172126876821948,
+      "score": 0.020969292660676066,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -9819,7 +9872,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0003761986265872835,
+      "score": 0.00037259455062538705,
       "reactions": [
         {
           "emoji": "💜",
@@ -10071,7 +10124,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.016282921723077288,
+      "score": 0.016126927302512927,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -10225,7 +10278,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0028049388245922997,
+      "score": 0.0027780668163555583,
       "reactions": [
         {
           "emoji": "➕",
@@ -10434,7 +10487,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0011893394490112659,
+      "score": 0.0011779452826965128,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -10506,7 +10559,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.010923465748034846,
+      "score": 0.010818816242319647,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -10566,7 +10619,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0013958498833167997,
+      "score": 0.0013824772959245611,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10638,7 +10691,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0007168628535667957,
+      "score": 0.0007099951299869558,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -10701,7 +10754,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0010056240199061278,
+      "score": 0.0009959898928766692,
       "reactions": [],
       "comments_count": 4,
       "activity_7d": 0,
@@ -10770,7 +10823,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.000012561741815673239,
+      "score": 0.00001244139721971307,
       "reactions": [
         {
           "emoji": "‼️",
@@ -10842,7 +10895,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00012633463554278146,
+      "score": 0.0001251243184630907,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10895,7 +10948,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.008730201713647303,
+      "score": 0.008646564220272865,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -10985,7 +11038,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0001099756374501577,
+      "score": 0.0001089220436214825,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -11047,7 +11100,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00003324322760891477,
+      "score": 0.000032924749259836126,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -11208,7 +11261,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0007746711246600953,
+      "score": 0.0007672495835340931,
       "reactions": [],
       "comments_count": 7,
       "activity_7d": 0,
@@ -11370,7 +11423,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00041554839196105233,
+      "score": 0.00041156733550675915,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -11481,7 +11534,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0005855844856195569,
+      "score": 0.0005799744412995472,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -11837,7 +11890,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00003321613105268227,
+      "score": 0.000032897912295319455,
       "reactions": [
         {
           "emoji": "💜",
@@ -11865,7 +11918,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.003351074025663618,
+      "score": 0.0033189699070175892,
       "reactions": [
         {
           "emoji": "👆",
@@ -11929,7 +11982,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.000023232219496297044,
+      "score": 0.00002300964908292872,
       "reactions": [
         {
           "emoji": "🤔",
@@ -11989,7 +12042,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.0007781663816587477,
+      "score": 0.0007707113551055282,
       "reactions": [
         {
           "emoji": "👆",
@@ -12167,7 +12220,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.005773164505245031,
+      "score": 0.0057178561602726306,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -12308,7 +12361,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 9,
-      "score": 0.000022551910756979763,
+      "score": 0.000022335857869728656,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12387,7 +12440,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0000033256652118428138,
+      "score": 0.0000032938045159225435,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -12504,7 +12557,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0002442976289296059,
+      "score": 0.0002419571971742834,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -12592,7 +12645,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00018966527613362654,
+      "score": 0.0001878482358410535,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12688,7 +12741,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00003324576767119578,
+      "score": 0.000032927264987691835,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -12741,7 +12794,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.0002582711249672735,
+      "score": 0.000255796823661097,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -12849,7 +12902,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0005049853983477697,
+      "score": 0.0005001475132342469,
       "reactions": [],
       "comments_count": 229,
       "activity_7d": 0,
@@ -14980,7 +15033,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.00020526196809117858,
+      "score": 0.00020329550762905482,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15081,7 +15134,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00005160335086851433,
+      "score": 0.000051108977993988785,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -15126,7 +15179,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.000012791346310671819,
+      "score": 0.000012668802046816299,
       "reactions": [
         {
           "emoji": "👆",
@@ -15290,7 +15343,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00002257259230219535,
+      "score": 0.000022356341280621846,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -15320,7 +15373,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 5,
-      "score": 0.00022971230796199214,
+      "score": 0.0002275116071917952,
       "reactions": [
         {
           "emoji": "💜",
@@ -15396,7 +15449,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00006994740709458341,
+      "score": 0.00006927729362076896,
       "reactions": [],
       "comments_count": 5,
       "activity_7d": 0,
@@ -15460,7 +15513,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000025308708267886352,
+      "score": 0.00002506624457809987,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -15548,7 +15601,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000017563410698754222,
+      "score": 0.000017395148876847735,
       "reactions": [],
       "comments_count": 9,
       "activity_7d": 0,
@@ -15637,7 +15690,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.00001280462396554527,
+      "score": 0.00001268195249846949,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -15687,7 +15740,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00003286627747515701,
+      "score": 0.00003255141040166498,
       "reactions": [
         {
           "emoji": "👆",
@@ -15744,7 +15797,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00002189469212037733,
+      "score": 0.00002168493555034401,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -15819,7 +15872,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000052014776373223984,
+      "score": 0.000051516461940524406,
       "reactions": [],
       "comments_count": 8,
       "activity_7d": 0,
@@ -15908,7 +15961,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0000494092906439247,
+      "score": 0.000048935937409439004,
       "reactions": [],
       "comments_count": 3,
       "activity_7d": 0,
@@ -15956,7 +16009,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.000056609715593460274,
+      "score": 0.00005606738050566085,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16029,7 +16082,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 0.00006863883253655027,
+      "score": 0.00006798125553090903,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16091,7 +16144,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.00005311160318198303,
+      "score": 0.000052602780876961666,
       "reactions": [
         {
           "emoji": "‼️",
@@ -16206,7 +16259,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.0000810621800312388,
+      "score": 0.00008028558428148852,
       "reactions": [],
       "comments_count": 6,
       "activity_7d": 0,
@@ -16271,7 +16324,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.000017674205940545765,
+      "score": 0.000017504882672798097,
       "reactions": [
         {
           "emoji": "⬆️",
@@ -16371,7 +16424,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 3,
-      "score": 0.0002211021953456378,
+      "score": 0.00021898398158553823,
       "reactions": [
         {
           "emoji": "🛠️",
@@ -16447,7 +16500,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00032702773526143173,
+      "score": 0.0003238947286095432,
       "reactions": [
         {
           "emoji": "👍",
@@ -16551,7 +16604,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 2,
-      "score": 0.00015043238695026137,
+      "score": 0.00014899120744725093,
       "reactions": [
         {
           "emoji": "👍",
@@ -16727,7 +16780,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 13,
-      "score": 0.0005834769402380159,
+      "score": 0.000577887086724435,
       "reactions": [
         {
           "emoji": "👍",
@@ -16971,7 +17024,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 8,
-      "score": 0.0003002145553951728,
+      "score": 0.00029733842564337994,
       "reactions": [
         {
           "emoji": "💜",
@@ -17054,7 +17107,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 1,
-      "score": 1.6129200112245732e-7,
+      "score": 1.5974678382763318e-7,
       "reactions": [
         {
           "emoji": "✅",
@@ -17127,7 +17180,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 4,
-      "score": 0.00009800799106282848,
+      "score": 0.00009706905024885562,
       "reactions": [
         {
           "emoji": "❤️",
@@ -17200,7 +17253,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000015525527605536627,
+      "score": 0.000015376789208093527,
       "reactions": [],
       "comments_count": 2,
       "activity_7d": 0,
@@ -17325,7 +17378,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000010651572520012254,
+      "score": 0.000010549527818722323,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -17383,7 +17436,7 @@
       ],
       "status_tags": [],
       "reactors_unique": 0,
-      "score": 0.000007199779323826828,
+      "score": 0.000007130803655767225,
       "reactions": [],
       "comments_count": 1,
       "activity_7d": 0,
@@ -17427,11 +17480,7 @@
       "comments_count": 0,
       "activity_7d": 0,
       "comments": [],
-      "images": [
-        {
-          "url": "./assets/bugs/1528439584550031461/1528439584768266331.webp"
-        }
-      ],
+      "images": [],
       "bulk_closed": true
     },
     {
